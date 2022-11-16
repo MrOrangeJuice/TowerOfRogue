@@ -80,7 +80,15 @@ if (!(key_left || key_right) || (key_left && key_right))
 }
 	
 hsp = currentwalksp;
-vsp = vsp + grv;
+
+if(!wallSliding)
+{
+	vsp = vsp + grv;
+}
+else
+{
+	vsp += 0.03;	
+}
 
 // Decrement jump buffer
 jumpBuffer--;
@@ -96,6 +104,53 @@ else
 	jumpBuffer = 5;
 }
 
+// Check if player is wallsliding
+if(airborne && place_meeting(x + hsp,y,oWall) && canWallSlide)
+{
+	wallSliding = true;
+}
+else
+{
+	wallSliding = false;	
+	canSpawnWallDust = true;
+}
+
+if(wallSliding)
+{
+	// Spawn wall dust
+	if(canSpawnWallDust)
+	{
+		instance_create_layer(x+random_range(-2,2),y+random_range(-2,2),"VFX",oDustWallSmall);
+		// Set wall dust timer
+		canSpawnWallDust = false;
+		alarm[1] = room_speed * 0.1;
+	}
+	// Prevent player from absuing gravity to ride wall
+	if(!prevWallSliding)
+	{
+		vsp /= 2;	
+	}
+}
+
+// Wall Jump
+if (wallSliding && (key_jump) && (canJump))
+{
+	// Turn off wall sliding for a tiny amount of time
+	canWallSlide = false;
+	alarm[0] = room_speed * 0.2;
+	wallSliding = false;
+	vsp = -3;
+	wallDust = instance_create_layer(x,y,"VFX",oDustWall);
+	if (hsp != 0) wallDust.image_xscale = sign(hsp);
+	// Set hsp to the opposite of your current direction
+	hsp = -sign(hsp);
+	audio_play_sound(snd_Jump, 5, false);
+	canJump = false;
+	// Swap sprite direction immediately
+	if (hsp != 0) image_xscale = sign(hsp);
+}
+
+// Jump
 if (jumpBuffer > 0) && (key_jump) && (canJump)
 {
 	vsp = -3;
@@ -142,7 +197,11 @@ if(prevAirborne && !airborne)
 	sprite_index = sPlayerLand;
 }
 
-if(airborne && !landing)
+if(wallSliding)
+{
+	sprite_index = sPlayerWallSlide;	
+}
+else if(airborne && !landing)
 {
 	if (vsp <= 0) 
 	{
@@ -168,3 +227,4 @@ else if(!landing)
 if (hsp != 0) image_xscale = sign(hsp);
 
 prevAirborne = airborne;
+prevWallSliding = wallSliding;
