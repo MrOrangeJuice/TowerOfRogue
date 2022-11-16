@@ -8,6 +8,7 @@
     {"id":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},"order":1,},
     {"id":{"name":"sPlayerFall","path":"sprites/sPlayerFall/sPlayerFall.yy",},"order":0,},
     {"id":{"name":"oWall","path":"objects/oWall/oWall.yy",},"order":0,},
+    {"id":{"name":"snd_Jump","path":"sounds/snd_Jump/snd_Jump.yy",},"order":0,},
     {"id":{"name":"tTileset","path":"tilesets/tTileset/tTileset.yy",},"order":0,},
     {"id":{"name":"sPalette","path":"sprites/sPalette/sPalette.yy",},"order":1,},
     {"id":{"name":"sPlayerRun","path":"sprites/sPlayerRun/sPlayerRun.yy",},"order":3,},

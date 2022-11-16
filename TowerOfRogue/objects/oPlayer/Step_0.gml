@@ -131,28 +131,21 @@ if (place_meeting(x,y+vsp,oWall))
 }
 y = y + vsp;
 
-// Shoot
-if (key_shoot && shootTimer <= 0)
-{
-	shootTimer = shootCooldown;
-	bullet = instance_create_layer(x+2,y+3.5,"Bullets",oBullet);
-	if(image_xscale == 1)
-	{
-		bullet.xdir = 1;
-	}
-	else
-	{
-		bullet.xdir = -1;	
-	}
-	audio_play_sound(snd_Shoot,5,false);
-	ScreenShake(1,5);
-}
-
 // Animation
 if(airborne)
 {
-	if (vsp <= 0) sprite_index = sPlayerJumpUp;
-	if (vsp > 0) sprite_index = sPlayerJumpDown;
+	if (vsp <= 0) sprite_index = sPlayerJump;
+	if (vsp > 0) sprite_index = sPlayerFall;
+	
+	// Hold on last frame of jump animation
+	if(image_index == 3 && sprite_index == sPlayerJump)
+		{
+			image_speed = 0;	
+		}
+		else
+		{
+			image_speed = 1;
+		}
 }
 else
 {
@@ -162,40 +155,8 @@ else
 	}
 	else
 	{
-		sprite_index = sPlayer;
+		sprite_index = sPlayerIdle;
 	}
 }
 
 if (hsp != 0) image_xscale = sign(hsp);
-}
-// If sword is activated
-else
-{
-sprite_index = sPlayerSword;
-// Shoot
-if (key_shoot && shootTimer <= 0)
-{
-	shootTimer = shootCooldown;
-	bullet = instance_create_layer(x+2,y+3.5,"Bullets",oBullet);
-	if(image_xscale == 1)
-	{
-		bullet.xdir = 1;
-	}
-	else
-	{
-		bullet.xdir = -1;	
-	}
-	audio_play_sound(snd_Shoot,5,false);
-	ScreenShake(1,5);
-}
-	
-if(!swordTimerSet)
-{
-	image_index = 0;
-	audio_play_sound(snd_Sword2,5,false);
-	vsp = 0;
-	swordTimerSet = true;
-	alarm[0] = room_speed * 0.4;
-	ScreenShake(4,10);
-}
-}
