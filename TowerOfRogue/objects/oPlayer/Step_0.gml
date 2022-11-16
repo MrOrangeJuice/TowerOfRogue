@@ -98,7 +98,8 @@ else
 
 if (jumpBuffer > 0) && (key_jump) && (canJump)
 {
-	vsp = -4;
+	vsp = -3;
+	instance_create_layer(x,y,"VFX",oDust);
 	audio_play_sound(snd_Jump, 5, false);
 	canJump = false;
 }
@@ -132,22 +133,27 @@ if (place_meeting(x,y+vsp,oWall))
 y = y + vsp;
 
 // Animation
-if(airborne)
+
+if(prevAirborne && !airborne)
 {
-	if (vsp <= 0) sprite_index = sPlayerJump;
-	if (vsp > 0) sprite_index = sPlayerFall;
-	
-	// Hold on last frame of jump animation
-	if(image_index == 3 && sprite_index == sPlayerJump)
-		{
-			image_speed = 0;	
-		}
-		else
-		{
-			image_speed = 1;
-		}
+	landing = true;
+	instance_create_layer(x,y,"VFX",oDustSmall);
+	audio_play_sound(snd_Land, 5, false);
+	sprite_index = sPlayerLand;
 }
-else
+
+if(airborne && !landing)
+{
+	if (vsp <= 0) 
+	{
+		sprite_index = sPlayerJump;
+	}
+	if (vsp > 0)
+	{
+		sprite_index = sPlayerFall;
+	}
+}
+else if(!landing)
 {
 	if (hsp != 0)
 	{
@@ -160,3 +166,5 @@ else
 }
 
 if (hsp != 0) image_xscale = sign(hsp);
+
+prevAirborne = airborne;
