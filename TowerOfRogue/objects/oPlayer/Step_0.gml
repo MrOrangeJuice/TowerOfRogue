@@ -35,7 +35,7 @@ if (gamepad_button_check_released(0,gp_face1) || gamepad_button_check_released(4
 	global.controller = 1;
 }
 
-// If player doesn't release jump, they can't jump again
+// If player doesn't release jump, they can't jump again or slash
 if(key_jump_released)
 {
 	canJump = true;
@@ -150,6 +150,27 @@ if (wallSliding && (key_jump) && (canJump))
 	if (hsp != 0) image_xscale = sign(hsp);
 }
 
+// Slash
+if (key_jump) && (canJump) && (airborne) && (!slashing)
+{
+	slashing = true;
+	image_index = 0;
+	canJump = false;
+	audio_play_sound(snd_Slash,5,false);
+}
+
+// Slash collision
+if(slashing)
+{
+	if(place_meeting(x,y+17,oWall))
+	{
+		vsp = -3;	
+		instance_create_layer(x,y+14,"VFX",oDustSlash);
+		airborne = true;
+		audio_play_sound(snd_Impact,5,false);
+	}
+}
+
 // Jump
 if (jumpBuffer > 0) && (key_jump) && (canJump)
 {
@@ -197,7 +218,11 @@ if(prevAirborne && !airborne)
 	sprite_index = sPlayerLand;
 }
 
-if(wallSliding)
+if(slashing)
+{
+	sprite_index = sPlayerSlash;	
+}
+else if(wallSliding)
 {
 	sprite_index = sPlayerWallSlide;	
 }
@@ -224,7 +249,7 @@ else if(!landing)
 	}
 }
 
-if (hsp != 0) image_xscale = sign(hsp);
+if (hsp != 0 && !slashing) image_xscale = sign(hsp);
 
 prevAirborne = airborne;
 prevWallSliding = wallSliding;

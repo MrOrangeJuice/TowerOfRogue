@@ -6,3 +6,8 @@ if (sprite_index == sPlayerLand)
 {
 	landing = false;
 }
+
+if (sprite_index == sPlayerSlash)
+{
+	slashing = false;
+}

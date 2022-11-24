@@ -10,6 +10,7 @@ jumpBuffer = 0;
 airborne = false;
 prevAirborne = false;
 landing = false;
+slashing = false;
 canWallSlide = true;
 canSpawnWallDust = true;
 wallSliding = false;
