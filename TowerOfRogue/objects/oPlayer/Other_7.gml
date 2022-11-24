@@ -10,4 +10,5 @@ if (sprite_index == sPlayerLand)
 if (sprite_index == sPlayerSlash)
 {
 	slashing = false;
+	hasSlashJumped = false;
 }

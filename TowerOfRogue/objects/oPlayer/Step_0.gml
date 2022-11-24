@@ -102,6 +102,7 @@ else
 {
 	airborne = false;	
 	jumpBuffer = 5;
+	hasSlashed = false;
 }
 
 // Check if player is wallsliding
@@ -160,13 +161,15 @@ if (key_jump) && (canJump) && (airborne) && (!slashing)
 }
 
 // Slash collision
-if(slashing)
+if(slashing && !hasSlashJumped)
 {
 	if(place_meeting(x,y+17,oWall))
 	{
 		vsp = -3;	
 		instance_create_layer(x,y+14,"VFX",oDustSlash);
 		airborne = true;
+		hasSlashed = true;
+		hasSlashJumped = true;
 		audio_play_sound(snd_Impact,5,false);
 	}
 }
@@ -181,7 +184,7 @@ if (jumpBuffer > 0) && (key_jump) && (canJump)
 }
 
 // Variable jump height
-if vsp < 0 && (!(key_jump)) //if you're moving upwards in the air but not holding down jump
+if vsp < 0 && (!(key_jump) && !hasSlashed) //if you're moving upwards in the air but not holding down jump
 {
 	vsp *= 0.85; //essentially, divide your vertical speed
 }
