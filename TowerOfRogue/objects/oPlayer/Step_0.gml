@@ -149,7 +149,7 @@ if (wallSliding && (key_jump) && (canJump))
 {
 	// Turn off wall sliding for a tiny amount of time
 	canWallSlide = false;
-	alarm[0] = room_speed * 0.3;
+	alarm[0] = room_speed * 0.2;
 	wallSliding = false;
 	vsp = -3;
 	wallDust = instance_create_layer(x,y,"VFX",oDustWall);
