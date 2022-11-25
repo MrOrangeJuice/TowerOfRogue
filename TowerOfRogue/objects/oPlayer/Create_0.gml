@@ -5,6 +5,7 @@ vsp = 0;
 grv = 0.15;
 walksp = 1;
 currentwalksp = 0;
+acceleration = 0.25;
 canJump = true;
 jumpBuffer = 0;
 airborne = false;

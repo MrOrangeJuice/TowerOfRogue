@@ -44,26 +44,32 @@ if(key_jump_released)
 // Build up speed depending on inputs
 if(key_left && !key_right)
 {
-	currentwalksp -= 0.25;
-	if(currentwalksp < (-walksp - 0.5))
+	if(currentwalksp == -walksp)
 	{
-		currentwalksp += 0.5;
+		// Don't do anything
 	}
-	else if(currentwalksp < -walksp)
+	else if(currentwalksp < -walksp) 
 	{
-		currentwalksp += 0.25;
+		currentwalksp += acceleration;
+	}
+	else
+	{
+		currentwalksp -= acceleration;
 	}
 }
 if(key_right && !key_left)
 {
-	currentwalksp += 0.25;
-	if(currentwalksp > (walksp + 0.5))
+	if(currentwalksp == walksp)
 	{
-		currentwalksp -= 0.5;
+		// Don't do anything
 	}
-	else if(currentwalksp > walksp)
+	else if(currentwalksp > walksp) 
 	{
-		currentwalksp -= 0.25;
+		currentwalksp -= acceleration;
+	}
+	else
+	{
+		currentwalksp += acceleration;
 	}
 }
 // Slow down if not moving
@@ -71,14 +77,14 @@ if (!(key_left || key_right) || (key_left && key_right))
 {
 	if(currentwalksp < 0)
 	{
-		currentwalksp += 0.25;
+		currentwalksp += acceleration;
 	}
 	if(currentwalksp > 0)
 	{
-		currentwalksp -= 0.25;
+		currentwalksp -= acceleration;
 	}
 }
-	
+
 hsp = currentwalksp;
 
 if(!wallSliding)
@@ -106,9 +112,14 @@ else
 }
 
 // Check if player is wallsliding
-if(airborne && place_meeting(x + hsp,y,oWall) && canWallSlide)
+if(airborne && place_meeting(x + (3 * sign(image_xscale)),y,oWall) && canWallSlide)
 {
 	wallSliding = true;
+	// Inch into wall if needed
+	while (!place_meeting(x+sign(image_xscale),y,oWall))
+	{
+		x = x + sign(image_xscale);
+	}
 }
 else
 {
@@ -121,7 +132,7 @@ if(wallSliding)
 	// Spawn wall dust
 	if(canSpawnWallDust)
 	{
-		instance_create_layer(x+random_range(-2,2),y+random_range(-2,2),"VFX",oDustWallSmall);
+		instance_create_layer(x + (sign(hsp) * 2) + random_range(-2,2),y + random_range(-2,2),"VFX",oDustWallSmall);
 		// Set wall dust timer
 		canSpawnWallDust = false;
 		alarm[1] = room_speed * 0.1;
@@ -138,13 +149,13 @@ if (wallSliding && (key_jump) && (canJump))
 {
 	// Turn off wall sliding for a tiny amount of time
 	canWallSlide = false;
-	alarm[0] = room_speed * 0.2;
+	alarm[0] = room_speed * 0.3;
 	wallSliding = false;
 	vsp = -3;
 	wallDust = instance_create_layer(x,y,"VFX",oDustWall);
 	if (hsp != 0) wallDust.image_xscale = sign(hsp);
 	// Set hsp to the opposite of your current direction
-	hsp = -sign(hsp);
+	currentwalksp = -sign(image_xscale) * 3.75;
 	audio_play_sound(snd_Jump, 5, false);
 	canJump = false;
 	// Swap sprite direction immediately
