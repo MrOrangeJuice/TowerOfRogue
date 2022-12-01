@@ -12,6 +12,7 @@ airborne = false;
 prevAirborne = false;
 landing = false;
 slashing = false;
+canSlash = true;
 hasSlashed = false;
 hasSlashJumped = false;
 canWallSlide = true;

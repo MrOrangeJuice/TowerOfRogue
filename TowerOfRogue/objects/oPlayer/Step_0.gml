@@ -163,11 +163,12 @@ if (wallSliding && (key_jump) && (canJump))
 }
 
 // Slash
-if (key_jump) && (canJump) && (airborne) && (!slashing)
+if (key_jump) && (canJump) && (airborne) && (!slashing) && (canSlash)
 {
-	slashing = true;
 	image_index = 0;
 	canJump = false;
+	canSlash = false;
+	slashing = true;
 	audio_play_sound(snd_Slash,5,false);
 }
 
@@ -222,16 +223,14 @@ if (place_meeting(x,y+vsp,oWall))
 }
 y = y + vsp;
 
-// Animation
-
 if(prevAirborne && !airborne)
 {
 	landing = true;
 	instance_create_layer(x,y,"VFX",oDustSmall);
 	audio_play_sound(snd_Land, 5, false);
-	sprite_index = sPlayerLand;
 }
 
+// Animation
 if(slashing)
 {
 	sprite_index = sPlayerSlash;	
@@ -261,6 +260,10 @@ else if(!landing)
 	{
 		sprite_index = sPlayerIdle;
 	}
+}
+else if(landing)
+{
+	sprite_index = sPlayerLand;	
 }
 
 if (hsp != 0 && !slashing) image_xscale = sign(hsp);
