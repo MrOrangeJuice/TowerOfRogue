@@ -1,20 +1,17 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "oDustWall",
+  "name": "oGem",
   "spriteId": {
-    "name": "sDustWall",
-    "path": "sprites/sDustWall/sDustWall.yy",
+    "name": "sGem",
+    "path": "sprites/sGem/sGem.yy",
   },
   "solid": false,
   "visible": true,
   "managed": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": {
-    "name": "oVFX",
-    "path": "objects/oVFX/oVFX.yy",
-  },
+  "parentObjectId": null,
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -31,7 +28,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "VFX",
-    "path": "folders/Objects/VFX.yy",
+    "name": "Objects",
+    "path": "folders/Objects.yy",
   },
 }

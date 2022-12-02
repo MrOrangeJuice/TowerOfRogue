@@ -1,10 +1,10 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "oDustWall",
+  "name": "oCoinVFX",
   "spriteId": {
-    "name": "sDustWall",
-    "path": "sprites/sDustWall/sDustWall.yy",
+    "name": "sCoinVFX",
+    "path": "sprites/sCoinVFX/sCoinVFX.yy",
   },
   "solid": false,
   "visible": true,
