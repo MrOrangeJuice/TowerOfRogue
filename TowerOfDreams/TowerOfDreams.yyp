@@ -1,7 +1,7 @@
 {
   "resourceType": "GMProject",
   "resourceVersion": "1.6",
-  "name": "TowerOfRogue",
+  "name": "TowerOfDreams",
   "resources": [
     {"id":{"name":"sTileset","path":"sprites/sTileset/sTileset.yy",},"order":0,},
     {"id":{"name":"oGem","path":"objects/oGem/oGem.yy",},"order":8,},
