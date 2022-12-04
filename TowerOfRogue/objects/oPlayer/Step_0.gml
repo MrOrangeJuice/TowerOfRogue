@@ -151,7 +151,7 @@ if (wallSliding && (key_jump) && (canJump))
 	canWallSlide = false;
 	alarm[0] = room_speed * 0.2;
 	wallSliding = false;
-	vsp = -3;
+	vsp = -2.75;
 	// Set hsp to the opposite of your current direction
 	currentwalksp = -sign(image_xscale) * 3.75;
 	audio_play_sound(snd_Jump, 5, false);
@@ -194,7 +194,7 @@ if(slashing && !hasSlashJumped)
 		airborne = true;
 		hasSlashed = true;
 		hasSlashJumped = true;
-		audio_play_sound(snd_Impact,5,false);
+		audio_play_sound(snd_Bumper,5,false);
 	}
 }
 
