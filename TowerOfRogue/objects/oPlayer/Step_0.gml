@@ -152,18 +152,18 @@ if (wallSliding && (key_jump) && (canJump))
 	alarm[0] = room_speed * 0.2;
 	wallSliding = false;
 	vsp = -3;
-	wallDust = instance_create_layer(x,y,"VFX",oDustWall);
-	if (hsp != 0) wallDust.image_xscale = sign(hsp);
 	// Set hsp to the opposite of your current direction
 	currentwalksp = -sign(image_xscale) * 3.75;
 	audio_play_sound(snd_Jump, 5, false);
+	wallDust = instance_create_layer(x,y,"VFX",oDustWall);
+	if (currentwalksp != 0) wallDust.image_xscale = -sign(currentwalksp);
 	canJump = false;
 	// Swap sprite direction immediately
 	if (hsp != 0) image_xscale = sign(hsp);
 }
 
 // Slash
-if (key_jump) && (canJump) && (airborne) && (!slashing) && (canSlash)
+if (key_jump) && (canJump) && (airborne) && (!slashing) && (canSlash) && (jumpBuffer <= 0)
 {
 	image_index = 0;
 	canJump = false;
@@ -179,6 +179,18 @@ if(slashing && !hasSlashJumped)
 	{
 		vsp = -3;	
 		instance_create_layer(x,y+14,"VFX",oDustSlash);
+		airborne = true;
+		hasSlashed = true;
+		hasSlashJumped = true;
+		audio_play_sound(snd_Impact,5,false);
+	}
+	
+	bumper = instance_place(x,y+17,oBumper);
+	if(bumper)
+	{
+		bumper.image_speed = 1;
+		vsp = -3;	
+		instance_create_layer(bumper.x+8,bumper.y,"VFX",oDustSlashBumper);
 		airborne = true;
 		hasSlashed = true;
 		hasSlashJumped = true;
