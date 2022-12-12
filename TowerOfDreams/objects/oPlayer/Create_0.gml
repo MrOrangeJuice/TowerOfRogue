@@ -1,0 +1,21 @@
+/// @description Init
+
+hsp = 0;
+vsp = 0;
+grv = 0.15;
+walksp = 1;
+currentwalksp = 0;
+acceleration = 0.25;
+canJump = true;
+jumpBuffer = 0;
+airborne = false;
+prevAirborne = false;
+landing = false;
+slashing = false;
+canSlash = true;
+hasSlashed = false;
+hasSlashJumped = false;
+canWallSlide = true;
+canSpawnWallDust = true;
+wallSliding = false;
+prevWallSliding = false;
