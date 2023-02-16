@@ -24,6 +24,7 @@
     {"name":"VFX","order":11,"path":"folders/Sprites/VFX.yy",},
     {"name":"Tile Sets","order":2,"path":"folders/Tile Sets.yy",},
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
+    {"name":"UI","order":15,"path":"folders/Sprites/UI.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"oGem","order":8,"path":"objects/oGem/oGem.yy",},
