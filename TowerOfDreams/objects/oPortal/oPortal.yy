@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "oDoor",
+  "name": "oPortal",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},"eventNum":0,"eventType":4,"isDnD":false,},
   ],
@@ -28,8 +28,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "sDoor",
-    "path": "sprites/sDoor/sDoor.yy",
+    "name": "sPortal",
+    "path": "sprites/sPortal/sPortal.yy",
   },
   "spriteMaskId": null,
   "visible": true,
