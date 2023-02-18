@@ -2,8 +2,19 @@
 // Update destination
 if (instance_exists(oPlayer))
 {
+	follow = oPlayer;
 	//xTo = follow.x;
 	yTo = follow.y;
+}
+else
+{
+	
+	if (instance_exists(oPortalEntry))
+	{
+		follow = oPortalEntry;
+		//xTo = follow.x;
+		yTo = follow.y;
+	}
 }
 
 // Update object position
