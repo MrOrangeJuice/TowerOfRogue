@@ -17,11 +17,18 @@ if (gamepad_button_check(0,gp_face1) || gamepad_button_check(4,gp_face1))
 	global.controller = 1;
 }
 
-if(key_jump)
+if(!global.paused)
 {
-	image_index = 1;	
+	if(key_jump)
+	{
+		image_index = 1;	
+	}
+	else
+	{
+		image_index = 0;	
+	}
 }
 else
 {
-	image_index = 0;	
+	
 }

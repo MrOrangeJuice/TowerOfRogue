@@ -16,19 +16,26 @@ if (gamepad_axis_value(0,gp_axislh) > 0.2 || gamepad_button_check(0,gp_padr) || 
 	global.controller = 1;
 }
 
-if(key_left && key_right)
+if(!global.paused)
 {
-	image_index = 3;	
-}
-else if(key_left)
-{
-	image_index = 1;	
-}
-else if(key_right)
-{
-	image_index = 2;	
+	if(key_left && key_right)
+	{
+		image_index = 3;	
+	}
+	else if(key_left)
+	{
+		image_index = 1;	
+	}
+	else if(key_right)
+	{
+		image_index = 2;	
+	}
+	else
+	{
+		image_index = 0;
+	}	
 }
 else
 {
-	image_index = 0;
+	
 }
