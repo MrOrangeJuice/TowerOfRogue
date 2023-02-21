@@ -47,14 +47,14 @@ if(key_pause)
 {
 	if(global.paused)
 	{
-		audio_play_sound(snd_PauseIn,5,false);
+		audio_play_sound(snd_PauseOut,5,false);
 		global.paused = false;
 		// Reset pause menu
 		pauseOption = 0;
 	}
 	else if(!global.paused && global.canPause)
 	{
-		audio_play_sound(snd_PauseOut,5,false);
+		audio_play_sound(snd_PauseIn,5,false);
 		global.paused = true;
 	}
 }
@@ -114,7 +114,46 @@ if(global.paused)
 	}
 }
 
+/*
 if(key_restart)
 {
 	SlideTransition(TRANS_MODE.RESTART);
+}
+*/
+
+// Record analog inputs for this frame
+if(gamepad_axis_value(0,gp_axislv) < -0.4)
+{
+	analogUpPrev = true;	
+}
+else
+{
+	analogUpPrev = false;	
+}
+
+if(gamepad_axis_value(0,gp_axislv) > 0.4)
+{
+	analogDownPrev = true;	
+}
+else
+{
+	analogDownPrev = false;	
+}
+
+if(gamepad_axis_value(4,gp_axislv) < -0.4)
+{
+	analogUpPrevD = true;	
+}
+else
+{
+	analogUpPrevD = false;	
+}
+
+if(gamepad_axis_value(4,gp_axislv) > 0.4)
+{
+	analogDownPrevD = true;	
+}
+else
+{
+	analogDownPrevD = false;	
 }
