@@ -11,7 +11,7 @@ if (sprite_index == sPlayerSlash)
 {
 	// Set slash cooldown
 	canSlash = false;
-	alarm[2] = room_speed * 0.3;
+	alarm[2] = room_speed * 0.2;
 	slashing = false;
 	hasSlashJumped = false;
 }

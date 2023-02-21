@@ -72,6 +72,7 @@
     {"name":"snd_PauseOut","order":9,"path":"sounds/snd_PauseOut/snd_PauseOut.yy",},
     {"name":"sPlayerWallSlide","order":5,"path":"sprites/sPlayerWallSlide/sPlayerWallSlide.yy",},
     {"name":"sSlash","order":2,"path":"sprites/sSlash/sSlash.yy",},
+    {"name":"sPlayerBig","order":9,"path":"sprites/sPlayerBig/sPlayerBig.yy",},
     {"name":"oPortalEntry","order":4,"path":"objects/oPortalEntry/oPortalEntry.yy",},
     {"name":"sPalette","order":1,"path":"sprites/sPalette/sPalette.yy",},
     {"name":"sPlayerPortal","order":7,"path":"sprites/sPlayerPortal/sPlayerPortal.yy",},

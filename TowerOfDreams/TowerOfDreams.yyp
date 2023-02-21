@@ -97,6 +97,7 @@
     {"id":{"name":"sDust","path":"sprites/sDust/sDust.yy",},"order":0,},
     {"id":{"name":"sPlayerWallSlide","path":"sprites/sPlayerWallSlide/sPlayerWallSlide.yy",},"order":5,},
     {"id":{"name":"sSlash","path":"sprites/sSlash/sSlash.yy",},"order":2,},
+    {"id":{"name":"sPlayerBig","path":"sprites/sPlayerBig/sPlayerBig.yy",},"order":9,},
     {"id":{"name":"oPortalEntry","path":"objects/oPortalEntry/oPortalEntry.yy",},"order":4,},
     {"id":{"name":"sPalette","path":"sprites/sPalette/sPalette.yy",},"order":1,},
     {"id":{"name":"sPlayerPortal","path":"sprites/sPlayerPortal/sPlayerPortal.yy",},"order":7,},
