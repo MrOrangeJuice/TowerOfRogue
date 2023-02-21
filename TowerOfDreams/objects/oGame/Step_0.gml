@@ -100,6 +100,14 @@ if(global.paused)
 				window_set_fullscreen(!window_get_fullscreen());
 				break;
 			case 2:
+				// Reset pause menu
+				if(instance_exists(oPlayer))
+				{
+					oPlayer.canJump = false;	
+				}
+				pauseOption = 0;
+				global.paused = false;
+				global.canPause = false;
 				SlideTransition(TRANS_MODE.GOTO, rTitle);
 				break;
 		}
