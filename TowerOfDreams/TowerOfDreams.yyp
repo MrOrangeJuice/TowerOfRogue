@@ -54,6 +54,7 @@
     {"id":{"name":"sPlayerIdle","path":"sprites/sPlayerIdle/sPlayerIdle.yy",},"order":1,},
     {"id":{"name":"oDustSlashBumper","path":"objects/oDustSlashBumper/oDustSlashBumper.yy",},"order":7,},
     {"id":{"name":"sStartController","path":"sprites/sStartController/sStartController.yy",},"order":6,},
+    {"id":{"name":"sHUD","path":"sprites/sHUD/sHUD.yy",},"order":4,},
     {"id":{"name":"oFullCamera","path":"objects/oFullCamera/oFullCamera.yy",},"order":12,},
     {"id":{"name":"oDustSmall","path":"objects/oDustSmall/oDustSmall.yy",},"order":2,},
     {"id":{"name":"sJumpController","path":"sprites/sJumpController/sJumpController.yy",},"order":3,},

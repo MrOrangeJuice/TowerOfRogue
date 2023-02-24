@@ -36,6 +36,7 @@
     {"name":"sPlayerIdle","order":1,"path":"sprites/sPlayerIdle/sPlayerIdle.yy",},
     {"name":"oDustSlashBumper","order":7,"path":"objects/oDustSlashBumper/oDustSlashBumper.yy",},
     {"name":"sStartController","order":6,"path":"sprites/sStartController/sStartController.yy",},
+    {"name":"sHUD","order":4,"path":"sprites/sHUD/sHUD.yy",},
     {"name":"oFullCamera","order":12,"path":"objects/oFullCamera/oFullCamera.yy",},
     {"name":"oDustSmall","order":2,"path":"objects/oDustSmall/oDustSmall.yy",},
     {"name":"sJumpController","order":3,"path":"sprites/sJumpController/sJumpController.yy",},

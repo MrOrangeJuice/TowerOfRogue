@@ -11,6 +11,9 @@ if(global.paused)
 // Draw HUD
 if(room != rTitle)
 {
+	// Draw HUD Background
+	draw_sprite(sHUD,0,1,1);
+	
 	healthToDraw = global.health;
 	xMod = 0;
 	// Generate healthbar
@@ -22,13 +25,13 @@ if(room != rTitle)
 			// If it's an even number, draw a full heart
 			if(i % 2 == 1)
 			{
-				draw_sprite(sHeartUISmall,0,1 + (xMod * 9),1);	
+				draw_sprite(sHeartUISmall,0,7 + (xMod * 9),7);	
 				xMod++;
 			}
 			// Otherwise, draw a half heart
 			else
 			{
-				draw_sprite(sHeartUISmall,1,1 + (xMod * 9),1);	
+				draw_sprite(sHeartUISmall,1,7 + (xMod * 9),7);	
 			}
 		}
 		else
@@ -36,7 +39,7 @@ if(room != rTitle)
 			// Draw an empty heart every other time
 			if(i % 2 == 1)
 			{
-				draw_sprite(sHeartUISmall,2,1 + (xMod * 9),1);	
+				draw_sprite(sHeartUISmall,2,7 + (xMod * 9),7);	
 				xMod++;
 			}
 		}
@@ -45,6 +48,6 @@ if(room != rTitle)
 	
 	// Draw Coins
 	draw_set_halign(fa_left);
-	draw_sprite(sGem,0,1,9);
-	draw_text(11,5,global.coins);
+	draw_sprite(sGem,0,7,15);
+	draw_text(17,11,global.coins);
 }
