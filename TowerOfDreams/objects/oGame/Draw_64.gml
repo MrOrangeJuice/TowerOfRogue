@@ -22,13 +22,13 @@ if(room != rTitle)
 			// If it's an even number, draw a full heart
 			if(i % 2 == 1)
 			{
-				draw_sprite(sHeartUI,0,1 + (xMod * 13),1);	
+				draw_sprite(sHeartUISmall,0,1 + (xMod * 9),1);	
 				xMod++;
 			}
 			// Otherwise, draw a half heart
 			else
 			{
-				draw_sprite(sHeartUI,1,1 + (xMod * 13),1);	
+				draw_sprite(sHeartUISmall,1,1 + (xMod * 9),1);	
 			}
 		}
 		else
@@ -36,10 +36,15 @@ if(room != rTitle)
 			// Draw an empty heart every other time
 			if(i % 2 == 1)
 			{
-				draw_sprite(sHeartUI,2,1 + (xMod * 13),1);	
+				draw_sprite(sHeartUISmall,2,1 + (xMod * 9),1);	
 				xMod++;
 			}
 		}
 		healthToDraw--;
 	}
+	
+	// Draw Coins
+	draw_set_halign(fa_left);
+	draw_sprite(sGem,0,1,9);
+	draw_text(11,5,global.coins);
 }
