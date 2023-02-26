@@ -13,3 +13,5 @@ analogUpPrev = false;
 analogDownPrev = false;
 analogUpPrevD = false;
 analogDownPrevD = false;
+coinTextScale = 1;
+healthTextScale = 1;
