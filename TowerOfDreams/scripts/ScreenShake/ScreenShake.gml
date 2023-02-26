@@ -13,7 +13,7 @@ function ScreenShake(argument0, argument1) {
 		}
 	}
 	
-	with (oMultiplayerCamera)
+	with (oFullCamera)
 	{
 		if(argument0 > shake_remain)
 		{

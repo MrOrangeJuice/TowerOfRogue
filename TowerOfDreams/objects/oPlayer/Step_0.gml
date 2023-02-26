@@ -197,11 +197,26 @@ if(!global.paused)
 			bumper.image_speed = 1;
 			bumper.hit = true;
 			vsp = -3;	
+			ScreenShake(2,10);
 			instance_create_layer(bumper.x+8,bumper.y,"VFX",oDustSlashBumper);
 			airborne = true;
 			hasSlashed = true;
 			hasSlashJumped = true;
 			audio_play_sound(snd_Bumper,5,false);
+		}
+		
+		enemy = instance_place(x,y+17,oEnemy);
+		if(enemy)
+		{
+			enemy.flash = 5;
+			enemy.hp--;
+			vsp = -3;
+			ScreenShake(2,10);
+			instance_create_layer(enemy.x,enemy.y-4,"VFX",oDustSlashBumper);
+			airborne = true;
+			hasSlashed = true;
+			hasSlashJumped = true;
+			audio_play_sound(snd_Hit,5,false);
 		}
 	}
 
