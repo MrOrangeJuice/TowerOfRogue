@@ -36,7 +36,7 @@ if (gamepad_button_check_released(0,gp_face1) || gamepad_button_check_released(4
 }
 
 
-if(!global.paused)
+if(!global.paused && !global.hitStop)
 {
 	// Play animations
 	image_speed = 1;
@@ -175,6 +175,7 @@ if(!global.paused)
 		canJump = false;
 		canSlash = false;
 		slashing = true;
+		hit = false;
 		audio_play_sound(snd_Slash,5,false);
 	}
 
@@ -197,7 +198,6 @@ if(!global.paused)
 			bumper.image_speed = 1;
 			bumper.hit = true;
 			vsp = -3;	
-			ScreenShake(2,10);
 			instance_create_layer(bumper.x+8,bumper.y,"VFX",oDustSlashBumper);
 			airborne = true;
 			hasSlashed = true;
@@ -234,6 +234,21 @@ if(!global.paused)
 	{
 		vsp *= 0.85; //essentially, divide your vertical speed
 	}
+	
+	if(!invulnerable)
+	{
+		enemyHitRight = instance_place(x+(1*image_xscale),y,oEnemy);
+		enemyHitLeft = instance_place(x-(1*image_xscale),y,oEnemy);
+		
+		if(enemyHitRight)
+		{
+			TakeDamage(1,2.75,3.5);
+		}
+		else if(enemyHitLeft)
+		{
+			TakeDamage(1,2.75,-3.5);	
+		}
+	}
 
 	// Horizontal Collision
 	if (place_meeting(x+hsp,y,oWall))
@@ -262,10 +277,15 @@ if(!global.paused)
 		landing = true;
 		instance_create_layer(x,y,"VFX",oDustSmall);
 		audio_play_sound(snd_Land, 5, false);
+		hit = false;
 	}
 
 	// Animation
-	if(slashing)
+	if(hit)
+	{
+		sprite_index = sPlayerHit;	
+	}
+	else if(slashing)
 	{
 		sprite_index = sPlayerSlash;	
 	}
@@ -300,7 +320,7 @@ if(!global.paused)
 		sprite_index = sPlayerLand;	
 	}
 
-	if (hsp != 0 && !slashing) image_xscale = sign(hsp);
+	if (hsp != 0 && !slashing && !hit) image_xscale = sign(hsp);
 
 	prevAirborne = airborne;
 	prevWallSliding = wallSliding;

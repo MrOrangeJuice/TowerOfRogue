@@ -2,7 +2,7 @@
 
 event_inherited();
 
-if(!global.paused)
+if(!global.paused && !global.hitStop)
 {
 	image_speed = 1;
 	image_xscale = dir;

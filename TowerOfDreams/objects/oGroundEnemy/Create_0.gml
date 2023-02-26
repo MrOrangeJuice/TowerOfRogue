@@ -2,7 +2,7 @@
 
 event_inherited();
 
-hp = 10;
+hp = 3;
 hsp = 0.5;
 grv = 0.15;
 vsp = 0;

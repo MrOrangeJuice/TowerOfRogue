@@ -108,6 +108,7 @@ if(global.paused)
 				pauseOption = 0;
 				global.paused = false;
 				global.canPause = false;
+				global.health = global.maxHealth;
 				SlideTransition(TRANS_MODE.GOTO, rTitle);
 				break;
 		}

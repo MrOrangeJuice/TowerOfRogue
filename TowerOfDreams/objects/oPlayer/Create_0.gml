@@ -19,3 +19,5 @@ canWallSlide = true;
 canSpawnWallDust = true;
 wallSliding = false;
 prevWallSliding = false;
+invulnerable = false;
+hit = false;
