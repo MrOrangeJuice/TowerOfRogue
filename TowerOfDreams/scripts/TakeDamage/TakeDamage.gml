@@ -15,7 +15,8 @@ function TakeDamage(argument0,argument1,argument2)
 			invulnerable = 100;
 			hit = true;
 			ScreenShake(2,10);
-			instance_create_layer(0,0,"Instances",oHitstop);
+			hitStop = instance_create_layer(0,0,"Instances",oHitstop);
+			hitStop.hitStopTime = 0.1;
 		}
 		with (oGame) healthTextScale = 1.15;
 	}
