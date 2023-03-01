@@ -1,15 +1,18 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "oWall",
+  "name": "oEnemyEliteDeath",
   "eventList": [],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Level Objects",
-    "path": "folders/Objects/Level Objects.yy",
+    "name": "VFX",
+    "path": "folders/Objects/VFX.yy",
   },
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "oEnemyDeath",
+    "path": "objects/oEnemyDeath/oEnemyDeath.yy",
+  },
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
@@ -26,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "sWall",
-    "path": "sprites/sWall/sWall.yy",
+    "name": "sEnemyExplosionElite",
+    "path": "sprites/sEnemyExplosionElite/sEnemyExplosionElite.yy",
   },
   "spriteMaskId": null,
   "visible": true,

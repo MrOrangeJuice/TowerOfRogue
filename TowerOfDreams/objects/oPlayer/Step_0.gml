@@ -248,6 +248,28 @@ if(!global.paused && !global.hitStop)
 		{
 			TakeDamage(1,2.75,-3.5);	
 		}
+		
+		spikeHitRight = instance_place(x+(1*image_xscale),y,oSpikes);
+		spikeHitLeft = instance_place(x-(1*image_xscale),y,oSpikes);
+		spikeHitDown = instance_place(x,y+1,oSpikes);
+		spikeHitUp = instance_place(x,y-1,oSpikes);
+		
+		if(spikeHitRight)
+		{
+			TakeDamage(1,2.75,3.5);
+		}
+		else if(spikeHitLeft)
+		{	
+			TakeDamage(1,2.75,-3.5);
+		}
+		else if(spikeHitDown)
+		{
+			TakeDamage(1,3,0);	
+		}
+		else if(spikeHitUp)
+		{
+			TakeDamage(1,-1,0);	
+		}
 	}
 
 	// Horizontal Collision
