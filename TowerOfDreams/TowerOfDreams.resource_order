@@ -38,6 +38,7 @@
     {"name":"snd_Impact","order":3,"path":"sounds/snd_Impact/snd_Impact.yy",},
     {"name":"oGame","order":10,"path":"objects/oGame/oGame.yy",},
     {"name":"sPlayerIdle","order":1,"path":"sprites/sPlayerIdle/sPlayerIdle.yy",},
+    {"name":"rTutorialOld","order":4,"path":"rooms/rTutorialOld/rTutorialOld.yy",},
     {"name":"oDustSlashBumper","order":9,"path":"objects/oDustSlashBumper/oDustSlashBumper.yy",},
     {"name":"sStartController","order":6,"path":"sprites/sStartController/sStartController.yy",},
     {"name":"sHUD","order":4,"path":"sprites/sHUD/sHUD.yy",},
