@@ -169,7 +169,7 @@ if(!global.paused && !global.hitStop)
 	}
 
 	// Slash
-	if (key_jump) && (canJump) && (airborne) && (!slashing) && (canSlash) && (jumpBuffer <= 0)
+	if (key_jump) && (canJump) && (airborne) && (!slashing) && (canSlash) && (jumpBuffer <= 0) && (global.sword)
 	{
 		image_index = 0;
 		canJump = false;

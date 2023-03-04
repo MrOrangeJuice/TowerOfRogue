@@ -8,6 +8,7 @@ global.canPause = false;
 global.coins = 0;
 global.maxHealth = 6;
 global.health = 6;
+global.sword = true;
 pauseOption = 0;
 analogUpPrev = false;
 analogDownPrev = false;
