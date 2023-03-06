@@ -1,11 +1,15 @@
 /// @description End Level
 
-if(room == rTutorial)
+if(room == rHub)
+{
+	SlideTransition(TRANS_MODE.GOTO,rTutorial);	
+}
+else if(room == rTutorial)
 {
 	SlideTransition(TRANS_MODE.NEXT);
 }
-else
+else if(room == rTutorial2)
 {
-	SlideTransition(TRANS_MODE.RESTART);	
+	SlideTransition(TRANS_MODE.NEXT);	
 }
 instance_destroy();
