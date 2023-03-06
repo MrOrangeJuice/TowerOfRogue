@@ -11,5 +11,7 @@ else if(room == rTutorial)
 else if(room == rTutorial2)
 {
 	SlideTransition(TRANS_MODE.NEXT);	
+	if(!global.tutorialCompleted) global.tutorialCompleted = true;
+	Save();
 }
 instance_destroy();

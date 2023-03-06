@@ -5,7 +5,27 @@ draw_set_font(fUI);
 // Draw Pause Menu
 if(global.paused)
 {
-	draw_sprite(sPauseMenu,pauseOption,80,40);
+	draw_sprite(sPauseMenu,menuOption,80,40);
+}
+
+// Draw Main Menu
+if(room == rTitle)
+{
+	if (!options)
+	{
+		draw_sprite(sMainMenu,menuOption,80,76);
+	}
+	else
+	{
+		if(!deleted)
+		{
+			draw_sprite(sOptionsMenu,menuOption,80,76);
+		}
+		else
+		{
+			draw_sprite(sOptionsMenuDeletedSave,menuOption,80,76);	
+		}
+	}
 }
 
 // Draw HUD

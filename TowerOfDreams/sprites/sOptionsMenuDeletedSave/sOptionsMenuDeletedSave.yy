@@ -1,10 +1,10 @@
 {
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
-  "name": "sPauseMenu",
+  "name": "sOptionsMenuDeletedSave",
   "bbox_bottom": 63,
   "bbox_left": 0,
-  "bbox_right": 95,
+  "bbox_right": 127,
   "bbox_top": 0,
   "bboxMode": 0,
   "collisionKind": 1,
@@ -14,8 +14,8 @@
   "For3D": false,
   "frames": [
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"da0698b7-33d0-429d-b8a6-cadef7c307e7",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"9f334e04-3a27-4990-bb95-abcca6bbe35a",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"6498f0ad-2a63-438f-b9df-76f8aa58f9e5",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"4221abba-b796-4ba7-bdc0-04fa9f58db70",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"4759e47f-0a1e-47e0-9365-622a3f6debf6",},
   ],
   "gridX": 0,
   "gridY": 0,
@@ -26,7 +26,7 @@
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"671fc788-62e6-42b5-84a9-8ef4f8300c84","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
-  "origin": 0,
+  "origin": 9,
   "parent": {
     "name": "UI",
     "path": "folders/Sprites/UI.yy",
@@ -35,7 +35,7 @@
   "sequence": {
     "resourceType": "GMSequence",
     "resourceVersion": "1.4",
-    "name": "sPauseMenu",
+    "name": "sOptionsMenuDeletedSave",
     "autoRecord": true,
     "backdropHeight": 768,
     "backdropImageOpacity": 0.5,
@@ -57,14 +57,14 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"da0698b7-33d0-429d-b8a6-cadef7c307e7","path":"sprites/sPauseMenu/sPauseMenu.yy",},},},"Disabled":false,"id":"713b2783-0910-477b-a8c1-ab734848a22b","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"9f334e04-3a27-4990-bb95-abcca6bbe35a","path":"sprites/sPauseMenu/sPauseMenu.yy",},},},"Disabled":false,"id":"5afd39fd-a753-4936-8028-f1fce2dc3df6","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"6498f0ad-2a63-438f-b9df-76f8aa58f9e5","path":"sprites/sPauseMenu/sPauseMenu.yy",},},},"Disabled":false,"id":"b5d6d917-539a-4abc-b707-98333e165343","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"da0698b7-33d0-429d-b8a6-cadef7c307e7","path":"sprites/sOptionsMenuDeletedSave/sOptionsMenuDeletedSave.yy",},},},"Disabled":false,"id":"e1c5a69d-05ca-4aaa-8f4d-3402222d80c2","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"4221abba-b796-4ba7-bdc0-04fa9f58db70","path":"sprites/sOptionsMenuDeletedSave/sOptionsMenuDeletedSave.yy",},},},"Disabled":false,"id":"de7fd9b3-5f2a-4d21-8cf7-e5e154a556ee","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"4759e47f-0a1e-47e0-9365-622a3f6debf6","path":"sprites/sOptionsMenuDeletedSave/sOptionsMenuDeletedSave.yy",},},},"Disabled":false,"id":"9cb72f50-dad2-4a86-a0d3-72c678adbfaa","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
     "volume": 1.0,
-    "xorigin": 0,
+    "xorigin": 16,
     "yorigin": 0,
   },
   "swatchColours": null,
@@ -75,5 +75,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 96,
+  "width": 128,
 }

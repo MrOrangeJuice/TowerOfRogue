@@ -50,7 +50,7 @@ if(key_pause)
 		audio_play_sound(snd_PauseOut,5,false);
 		global.paused = false;
 		// Reset pause menu
-		pauseOption = 0;
+		menuOption = 0;
 	}
 	else if(!global.paused && global.canPause)
 	{
@@ -59,57 +59,156 @@ if(key_pause)
 	}
 }
 
-if(global.paused)
+if(room == rTitle)
 {
 	if(key_up)
 	{
 		audio_play_sound(snd_MenuMove,5,false);
-		pauseOption--;
-		if(pauseOption <= -1)
+		menuOption--;
+		if(menuOption <= -1)
 		{
-			pauseOption = 2;	
+			menuOption = 2;	
 		}
 	}
 
 	if(key_down)
 	{
 		audio_play_sound(snd_MenuMove,5,false);
-		pauseOption++;
-		if(pauseOption >= 3)
+		menuOption++;
+		if(menuOption >= 3)
 		{
-			pauseOption = 0;	
+			menuOption = 0;	
 		}
 	}
 	
 	if(key_select)
 	{
 		audio_play_sound(snd_MenuSelect,5,false);
-		switch(pauseOption)
+		switch(menuOption)
 		{
 			case 0:
-				audio_play_sound(snd_PauseOut,5,false);
-				// Reset pause menu
-				if(instance_exists(oPlayer))
+				if(!options)
 				{
-					oPlayer.canJump = false;	
+					menuOption = 0;
+					if(!global.tutorialCompleted)
+					{
+						SlideTransition(TRANS_MODE.GOTO,rTutorial);
+					}
+					else
+					{
+						SlideTransition(TRANS_MODE.GOTO,rHub);
+					}
 				}
-				pauseOption = 0;
-				global.paused = false;	
+				else
+				{
+					window_set_fullscreen(!window_get_fullscreen());
+				}
+				break;
+			case 1:
+				if(!options)
+				{
+					options = true;
+				}
+				else
+				{
+					deleted = true;
+					// Delete Save
+					if(file_exists("savedata.ini")){
+						file_delete("savedata.ini");
+					}
+					global.tutorialCompleted = false;
+					// Make new default file
+					Save();
+				}
+				break;
+			case 2:
+				if(!options)
+				{
+					game_end();
+				}
+				else
+				{
+					options = false;
+					deleted = false;
+				}
+				break;
+		}
+	}
+}
+
+if(global.paused)
+{
+	if(key_up)
+	{
+		audio_play_sound(snd_MenuMove,5,false);
+		menuOption--;
+		if(menuOption <= -1)
+		{
+			menuOption = 2;	
+		}
+	}
+
+	if(key_down)
+	{
+		audio_play_sound(snd_MenuMove,5,false);
+		menuOption++;
+		if(menuOption >= 3)
+		{
+			menuOption = 0;	
+		}
+	}
+	
+	if(key_select)
+	{
+		audio_play_sound(snd_MenuSelect,5,false);
+		switch(menuOption)
+		{
+			case 0:
+				if(room != rTitle)
+				{
+					audio_play_sound(snd_PauseOut,5,false);
+					// Reset pause menu
+					if(instance_exists(oPlayer))
+					{
+						oPlayer.canJump = false;	
+					}
+					menuOption = 0;
+					global.paused = false;	
+				}
+				else
+				{
+					if(!global.tutorialCompleted)
+					{
+						SlideTransition(TRANS_MODE.GOTO,rTutorial);
+					}
+					else
+					{
+						SlideTransition(TRANS_MODE.GOTO,rHub);
+					}
+				}
 				break;
 			case 1:
 				window_set_fullscreen(!window_get_fullscreen());
 				break;
 			case 2:
-				// Reset pause menu
-				if(instance_exists(oPlayer))
+				if(room != rTitle)
 				{
-					oPlayer.canJump = false;	
+					// Reset pause menu
+					if(instance_exists(oPlayer))
+					{
+						oPlayer.canJump = false;	
+					}
+					menuOption = 0;
+					global.sword = true;
+					global.paused = false;
+					global.canPause = false;
+					global.health = global.maxHealth;
+					SlideTransition(TRANS_MODE.GOTO, rTitle);
 				}
-				pauseOption = 0;
-				global.paused = false;
-				global.canPause = false;
-				global.health = global.maxHealth;
-				SlideTransition(TRANS_MODE.GOTO, rTitle);
+				else
+				{
+					game_end();
+				}
 				break;
 		}
 	}

@@ -9,7 +9,8 @@ global.coins = 0;
 global.maxHealth = 6;
 global.health = 6;
 global.sword = true;
-pauseOption = 0;
+global.tutorialCompleted = false;
+menuOption = 0;
 analogUpPrev = false;
 analogDownPrev = false;
 analogUpPrevD = false;
@@ -17,3 +18,7 @@ analogDownPrevD = false;
 coinTextScale = 1;
 healthTextScale = 1;
 itemTextScale = 1;
+options = false;
+deleted = false;
+
+Load();

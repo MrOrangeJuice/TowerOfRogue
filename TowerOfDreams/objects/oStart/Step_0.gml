@@ -35,5 +35,12 @@ else
 if(key_jump)
 {
 	audio_play_sound(snd_MenuSelect,5,false);
-	SlideTransition(TRANS_MODE.GOTO,rTutorial);
+	if(!global.tutorialCompleted)
+	{
+		SlideTransition(TRANS_MODE.GOTO,rTutorial);
+	}
+	else
+	{
+		SlideTransition(TRANS_MODE.GOTO,rHub);
+	}
 }
