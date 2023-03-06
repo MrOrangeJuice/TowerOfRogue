@@ -16,3 +16,4 @@ analogUpPrevD = false;
 analogDownPrevD = false;
 coinTextScale = 1;
 healthTextScale = 1;
+itemTextScale = 1;
