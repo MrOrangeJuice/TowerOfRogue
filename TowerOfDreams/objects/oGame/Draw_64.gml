@@ -76,4 +76,7 @@ if(room != rTitle)
 	// Draw item box
 	itemTextScale = max(itemTextScale * .95, 1);
 	draw_sprite_stretched(sItemBox,0,40,1,16*itemTextScale,16*itemTextScale);
+	
+	// Draw item in box
+	if(global.item != -1) draw_sprite_stretched(global.itemSprites[global.item],0,44,5,8*itemTextScale,8*itemTextScale);
 }

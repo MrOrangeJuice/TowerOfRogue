@@ -14,16 +14,15 @@ if ((gamepad_axis_value(0,gp_axislv) < -0.4 && analogUpPrev == false) || gamepad
 	analogUpPrev = true;
 }
 
-if(key_up)
-{
-	global.inARun = true;
-	audio_play_sound(snd_Door,5,false);
-	PickNextLevel();	
-}
-
 if(place_meeting(x,y,oPlayer))
 {
 	colliding = true;	
+	if(key_up)
+	{
+		global.inARun = true;
+		audio_play_sound(snd_Door,5,false);
+		PickNextLevel();	
+	}
 }
 else
 {
