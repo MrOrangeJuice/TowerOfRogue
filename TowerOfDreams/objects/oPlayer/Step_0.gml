@@ -4,8 +4,9 @@ key_left = keyboard_check(ord("A")) || keyboard_check(vk_left);
 key_right = keyboard_check(ord("D")) || keyboard_check(vk_right);
 key_jump = keyboard_check(vk_space) || keyboard_check(ord("Z")) || keyboard_check(ord("P"));
 key_jump_released = keyboard_check_released(vk_space) || keyboard_check_released(ord("Z")) || keyboard_check_released(ord("P"));
+key_item = keyboard_check_pressed(ord("X")) || keyboard_check_pressed(ord("O"));
 
-if (key_left) || (key_right) || (key_jump)
+if (key_left) || (key_right) || (key_jump) || (key_item)
 {
 	global.controller = 0;
 }
@@ -32,6 +33,12 @@ if (gamepad_button_check(0,gp_face1) || gamepad_button_check(4,gp_face1))
 if (gamepad_button_check_released(0,gp_face1) || gamepad_button_check_released(4,gp_face1))
 {
 	key_jump_released = 1;
+	global.controller = 1;
+}
+
+if (gamepad_button_check_pressed(0,gp_face2) || gamepad_button_check_pressed(0,gp_face3) || gamepad_button_check_pressed(4,gp_face2) || gamepad_button_check_pressed(4,gp_face3))
+{
+	key_item = 1;
 	global.controller = 1;
 }
 
@@ -300,6 +307,20 @@ if(!global.paused && !global.hitStop)
 		instance_create_layer(x,y,"VFX",oDustSmall);
 		audio_play_sound(snd_Land, 5, false);
 		hit = false;
+	}
+	
+	// Items
+	// Give player additional functionality depending on what item they're holding
+	switch(global.item)
+	{
+		// Kunai
+		case 0:
+			if(key_item)
+			{
+				kunai = instance_create_layer(x+(4*image_xscale),y,"Walls",oKunai);
+				kunai.initialDir = image_xscale;
+			}
+			break;			
 	}
 
 	// Animation

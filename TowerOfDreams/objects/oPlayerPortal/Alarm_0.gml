@@ -17,6 +17,8 @@ else
 	}
 	else if(room == rTutorial2)
 	{
+		// Restore health
+		global.health = global.maxHealth;
 		SlideTransition(TRANS_MODE.NEXT);	
 		if(!global.tutorialCompleted) global.tutorialCompleted = true;
 		Save();

@@ -14,4 +14,5 @@ if(other.canGrab)
 	global.item = other.itemId;
 	instance_destroy(other);
 	instance_create_layer(other.x,other.y,"CoinVFX",oItemVFX);
+	audio_play_sound(snd_Item,5,false);
 }
