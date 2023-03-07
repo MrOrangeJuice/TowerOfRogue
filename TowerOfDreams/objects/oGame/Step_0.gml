@@ -164,51 +164,35 @@ if(global.paused)
 		switch(menuOption)
 		{
 			case 0:
-				if(room != rTitle)
+				audio_play_sound(snd_PauseOut,5,false);
+				// Reset pause menu
+				if(instance_exists(oPlayer))
 				{
-					audio_play_sound(snd_PauseOut,5,false);
-					// Reset pause menu
-					if(instance_exists(oPlayer))
-					{
-						oPlayer.canJump = false;	
-					}
-					menuOption = 0;
-					global.paused = false;	
+					oPlayer.canJump = false;	
 				}
-				else
-				{
-					if(!global.tutorialCompleted)
-					{
-						SlideTransition(TRANS_MODE.GOTO,rTutorial);
-					}
-					else
-					{
-						SlideTransition(TRANS_MODE.GOTO,rHub);
-					}
-				}
+				menuOption = 0;
+				global.paused = false;	
 				break;
 			case 1:
 				window_set_fullscreen(!window_get_fullscreen());
 				break;
 			case 2:
-				if(room != rTitle)
+				// Reset pause menu
+				if(instance_exists(oPlayer))
 				{
-					// Reset pause menu
-					if(instance_exists(oPlayer))
-					{
-						oPlayer.canJump = false;	
-					}
-					menuOption = 0;
-					global.sword = true;
-					global.paused = false;
-					global.canPause = false;
-					global.health = global.maxHealth;
-					SlideTransition(TRANS_MODE.GOTO, rTitle);
+					oPlayer.canJump = false;	
 				}
-				else
-				{
-					game_end();
-				}
+				menuOption = 0;
+				global.sword = true;
+				global.paused = false;
+				global.canPause = false;
+				global.health = global.maxHealth;
+				// Reset run
+				global.usedArray = [false,false,false,false,false];
+				global.inARun = false;
+				global.coins = 0;
+				global.levelCount = 0;
+				SlideTransition(TRANS_MODE.GOTO, rTitle);
 				break;
 		}
 	}
