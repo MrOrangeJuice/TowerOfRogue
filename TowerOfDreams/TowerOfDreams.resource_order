@@ -32,6 +32,7 @@
   "ResourceOrderSettings": [
     {"name":"snd_EnemyDeath","order":11,"path":"sounds/snd_EnemyDeath/snd_EnemyDeath.yy",},
     {"name":"oGem","order":8,"path":"objects/oGem/oGem.yy",},
+    {"name":"oDoor","order":23,"path":"objects/oDoor/oDoor.yy",},
     {"name":"oSlashTutorial","order":3,"path":"objects/oSlashTutorial/oSlashTutorial.yy",},
     {"name":"sSlashController","order":4,"path":"sprites/sSlashController/sSlashController.yy",},
     {"name":"rTutorial2","order":3,"path":"rooms/rTutorial2/rTutorial2.yy",},
@@ -78,6 +79,7 @@
     {"name":"oSwordShrine","order":21,"path":"objects/oSwordShrine/oSwordShrine.yy",},
     {"name":"oDustWall","order":3,"path":"objects/oDustWall/oDustWall.yy",},
     {"name":"sEnemyExplosionElite","order":8,"path":"sprites/sEnemyExplosionElite/sEnemyExplosionElite.yy",},
+    {"name":"sChest","order":8,"path":"sprites/sChest/sChest.yy",},
     {"name":"sDustWall","order":2,"path":"sprites/sDustWall/sDustWall.yy",},
     {"name":"sHoldJumpController","order":10,"path":"sprites/sHoldJumpController/sHoldJumpController.yy",},
     {"name":"sHeartUISmall","order":3,"path":"sprites/sHeartUISmall/sHeartUISmall.yy",},
