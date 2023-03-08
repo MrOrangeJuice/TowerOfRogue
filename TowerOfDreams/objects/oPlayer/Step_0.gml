@@ -4,9 +4,10 @@ key_left = keyboard_check(ord("A")) || keyboard_check(vk_left);
 key_right = keyboard_check(ord("D")) || keyboard_check(vk_right);
 key_jump = keyboard_check(vk_space) || keyboard_check(ord("Z")) || keyboard_check(ord("P"));
 key_jump_released = keyboard_check_released(vk_space) || keyboard_check_released(ord("Z")) || keyboard_check_released(ord("P"));
-key_item = keyboard_check_pressed(ord("X")) || keyboard_check_pressed(ord("O"));
+key_item_pressed = keyboard_check_pressed(ord("X")) || keyboard_check_pressed(ord("O")) || keyboard_check_pressed(vk_lshift);
+key_item = keyboard_check(ord("X")) || keyboard_check(ord("O")) || keyboard_check(vk_lshift);
 
-if (key_left) || (key_right) || (key_jump) || (key_item)
+if (key_left) || (key_right) || (key_jump) || (key_item) || (key_item_pressed)
 {
 	global.controller = 0;
 }
@@ -37,6 +38,18 @@ if (gamepad_button_check_released(0,gp_face1) || gamepad_button_check_released(4
 }
 
 if (gamepad_button_check_pressed(0,gp_face2) || gamepad_button_check_pressed(0,gp_face3) || gamepad_button_check_pressed(4,gp_face2) || gamepad_button_check_pressed(4,gp_face3))
+{
+	key_item_pressed = 1;
+	global.controller = 1;
+}
+
+if (gamepad_button_check_pressed(0,gp_face2) || gamepad_button_check_pressed(0,gp_face3) || gamepad_button_check_pressed(4,gp_face2) || gamepad_button_check_pressed(4,gp_face3))
+{
+	key_item_pressed = 1;
+	global.controller = 1;
+}
+
+if (gamepad_button_check(0,gp_face2) || gamepad_button_check(0,gp_face3) || gamepad_button_check(4,gp_face2) || gamepad_button_check(4,gp_face3))
 {
 	key_item = 1;
 	global.controller = 1;
@@ -315,12 +328,47 @@ if(!global.paused && !global.hitStop)
 	{
 		// Kunai
 		case 0:
-			if(key_item)
+			if(key_item_pressed)
 			{
-				kunai = instance_create_layer(x+(4*image_xscale),y,"Walls",oKunai);
-				kunai.initialDir = image_xscale;
+				if(!wallSliding)
+				{
+					kunai = instance_create_layer(x+(4*image_xscale),y,"Walls",oKunai);
+					kunai.initialDir = image_xscale;
+				}
+				else
+				{
+					kunai = instance_create_layer(x+(4*-image_xscale),y,"Walls",oKunai);
+					kunai.initialDir = -image_xscale;
+				}
 			}
-			break;			
+			break;	
+		// Boots
+		case 1:
+			if(key_item && !airborne)
+			{
+				walksp = 1.5;
+				if(!running)
+				{
+					running = true;
+					initialRunDir = image_xscale;
+				}
+			}
+			else if(!key_item && airborne)
+			{
+				// Reset your speed if you turn around in midair without holding run
+				if(image_xscale != initialRunDir)
+				{
+					walksp = 1;
+				}
+			}
+			else if(!airborne)
+			{
+				walksp = 1;	
+				if(running)
+				{
+					running = false;
+				}
+			}
 	}
 
 	// Animation
@@ -351,6 +399,14 @@ if(!global.paused && !global.hitStop)
 	{
 		if (hsp != 0)
 		{
+			if (running)
+			{
+				image_speed = 1.5;	
+			}
+			else
+			{
+				image_speed = 1;	
+			}
 			sprite_index = sPlayerRun;
 		}
 		else

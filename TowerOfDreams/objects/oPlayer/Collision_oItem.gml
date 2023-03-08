@@ -3,6 +3,10 @@
 if(other.canGrab)
 {
 	with(oGame) itemTextScale = 1.3;
+	
+	// Reset walksp in case of boots
+	walksp = 1;
+	running = false;
 
 	// If you already have an item, drop it on the ground
 	if(global.item != -1)
