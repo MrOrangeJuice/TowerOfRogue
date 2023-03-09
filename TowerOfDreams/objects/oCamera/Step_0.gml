@@ -15,6 +15,12 @@ else
 		//xTo = follow.x;
 		yTo = follow.y;
 	}
+	else if (instance_exists(oPipe))
+	{
+		follow = oPipe;
+		//xTo = follow.x;
+		yTo = follow.y;
+	}
 }
 
 // Update object position
