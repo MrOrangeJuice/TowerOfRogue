@@ -24,7 +24,7 @@ if(place_meeting(x,y,oPlayer))
 		opened = true;
 		global.sideChestOpened = true;
 		image_index = 1;
-		audio_play_sound(snd_Chest,5,false);
+		audio_play_sound(snd_Door,5,false);
 	}
 }
 else

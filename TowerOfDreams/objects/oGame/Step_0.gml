@@ -196,6 +196,8 @@ if(global.paused)
 				global.sideRoom = rTitle;
 				global.sideChestOpened = false;
 				global.pipeCount = 0;
+				global.pipeSpawned = false;
+				global.pipeY = 0;
 				SlideTransition(TRANS_MODE.GOTO, rTitle);
 				break;
 		}
