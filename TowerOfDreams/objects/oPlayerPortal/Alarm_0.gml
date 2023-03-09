@@ -2,11 +2,16 @@
 
 if(global.inARun)
 {
+	// Reset side room
+	global.sideRoom = rTitle;
+	global.sideChestOpened = false;
 	global.levelCount++;
 	PickNextLevel();
 }
 else
 {
+	global.sideRoom = rTitle;
+	global.sideChestOpened = false;
 	if(room == rHub)
 	{
 		SlideTransition(TRANS_MODE.GOTO,rTutorial);	

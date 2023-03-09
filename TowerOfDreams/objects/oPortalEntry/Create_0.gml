@@ -5,5 +5,8 @@ if (global.pipeCount == 3)
 {
 	instance_destroy();
 }
-audio_play_sound(snd_Portal,5,false);
-alarm[0] = room_speed * 0.25;
+else
+{
+	audio_play_sound(snd_Portal,5,false);
+	alarm[0] = room_speed * 0.25;
+}

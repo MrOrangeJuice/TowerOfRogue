@@ -8,11 +8,20 @@ switch(global.pipeCount)
 	case 0:
 		global.originalRoom = room;
 		image_speed = 0;
-		PickSideArea();
+		// Make sure not to repick side room
+		if(global.sideRoom == rTitle)
+		{
+			PickSideArea();
+		}
+		else
+		{
+			SlideTransition(TRANS_MODE.GOTO,global.sideRoom);
+		}
 		global.pipeCount++;
 		break;
 	// spit out player
 	case 1:
+		global.sideRoom = room;
 		image_speed = 0;
 		playerJustSpawned = true;
 		alarm[0] = room_speed * 0.5;

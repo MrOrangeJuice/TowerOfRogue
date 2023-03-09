@@ -15,7 +15,7 @@ else
 		//xTo = follow.x;
 		yTo = follow.y;
 	}
-	else if (instance_exists(oPipe))
+	else if (instance_exists(oPipe) && global.pipeCount == 3)
 	{
 		follow = oPipe;
 		//xTo = follow.x;

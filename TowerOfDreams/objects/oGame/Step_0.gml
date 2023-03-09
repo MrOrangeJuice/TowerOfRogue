@@ -193,6 +193,9 @@ if(global.paused)
 				global.coins = 0;
 				global.item = -1;
 				global.levelCount = 0;
+				global.sideRoom = rTitle;
+				global.sideChestOpened = false;
+				global.pipeCount = 0;
 				SlideTransition(TRANS_MODE.GOTO, rTitle);
 				break;
 		}

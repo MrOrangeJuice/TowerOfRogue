@@ -19,10 +19,10 @@ if(place_meeting(x,y,oPlayer))
 	{
 		// Generate new item
 		newItemIndex = irandom_range(0,array_length(global.itemObjects)-1);
-		
 		newItem = instance_create_layer(x+4,y+4,"Collectables",global.itemObjects[newItemIndex]);
 		newItem.vsp = -3;
 		opened = true;
+		global.sideChestOpened = true;
 		image_index = 1;
 		audio_play_sound(snd_Chest,5,false);
 	}
