@@ -13,6 +13,7 @@
     {"name":"VFX","order":9,"path":"folders/Objects/VFX.yy",},
     {"name":"Paths","order":4,"path":"folders/Paths.yy",},
     {"name":"Rooms","order":10,"path":"folders/Rooms.yy",},
+    {"name":"Side Areas","order":9,"path":"folders/Rooms/Side Areas.yy",},
     {"name":"Test Rooms","order":2,"path":"folders/Rooms/Side Areas/Test Rooms.yy",},
     {"name":"Scripts","order":5,"path":"folders/Scripts.yy",},
     {"name":"Sequences","order":11,"path":"folders/Sequences.yy",},
@@ -31,7 +32,6 @@
     {"name":"VFX","order":11,"path":"folders/Sprites/VFX.yy",},
     {"name":"Tile Sets","order":2,"path":"folders/Tile Sets.yy",},
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
-    {"name":"Side Areas","order":9,"path":"folders/Rooms/Side Areas.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"snd_EnemyDeath","order":11,"path":"sounds/snd_EnemyDeath/snd_EnemyDeath.yy",},
