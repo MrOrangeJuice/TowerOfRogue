@@ -28,10 +28,7 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": {
-    "name": "sEnemyExplosionElite",
-    "path": "sprites/sEnemyExplosionElite/sEnemyExplosionElite.yy",
-  },
+  "spriteId": null,
   "spriteMaskId": null,
   "visible": true,
 }

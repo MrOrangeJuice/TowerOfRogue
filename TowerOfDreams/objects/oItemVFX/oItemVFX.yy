@@ -28,10 +28,7 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": {
-    "name": "sItemVFX",
-    "path": "sprites/sItemVFX/sItemVFX.yy",
-  },
+  "spriteId": null,
   "spriteMaskId": null,
   "visible": true,
 }

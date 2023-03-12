@@ -28,10 +28,7 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": {
-    "name": "sDustSlashBumper",
-    "path": "sprites/sDustSlashBumper/sDustSlashBumper.yy",
-  },
+  "spriteId": null,
   "spriteMaskId": null,
   "visible": true,
 }

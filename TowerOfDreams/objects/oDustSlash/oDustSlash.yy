@@ -28,10 +28,7 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": {
-    "name": "sDustSlash",
-    "path": "sprites/sDustSlash/sDustSlash.yy",
-  },
+  "spriteId": null,
   "spriteMaskId": null,
   "visible": true,
 }

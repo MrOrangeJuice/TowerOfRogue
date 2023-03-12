@@ -28,10 +28,7 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": {
-    "name": "sCoinVFX",
-    "path": "sprites/sCoinVFX/sCoinVFX.yy",
-  },
+  "spriteId": null,
   "spriteMaskId": null,
   "visible": true,
 }
