@@ -182,6 +182,7 @@
     {"id":{"name":"oTransition","path":"objects/oTransition/oTransition.yy",},},
     {"id":{"name":"sOptionsMenuDeletedSave","path":"sprites/sOptionsMenuDeletedSave/sOptionsMenuDeletedSave.yy",},},
     {"id":{"name":"oEnemy","path":"objects/oEnemy/oEnemy.yy",},},
+    {"id":{"name":"oCannon","path":"objects/oCannon/oCannon.yy",},},
     {"id":{"name":"sBumper","path":"sprites/sBumper/sBumper.yy",},},
     {"id":{"name":"oCamera","path":"objects/oCamera/oCamera.yy",},},
     {"id":{"name":"sSlashFadeIn","path":"sprites/sSlashFadeIn/sSlashFadeIn.yy",},},

@@ -149,6 +149,7 @@
     {"name":"sPipeSpawner","order":10,"path":"sprites/sPipeSpawner/sPipeSpawner.yy",},
     {"name":"oTransition","order":16,"path":"objects/oTransition/oTransition.yy",},
     {"name":"sOptionsMenuDeletedSave","order":8,"path":"sprites/sOptionsMenuDeletedSave/sOptionsMenuDeletedSave.yy",},
+    {"name":"oCannon","order":4,"path":"objects/oCannon/oCannon.yy",},
     {"name":"sBumper","order":1,"path":"sprites/sBumper/sBumper.yy",},
     {"name":"oCamera","order":2,"path":"objects/oCamera/oCamera.yy",},
     {"name":"sSlashFadeIn","order":7,"path":"sprites/sSlashFadeIn/sSlashFadeIn.yy",},
