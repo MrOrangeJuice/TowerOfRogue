@@ -202,6 +202,7 @@
     {"id":{"name":"sPlayerPortalReverse","path":"sprites/sPlayerPortalReverse/sPlayerPortalReverse.yy",},},
     {"id":{"name":"sGroundEnemy","path":"sprites/sGroundEnemy/sGroundEnemy.yy",},},
     {"id":{"name":"PickNextLevel","path":"scripts/PickNextLevel/PickNextLevel.yy",},},
+    {"id":{"name":"sCannonFire","path":"sprites/sCannonFire/sCannonFire.yy",},},
     {"id":{"name":"sPortal","path":"sprites/sPortal/sPortal.yy",},},
     {"id":{"name":"oBumper","path":"objects/oBumper/oBumper.yy",},},
     {"id":{"name":"sWall","path":"sprites/sWall/sWall.yy",},},

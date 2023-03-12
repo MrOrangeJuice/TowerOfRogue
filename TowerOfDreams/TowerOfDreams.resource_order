@@ -166,6 +166,7 @@
     {"name":"sPlayerPortalReverse","order":8,"path":"sprites/sPlayerPortalReverse/sPlayerPortalReverse.yy",},
     {"name":"sGroundEnemy","order":1,"path":"sprites/sGroundEnemy/sGroundEnemy.yy",},
     {"name":"PickNextLevel","order":5,"path":"scripts/PickNextLevel/PickNextLevel.yy",},
+    {"name":"sCannonFire","order":6,"path":"sprites/sCannonFire/sCannonFire.yy",},
     {"name":"sPortal","order":3,"path":"sprites/sPortal/sPortal.yy",},
     {"name":"oEnemyDeath","order":7,"path":"objects/oEnemyDeath/oEnemyDeath.yy",},
     {"name":"sPortalEnter","order":5,"path":"sprites/sPortalEnter/sPortalEnter.yy",},
