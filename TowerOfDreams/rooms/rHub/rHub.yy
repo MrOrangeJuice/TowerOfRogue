@@ -14,11 +14,6 @@
     {"name":"inst_32A2C032","path":"rooms/rHub/rHub.yy",},
     {"name":"inst_17AE33E1","path":"rooms/rHub/rHub.yy",},
     {"name":"inst_465C7FCD","path":"rooms/rHub/rHub.yy",},
-    {"name":"inst_5C065696","path":"rooms/rHub/rHub.yy",},
-    {"name":"inst_105CEEC6","path":"rooms/rHub/rHub.yy",},
-    {"name":"inst_697D7419","path":"rooms/rHub/rHub.yy",},
-    {"name":"inst_1FB533A9","path":"rooms/rHub/rHub.yy",},
-    {"name":"inst_74341B47","path":"rooms/rHub/rHub.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -35,7 +30,6 @@
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Enemies","depth":400,"effectEnabled":true,"effectType":null,"gridX":4,"gridY":4,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_17AE33E1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oDoor","path":"objects/oDoor/oDoor.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":692.0,"y":1344.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_74341B47","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oHuskCannon","path":"objects/oHuskCannon/oHuskCannon.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":292.0,"y":1384.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRAssetLayer","resourceVersion":"1.0","name":"Tutorials","assets":[
         {"resourceType":"GMRSpriteGraphic","resourceVersion":"1.0","name":"graphic_60B10E11","animationSpeed":1.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"spriteId":{"name":"sReplayTutorial","path":"sprites/sReplayTutorial/sReplayTutorial.yy",},"x":352.0,"y":1320.0,},
@@ -46,10 +40,6 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_64D8ED3E","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oWall","path":"objects/oWall/oWall.yy",},"properties":[],"rotation":0.0,"scaleX":11.0,"scaleY":12.0,"x":0.0,"y":1296.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_654D2DD3","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oWall","path":"objects/oWall/oWall.yy",},"properties":[],"rotation":0.0,"scaleX":11.0,"scaleY":12.0,"x":1352.0,"y":1296.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_32A2C032","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oPortal","path":"objects/oPortal/oPortal.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":384.0,"y":1360.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_5C065696","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oChest","path":"objects/oChest/oChest.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":464.0,"y":1380.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_105CEEC6","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oChest","path":"objects/oChest/oChest.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":492.0,"y":1380.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_697D7419","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oChest","path":"objects/oChest/oChest.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":520.0,"y":1380.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_1FB533A9","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oChest","path":"objects/oChest/oChest.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":548.0,"y":1380.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"CoinVFX","depth":700,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"VFX","depth":800,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},

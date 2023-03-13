@@ -165,13 +165,10 @@
     {"name":"inst_3D245FAF","path":"rooms/rTutorial/rTutorial.yy",},
     {"name":"inst_20D22320","path":"rooms/rTutorial/rTutorial.yy",},
     {"name":"inst_2150C083","path":"rooms/rTutorial/rTutorial.yy",},
-    {"name":"inst_13469DC6","path":"rooms/rTutorial/rTutorial.yy",},
   ],
   "isDnd": false,
   "layers": [
-    {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Pipes","depth":0,"effectEnabled":true,"effectType":null,"gridX":8,"gridY":8,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_13469DC6","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oPipeSpawner","path":"objects/oPipeSpawner/oPipeSpawner.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":432.0,"y":1344.0,},
-      ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
+    {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Pipes","depth":0,"effectEnabled":true,"effectType":null,"gridX":8,"gridY":8,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Tiles","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":180,"SerialiseWidth":80,"TileCompressedData":[
 -3716,1,1,10,-18,5,1,11,-60,1,1,3,-18,0,1,4,-60,1,1,3,-18,0,1,4,-60,1,1,3,-18,0,1,4,-60,1,1,3,-18,0,1,4,-60,1,1,3,-18,0,1,4,-60,1,1,3,-18,0,1,4,-60,1,1,3,-18,0,1,4,-60,1,1,3,-18,0,1,4,-60,1,1,3,-3,0,1,6,
 -14,2,1,8,-60,1,1,3,-3,0,2,4,10,-13,5,1,11,-56,1,1,10,-3,5,1,15,-3,0,2,4,3,-13,0,1,4,-56,1,1,3,-7,0,2,4,3,-13,0,1,4,-56,1,1,3,-7,0,2,4,3,-13,0,1,4,-56,1,1,3,-7,0,2,14,15,-13,0,1,4,-56,1,1,3,-22,0,1,
