@@ -198,6 +198,7 @@ if(global.paused)
 				global.pipeCount = 0;
 				global.pipeSpawned = false;
 				global.pipeY = 0;
+				instance_destroy(oItemPopup);
 				SlideTransition(TRANS_MODE.GOTO, rTitle);
 				break;
 		}

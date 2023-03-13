@@ -228,15 +228,23 @@ if(!global.paused && !global.hitStop)
 		enemy = instance_place(x,y+17,oEnemy);
 		if(enemy)
 		{
-			enemy.flash = 5;
-			enemy.hp--;
+			// Only hit the enemy if it's not invincible, otherwise clank off
+			if(!enemy.invincible)
+			{
+				enemy.flash = 5;
+				enemy.hp--;
+				ScreenShake(2,10);
+				audio_play_sound(snd_Hit,5,false);
+			}
+			else
+			{
+				audio_play_sound(snd_Klang,5,false);
+			}
 			vsp = -3;
-			ScreenShake(2,10);
 			instance_create_layer(enemy.x,enemy.y-4,"VFX",oDustSlashBumper);
 			airborne = true;
 			hasSlashed = true;
 			hasSlashJumped = true;
-			audio_play_sound(snd_Hit,5,false);
 		}
 	}
 
