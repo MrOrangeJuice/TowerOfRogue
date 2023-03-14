@@ -75,7 +75,7 @@
   ],
   "parent": {
     "name": "Test Rooms",
-    "path": "folders/Rooms/Side Areas/Test Rooms.yy",
+    "path": "folders/Rooms/Test Rooms.yy",
   },
   "parentRoom": null,
   "physicsSettings": {
