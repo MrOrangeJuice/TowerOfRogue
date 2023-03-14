@@ -38,33 +38,41 @@ if(room != rTitle)
 	healthToDraw = global.health;
 	xMod = 0;
 	// Generate healthbar
-	for(i = 0; i < global.maxHealth; i++)
+	if(global.infiniteHealth)
 	{
-		// If there's health to draw, draw it
-		if(healthToDraw > 0)
+		draw_sprite_stretched(sHeartUISmall,0,7,7,8*healthTextScale,8*healthTextScale);
+		draw_sprite(sInfinity,0,17,7);
+	}
+	else
+	{
+		for(i = 0; i < global.maxHealth; i++)
 		{
-			// If it's an even number, draw a full heart
-			if(i % 2 == 1)
+			// If there's health to draw, draw it
+			if(healthToDraw > 0)
 			{
-				draw_sprite_stretched(sHeartUISmall,0,7 + (xMod * 9),7,8*healthTextScale,8*healthTextScale);	
-				xMod++;
+				// If it's an even number, draw a full heart
+				if(i % 2 == 1)
+				{
+					draw_sprite_stretched(sHeartUISmall,0,7 + (xMod * 9),7,8*healthTextScale,8*healthTextScale);	
+					xMod++;
+				}
+				// Otherwise, draw a half heart
+				else
+				{
+					draw_sprite_stretched(sHeartUISmall,1,7 + (xMod * 9),7,8*healthTextScale,8*healthTextScale);	
+				}
 			}
-			// Otherwise, draw a half heart
 			else
 			{
-				draw_sprite_stretched(sHeartUISmall,1,7 + (xMod * 9),7,8*healthTextScale,8*healthTextScale);	
+				// Draw an empty heart every other time
+				if(i % 2 == 1)
+				{
+					draw_sprite_stretched(sHeartUISmall,2,7 + (xMod * 9),7,8*healthTextScale,8*healthTextScale);	
+					xMod++;
+				}
 			}
+			healthToDraw--;
 		}
-		else
-		{
-			// Draw an empty heart every other time
-			if(i % 2 == 1)
-			{
-				draw_sprite_stretched(sHeartUISmall,2,7 + (xMod * 9),7,8*healthTextScale,8*healthTextScale);	
-				xMod++;
-			}
-		}
-		healthToDraw--;
 	}
 	
 	// Draw Coins

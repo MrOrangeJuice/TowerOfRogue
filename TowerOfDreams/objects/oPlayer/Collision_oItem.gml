@@ -26,4 +26,7 @@ if(other.canGrab)
 	popup = instance_create_layer(x,y,"UI",oItemPopup);
 	popup.name = other.itemName;
 	popup.desc = other.itemDesc;
+	
+	// Spawn tutorial
+	if(instance_exists(oItemTutorialFadeIn)) oItemTutorialFadeIn.image_speed = 1;
 }

@@ -117,6 +117,7 @@ if(room == rTitle)
 						file_delete("savedata.ini");
 					}
 					global.tutorialCompleted = false;
+					global.runCompleted = false;
 					// Make new default file
 					Save();
 				}

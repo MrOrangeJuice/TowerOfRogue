@@ -3,5 +3,6 @@
 function Load(){
 	ini_open("savedata.ini");
 	global.tutorialCompleted = ini_read_real("savegame", "tutorialCompleted", 0);
+	global.runCompleted = ini_read_real("savegame", "runCompleted", 0);
 	ini_close();
 }

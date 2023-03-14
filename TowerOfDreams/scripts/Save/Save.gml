@@ -3,5 +3,6 @@
 function Save(){
 	ini_open("savedata.ini");
 	ini_write_real("savegame", "tutorialCompleted", global.tutorialCompleted);
+	ini_write_real("savegame", "runCompleted", global.runCompleted);
 	ini_close();
 }

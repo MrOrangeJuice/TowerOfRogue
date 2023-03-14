@@ -10,9 +10,12 @@ function PickNextLevel(){
 		// Reset run
 		global.usedArray = [false,false,false,false,false];
 		global.inARun = false;
+		global.runCompleted = true;
+		global.health = global.maxHealth;
 		global.coins = 0;
 		global.item = -1;
 		global.levelCount = 0;
+		Save();
 	}
 	// Otherwise, pick a new level that the player hasn't played yet
 	else
