@@ -19,6 +19,7 @@ else
 	if(room == rHub)
 	{
 		SlideTransition(TRANS_MODE.GOTO,rTutorial);	
+		global.health = global.maxHealth;
 	}
 	else if(room == rTutorial)
 	{
