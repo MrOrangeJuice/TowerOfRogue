@@ -49,7 +49,7 @@
   "isEcma": false,
   "LibraryEmitters": [],
   "MetaData": {
-    "IDEVersion": "2023.2.0.71",
+    "IDEVersion": "2023.2.1.75",
   },
   "resources": [
     {"id":{"name":"sUseItemControllerFadeIn","path":"sprites/sUseItemControllerFadeIn/sUseItemControllerFadeIn.yy",},},
@@ -67,6 +67,7 @@
     {"id":{"name":"oGame","path":"objects/oGame/oGame.yy",},},
     {"id":{"name":"oChest","path":"objects/oChest/oChest.yy",},},
     {"id":{"name":"sPlayerIdle","path":"sprites/sPlayerIdle/sPlayerIdle.yy",},},
+    {"id":{"name":"sPlayerSlashSmall","path":"sprites/sPlayerSlashSmall/sPlayerSlashSmall.yy",},},
     {"id":{"name":"rTutorialOld","path":"rooms/rTutorialOld/rTutorialOld.yy",},},
     {"id":{"name":"snd_Item","path":"sounds/snd_Item/snd_Item.yy",},},
     {"id":{"name":"rRunTest4","path":"rooms/rRunTest4/rRunTest4.yy",},},

@@ -47,6 +47,7 @@
     {"name":"oGame","order":10,"path":"objects/oGame/oGame.yy",},
     {"name":"oChest","order":5,"path":"objects/oChest/oChest.yy",},
     {"name":"sPlayerIdle","order":1,"path":"sprites/sPlayerIdle/sPlayerIdle.yy",},
+    {"name":"sPlayerSlashSmall","order":12,"path":"sprites/sPlayerSlashSmall/sPlayerSlashSmall.yy",},
     {"name":"rTutorialOld","order":4,"path":"rooms/rTutorialOld/rTutorialOld.yy",},
     {"name":"snd_Item","order":17,"path":"sounds/snd_Item/snd_Item.yy",},
     {"name":"rRunTest4","order":3,"path":"rooms/rRunTest4/rRunTest4.yy",},

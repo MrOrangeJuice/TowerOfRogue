@@ -202,17 +202,17 @@ if(!global.paused && !global.hitStop)
 	// Slash collision
 	if(slashing && !hasSlashJumped)
 	{
-		if(place_meeting(x,y+17,oWall))
+		if(place_meeting(x,y+9,oWall))
 		{
 			vsp = -3;	
-			instance_create_layer(x,y+14,"VFX",oDustSlash);
+			instance_create_layer(x,y+6,"VFX",oDustSlash);
 			airborne = true;
 			hasSlashed = true;
 			hasSlashJumped = true;
 			audio_play_sound(snd_Impact,5,false);
 		}
 	
-		bumper = instance_place(x,y+17,oBumper);
+		bumper = instance_place(x,y+9,oBumper);
 		if(bumper)
 		{
 			bumper.image_speed = 1;
@@ -225,7 +225,7 @@ if(!global.paused && !global.hitStop)
 			audio_play_sound(snd_Bumper,5,false);
 		}
 		
-		enemy = instance_place(x,y+17,oEnemy);
+		enemy = instance_place(x,y+9,oEnemy);
 		if(enemy)
 		{
 			// Only hit the enemy if it's not invincible, otherwise clank off
@@ -386,7 +386,7 @@ if(!global.paused && !global.hitStop)
 	}
 	else if(slashing)
 	{
-		sprite_index = sPlayerSlash;	
+		sprite_index = sPlayerSlashSmall;	
 	}
 	else if(wallSliding)
 	{
