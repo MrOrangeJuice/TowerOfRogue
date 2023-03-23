@@ -10,6 +10,7 @@ if(hp <= 0)
 
 			heart = instance_create_layer(x-4,y-4,"Collectables",oHeart);	
 			heart.vsp = -2;
+			heart.canGrab = true;
 		}
 	}
 	if (elite)

@@ -16,6 +16,26 @@ if(!global.paused)
 	}
 	
 	y = y + vsp;
+	
+	if(hsp > 0)
+	{
+		hsp -= 0.01;	
+	}
+	else if(hsp < 0)
+	{
+		hsp += 0.01;
+	}
+	
+	// Horizontal Collision
+	if (place_meeting(x+hsp,y,oWall))
+	{
+		while (!place_meeting(x+sign(hsp),y,oWall))
+		{
+			x = x + sign(hsp);
+		}
+		hsp = 0;
+	}
+	x = x + hsp;
 }
 else
 {
