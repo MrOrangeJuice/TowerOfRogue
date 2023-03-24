@@ -13,7 +13,7 @@ if (place_meeting(x,y+vsp,oWall))
 	{
 		endSpawned = true;
 		audio_play_sound(snd_Grave,5,false);
-		alarm[0] = room_speed * 3;
+		alarm[0] = room_speed * 2;
 	}
 }
 	

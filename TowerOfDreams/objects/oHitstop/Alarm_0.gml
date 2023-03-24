@@ -16,7 +16,7 @@ if(death)
 	instance_create_layer(oPlayer.x-4,oPlayer.y-4,"Pipes",oPlayerBit);
 	instance_create_layer(oPlayer.x-4,oPlayer.y-4,"Pipes",oPlayerBit);
 	// Spawn explosion
-	instance_create_layer(oPlayer.x-4,oPlayer.y-4,"Collectables",oPlayerExplosion);
+	instance_create_layer(oPlayer.x,oPlayer.y,"Collectables",oPlayerExplosion);
 	// Kill player
 	instance_destroy(oPlayer);
 	// Play sound

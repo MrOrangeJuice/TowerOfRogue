@@ -8,7 +8,7 @@ function TakeDamage(argument0,argument1,argument2)
 		with (oPlayer)
 		{
 			audio_play_sound(snd_Damage,5,false);
-			global.health -= argument0;
+			if (!global.infiniteHealth) global.health -= argument0;
 			// Kill player
 			if(global.health <= 0)
 			{
