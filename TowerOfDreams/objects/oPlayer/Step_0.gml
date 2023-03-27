@@ -299,11 +299,11 @@ if(!global.paused && !global.hitStop)
 		enemyHitRight = instance_place(x+(1*image_xscale),y,oEnemy);
 		enemyHitLeft = instance_place(x-(1*image_xscale),y,oEnemy);
 		
-		if(enemyHitRight)
+		if(enemyHitRight && !enemyHitRight.noDamage)
 		{
 			TakeDamage(1,2.75,3.5);
 		}
-		else if(enemyHitLeft)
+		else if(enemyHitLeft && !enemyHitLeft.noDamage)
 		{
 			TakeDamage(1,2.75,-3.5);	
 		}

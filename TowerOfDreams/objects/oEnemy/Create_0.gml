@@ -5,3 +5,4 @@ flash = 0;
 elite = false;
 invincible = false;
 givesHealth = true;
+noDamage = false;
