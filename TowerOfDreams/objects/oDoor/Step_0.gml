@@ -20,6 +20,8 @@ if(place_meeting(x,y,oPlayer))
 	if(key_up)
 	{
 		global.inARun = true;
+		global.item = -1;
+		global.passiveItems = [];
 		audio_play_sound(snd_Door,5,false);
 		PickNextLevel();	
 	}

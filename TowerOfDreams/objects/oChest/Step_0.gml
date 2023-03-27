@@ -17,6 +17,7 @@ if(place_meeting(x,y,oPlayer))
 	colliding = true;	
 	if(key_up && !opened)
 	{
+		randomize();
 		// Generate new item
 		newItemIndex = irandom_range(0,array_length(global.itemObjects)-1);
 		// Spawn hearts differently

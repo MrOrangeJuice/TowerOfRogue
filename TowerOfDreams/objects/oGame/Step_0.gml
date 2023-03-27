@@ -193,6 +193,7 @@ if(global.paused)
 				global.inARun = false;
 				global.coins = 0;
 				global.item = -1;
+				global.passiveItems = [];
 				global.levelCount = 0;
 				global.sideRoom = rTitle;
 				global.sideChestOpened = false;

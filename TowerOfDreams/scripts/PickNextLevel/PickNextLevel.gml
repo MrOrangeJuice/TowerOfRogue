@@ -14,6 +14,7 @@ function PickNextLevel(){
 		global.health = global.maxHealth;
 		global.coins = 0;
 		global.item = -1;
+		global.passiveItems = [];
 		global.levelCount = 0;
 		Save();
 	}

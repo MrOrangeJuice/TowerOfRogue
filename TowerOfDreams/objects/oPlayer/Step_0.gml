@@ -204,8 +204,29 @@ if(!global.paused && !global.hitStop)
 	{
 		if(place_meeting(x,y+9,oWall))
 		{
+			// Push player up
+			while(place_meeting(x,y+8,oWall))
+			{
+				y -= 1;	
+			}
 			vsp = -3;	
 			instance_create_layer(x,y+6,"VFX",oDustSlash);
+			// Check for slash items
+			shock = false;
+			for(i = 0; i < array_length(global.passiveItems); i++)
+			{
+				if(global.passiveItems[i] == 0)
+				{
+					shock = true;
+				}
+			}
+			if(shock)
+			{
+				// Spawn shock waves
+				instance_create_layer(x,y+8,"Instances",oShockwave);
+				rightShock = instance_create_layer(x,y+8,"Instances",oShockwave);
+				rightShock.dir = 1;
+			}
 			airborne = true;
 			hasSlashed = true;
 			hasSlashJumped = true;
@@ -215,6 +236,11 @@ if(!global.paused && !global.hitStop)
 		bumper = instance_place(x,y+9,oBumper);
 		if(bumper)
 		{
+			// Push player up
+			while(place_meeting(x,y+8,oBumper))
+			{
+				y -= 1;	
+			}
 			bumper.image_speed = 1;
 			bumper.hit = true;
 			vsp = -3;	
@@ -228,6 +254,11 @@ if(!global.paused && !global.hitStop)
 		enemy = instance_place(x,y+9,oEnemy);
 		if(enemy)
 		{
+			// Push player up
+			while(place_meeting(x,y+8,oEnemy))
+			{
+				y -= 1;	
+			}
 			// Only hit the enemy if it's not invincible, otherwise clank off
 			if(!enemy.invincible)
 			{

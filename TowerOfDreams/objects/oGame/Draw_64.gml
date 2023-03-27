@@ -87,4 +87,11 @@ if(room != rTitle)
 	
 	// Draw item in box
 	if(global.item != -1) draw_sprite_stretched(global.itemSprites[global.item],0,44,5,8*itemTextScale,8*itemTextScale);
+	
+	// Draw passive items
+	passiveItemTextScale = max(passiveItemTextScale * .95, 1);
+	for(i = 0; i < array_length(global.passiveItems); i++)
+	{
+		draw_sprite_stretched(global.passiveItemSprites[global.passiveItems[i]],0,58+(10*i),5,8*passiveItemTextScale,8*passiveItemTextScale);
+	}
 }

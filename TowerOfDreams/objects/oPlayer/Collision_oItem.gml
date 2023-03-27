@@ -32,8 +32,22 @@ if(other.canGrab)
 		// Spawn tutorial
 		if(instance_exists(oItemTutorialFadeIn)) oItemTutorialFadeIn.image_speed = 1;
 	}
+	// Passive item
 	else
 	{
-			
+		with(oGame) passiveItemTextScale = 1.3;
+		array_push(global.passiveItems,other.itemPassiveId);
+		// Create item pop up
+		// Destroy any old ones
+		instance_destroy(oItemPopup);
+		popup = instance_create_layer(x,y,"UI",oItemPopup);
+		popup.name = other.itemName;
+		popup.desc = other.itemDesc;
+		popup.passive = true;
+		popup.passiveID = other.itemPassiveId;
+		
+		instance_destroy(other);
+		instance_create_layer(other.x,other.y,"CoinVFX",oItemVFX);
+		audio_play_sound(snd_Item,5,false);
 	}
 }

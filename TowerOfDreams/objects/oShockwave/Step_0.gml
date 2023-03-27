@@ -1,5 +1,8 @@
 /// @description Move and check collision
 
+// Flip wave
+image_xscale = -dir;
+
 if!(global.paused && !global.hitStop)
 {
 	x += (dir * hsp);
@@ -7,15 +10,8 @@ if!(global.paused && !global.hitStop)
 	// Horizontal Collision
 	if (place_meeting(x+(hsp*dir),y,oWall))
 	{
-		instance_create_layer(x,y,"VFX",oShockwaveVFX);
-		instance_destroy();
-	}
-
-	// Vertical Collision
-	// If no ground below you destroy
-	if (!place_meeting(x+(16*dir),y+1,oWall))
-	{
-		instance_create_layer(x,y,"VFX",oShockwaveVFX);
+		vfx = instance_create_layer(x,y,"Instances",oShockwaveVFX);
+		if(dir == 1) vfx.image_xscale = -1;
 		instance_destroy();
 	}
 }
