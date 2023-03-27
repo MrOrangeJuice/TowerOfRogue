@@ -61,6 +61,19 @@ if(!global.paused && !global.hitStop)
 	// Play animations
 	image_speed = 1;
 	
+	// Make sure wall slide doesn't have any blink frames
+	if(wallSliding)
+	{
+		if(key_right)
+		{
+			image_xscale = 1;	
+		}
+		if(key_left)
+		{
+			image_xscale = -1;	
+		}
+	}
+	
 	// If player doesn't release jump, they can't jump again or slash
 	if(key_jump_released)
 	{
@@ -138,8 +151,12 @@ if(!global.paused && !global.hitStop)
 	}
 
 	// Check if player is wallsliding
-	if(airborne && place_meeting(x + (3 * sign(image_xscale)),y,oWall) && canWallSlide)
+	if(airborne && (place_meeting(x + (3 * sign(image_xscale)),y,oWall) || place_meeting(x + (3 * sign(currentwalksp)),y,oWall)) && canWallSlide)
 	{
+		// Fix direction
+		if(place_meeting(x + 3,y,oWall)) image_xscale = 1;
+		if(place_meeting(x - 3,y,oWall)) image_xscale = -1;
+		
 		wallSliding = true;
 		// Inch into wall if needed
 		while (!place_meeting(x+sign(image_xscale),y,oWall))
@@ -149,6 +166,11 @@ if(!global.paused && !global.hitStop)
 	}
 	else
 	{
+		if(wallSliding)
+		{
+			wallJumpCoyote = true;
+			alarm[3] = room_speed * 0.1;
+		}
 		wallSliding = false;	
 		canSpawnWallDust = true;
 	}
@@ -171,25 +193,34 @@ if(!global.paused && !global.hitStop)
 	}
 
 	// Wall Jump
-	if (wallSliding && (key_jump) && (canJump))
+	if ((wallSliding && key_jump && canJump) || (key_jump && wallJumpCoyote && canJump))
 	{
 		// Turn off wall sliding for a tiny amount of time
 		canWallSlide = false;
 		alarm[0] = room_speed * 0.2;
 		wallSliding = false;
 		vsp = -2.75;
-		// Set hsp to the opposite of your current direction
-		currentwalksp = -sign(image_xscale) * 3.75;
 		audio_play_sound(snd_Jump, 5, false);
-		wallDust = instance_create_layer(x,y,"VFX",oDustWall);
-		if (currentwalksp != 0) wallDust.image_xscale = -sign(currentwalksp);
+		if(wallJumpCoyote)
+		{
+			currentwalksp = sign(image_xscale) * 3.75;
+			wallDust = instance_create_layer(x,y,"VFX",oDustWall);
+			if (currentwalksp != 0) wallDust.image_xscale = -sign(currentwalksp);
+		}
+		// Set hsp to the opposite of your current direction
+		else
+		{
+			currentwalksp = -sign(image_xscale) * 3.75;
+			wallDust = instance_create_layer(x,y,"VFX",oDustWall);
+			if (currentwalksp != 0) wallDust.image_xscale = -sign(currentwalksp);
+		}
 		canJump = false;
 		// Swap sprite direction immediately
-		if (hsp != 0) image_xscale = sign(hsp);
+		if (currentwalksp != 0) image_xscale = sign(currentwalksp);
 	}
 
 	// Slash
-	if (key_jump) && (canJump) && (airborne) && (!slashing) && (canSlash) && (jumpBuffer <= 0) && (global.sword)
+	if (key_jump) && (canJump) && (airborne) && (!slashing) && (canSlash) && (jumpBuffer <= 0) && (global.sword) && (!wallJumpCoyote)
 	{
 		image_index = 0;
 		canJump = false;
@@ -254,6 +285,15 @@ if(!global.paused && !global.hitStop)
 		enemy = instance_place(x,y+9,oEnemy);
 		if(enemy)
 		{
+			// Check for slash items
+			crit = false;
+			for(i = 0; i < array_length(global.passiveItems); i++)
+			{
+				if(global.passiveItems[i] == 1)
+				{
+					crit = true;
+				}
+			}
 			// Push player up
 			while(place_meeting(x,y+8,oEnemy))
 			{
@@ -263,9 +303,30 @@ if(!global.paused && !global.hitStop)
 			if(!enemy.invincible)
 			{
 				enemy.flash = 5;
-				enemy.hp--;
-				ScreenShake(2,10);
-				audio_play_sound(snd_Hit,5,false);
+				if(crit)
+				{
+					randomize();
+					critChance = irandom_range(0,3);
+					if(critChance == 1)
+					{
+						enemy.hp -= 2;
+						instance_create_layer(enemy.x,enemy.y-10,"Instances",oCritVFX);
+						ScreenShake(4,12);
+						audio_play_sound(snd_Crit,5,false);
+					}
+					else
+					{
+						enemy.hp--;
+						ScreenShake(2,10);
+					}
+					audio_play_sound(snd_Hit,5,false);
+				}	
+				else
+				{
+					enemy.hp--;
+					ScreenShake(2,10);
+					audio_play_sound(snd_Hit,5,false);
+				}
 			}
 			else
 			{
