@@ -9,7 +9,7 @@ if(!global.paused && !global.hitStop)
 	vsp += grv;
 
 	// Horizontal Collision
-	if (place_meeting(x+hsp,y,oWall))
+	if (place_meeting(x+(hsp*dir),y,oWall))
 	{
 		dir *= -1;
 	}
