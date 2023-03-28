@@ -22,7 +22,7 @@ if(hp <= 0)
 			goblet = true;
 		}
 	}
-	if(goblet)
+	if(goblet && givesHealth)
 	{
 		instance_create_layer(x,y-16,"Instances",global.gobletVFX[global.gobletCombo]);
 		global.gobletCombo++;

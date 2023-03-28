@@ -165,7 +165,6 @@
     {"name":"inst_3D245FAF","path":"rooms/rTutorial/rTutorial.yy",},
     {"name":"inst_20D22320","path":"rooms/rTutorial/rTutorial.yy",},
     {"name":"inst_2150C083","path":"rooms/rTutorial/rTutorial.yy",},
-    {"name":"inst_66651B1A","path":"rooms/rTutorial/rTutorial.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -353,7 +352,6 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_76B9B310","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oSwordShrine","path":"objects/oSwordShrine/oSwordShrine.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":288.0,"y":888.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_3D245FAF","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oHoldJumpTutorial","path":"objects/oHoldJumpTutorial/oHoldJumpTutorial.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":312.0,"y":1144.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_20D22320","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oWall","path":"objects/oWall/oWall.yy",},"properties":[],"rotation":0.0,"scaleX":4.0,"scaleY":1.0,"x":312.0,"y":1216.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_66651B1A","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oCritItem","path":"objects/oCritItem/oCritItem.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":264.0,"y":1384.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"CoinVFX","depth":700,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"VFX","depth":800,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
