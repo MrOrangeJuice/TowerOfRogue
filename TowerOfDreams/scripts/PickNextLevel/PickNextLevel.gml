@@ -16,6 +16,7 @@ function PickNextLevel(){
 		global.item = -1;
 		global.passiveItems = [];
 		global.levelCount = 0;
+		global.gobletCombo = 0;
 		Save();
 	}
 	// Otherwise, pick a new level that the player hasn't played yet

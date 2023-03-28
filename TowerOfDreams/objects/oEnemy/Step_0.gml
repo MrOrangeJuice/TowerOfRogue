@@ -13,6 +13,37 @@ if(hp <= 0)
 			heart.canGrab = true;
 		}
 	}
+	// Check for death items
+	goblet = false;
+	for(i = 0; i < array_length(global.passiveItems); i++)
+	{
+		if(global.passiveItems[i] == 2)
+		{
+			goblet = true;
+		}
+	}
+	if(goblet)
+	{
+		instance_create_layer(x,y-16,"Instances",global.gobletVFX[global.gobletCombo]);
+		global.gobletCombo++;
+		if(global.gobletCombo >= 6)
+		{
+			if(global.health < global.maxHealth)
+			{
+				if(global.health == global.maxHealth -1)
+				{
+					global.health++;
+				}
+				else
+				{
+					global.health += 2;	
+				}
+			}
+			audio_play_sound(snd_Heal,5,false);
+			with (oGame) healthTextScale = 1.15;
+			global.gobletCombo = 0;
+		}
+	}
 	if (elite)
 	{
 		instance_create_layer(x,y,"Enemies",oEnemyEliteDeath);

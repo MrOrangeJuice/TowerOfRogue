@@ -12,6 +12,7 @@ global.sideRoom = rTitle;
 global.sideChestOpened = false;
 global.pipeSpawned = false;
 global.pipeY = 0;
+global.gobletCombo = 0;
 Save();
 
 SlideTransition(TRANS_MODE.GOTO,rHub);
