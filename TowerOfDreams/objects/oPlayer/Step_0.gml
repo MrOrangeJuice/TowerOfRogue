@@ -75,8 +75,12 @@ if(!global.paused && !global.hitStop)
 	{
 		if(global.health <= 2)
 		{
-			// Spawn vfx is player wasn't raging last turn
-			if(!rage) instance_create_layer(x,y-8,"Instances",oRageVFX);
+			// Spawn vfx is player wasn't raging last frame
+			if(!rage) 
+			{
+				audio_play_sound(snd_Rage,5,false);
+				instance_create_layer(x,y-8,"Instances",oRageVFX);
+			}
 			rage = true;	
 		}
 		else
