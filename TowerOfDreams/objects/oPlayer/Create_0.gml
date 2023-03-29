@@ -24,3 +24,5 @@ wallJumpCoyote = false;
 prevWallSliding = false;
 invulnerable = false;
 hit = false;
+rage = false;
+rageDamage = 0;
