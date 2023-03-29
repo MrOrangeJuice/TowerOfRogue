@@ -1,5 +1,6 @@
 /// @description Draw
 
+/*
 if(rage)
 {
 	image_blend = make_color_rgb(211,133,149);
@@ -10,6 +11,7 @@ else
 	image_blend = c_white;
 	draw_self();
 }
+*/
 
 if(invulnerable > 0)
 {

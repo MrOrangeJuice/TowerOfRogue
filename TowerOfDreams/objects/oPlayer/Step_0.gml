@@ -79,12 +79,14 @@ if(!global.paused && !global.hitStop)
 			if(!rage) 
 			{
 				audio_play_sound(snd_Rage,5,false);
+				instance_create_layer(x,y-4,"Instances",oAngerVFX);
 				instance_create_layer(x,y-8,"Instances",oRageVFX);
 			}
 			rage = true;	
 		}
 		else
 		{
+			if(rage) instance_destroy(oAngerVFX);
 			rage = false;	
 		}
 	}
