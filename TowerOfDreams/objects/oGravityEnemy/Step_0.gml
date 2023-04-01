@@ -18,9 +18,53 @@ if(!global.paused && !global.hitStop)
 		{
 			alarm[0] = room_speed * 1;	
 			hitWall = true;
+			landing = true;
+			// Landing alarm
+			alarm[1] = room_speed * 0.1875;
+			if(sign(grv) > 0)
+			{
+				instance_create_layer(x,y,"VFX",oGravityEnemyDustVFX);
+			}
+			else
+			{
+				instance_create_layer(x,y,"VFX",oGravityEnemyDustUpVFX);
+			}
 		}
 	}
 	y = y + vsp;
+	
+	// Animation
+	if(landing)
+	{
+		if(sign(grv) > 0)
+		{
+			sprite_index = sGravityEnemyLand;	
+			image_index = 0;
+		}
+		else
+		{
+			sprite_index = sGravityEnemyLandUp;	
+			image_index = 0;
+		}
+	}
+	else
+	{
+		if(hitWall)
+		{
+			sprite_index = sGravityEnemy;
+		}
+		else
+		{
+			if(sign(grv) > 0)
+			{
+				sprite_index = sGravityEnemyFall;	
+			}
+			else
+			{
+				sprite_index = sGravityEnemyFallUp;	
+			}
+		}
+	}
 }
 else
 {
