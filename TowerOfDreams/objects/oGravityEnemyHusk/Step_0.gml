@@ -38,12 +38,12 @@ if(!global.paused && !global.hitStop)
 	{
 		if(sign(grv) > 0)
 		{
-			sprite_index = sGravityEnemyLand;	
+			sprite_index = sGravityEnemyHuskLand;	
 			image_index = 0;
 		}
 		else
 		{
-			sprite_index = sGravityEnemyLandUp;	
+			sprite_index = sGravityEnemyHuskLandUp;	
 			image_index = 0;
 		}
 	}
@@ -51,17 +51,17 @@ if(!global.paused && !global.hitStop)
 	{
 		if(hitWall)
 		{
-			sprite_index = sGravityEnemy;
+			sprite_index = sGravityEnemyHusk;
 		}
 		else
 		{
 			if(sign(grv) > 0)
 			{
-				sprite_index = sGravityEnemyFall;	
+				sprite_index = sGravityEnemyHuskFall;	
 			}
 			else
 			{
-				sprite_index = sGravityEnemyFallUp;	
+				sprite_index = sGravityEnemyHuskFallUp;	
 			}
 		}
 	}
