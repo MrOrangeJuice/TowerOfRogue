@@ -13,4 +13,9 @@ if(instance_exists(oPlayer))
 {
 	x = oPlayer.x;
 	y = oPlayer.y - 4;
+	visible = true;
+}
+else
+{
+	visible = false;
 }
