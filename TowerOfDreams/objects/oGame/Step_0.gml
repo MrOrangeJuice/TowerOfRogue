@@ -96,7 +96,7 @@ if(room == rTitle)
 					}
 					else
 					{
-						SlideTransition(TRANS_MODE.GOTO,rFloor1_2);
+						SlideTransition(TRANS_MODE.GOTO,rHub);
 					}
 				}
 				else
