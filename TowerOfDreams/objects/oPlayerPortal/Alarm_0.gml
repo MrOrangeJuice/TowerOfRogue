@@ -31,6 +31,8 @@ else
 		global.health = global.maxHealth;
 		SlideTransition(TRANS_MODE.NEXT);	
 		if(!global.tutorialCompleted) global.tutorialCompleted = true;
+		audio_stop_sound(msc_Tutorial);
+		global.tutorialMusic = false;
 		Save();
 	}
 }

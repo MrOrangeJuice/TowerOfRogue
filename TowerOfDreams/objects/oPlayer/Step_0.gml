@@ -182,6 +182,17 @@ if(!global.paused && !global.hitStop)
 		airborne = false;	
 		jumpBuffer = 5;
 		hasSlashed = false;
+		if(room == rTutorial && !global.tutorialMusic)
+		{
+			audio_play_sound(msc_Tutorial,5,true);
+			global.tutorialMusic = true;
+		}
+
+		if(global.inARun && !global.floor1Music && room != rHub)
+		{
+			audio_play_sound(msc_Floor1,5,true);
+			global.floor1Music = true;
+		}
 	}
 
 	// Check if player is wallsliding
@@ -202,7 +213,14 @@ if(!global.paused && !global.hitStop)
 	{
 		if(wallSliding)
 		{
-			wallJumpCoyote = true;
+			if(place_meeting(x+3,y,oWall) && key_left)
+			{
+				wallJumpCoyote = true;
+			}
+			if(place_meeting(x-3,y,oWall) && key_right)
+			{
+				wallJumpCoyote = true;
+			}
 			alarm[3] = room_speed * 0.1;
 		}
 		wallSliding = false;	

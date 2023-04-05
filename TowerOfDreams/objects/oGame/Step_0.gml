@@ -90,6 +90,7 @@ if(room == rTitle)
 				if(!options)
 				{
 					menuOption = 0;
+					audio_stop_sound(msc_TitleScreen);
 					if(!global.tutorialCompleted)
 					{
 						SlideTransition(TRANS_MODE.GOTO,rTutorial);
@@ -183,9 +184,7 @@ if(global.paused)
 				{
 					oPlayer.canJump = false;	
 				}
-				menuOption = 0;
 				global.sword = true;
-				global.paused = false;
 				global.canPause = false;
 				global.health = global.maxHealth;
 				// Reset run
@@ -203,6 +202,10 @@ if(global.paused)
 				global.gobletCombo = 0;
 				instance_destroy(oItemPopup);
 				SlideTransition(TRANS_MODE.GOTO, rTitle);
+				audio_stop_sound(msc_Tutorial);
+				global.tutorialMusic = false;
+				audio_stop_sound(msc_Floor1);
+				global.floor1Music = false;
 				break;
 		}
 	}

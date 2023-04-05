@@ -2,8 +2,16 @@
 
 if(room == rTutorial)
 {
-	global.sword = false;	
+	global.sword = false;
 }
+
+if(room == rTitle)
+{
+	audio_play_sound(msc_TitleScreen,5,true);	
+	global.paused = false;
+	menuOption = 0;
+}
+
 if(room == rTutorial2 || room == rTutorial)
 {
 	global.infiniteHealth = true;	

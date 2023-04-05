@@ -17,6 +17,8 @@ function PickNextLevel(){
 		global.passiveItems = [];
 		global.levelCount = 0;
 		global.gobletCombo = 0;
+		audio_stop_sound(msc_Floor1);
+		global.floor1Music = false;
 		Save();
 	}
 	// Otherwise, pick a new level that the player hasn't played yet
