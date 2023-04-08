@@ -17,6 +17,7 @@ function TakeDamage(argument0,argument1,argument2)
 				currentwalksp = -sign(image_xscale) * argument2;
 				hit = true;
 				ScreenShake(2,10);
+				audio_stop_sound(msc_Floor1);
 				hitStop = instance_create_layer(0,0,"Instances",oHitstopLong);
 				hitStop.death = true;
 			}
