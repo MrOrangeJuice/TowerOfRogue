@@ -242,7 +242,7 @@
     {"name":"sJump","order":1,"path":"sprites/sJump/sJump.yy",},
     {"name":"oCoinVFX","order":5,"path":"objects/oCoinVFX/oCoinVFX.yy",},
     {"name":"snd_Grave","order":22,"path":"sounds/snd_Grave/snd_Grave.yy",},
-    {"name":"rFloor1_3","order":10,"path":"rooms/rFloor1_3/rFloor1_3.yy",},
+    {"name":"rFloor1_3","order":2,"path":"rooms/rFloor1_3/rFloor1_3.yy",},
     {"name":"sDustSlash","order":6,"path":"sprites/sDustSlash/sDustSlash.yy",},
     {"name":"o2","order":1,"path":"objects/o2/o2.yy",},
     {"name":"sPlayerRun","order":3,"path":"sprites/sPlayerRun/sPlayerRun.yy",},
