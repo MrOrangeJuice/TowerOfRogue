@@ -32,6 +32,7 @@ global.gobletCombo = 0;
 global.gobletVFX = [o1,o2,o3,o4,o5,oHealthGetVFX];
 global.tutorialMusic = false;
 global.floor1Music = false;
+global.bumperSwitch = true;
 menuOption = 0;
 analogUpPrev = false;
 analogDownPrev = false;

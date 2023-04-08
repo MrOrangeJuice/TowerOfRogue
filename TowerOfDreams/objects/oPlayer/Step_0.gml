@@ -279,12 +279,20 @@ if(!global.paused && !global.hitStop)
 		canSlash = false;
 		slashing = true;
 		hit = false;
+		// Bumper switch
+		// Switch bumpers A and B
+		if(instance_exists(oBumperA) || instance_exists(oBumperB))
+		{
+			alarm[4] = room_speed * 0.34;
+			oBumperA.image_speed = 1;
+			oBumperB.image_speed = 1;
+		}
 		audio_play_sound(snd_Slash,5,false);
 	}
 
 	// Slash collision
 	if(slashing && !hasSlashJumped)
-	{
+	{	
 		if(place_meeting(x,y+9,oWall))
 		{
 			// Push player up
@@ -317,7 +325,7 @@ if(!global.paused && !global.hitStop)
 		}
 	
 		bumper = instance_place(x,y+9,oBumper);
-		if(bumper)
+		if(bumper && bumper.canHit)
 		{
 			// Push player up
 			while(place_meeting(x,y+8,oBumper))
