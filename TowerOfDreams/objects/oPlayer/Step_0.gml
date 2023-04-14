@@ -434,7 +434,7 @@ if(!global.paused && !global.hitStop)
 		}
 		else if(enemyHitLeft && !enemyHitLeft.noDamage)
 		{
-			TakeDamage(1,2.75,-3.5);	
+			TakeDamage(1,2.75,-3.5);
 		}
 		
 		spikeHitRight = instance_place(x+(1*image_xscale),y,oSpikes);
@@ -469,7 +469,6 @@ if(!global.paused && !global.hitStop)
 		}
 		hsp = 0;
 	}
-	x = x + hsp;
 
 	// Vertical Collision
 	if (place_meeting(x,y+vsp,oWall))
@@ -480,6 +479,69 @@ if(!global.paused && !global.hitStop)
 		}
 		vsp = 0;
 	}
+	
+	// Get out of walls
+	if(place_meeting(x,y,oWall))
+	{
+		for(i = 0; i < 1000; i++)
+		{
+			// Right
+			if(!place_meeting(x+i,y,oWall))
+			{
+				x += i;
+				break;
+			}
+			// Left
+			if(!place_meeting(x-i,y,oWall))
+			{
+				x -= i;
+				break;
+			}
+			// Up
+			if(!place_meeting(x,y-i,oWall))
+			{
+				y -= i;
+				break;
+			}
+			// Down
+			if(!place_meeting(x,y+i,oWall))
+			{
+				y += i;
+				break;
+			}
+			// Top Right
+			if(!place_meeting(x+i,y-i,oWall))
+			{
+				x += i;
+				y -= i;
+				break;
+			}
+			// Top Left
+			if(!place_meeting(x-i,y-i,oWall))
+			{
+				x -= i;
+				y -= i;
+				break;
+			}
+			// Bottom Right
+			if(!place_meeting(x+i,y+i,oWall))
+			{
+				x += i;
+				y += i;
+				break;
+			}
+			// Bottom Left
+			if(!place_meeting(x-i,y+i,oWall))
+			{
+				x -= i;
+				y += i;
+				break;
+			}
+		}
+	}
+	
+	// Apply movement
+	x = x + hsp;
 	y = y + vsp;
 
 	if(prevAirborne && !airborne)
