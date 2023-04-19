@@ -37,6 +37,8 @@
     {"name":"Numbers","order":15,"path":"folders/Sprites/VFX/Numbers.yy",},
     {"name":"Tile Sets","order":1,"path":"folders/Tile Sets.yy",},
     {"name":"Timelines","order":7,"path":"folders/Timelines.yy",},
+    {"name":"NPCs","order":20,"path":"folders/Sprites/NPCs.yy",},
+    {"name":"NPC","order":21,"path":"folders/Objects/NPC.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"sUseItemControllerFadeIn","order":16,"path":"sprites/sUseItemControllerFadeIn/sUseItemControllerFadeIn.yy",},
@@ -202,6 +204,7 @@
     {"name":"s2","order":1,"path":"sprites/s2/s2.yy",},
     {"name":"snd_Bumper","order":5,"path":"sounds/snd_Bumper/snd_Bumper.yy",},
     {"name":"Load","order":4,"path":"scripts/Load/Load.yy",},
+    {"name":"sThumbnail","order":12,"path":"sprites/sThumbnail/sThumbnail.yy",},
     {"name":"sItemUI","order":10,"path":"sprites/sItemUI/sItemUI.yy",},
     {"name":"SlideTransition","order":1,"path":"scripts/SlideTransition/SlideTransition.yy",},
     {"name":"snd_PauseOut","order":9,"path":"sounds/snd_PauseOut/snd_PauseOut.yy",},
