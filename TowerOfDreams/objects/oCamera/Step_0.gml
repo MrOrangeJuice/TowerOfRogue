@@ -15,6 +15,12 @@ else
 		//xTo = follow.x;
 		yTo = follow.y;
 	}
+	else if (instance_exists(oShopPipe) && global.shopPipeCount == 3)
+	{
+		follow = oShopPipe;
+		//xTo = follow.x;
+		yTo = follow.y;
+	}
 	else if (instance_exists(oPipe) && global.pipeCount == 3)
 	{
 		follow = oPipe;

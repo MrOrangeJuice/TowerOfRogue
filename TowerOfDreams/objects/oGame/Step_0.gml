@@ -195,10 +195,14 @@ if(global.paused)
 				global.passiveItems = [];
 				global.levelCount = 0;
 				global.sideRoom = rTitle;
+				global.shopRoom = rTitle;
 				global.sideChestOpened = false;
 				global.pipeCount = 0;
+				global.shopPipeCount = 0;
 				global.pipeSpawned = false;
+				global.shopSpawned = false;
 				global.pipeY = 0;
+				global.shopY = 0;
 				global.gobletCombo = 0;
 				instance_destroy(oItemPopup);
 				SlideTransition(TRANS_MODE.GOTO, rTitle);

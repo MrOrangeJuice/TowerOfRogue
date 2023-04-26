@@ -226,11 +226,13 @@
     {"name":"inst_4B3FE23","path":"rooms/rFloor1_1/rFloor1_1.yy",},
     {"name":"inst_7B135400","path":"rooms/rFloor1_1/rFloor1_1.yy",},
     {"name":"inst_421ECA76","path":"rooms/rFloor1_1/rFloor1_1.yy",},
+    {"name":"inst_1FFFDC3E","path":"rooms/rFloor1_1/rFloor1_1.yy",},
   ],
   "isDnd": false,
   "layers": [
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Pipes","depth":0,"effectEnabled":true,"effectType":null,"gridX":8,"gridY":8,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_43D262EE_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oPipeSpawner","path":"objects/oPipeSpawner/oPipeSpawner.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":432.0,"y":1520.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_1FFFDC3E","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oShopSpawner","path":"objects/oShopSpawner/oShopSpawner.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":216.0,"y":1520.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Tiles","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":200,"SerialiseWidth":80,"TileCompressedData":[
 -1546,1,1,9,-12,3,1,8,-66,1,1,5,-12,0,1,4,-66,1,1,5,-12,0,1,4,-66,1,1,5,-12,0,1,4,-66,1,1,5,-12,0,1,4,-66,1,1,5,-12,0,1,4,-66,1,1,5,-12,0,1,4,-66,1,1,7,-7,2,1,11,-4,0,1,4,-74,1,1,5,-4,0,1,4,-74,1,1,5,

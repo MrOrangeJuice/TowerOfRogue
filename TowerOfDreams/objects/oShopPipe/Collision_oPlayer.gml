@@ -1,0 +1,22 @@
+/// @description Start Transition
+
+if(!playerJustSpawned)
+{
+	// Jump in
+	if(global.shopPipeCount == 0)
+	{
+		image_speed = 1;
+		audio_play_sound(snd_Bumper,5,false);
+		instance_destroy(other);
+	}
+	
+	// Go back
+	if(global.shopPipeCount == 2)
+	{
+		image_xscale = -1;
+		image_speed = 1;
+		audio_play_sound(snd_Bumper,5,false);
+		instance_destroy(other);
+		
+	}
+}

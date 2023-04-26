@@ -1,7 +1,7 @@
 /// @description Init
 
 // If player is coming from side area, don't spawn them
-if (global.pipeCount == 3) 
+if (global.pipeCount == 3 || global.shopPipeCount == 3) 
 {
 	instance_destroy();
 }
