@@ -210,6 +210,8 @@ if(global.paused)
 				global.tutorialMusic = false;
 				audio_stop_sound(msc_Floor1);
 				global.floor1Music = false;
+				audio_stop_sound(msc_Shop);
+				global.shopMusic = false;
 				break;
 		}
 	}

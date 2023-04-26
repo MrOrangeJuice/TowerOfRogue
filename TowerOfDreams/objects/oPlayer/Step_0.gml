@@ -188,7 +188,12 @@ if(!global.paused && !global.hitStop)
 			global.tutorialMusic = true;
 		}
 
-		if(global.inARun && !global.floor1Music && room != rHub)
+		if(!global.shopMusic && (room == rTreasureRoom || room == rTreasureRoom2 || room == rShop || room == rShop2))
+		{
+			audio_play_sound(msc_Shop,5,true);
+			global.shopMusic = true;
+		}
+		if(global.inARun && !global.floor1Music && room != rHub && room != rTreasureRoom && room != rTreasureRoom2 && room != rShop && room != rShop2)
 		{
 			audio_play_sound(msc_Floor1,5,true);
 			global.floor1Music = true;

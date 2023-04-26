@@ -18,6 +18,8 @@ switch(global.shopPipeCount)
 			SlideTransition(TRANS_MODE.GOTO,global.shopRoom);
 		}
 		global.shopPipeCount++;
+		audio_stop_sound(msc_Floor1);
+		global.floor1Music = false;
 		break;
 	// spit out player
 	case 1:
@@ -35,6 +37,8 @@ switch(global.shopPipeCount)
 	case 2:
 		image_speed = 0;
 		SlideTransition(TRANS_MODE.GOTO,global.originalRoom);
+		audio_stop_sound(msc_Shop);
+		global.shopMusic = false;
 		global.shopPipeCount++;
 		break;
 	// Spit player back out
