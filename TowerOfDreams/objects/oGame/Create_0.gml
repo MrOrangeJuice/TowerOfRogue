@@ -12,6 +12,7 @@ global.infiniteHealth = false;
 global.item = -1;
 global.itemSprites = [sKunaiUI,sBootsUI,sShockUI,sCritUI,sGobletUI,sColaUI,sHeart];
 global.itemObjects = [oKunaiItem,oBootsItem,oShockItem,oCritItem,oGobletItem,oColaItem,oHeart];
+global.itemPrices = [120,120,80,100,120,100,50];
 global.passiveItems = [];
 global.passiveItemSprites = [sShockUI,sCritUI,sGobletUI,sColaUI];
 global.sword = true;

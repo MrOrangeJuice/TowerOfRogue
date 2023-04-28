@@ -356,17 +356,28 @@ if(!global.paused && !global.hitStop)
 				y -= 1;	
 			}
 			vsp = -3;	
-			instance_create_layer(bubble.x,bubble.y,"VFX",oBubbleVFX);
 			airborne = true;
 			hasSlashed = true;
 			hasSlashJumped = true;
-			audio_play_sound(snd_Bumper,5,false);
-			// Spawn item
-			newItem = instance_create_layer(bubble.x+4,bubble.y+4,"Collectables",global.itemObjects[bubble.item]);
-			newItem.vsp = -3;
-			instance_destroy(bubble);
+			// Check if item can be bought
+			if(global.coins >= global.itemPrices[bubble.item])
+			{
+				instance_create_layer(bubble.x,bubble.y,"VFX",oBubbleVFX);
+				audio_play_sound(snd_Bumper,5,false);
+				audio_play_sound(snd_Purchase,5,false);
+				// Spawn item
+				newItem = instance_create_layer(bubble.x+4,bubble.y+4,"Collectables",global.itemObjects[bubble.item]);
+				// Don't double the lift if it's a heart
+				if(bubble.item != array_length(global.itemObjects)-1) newItem.vsp = -3;
+				
+				global.coins -= global.itemPrices[bubble.item];
+				instance_destroy(bubble);
+			}
+			else
+			{
+				audio_play_sound(snd_Klang,5,false);
+			}
 		}
-		
 		enemy = instance_place(x,y+9,oEnemy);
 		if(enemy)
 		{

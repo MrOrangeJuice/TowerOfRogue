@@ -28,8 +28,8 @@
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "Items",
-    "path": "folders/Sprites/Items.yy",
+    "name": "VFX",
+    "path": "folders/Sprites/VFX.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
