@@ -364,7 +364,8 @@ if(!global.paused && !global.hitStop)
 			{
 				instance_create_layer(bubble.x,bubble.y,"VFX",oBubbleVFX);
 				audio_play_sound(snd_Bumper,5,false);
-				audio_play_sound(snd_Purchase,5,false);
+				// Stamper alarm
+				alarm[5] = room_speed * 0.2;
 				// Spawn item
 				newItem = instance_create_layer(bubble.x+4,bubble.y+4,"Collectables",global.itemObjects[bubble.item]);
 				// Don't double the lift if it's a heart
