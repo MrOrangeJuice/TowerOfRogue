@@ -347,6 +347,12 @@ if(!global.paused && !global.hitStop)
 			audio_play_sound(snd_Bumper,5,false);
 		}
 		
+		bubble = instance_place(x,y+9,oItemBubble);
+		if(bubble)
+		{
+			
+		}
+		
 		enemy = instance_place(x,y+9,oEnemy);
 		if(enemy)
 		{
