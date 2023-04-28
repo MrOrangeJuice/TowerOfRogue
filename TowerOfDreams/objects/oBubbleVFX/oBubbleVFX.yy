@@ -1,19 +1,17 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "oStamper",
-  "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
-  ],
+  "name": "oBubbleVFX",
+  "eventList": [],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "NPC",
-    "path": "folders/Objects/NPC.yy",
+    "name": "VFX",
+    "path": "folders/Objects/VFX.yy",
   },
   "parentObjectId": {
-    "name": "oEnemy",
-    "path": "objects/oEnemy/oEnemy.yy",
+    "name": "oVFX",
+    "path": "objects/oVFX/oVFX.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,
@@ -31,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "sStamper",
-    "path": "sprites/sStamper/sStamper.yy",
+    "name": "sBubbleVFX",
+    "path": "sprites/sBubbleVFX/sBubbleVFX.yy",
   },
   "spriteMaskId": null,
   "visible": true,

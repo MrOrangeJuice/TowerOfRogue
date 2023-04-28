@@ -350,7 +350,21 @@ if(!global.paused && !global.hitStop)
 		bubble = instance_place(x,y+9,oItemBubble);
 		if(bubble)
 		{
-			
+			// Push player up
+			while(place_meeting(x,y+8,oItemBubble))
+			{
+				y -= 1;	
+			}
+			vsp = -3;	
+			instance_create_layer(bubble.x,bubble.y,"VFX",oBubbleVFX);
+			airborne = true;
+			hasSlashed = true;
+			hasSlashJumped = true;
+			audio_play_sound(snd_Bumper,5,false);
+			// Spawn item
+			newItem = instance_create_layer(bubble.x+4,bubble.y+4,"Collectables",global.itemObjects[bubble.item]);
+			newItem.vsp = -3;
+			instance_destroy(bubble);
 		}
 		
 		enemy = instance_place(x,y+9,oEnemy);
