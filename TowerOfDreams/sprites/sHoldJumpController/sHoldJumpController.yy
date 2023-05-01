@@ -2,7 +2,7 @@
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "sHoldJumpController",
-  "bbox_bottom": 42,
+  "bbox_bottom": 31,
   "bbox_left": 0,
   "bbox_right": 39,
   "bbox_top": 2,

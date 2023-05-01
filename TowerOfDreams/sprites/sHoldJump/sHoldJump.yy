@@ -2,7 +2,7 @@
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "sHoldJump",
-  "bbox_bottom": 41,
+  "bbox_bottom": 30,
   "bbox_left": 0,
   "bbox_right": 39,
   "bbox_top": 2,
