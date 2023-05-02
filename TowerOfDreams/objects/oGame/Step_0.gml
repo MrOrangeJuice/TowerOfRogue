@@ -204,6 +204,9 @@ if(global.paused)
 				global.pipeY = 0;
 				global.shopY = 0;
 				global.gobletCombo = 0;
+				// Reset instance lists
+				global.coinArray = ds_list_create();
+				global.enemyArray = ds_list_create();
 				instance_destroy(oItemPopup);
 				SlideTransition(TRANS_MODE.GOTO, rTitle);
 				audio_stop_sound(msc_Tutorial);

@@ -52,5 +52,21 @@ if(hp <= 0)
 	{
 		instance_create_layer(x,y,"Enemies",oEnemyDeath);
 	}
+	
+	
+	// Update spot in array
+	listSize = ds_list_size(global.enemyArray);
+	for(i = 0; i < listSize; i++)
+	{
+		// Get array of [id,collected] from list of enemies
+		enemyData = array_create(2);
+		enemyData = global.enemyArray[| i];
+		if(enemyData[0] == id && enemyData[1] == true)
+		{
+			// Update back in list
+			global.enemyArray[| i] = [enemyData[0],false];	
+		}
+	}
+
 	instance_destroy();	
 }

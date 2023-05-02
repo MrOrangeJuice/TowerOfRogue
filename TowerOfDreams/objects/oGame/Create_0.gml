@@ -40,6 +40,9 @@ global.tutorialMusic = false;
 global.floor1Music = false;
 global.shopMusic = false;
 global.bumperSwitch = true;
+
+global.coinArray = ds_list_create();
+global.enemyArray = ds_list_create();
 menuOption = 0;
 analogUpPrev = false;
 analogDownPrev = false;

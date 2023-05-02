@@ -53,5 +53,4 @@ switch(global.pipeCount)
 		global.pipeCount = 0;
 		image_xscale = 1;
 		break;
-		break;
 }

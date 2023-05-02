@@ -17,6 +17,9 @@ function PickNextLevel(){
 		global.passiveItems = [];
 		global.levelCount = 0;
 		global.gobletCombo = 0;
+		// Reset instance lists
+		global.coinArray = ds_list_create();
+		global.enemyArray = ds_list_create();
 		audio_stop_sound(msc_Floor1);
 		global.floor1Music = false;
 		Save();
@@ -38,5 +41,9 @@ function PickNextLevel(){
 		
 		// Go to level we picked
 		SlideTransition(TRANS_MODE.GOTO,global.levelArray[levelChoice]);
+		
+		// Reset instance lists
+		global.coinArray = ds_list_create();
+		global.enemyArray = ds_list_create();
 	}
 }

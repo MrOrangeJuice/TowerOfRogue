@@ -1,4 +1,4 @@
-/// @description Restart Game
+/// @description Progress
 
 audio_play_sound(snd_Portal,5,false);
 instance_destroy(oPlayer);
