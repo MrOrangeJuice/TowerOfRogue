@@ -355,12 +355,20 @@ if(!global.paused && !global.hitStop)
 			{
 				y -= 1;	
 			}
-			vsp = -3;	
+			vsp = -3;
+			card = 0;
+			for(i = 0; i < array_length(global.passiveItems); i++)
+			{
+				if(global.passiveItems[i] == 4)
+				{
+					card++;
+				}
+			}
 			airborne = true;
 			hasSlashed = true;
 			hasSlashJumped = true;
 			// Check if item can be bought
-			if(global.coins >= global.itemPrices[bubble.item])
+			if(global.coins >= global.itemPrices[bubble.item] * (1 - (0.2 * card)))
 			{
 				instance_create_layer(bubble.x,bubble.y,"VFX",oBubbleVFX);
 				audio_play_sound(snd_Bumper,5,false);
@@ -371,7 +379,7 @@ if(!global.paused && !global.hitStop)
 				// Don't double the lift if it's a heart
 				if(bubble.item != array_length(global.itemObjects)-1) newItem.vsp = -3;
 				
-				global.coins -= global.itemPrices[bubble.item];
+				global.coins -= global.itemPrices[bubble.item] * (1 - (0.2 * card));
 				instance_destroy(bubble);
 			}
 			else
