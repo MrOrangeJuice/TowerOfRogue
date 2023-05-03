@@ -26,3 +26,5 @@ invulnerable = false;
 hit = false;
 rage = false;
 rageDamage = 0;
+shockX = 0;
+shockY = 0;

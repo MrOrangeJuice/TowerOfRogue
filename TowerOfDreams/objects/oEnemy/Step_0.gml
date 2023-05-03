@@ -15,11 +15,13 @@ if(hp <= 0)
 	}
 	// Check for death items
 	goblet = false;
+	gobletNum = 0;
 	for(i = 0; i < array_length(global.passiveItems); i++)
 	{
 		if(global.passiveItems[i] == 2)
 		{
 			goblet = true;
+			gobletNum++;
 		}
 	}
 	if(goblet && givesHealth)
@@ -32,7 +34,7 @@ if(hp <= 0)
 			{
 				if(global.health == global.maxHealth -1)
 				{
-					global.health++;
+					global.health += gobletNum;
 				}
 				else
 				{

@@ -311,11 +311,13 @@ if(!global.paused && !global.hitStop)
 			instance_create_layer(x,y+6,"VFX",oDustSlash);
 			// Check for slash items
 			shock = false;
+			shockNum = 0;
 			for(i = 0; i < array_length(global.passiveItems); i++)
 			{
 				if(global.passiveItems[i] == 0)
 				{
 					shock = true;
+					shockNum++;
 				}
 			}
 			if(shock)
@@ -324,6 +326,13 @@ if(!global.paused && !global.hitStop)
 				instance_create_layer(x,y+8,"Instances",oShockwave);
 				rightShock = instance_create_layer(x,y+8,"Instances",oShockwave);
 				rightShock.dir = 1;
+				shockNum--;
+				shockX = x;
+				shockY = y+8;
+				if(shockNum > 0)
+				{
+					alarm[6] = room_speed * 0.1;	
+				}
 			}
 			airborne = true;
 			hasSlashed = true;
