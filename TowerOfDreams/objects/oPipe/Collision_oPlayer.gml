@@ -8,6 +8,7 @@ if(!playerJustSpawned)
 		image_speed = 1;
 		audio_play_sound(snd_Bumper,5,false);
 		instance_destroy(other);
+		global.canPause = false;
 	}
 	
 	// Go back
@@ -17,6 +18,7 @@ if(!playerJustSpawned)
 		image_speed = 1;
 		audio_play_sound(snd_Bumper,5,false);
 		instance_destroy(other);
+		global.canPause = false;
 		
 	}
 }

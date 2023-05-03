@@ -30,8 +30,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "sDoor",
-    "path": "sprites/sDoor/sDoor.yy",
+    "name": "sDoorNew",
+    "path": "sprites/sDoorNew/sDoorNew.yy",
   },
   "spriteMaskId": null,
   "visible": true,

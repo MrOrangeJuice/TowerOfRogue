@@ -39,6 +39,7 @@ global.gobletVFX = [o1,o2,o3,o4,o5,oHealthGetVFX];
 global.tutorialMusic = false;
 global.floor1Music = false;
 global.shopMusic = false;
+global.hubMusic = false;
 global.bumperSwitch = true;
 
 global.coinArray = ds_list_create();

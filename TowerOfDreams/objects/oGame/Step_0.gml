@@ -215,6 +215,8 @@ if(global.paused)
 				global.floor1Music = false;
 				audio_stop_sound(msc_Shop);
 				global.shopMusic = false;
+				audio_stop_sound(msc_Hub);
+				global.hubMusic = false;
 				break;
 		}
 	}

@@ -32,6 +32,7 @@ switch(global.shopPipeCount)
 		player.currentwalksp = -3 * image_xscale;
 		player.vsp = -2;
 		global.shopPipeCount++;
+		global.canPause = true;
 		break;
 	// go back to original room
 	case 2:
@@ -52,6 +53,6 @@ switch(global.shopPipeCount)
 		player.vsp = -2;
 		global.shopPipeCount = 0;
 		image_xscale = 1;
-		break;
+		global.canPause = true;
 		break;
 }

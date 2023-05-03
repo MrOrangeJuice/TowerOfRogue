@@ -189,6 +189,11 @@ if(!global.paused && !global.hitStop)
 			audio_play_sound(msc_Tutorial,5,true);
 			global.tutorialMusic = true;
 		}
+		if(room == rHub && !global.hubMusic)
+		{
+			audio_play_sound(msc_Hub,5,true);
+			global.hubMusic = true;
+		}
 
 		if(!global.shopMusic && (room == rTreasureRoom || room == rTreasureRoom2 || room == rShop || room == rShop2))
 		{
@@ -441,6 +446,7 @@ if(!global.paused && !global.hitStop)
 					enemy.hp -= (1 + rageDamage);
 					ScreenShake(2,10);
 				}
+				audio_play_sound(snd_Hit,5,false);
 			}
 			else
 			{
