@@ -63,11 +63,13 @@ if(!global.paused && !global.hitStop)
 	
 	// Check for items
 	rageInItems = false;
+	rageNum = 0;
 	for(i = 0; i < array_length(global.passiveItems); i++)
 	{
 		if(global.passiveItems[i] == 3)
 		{
 			rageInItems = true;
+			rageNum++;
 		}
 	}
 	// Activate rage
@@ -391,12 +393,12 @@ if(!global.paused && !global.hitStop)
 		if(enemy)
 		{
 			// Check for slash items
-			crit = false;
+			crit = 0;
 			for(i = 0; i < array_length(global.passiveItems); i++)
 			{
 				if(global.passiveItems[i] == 1)
 				{
-					crit = true;
+					crit++;
 				}
 			}
 			// Push player up
@@ -410,35 +412,25 @@ if(!global.paused && !global.hitStop)
 				enemy.flash = 5;
 				if(rage)
 				{
-					rageDamage = 1;
+					rageDamage = rageNum;
 				}
 				else
 				{
 					rageDamage = 0;	
 				}
-				if(crit)
+				randomize();
+				critChance = irandom_range(1,100);
+				if(critChance <= 5 + (25 * crit))
 				{
-					randomize();
-					critChance = irandom_range(0,3);
-					if(critChance == 1)
-					{
-						enemy.hp -= 2 * (1 + rageDamage);
-						instance_create_layer(enemy.x,enemy.y-10,"Instances",oCritVFX);
-						ScreenShake(4,12);
-						audio_play_sound(snd_Crit,5,false);
-					}
-					else
-					{
-						enemy.hp -= (1 + rageDamage);
-						ScreenShake(2,10);
-					}
-					audio_play_sound(snd_Hit,5,false);
-				}	
+					enemy.hp -= 2 * (1 + rageDamage);
+					instance_create_layer(enemy.x,enemy.y-10,"Instances",oCritVFX);
+					ScreenShake(4,12);
+					audio_play_sound(snd_Crit,5,false);
+				}
 				else
 				{
 					enemy.hp -= (1 + rageDamage);
 					ScreenShake(2,10);
-					audio_play_sound(snd_Hit,5,false);
 				}
 			}
 			else
