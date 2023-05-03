@@ -32,14 +32,11 @@ if(hp <= 0)
 		{
 			if(global.health < global.maxHealth)
 			{
-				if(global.health == global.maxHealth -1)
-				{
-					global.health += gobletNum;
-				}
-				else
-				{
-					global.health += 2;	
-				}
+				global.health += 2 * gobletNum;
+			}
+			if(global.health > global.maxHealth)
+			{
+				global.health = global.maxHealth;	
 			}
 			audio_play_sound(snd_Heal,5,false);
 			with (oGame) healthTextScale = 1.15;

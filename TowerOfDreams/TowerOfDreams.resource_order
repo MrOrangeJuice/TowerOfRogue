@@ -39,6 +39,8 @@
     {"name":"Numbers","order":14,"path":"folders/Sprites/VFX/Numbers.yy",},
     {"name":"Tile Sets","order":1,"path":"folders/Tile Sets.yy",},
     {"name":"Timelines","order":7,"path":"folders/Timelines.yy",},
+    {"name":"Decorations","order":21,"path":"folders/Sprites/Decorations.yy",},
+    {"name":"Decorations","order":22,"path":"folders/Objects/Decorations.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"sUseItemControllerFadeIn","order":16,"path":"sprites/sUseItemControllerFadeIn/sUseItemControllerFadeIn.yy",},
