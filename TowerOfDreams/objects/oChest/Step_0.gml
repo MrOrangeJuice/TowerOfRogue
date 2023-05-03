@@ -20,6 +20,11 @@ if(place_meeting(x,y,oPlayer))
 		randomize();
 		// Generate new item
 		newItemIndex = irandom_range(0,array_length(global.itemObjects)-1);
+		// Reroll if item is current active item
+		while(newItemIndex == global.item)
+		{
+			newItemIndex = irandom_range(0,array_length(global.itemObjects)-1);
+		}
 		// Spawn hearts differently
 		if(newItemIndex == array_length(global.itemObjects)-1)
 		{
