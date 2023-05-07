@@ -298,6 +298,7 @@ if(!global.paused && !global.hitStop)
 			alarm[4] = room_speed * 0.34;
 			oBumperA.image_speed = 1;
 			oBumperB.image_speed = 1;
+			global.bumpersSwitching = true;
 		}
 		audio_play_sound(snd_Slash,5,false);
 	}
@@ -386,6 +387,7 @@ if(!global.paused && !global.hitStop)
 			// Check if item can be bought
 			if(global.coins >= global.itemPrices[bubble.item] * (1 - (0.2 * card)))
 			{
+				instance_create_layer(bubble.x+8,bubble.y,"UI",oDustSlashBumper);
 				instance_create_layer(bubble.x,bubble.y,"VFX",oBubbleVFX);
 				audio_play_sound(snd_Bumper,5,false);
 				// Stamper alarm
@@ -400,6 +402,7 @@ if(!global.paused && !global.hitStop)
 			}
 			else
 			{
+				instance_create_layer(bubble.x+8,bubble.y,"UI",oDustSlashBumper);
 				audio_play_sound(snd_Klang,5,false);
 			}
 		}

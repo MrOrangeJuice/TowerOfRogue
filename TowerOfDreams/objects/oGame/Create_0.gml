@@ -13,6 +13,7 @@ global.item = -1;
 global.itemSprites = [sKunaiUI,sBootsUI,sShockUI,sCritUI,sGobletUI,sColaUI,sCardUI,sHeart];
 global.itemObjects = [oKunaiItem,oBootsItem,oShockItem,oCritItem,oGobletItem,oColaItem,oCardItem,oHeart];
 global.itemPrices = [120,120,80,100,120,100,100,50];
+global.itemNames = ["Kunai","Winged Boots","Shock Bracelet","Crit Jelly","Goblet of Blood","Rage Cola","Rewards Card","Heart"];
 global.passiveItems = [];
 global.passiveItemSprites = [sShockUI,sCritUI,sGobletUI,sColaUI,sCardUI];
 global.sword = true;
@@ -41,6 +42,7 @@ global.floor1Music = false;
 global.shopMusic = false;
 global.hubMusic = false;
 global.bumperSwitch = true;
+global.bumpersSwitching = false;
 
 global.coinArray = ds_list_create();
 global.enemyArray = ds_list_create();

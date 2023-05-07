@@ -163,6 +163,7 @@
     {"id":{"name":"sMainMenu","path":"sprites/sMainMenu/sMainMenu.yy",},},
     {"id":{"name":"oGrave","path":"objects/oGrave/oGrave.yy",},},
     {"id":{"name":"sDoorNew","path":"sprites/sDoorNew/sDoorNew.yy",},},
+    {"id":{"name":"sStamperWave","path":"sprites/sStamperWave/sStamperWave.yy",},},
     {"id":{"name":"rTreasureRoom","path":"rooms/rTreasureRoom/rTreasureRoom.yy",},},
     {"id":{"name":"snd_Heal","path":"sounds/snd_Heal/snd_Heal.yy",},},
     {"id":{"name":"oPortal","path":"objects/oPortal/oPortal.yy",},},

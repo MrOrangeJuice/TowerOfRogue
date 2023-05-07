@@ -14,6 +14,7 @@ if(!playerJustSpawned)
 	// Go back
 	if(global.shopPipeCount == 2)
 	{
+		oStamper.sprite_index = sStamperWave;
 		image_xscale = -1;
 		image_speed = 1;
 		audio_play_sound(snd_Bumper,5,false);

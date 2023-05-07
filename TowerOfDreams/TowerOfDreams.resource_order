@@ -137,6 +137,7 @@
     {"name":"sMainMenu","order":6,"path":"sprites/sMainMenu/sMainMenu.yy",},
     {"name":"oGrave","order":20,"path":"objects/oGrave/oGrave.yy",},
     {"name":"sDoorNew","order":17,"path":"sprites/sDoorNew/sDoorNew.yy",},
+    {"name":"sStamperWave","order":2,"path":"sprites/sStamperWave/sStamperWave.yy",},
     {"name":"snd_Heal","order":20,"path":"sounds/snd_Heal/snd_Heal.yy",},
     {"name":"oPortal","order":1,"path":"objects/oPortal/oPortal.yy",},
     {"name":"oMoveTutorial","order":1,"path":"objects/oMoveTutorial/oMoveTutorial.yy",},
