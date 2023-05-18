@@ -471,11 +471,24 @@ if(!global.paused && !global.hitStop)
 		audio_play_sound(snd_Jump, 5, false);
 		canJump = false;
 	}
+	
+	// Extra Jump
+	if (global.item == 8) && (key_item_pressed) && (extraJump) && (!wallSliding)
+	{
+		vsp = -3;
+		extraJump = false;
+		if(!airborne) instance_create_layer(x,y,"VFX",oDust);
+		audio_play_sound(snd_Jump, 5, false);
+	}
 
 	// Variable jump height
-	if vsp < 0 && (!(key_jump) && !hasSlashed) //if you're moving upwards in the air but not holding down jump
+	// Turn off variable jump height after using an extra jump
+	if(extraJump)
 	{
-		vsp *= 0.85; //essentially, divide your vertical speed
+		if vsp < 0 && (!(key_jump) && !hasSlashed) //if you're moving upwards in the air but not holding down jump
+		{
+			vsp *= 0.85; //essentially, divide your vertical speed
+		}
 	}
 	
 	if(!invulnerable)
@@ -602,6 +615,7 @@ if(!global.paused && !global.hitStop)
 	if(prevAirborne && !airborne)
 	{
 		landing = true;
+		extraJump = true;
 		instance_create_layer(x,y,"VFX",oDustSmall);
 		audio_play_sound(snd_Land, 5, false);
 		hit = false;

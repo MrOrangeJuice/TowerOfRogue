@@ -28,3 +28,4 @@ rage = false;
 rageDamage = 0;
 shockX = 0;
 shockY = 0;
+extraJump = true;

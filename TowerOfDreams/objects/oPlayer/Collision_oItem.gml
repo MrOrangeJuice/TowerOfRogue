@@ -9,6 +9,8 @@ if(other.canGrab)
 		// Reset walksp in case of boots
 		walksp = 1;
 		running = false;
+		// Reset extra jump variable for wings
+		extraJump = true;
 
 		// If you already have an item, drop it on the ground
 		if(global.item != -1)
