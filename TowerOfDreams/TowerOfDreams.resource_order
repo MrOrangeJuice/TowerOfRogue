@@ -45,6 +45,7 @@
   "ResourceOrderSettings": [
     {"name":"sUseItemControllerFadeIn","order":16,"path":"sprites/sUseItemControllerFadeIn/sUseItemControllerFadeIn.yy",},
     {"name":"snd_EnemyDeath","order":11,"path":"sounds/snd_EnemyDeath/snd_EnemyDeath.yy",},
+    {"name":"sHeartTrophyUI","order":11,"path":"sprites/sHeartTrophyUI/sHeartTrophyUI.yy",},
     {"name":"msc_TitleScreen","order":2,"path":"sounds/msc_TitleScreen/msc_TitleScreen.yy",},
     {"name":"oGravityEnemy","order":8,"path":"objects/oGravityEnemy/oGravityEnemy.yy",},
     {"name":"oGem","order":2,"path":"objects/oGem/oGem.yy",},
@@ -80,6 +81,7 @@
     {"name":"sGobletUI","order":7,"path":"sprites/sGobletUI/sGobletUI.yy",},
     {"name":"oDustSmall","order":2,"path":"objects/oDustSmall/oDustSmall.yy",},
     {"name":"oKunaiItem","order":1,"path":"objects/oKunaiItem/oKunaiItem.yy",},
+    {"name":"oHeartTrophyItem","order":12,"path":"objects/oHeartTrophyItem/oHeartTrophyItem.yy",},
     {"name":"oShopPipe","order":10,"path":"objects/oShopPipe/oShopPipe.yy",},
     {"name":"oBallVFX","order":10,"path":"objects/oBallVFX/oBallVFX.yy",},
     {"name":"sGravityEnemyFall","order":1,"path":"sprites/sGravityEnemyFall/sGravityEnemyFall.yy",},

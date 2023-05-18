@@ -63,6 +63,7 @@
   "resources": [
     {"id":{"name":"sUseItemControllerFadeIn","path":"sprites/sUseItemControllerFadeIn/sUseItemControllerFadeIn.yy",},},
     {"id":{"name":"snd_EnemyDeath","path":"sounds/snd_EnemyDeath/snd_EnemyDeath.yy",},},
+    {"id":{"name":"sHeartTrophyUI","path":"sprites/sHeartTrophyUI/sHeartTrophyUI.yy",},},
     {"id":{"name":"sTileset","path":"sprites/sTileset/sTileset.yy",},},
     {"id":{"name":"msc_TitleScreen","path":"sounds/msc_TitleScreen/msc_TitleScreen.yy",},},
     {"id":{"name":"oGravityEnemy","path":"objects/oGravityEnemy/oGravityEnemy.yy",},},
@@ -101,6 +102,7 @@
     {"id":{"name":"sGobletUI","path":"sprites/sGobletUI/sGobletUI.yy",},},
     {"id":{"name":"oDustSmall","path":"objects/oDustSmall/oDustSmall.yy",},},
     {"id":{"name":"oKunaiItem","path":"objects/oKunaiItem/oKunaiItem.yy",},},
+    {"id":{"name":"oHeartTrophyItem","path":"objects/oHeartTrophyItem/oHeartTrophyItem.yy",},},
     {"id":{"name":"oShopPipe","path":"objects/oShopPipe/oShopPipe.yy",},},
     {"id":{"name":"oBallVFX","path":"objects/oBallVFX/oBallVFX.yy",},},
     {"id":{"name":"sGravityEnemyFall","path":"sprites/sGravityEnemyFall/sGravityEnemyFall.yy",},},

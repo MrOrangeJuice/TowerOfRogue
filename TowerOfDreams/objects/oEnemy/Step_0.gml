@@ -5,7 +5,16 @@ if(hp <= 0)
 	if(givesHealth)
 	{
 		randomize();
-		if(irandom_range(1,4) == 2)
+		trophy = 0;
+		for(i = 0; i < array_length(global.passiveItems); i++)
+		{
+			if(global.passiveItems[i] == 5)
+			{
+				trophy++;
+			}
+		}
+		heartChance = irandom_range(1,100);
+		if(heartChance <= 25 + (trophy * 25))
 		{
 
 			heart = instance_create_layer(x-4,y-4,"Collectables",oHeart);	
