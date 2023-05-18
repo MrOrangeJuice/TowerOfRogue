@@ -99,6 +99,7 @@
     {"name":"snd_Hit","order":12,"path":"sounds/snd_Hit/snd_Hit.yy",},
     {"name":"sItemBox","order":9,"path":"sprites/sItemBox/sItemBox.yy",},
     {"name":"sCannon","order":4,"path":"sprites/sCannon/sCannon.yy",},
+    {"name":"rFloor1_4","order":3,"path":"rooms/rFloor1_4/rFloor1_4.yy",},
     {"name":"oPlayerExplosion","order":14,"path":"objects/oPlayerExplosion/oPlayerExplosion.yy",},
     {"name":"o3","order":2,"path":"objects/o3/o3.yy",},
     {"name":"oShockwaveVFX","order":15,"path":"objects/oShockwaveVFX/oShockwaveVFX.yy",},
