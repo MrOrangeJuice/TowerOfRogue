@@ -4,6 +4,17 @@ event_inherited();
 
 if(instance_exists(oPlayer))
 {
-	x = oPlayer.x;
+	if(oPlayer.hsp > 0.1)
+	{
+		x = oPlayer.x + 1;
+	}
+	else if(oPlayer.hsp < -0.1)
+	{
+		x = oPlayer.x - 1;
+	}
+	else
+	{
+		x = oPlayer.x;	
+	}
 	y = oPlayer.y;
 }
