@@ -343,6 +343,7 @@ if(!global.paused && !global.hitStop)
 			airborne = true;
 			hasSlashed = true;
 			hasSlashJumped = true;
+			extraJump = true;
 			audio_play_sound(snd_Impact,5,false);
 		}
 	
@@ -361,6 +362,7 @@ if(!global.paused && !global.hitStop)
 			airborne = true;
 			hasSlashed = true;
 			hasSlashJumped = true;
+			extraJump = true;
 			audio_play_sound(snd_Bumper,5,false);
 		}
 		
@@ -384,6 +386,7 @@ if(!global.paused && !global.hitStop)
 			airborne = true;
 			hasSlashed = true;
 			hasSlashJumped = true;
+			extraJump = true;
 			// Check if item can be bought
 			if(global.coins >= global.itemPrices[bubble.item] * (1 - (0.2 * card)))
 			{
@@ -460,6 +463,7 @@ if(!global.paused && !global.hitStop)
 			airborne = true;
 			hasSlashed = true;
 			hasSlashJumped = true;
+			extraJump = true;
 		}
 	}
 
@@ -477,8 +481,9 @@ if(!global.paused && !global.hitStop)
 	{
 		vsp = -3;
 		extraJump = false;
+		instance_create_layer(x,y,"VFX",oWingVFX);
 		if(!airborne) instance_create_layer(x,y,"VFX",oDust);
-		audio_play_sound(snd_Jump, 5, false);
+		audio_play_sound(snd_Wings, 5, false);
 	}
 
 	// Variable jump height
