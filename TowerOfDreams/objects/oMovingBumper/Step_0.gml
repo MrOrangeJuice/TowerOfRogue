@@ -6,6 +6,8 @@ if(!global.paused)
 {
 	x += dir;
 	xDiff += dir;
+	y += yDir;
+	yDiff += yDir;
 
 	if(xDiff > range)
 	{
@@ -15,6 +17,16 @@ if(!global.paused)
 	if(xDiff < 0)
 	{
 		dir *= -1;	
+	}
+	
+	if(yDiff > yRange)
+	{
+		yDir *= -1;	
+	}
+
+	if(yDiff < 0)
+	{
+		yDir *= -1;	
 	}
 }
 else
