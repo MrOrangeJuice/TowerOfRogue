@@ -2,7 +2,7 @@
 
 event_inherited();
 
-if(!global.paused)
+if(!global.paused && canMove)
 {
 	x += dir * moveSpeed;
 	xDiff += dir * moveSpeed;
