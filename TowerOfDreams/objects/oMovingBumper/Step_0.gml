@@ -4,10 +4,10 @@ event_inherited();
 
 if(!global.paused)
 {
-	x += dir;
-	xDiff += dir;
-	y += yDir;
-	yDiff += yDir;
+	x += dir * moveSpeed;
+	xDiff += dir * moveSpeed;
+	y += yDir * moveSpeed;
+	yDiff += yDir * moveSpeed;
 
 	if(xDiff > range)
 	{
