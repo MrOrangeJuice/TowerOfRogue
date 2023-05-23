@@ -33,5 +33,5 @@
     "path": "sprites/sSpikeDebug/sSpikeDebug.yy",
   },
   "spriteMaskId": null,
-  "visible": true,
+  "visible": false,
 }
