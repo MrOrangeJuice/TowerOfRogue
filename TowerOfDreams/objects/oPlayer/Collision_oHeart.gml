@@ -1,4 +1,4 @@
-/// @description Pickup heart20
+/// @description Pickup heart
 
 if(other.canGrab)
 {

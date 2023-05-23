@@ -26,6 +26,12 @@
     {"name":"inst_45DE892D","path":"rooms/rHub/rHub.yy",},
     {"name":"inst_61E37E23","path":"rooms/rHub/rHub.yy",},
     {"name":"inst_4FA68427","path":"rooms/rHub/rHub.yy",},
+    {"name":"inst_69778E67","path":"rooms/rHub/rHub.yy",},
+    {"name":"inst_65EE5BF9","path":"rooms/rHub/rHub.yy",},
+    {"name":"inst_6A10DF86","path":"rooms/rHub/rHub.yy",},
+    {"name":"inst_701FFC04","path":"rooms/rHub/rHub.yy",},
+    {"name":"inst_13E371D","path":"rooms/rHub/rHub.yy",},
+    {"name":"inst_D53EA9","path":"rooms/rHub/rHub.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -44,6 +50,24 @@
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Enemies","depth":500,"effectEnabled":true,"effectType":null,"gridX":4,"gridY":4,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_17AE33E1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oDoor","path":"objects/oDoor/oDoor.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":692.0,"y":1344.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_2A26DF48","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oDummy","path":"objects/oDummy/oDummy.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":264.0,"y":1384.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_69778E67","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oCannon","path":"objects/oCannon/oCannon.yy",},"properties":[
+            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oCannon","path":"objects/oCannon/oCannon.yy",},"propertyId":{"name":"dir","path":"objects/oCannon/oCannon.yy",},"value":"1",},
+          ],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":916.0,"y":1384.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_65EE5BF9","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oCannon","path":"objects/oCannon/oCannon.yy",},"properties":[
+            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oCannon","path":"objects/oCannon/oCannon.yy",},"propertyId":{"name":"dir","path":"objects/oCannon/oCannon.yy",},"value":"1",},
+          ],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":932.0,"y":1384.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_6A10DF86","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oCannon","path":"objects/oCannon/oCannon.yy",},"properties":[
+            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oCannon","path":"objects/oCannon/oCannon.yy",},"propertyId":{"name":"dir","path":"objects/oCannon/oCannon.yy",},"value":"1",},
+          ],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":948.0,"y":1384.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_701FFC04","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oCannon","path":"objects/oCannon/oCannon.yy",},"properties":[
+            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oCannon","path":"objects/oCannon/oCannon.yy",},"propertyId":{"name":"dir","path":"objects/oCannon/oCannon.yy",},"value":"1",},
+          ],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":964.0,"y":1384.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_13E371D","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oCannon","path":"objects/oCannon/oCannon.yy",},"properties":[
+            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oCannon","path":"objects/oCannon/oCannon.yy",},"propertyId":{"name":"dir","path":"objects/oCannon/oCannon.yy",},"value":"1",},
+          ],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":980.0,"y":1384.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_D53EA9","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oCannon","path":"objects/oCannon/oCannon.yy",},"properties":[
+            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oCannon","path":"objects/oCannon/oCannon.yy",},"propertyId":{"name":"dir","path":"objects/oCannon/oCannon.yy",},"value":"1",},
+          ],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":996.0,"y":1384.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRAssetLayer","resourceVersion":"1.0","name":"Tutorials","assets":[
         {"resourceType":"GMRSpriteGraphic","resourceVersion":"1.0","name":"graphic_60B10E11","animationSpeed":1.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"spriteId":{"name":"sReplayTutorial","path":"sprites/sReplayTutorial/sReplayTutorial.yy",},"x":352.0,"y":1320.0,},
