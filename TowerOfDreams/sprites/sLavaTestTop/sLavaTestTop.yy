@@ -27,14 +27,13 @@
   "height": 8,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"203fbc5f-b915-4c5c-b969-f5fdd5d34cf2","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"203a6f72-9915-4877-8de1-e42e38fdf630","blendMode":0,"displayName":"Layer 1","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"bc2a601f-618a-46fd-b51a-64a47333c2c7","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "Tilesets",
-    "path": "folders/Sprites/Tilesets.yy",
+    "name": "Lava",
+    "path": "folders/Sprites/Tilesets/Lava.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
