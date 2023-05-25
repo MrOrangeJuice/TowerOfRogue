@@ -16,7 +16,7 @@ if(!global.paused)
 	x += hsp;
 
 	// Pop immediately if out of lava
-	if(!place_meeting(x,y-8,oLava) && image_index != 1)
+	if(!place_meeting(x,y-10,oLava) && image_index != 1)
 	{		
 		image_index = 1;
 		alarm[1] = room_speed * 0.25;
