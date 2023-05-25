@@ -1,15 +1,18 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "oLava",
+  "name": "oLavaBubble",
   "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":1,"eventType":2,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Level Objects",
-    "path": "folders/Objects/Level Objects.yy",
+    "name": "VFX",
+    "path": "folders/Objects/VFX.yy",
   },
   "parentObjectId": null,
   "persistent": false,
@@ -28,9 +31,9 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "sLavaDebug",
-    "path": "sprites/sLavaDebug/sLavaDebug.yy",
+    "name": "sLavaBubble",
+    "path": "sprites/sLavaBubble/sLavaBubble.yy",
   },
   "spriteMaskId": null,
-  "visible": false,
+  "visible": true,
 }
