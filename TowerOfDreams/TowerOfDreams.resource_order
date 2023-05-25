@@ -261,6 +261,7 @@
     {"name":"sPalette","order":1,"path":"sprites/sPalette/sPalette.yy",},
     {"name":"oWingsItem","order":13,"path":"objects/oWingsItem/oWingsItem.yy",},
     {"name":"snd_Klang","order":19,"path":"sounds/snd_Klang/snd_Klang.yy",},
+    {"name":"sPlayerLava","order":15,"path":"sprites/sPlayerLava/sPlayerLava.yy",},
     {"name":"rShop2","order":3,"path":"rooms/rShop2/rShop2.yy",},
     {"name":"sPlayerPortal","order":7,"path":"sprites/sPlayerPortal/sPlayerPortal.yy",},
     {"name":"snd_Purchase","order":26,"path":"sounds/snd_Purchase/snd_Purchase.yy",},

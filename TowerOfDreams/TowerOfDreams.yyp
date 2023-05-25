@@ -302,6 +302,7 @@
     {"id":{"name":"sPalette","path":"sprites/sPalette/sPalette.yy",},},
     {"id":{"name":"oWingsItem","path":"objects/oWingsItem/oWingsItem.yy",},},
     {"id":{"name":"snd_Klang","path":"sounds/snd_Klang/snd_Klang.yy",},},
+    {"id":{"name":"sPlayerLava","path":"sprites/sPlayerLava/sPlayerLava.yy",},},
     {"id":{"name":"rShop2","path":"rooms/rShop2/rShop2.yy",},},
     {"id":{"name":"sPlayerPortal","path":"sprites/sPlayerPortal/sPlayerPortal.yy",},},
     {"id":{"name":"snd_Purchase","path":"sounds/snd_Purchase/snd_Purchase.yy",},},
