@@ -148,6 +148,7 @@
     {"name":"oHuskCannon","order":6,"path":"objects/oHuskCannon/oHuskCannon.yy",},
     {"name":"sArrow","order":12,"path":"sprites/sArrow/sArrow.yy",},
     {"name":"oGroundEnemy","order":1,"path":"objects/oGroundEnemy/oGroundEnemy.yy",},
+    {"name":"sShopBag","order":2,"path":"sprites/sShopBag/sShopBag.yy",},
     {"name":"oCannonBall","order":5,"path":"objects/oCannonBall/oCannonBall.yy",},
     {"name":"sMainMenu","order":6,"path":"sprites/sMainMenu/sMainMenu.yy",},
     {"name":"oGrave","order":20,"path":"objects/oGrave/oGrave.yy",},
