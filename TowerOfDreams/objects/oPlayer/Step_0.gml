@@ -503,11 +503,11 @@ if(!global.paused && !global.hitStop)
 		
 		if(enemyHitRight && !enemyHitRight.noDamage)
 		{
-			TakeDamage(1,2.75,3.5);
+			TakeDamage(1,2.75,3.5,true);
 		}
 		else if(enemyHitLeft && !enemyHitLeft.noDamage)
 		{
-			TakeDamage(1,2.75,-3.5);
+			TakeDamage(1,2.75,-3.5,true);
 		}
 		
 		spikeHitRight = instance_place(x+(1*image_xscale),y,oSpikes);
@@ -517,19 +517,19 @@ if(!global.paused && !global.hitStop)
 		
 		if(spikeHitRight)
 		{
-			TakeDamage(1,2.75,3.5);
+			TakeDamage(1,2.75,3.5,true);
 		}
 		else if(spikeHitLeft)
 		{	
-			TakeDamage(1,2.75,-3.5);
+			TakeDamage(1,2.75,-3.5,true);
 		}
 		else if(spikeHitDown)
 		{
-			TakeDamage(1,3,0);	
+			TakeDamage(1,3,0,true);	
 		}
 		else if(spikeHitUp)
 		{
-			TakeDamage(1,-1,0);	
+			TakeDamage(1,-1,0,true);	
 		}
 	}
 
