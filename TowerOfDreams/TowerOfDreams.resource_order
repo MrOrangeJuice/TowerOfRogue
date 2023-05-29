@@ -188,6 +188,7 @@
     {"name":"oSpikes","order":2,"path":"objects/oSpikes/oSpikes.yy",},
     {"name":"sBumperAOff","order":12,"path":"sprites/sBumperAOff/sBumperAOff.yy",},
     {"name":"oShopSpawner","order":11,"path":"objects/oShopSpawner/oShopSpawner.yy",},
+    {"name":"sMountains","order":4,"path":"sprites/sMountains/sMountains.yy",},
     {"name":"snd_Land","order":1,"path":"sounds/snd_Land/snd_Land.yy",},
     {"name":"sGemUI","order":2,"path":"sprites/sGemUI/sGemUI.yy",},
     {"name":"sBootsUI","order":2,"path":"sprites/sBootsUI/sBootsUI.yy",},

@@ -220,6 +220,7 @@
     {"id":{"name":"oSpikes","path":"objects/oSpikes/oSpikes.yy",},},
     {"id":{"name":"sBumperAOff","path":"sprites/sBumperAOff/sBumperAOff.yy",},},
     {"id":{"name":"oShopSpawner","path":"objects/oShopSpawner/oShopSpawner.yy",},},
+    {"id":{"name":"sMountains","path":"sprites/sMountains/sMountains.yy",},},
     {"id":{"name":"snd_Land","path":"sounds/snd_Land/snd_Land.yy",},},
     {"id":{"name":"sGemUI","path":"sprites/sGemUI/sGemUI.yy",},},
     {"id":{"name":"sBootsUI","path":"sprites/sBootsUI/sBootsUI.yy",},},
