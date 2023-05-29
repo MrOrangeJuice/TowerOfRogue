@@ -80,6 +80,7 @@
     {"id":{"name":"rTutorial2","path":"rooms/rTutorial2/rTutorial2.yy",},},
     {"id":{"name":"rFloor1_2","path":"rooms/rFloor1_2/rFloor1_2.yy",},},
     {"id":{"name":"sBumperRails","path":"sprites/sBumperRails/sBumperRails.yy",},},
+    {"id":{"name":"oPlayerLava","path":"objects/oPlayerLava/oPlayerLava.yy",},},
     {"id":{"name":"snd_Impact","path":"sounds/snd_Impact/snd_Impact.yy",},},
     {"id":{"name":"oGame","path":"objects/oGame/oGame.yy",},},
     {"id":{"name":"o20","path":"objects/o20/o20.yy",},},

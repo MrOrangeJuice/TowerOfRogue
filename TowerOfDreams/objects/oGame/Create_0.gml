@@ -43,6 +43,7 @@ global.shopMusic = false;
 global.hubMusic = false;
 global.bumperSwitch = true;
 global.bumpersSwitching = false;
+global.lavaId = 0;
 
 global.coinArray = ds_list_create();
 global.enemyArray = ds_list_create();

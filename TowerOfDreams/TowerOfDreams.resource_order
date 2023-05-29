@@ -59,6 +59,7 @@
     {"name":"rTutorial2","order":3,"path":"rooms/rTutorial2/rTutorial2.yy",},
     {"name":"rFloor1_2","order":1,"path":"rooms/rFloor1_2/rFloor1_2.yy",},
     {"name":"sBumperRails","order":3,"path":"sprites/sBumperRails/sBumperRails.yy",},
+    {"name":"oPlayerLava","order":23,"path":"objects/oPlayerLava/oPlayerLava.yy",},
     {"name":"snd_Impact","order":3,"path":"sounds/snd_Impact/snd_Impact.yy",},
     {"name":"oGame","order":4,"path":"objects/oGame/oGame.yy",},
     {"name":"o20","order":6,"path":"objects/o20/o20.yy",},
