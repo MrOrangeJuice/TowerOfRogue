@@ -270,6 +270,7 @@
     {"name":"tConveyer","order":6,"path":"tilesets/tConveyer/tConveyer.yy",},
     {"name":"sShockwaveVFX","order":5,"path":"sprites/sShockwaveVFX/sShockwaveVFX.yy",},
     {"name":"oPortalEntry","order":4,"path":"objects/oPortalEntry/oPortalEntry.yy",},
+    {"name":"sBoxPipe","order":22,"path":"sprites/sBoxPipe/sBoxPipe.yy",},
     {"name":"oSpikeBox","order":10,"path":"objects/oSpikeBox/oSpikeBox.yy",},
     {"name":"sCardUI","order":10,"path":"sprites/sCardUI/sCardUI.yy",},
     {"name":"tGrass","order":1,"path":"tilesets/tGrass/tGrass.yy",},
