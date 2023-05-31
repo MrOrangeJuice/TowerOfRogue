@@ -306,6 +306,7 @@
     {"name":"snd_Kunai","order":16,"path":"sounds/snd_Kunai/snd_Kunai.yy",},
     {"name":"sSpikeDebug","order":2,"path":"sprites/sSpikeDebug/sSpikeDebug.yy",},
     {"name":"sWings","order":13,"path":"sprites/sWings/sWings.yy",},
+    {"name":"oBoxPipe","order":16,"path":"objects/oBoxPipe/oBoxPipe.yy",},
     {"name":"sJump","order":1,"path":"sprites/sJump/sJump.yy",},
     {"name":"oCoinVFX","order":5,"path":"objects/oCoinVFX/oCoinVFX.yy",},
     {"name":"snd_Grave","order":22,"path":"sounds/snd_Grave/snd_Grave.yy",},

@@ -351,6 +351,7 @@
     {"id":{"name":"snd_Kunai","path":"sounds/snd_Kunai/snd_Kunai.yy",},},
     {"id":{"name":"sSpikeDebug","path":"sprites/sSpikeDebug/sSpikeDebug.yy",},},
     {"id":{"name":"sWings","path":"sprites/sWings/sWings.yy",},},
+    {"id":{"name":"oBoxPipe","path":"objects/oBoxPipe/oBoxPipe.yy",},},
     {"id":{"name":"sJump","path":"sprites/sJump/sJump.yy",},},
     {"id":{"name":"oCoinVFX","path":"objects/oCoinVFX/oCoinVFX.yy",},},
     {"id":{"name":"sConveyerMiddle","path":"sprites/sConveyerMiddle/sConveyerMiddle.yy",},},

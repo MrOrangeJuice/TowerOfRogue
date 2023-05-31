@@ -30,7 +30,7 @@ if(!global.paused)
 		grv = 0.005;
 		vsp = 0;
 		alarm[0] = room_speed * 3;
-		for(i = 0; i < 10; i++)
+		for(i = 0; i < 20; i++)
 		{
 			instance_create_layer(x+irandom_range(0,16),y+8,"UI",oLavaBit);	
 		}
