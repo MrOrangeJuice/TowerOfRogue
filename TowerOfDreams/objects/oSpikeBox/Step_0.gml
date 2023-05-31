@@ -23,4 +23,20 @@ if(!global.paused)
 	{
 		x -= 0.5;
 	}
+	
+	if(place_meeting(x,y,oLava) && !alarmStarted)
+	{
+		alarmStarted = true;
+		grv = 0.005;
+		vsp = 0;
+		alarm[0] = room_speed * 3;
+		for(i = 0; i < 10; i++)
+		{
+			instance_create_layer(x+irandom_range(0,16),y+8,"UI",oLavaBit);	
+		}
+	}
+	else if(place_meeting(x,y,oLava))
+	{
+		if(irandom_range(1,4) == 2) instance_create_layer(x+irandom_range(0,16),y+8,"UI",oLavaBit);	
+	}
 }

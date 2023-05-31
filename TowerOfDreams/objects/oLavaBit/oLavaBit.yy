@@ -1,19 +1,20 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "oSpikeBox",
+  "name": "oLavaBit",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Enemies",
-    "path": "folders/Objects/Enemies.yy",
+    "name": "VFX",
+    "path": "folders/Objects/VFX.yy",
   },
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "oPlayerBit",
+    "path": "objects/oPlayerBit/oPlayerBit.yy",
+  },
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
@@ -30,8 +31,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "sSpikeBox",
-    "path": "sprites/sSpikeBox/sSpikeBox.yy",
+    "name": "sLavaBit",
+    "path": "sprites/sLavaBit/sLavaBit.yy",
   },
   "spriteMaskId": null,
   "visible": true,
