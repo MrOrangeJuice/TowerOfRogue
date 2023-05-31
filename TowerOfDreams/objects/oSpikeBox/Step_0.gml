@@ -40,3 +40,7 @@ if(!global.paused)
 		if(irandom_range(1,4) == 2) instance_create_layer(x+irandom_range(0,16),y+8,"UI",oLavaBit);	
 	}
 }
+else
+{
+	if(alarmStarted) alarm[0]++;	
+}
