@@ -32,6 +32,16 @@ camera_set_view_pos(cam,x-view_w_half,y-view_h_half);
 // Parallax
 if (layer_exists("Background"))
 {
-	layer_x("Background",x/10);
-	layer_y("Background",y/10);
+	layer_x("Background",x/20);
+	layer_y("Background",y/20);
+}
+
+if (layer_exists("Mountains"))
+{
+	layer_x("Mountains",x/8);
+}
+
+if (layer_exists("Mountains2"))
+{
+	layer_x("Mountains2",x/10);
 }
