@@ -293,6 +293,7 @@
     {"name":"sShopPipe","order":15,"path":"sprites/sShopPipe/sShopPipe.yy",},
     {"name":"oTransition","order":8,"path":"objects/oTransition/oTransition.yy",},
     {"name":"sOptionsMenuDeletedSave","order":8,"path":"sprites/sOptionsMenuDeletedSave/sOptionsMenuDeletedSave.yy",},
+    {"name":"sClouds2","order":7,"path":"sprites/sClouds2/sClouds2.yy",},
     {"name":"oCannon","order":4,"path":"objects/oCannon/oCannon.yy",},
     {"name":"oPlayerBit","order":13,"path":"objects/oPlayerBit/oPlayerBit.yy",},
     {"name":"rShop","order":2,"path":"rooms/rShop/rShop.yy",},
