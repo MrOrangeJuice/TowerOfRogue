@@ -620,11 +620,33 @@ if(!global.paused && !global.hitStop)
 	// Conveyer belt
 	if(place_meeting(x,y+1,oLeftConveyer))
 	{
-		x += 0.5;
+		if(place_meeting(x-1,y,oWall) && key_left)
+		{
+			
+		}
+		else if(place_meeting(x+1,y,oWall) && (key_right || hsp == 0))
+		{
+			
+		}
+		else
+		{
+			x += 0.5;
+		}
 	}
 	if(place_meeting(x,y+1,oRightConveyer))
 	{
-		x -= 0.5;
+		if(place_meeting(x+1,y,oWall) && key_right)
+		{
+			
+		}
+		else if(place_meeting(x-1,y,oWall) && (key_left || hsp == 0))
+		{
+			
+		}
+		else
+		{
+			x -= 0.5;
+		}
 	}
 
 	if(prevAirborne && !airborne)
