@@ -324,7 +324,7 @@
         24,
       ],},
   ],
-  "tileAnimationSpeed": 8.0,
+  "tileAnimationSpeed": 30.0,
   "tileHeight": 8,
   "tilehsep": 0,
   "tilevsep": 0,

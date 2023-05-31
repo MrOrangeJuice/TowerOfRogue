@@ -616,6 +616,16 @@ if(!global.paused && !global.hitStop)
 	// Apply movement
 	x = x + hsp;
 	y = y + vsp;
+	
+	// Conveyer belt
+	if(place_meeting(x,y+1,oLeftConveyer))
+	{
+		x += 0.5;
+	}
+	if(place_meeting(x,y+1,oRightConveyer))
+	{
+		x -= 0.5;
+	}
 
 	if(prevAirborne && !airborne)
 	{
