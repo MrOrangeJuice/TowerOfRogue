@@ -131,6 +131,7 @@
     {"name":"oVFX","order":4,"path":"objects/oVFX/oVFX.yy",},
     {"name":"oGravityEnemyDustUpVFX","order":22,"path":"objects/oGravityEnemyDustUpVFX/oGravityEnemyDustUpVFX.yy",},
     {"name":"shRage","order":1,"path":"shaders/shRage/shRage.yy",},
+    {"name":"sWrenchEnemy","order":12,"path":"sprites/sWrenchEnemy/sWrenchEnemy.yy",},
     {"name":"oItemTutorialFadeIn","order":5,"path":"objects/oItemTutorialFadeIn/oItemTutorialFadeIn.yy",},
     {"name":"oHitstopLong","order":19,"path":"objects/oHitstopLong/oHitstopLong.yy",},
     {"name":"sDustWallSmall","order":3,"path":"sprites/sDustWallSmall/sDustWallSmall.yy",},

@@ -158,6 +158,7 @@
     {"id":{"name":"oVFX","path":"objects/oVFX/oVFX.yy",},},
     {"id":{"name":"oGravityEnemyDustUpVFX","path":"objects/oGravityEnemyDustUpVFX/oGravityEnemyDustUpVFX.yy",},},
     {"id":{"name":"shRage","path":"shaders/shRage/shRage.yy",},},
+    {"id":{"name":"sWrenchEnemy","path":"sprites/sWrenchEnemy/sWrenchEnemy.yy",},},
     {"id":{"name":"oItemTutorialFadeIn","path":"objects/oItemTutorialFadeIn/oItemTutorialFadeIn.yy",},},
     {"id":{"name":"oHitstopLong","path":"objects/oHitstopLong/oHitstopLong.yy",},},
     {"id":{"name":"sDustWallSmall","path":"sprites/sDustWallSmall/sDustWallSmall.yy",},},
