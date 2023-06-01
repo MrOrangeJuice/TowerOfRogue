@@ -50,6 +50,7 @@
     {"name":"snd_EnemyDeath","order":11,"path":"sounds/snd_EnemyDeath/snd_EnemyDeath.yy",},
     {"name":"sHeartTrophyUI","order":11,"path":"sprites/sHeartTrophyUI/sHeartTrophyUI.yy",},
     {"name":"snd_Lava","order":32,"path":"sounds/snd_Lava/snd_Lava.yy",},
+    {"name":"sWrenchEnemyThrow","order":13,"path":"sprites/sWrenchEnemyThrow/sWrenchEnemyThrow.yy",},
     {"name":"msc_TitleScreen","order":2,"path":"sounds/msc_TitleScreen/msc_TitleScreen.yy",},
     {"name":"oGravityEnemy","order":8,"path":"objects/oGravityEnemy/oGravityEnemy.yy",},
     {"name":"oGem","order":2,"path":"objects/oGem/oGem.yy",},

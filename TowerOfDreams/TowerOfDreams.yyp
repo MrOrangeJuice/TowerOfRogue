@@ -69,6 +69,7 @@
     {"id":{"name":"sHeartTrophyUI","path":"sprites/sHeartTrophyUI/sHeartTrophyUI.yy",},},
     {"id":{"name":"snd_Lava","path":"sounds/snd_Lava/snd_Lava.yy",},},
     {"id":{"name":"sTileset","path":"sprites/sTileset/sTileset.yy",},},
+    {"id":{"name":"sWrenchEnemyThrow","path":"sprites/sWrenchEnemyThrow/sWrenchEnemyThrow.yy",},},
     {"id":{"name":"msc_TitleScreen","path":"sounds/msc_TitleScreen/msc_TitleScreen.yy",},},
     {"id":{"name":"oGravityEnemy","path":"objects/oGravityEnemy/oGravityEnemy.yy",},},
     {"id":{"name":"oGem","path":"objects/oGem/oGem.yy",},},
