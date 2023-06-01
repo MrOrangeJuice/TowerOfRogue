@@ -36,6 +36,7 @@
     {"name":"NPCs","order":20,"path":"folders/Sprites/NPCs.yy",},
     {"name":"Player","order":5,"path":"folders/Sprites/Player.yy",},
     {"name":"Tilesets","order":6,"path":"folders/Sprites/Tilesets.yy",},
+    {"name":"Conveyer","order":10,"path":"folders/Sprites/Tilesets/Conveyer.yy",},
     {"name":"Lava","order":8,"path":"folders/Sprites/Tilesets/Lava.yy",},
     {"name":"Tutorials","order":13,"path":"folders/Sprites/Tutorials.yy",},
     {"name":"UI","order":15,"path":"folders/Sprites/UI.yy",},
@@ -43,7 +44,6 @@
     {"name":"Numbers","order":14,"path":"folders/Sprites/VFX/Numbers.yy",},
     {"name":"Tile Sets","order":1,"path":"folders/Tile Sets.yy",},
     {"name":"Timelines","order":7,"path":"folders/Timelines.yy",},
-    {"name":"Conveyer","order":10,"path":"folders/Sprites/Tilesets/Conveyer.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"sUseItemControllerFadeIn","order":16,"path":"sprites/sUseItemControllerFadeIn/sUseItemControllerFadeIn.yy",},
