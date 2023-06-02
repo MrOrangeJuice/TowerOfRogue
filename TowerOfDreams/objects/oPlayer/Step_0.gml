@@ -465,6 +465,22 @@ if(!global.paused && !global.hitStop)
 			hasSlashJumped = true;
 			extraJump = true;
 		}
+		box = instance_place(x,y+9,oSpikeBox);
+		if(box)
+		{
+			// Push player up
+			while(place_meeting(x,y+8,oSpikeBox))
+			{
+				y -= 1;	
+			}
+			vsp = -3;	
+			instance_create_layer(box.x+8,box.y,"VFX",oDustSlashBumper);
+			airborne = true;
+			hasSlashed = true;
+			hasSlashJumped = true;
+			extraJump = true;
+			audio_play_sound(snd_Klang,5,false);
+		}
 	}
 
 	// Jump
