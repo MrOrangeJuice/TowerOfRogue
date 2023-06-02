@@ -19,6 +19,7 @@
     {"name":"inst_6972FB4D","path":"rooms/rFloor2_1/rFloor2_1.yy",},
     {"name":"inst_3CE9391A","path":"rooms/rFloor2_1/rFloor2_1.yy",},
     {"name":"inst_EAB3FF7","path":"rooms/rFloor2_1/rFloor2_1.yy",},
+    {"name":"inst_8D23B12","path":"rooms/rFloor2_1/rFloor2_1.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -38,7 +39,10 @@
 -14984,-2147483648,-29,0,-51,-2147483648,-5,0,1,5,-21,1,2,9,0,-51,-2147483648,-29,0,-51,-2147483648,-29,0,-51,-2147483648,-29,0,-51,-2147483648,-29,0,-51,-2147483648,-29,0,-51,-2147483648,-29,0,-51,-2147483648,-29,0,-51,-2147483648,-29,0,-267,-2147483648,],"TileDataFormat":1,},"tilesetId":{"name":"tConveyer","path":"tilesets/tConveyer/tConveyer.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"UI","depth":400,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Enemies","depth":500,"effectEnabled":true,"effectType":null,"gridX":8,"gridY":8,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_EAB3FF7","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oWrenchEnemy","path":"objects/oWrenchEnemy/oWrenchEnemy.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":384.0,"y":1496.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_EAB3FF7","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oWrenchEnemy","path":"objects/oWrenchEnemy/oWrenchEnemy.yy",},"properties":[
+            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oWrenchEnemy","path":"objects/oWrenchEnemy/oWrenchEnemy.yy",},"propertyId":{"name":"dir","path":"objects/oWrenchEnemy/oWrenchEnemy.yy",},"value":"1",},
+          ],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":384.0,"y":1496.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_8D23B12","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oWrenchEnemy","path":"objects/oWrenchEnemy/oWrenchEnemy.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":360.0,"y":1496.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Collectables","depth":600,"effectEnabled":true,"effectType":null,"gridX":8,"gridY":8,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Instances","depth":700,"effectEnabled":true,"effectType":null,"gridX":8,"gridY":8,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
