@@ -36,6 +36,7 @@ function TakeDamage(argument0,argument1,argument2,argument3)
 					invulnerable = 50;	
 				}
 				if(argument3) hit = true;
+				if(argument3) canJump = true;
 				ScreenShake(2,10);
 				if(argument3) hitStop = instance_create_layer(0,0,"Instances",oHitstop);
 			}

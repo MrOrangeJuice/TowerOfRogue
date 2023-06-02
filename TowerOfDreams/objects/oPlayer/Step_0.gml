@@ -730,13 +730,13 @@ if(!global.paused && !global.hitStop)
 	}
 
 	// Animation
-	if(hit)
-	{
-		sprite_index = sPlayerHit;	
-	}
-	else if(slashing)
+	if(slashing)
 	{
 		sprite_index = sPlayerSlashSmall;	
+	}
+	else if(hit)
+	{
+		sprite_index = sPlayerHit;	
 	}
 	else if(wallSliding)
 	{
