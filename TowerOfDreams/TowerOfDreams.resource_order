@@ -318,6 +318,7 @@
     {"name":"sDustSlash","order":6,"path":"sprites/sDustSlash/sDustSlash.yy",},
     {"name":"o2","order":1,"path":"objects/o2/o2.yy",},
     {"name":"sPlayerRun","order":3,"path":"sprites/sPlayerRun/sPlayerRun.yy",},
+    {"name":"sWrench","order":14,"path":"sprites/sWrench/sWrench.yy",},
     {"name":"sLavaTestTop","order":1,"path":"sprites/sLavaTestTop/sLavaTestTop.yy",},
     {"name":"snd_MenuSelect","order":6,"path":"sounds/snd_MenuSelect/snd_MenuSelect.yy",},
     {"name":"rHub","order":5,"path":"rooms/rHub/rHub.yy",},

@@ -369,6 +369,7 @@
     {"id":{"name":"oTutorial","path":"objects/oTutorial/oTutorial.yy",},},
     {"id":{"name":"o2","path":"objects/o2/o2.yy",},},
     {"id":{"name":"sPlayerRun","path":"sprites/sPlayerRun/sPlayerRun.yy",},},
+    {"id":{"name":"sWrench","path":"sprites/sWrench/sWrench.yy",},},
     {"id":{"name":"sLavaTestTop","path":"sprites/sLavaTestTop/sLavaTestTop.yy",},},
     {"id":{"name":"snd_MenuSelect","path":"sounds/snd_MenuSelect/snd_MenuSelect.yy",},},
     {"id":{"name":"rHub","path":"rooms/rHub/rHub.yy",},},
