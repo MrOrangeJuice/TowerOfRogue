@@ -68,5 +68,6 @@ itemTextScale = 1;
 passiveItemTextScale = 1;
 options = false;
 deleted = false;
+UIOffset = 0;
 
 Load();

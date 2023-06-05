@@ -2,10 +2,19 @@
 
 draw_set_font(fUI);
 
+if(global.res1610)
+{
+	UIOffset = 8;
+}
+else
+{
+	UIOffset = 0;	
+}
+
 // Draw Pause Menu
 if(global.paused)
 {
-	draw_sprite(sPauseMenu,menuOption,80,40);
+	draw_sprite(sPauseMenu,menuOption,80,40+UIOffset);
 }
 
 // Draw Main Menu
@@ -13,17 +22,17 @@ if(room == rTitle)
 {
 	if (!options)
 	{
-		draw_sprite(sMainMenu,menuOption,80,76);
+		draw_sprite(sMainMenu,menuOption,80,76+UIOffset);
 	}
 	else
 	{
 		if(!deleted)
 		{
-			draw_sprite(sOptionsMenu,menuOption,80,76);
+			draw_sprite(sOptionsMenu,menuOption,80,76+UIOffset);
 		}
 		else
 		{
-			draw_sprite(sOptionsMenuDeletedSave,menuOption,80,76);	
+			draw_sprite(sOptionsMenuDeletedSave,menuOption,80,76+UIOffset);	
 		}
 	}
 }
