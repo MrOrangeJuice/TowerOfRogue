@@ -27,7 +27,14 @@ y += random_range(-shake_remain,shake_remain);
 shake_remain = max(0,shake_remain-((1/shake_length)*shake_magnitude));
 
 // Update camera view
-camera_set_view_pos(cam,x-view_w_half,y-view_h_half);
+if(global.res1610)
+{
+	camera_set_view_pos(cam,x-view_w_half,y-view_h_half-8);
+}
+else
+{
+	camera_set_view_pos(cam,x-view_w_half,y-view_h_half);
+}
 
 // Parallax
 if (layer_exists("Background"))
