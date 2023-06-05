@@ -44,7 +44,16 @@ global.hubMusic = false;
 global.bumperSwitch = true;
 global.bumpersSwitching = false;
 global.lavaId = 0;
-global.res1610 = false;
+
+// Determine default resolution
+if(display_get_width() / display_get_height() == 1.6)
+{
+	global.res1610 = true;
+}
+else
+{
+	global.res1610 = false;
+}
 
 global.coinArray = ds_list_create();
 global.enemyArray = ds_list_create();
