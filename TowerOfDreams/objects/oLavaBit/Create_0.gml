@@ -9,4 +9,4 @@ vsp = -2;
 grv = 0.15;
 
 // Set despawn timer
-alarm[0] = room_speed * 2;
+alarm[0] = room_speed * 0.5;
