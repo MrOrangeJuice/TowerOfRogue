@@ -490,6 +490,38 @@ if(!global.paused && !global.hitStop)
 		instance_create_layer(x,y,"VFX",oDust);
 		audio_play_sound(snd_Jump, 5, false);
 		canJump = false;
+		// Conveyer speed
+		if(place_meeting(x,y+1,oLeftConveyer))
+		{
+			if(hsp > 0)
+			{
+				walksp *= 1.5;
+			}
+			initialConveyerRunDir = image_xscale;
+			conveyerBoost = true;
+		}
+		// Conveyer speed
+		if(place_meeting(x,y+1,oRightConveyer))
+		{
+			if(hsp < 0)
+			{
+				walksp *= 1.5;
+			}
+			initialConveyerRunDir = image_xscale;
+			conveyerBoost = true;
+		}
+	}
+	
+	// Reset conveyer speed in midair
+	if(airborne && conveyerBoost)
+	{
+		// Reset your speed if you turn around in midair
+		if(image_xscale != initialConveyerRunDir)
+		{
+			walksp = 1;
+			initialConveyerRunDir = 0;
+			conveyerBoost = false;
+		}
 	}
 	
 	// Extra Jump
@@ -691,6 +723,13 @@ if(!global.paused && !global.hitStop)
 	{
 		landing = true;
 		extraJump = true;
+		// Reset conveyer boost on landing
+		if(conveyerBoost)
+		{
+			walksp = 1;
+			initialConveyerRunDir = 0;
+			conveyerBoost = false;
+		}
 		instance_create_layer(x,y,"VFX",oDustSmall);
 		audio_play_sound(snd_Land, 5, false);
 		hit = false;
@@ -720,7 +759,7 @@ if(!global.paused && !global.hitStop)
 		case 1:
 			if(key_item && !airborne)
 			{
-				walksp = 1.5;
+				walksp *= 1.5;
 				if(!running)
 				{
 					running = true;

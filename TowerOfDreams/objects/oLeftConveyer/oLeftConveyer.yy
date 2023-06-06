@@ -33,5 +33,5 @@
     "path": "sprites/sLeftConveyer/sLeftConveyer.yy",
   },
   "spriteMaskId": null,
-  "visible": false,
+  "visible": true,
 }
