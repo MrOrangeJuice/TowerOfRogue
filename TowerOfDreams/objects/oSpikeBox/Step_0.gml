@@ -2,6 +2,10 @@
 if(!global.paused)
 {
 	vsp = vsp + grv;
+	if(vsp > 2)
+	{
+		vsp = 2;	
+	}
 
 	// Vertical Collision
 	if (place_meeting(x,y+vsp,oWall))
