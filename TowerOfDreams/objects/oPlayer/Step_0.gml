@@ -496,9 +496,10 @@ if(!global.paused && !global.hitStop)
 			if(hsp > 0)
 			{
 				walksp *= 1.5;
+				initialConveyerRunDir = image_xscale;
+				conveyerBoost = true;
+				instance_create_layer(x,y,"VFX",oFastJumpVFX);
 			}
-			initialConveyerRunDir = image_xscale;
-			conveyerBoost = true;
 		}
 		// Conveyer speed
 		if(place_meeting(x,y+1,oRightConveyer))
@@ -506,9 +507,11 @@ if(!global.paused && !global.hitStop)
 			if(hsp < 0)
 			{
 				walksp *= 1.5;
+				initialConveyerRunDir = image_xscale;
+				conveyerBoost = true;
+				vfx = instance_create_layer(x,y,"VFX",oFastJumpVFX);
+				vfx.image_xscale = -1;
 			}
-			initialConveyerRunDir = image_xscale;
-			conveyerBoost = true;
 		}
 	}
 	
