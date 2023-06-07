@@ -31,3 +31,6 @@ shockY = 0;
 extraJump = true;
 initialConveyerRunDir = 0;
 conveyerBoost = false;
+upConveyer = false;
+upConveyerBoost = false;
+upConveyerCoyote = false;

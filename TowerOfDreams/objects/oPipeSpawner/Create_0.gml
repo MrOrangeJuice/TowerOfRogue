@@ -18,7 +18,7 @@ while(!global.pipeSpawned)
 		if(randomChance == 1)
 		{
 			// Randomly create pipe
-			instance_create_layer(x+32,y-2,"Pipes",oPipe);
+			instance_create_layer(x+36,y-2,"Pipes",oPipe);
 			global.pipeSpawned = true;
 			global.pipeY = y;
 		}

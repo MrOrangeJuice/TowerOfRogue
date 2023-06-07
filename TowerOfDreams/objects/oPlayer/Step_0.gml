@@ -168,7 +168,14 @@ if(!global.paused && !global.hitStop)
 	}
 	else
 	{
-		vsp += 0.03;	
+		if(upConveyer)
+		{
+			vsp -= 0.2;
+		}
+		else
+		{
+			vsp += 0.03;	
+		}
 	}
 
 	// Decrement jump buffer
@@ -215,6 +222,12 @@ if(!global.paused && !global.hitStop)
 		if(place_meeting(x - 3,y,oWall)) image_xscale = -1;
 		
 		wallSliding = true;
+		// Check if wall is upward conveyer
+		if(place_meeting(x+image_xscale,y,oUpConveyer))
+		{
+			upConveyer = true;	
+			upConveyerBoost = true;
+		}
 		// Inch into wall if needed
 		while (!place_meeting(x+sign(image_xscale),y,oWall))
 		{
@@ -228,14 +241,17 @@ if(!global.paused && !global.hitStop)
 			if(place_meeting(x+3,y,oWall) && key_left)
 			{
 				wallJumpCoyote = true;
+				upConveyerCoyote = true;
 			}
 			if(place_meeting(x-3,y,oWall) && key_right)
 			{
 				wallJumpCoyote = true;
+				upConveyerCoyote = true;
 			}
 			alarm[3] = room_speed * 0.1;
 		}
-		wallSliding = false;	
+		wallSliding = false;
+		upConveyer = false;
 		canSpawnWallDust = true;
 	}
 
@@ -263,7 +279,15 @@ if(!global.paused && !global.hitStop)
 		canWallSlide = false;
 		alarm[0] = room_speed * 0.2;
 		wallSliding = false;
-		vsp = -2.75;
+		if(upConveyer || upConveyerCoyote)
+		{
+			vsp -= 2.75;
+		}
+		else
+		{
+			vsp = -2.75;
+		}
+		upConveyer = false;
 		audio_play_sound(snd_Jump, 5, false);
 		if(wallJumpCoyote)
 		{
@@ -544,7 +568,7 @@ if(!global.paused && !global.hitStop)
 	// Turn off variable jump height after using an extra jump
 	if(extraJump)
 	{
-		if vsp < 0 && (!(key_jump) && !hasSlashed) //if you're moving upwards in the air but not holding down jump
+		if vsp < 0 && (!(key_jump) && !hasSlashed) && !upConveyerBoost //if you're moving upwards in the air but not holding down jump
 		{
 			vsp *= 0.85; //essentially, divide your vertical speed
 		}
@@ -736,6 +760,7 @@ if(!global.paused && !global.hitStop)
 			initialConveyerRunDir = 0;
 			conveyerBoost = false;
 		}
+		upConveyerBoost = false;
 		instance_create_layer(x,y,"VFX",oDustSmall);
 		audio_play_sound(snd_Land, 5, false);
 		hit = false;

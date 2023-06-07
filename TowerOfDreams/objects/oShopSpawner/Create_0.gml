@@ -18,7 +18,7 @@ while(!global.shopSpawned)
 		if(randomChance == 1)
 		{
 			// Randomly create pipe
-			instance_create_layer(x-24,y-2,"Pipes",oShopPipe);
+			instance_create_layer(x-28,y-2,"Pipes",oShopPipe);
 			global.shopSpawned = true;
 			global.shopY = y;
 		}
