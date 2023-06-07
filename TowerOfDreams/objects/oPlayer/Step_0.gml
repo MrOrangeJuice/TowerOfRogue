@@ -170,7 +170,7 @@ if(!global.paused && !global.hitStop)
 	{
 		if(upConveyer)
 		{
-			vsp -= 0.2;
+			vsp -= 0.1;
 		}
 		else
 		{
@@ -241,12 +241,12 @@ if(!global.paused && !global.hitStop)
 			if(place_meeting(x+3,y,oWall) && key_left)
 			{
 				wallJumpCoyote = true;
-				upConveyerCoyote = true;
+				if(upConveyer) upConveyerCoyote = true;
 			}
 			if(place_meeting(x-3,y,oWall) && key_right)
 			{
 				wallJumpCoyote = true;
-				upConveyerCoyote = true;
+				if(upConveyer) upConveyerCoyote = true;
 			}
 			alarm[3] = room_speed * 0.1;
 		}

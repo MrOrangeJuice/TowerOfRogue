@@ -17,6 +17,8 @@
     {"name":"inst_1526EAD2_1_1_3_1","path":"rooms/rFloor2_2/rFloor2_2.yy",},
     {"name":"inst_5354EA43","path":"rooms/rFloor2_2/rFloor2_2.yy",},
     {"name":"inst_5A2BCA22","path":"rooms/rFloor2_2/rFloor2_2.yy",},
+    {"name":"inst_592ACB2D","path":"rooms/rFloor2_2/rFloor2_2.yy",},
+    {"name":"inst_72D9BBD","path":"rooms/rFloor2_2/rFloor2_2.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -50,6 +52,8 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_620A16DE_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oPortal","path":"objects/oPortal/oPortal.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":416.0,"y":112.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_5354EA43","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oWall","path":"objects/oWall/oWall.yy",},"properties":[],"rotation":0.0,"scaleX":28.0,"scaleY":4.0,"x":216.0,"y":1512.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_5A2BCA22","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oUpConveyer","path":"objects/oUpConveyer/oUpConveyer.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":32.0,"x":328.0,"y":1256.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_592ACB2D","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oUpConveyer","path":"objects/oUpConveyer/oUpConveyer.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":32.0,"x":272.0,"y":1112.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_72D9BBD","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oUpConveyer","path":"objects/oUpConveyer/oUpConveyer.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":32.0,"x":328.0,"y":928.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"CoinVFX","depth":900,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"VFX","depth":1000,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
