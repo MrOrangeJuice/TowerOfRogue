@@ -33,5 +33,5 @@
     "path": "sprites/sUpConveyer/sUpConveyer.yy",
   },
   "spriteMaskId": null,
-  "visible": true,
+  "visible": false,
 }

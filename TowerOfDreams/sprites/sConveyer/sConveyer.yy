@@ -2,7 +2,7 @@
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "sConveyer",
-  "bbox_bottom": 39,
+  "bbox_bottom": 55,
   "bbox_left": 0,
   "bbox_right": 63,
   "bbox_top": 0,

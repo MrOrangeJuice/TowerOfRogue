@@ -282,6 +282,19 @@ if(!global.paused && !global.hitStop)
 		if(upConveyer || upConveyerCoyote)
 		{
 			vsp -= 2.75;
+			// Play extra VFX if going fast enough
+			if(vsp < -4)
+			{
+				if(image_xscale == 1)
+				{
+					vfx = instance_create_layer(x,y,"VFX",oFastJumpVFX);
+					vfx.image_xscale = -1;
+				}
+				else if(image_xscale == -1)
+				{
+					instance_create_layer(x,y,"VFX",oFastJumpVFX);
+				}
+			}
 		}
 		else
 		{
