@@ -170,7 +170,7 @@ if(!global.paused && !global.hitStop)
 	{
 		if(upConveyer)
 		{
-			vsp -= 0.1;
+			vsp -= 0.08;
 		}
 		else
 		{
@@ -281,7 +281,18 @@ if(!global.paused && !global.hitStop)
 		wallSliding = false;
 		if(upConveyer || upConveyerCoyote)
 		{
-			vsp -= 2.75;
+			if(vsp > -1)
+			{
+				vsp -= 2.75;	
+			}
+			else if(vsp > -2)
+			{
+				vsp -= 2;	
+			}
+			else
+			{
+				vsp -= 1;
+			}
 			// Play extra VFX if going fast enough
 			if(vsp < -4)
 			{
