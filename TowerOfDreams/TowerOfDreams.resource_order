@@ -371,5 +371,6 @@
     {"name":"sFloor1","order":2,"path":"sprites/sFloor1/sFloor1.yy",},
     {"name":"snd_Chest","order":18,"path":"sounds/snd_Chest/snd_Chest.yy",},
     {"name":"sPlayerBit","order":14,"path":"sprites/sPlayerBit/sPlayerBit.yy",},
+    {"name":"snd_Lever","order":33,"path":"sounds/snd_Lever/snd_Lever.yy",},
   ],
 }

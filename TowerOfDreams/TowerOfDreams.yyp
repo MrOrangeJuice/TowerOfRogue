@@ -426,6 +426,7 @@
     {"id":{"name":"snd_Chest","path":"sounds/snd_Chest/snd_Chest.yy",},},
     {"id":{"name":"sPlayerBit","path":"sprites/sPlayerBit/sPlayerBit.yy",},},
     {"id":{"name":"oDust","path":"objects/oDust/oDust.yy",},},
+    {"id":{"name":"snd_Lever","path":"sounds/snd_Lever/snd_Lever.yy",},},
     {"id":{"name":"rTest","path":"rooms/rTest/rTest.yy",},},
   ],
   "RoomOrderNodes": [

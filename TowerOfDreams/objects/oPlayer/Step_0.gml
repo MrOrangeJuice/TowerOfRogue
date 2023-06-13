@@ -539,7 +539,7 @@ if(!global.paused && !global.hitStop)
 			hasSlashed = true;
 			hasSlashJumped = true;
 			extraJump = true;
-			audio_play_sound(snd_Impact,5,false);
+			audio_play_sound(snd_Lever,5,false);
 		}
 	}
 
