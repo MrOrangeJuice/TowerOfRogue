@@ -520,6 +520,26 @@ if(!global.paused && !global.hitStop)
 			extraJump = true;
 			audio_play_sound(snd_Klang,5,false);
 		}
+		lever = instance_place(x,y+9,oLever);
+		if(lever)
+		{
+			// Block switch
+			// Switch blocks A and B
+			if(instance_exists(oBlockA) || instance_exists(oBlockB))
+			{
+				alarm[4] = room_speed * 0.34;
+				oBlockA.image_speed = 1;
+				oBlockB.image_speed = 1;
+				global.bumpersSwitching = true;
+			}	
+			vsp = -3;	
+			instance_create_layer(lever.x+8,lever.y,"VFX",oDustSlashBumper);
+			airborne = true;
+			hasSlashed = true;
+			hasSlashJumped = true;
+			extraJump = true;
+			audio_play_sound(snd_Impact,5,false);
+		}
 	}
 
 	// Jump
