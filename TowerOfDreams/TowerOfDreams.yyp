@@ -120,6 +120,7 @@
     {"id":{"name":"oShopPipe","path":"objects/oShopPipe/oShopPipe.yy",},},
     {"id":{"name":"sBlockAOff","path":"sprites/sBlockAOff/sBlockAOff.yy",},},
     {"id":{"name":"sConveyerRightEnd","path":"sprites/sConveyerRightEnd/sConveyerRightEnd.yy",},},
+    {"id":{"name":"sTankEnemy","path":"sprites/sTankEnemy/sTankEnemy.yy",},},
     {"id":{"name":"oBallVFX","path":"objects/oBallVFX/oBallVFX.yy",},},
     {"id":{"name":"sLavaTest","path":"sprites/sLavaTest/sLavaTest.yy",},},
     {"id":{"name":"sGravityEnemyFall","path":"sprites/sGravityEnemyFall/sGravityEnemyFall.yy",},},

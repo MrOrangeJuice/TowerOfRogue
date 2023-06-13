@@ -99,6 +99,7 @@
     {"name":"oShopPipe","order":10,"path":"objects/oShopPipe/oShopPipe.yy",},
     {"name":"sBlockAOff","order":25,"path":"sprites/sBlockAOff/sBlockAOff.yy",},
     {"name":"sConveyerRightEnd","order":2,"path":"sprites/sConveyerRightEnd/sConveyerRightEnd.yy",},
+    {"name":"sTankEnemy","order":15,"path":"sprites/sTankEnemy/sTankEnemy.yy",},
     {"name":"oBallVFX","order":10,"path":"objects/oBallVFX/oBallVFX.yy",},
     {"name":"sGravityEnemyFall","order":1,"path":"sprites/sGravityEnemyFall/sGravityEnemyFall.yy",},
     {"name":"sGravityEnemyHuskFallUp","order":7,"path":"sprites/sGravityEnemyHuskFallUp/sGravityEnemyHuskFallUp.yy",},
