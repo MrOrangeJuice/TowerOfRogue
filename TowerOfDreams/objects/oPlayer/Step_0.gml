@@ -533,6 +533,7 @@ if(!global.paused && !global.hitStop)
 				global.bumpersSwitching = true;
 			}	
 			vsp = -3;	
+			lever.green = !lever.green;
 			instance_create_layer(lever.x+8,lever.y,"VFX",oDustSlashBumper);
 			airborne = true;
 			hasSlashed = true;

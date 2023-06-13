@@ -12,8 +12,10 @@ else
 if(!global.bumperSwitch)
 {
 	canHit = true;
+	mask_index = sBlockB;
 }
 else
 {
 	canHit = false;
+	mask_index = sEmpty;
 }

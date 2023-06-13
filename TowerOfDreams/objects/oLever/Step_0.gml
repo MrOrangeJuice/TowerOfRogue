@@ -1,8 +1,8 @@
 /// @description Change Sprite
 
-if(global.bumperSwitch)
+if(green)
 {
-	image_index = 0;
+	image_index = 0;	
 }
 else
 {

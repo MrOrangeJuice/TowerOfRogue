@@ -12,8 +12,10 @@ else
 if(global.bumperSwitch)
 {
 	canTouch = true;
+	mask_index = sBlockA;
 }
 else
 {
 	canTouch = false;
+	mask_index = sEmpty;
 }
