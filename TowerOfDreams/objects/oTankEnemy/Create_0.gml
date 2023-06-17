@@ -12,5 +12,6 @@ randInt = 0;
 canTurn = true;
 canStartMovingAgain = true;
 canStopMoving = true;
+firing = false;
 
 image_xscale = dir;

@@ -80,11 +80,13 @@ if(!global.paused && !global.hitStop)
 				if(dir == -1 && oPlayer.x < x)
 				{
 					state = "spotted";
+					alarm[3] = room_speed * 3;
 					instance_create_layer(x,y-18,"VFX",oSpottedVFX);
 				}
 				if(dir == 1 && oPlayer.x > x)
 				{
 					state = "spotted";
+					alarm[3] = room_speed * 3;
 					instance_create_layer(x,y-18,"VFX",oSpottedVFX);
 				}
 			}
@@ -113,6 +115,27 @@ if(!global.paused && !global.hitStop)
 			}
 		}
 		
+		// Horizontal Collision
+		if (place_meeting(x+hsp,y,oWall))
+		{
+			while (!place_meeting(x+sign(hsp),y,oWall))
+			{
+				x = x + sign(hsp);
+			}
+			hsp = 0;
+		}
+		
+		//x = x + hsp;
+		
+		// Animation
+		if(firing)
+		{
+			sprite_index = sTankEnemyFire;
+		}
+		else
+		{
+			sprite_index = sTankEnemyIdle;	
+		}
 		
 	}
 	
@@ -124,4 +147,5 @@ else
 	alarm[0]++;
 	alarm[1]++;
 	alarm[2]++;
+	alarm[3]++;
 }
