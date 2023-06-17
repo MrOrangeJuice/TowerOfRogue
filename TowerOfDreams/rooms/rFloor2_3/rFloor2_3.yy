@@ -26,9 +26,7 @@
     {"name":"inst_125B76D6","path":"rooms/rFloor2_3/rFloor2_3.yy",},
     {"name":"inst_70E3B2EB","path":"rooms/rFloor2_3/rFloor2_3.yy",},
     {"name":"inst_2A860FEF","path":"rooms/rFloor2_3/rFloor2_3.yy",},
-    {"name":"inst_4AF21486","path":"rooms/rFloor2_3/rFloor2_3.yy",},
-    {"name":"inst_2E7FB6FA","path":"rooms/rFloor2_3/rFloor2_3.yy",},
-    {"name":"inst_7EBC849C","path":"rooms/rFloor2_3/rFloor2_3.yy",},
+    {"name":"inst_2EF235CC","path":"rooms/rFloor2_3/rFloor2_3.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -53,9 +51,7 @@
 -10,-2147483648,-70,0,-10,-2147483648,-70,0,-10,-2147483648,-70,0,-10,-2147483648,-6150,0,],"TileDataFormat":1,},"tilesetId":{"name":"tLava","path":"tilesets/tLava/tLava.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"UI","depth":400,"effectEnabled":true,"effectType":null,"gridX":8,"gridY":8,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Enemies","depth":500,"effectEnabled":true,"effectType":null,"gridX":8,"gridY":8,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_4AF21486","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oMissile","path":"objects/oMissile/oMissile.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":408.0,"y":1488.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_2E7FB6FA","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oMissile","path":"objects/oMissile/oMissile.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":360.0,"y":1464.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_7EBC849C","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oMissile","path":"objects/oMissile/oMissile.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":408.0,"y":1536.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_2EF235CC","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oTankEnemy","path":"objects/oTankEnemy/oTankEnemy.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":376.0,"y":1534.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Collectables","depth":600,"effectEnabled":true,"effectType":null,"gridX":8,"gridY":8,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Instances","depth":700,"effectEnabled":true,"effectType":null,"gridX":8,"gridY":8,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[

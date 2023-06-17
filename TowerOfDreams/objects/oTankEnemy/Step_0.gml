@@ -1,0 +1,98 @@
+/// @description Update
+
+event_inherited();
+
+if(!global.paused && !global.hitStop)
+{
+	if(state == "patrol")
+	{
+		image_speed = 1;
+		image_xscale = -dir;
+		vsp += grv;
+
+		// Horizontal Collision
+		if (place_meeting(x+(hsp*dir),y,oWall))
+		{
+			dir *= -1;
+		}
+
+		// Vertical Collision
+		if (place_meeting(x,y+vsp,oWall))
+		{
+			while (!place_meeting(x,y+sign(vsp),oWall))
+			{
+				y = y + sign(vsp);
+			}
+			vsp = 0;
+		}
+
+		// Vertical Collision
+		// If no ground below you reverse direction
+		if (!place_meeting(x+(16*dir),y+1,oWall))
+		{
+			dir *= -1;
+			vsp = 0;
+		}
+	
+		// Randomly stop moving
+		if(moving)
+		{
+			randomize();
+			randInt = irandom_range(0,60);
+			if(randInt == 2 && canStopMoving)
+			{
+				moving = false;
+				alarm[2] = room_speed * 0.5;
+				alarm[1] = room_speed * 0.5;
+				canStopMoving = false;
+				canStartMovingAgain = false;
+			}
+		}
+		// Randomize next action while not moving
+		else
+		{
+			randomize();
+			randInt = irandom_range(0,60);
+			// Turn around
+			if(randInt == 2 && canTurn)
+			{
+				dir = dir * -1;	
+				alarm[0] = room_speed * 0.5;
+				canTurn = false;
+			}
+			// Start moving again
+			if(randInt == 3 && canStartMovingAgain)
+			{
+				moving = true;	
+				alarm[1] = room_speed * 0.5;
+				alarm[2] = room_speed * 0.5;
+				canStartMovingAgain = false;
+				canStopMoving = false;
+			}
+		}
+
+		if(moving) x = x + (hsp * dir);
+		y = y + vsp;
+	
+		// Animation
+		if(moving)
+		{
+			sprite_index = sTankEnemy;	
+		}
+		else
+		{
+			sprite_index = sTankEnemyIdle;	
+		}
+	}
+	else if(state == "spotted")
+	{
+		
+	}
+}
+else
+{
+	image_speed = 0;
+	alarm[0]++;
+	alarm[1]++;
+	alarm[2]++;
+}

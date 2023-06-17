@@ -144,6 +144,7 @@
     {"name":"oBlockA","order":18,"path":"objects/oBlockA/oBlockA.yy",},
     {"name":"shRage","order":1,"path":"shaders/shRage/shRage.yy",},
     {"name":"sWrenchEnemy","order":12,"path":"sprites/sWrenchEnemy/sWrenchEnemy.yy",},
+    {"name":"oTankEnemy","order":14,"path":"objects/oTankEnemy/oTankEnemy.yy",},
     {"name":"oItemTutorialFadeIn","order":5,"path":"objects/oItemTutorialFadeIn/oItemTutorialFadeIn.yy",},
     {"name":"sMissileDown","order":4,"path":"sprites/sMissileDown/sMissileDown.yy",},
     {"name":"oHitstopLong","order":19,"path":"objects/oHitstopLong/oHitstopLong.yy",},
