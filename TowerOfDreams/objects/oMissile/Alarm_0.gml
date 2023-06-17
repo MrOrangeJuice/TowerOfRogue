@@ -4,7 +4,7 @@
 if(instance_exists(oPlayer))
 {
 	// Left and right
-	if(oPlayer.y - 5 < y && y < oPlayer.y + 5)
+	if(oPlayer.y - 8 < y && y < oPlayer.y + 8)
 	{
 		if(oPlayer.x <= x)
 		{
@@ -18,7 +18,7 @@ if(instance_exists(oPlayer))
 	// Up
 	else if(oPlayer.y < y)
 	{
-		if(oPlayer.x - 5 < x && x < oPlayer.x + 5)
+		if(oPlayer.x - 8 < x && x < oPlayer.x + 8)
 		{
 			dir = "up";		
 		}
@@ -34,7 +34,7 @@ if(instance_exists(oPlayer))
 	// Down
 	else if(oPlayer.y > y)
 	{
-		if(oPlayer.x - 5 < x && x < oPlayer.x + 5)
+		if(oPlayer.x - 8 < x && x < oPlayer.x + 8)
 		{
 			dir = "down";		
 		}

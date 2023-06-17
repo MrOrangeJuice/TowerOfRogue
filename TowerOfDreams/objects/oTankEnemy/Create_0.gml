@@ -13,5 +13,6 @@ canTurn = true;
 canStartMovingAgain = true;
 canStopMoving = true;
 firing = false;
+forward = true;
 
 image_xscale = dir;

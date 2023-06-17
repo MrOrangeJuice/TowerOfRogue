@@ -75,7 +75,7 @@ if(!global.paused && !global.hitStop)
 		// Check for state change
 		if(instance_exists(oPlayer))
 		{
-			if(oPlayer.y - 8 < y && y < oPlayer.y + 56)
+			if(oPlayer.y - 16 < y && y < oPlayer.y + 64)
 			{
 				if(dir == -1 && oPlayer.x < x)
 				{
@@ -109,7 +109,7 @@ if(!global.paused && !global.hitStop)
 		// Check for state change
 		if(instance_exists(oPlayer))
 		{
-			if(!(oPlayer.y - 8 < y && y < oPlayer.y + 56))
+			if(!(oPlayer.y - 16 < y && y < oPlayer.y + 64))
 			{
 				state = "patrol";
 			}
@@ -125,7 +125,70 @@ if(!global.paused && !global.hitStop)
 			hsp = 0;
 		}
 		
-		//x = x + hsp;
+		if(instance_exists(oPlayer))
+		{
+			// Track player
+			if(dir == -1)
+			{
+				// Close the gap
+				if(oPlayer.x < x - 40)
+				{
+					hsp = -0.5;
+					forward = true;
+				}
+				// Retreat
+				else if(oPlayer.x > x - 32 && oPlayer.x < x)
+				{
+					hsp = 0.5;	
+					forward = false;
+				}
+				// Switch direction
+				else if(oPlayer.x > x)
+				{
+					dir = 1;	
+				}
+				else
+				{
+					hsp = 0;	
+					forward = true;
+				}
+			}
+			else if(dir == 1)
+			{
+				// Close the gap
+				if(oPlayer.x > x + 40)
+				{
+					hsp = 0.5;
+					forward = true;
+				}
+				// Retreat
+				else if(oPlayer.x < x + 32)
+				{
+					hsp = -0.5;	
+					forward = false;
+				}
+				// Switch direction
+				else if(oPlayer.x < x)
+				{
+					dir = -1;	
+				}
+				else
+				{
+					hsp = 0;	
+					forward = true;
+				}
+			}
+		}
+		
+		if(firing)
+		{
+			hsp = 0;	
+		}
+		
+		x = x + hsp;
+		y = y + vsp;
+		
+		image_xscale = - dir;
 		
 		// Animation
 		if(firing)
@@ -134,12 +197,24 @@ if(!global.paused && !global.hitStop)
 		}
 		else
 		{
-			sprite_index = sTankEnemyIdle;	
+			if(hsp != 0)
+			{
+				if(forward)
+				{
+					sprite_index = sTankEnemy;	
+				}
+				else
+				{
+					sprite_index = sTankEnemyBack;	
+				}
+			}
+			else
+			{
+				sprite_index = sTankEnemyIdle;	
+			}
 		}
 		
 	}
-	
-	y = y + vsp;
 }
 else
 {
