@@ -114,6 +114,7 @@ if(!global.paused && !global.hitStop)
 			if(!(oPlayer.y - 16 < y && y < oPlayer.y + 64))
 			{
 				state = "patrol";
+				hsp = 0.5;
 			}
 		}
 		
