@@ -523,6 +523,11 @@ if(!global.paused && !global.hitStop)
 		lever = instance_place(x,y+9,oLever);
 		if(lever)
 		{
+			// Push player up
+			while(place_meeting(x,y+8,oLever))
+			{
+				y -= 1;	
+			}
 			// Block switch
 			// Switch blocks A and B
 			if(instance_exists(oBlockA) || instance_exists(oBlockB))
@@ -533,7 +538,7 @@ if(!global.paused && !global.hitStop)
 				global.bumpersSwitching = true;
 			}	
 			vsp = -3;	
-			lever.green = !lever.green;
+			oLever.green = !lever.green;
 			instance_create_layer(lever.x+4,lever.y,"VFX",oDustSlashBumper);
 			airborne = true;
 			hasSlashed = true;
