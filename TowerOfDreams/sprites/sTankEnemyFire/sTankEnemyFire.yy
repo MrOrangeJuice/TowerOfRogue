@@ -34,8 +34,8 @@
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "Enemies",
-    "path": "folders/Sprites/Enemies.yy",
+    "name": "Tank Enemy",
+    "path": "folders/Sprites/Enemies/Tank Enemy.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
