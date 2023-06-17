@@ -16,14 +16,6 @@ if(!global.paused && !global.hitStop)
 		}
 		vsp = 0;
 	}
-
-	// Vertical Collision
-	// If no ground below you reverse direction
-	if (!place_meeting(x+(16*dir),y+1,oWall))
-	{
-		dir *= -1;
-		vsp = 0;
-	}
 	
 	// State machine
 	if(state == "patrol")
@@ -33,6 +25,15 @@ if(!global.paused && !global.hitStop)
 		if (place_meeting(x+(hsp*dir),y,oWall))
 		{
 			dir *= -1;
+		}
+		
+		
+		// Vertical Ledge Collision
+		// If no ground below you reverse direction
+		if (!place_meeting(x+(24*dir),y+1,oWall))
+		{
+			dir *= -1;
+			vsp = 0;
 		}
 	
 		// Randomly stop moving
@@ -115,16 +116,6 @@ if(!global.paused && !global.hitStop)
 			}
 		}
 		
-		// Horizontal Collision
-		if (place_meeting(x+hsp,y,oWall))
-		{
-			while (!place_meeting(x+sign(hsp),y,oWall))
-			{
-				x = x + sign(hsp);
-			}
-			hsp = 0;
-		}
-		
 		if(instance_exists(oPlayer))
 		{
 			// Track player
@@ -183,6 +174,23 @@ if(!global.paused && !global.hitStop)
 		if(firing)
 		{
 			hsp = 0;	
+		}
+		
+		// Horizontal Collision
+		if (place_meeting(x+hsp,y,oWall))
+		{
+			while (!place_meeting(x+sign(hsp),y,oWall))
+			{
+				x = x + sign(hsp);
+			}
+			hsp = 0;
+		}
+		
+		// Vertical Ledge Collision
+		// If no ground below stop
+		if (!place_meeting(x+(24*hsp),y+1,oWall))
+		{
+			hsp = 0;
 		}
 		
 		x = x + hsp;
