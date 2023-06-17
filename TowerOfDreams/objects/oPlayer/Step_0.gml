@@ -826,7 +826,7 @@ if(!global.paused && !global.hitStop)
 		case 1:
 			if(key_item && !airborne)
 			{
-				walksp *= 1.5;
+				walksp = 1.5;
 				if(!running)
 				{
 					running = true;
