@@ -3,7 +3,7 @@
 // If pipe was already spawned for this room, spawn it at the same place again
 if(global.shopY != 0)
 {
-	instance_create_layer(x-24,global.shopY-2,"Pipes",oShopPipe);
+	instance_create_layer(x-28,global.shopY-2,"Pipes",oShopPipe);
 	// Set camera to pipe
 	oCamera.y = global.shopY;
 }

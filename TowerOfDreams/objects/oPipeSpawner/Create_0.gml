@@ -3,7 +3,7 @@
 // If pipe was already spawned for this room, spawn it at the same place again
 if(global.pipeY != 0)
 {
-	instance_create_layer(x+32,global.pipeY-2,"Pipes",oPipe);
+	instance_create_layer(x+36,global.pipeY-2,"Pipes",oPipe);
 	// Set camera to pipe
 	oCamera.y = global.pipeY;
 }
