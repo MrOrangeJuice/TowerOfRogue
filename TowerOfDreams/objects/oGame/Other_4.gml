@@ -24,7 +24,7 @@ if(room == rTutorial)
 	global.sword = false;
 }
 
-if(room == rFloor1_3)
+if(room == rFloor1_3 || room == rFloor2_3)
 {
 	global.bumperSwitch = true;	
 }

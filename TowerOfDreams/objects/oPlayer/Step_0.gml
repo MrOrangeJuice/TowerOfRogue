@@ -534,7 +534,7 @@ if(!global.paused && !global.hitStop)
 			}	
 			vsp = -3;	
 			lever.green = !lever.green;
-			instance_create_layer(lever.x+8,lever.y,"VFX",oDustSlashBumper);
+			instance_create_layer(lever.x+4,lever.y,"VFX",oDustSlashBumper);
 			airborne = true;
 			hasSlashed = true;
 			hasSlashJumped = true;
