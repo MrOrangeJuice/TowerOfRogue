@@ -4,34 +4,35 @@ event_inherited();
 
 if(!global.paused && !global.hitStop)
 {
+	image_speed = 1;
+	image_xscale = -dir;
+	vsp += grv;
+	// Vertical Collision
+	if (place_meeting(x,y+vsp,oWall))
+	{
+		while (!place_meeting(x,y+sign(vsp),oWall))
+		{
+			y = y + sign(vsp);
+		}
+		vsp = 0;
+	}
+
+	// Vertical Collision
+	// If no ground below you reverse direction
+	if (!place_meeting(x+(16*dir),y+1,oWall))
+	{
+		dir *= -1;
+		vsp = 0;
+	}
+	
+	// State machine
 	if(state == "patrol")
 	{
-		image_speed = 1;
-		image_xscale = -dir;
-		vsp += grv;
 
 		// Horizontal Collision
 		if (place_meeting(x+(hsp*dir),y,oWall))
 		{
 			dir *= -1;
-		}
-
-		// Vertical Collision
-		if (place_meeting(x,y+vsp,oWall))
-		{
-			while (!place_meeting(x,y+sign(vsp),oWall))
-			{
-				y = y + sign(vsp);
-			}
-			vsp = 0;
-		}
-
-		// Vertical Collision
-		// If no ground below you reverse direction
-		if (!place_meeting(x+(16*dir),y+1,oWall))
-		{
-			dir *= -1;
-			vsp = 0;
 		}
 	
 		// Randomly stop moving
@@ -70,9 +71,26 @@ if(!global.paused && !global.hitStop)
 				canStopMoving = false;
 			}
 		}
+		
+		// Check for state change
+		if(instance_exists(oPlayer))
+		{
+			if(oPlayer.y - 8 < y && y < oPlayer.y + 56)
+			{
+				if(dir == -1 && oPlayer.x < x)
+				{
+					state = "spotted";
+					instance_create_layer(x,y-18,"VFX",oSpottedVFX);
+				}
+				if(dir == 1 && oPlayer.x > x)
+				{
+					state = "spotted";
+					instance_create_layer(x,y-18,"VFX",oSpottedVFX);
+				}
+			}
+		}
 
 		if(moving) x = x + (hsp * dir);
-		y = y + vsp;
 	
 		// Animation
 		if(moving)
@@ -86,8 +104,19 @@ if(!global.paused && !global.hitStop)
 	}
 	else if(state == "spotted")
 	{
+		// Check for state change
+		if(instance_exists(oPlayer))
+		{
+			if(!(oPlayer.y - 8 < y && y < oPlayer.y + 56))
+			{
+				state = "patrol";
+			}
+		}
+		
 		
 	}
+	
+	y = y + vsp;
 }
 else
 {
