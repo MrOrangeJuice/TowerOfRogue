@@ -132,7 +132,7 @@ if(!global.paused && !global.hitStop)
 				// Retreat
 				else if(oPlayer.x > x - 32 && oPlayer.x < x)
 				{
-					hsp = 0.5;	
+					hsp = 0.3;	
 					forward = false;
 				}
 				// Switch direction
@@ -157,7 +157,7 @@ if(!global.paused && !global.hitStop)
 				// Retreat
 				else if(oPlayer.x < x + 32)
 				{
-					hsp = -0.5;	
+					hsp = -0.3;	
 					forward = false;
 				}
 				// Switch direction
