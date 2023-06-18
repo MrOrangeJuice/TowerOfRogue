@@ -114,12 +114,23 @@ if(!global.paused && !global.hitStop)
 			if(!(oPlayer.y - 16 < y && y < oPlayer.y + 64))
 			{
 				state = "patrol";
+				firing = false;
 				hsp = 0.5;
 			}
 		}
 		
 		if(instance_exists(oPlayer))
 		{
+			// Switch direction
+			if(oPlayer.x > x)
+			{
+				dir = 1;	
+			}
+			else if(oPlayer.x < x)
+			{
+				dir = -1;	
+			}
+			
 			// Track player
 			if(dir == -1)
 			{
@@ -134,11 +145,6 @@ if(!global.paused && !global.hitStop)
 				{
 					hsp = 0.3;	
 					forward = false;
-				}
-				// Switch direction
-				else if(oPlayer.x > x)
-				{
-					dir = 1;	
 				}
 				else
 				{
@@ -159,11 +165,6 @@ if(!global.paused && !global.hitStop)
 				{
 					hsp = -0.3;	
 					forward = false;
-				}
-				// Switch direction
-				else if(oPlayer.x < x)
-				{
-					dir = -1;	
 				}
 				else
 				{
@@ -198,7 +199,7 @@ if(!global.paused && !global.hitStop)
 		x = x + hsp;
 		y = y + vsp;
 		
-		image_xscale = - dir;
+		image_xscale = -dir;
 		
 		// Animation
 		if(firing)
