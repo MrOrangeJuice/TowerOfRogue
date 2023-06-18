@@ -99,11 +99,11 @@ if(!global.paused && !global.hitStop)
 		// Animation
 		if(moving)
 		{
-			sprite_index = sTankEnemy;	
+			sprite_index = run;	
 		}
 		else
 		{
-			sprite_index = sTankEnemyIdle;	
+			sprite_index = idle;	
 		}
 	}
 	else if(state == "spotted")
@@ -203,7 +203,7 @@ if(!global.paused && !global.hitStop)
 		// Animation
 		if(firing)
 		{
-			sprite_index = sTankEnemyFire;
+			sprite_index = fire;
 		}
 		else
 		{
@@ -211,16 +211,16 @@ if(!global.paused && !global.hitStop)
 			{
 				if(forward)
 				{
-					sprite_index = sTankEnemy;	
+					sprite_index = run;	
 				}
 				else
 				{
-					sprite_index = sTankEnemyBack;	
+					sprite_index = back;	
 				}
 			}
 			else
 			{
-				sprite_index = sTankEnemyIdle;	
+				sprite_index = idle;	
 			}
 		}
 		

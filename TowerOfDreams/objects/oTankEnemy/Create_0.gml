@@ -15,4 +15,10 @@ canStopMoving = true;
 firing = false;
 forward = true;
 
+// Sprites
+idle = sTankEnemyIdle;
+run = sTankEnemy;
+back = sTankEnemyBack;
+fire = sTankEnemyFire;
+
 image_xscale = dir;
