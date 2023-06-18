@@ -202,12 +202,12 @@ if(!global.paused && !global.hitStop)
 			global.hubMusic = true;
 		}
 
-		if(!global.shopMusic && (room == rTreasureRoom || room == rTreasureRoom2 || room == rShop || room == rShop2))
+		if(!global.shopMusic && (room == rTreasureRoom || room == rTreasureRoom2 || room == rShop || room == rShop2 || room == rTreasureRoomFloor2 || room == rTreasureRoom2Floor2 || room == rShopFloor2 || room == rShop2Floor2))
 		{
 			audio_play_sound(msc_Shop,5,true);
 			global.shopMusic = true;
 		}
-		if(global.inARun && !global.floor1Music && room != rHub && room != rTreasureRoom && room != rTreasureRoom2 && room != rShop && room != rShop2)
+		if(global.inARun && !global.floor1Music && room != rHub && room != rTreasureRoom && room != rTreasureRoom2 && room != rShop && room != rShop2  && room != rTreasureRoomFloor2 && room != rTreasureRoom2Floor2 && room != rShopFloor2 && room != rShop2Floor2)
 		{
 			if(global.levelCount < 3)
 			{
