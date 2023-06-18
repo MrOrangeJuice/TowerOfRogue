@@ -22,6 +22,7 @@ function PickNextLevel(){
 		global.coinArray = ds_list_create();
 		global.enemyArray = ds_list_create();
 		audio_stop_sound(msc_Floor1);
+		audio_stop_sound(msc_Floor2);
 		global.floor1Music = false;
 		Save();
 	}
@@ -33,6 +34,12 @@ function PickNextLevel(){
 		// Floor 2
 		if(global.levelCount >= 3)
 		{
+			// Transition music
+			if(global.levelCount == 3)
+			{
+				audio_stop_sound(msc_Floor1);
+				global.floor1Music = false;
+			}
 			levelChoice = irandom_range(0,array_length(global.levelArray2)-1);
 			// Make sure it picks level that hasn't been used yet
 			while(global.usedArray2[levelChoice])

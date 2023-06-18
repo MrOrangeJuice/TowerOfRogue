@@ -189,6 +189,7 @@ if(global.paused)
 				global.health = global.maxHealth;
 				// Reset run
 				global.usedArray = [false,false,false,false,false];
+				global.usedArray2 = [false,false,false,false,false];
 				global.inARun = false;
 				global.coins = 0;
 				global.item = -1;
@@ -212,6 +213,7 @@ if(global.paused)
 				audio_stop_sound(msc_Tutorial);
 				global.tutorialMusic = false;
 				audio_stop_sound(msc_Floor1);
+				audio_stop_sound(msc_Floor2);
 				global.floor1Music = false;
 				audio_stop_sound(msc_Shop);
 				global.shopMusic = false;

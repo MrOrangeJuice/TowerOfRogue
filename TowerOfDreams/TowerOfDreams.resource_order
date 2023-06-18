@@ -93,6 +93,7 @@
     {"name":"oItemVFX","order":9,"path":"objects/oItemVFX/oItemVFX.yy",},
     {"name":"oWingVFX","order":24,"path":"objects/oWingVFX/oWingVFX.yy",},
     {"name":"snd_PlayerDeath","order":21,"path":"sounds/snd_PlayerDeath/snd_PlayerDeath.yy",},
+    {"name":"msc_Floor2","order":5,"path":"sounds/msc_Floor2/msc_Floor2.yy",},
     {"name":"oFullCamera","order":5,"path":"objects/oFullCamera/oFullCamera.yy",},
     {"name":"sGobletUI","order":7,"path":"sprites/sGobletUI/sGobletUI.yy",},
     {"name":"oDustSmall","order":2,"path":"objects/oDustSmall/oDustSmall.yy",},

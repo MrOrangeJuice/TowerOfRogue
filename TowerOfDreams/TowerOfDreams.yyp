@@ -114,6 +114,7 @@
     {"id":{"name":"oItemVFX","path":"objects/oItemVFX/oItemVFX.yy",},},
     {"id":{"name":"oWingVFX","path":"objects/oWingVFX/oWingVFX.yy",},},
     {"id":{"name":"snd_PlayerDeath","path":"sounds/snd_PlayerDeath/snd_PlayerDeath.yy",},},
+    {"id":{"name":"msc_Floor2","path":"sounds/msc_Floor2/msc_Floor2.yy",},},
     {"id":{"name":"oFullCamera","path":"objects/oFullCamera/oFullCamera.yy",},},
     {"id":{"name":"sGobletUI","path":"sprites/sGobletUI/sGobletUI.yy",},},
     {"id":{"name":"oDustSmall","path":"objects/oDustSmall/oDustSmall.yy",},},

@@ -209,7 +209,14 @@ if(!global.paused && !global.hitStop)
 		}
 		if(global.inARun && !global.floor1Music && room != rHub && room != rTreasureRoom && room != rTreasureRoom2 && room != rShop && room != rShop2)
 		{
-			audio_play_sound(msc_Floor1,5,true);
+			if(global.levelCount < 3)
+			{
+				audio_play_sound(msc_Floor1,5,true);
+			}
+			else
+			{
+				audio_play_sound(msc_Floor2,5,true);	
+			}
 			global.floor1Music = true;
 		}
 	}
