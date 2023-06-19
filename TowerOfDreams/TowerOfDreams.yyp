@@ -280,6 +280,7 @@
     {"id":{"name":"oStamper","path":"objects/oStamper/oStamper.yy",},},
     {"id":{"name":"sGravityEnemyLand","path":"sprites/sGravityEnemyLand/sGravityEnemyLand.yy",},},
     {"id":{"name":"oBumperB","path":"objects/oBumperB/oBumperB.yy",},},
+    {"id":{"name":"sSkipTutorial","path":"sprites/sSkipTutorial/sSkipTutorial.yy",},},
     {"id":{"name":"sPlayerLand","path":"sprites/sPlayerLand/sPlayerLand.yy",},},
     {"id":{"name":"sOptionsMenu","path":"sprites/sOptionsMenu/sOptionsMenu.yy",},},
     {"id":{"name":"sHeartUI","path":"sprites/sHeartUI/sHeartUI.yy",},},

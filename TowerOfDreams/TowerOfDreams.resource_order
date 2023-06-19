@@ -244,6 +244,7 @@
     {"name":"sMessageBox","order":13,"path":"sprites/sMessageBox/sMessageBox.yy",},
     {"name":"sGravityEnemyLand","order":4,"path":"sprites/sGravityEnemyLand/sGravityEnemyLand.yy",},
     {"name":"oBumperB","order":9,"path":"objects/oBumperB/oBumperB.yy",},
+    {"name":"sSkipTutorial","order":18,"path":"sprites/sSkipTutorial/sSkipTutorial.yy",},
     {"name":"sPlayerLand","order":4,"path":"sprites/sPlayerLand/sPlayerLand.yy",},
     {"name":"sOptionsMenu","order":7,"path":"sprites/sOptionsMenu/sOptionsMenu.yy",},
     {"name":"sHeartUI","order":1,"path":"sprites/sHeartUI/sHeartUI.yy",},
