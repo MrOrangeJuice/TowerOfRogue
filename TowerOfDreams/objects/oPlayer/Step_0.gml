@@ -850,12 +850,12 @@ if(!global.paused && !global.hitStop)
 				// Reset your speed if you turn around in midair without holding run
 				if(image_xscale != initialRunDir)
 				{
-					walksp = 1;
+					if(!conveyerBoost) walksp = 1;
 				}
 			}
 			else if(!airborne)
 			{
-				walksp = 1;	
+				if(!conveyerBoost) walksp = 1;	
 				if(running)
 				{
 					running = false;
