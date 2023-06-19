@@ -24,8 +24,19 @@ else
 	global.sideChestOpened = false;
 	if(room == rHub)
 	{
-		SlideTransition(TRANS_MODE.GOTO,rTutorial);	
-		global.health = global.maxHealth;
+		if(red)
+		{
+			global.inARun = true;
+			global.item = -1;
+			global.passiveItems = [];
+			global.levelCount = 3;
+			PickNextLevel();
+		}
+		else
+		{
+			SlideTransition(TRANS_MODE.GOTO,rTutorial);	
+			global.health = global.maxHealth;
+		}
 	}
 	else if(room == rTutorial)
 	{
