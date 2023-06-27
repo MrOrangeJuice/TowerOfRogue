@@ -14,8 +14,16 @@ for(i = 0; i < listSize; i++)
 	}
 }
 
-instance_create_layer(other.x,other.y,"CoinVFX",oCoinVFX);
-global.coins++;
+// Determine VFX based on value
+if(other.value == 2)
+{
+	instance_create_layer(other.x,other.y,"CoinVFX",oItemVFX);
+}
+else
+{
+	instance_create_layer(other.x,other.y,"CoinVFX",oCoinVFX);
+}
+global.coins += other.value;
 audio_play_sound(snd_Gem,5,false);
 with (oGame) coinTextScale = 1.15;
 instance_destroy(other);
