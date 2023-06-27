@@ -16,6 +16,7 @@ for(i = 0; i < array_length(global.passiveItems); i++)
 
 if(pickaxe)
 {
+	// Chance to double gem value
 	gemChance = irandom_range(1,5);
 	if(gemChance <= pickaxeNum)
 	{
