@@ -24,3 +24,7 @@ if(pickaxe)
 		value = 2;
 	}
 }
+
+// Magnetism
+hsp = 0;
+vsp = 0;
