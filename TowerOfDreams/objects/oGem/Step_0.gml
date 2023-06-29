@@ -23,9 +23,18 @@ if(!global.paused)
 			if(point_distance(x+4,y+4,oPlayer.x,oPlayer.y) < 20 * magnetNum)
 			{
 				angle = arctan2(oPlayer.y - y, oPlayer.x - x);
-				hsp += cos(angle) * 3;
-				vsp += sin(angle) * 3;
+				hsp += cos(angle) * 1;
+				vsp += sin(angle) * 1;
 			}
+		}
+		
+		if(hsp > 3)
+		{
+			hsp = 3;	
+		}
+		if(vsp > 3)
+		{
+			vsp = 3;	
 		}
 
 		x += hsp;
