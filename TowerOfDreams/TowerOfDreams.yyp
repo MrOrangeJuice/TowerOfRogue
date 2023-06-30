@@ -328,7 +328,7 @@
     {"id":{"name":"snd_SwordGet","path":"sounds/snd_SwordGet/snd_SwordGet.yy",},},
     {"id":{"name":"oTitle","path":"objects/oTitle/oTitle.yy",},},
     {"id":{"name":"sHuskCannon","path":"sprites/sHuskCannon/sHuskCannon.yy",},},
-    {"id":{"name":"sAxeUI","path":"sprites/sAxeUI/sAxeUI.yy",},},
+    {"id":{"name":"sAxe","path":"sprites/sAxe/sAxe.yy",},},
     {"id":{"name":"sFloatingLeverGreen","path":"sprites/sFloatingLeverGreen/sFloatingLeverGreen.yy",},},
     {"id":{"name":"oBubbleVFX","path":"objects/oBubbleVFX/oBubbleVFX.yy",},},
     {"id":{"name":"sHuskCannonFire","path":"sprites/sHuskCannonFire/sHuskCannonFire.yy",},},
