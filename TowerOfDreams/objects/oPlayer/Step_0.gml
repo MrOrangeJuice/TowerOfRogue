@@ -863,7 +863,7 @@ if(!global.paused && !global.hitStop)
 			}
 		// Throwing Axe
 		case 11:
-			if(key_item_pressed && !instance_exists(oAxe))
+			if(key_item_pressed && instance_number(oAxe) <= 1)
 			{
 				if(!wallSliding)
 				{
