@@ -874,6 +874,7 @@ if(!global.paused && !global.hitStop)
 				{
 					axe = instance_create_layer(x+(4*-image_xscale),y-4,"Walls",oAxe);
 					axe.dir = -image_xscale;
+					axe.image_index = 2;
 				}
 			}
 			break;	
