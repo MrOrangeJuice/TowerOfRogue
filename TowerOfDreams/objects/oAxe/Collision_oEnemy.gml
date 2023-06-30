@@ -5,10 +5,10 @@ if(!other.invincible)
 	if(canHit)
 	{
 		other.flash = 5;
-		other.hp -= (0.5 + dmgMultiplier);
+		other.hp -= (1 + dmgMultiplier);
 		ScreenShake(2,10);
 		audio_play_sound(snd_Hit,5,false);
-		dmgMultiplier += 0.5;
+		dmgMultiplier += 1;
 		vsp = -2.5;
 		// Turn off collision breifly
 		canHit = false;
@@ -20,7 +20,7 @@ else
 	if(canHit)
 	{
 		audio_play_sound(snd_Klang,5,false);	
-		dmgMultiplier += 0.5;
+		dmgMultiplier += 1;
 		vsp = -2.5;
 		// Turn off collision breifly
 		canHit = false;
