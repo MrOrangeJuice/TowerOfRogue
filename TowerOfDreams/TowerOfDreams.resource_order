@@ -132,6 +132,7 @@
     {"name":"sCannon","order":4,"path":"sprites/sCannon/sCannon.yy",},
     {"name":"sConveyerLeftEnd","order":1,"path":"sprites/sConveyerLeftEnd/sConveyerLeftEnd.yy",},
     {"name":"rFloor1_4","order":3,"path":"rooms/rFloor1_4/rFloor1_4.yy",},
+    {"name":"oAxe","order":17,"path":"objects/oAxe/oAxe.yy",},
     {"name":"oPlayerExplosion","order":14,"path":"objects/oPlayerExplosion/oPlayerExplosion.yy",},
     {"name":"sLava","order":5,"path":"sprites/sLava/sLava.yy",},
     {"name":"oLeftConveyer","order":14,"path":"objects/oLeftConveyer/oLeftConveyer.yy",},

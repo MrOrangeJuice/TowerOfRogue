@@ -1,7 +1,5 @@
 /// @description Update
 
-event_inherited();
-
 if(!global.paused && !global.hitStop)
 {
 	vsp += grv;
@@ -19,4 +17,5 @@ if(!global.paused && !global.hitStop)
 else
 {
 	image_speed = 0;	
+	alarm[0]++;
 }

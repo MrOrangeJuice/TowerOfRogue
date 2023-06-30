@@ -861,6 +861,22 @@ if(!global.paused && !global.hitStop)
 					running = false;
 				}
 			}
+		// Throwing Axe
+		case 11:
+			if(key_item_pressed && !instance_exists(oAxe))
+			{
+				if(!wallSliding)
+				{
+					axe = instance_create_layer(x+(4*image_xscale),y-4,"Walls",oAxe);
+					axe.dir = image_xscale;
+				}
+				else
+				{
+					axe = instance_create_layer(x+(4*-image_xscale),y-4,"Walls",oAxe);
+					axe.dir = -image_xscale;
+				}
+			}
+			break;	
 	}
 
 	// Animation

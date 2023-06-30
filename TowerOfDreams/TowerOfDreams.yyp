@@ -157,6 +157,7 @@
     {"id":{"name":"sCannon","path":"sprites/sCannon/sCannon.yy",},},
     {"id":{"name":"sConveyerLeftEnd","path":"sprites/sConveyerLeftEnd/sConveyerLeftEnd.yy",},},
     {"id":{"name":"rFloor1_4","path":"rooms/rFloor1_4/rFloor1_4.yy",},},
+    {"id":{"name":"oAxe","path":"objects/oAxe/oAxe.yy",},},
     {"id":{"name":"oPlayerExplosion","path":"objects/oPlayerExplosion/oPlayerExplosion.yy",},},
     {"id":{"name":"sLava","path":"sprites/sLava/sLava.yy",},},
     {"id":{"name":"oLeftConveyer","path":"objects/oLeftConveyer/oLeftConveyer.yy",},},
