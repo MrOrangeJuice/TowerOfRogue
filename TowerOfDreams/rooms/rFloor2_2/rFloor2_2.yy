@@ -266,6 +266,7 @@
     {"name":"inst_4A5DEA06","path":"rooms/rFloor2_2/rFloor2_2.yy",},
     {"name":"inst_5F9F8A56","path":"rooms/rFloor2_2/rFloor2_2.yy",},
     {"name":"inst_40B1A329","path":"rooms/rFloor2_2/rFloor2_2.yy",},
+    {"name":"inst_BD6CAE3","path":"rooms/rFloor2_2/rFloor2_2.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -636,6 +637,9 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_5A08AB0F","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oWall","path":"objects/oWall/oWall.yy",},"properties":[],"rotation":0.0,"scaleX":2.0,"scaleY":28.0,"x":424.0,"y":968.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_3E06D6C6","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oSpikes","path":"objects/oSpikes/oSpikes.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":400.0,"y":1272.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_6002672","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oWall","path":"objects/oWall/oWall.yy",},"properties":[],"rotation":0.0,"scaleX":26.0,"scaleY":3.0,"x":216.0,"y":968.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_BD6CAE3","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oLevelInfo","path":"objects/oLevelInfo/oLevelInfo.yy",},"properties":[
+            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oLevelInfo","path":"objects/oLevelInfo/oLevelInfo.yy",},"propertyId":{"name":"levelName","path":"objects/oLevelInfo/oLevelInfo.yy",},"value":"Vertical Velocity",},
+          ],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":232.0,"y":3088.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"CoinVFX","depth":900,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"VFX","depth":1000,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},

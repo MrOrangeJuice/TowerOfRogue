@@ -16,7 +16,7 @@ if(!global.paused && !global.hitStop)
 		vsp = 0;
 		if(!hitWall)
 		{
-			if(IsOnScreen(y)) audio_play_sound(snd_GravLand,5,false);
+			if(IsOnScreen(y)) audio_play_sound(snd_Land,5,false);
 			alarm[0] = room_speed * 1;	
 			hitWall = true;
 			landing = true;
