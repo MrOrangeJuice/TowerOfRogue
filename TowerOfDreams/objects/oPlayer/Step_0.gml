@@ -861,6 +861,7 @@ if(!global.paused && !global.hitStop)
 					running = false;
 				}
 			}
+			break;
 		// Throwing Axe
 		case 11:
 			if(key_item_pressed && instance_number(oAxe) <= 1)
