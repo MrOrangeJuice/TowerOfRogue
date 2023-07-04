@@ -224,12 +224,17 @@ if(global.paused)
 	}
 }
 
-/*
-if(key_restart)
+// Check for passive items
+global.magnet = false;
+global.magnetNum = 0;
+for(i = 0; i < array_length(global.passiveItems); i++)
 {
-	SlideTransition(TRANS_MODE.RESTART);
+	if(global.passiveItems[i] == 7)
+	{
+		global.magnet = true;
+		global.magnetNum++;
+	}
 }
-*/
 
 // Record analog inputs for this frame
 if(gamepad_axis_value(0,gp_axislv) < -0.4)

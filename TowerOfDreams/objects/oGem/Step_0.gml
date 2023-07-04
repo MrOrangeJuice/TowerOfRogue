@@ -4,23 +4,11 @@ if(!global.paused)
 {
 	image_speed = 1;
 	
-	// Check for items
-	magnet = false;
-	magnetNum = 0;
-	for(i = 0; i < array_length(global.passiveItems); i++)
-	{
-		if(global.passiveItems[i] == 7)
-		{
-			magnet = true;
-			magnetNum++;
-		}
-	}
-	
-	if(magnet)
+	if(global.magnet)
 	{
 		if(instance_exists(oPlayer))
 		{
-			if(point_distance(x+4,y+4,oPlayer.x,oPlayer.y) < 20 * magnetNum)
+			if(point_distance(x+4,y+4,oPlayer.x,oPlayer.y) < 20 * global.magnetNum)
 			{
 				angle = arctan2(oPlayer.y - y, oPlayer.x - x);
 				hsp += cos(angle) * 1;

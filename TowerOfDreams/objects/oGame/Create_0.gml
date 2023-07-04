@@ -49,6 +49,10 @@ global.bumperSwitch = true;
 global.bumpersSwitching = false;
 global.lavaId = 0;
 
+// Passive items
+global.magnet = false;
+global.magnetNum = 0;
+
 // Determine default resolution
 if(display_get_width() / display_get_height() == 1.6)
 {

@@ -1,7 +1,6 @@
 /// @description Determine value
 
 value = 1;
-magnet = false;
 
 // Check for gem items
 pickaxe = false;
