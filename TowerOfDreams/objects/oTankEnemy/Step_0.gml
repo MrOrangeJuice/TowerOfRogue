@@ -82,13 +82,13 @@ if(!global.paused && !global.hitStop)
 				if(dir == -1 && oPlayer.x < x)
 				{
 					state = "spotted";
-					alarm[3] = room_speed * 3;
+					alarm[3] = room_speed * 2;
 					instance_create_layer(x,y-18,"VFX",oSpottedVFX);
 				}
 				if(dir == 1 && oPlayer.x > x)
 				{
 					state = "spotted";
-					alarm[3] = room_speed * 3;
+					alarm[3] = room_speed * 2;
 					instance_create_layer(x,y-18,"VFX",oSpottedVFX);
 				}
 			}
