@@ -862,7 +862,7 @@ if(!global.paused && !global.hitStop)
 				}
 			}
 			break;
-		// Throwing Axe
+		// Bouncing Axe
 		case 11:
 			if(key_item_pressed && instance_number(oAxe) <= 1)
 			{
@@ -876,6 +876,23 @@ if(!global.paused && !global.hitStop)
 					axe = instance_create_layer(x+(4*-image_xscale),y-4,"Walls",oAxe);
 					axe.dir = -image_xscale;
 					axe.image_index = 2;
+				}
+			}
+			break;	
+		// Doomerang
+		case 12:
+			if(key_item_pressed && instance_number(oBoomerang) <= 0)
+			{
+				if(!wallSliding)
+				{
+					boomerang = instance_create_layer(x+(4*image_xscale),y-4,"Walls",oBoomerang);
+					boomerang.dir = image_xscale;
+				}
+				else
+				{
+					boomerang = instance_create_layer(x+(4*-image_xscale),y-4,"Walls",oBoomerang);
+					boomerang.dir = -image_xscale;
+					boomerang.image_index = 4;
 				}
 			}
 			break;	
