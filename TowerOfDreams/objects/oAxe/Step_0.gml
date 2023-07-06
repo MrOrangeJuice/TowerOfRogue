@@ -13,9 +13,18 @@ if(!global.paused && !global.hitStop)
 	{
 		image_speed = -1;	
 	}
+	if(dmgMultiplier >= 1)
+	{
+		if(!particlesStarted)
+		{
+			alarm[1] = room_speed * 0.1;
+			particlesStarted = true;
+		}
+	}
 }
 else
 {
 	image_speed = 0;	
 	alarm[0]++;
+	alarm[1]++;
 }

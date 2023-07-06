@@ -4,6 +4,8 @@ audio_play_sound(snd_Kunai,5,false);
 xSpeed = 2;
 dmgMultiplier = 0;
 canHit = true;
+particlesStarted = false;
+particles = instance_create_layer(x,y,"Walls",oBoomerangParticle);
 
 if(dir == -1)
 {

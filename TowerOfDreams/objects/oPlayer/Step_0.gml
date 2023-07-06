@@ -885,12 +885,12 @@ if(!global.paused && !global.hitStop)
 			{
 				if(!wallSliding)
 				{
-					boomerang = instance_create_layer(x+(4*image_xscale),y-4,"Walls",oBoomerang);
+					boomerang = instance_create_layer(x+(4*image_xscale),y,"Walls",oBoomerang);
 					boomerang.dir = image_xscale;
 				}
 				else
 				{
-					boomerang = instance_create_layer(x+(4*-image_xscale),y-4,"Walls",oBoomerang);
+					boomerang = instance_create_layer(x+(4*-image_xscale),y,"Walls",oBoomerang);
 					boomerang.dir = -image_xscale;
 					boomerang.image_index = 4;
 				}

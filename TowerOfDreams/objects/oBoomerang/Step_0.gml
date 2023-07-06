@@ -6,6 +6,11 @@ if(!global.paused && !global.hitStop)
 	if(xSpeed < 0)
 	{
 		dmgMultiplier = 1;
+		if(!particlesStarted)
+		{
+			alarm[0] = room_speed * 0.1;
+			particlesStarted = true;
+		}
 	}
 	x += (xSpeed * dir);
 	if(dir == 1)
