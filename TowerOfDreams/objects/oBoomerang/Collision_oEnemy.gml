@@ -13,5 +13,6 @@ if(!other.invincible)
 else
 {
 	audio_play_sound(snd_Klang,5,false);	
+	instance_create_layer(x,y,"Enemies",oPlayerExplosion);
 }
 instance_destroy();

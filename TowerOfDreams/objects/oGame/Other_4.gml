@@ -44,3 +44,5 @@ else
 {
 	global.infiniteHealth = false;	
 }
+
+audio_stop_sound(snd_BoomerangReturn);

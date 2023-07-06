@@ -23,6 +23,7 @@ function PickNextLevel(){
 		global.enemyArray = ds_list_create();
 		audio_stop_sound(msc_Floor1);
 		audio_stop_sound(msc_Floor2);
+		audio_stop_sound(snd_BoomerangReturn);
 		global.floor1Music = false;
 		Save();
 	}
