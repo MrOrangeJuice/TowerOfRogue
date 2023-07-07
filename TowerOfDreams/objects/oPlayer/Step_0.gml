@@ -378,7 +378,7 @@ if(!global.paused && !global.hitStop)
 			}
 			vsp = -(3+bagNum);	
 			instance_create_layer(x,y+6,"VFX",oDustSlash);
-			
+			if(bagNum > 0) audio_play_sound(snd_Winds,5,false);
 			if(shock)
 			{
 				// Spawn shock waves

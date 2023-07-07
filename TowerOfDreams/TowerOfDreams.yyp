@@ -170,6 +170,7 @@
     {"id":{"name":"oLeftConveyer","path":"objects/oLeftConveyer/oLeftConveyer.yy",},},
     {"id":{"name":"oCritPBItem","path":"objects/oCritPBItem/oCritPBItem.yy",},},
     {"id":{"name":"o3","path":"objects/o3/o3.yy",},},
+    {"id":{"name":"snd_Winds","path":"sounds/snd_Winds/snd_Winds.yy",},},
     {"id":{"name":"oShockwaveVFX","path":"objects/oShockwaveVFX/oShockwaveVFX.yy",},},
     {"id":{"name":"sShopSign","path":"sprites/sShopSign/sShopSign.yy",},},
     {"id":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},},
