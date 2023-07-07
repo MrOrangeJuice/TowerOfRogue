@@ -354,16 +354,10 @@ if(!global.paused && !global.hitStop)
 	{	
 		if(place_meeting(x,y+9,oWall))
 		{
-			// Push player up
-			while(place_meeting(x,y+8,oWall))
-			{
-				y -= 1;	
-			}
-			vsp = -3;	
-			instance_create_layer(x,y+6,"VFX",oDustSlash);
 			// Check for slash items
 			shock = false;
 			shockNum = 0;
+			bagNum = 0;
 			for(i = 0; i < array_length(global.passiveItems); i++)
 			{
 				if(global.passiveItems[i] == 0)
@@ -371,7 +365,20 @@ if(!global.paused && !global.hitStop)
 					shock = true;
 					shockNum++;
 				}
+				if(global.passiveItems[i] == 9)
+				{
+					bagNum += 0.5;
+				}
 			}
+			
+			// Push player up
+			while(place_meeting(x,y+8,oWall))
+			{
+				y -= 1;	
+			}
+			vsp = -(3+bagNum);	
+			instance_create_layer(x,y+6,"VFX",oDustSlash);
+			
 			if(shock)
 			{
 				// Spawn shock waves
