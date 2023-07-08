@@ -49,6 +49,7 @@ global.hubMusic = false;
 global.bumperSwitch = true;
 global.bumpersSwitching = false;
 global.lavaId = 0;
+global.displayLC = false;
 
 // Passive items
 global.magnet = false;
