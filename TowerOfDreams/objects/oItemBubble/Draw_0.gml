@@ -21,7 +21,8 @@ if(instance_exists(oPlayer))
 	// Check if player is underneath
 	if(oPlayer.x < x + 24 && oPlayer.x > x - 8)
 	{
-		draw_text(x+8,1484,global.itemNames[item]);
+		draw_text(x+8,1476,global.itemNames[item]);
+		draw_text(x+8,1484,global.itemTypes[item]);
 	}
 }
 
