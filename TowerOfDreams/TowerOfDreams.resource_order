@@ -237,6 +237,7 @@
     {"name":"sSwordShrineSwordless","order":7,"path":"sprites/sSwordShrineSwordless/sSwordShrineSwordless.yy",},
     {"name":"sHeart","order":1,"path":"sprites/sHeart/sHeart.yy",},
     {"name":"sPlayerExplosion","order":12,"path":"sprites/sPlayerExplosion/sPlayerExplosion.yy",},
+    {"name":"oPlayerChargeParticle","order":25,"path":"objects/oPlayerChargeParticle/oPlayerChargeParticle.yy",},
     {"name":"sLavaBubble","order":3,"path":"sprites/sLavaBubble/sLavaBubble.yy",},
     {"name":"oMagnetItem","order":15,"path":"objects/oMagnetItem/oMagnetItem.yy",},
     {"name":"rTutorial","order":1,"path":"rooms/rTutorial/rTutorial.yy",},

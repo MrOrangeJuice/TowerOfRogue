@@ -34,3 +34,5 @@ conveyerBoost = false;
 upConveyer = false;
 upConveyerBoost = false;
 upConveyerCoyote = false;
+chargeBounces = 0;
+chargeSlash = false;

@@ -271,6 +271,7 @@
     {"id":{"name":"sLogo","path":"sprites/sLogo/sLogo.yy",},},
     {"id":{"name":"sHeart","path":"sprites/sHeart/sHeart.yy",},},
     {"id":{"name":"sPlayerExplosion","path":"sprites/sPlayerExplosion/sPlayerExplosion.yy",},},
+    {"id":{"name":"oPlayerChargeParticle","path":"objects/oPlayerChargeParticle/oPlayerChargeParticle.yy",},},
     {"id":{"name":"sLavaBubble","path":"sprites/sLavaBubble/sLavaBubble.yy",},},
     {"id":{"name":"oMagnetItem","path":"objects/oMagnetItem/oMagnetItem.yy",},},
     {"id":{"name":"rTutorial","path":"rooms/rTutorial/rTutorial.yy",},},

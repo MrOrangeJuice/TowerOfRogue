@@ -3,4 +3,4 @@ event_inherited();
 passive = true;
 itemPassiveId = 10;
 itemName = "Charge Blade";
-itemDesc = "Chain bounces for more damage";
+itemDesc = "Chain 3 bounces for more damage";
