@@ -396,7 +396,14 @@ if(!global.paused && !global.hitStop)
 				y -= 1;	
 			}
 			vsp = -(3+bagNum);	
-			instance_create_layer(x,y+6,"VFX",oDustSlash);
+			if(chargeSlash)
+			{
+				instance_create_layer(x,y+6,"VFX",oDustSlashGreen);
+			}
+			else
+			{
+				instance_create_layer(x,y+6,"VFX",oDustSlash);
+			}
 			if(bagNum > 0) audio_play_sound(snd_Winds,5,false);
 			if(shock)
 			{
@@ -423,6 +430,7 @@ if(!global.paused && !global.hitStop)
 				if(chargeBounces == 2) 
 				{
 					particles = instance_create_layer(x,y,"Walls",oPlayerChargeParticle);
+					audio_play_sound(snd_Charge,5,false);
 					alarm[7] = room_speed * 0.1;
 				}
 			}
@@ -440,7 +448,14 @@ if(!global.paused && !global.hitStop)
 			bumper.image_speed = 1;
 			bumper.hit = true;
 			vsp = -3;	
-			instance_create_layer(bumper.x+8,bumper.y,"VFX",oDustSlashBumper);
+			if(chargeSlash)
+			{
+				instance_create_layer(bumper.x+8,bumper.y,"VFX",oDustSlashBumperGreen);
+			}
+			else
+			{
+				instance_create_layer(bumper.x+8,bumper.y,"VFX",oDustSlashBumper);
+			}
 			airborne = true;
 			hasSlashed = true;
 			hasSlashJumped = true;
@@ -452,6 +467,7 @@ if(!global.paused && !global.hitStop)
 				if(chargeBounces == 2) 
 				{
 					particles = instance_create_layer(x,y,"Walls",oPlayerChargeParticle);
+					audio_play_sound(snd_Charge,5,false);
 					alarm[7] = room_speed * 0.1;
 				}
 			}
@@ -486,6 +502,7 @@ if(!global.paused && !global.hitStop)
 				if(chargeBounces == 2) 
 				{
 					particles = instance_create_layer(x,y,"Walls",oPlayerChargeParticle);
+					audio_play_sound(snd_Charge,5,false);
 					alarm[7] = room_speed * 0.1;
 				}
 			}
@@ -507,7 +524,14 @@ if(!global.paused && !global.hitStop)
 			}
 			else
 			{
-				instance_create_layer(bubble.x+8,bubble.y,"UI",oDustSlashBumper);
+				if(chargeSlash)
+				{
+					instance_create_layer(bubble.x+8,bubble.y,"UI",oDustSlashBumperGreen);
+				}
+				else
+				{
+					instance_create_layer(bubble.x+8,bubble.y,"UI",oDustSlashBumper);
+				}
 				audio_play_sound(snd_Klang,5,false);
 			}
 		}
@@ -545,6 +569,10 @@ if(!global.paused && !global.hitStop)
 				{
 					rageDamage = 0;	
 				}
+				if(!chargeSlash)
+				{
+					chargeNum = 0;
+				}
 				randomize();
 				critChance = irandom_range(1,100);
 				if(critChance <= 5 + (25 * crit))
@@ -557,16 +585,31 @@ if(!global.paused && !global.hitStop)
 				else
 				{
 					enemy.hp -= (1 + rageDamage + chargeNum);
-					ScreenShake(2,10);
+					if(chargeSlash)
+					{
+						ScreenShake(4,12);
+						audio_play_sound(snd_ChargeHit,5,false);
+					}
+					else
+					{
+						ScreenShake(2,10);
+					}
+					audio_play_sound(snd_Hit,5,false);
 				}
-				audio_play_sound(snd_Hit,5,false);
 			}
 			else
 			{
 				audio_play_sound(snd_Klang,5,false);
 			}
 			vsp = -3;
-			instance_create_layer(enemy.x,enemy.y-4,"VFX",oDustSlashBumper);
+			if(chargeSlash)
+			{
+				instance_create_layer(enemy.x,enemy.y-4,"VFX",oDustSlashBumperGreen);
+			}
+			else
+			{
+				instance_create_layer(enemy.x,enemy.y-4,"VFX",oDustSlashBumper);
+			}
 			airborne = true;
 			hasSlashed = true;
 			hasSlashJumped = true;
@@ -578,6 +621,7 @@ if(!global.paused && !global.hitStop)
 				if(chargeBounces == 2) 
 				{
 					particles = instance_create_layer(x,y,"Walls",oPlayerChargeParticle);
+					audio_play_sound(snd_Charge,5,false);
 					alarm[7] = room_speed * 0.1;
 				}
 			}
@@ -591,7 +635,14 @@ if(!global.paused && !global.hitStop)
 				y -= 1;	
 			}
 			vsp = -3;	
-			instance_create_layer(box.x+8,box.y,"VFX",oDustSlashBumper);
+			if(chargeSlash)
+			{
+				instance_create_layer(box.x+8,box.y,"VFX",oDustSlashBumperGreen);
+			}
+			else
+			{
+				instance_create_layer(box.x+8,box.y,"VFX",oDustSlashBumper);
+			}
 			airborne = true;
 			hasSlashed = true;
 			hasSlashJumped = true;
@@ -603,6 +654,7 @@ if(!global.paused && !global.hitStop)
 				if(chargeBounces == 2) 
 				{
 					particles = instance_create_layer(x,y,"Walls",oPlayerChargeParticle);
+					audio_play_sound(snd_Charge,5,false);
 					alarm[7] = room_speed * 0.1;
 				}
 			}
@@ -627,7 +679,14 @@ if(!global.paused && !global.hitStop)
 			}	
 			vsp = -3;	
 			oLever.green = !lever.green;
-			instance_create_layer(lever.x+4,lever.y,"VFX",oDustSlashBumper);
+			if(chargeSlash)
+			{
+					instance_create_layer(lever.x+4,lever.y,"VFX",oDustSlashBumperGreen);
+			}
+			else
+			{
+					instance_create_layer(lever.x+4,lever.y,"VFX",oDustSlashBumper);
+			}
 			airborne = true;
 			hasSlashed = true;
 			hasSlashJumped = true;
@@ -639,6 +698,7 @@ if(!global.paused && !global.hitStop)
 				if(chargeBounces == 2) 
 				{
 					particles = instance_create_layer(x,y,"Walls",oPlayerChargeParticle);
+					audio_play_sound(snd_Charge,5,false);
 					alarm[7] = room_speed * 0.1;
 				}
 			}
