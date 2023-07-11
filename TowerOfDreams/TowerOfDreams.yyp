@@ -87,6 +87,7 @@
     {"id":{"name":"oDoor","path":"objects/oDoor/oDoor.yy",},},
     {"id":{"name":"sChargeUI","path":"sprites/sChargeUI/sChargeUI.yy",},},
     {"id":{"name":"sArrowSign","path":"sprites/sArrowSign/sArrowSign.yy",},},
+    {"id":{"name":"sLightUI","path":"sprites/sLightUI/sLightUI.yy",},},
     {"id":{"name":"ScreenShake","path":"scripts/ScreenShake/ScreenShake.yy",},},
     {"id":{"name":"oSlashTutorial","path":"objects/oSlashTutorial/oSlashTutorial.yy",},},
     {"id":{"name":"sFloatingLeverPurple","path":"sprites/sFloatingLeverPurple/sFloatingLeverPurple.yy",},},
