@@ -1048,6 +1048,62 @@ if(!global.paused && !global.hitStop)
 				}
 			}
 			break;	
+		// Lightning in a Bottle
+		case 16:
+			if(key_item_pressed && !dashing)
+			{
+				dashing = true;
+				initialRunDir = image_xscale;
+				dashOver = false;
+				alarm[8] = room_speed * 0.2;
+				if (airborne)
+				{
+					airDash = true;
+				}
+				audio_play_sound(snd_Dash,5,false);
+			}
+			
+			// Changes while dashing
+			if(dashing)
+			{
+				walksp = 4;
+				currentwalksp = 4 * sign(image_xscale);
+				/*
+				if(airDash)
+				{
+					grv = 0;	
+					vsp = 0;
+				}
+				*/
+			}
+			else
+			{
+				if(!conveyerBoost) walksp = 1;
+				grv = 0.15;
+			}
+			
+			// End Dash
+			if(dashOver)
+			{
+				// If an air dash, stop immediately
+				if(airDash)
+				{
+					dashing = false;
+					airDash = false;
+				}
+				// Otherwise end when touching the ground or holding a different direction
+				else
+				{
+					if(!airborne)
+					{
+						dashing = false;
+						airDash = false;
+					}
+				}
+			}
+			
+			break;
+			
 	}
 
 	// Animation
