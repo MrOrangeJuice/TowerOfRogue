@@ -1058,6 +1058,8 @@ if(!global.paused && !global.hitStop)
 				walksp = 4;
 				currentwalksp = 4 * sign(image_xscale);
 				alarm[8] = room_speed * 0.2;
+				dashParticles = instance_create_layer(x,y,"Walls",oPlayerDashParticle);
+				alarm[9] = room_speed * 0.05;
 				if (airborne)
 				{
 					airDash = true;
@@ -1094,6 +1096,7 @@ if(!global.paused && !global.hitStop)
 				{
 					dashing = false;
 					airDash = false;
+					instance_destroy(dashParticles);
 				}
 				// Otherwise end when touching the ground or holding a different direction
 				else
@@ -1102,6 +1105,7 @@ if(!global.paused && !global.hitStop)
 					{
 						dashing = false;
 						airDash = false;
+						instance_destroy(dashParticles);
 					}
 				}
 			}
