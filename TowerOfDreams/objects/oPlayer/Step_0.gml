@@ -1052,6 +1052,8 @@ if(!global.paused && !global.hitStop)
 		case 16:
 			if(key_item_pressed && !dashing)
 			{
+				dashVFX = instance_create_layer(x,y,"VFX",oDashVFX);
+				if (image_xscale == -1) dashVFX.image_xscale = -1;
 				dashing = true;
 				initialRunDir = image_xscale;
 				dashOver = false;
