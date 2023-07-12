@@ -1052,13 +1052,22 @@ if(!global.paused && !global.hitStop)
 		case 16:
 			if(key_item_pressed && !dashing)
 			{
-				dashVFX = instance_create_layer(x,y,"VFX",oDashVFX);
-				if (image_xscale == -1) dashVFX.image_xscale = -1;
 				dashing = true;
 				initialRunDir = image_xscale;
 				dashOver = false;
 				walksp = 4;
-				currentwalksp = 4 * sign(image_xscale);
+				if(!wallSliding)
+				{
+					currentwalksp = 4 * sign(image_xscale);
+					dashVFX = instance_create_layer(x,y,"VFX",oDashVFX);
+					if (image_xscale == -1) dashVFX.image_xscale = -1;
+				}
+				else
+				{
+					currentwalksp = 4 * -sign(image_xscale);
+					dashVFX = instance_create_layer(x,y,"VFX",oDashVFX);
+					if (image_xscale == 1) dashVFX.image_xscale = -1;
+				}
 				alarm[8] = room_speed * 0.2;
 				dashParticles = instance_create_layer(x,y,"Walls",oPlayerDashParticle);
 				alarm[9] = room_speed * 0.05;
@@ -1103,7 +1112,7 @@ if(!global.paused && !global.hitStop)
 				// Otherwise end when touching the ground or holding a different direction
 				else
 				{
-					if(!airborne || image_xscale != initialRunDir)
+					if(!airborne || wallSliding || image_xscale != initialRunDir)
 					{
 						dashing = false;
 						airDash = false;
