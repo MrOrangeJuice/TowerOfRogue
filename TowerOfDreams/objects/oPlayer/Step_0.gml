@@ -1058,7 +1058,18 @@ if(!global.paused && !global.hitStop)
 				walksp = 4;
 				if(!wallSliding)
 				{
-					currentwalksp = 4 * sign(image_xscale);
+					if(key_right)
+					{
+						currentwalksp = 4;
+					}
+					else if(key_left)
+					{
+						currentwalksp = -4;
+					}
+					else
+					{
+						currentwalksp = 4 * sign(image_xscale);
+					}
 					dashVFX = instance_create_layer(x,y,"VFX",oDashVFX);
 					if (image_xscale == -1) dashVFX.image_xscale = -1;
 				}
