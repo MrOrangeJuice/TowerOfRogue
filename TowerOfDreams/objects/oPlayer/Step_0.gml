@@ -773,7 +773,7 @@ if(!global.paused && !global.hitStop)
 		}
 	}
 	
-	if(!invulnerable)
+	if(!invulnerable && !dashing)
 	{
 		enemyHitRight = instance_place(x+(1*image_xscale),y,oEnemy);
 		enemyHitLeft = instance_place(x-(1*image_xscale),y,oEnemy);
@@ -1055,6 +1055,8 @@ if(!global.paused && !global.hitStop)
 				dashing = true;
 				initialRunDir = image_xscale;
 				dashOver = false;
+				walksp = 4;
+				currentwalksp = 4 * sign(image_xscale);
 				alarm[8] = room_speed * 0.2;
 				if (airborne)
 				{
@@ -1066,20 +1068,22 @@ if(!global.paused && !global.hitStop)
 			// Changes while dashing
 			if(dashing)
 			{
-				walksp = 4;
-				currentwalksp = 4 * sign(image_xscale);
-				/*
 				if(airDash)
 				{
-					grv = 0;	
 					vsp = 0;
 				}
-				*/
+				else
+				{
+					if(airborne)
+					{
+						walksp -= 0.035;
+						if(walksp < 1) walksp = 1;
+					}
+				}
 			}
 			else
 			{
 				if(!conveyerBoost) walksp = 1;
-				grv = 0.15;
 			}
 			
 			// End Dash
@@ -1094,7 +1098,7 @@ if(!global.paused && !global.hitStop)
 				// Otherwise end when touching the ground or holding a different direction
 				else
 				{
-					if(!airborne)
+					if(!airborne || image_xscale != initialRunDir)
 					{
 						dashing = false;
 						airDash = false;
