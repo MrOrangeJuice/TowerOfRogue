@@ -13,6 +13,7 @@ function TakeDamage(argument0,argument1,argument2,argument3)
 				if(global.armor > 0)
 				{
 					global.armor -= argument0;
+					audio_play_sound(snd_ArmorBreak,5,false);
 				}
 				else
 				{
