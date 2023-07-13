@@ -41,7 +41,7 @@ if(room == rTitle)
 if(room != rTitle)
 {
 	// Add spacing to HUD
-	hudMod = 9 * ((global.maxHealth - 6) / 2);
+	hudMod = 9 * (((global.maxHealth - 6) / 2) + global.armor);
 	if(hudMod < 0) hudMod = 0;
 	// Draw HUD Background
 	//draw_sprite(sHUD,0,1,1);
@@ -88,6 +88,14 @@ if(room != rTitle)
 			}
 			healthToDraw--;
 		}
+	}
+	
+	armorTextScale = max(armorTextScale * .95, 1);
+	// Draw Armor
+	for(i = 0; i < global.armor; i++)
+	{
+		draw_sprite_stretched(sArmor,0,7 + (xMod * 9),6,8*armorTextScale,8*armorTextScale);
+		xMod++;
 	}
 	
 	// Draw Coins

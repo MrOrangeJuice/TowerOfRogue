@@ -8,7 +8,17 @@ function TakeDamage(argument0,argument1,argument2,argument3)
 		with (oPlayer)
 		{
 			audio_play_sound(snd_Damage,5,false);
-			if (!global.infiniteHealth) global.health -= argument0;
+			if (!global.infiniteHealth) 
+			{
+				if(global.armor > 0)
+				{
+					global.armor -= argument0;
+				}
+				else
+				{
+					global.health -= argument0;
+				}
+			}
 			// Kill player
 			if(global.health <= 0)
 			{
@@ -43,5 +53,6 @@ function TakeDamage(argument0,argument1,argument2,argument3)
 			}
 		}
 		with (oGame) healthTextScale = 1.15;
+		with (oGame) armorTextScale = 1.15;
 	}
 }
