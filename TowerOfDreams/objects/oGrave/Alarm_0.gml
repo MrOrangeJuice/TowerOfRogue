@@ -5,6 +5,7 @@ global.usedArray = [false,false,false,false,false];
 global.usedArray2 = [false,false,false,false,false];
 global.inARun = false;
 global.health = global.maxHealth;
+global.armor = 0;
 global.coins = 0;
 global.item = -1;
 global.passiveItems = [];

@@ -187,6 +187,7 @@ if(global.paused)
 				global.sword = true;
 				global.canPause = false;
 				global.health = global.maxHealth;
+				global.armor = 0;
 				// Reset run
 				global.usedArray = [false,false,false,false,false];
 				global.usedArray2 = [false,false,false,false,false];

@@ -516,8 +516,15 @@ if(!global.paused && !global.hitStop)
 				alarm[5] = room_speed * 0.2;
 				// Spawn item
 				newItem = instance_create_layer(bubble.x+4,bubble.y+4,"Collectables",global.itemObjects[bubble.item]);
-				// Don't double the lift if it's a heart
-				if(bubble.item != array_length(global.itemObjects)-1) newItem.vsp = -3;
+				// Don't double the lift if it's a heart or armor
+				if(bubble.item != array_length(global.itemObjects)-1 || bubble.item != array_length(global.itemObjects)-2)
+				{
+					 newItem.vsp = -3;	
+				}
+				else
+				{
+					newItem.vsp = 0;	
+				}
 				
 				global.coins -= global.itemPrices[bubble.item] * (1 - (0.2 * card));
 				instance_destroy(bubble);

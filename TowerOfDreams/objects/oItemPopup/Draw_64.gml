@@ -7,7 +7,7 @@ draw_sprite(sItemUI,0,64,-48+yOffset);
 // Draw item sprite
 if(!passive)
 {
-	draw_sprite(global.itemSprites[global.item],0,124,-42+yOffset);
+	if(global.item != -1) draw_sprite(global.itemSprites[global.item],0,124,-42+yOffset);
 }
 else
 {

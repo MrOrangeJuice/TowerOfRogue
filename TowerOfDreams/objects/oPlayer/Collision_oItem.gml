@@ -6,9 +6,10 @@ if(other.canGrab)
 	if(!other.passive)
 	{
 		with(oGame) itemTextScale = 1.3;
-		// Reset walksp in case of boots
+		// Reset walksp in case of boots or lightning
 		walksp = 1;
 		running = false;
+		dashing = false;
 		// Reset extra jump variable for wings
 		extraJump = true;
 

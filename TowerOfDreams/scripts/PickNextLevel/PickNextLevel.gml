@@ -13,6 +13,7 @@ function PickNextLevel(){
 		global.inARun = false;
 		global.runCompleted = true;
 		global.health = global.maxHealth;
+		global.armor = 0;
 		global.coins = 0;
 		global.item = -1;
 		global.passiveItems = [];
