@@ -40,8 +40,14 @@ if(room == rTitle)
 // Draw HUD
 if(room != rTitle)
 {
+	// Add spacing to HUD
+	hudMod = 9 * ((global.maxHealth - 6) / 2);
+	if(hudMod < 0) hudMod = 0;
 	// Draw HUD Background
-	draw_sprite(sHUD,0,1,1);
+	//draw_sprite(sHUD,0,1,1);
+	draw_sprite(sHUDStart,0,1,1);
+	draw_sprite_stretched(sHUDMiddle,0,9,1,22+hudMod,27);
+	draw_sprite(sHUDEnd,0,31+hudMod,1);
 	
 	healthTextScale = max(healthTextScale * .95, 1);
 	healthToDraw = global.health;
@@ -92,15 +98,15 @@ if(room != rTitle)
 	
 	// Draw item box
 	itemTextScale = max(itemTextScale * .95, 1);
-	draw_sprite_stretched(sItemBox,0,40,1,16*itemTextScale,16*itemTextScale);
+	draw_sprite_stretched(sItemBox,0,40+hudMod,1,16*itemTextScale,16*itemTextScale);
 	
 	// Draw item in box
-	if(global.item != -1) draw_sprite_stretched(global.itemSprites[global.item],0,44,5,8*itemTextScale,8*itemTextScale);
+	if(global.item != -1) draw_sprite_stretched(global.itemSprites[global.item],0,44+hudMod,5,8*itemTextScale,8*itemTextScale);
 	
 	// Draw passive items
 	passiveItemTextScale = max(passiveItemTextScale * .95, 1);
 	for(i = 0; i < array_length(global.passiveItems); i++)
 	{
-		draw_sprite_stretched(global.passiveItemSprites[global.passiveItems[i]],0,58+(10*i),5,8*passiveItemTextScale,8*passiveItemTextScale);
+		draw_sprite_stretched(global.passiveItemSprites[global.passiveItems[i]],0,58+(10*i)+hudMod,5,8*passiveItemTextScale,8*passiveItemTextScale);
 	}
 }
