@@ -16,6 +16,25 @@ if(global.inARun)
 	}
 }
 
+// Check for items
+randomize();
+shield = 0;
+for(i = 0; i < array_length(global.passiveItems); i++)
+{
+	if(global.passiveItems[i] == 11)
+	{
+		shield++;
+	}
+}
+
+// Give armor
+if(shield > 0)
+{
+	global.armor += shield;
+	audio_play_sound(snd_Armor,5,false);
+	with (oGame) armorTextScale = 1.15;
+}
+
 global.canPause = true;
 player = instance_create_layer(x,y,"Instances",oPlayer);
 instance_destroy();
