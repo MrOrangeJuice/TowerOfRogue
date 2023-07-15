@@ -23,6 +23,7 @@ if(place_meeting(x,y,oPlayer))
 		global.item = -1;
 		global.passiveItems = [];
 		global.armor = 0;
+		global.localCoins = 0;
 		audio_play_sound(snd_Door,5,false);
 		PickNextLevel();	
 	}

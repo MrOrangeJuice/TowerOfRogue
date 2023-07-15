@@ -3,7 +3,8 @@
 audio_play_sound(snd_LevelIntro1,5,false);
 levelFinished = true;
 gems = false;
-time = false;
+gemNum = 0;
+totalGemNum = oLevelInfo.totalGems;
 damage = false;
 rank = false;
 continutePrompt = false;

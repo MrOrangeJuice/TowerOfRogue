@@ -7,6 +7,7 @@ global.inARun = false;
 global.health = global.maxHealth;
 global.armor = 0;
 global.coins = 0;
+global.localCoins = 0;
 global.item = -1;
 global.passiveItems = [];
 global.levelCount = 0;

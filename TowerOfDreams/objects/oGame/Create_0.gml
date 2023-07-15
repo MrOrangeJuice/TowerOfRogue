@@ -6,6 +6,7 @@ global.paused = false;
 global.hitStop = false;
 global.canPause = false;
 global.coins = 0;
+global.localCoins = 0;
 global.maxHealth = 6;
 global.health = 6;
 global.armor = 0;

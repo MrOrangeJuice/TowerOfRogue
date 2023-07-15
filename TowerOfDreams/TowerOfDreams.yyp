@@ -185,6 +185,7 @@
     {"id":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},},
     {"id":{"name":"oGravityEnemyHusk","path":"objects/oGravityEnemyHusk/oGravityEnemyHusk.yy",},},
     {"id":{"name":"sHUDEnd","path":"sprites/sHUDEnd/sHUDEnd.yy",},},
+    {"id":{"name":"snd_GemLoop","path":"sounds/snd_GemLoop/snd_GemLoop.yy",},},
     {"id":{"name":"sRageVFX","path":"sprites/sRageVFX/sRageVFX.yy",},},
     {"id":{"name":"sItemVFX","path":"sprites/sItemVFX/sItemVFX.yy",},},
     {"id":{"name":"sTankEnemyIdle","path":"sprites/sTankEnemyIdle/sTankEnemyIdle.yy",},},

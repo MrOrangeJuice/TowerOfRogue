@@ -15,6 +15,7 @@ function PickNextLevel(){
 		global.health = global.maxHealth;
 		global.armor = 0;
 		global.coins = 0;
+		global.localCoins = 0;
 		global.item = -1;
 		global.passiveItems = [];
 		global.levelCount = 0;
@@ -31,6 +32,7 @@ function PickNextLevel(){
 	// Otherwise, pick a new level that the player hasn't played yet
 	else
 	{
+		global.localCoins = 0;
 		levelChoice = 0;
 		randomize();
 		// Floor 2
