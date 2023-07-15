@@ -4,7 +4,7 @@ key_restart = keyboard_check_pressed(ord("R"));
 key_pause = keyboard_check_pressed(vk_escape);
 key_up = keyboard_check_pressed(ord("W")) || keyboard_check_pressed(vk_up);
 key_down = keyboard_check_pressed(ord("S")) || keyboard_check_pressed(vk_down);
-key_select = keyboard_check_pressed(ord("Z")) || keyboard_check_pressed(vk_space);
+key_select = keyboard_check_pressed(ord("Z")) || keyboard_check_pressed(ord("P")) || keyboard_check_pressed(vk_space) || keyboard_check_pressed(vk_enter);
 
 if (key_restart || key_pause || key_up || key_down || key_select)
 {
