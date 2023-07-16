@@ -5,7 +5,7 @@ draw_set_color($B1D7F0);
 
 if(levelFinished)
 {
-	draw_sprite(sLevelCompleteStatic,0,128,display_get_gui_height()/2 - 32);
+	draw_sprite(sLevelCompleteStatic,0,128,display_get_gui_height()/2 - 40);
 }
 
 if(gems)
@@ -26,21 +26,30 @@ if(gems)
 			gemsEnded = true;
 		}
 	}
-	draw_text(128,display_get_gui_height()/2 - 16,gemString);
+	draw_set_color($6D454D);
+	draw_text(128,display_get_gui_height()/2 - 23,gemString);
+	draw_set_color($B1D7F0);
+	draw_text(128,display_get_gui_height()/2 - 24,gemString);
 }
 
 if(damage)
 {
 	damageString = "Damage: ";
 	if(damageDisplay) damageString = "Damage: " + string(global.localDamage);
-	draw_text(128,display_get_gui_height()/2,damageString);
+	draw_set_color($6D454D);
+	draw_text(128,display_get_gui_height()/2 - 7,damageString);
+	draw_set_color($B1D7F0);
+	draw_text(128,display_get_gui_height()/2 - 8,damageString);
 }
 
 if(rank)
 {
 	rankText = "Rank :";
 	if(rankLetter) rankText = "Rank: " + yourRank;
-	draw_text(128,display_get_gui_height()/2 + 16,rankText);
+	draw_set_color($6D454D);
+	draw_text(128,display_get_gui_height()/2 + 9,rankText);
+	draw_set_color($B1D7F0);
+	draw_text(128,display_get_gui_height()/2 + 8,rankText);
 }
 
 if(continutePrompt)
@@ -49,22 +58,22 @@ if(continutePrompt)
 	{
 		if(key_select)
 		{
-			draw_sprite(sContinueController,1,128,display_get_gui_height()/2 + 56);	
+			draw_sprite(sContinueController,1,128,display_get_gui_height()/2 + 48);	
 		}
 		else
 		{
-			draw_sprite(sContinueController,0,128,display_get_gui_height()/2 + 56);	
+			draw_sprite(sContinueController,0,128,display_get_gui_height()/2 + 48);	
 		}
 	}
 	else
 	{
 		if(key_select)
 		{
-			draw_sprite(sContinue,1,128,display_get_gui_height()/2 + 56);	
+			draw_sprite(sContinue,1,128,display_get_gui_height()/2 + 48);	
 		}
 		else
 		{
-			draw_sprite(sContinue,0,128,display_get_gui_height()/2 + 56);	
+			draw_sprite(sContinue,0,128,display_get_gui_height()/2 + 48);	
 		}
 	}
 }
