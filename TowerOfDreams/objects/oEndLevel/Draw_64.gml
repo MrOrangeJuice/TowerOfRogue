@@ -22,7 +22,7 @@ if(gems)
 			audio_stop_sound(snd_GemLoop);
 			audio_play_sound(snd_LevelIntro2,5,false);
 			// Damage alarm
-			alarm[2] = room_speed * 0.2;
+			alarm[2] = room_speed * 0.5;
 			gemsEnded = true;
 		}
 	}
@@ -39,7 +39,7 @@ if(damage)
 if(rank)
 {
 	rankText = "Rank :";
-	if(rankLetter) rankText = "Rank: S";
+	if(rankLetter) rankText = "Rank: " + yourRank;
 	draw_text(128,display_get_gui_height()/2 + 16,rankText);
 }
 
@@ -49,22 +49,22 @@ if(continutePrompt)
 	{
 		if(key_select)
 		{
-			draw_sprite(sContinueController,1,128,display_get_gui_height()/2 + 40);	
+			draw_sprite(sContinueController,1,128,display_get_gui_height()/2 + 56);	
 		}
 		else
 		{
-			draw_sprite(sContinueController,0,128,display_get_gui_height()/2 + 40);	
+			draw_sprite(sContinueController,0,128,display_get_gui_height()/2 + 56);	
 		}
 	}
 	else
 	{
 		if(key_select)
 		{
-			draw_sprite(sContinue,1,128,display_get_gui_height()/2 + 40);	
+			draw_sprite(sContinue,1,128,display_get_gui_height()/2 + 56);	
 		}
 		else
 		{
-			draw_sprite(sContinue,0,128,display_get_gui_height()/2 + 40);	
+			draw_sprite(sContinue,0,128,display_get_gui_height()/2 + 56);	
 		}
 	}
 }
