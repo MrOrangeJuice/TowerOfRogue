@@ -16,6 +16,7 @@ function PickNextLevel(){
 		global.armor = 0;
 		global.coins = 0;
 		global.localCoins = 0;
+		global.localDamage = 0;
 		global.item = -1;
 		global.passiveItems = [];
 		global.levelCount = 0;
@@ -33,6 +34,7 @@ function PickNextLevel(){
 	else
 	{
 		global.localCoins = 0;
+		global.localDamage = 0;
 		levelChoice = 0;
 		randomize();
 		// Floor 2

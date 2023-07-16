@@ -7,6 +7,7 @@ function TakeDamage(argument0,argument1,argument2,argument3)
 	{
 		with (oPlayer)
 		{
+			global.localDamage++;
 			audio_play_sound(snd_Damage,5,false);
 			if (!global.infiniteHealth) 
 			{

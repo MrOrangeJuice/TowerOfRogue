@@ -5,12 +5,13 @@ levelFinished = true;
 gems = false;
 gemNum = 0;
 totalGemNum = oLevelInfo.totalGems;
+damageNum = global.localDamage;
+damageDisplay = false;
+gemsEnded = false;
 damage = false;
 rank = false;
+rankLetter = false;
 continutePrompt = false;
 
 // Gem alarm
 alarm[0] = room_speed * 0.3;
-
-// Continue alarm
-alarm[1] = room_speed * 0.5;
