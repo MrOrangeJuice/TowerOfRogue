@@ -28,6 +28,9 @@ if(gems)
 	}
 	draw_set_color($6D454D);
 	draw_text(128,display_get_gui_height()/2 - 23,gemString);
+	draw_text(128,display_get_gui_height()/2 - 25,gemString);
+	draw_text(129,display_get_gui_height()/2 - 24,gemString);
+	draw_text(127,display_get_gui_height()/2 - 24,gemString);
 	draw_set_color($B1D7F0);
 	draw_text(128,display_get_gui_height()/2 - 24,gemString);
 }
@@ -38,6 +41,9 @@ if(damage)
 	if(damageDisplay) damageString = "Damage: " + string(global.localDamage);
 	draw_set_color($6D454D);
 	draw_text(128,display_get_gui_height()/2 - 7,damageString);
+	draw_text(128,display_get_gui_height()/2 - 9,damageString);
+	draw_text(129,display_get_gui_height()/2 - 8,damageString);
+	draw_text(127,display_get_gui_height()/2 - 8,damageString);
 	draw_set_color($B1D7F0);
 	draw_text(128,display_get_gui_height()/2 - 8,damageString);
 }
@@ -48,6 +54,9 @@ if(rank)
 	if(rankLetter) rankText = "Rank: " + yourRank;
 	draw_set_color($6D454D);
 	draw_text(128,display_get_gui_height()/2 + 9,rankText);
+	draw_text(128,display_get_gui_height()/2 + 7,rankText);
+	draw_text(129,display_get_gui_height()/2 + 8,rankText);
+	draw_text(127,display_get_gui_height()/2 + 8,rankText);
 	draw_set_color($B1D7F0);
 	draw_text(128,display_get_gui_height()/2 + 8,rankText);
 }
