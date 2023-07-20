@@ -24,7 +24,7 @@ if(gems)
 			if(gemNum >= totalGemNum) perfectGems = true;
 			if(perfectGems) audio_play_sound(snd_Perfect,5,false);
 			// Damage alarm
-			alarm[2] = room_speed * 0.5;
+			alarm[2] = room_speed * 0.6;
 			gemsEnded = true;
 		}
 	}

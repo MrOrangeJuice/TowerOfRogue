@@ -5,8 +5,8 @@ damage = true;
 // Damage Display
 alarm[5] = room_speed * 0.3;
 // Rank:
-alarm[3] = room_speed * 0.8;
+alarm[3] = room_speed * 0.9;
 // Letter
-alarm[4] = room_speed * 1.1;
+alarm[4] = room_speed * 1.2;
 // Continue Prompt
 alarm[1] = room_speed * 2;
