@@ -275,6 +275,7 @@
     {"name":"sHeartVFX","order":11,"path":"sprites/sHeartVFX/sHeartVFX.yy",},
     {"name":"sDustWall","order":2,"path":"sprites/sDustWall/sDustWall.yy",},
     {"name":"sHoldJumpController","order":10,"path":"sprites/sHoldJumpController/sHoldJumpController.yy",},
+    {"name":"oShopBag","order":2,"path":"objects/oShopBag/oShopBag.yy",},
     {"name":"msc_Shop","order":3,"path":"sounds/msc_Shop/msc_Shop.yy",},
     {"name":"sUseItem","order":13,"path":"sprites/sUseItem/sUseItem.yy",},
     {"name":"sBlockB","order":26,"path":"sprites/sBlockB/sBlockB.yy",},

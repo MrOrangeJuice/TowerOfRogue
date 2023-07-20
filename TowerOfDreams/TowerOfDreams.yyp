@@ -309,6 +309,7 @@
     {"id":{"name":"sHeartVFX","path":"sprites/sHeartVFX/sHeartVFX.yy",},},
     {"id":{"name":"sDustWall","path":"sprites/sDustWall/sDustWall.yy",},},
     {"id":{"name":"sHoldJumpController","path":"sprites/sHoldJumpController/sHoldJumpController.yy",},},
+    {"id":{"name":"oShopBag","path":"objects/oShopBag/oShopBag.yy",},},
     {"id":{"name":"msc_Shop","path":"sounds/msc_Shop/msc_Shop.yy",},},
     {"id":{"name":"sUseItem","path":"sprites/sUseItem/sUseItem.yy",},},
     {"id":{"name":"sBlockB","path":"sprites/sBlockB/sBlockB.yy",},},
