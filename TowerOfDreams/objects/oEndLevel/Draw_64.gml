@@ -21,6 +21,8 @@ if(gems)
 		{
 			audio_stop_sound(snd_GemLoop);
 			audio_play_sound(snd_LevelIntro2,5,false);
+			if(gemNum >= totalGemNum) perfectGems = true;
+			if(perfectGems) audio_play_sound(snd_Perfect,5,false);
 			// Damage alarm
 			alarm[2] = room_speed * 0.5;
 			gemsEnded = true;
@@ -31,7 +33,14 @@ if(gems)
 	draw_text(128,display_get_gui_height()/2 - 25,gemString);
 	draw_text(129,display_get_gui_height()/2 - 24,gemString);
 	draw_text(127,display_get_gui_height()/2 - 24,gemString);
-	draw_set_color($B1D7F0);
+	if(perfectGems)
+	{
+		draw_set_color($DDADE6);
+	}
+	else
+	{
+		draw_set_color($B1D7F0);
+	}
 	draw_text(128,display_get_gui_height()/2 - 24,gemString);
 }
 
@@ -44,7 +53,14 @@ if(damage)
 	draw_text(128,display_get_gui_height()/2 - 9,damageString);
 	draw_text(129,display_get_gui_height()/2 - 8,damageString);
 	draw_text(127,display_get_gui_height()/2 - 8,damageString);
-	draw_set_color($B1D7F0);
+	if(damageDisplay && perfectDamage)
+	{
+		draw_set_color($DDADE6);
+	}
+	else
+	{
+		draw_set_color($B1D7F0);
+	}
 	draw_text(128,display_get_gui_height()/2 - 8,damageString);
 }
 
@@ -57,7 +73,14 @@ if(rank)
 	draw_text(128,display_get_gui_height()/2 + 7,rankText);
 	draw_text(129,display_get_gui_height()/2 + 8,rankText);
 	draw_text(127,display_get_gui_height()/2 + 8,rankText);
-	draw_set_color($B1D7F0);
+	if(rankLetter && perfectRank)
+	{
+		draw_set_color($DDADE6);
+	}
+	else
+	{
+		draw_set_color($B1D7F0);
+	}
 	draw_text(128,display_get_gui_height()/2 + 8,rankText);
 }
 

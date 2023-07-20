@@ -8,9 +8,12 @@ totalGemNum = oLevelInfo.totalGems;
 damageNum = global.localDamage;
 damageDisplay = false;
 gemsEnded = false;
+perfectGems = false;
 damage = false;
+perfectDamage = false;
 rank = false;
 rankLetter = false;
+perfectRank = false;
 continutePrompt = false;
 
 // Determine rank

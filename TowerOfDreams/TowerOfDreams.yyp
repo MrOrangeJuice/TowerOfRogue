@@ -66,7 +66,7 @@
   "isEcma": false,
   "LibraryEmitters": [],
   "MetaData": {
-    "IDEVersion": "2023.6.0.89",
+    "IDEVersion": "2023.6.0.92",
   },
   "resources": [
     {"id":{"name":"sUseItemControllerFadeIn","path":"sprites/sUseItemControllerFadeIn/sUseItemControllerFadeIn.yy",},},
@@ -327,6 +327,7 @@
     {"id":{"name":"sArmor","path":"sprites/sArmor/sArmor.yy",},},
     {"id":{"name":"sHoldJump","path":"sprites/sHoldJump/sHoldJump.yy",},},
     {"id":{"name":"shHit","path":"shaders/shHit/shHit.yy",},},
+    {"id":{"name":"snd_SRank","path":"sounds/snd_SRank/snd_SRank.yy",},},
     {"id":{"name":"sMessageBox","path":"sprites/sMessageBox/sMessageBox.yy",},},
     {"id":{"name":"oPickaxeItem","path":"objects/oPickaxeItem/oPickaxeItem.yy",},},
     {"id":{"name":"oStamper","path":"objects/oStamper/oStamper.yy",},},
@@ -336,6 +337,7 @@
     {"id":{"name":"sPlayerLand","path":"sprites/sPlayerLand/sPlayerLand.yy",},},
     {"id":{"name":"sOptionsMenu","path":"sprites/sOptionsMenu/sOptionsMenu.yy",},},
     {"id":{"name":"sHeartUI","path":"sprites/sHeartUI/sHeartUI.yy",},},
+    {"id":{"name":"snd_Perfect","path":"sounds/snd_Perfect/snd_Perfect.yy",},},
     {"id":{"name":"oLava","path":"objects/oLava/oLava.yy",},},
     {"id":{"name":"oLavaBit","path":"objects/oLavaBit/oLavaBit.yy",},},
     {"id":{"name":"sPlayerJumpYellowLeft","path":"sprites/sPlayerJumpYellowLeft/sPlayerJumpYellowLeft.yy",},},
