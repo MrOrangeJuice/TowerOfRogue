@@ -13,6 +13,14 @@ else
 	global.sideRoom = rTitle;
 	global.shopRoom = rTitle;
 	global.sideChestOpened = false;
+	global.localCoins = 0;
+	global.localDamage = 0;
+	global.shopItem1 = -1;
+	global.shopItem2 = -1;
+	global.shopItem3 = -1;
+	global.item1Bought = false;
+	global.item2Bought = false;
+	global.item3Bought = false;
 	if(room == rHub)
 	{
 		if(red)
@@ -21,6 +29,7 @@ else
 			global.item = -1;
 			global.passiveItems = [];
 			global.levelCount = 3;
+			global.armor = 0;
 			PickNextLevel();
 		}
 		else
