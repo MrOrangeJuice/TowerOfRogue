@@ -525,7 +525,18 @@ if(!global.paused && !global.hitStop)
 				{
 					newItem.vsp = 0;	
 				}
-				
+				switch(bubble.bubbleNum)
+				{
+					case 1:
+						global.item1Bought = true;
+						break;
+					case 2:
+						global.item2Bought = true;
+						break;
+					case 3:
+						global.item3Bought = true;
+						break;
+				}
 				global.coins -= global.itemPrices[bubble.item] * (1 - (0.2 * card));
 				instance_destroy(bubble);
 			}

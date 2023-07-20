@@ -208,6 +208,12 @@ if(global.paused)
 				global.pipeY = 0;
 				global.shopY = 0;
 				global.gobletCombo = 0;
+				global.shopItem1 = -1;
+				global.shopItem2 = -1;
+				global.shopItem3 = -1;
+				global.item1Bought = false;
+				global.item2Bought = false;
+				global.item3Bought = false;
 				// Reset instance lists
 				global.coinArray = ds_list_create();
 				global.enemyArray = ds_list_create();

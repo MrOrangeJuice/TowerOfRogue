@@ -54,6 +54,14 @@ global.bumpersSwitching = false;
 global.lavaId = 0;
 global.displayLC = false;
 
+// Shop items
+global.shopItem1 = -1;
+global.shopItem2 = -1;
+global.shopItem3 = -1;
+global.item1Bought = false;
+global.item2Bought = false;
+global.item3Bought = false;
+
 // Passive items
 global.magnet = false;
 global.magnetNum = 0;
