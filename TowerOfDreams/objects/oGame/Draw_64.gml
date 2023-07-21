@@ -186,8 +186,9 @@ if(room == rTitle)
 		if(menuOption == 2)
 		{
 			draw_set_color($A3A7E9);
-			draw_sprite(sVolumeSliderArrows,0,128,92+UIOffset);
+			if(volumeArrows) draw_sprite(sVolumeSliderArrows,0,128,92+UIOffset);
 			draw_sprite(sVolumeSlider,global.volume,128,88+UIOffset);
+			if(alarm[0] == -1) alarm[0] = room_speed * 0.33;
 		}
 		else
 		{

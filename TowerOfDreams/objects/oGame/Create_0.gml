@@ -96,5 +96,6 @@ passiveItemTextScale = 1;
 options = false;
 deleted = false;
 UIOffset = 0;
+volumeArrows = true;
 
 Load();
