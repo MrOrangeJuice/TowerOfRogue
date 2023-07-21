@@ -147,7 +147,7 @@ if(room == rTitle)
 	}
 	else
 	{
-		draw_sprite(sMenuBoxBigTall,0,128,60+UIOffset);
+		draw_sprite(sMenuBoxBigTall,0,128,44+UIOffset);
 		
 		if(menuOption == 0)
 		{
@@ -159,11 +159,11 @@ if(room == rTitle)
 		}
 		if(window_get_fullscreen())
 		{
-			draw_text(128,72+UIOffset,"FULLSCREEN: ON");
+			draw_text(128,56+UIOffset,"FULLSCREEN: ON");
 		}
 		else
 		{
-			draw_text(128,72+UIOffset,"FULLSCREEN: OFF");
+			draw_text(128,56+UIOffset,"FULLSCREEN: OFF");
 		}
 		
 		if(menuOption == 1)
@@ -176,14 +176,26 @@ if(room == rTitle)
 		}
 		if(global.res1610)
 		{
-			draw_text(128,88+UIOffset,"ASPECT RATIO: TALL");
+			draw_text(128,72+UIOffset,"ASPECT RATIO: TALL");
 		}
 		else
 		{
-			draw_text(128,88+UIOffset,"ASPECT RATIO: WIDE");
+			draw_text(128,72+UIOffset,"ASPECT RATIO: WIDE");
 		}
 		
 		if(menuOption == 2)
+		{
+			draw_set_color($A3A7E9);
+			draw_sprite(sVolumeSliderArrows,0,128,92+UIOffset);
+			draw_sprite(sVolumeSlider,global.volume,128,88+UIOffset);
+		}
+		else
+		{
+			draw_set_color($DDADE6);
+			draw_sprite(sVolumeSlider,0,128,88+UIOffset);
+		}
+		
+		if(menuOption == 3)
 		{
 			draw_set_color($A3A7E9);
 		}
@@ -200,7 +212,7 @@ if(room == rTitle)
 			draw_text(128,104+UIOffset,"DELETE SAVE");
 		}
 		
-		if(menuOption == 3)
+		if(menuOption == 4)
 		{
 			draw_set_color($A3A7E9);
 		}

@@ -4,9 +4,11 @@ key_restart = keyboard_check_pressed(ord("R"));
 key_pause = keyboard_check_pressed(vk_escape);
 key_up = keyboard_check_pressed(ord("W")) || keyboard_check_pressed(vk_up);
 key_down = keyboard_check_pressed(ord("S")) || keyboard_check_pressed(vk_down);
+key_left = keyboard_check_pressed(ord("A")) || keyboard_check_pressed(vk_left);
+key_right = keyboard_check_pressed(ord("D")) || keyboard_check_pressed(vk_right);
 key_select = keyboard_check_pressed(ord("Z")) || keyboard_check_pressed(ord("P")) || keyboard_check_pressed(vk_space) || keyboard_check_pressed(vk_enter);
 
-if (key_restart || key_pause || key_up || key_down || key_select)
+if (key_restart || key_pause || key_up || key_down || key_left || key_right || key_select)
 {
 	global.controller = 0;
 }
@@ -23,6 +25,20 @@ if ((gamepad_axis_value(0,gp_axislv) > 0.4 && analogDownPrev == false) || gamepa
 	key_down = 1;
 	global.controller = 1;
 	analogDownPrev = true;
+}
+
+if ((gamepad_axis_value(0,gp_axislh) < -0.4 && analogLeftPrev == false) || gamepad_button_check_pressed(0,gp_padl) || (gamepad_axis_value(4,gp_axislh) < -0.4 && analogLeftPrevD == false) || gamepad_button_check_pressed(4,gp_padl))
+{
+	key_left = 1;
+	global.controller = 1;
+	analogLeftPrev = true;
+}
+
+if ((gamepad_axis_value(0,gp_axislh) > 0.4 && analogRightPrev == false) || gamepad_button_check_pressed(0,gp_padr) || (gamepad_axis_value(4,gp_axislh) > 0.4 && analogRightPrevD == false) || gamepad_button_check_pressed(4,gp_padr))
+{
+	key_right = 1;
+	global.controller = 1;
+	analogRightPrev = true;
 }
 
 if (gamepad_button_check_pressed(0,gp_face1) || gamepad_button_check_pressed(4,gp_face1))
@@ -69,7 +85,7 @@ if(room == rTitle)
 		{
 			if(room == rTitle && options)
 			{
-				menuOption = 3;
+				menuOption = 4;
 			}
 			else
 			{
@@ -84,7 +100,7 @@ if(room == rTitle)
 		menuOption++;
 		if(room == rTitle && options)
 		{
-			if(menuOption >= 4)
+			if(menuOption >= 5)
 			{
 				menuOption = 0;	
 			}
@@ -95,6 +111,56 @@ if(room == rTitle)
 			{
 				menuOption = 0;	
 			}
+		}
+	}
+	
+	// Volume slider
+	if(menuOption == 2 && options && room == rTitle)
+	{
+		if(key_left)
+		{
+			audio_play_sound(snd_MenuMove,5,false);
+			global.volume--;
+			if(global.volume <= -1)
+			{
+				global.volume = 6;	
+			}
+		}
+		
+		if(key_right)
+		{
+			audio_play_sound(snd_MenuMove,5,false);
+			global.volume++;
+			if(global.volume >= 7)
+			{
+				global.volume = 0;	
+			}
+		}
+		
+		// Actually change volume
+		switch(global.volume)
+		{
+			case 0:
+				audio_master_gain(0);
+				break;
+			case 1:
+				audio_master_gain(0.17);
+				break;
+			case 2:
+				audio_master_gain(0.33);
+				break;
+			case 3:
+				audio_master_gain(0.5);
+				break;
+			case 4:
+				audio_master_gain(0.67);
+				break;
+			case 5:
+				audio_master_gain(0.83);
+				break;
+			case 6:
+				audio_master_gain(1);
+				break;
 		}
 	}
 	
@@ -158,20 +224,19 @@ if(room == rTitle)
 				{
 					game_end();
 				}
-				else
-				{
-					deleted = true;
-					// Delete Save
-					if(file_exists("savedata.ini")){
-						file_delete("savedata.ini");
-					}
-					global.tutorialCompleted = false;
-					global.runCompleted = false;
-					// Make new default file
-					Save();
-				}
 				break;
 			case 3:
+				deleted = true;
+				// Delete Save
+				if(file_exists("savedata.ini")){
+					file_delete("savedata.ini");
+				}
+				global.tutorialCompleted = false;
+				global.runCompleted = false;
+				// Make new default file
+				Save();
+				break;
+			case 4:
 				options = false;
 				deleted = false;
 				menuOption = 0;
@@ -366,4 +431,40 @@ if(gamepad_axis_value(4,gp_axislv) > 0.4)
 else
 {
 	analogDownPrevD = false;	
+}
+
+if(gamepad_axis_value(0,gp_axislh) < -0.4)
+{
+	analogLeftPrev = true;	
+}
+else
+{
+	analogLeftPrev = false;	
+}
+
+if(gamepad_axis_value(0,gp_axislh) > 0.4)
+{
+	analogRightPrev = true;	
+}
+else
+{
+	analogRightPrev = false;	
+}
+
+if(gamepad_axis_value(4,gp_axislh) < -0.4)
+{
+	analogLeftPrevD = true;	
+}
+else
+{
+	analogLeftPrevD = false;	
+}
+
+if(gamepad_axis_value(4,gp_axislh) > 0.4)
+{
+	analogRightPrevD = true;	
+}
+else
+{
+	analogRightPrevD = false;	
 }

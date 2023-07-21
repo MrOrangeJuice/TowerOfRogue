@@ -53,6 +53,7 @@ global.bumperSwitch = true;
 global.bumpersSwitching = false;
 global.lavaId = 0;
 global.displayLC = false;
+global.volume = 6;
 
 // Shop items
 global.shopItem1 = -1;
@@ -83,6 +84,10 @@ analogUpPrev = false;
 analogDownPrev = false;
 analogUpPrevD = false;
 analogDownPrevD = false;
+analogLeftPrev = false;
+analogRightPrev = false;
+analogLeftPrevD = false;
+analogRightPrevD = false;
 coinTextScale = 1;
 healthTextScale = 1;
 itemTextScale = 1;
