@@ -67,7 +67,14 @@ if(room == rTitle)
 		menuOption--;
 		if(menuOption <= -1)
 		{
-			menuOption = 2;	
+			if(room == rTitle && options)
+			{
+				menuOption = 3;
+			}
+			else
+			{
+				menuOption = 2;	
+			}
 		}
 	}
 
@@ -75,9 +82,19 @@ if(room == rTitle)
 	{
 		audio_play_sound(snd_MenuMove,5,false);
 		menuOption++;
-		if(menuOption >= 3)
+		if(room == rTitle && options)
 		{
-			menuOption = 0;	
+			if(menuOption >= 4)
+			{
+				menuOption = 0;	
+			}
+		}
+		else
+		{
+			if(menuOption >= 3)
+			{
+				menuOption = 0;	
+			}
 		}
 	}
 	
@@ -113,6 +130,35 @@ if(room == rTitle)
 				}
 				else
 				{
+					if(!global.res1610)
+					{
+						window_set_size(1280,800);
+						surface_resize(application_surface,1280,800);
+						camera_set_view_size(view_camera[0],256,160);
+						display_set_gui_size(256,160);
+						oTransition.h = 160;
+						oTransition.h_half = 80;
+						global.res1610 = true;
+					}
+					else if(global.res1610)
+					{
+						window_set_size(1280,720);
+						surface_resize(application_surface,1280,720);
+						camera_set_view_size(view_camera[0],256,144);
+						display_set_gui_size(256,144);
+						oTransition.h = 144;
+						oTransition.h_half = 72;
+						global.res1610 = false;
+					}
+				}
+				break;
+			case 2:
+				if(!options)
+				{
+					game_end();
+				}
+				else
+				{
 					deleted = true;
 					// Delete Save
 					if(file_exists("savedata.ini")){
@@ -124,18 +170,12 @@ if(room == rTitle)
 					Save();
 				}
 				break;
-			case 2:
-				if(!options)
-				{
-					game_end();
-				}
-				else
-				{
-					options = false;
-					deleted = false;
-					menuOption = 0;
-				}
+			case 3:
+				options = false;
+				deleted = false;
+				menuOption = 0;
 				break;
+				
 		}
 	}
 }

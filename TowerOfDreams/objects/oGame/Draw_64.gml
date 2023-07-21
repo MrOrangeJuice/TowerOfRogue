@@ -159,13 +159,31 @@ if(room == rTitle)
 		}
 		if(window_get_fullscreen())
 		{
-			draw_text(128,88+UIOffset,"FULLSCREEN: ON");
+			draw_text(128,72+UIOffset,"FULLSCREEN: ON");
 		}
 		else
 		{
-			draw_text(128,88+UIOffset,"FULLSCREEN: OFF");
+			draw_text(128,72+UIOffset,"FULLSCREEN: OFF");
 		}
+		
 		if(menuOption == 1)
+		{
+			draw_set_color($A3A7E9);
+		}
+		else
+		{
+			draw_set_color($DDADE6);	
+		}
+		if(global.res1610)
+		{
+			draw_text(128,88+UIOffset,"ASPECT RATIO: TALL");
+		}
+		else
+		{
+			draw_text(128,88+UIOffset,"ASPECT RATIO: WIDE");
+		}
+		
+		if(menuOption == 2)
 		{
 			draw_set_color($A3A7E9);
 		}
@@ -182,7 +200,7 @@ if(room == rTitle)
 			draw_text(128,104+UIOffset,"DELETE SAVE");
 		}
 		
-		if(menuOption == 2)
+		if(menuOption == 3)
 		{
 			draw_set_color($A3A7E9);
 		}
