@@ -171,6 +171,7 @@ if(room == rTitle)
 					options = true;
 					menuOption = 0;
 					oTitle.visible = false;
+					oOptionsTitle.visible = true;
 				}
 				else
 				{
@@ -227,6 +228,7 @@ if(room == rTitle)
 				deleted = false;
 				menuOption = 0;
 				oTitle.visible = true;
+				oOptionsTitle.visible = false;
 				break;
 				
 		}
