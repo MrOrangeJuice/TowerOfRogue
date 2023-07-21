@@ -109,6 +109,7 @@ if(room == rTitle)
 				if(!options)
 				{
 					options = true;
+					menuOption = 0;
 				}
 				else
 				{
@@ -132,6 +133,7 @@ if(room == rTitle)
 				{
 					options = false;
 					deleted = false;
+					menuOption = 0;
 				}
 				break;
 		}
@@ -166,68 +168,110 @@ if(global.paused)
 		switch(menuOption)
 		{
 			case 0:
-				audio_play_sound(snd_PauseOut,5,false);
-				// Reset pause menu
-				if(instance_exists(oPlayer))
+				if(!options)
 				{
-					oPlayer.canJump = false;	
+					audio_play_sound(snd_PauseOut,5,false);
+					// Reset pause menu
+					if(instance_exists(oPlayer))
+					{
+						oPlayer.canJump = false;	
+					}
+					menuOption = 0;
+					global.paused = false;	
 				}
-				menuOption = 0;
-				global.paused = false;	
+				else
+				{
+					window_set_fullscreen(!window_get_fullscreen());
+				}
 				break;
 			case 1:
-				window_set_fullscreen(!window_get_fullscreen());
+				if(!options)
+				{
+					options = true;
+					menuOption = 0;	
+				}
+				else
+				{
+					if(!global.res1610)
+					{
+						window_set_size(1280,800);
+						surface_resize(application_surface,1280,800);
+						camera_set_view_size(view_camera[0],256,160);
+						display_set_gui_size(256,160);
+						oTransition.h = 160;
+						oTransition.h_half = 80;
+						global.res1610 = true;
+					}
+					else if(global.res1610)
+					{
+						window_set_size(1280,720);
+						surface_resize(application_surface,1280,720);
+						camera_set_view_size(view_camera[0],256,144);
+						display_set_gui_size(256,144);
+						oTransition.h = 144;
+						oTransition.h_half = 72;
+						global.res1610 = false;
+					}
+				}
 				break;
 			case 2:
-				// Reset pause menu
-				if(instance_exists(oPlayer))
+				if(!options)
 				{
-					oPlayer.canJump = false;	
+					// Reset pause menu
+					if(instance_exists(oPlayer))
+					{
+						oPlayer.canJump = false;	
+					}
+					global.sword = true;
+					global.canPause = false;
+					global.health = global.maxHealth;
+					global.armor = 0;
+					// Reset run
+					global.usedArray = [false,false,false,false,false];
+					global.usedArray2 = [false,false,false,false,false];
+					global.inARun = false;
+					global.coins = 0;
+					global.localCoins = 0;
+					global.localDamage = 0;
+					global.item = -1;
+					global.passiveItems = [];
+					global.levelCount = 0;
+					global.sideRoom = rTitle;
+					global.shopRoom = rTitle;
+					global.sideChestOpened = false;
+					global.pipeCount = 0;
+					global.shopPipeCount = 0;
+					global.pipeSpawned = false;
+					global.shopSpawned = false;
+					global.pipeY = 0;
+					global.shopY = 0;
+					global.gobletCombo = 0;
+					global.shopItem1 = -1;
+					global.shopItem2 = -1;
+					global.shopItem3 = -1;
+					global.item1Bought = false;
+					global.item2Bought = false;
+					global.item3Bought = false;
+					// Reset instance lists
+					global.coinArray = ds_list_create();
+					global.enemyArray = ds_list_create();
+					instance_destroy(oItemPopup);
+					SlideTransition(TRANS_MODE.GOTO, rTitle);
+					audio_stop_sound(msc_Tutorial);
+					global.tutorialMusic = false;
+					audio_stop_sound(msc_Floor1);
+					audio_stop_sound(msc_Floor2);
+					global.floor1Music = false;
+					audio_stop_sound(msc_Shop);
+					global.shopMusic = false;
+					audio_stop_sound(msc_Hub);
+					global.hubMusic = false;
 				}
-				global.sword = true;
-				global.canPause = false;
-				global.health = global.maxHealth;
-				global.armor = 0;
-				// Reset run
-				global.usedArray = [false,false,false,false,false];
-				global.usedArray2 = [false,false,false,false,false];
-				global.inARun = false;
-				global.coins = 0;
-				global.localCoins = 0;
-				global.localDamage = 0;
-				global.item = -1;
-				global.passiveItems = [];
-				global.levelCount = 0;
-				global.sideRoom = rTitle;
-				global.shopRoom = rTitle;
-				global.sideChestOpened = false;
-				global.pipeCount = 0;
-				global.shopPipeCount = 0;
-				global.pipeSpawned = false;
-				global.shopSpawned = false;
-				global.pipeY = 0;
-				global.shopY = 0;
-				global.gobletCombo = 0;
-				global.shopItem1 = -1;
-				global.shopItem2 = -1;
-				global.shopItem3 = -1;
-				global.item1Bought = false;
-				global.item2Bought = false;
-				global.item3Bought = false;
-				// Reset instance lists
-				global.coinArray = ds_list_create();
-				global.enemyArray = ds_list_create();
-				instance_destroy(oItemPopup);
-				SlideTransition(TRANS_MODE.GOTO, rTitle);
-				audio_stop_sound(msc_Tutorial);
-				global.tutorialMusic = false;
-				audio_stop_sound(msc_Floor1);
-				audio_stop_sound(msc_Floor2);
-				global.floor1Music = false;
-				audio_stop_sound(msc_Shop);
-				global.shopMusic = false;
-				audio_stop_sound(msc_Hub);
-				global.hubMusic = false;
+				else
+				{
+					options = false;
+					menuOption = 0;
+				}
 				break;
 		}
 	}

@@ -14,27 +14,188 @@ else
 // Draw Pause Menu
 if(global.paused)
 {
-	draw_sprite(sPauseMenu,menuOption,80,40+UIOffset);
+	draw_set_halign(fa_center);
+	draw_set_font(fMenu);
+	
+	if (!options)
+	{
+		draw_sprite(sMenuBox,0,128,40+UIOffset);
+		
+		if(menuOption == 0)
+		{
+			draw_set_color($A3A7E9);
+		}
+		else
+		{
+			draw_set_color($DDADE6);	
+		}
+		draw_text(128,52+UIOffset,"RESUME");
+		
+		if(menuOption == 1)
+		{
+			draw_set_color($A3A7E9);
+		}
+		else
+		{
+			draw_set_color($DDADE6);	
+		}
+		draw_text(128,68+UIOffset,"OPTIONS");
+		
+		if(menuOption == 2)
+		{
+			draw_set_color($A3A7E9);
+		}
+		else
+		{
+			draw_set_color($DDADE6);	
+		}
+		draw_text(128,84+UIOffset,"QUIT");
+	}
+	else
+	{
+		draw_sprite(sMenuBoxBig,0,128,40+UIOffset);
+		
+		if(menuOption == 0)
+		{
+			draw_set_color($A3A7E9);
+		}
+		else
+		{
+			draw_set_color($DDADE6);	
+		}
+		if(window_get_fullscreen())
+		{
+			draw_text(128,52+UIOffset,"FULLSCREEN: ON");
+		}
+		else
+		{
+			draw_text(128,52+UIOffset,"FULLSCREEN: OFF");
+		}
+		if(menuOption == 1)
+		{
+			draw_set_color($A3A7E9);
+		}
+		else
+		{
+			draw_set_color($DDADE6);	
+		}
+		if(global.res1610)
+		{
+			draw_text(128,68+UIOffset,"ASPECT RATIO: TALL");
+		}
+		else
+		{
+			draw_text(128,68+UIOffset,"ASPECT RATIO: WIDE");
+		}
+		
+		if(menuOption == 2)
+		{
+			draw_set_color($A3A7E9);
+		}
+		else
+		{
+			draw_set_color($DDADE6);	
+		}
+		draw_text(128,84+UIOffset,"BACK");
+		
+	}
+	
+	// Reset color
+	draw_set_color($6D454D);
+	// Reset font
+	draw_set_font(fUI);
 }
 
 // Draw Main Menu
 if(room == rTitle)
 {
+	draw_set_halign(fa_center);
+	draw_set_font(fMenu);
 	if (!options)
 	{
-		draw_sprite(sMainMenu,menuOption,80,76+UIOffset);
-	}
-	else
-	{
-		if(!deleted)
+		draw_sprite(sMenuBox,0,128,76+UIOffset);
+		
+		if(menuOption == 0)
 		{
-			draw_sprite(sOptionsMenu,menuOption,80,76+UIOffset);
+			draw_set_color($A3A7E9);
 		}
 		else
 		{
-			draw_sprite(sOptionsMenuDeletedSave,menuOption,80,76+UIOffset);	
+			draw_set_color($DDADE6);	
 		}
+		draw_text(128,88+UIOffset,"START");
+		
+		if(menuOption == 1)
+		{
+			draw_set_color($A3A7E9);
+		}
+		else
+		{
+			draw_set_color($DDADE6);	
+		}
+		draw_text(128,104+UIOffset,"OPTIONS");
+		
+		if(menuOption == 2)
+		{
+			draw_set_color($A3A7E9);
+		}
+		else
+		{
+			draw_set_color($DDADE6);	
+		}
+		draw_text(128,120+UIOffset,"QUIT");
 	}
+	else
+	{
+		draw_sprite(sMenuBoxBigTall,0,128,60+UIOffset);
+		
+		if(menuOption == 0)
+		{
+			draw_set_color($A3A7E9);
+		}
+		else
+		{
+			draw_set_color($DDADE6);	
+		}
+		if(window_get_fullscreen())
+		{
+			draw_text(128,88+UIOffset,"FULLSCREEN: ON");
+		}
+		else
+		{
+			draw_text(128,88+UIOffset,"FULLSCREEN: OFF");
+		}
+		if(menuOption == 1)
+		{
+			draw_set_color($A3A7E9);
+		}
+		else
+		{
+			draw_set_color($DDADE6);	
+		}
+		if(deleted)
+		{
+			draw_text(128,104+UIOffset,"DELETED!");
+		}
+		else
+		{
+			draw_text(128,104+UIOffset,"DELETE SAVE");
+		}
+		
+		if(menuOption == 2)
+		{
+			draw_set_color($A3A7E9);
+		}
+		else
+		{
+			draw_set_color($DDADE6);	
+		}
+		draw_text(128,120+UIOffset,"BACK");
+		
+	}
+	
+	// Reset color
+	draw_set_color($6D454D);
 }
 
 // Draw HUD
