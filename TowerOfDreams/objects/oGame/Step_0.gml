@@ -115,7 +115,7 @@ if(room == rTitle)
 	}
 	
 	// Volume slider
-	if(menuOption == 2 && options && room == rTitle)
+	if(menuOption == 2 && options)
 	{
 		if(key_left)
 		{
@@ -241,7 +241,14 @@ if(global.paused)
 		menuOption--;
 		if(menuOption <= -1)
 		{
-			menuOption = 2;	
+			if(options)
+			{
+				menuOption = 3;
+			}
+			else
+			{
+				menuOption = 2;	
+			}
 		}
 	}
 
@@ -249,9 +256,45 @@ if(global.paused)
 	{
 		audio_play_sound(snd_MenuMove,5,false);
 		menuOption++;
-		if(menuOption >= 3)
+		if(options)
 		{
-			menuOption = 0;	
+			if(menuOption >= 4)
+			{
+				menuOption = 0;	
+			}
+		}
+		else
+		{
+			if(menuOption >= 3)
+			{
+				menuOption = 0;	
+			}
+		}
+	}
+	
+	// Volume slider
+	if(menuOption == 2 && options)
+	{
+		if(key_left)
+		{
+			audio_play_sound(snd_MenuMove,5,false);
+			global.volume--;
+			if(global.volume <= -1)
+			{
+				global.volume = 6;	
+			}
+			ChangeVolume();
+		}
+		
+		if(key_right)
+		{
+			audio_play_sound(snd_MenuMove,5,false);
+			global.volume++;
+			if(global.volume >= 7)
+			{
+				global.volume = 0;	
+			}
+			ChangeVolume();
 		}
 	}
 	
@@ -361,6 +404,17 @@ if(global.paused)
 					global.hubMusic = false;
 				}
 				else
+				{
+					global.volume++;
+					if(global.volume >= 7)
+					{
+						global.volume = 0;
+					}
+					ChangeVolume();
+				}
+				break;
+			case 3:
+				if(options)
 				{
 					options = false;
 					menuOption = 0;

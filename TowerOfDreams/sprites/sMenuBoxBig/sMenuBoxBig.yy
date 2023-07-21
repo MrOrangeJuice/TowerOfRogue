@@ -2,7 +2,7 @@
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "sMenuBoxBig",
-  "bbox_bottom": 63,
+  "bbox_bottom": 79,
   "bbox_left": 0,
   "bbox_right": 159,
   "bbox_top": 0,
@@ -17,7 +17,7 @@
   ],
   "gridX": 0,
   "gridY": 0,
-  "height": 64,
+  "height": 80,
   "HTile": false,
   "layers": [
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"671fc788-62e6-42b5-84a9-8ef4f8300c84","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},

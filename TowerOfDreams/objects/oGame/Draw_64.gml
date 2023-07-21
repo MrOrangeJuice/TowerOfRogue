@@ -91,12 +91,25 @@ if(global.paused)
 		if(menuOption == 2)
 		{
 			draw_set_color($A3A7E9);
+			if(volumeArrows) draw_sprite(sVolumeSliderArrows,0,128,88+UIOffset);
+			draw_sprite(sVolumeSlider,global.volume,128,84+UIOffset);
+			if(alarm[0] == -1) alarm[0] = room_speed * 0.33;
+		}
+		else
+		{
+			draw_set_color($DDADE6);
+			draw_sprite(sVolumeSlider,0,128,84+UIOffset);
+		}
+		
+		if(menuOption == 3)
+		{
+			draw_set_color($A3A7E9);
 		}
 		else
 		{
 			draw_set_color($DDADE6);	
 		}
-		draw_text(128,84+UIOffset,"BACK");
+		draw_text(128,100+UIOffset,"BACK");
 		
 	}
 	
