@@ -1,17 +1,18 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "oOptionsTitle",
-  "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
-  ],
+  "name": "oShineVFX",
+  "eventList": [],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "UI",
-    "path": "folders/Objects/UI.yy",
+    "name": "VFX",
+    "path": "folders/Sprites/VFX.yy",
   },
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "oVFX",
+    "path": "objects/oVFX/oVFX.yy",
+  },
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
@@ -28,9 +29,9 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "sOptionsTitle",
-    "path": "sprites/sOptionsTitle/sOptionsTitle.yy",
+    "name": "sShineVFX",
+    "path": "sprites/sShineVFX/sShineVFX.yy",
   },
   "spriteMaskId": null,
-  "visible": false,
+  "visible": true,
 }

@@ -35,6 +35,9 @@ else
 		else
 		{
 			SlideTransition(TRANS_MODE.GOTO,rTutorial);	
+			global.item = -1;
+			global.passiveItems = [];
+			global.armor = 0;
 			global.health = global.maxHealth;
 		}
 	}
