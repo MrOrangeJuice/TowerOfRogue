@@ -513,6 +513,7 @@
     {"id":{"name":"PickNextLevel","path":"scripts/PickNextLevel/PickNextLevel.yy",},},
     {"id":{"name":"sPlayerJumpGreenLeft","path":"sprites/sPlayerJumpGreenLeft/sPlayerJumpGreenLeft.yy",},},
     {"id":{"name":"oAngerVFX","path":"objects/oAngerVFX/oAngerVFX.yy",},},
+    {"id":{"name":"ChangeVolume","path":"scripts/ChangeVolume/ChangeVolume.yy",},},
     {"id":{"name":"sCannonFire","path":"sprites/sCannonFire/sCannonFire.yy",},},
     {"id":{"name":"sPortal","path":"sprites/sPortal/sPortal.yy",},},
     {"id":{"name":"oItemBubble","path":"objects/oItemBubble/oItemBubble.yy",},},

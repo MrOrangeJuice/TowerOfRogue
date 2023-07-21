@@ -459,6 +459,7 @@
     {"name":"PickNextLevel","order":5,"path":"scripts/PickNextLevel/PickNextLevel.yy",},
     {"name":"sPlayerJumpGreenLeft","order":18,"path":"sprites/sPlayerJumpGreenLeft/sPlayerJumpGreenLeft.yy",},
     {"name":"oAngerVFX","order":20,"path":"objects/oAngerVFX/oAngerVFX.yy",},
+    {"name":"ChangeVolume","order":9,"path":"scripts/ChangeVolume/ChangeVolume.yy",},
     {"name":"sCannonFire","order":6,"path":"sprites/sCannonFire/sCannonFire.yy",},
     {"name":"sPortal","order":3,"path":"sprites/sPortal/sPortal.yy",},
     {"name":"oItemBubble","order":10,"path":"objects/oItemBubble/oItemBubble.yy",},
