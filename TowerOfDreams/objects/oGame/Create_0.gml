@@ -63,6 +63,7 @@ global.shopItem3 = -1;
 global.item1Bought = false;
 global.item2Bought = false;
 global.item3Bought = false;
+global.rerollTax = 0;
 
 // Passive items
 global.magnet = false;

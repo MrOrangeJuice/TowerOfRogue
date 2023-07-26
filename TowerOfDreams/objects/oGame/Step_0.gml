@@ -387,6 +387,7 @@ if(global.paused)
 					global.shopItem1 = -1;
 					global.shopItem2 = -1;
 					global.shopItem3 = -1;
+					global.rerollTax = 0;
 					global.item1Bought = false;
 					global.item2Bought = false;
 					global.item3Bought = false;

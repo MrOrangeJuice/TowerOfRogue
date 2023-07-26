@@ -11,7 +11,7 @@ for(i = 0; i < array_length(global.passiveItems); i++)
 }
 
 draw_set_halign(fa_center);
-draw_text(x+9,y-14,itemPrice); 
+draw_text(x+9,y-14,(itemPrice+global.rerollTax) * (1 - (card * 0.2))); 
 
 // Draw item name
 if(instance_exists(oPlayer))

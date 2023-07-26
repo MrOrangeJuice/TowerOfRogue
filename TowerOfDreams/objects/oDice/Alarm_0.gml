@@ -1,7 +1,7 @@
 /// @description Destroy and reroll items
 
 audio_play_sound(snd_Reroll,5,false);
-ScreenShake(2,10);
+ScreenShake(4,12);
 instance_create_layer(x,y,"VFX",oItemVFX);
 
 // Reroll
@@ -36,4 +36,5 @@ with(oItemBubble)
 	}
 }
 
+global.rerollTax += 10;
 instance_destroy();

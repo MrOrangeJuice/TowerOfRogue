@@ -28,6 +28,7 @@ global.shopItem3 = -1;
 global.item1Bought = false;
 global.item2Bought = false;
 global.item3Bought = false;
+global.rerollTax = 0;
 // Reset instance lists
 global.coinArray = ds_list_create();
 global.enemyArray = ds_list_create();
