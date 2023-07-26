@@ -1,3 +1,3 @@
 /// @description Activate stamper
 
-oStamper.bought = true;
+if(instance_exists(oStamper)) oStamper.bought = true;

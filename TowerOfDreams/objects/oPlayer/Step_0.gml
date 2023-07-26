@@ -483,12 +483,6 @@ if(!global.paused && !global.hitStop)
 		bubble = instance_place(x,y+9,oItemBubble);
 		if(bubble)
 		{
-			// Push player up
-			while(place_meeting(x,y+8,oItemBubble))
-			{
-				y -= 1;	
-			}
-			vsp = -3;
 			card = 0;
 			for(i = 0; i < array_length(global.passiveItems); i++)
 			{
@@ -497,6 +491,7 @@ if(!global.paused && !global.hitStop)
 					card++;
 				}
 			}
+			vsp = -3;
 			airborne = true;
 			hasSlashed = true;
 			hasSlashJumped = true;
@@ -512,51 +507,102 @@ if(!global.paused && !global.hitStop)
 					alarm[7] = room_speed * 0.1;
 				}
 			}
-			// Check if item can be bought
-			if(global.coins >= global.itemPrices[bubble.item] * (1 - (0.2 * card)))
+			// Push player up
+			while(place_meeting(x,y+8,oItemBubble))
 			{
-				instance_create_layer(bubble.x+8,bubble.y,"UI",oDustSlashBumper);
-				instance_create_layer(bubble.x,bubble.y,"VFX",oBubbleVFX);
-				audio_play_sound(snd_Bumper,5,false);
-				// Stamper alarm
-				alarm[5] = room_speed * 0.2;
-				// Spawn item
-				newItem = instance_create_layer(bubble.x+4,bubble.y+4,"Collectables",global.itemObjects[bubble.item]);
-				// Don't double the lift if it's a heart or armor
-				if(bubble.item != array_length(global.itemObjects)-1 || bubble.item != array_length(global.itemObjects)-2)
+				y -= 1;	
+			}
+			
+			if(bubble.object_index == oDiceBubble)
+			{
+				// Check if item can be bought
+				if(global.coins >= 10 * (1 - (0.2 * card)))
 				{
-					 newItem.vsp = -3;	
+					if(chargeSlash)
+					{
+						instance_create_layer(bubble.x+8,bubble.y,"UI",oDustSlashBumperGreen);
+					}
+					else
+					{
+						instance_create_layer(bubble.x+8,bubble.y,"UI",oDustSlashBumper);
+					}
+					instance_create_layer(bubble.x,bubble.y,"VFX",oBubbleVFX);
+					audio_play_sound(snd_Bumper,5,false);
+					// Stamper alarm
+					alarm[5] = room_speed * 0.2;
+					// Spawn item
+					newItem = instance_create_layer(bubble.x+4,bubble.y+4,"Collectables",oDice);
+					global.coins -= 10 * (1 - (0.2 * card));
+					instance_destroy(bubble);
 				}
 				else
 				{
-					newItem.vsp = 0;	
+					if(chargeSlash)
+					{
+						instance_create_layer(bubble.x+8,bubble.y,"UI",oDustSlashBumperGreen);
+					}
+					else
+					{
+						instance_create_layer(bubble.x+8,bubble.y,"UI",oDustSlashBumper);
+					}
+					audio_play_sound(snd_Klang,5,false);
 				}
-				switch(bubble.bubbleNum)
-				{
-					case 1:
-						global.item1Bought = true;
-						break;
-					case 2:
-						global.item2Bought = true;
-						break;
-					case 3:
-						global.item3Bought = true;
-						break;
-				}
-				global.coins -= global.itemPrices[bubble.item] * (1 - (0.2 * card));
-				instance_destroy(bubble);
 			}
 			else
 			{
-				if(chargeSlash)
+				// Check if item can be bought
+				if(global.coins >= global.itemPrices[bubble.item] * (1 - (0.2 * card)))
 				{
-					instance_create_layer(bubble.x+8,bubble.y,"UI",oDustSlashBumperGreen);
+					if(chargeSlash)
+					{
+						instance_create_layer(bubble.x+8,bubble.y,"UI",oDustSlashBumperGreen);
+					}
+					else
+					{
+						instance_create_layer(bubble.x+8,bubble.y,"UI",oDustSlashBumper);
+					}
+					instance_create_layer(bubble.x,bubble.y,"VFX",oBubbleVFX);
+					audio_play_sound(snd_Bumper,5,false);
+					// Stamper alarm
+					alarm[5] = room_speed * 0.2;
+					// Spawn item
+					newItem = instance_create_layer(bubble.x+4,bubble.y+4,"Collectables",global.itemObjects[bubble.item]);
+					// Don't double the lift if it's a heart or armor
+					if(bubble.item != array_length(global.itemObjects)-1 || bubble.item != array_length(global.itemObjects)-2)
+					{
+						 newItem.vsp = -3;	
+					}
+					else
+					{
+						newItem.vsp = 0;	
+					}
+					switch(bubble.bubbleNum)
+					{
+						case 1:
+							global.item1Bought = true;
+							break;
+						case 2:
+							global.item2Bought = true;
+							break;
+						case 3:
+							global.item3Bought = true;
+							break;
+					}
+					global.coins -= global.itemPrices[bubble.item] * (1 - (0.2 * card));
+					instance_destroy(bubble);
 				}
 				else
 				{
-					instance_create_layer(bubble.x+8,bubble.y,"UI",oDustSlashBumper);
+					if(chargeSlash)
+					{
+						instance_create_layer(bubble.x+8,bubble.y,"UI",oDustSlashBumperGreen);
+					}
+					else
+					{
+						instance_create_layer(bubble.x+8,bubble.y,"UI",oDustSlashBumper);
+					}
+					audio_play_sound(snd_Klang,5,false);
 				}
-				audio_play_sound(snd_Klang,5,false);
 			}
 		}
 		enemy = instance_place(x,y+9,oEnemy);
