@@ -181,6 +181,7 @@
     {"id":{"name":"sLava","path":"sprites/sLava/sLava.yy",},},
     {"id":{"name":"oLeftConveyer","path":"objects/oLeftConveyer/oLeftConveyer.yy",},},
     {"id":{"name":"sMenuBoxBigTall","path":"sprites/sMenuBoxBigTall/sMenuBoxBigTall.yy",},},
+    {"id":{"name":"sDice","path":"sprites/sDice/sDice.yy",},},
     {"id":{"name":"oCritPBItem","path":"objects/oCritPBItem/oCritPBItem.yy",},},
     {"id":{"name":"o3","path":"objects/o3/o3.yy",},},
     {"id":{"name":"snd_Winds","path":"sounds/snd_Winds/snd_Winds.yy",},},

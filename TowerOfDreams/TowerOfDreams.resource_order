@@ -156,6 +156,7 @@
     {"name":"sLava","order":5,"path":"sprites/sLava/sLava.yy",},
     {"name":"oLeftConveyer","order":14,"path":"objects/oLeftConveyer/oLeftConveyer.yy",},
     {"name":"sMenuBoxBigTall","order":22,"path":"sprites/sMenuBoxBigTall/sMenuBoxBigTall.yy",},
+    {"name":"sDice","order":26,"path":"sprites/sDice/sDice.yy",},
     {"name":"oCritPBItem","order":22,"path":"objects/oCritPBItem/oCritPBItem.yy",},
     {"name":"o3","order":2,"path":"objects/o3/o3.yy",},
     {"name":"snd_Winds","order":43,"path":"sounds/snd_Winds/snd_Winds.yy",},
