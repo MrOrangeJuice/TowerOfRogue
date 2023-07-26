@@ -48,6 +48,7 @@ global.gobletVFX = [o1,o2,o3,o4,o5,oHealthGetVFX];
 global.tutorialMusic = false;
 global.floor1Music = false;
 global.shopMusic = false;
+global.treasureMusic = false;
 global.hubMusic = false;
 global.bumperSwitch = true;
 global.bumpersSwitching = false;

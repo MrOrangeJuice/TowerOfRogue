@@ -254,6 +254,7 @@
     {"name":"Save","order":3,"path":"scripts/Save/Save.yy",},
     {"name":"sDustSmall","order":1,"path":"sprites/sDustSmall/sDustSmall.yy",},
     {"name":"sAngryVFX","order":17,"path":"sprites/sAngryVFX/sAngryVFX.yy",},
+    {"name":"msc_Chest","order":6,"path":"sounds/msc_Chest/msc_Chest.yy",},
     {"name":"oWall","order":2,"path":"objects/oWall/oWall.yy",},
     {"name":"sSwordShrineSwordless","order":7,"path":"sprites/sSwordShrineSwordless/sSwordShrineSwordless.yy",},
     {"name":"sHeart","order":1,"path":"sprites/sHeart/sHeart.yy",},

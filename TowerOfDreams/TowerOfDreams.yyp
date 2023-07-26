@@ -287,6 +287,7 @@
     {"id":{"name":"Save","path":"scripts/Save/Save.yy",},},
     {"id":{"name":"sDustSmall","path":"sprites/sDustSmall/sDustSmall.yy",},},
     {"id":{"name":"sAngryVFX","path":"sprites/sAngryVFX/sAngryVFX.yy",},},
+    {"id":{"name":"msc_Chest","path":"sounds/msc_Chest/msc_Chest.yy",},},
     {"id":{"name":"oWall","path":"objects/oWall/oWall.yy",},},
     {"id":{"name":"sSwordShrineSwordless","path":"sprites/sSwordShrineSwordless/sSwordShrineSwordless.yy",},},
     {"id":{"name":"sLogo","path":"sprites/sLogo/sLogo.yy",},},
