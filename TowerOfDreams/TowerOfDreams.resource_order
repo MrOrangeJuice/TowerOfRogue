@@ -342,6 +342,7 @@
     {"name":"sPlayerHit","order":10,"path":"sprites/sPlayerHit/sPlayerHit.yy",},
     {"name":"sPlayerSwordGet","order":11,"path":"sprites/sPlayerSwordGet/sPlayerSwordGet.yy",},
     {"name":"sSlashControllerFadeIn","order":8,"path":"sprites/sSlashControllerFadeIn/sSlashControllerFadeIn.yy",},
+    {"name":"sBallEnemy","order":22,"path":"sprites/sBallEnemy/sBallEnemy.yy",},
     {"name":"snd_Wings","order":27,"path":"sounds/snd_Wings/snd_Wings.yy",},
     {"name":"sBallExplosion","order":10,"path":"sprites/sBallExplosion/sBallExplosion.yy",},
     {"name":"sCoinVFX","order":5,"path":"sprites/sCoinVFX/sCoinVFX.yy",},
