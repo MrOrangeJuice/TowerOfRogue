@@ -388,6 +388,7 @@
     {"name":"sBlockA","order":24,"path":"sprites/sBlockA/sBlockA.yy",},
     {"name":"sBumperA","order":11,"path":"sprites/sBumperA/sBumperA.yy",},
     {"name":"sShockwave","order":4,"path":"sprites/sShockwave/sShockwave.yy",},
+    {"name":"oDiceBubbleRegrow","order":31,"path":"objects/oDiceBubbleRegrow/oDiceBubbleRegrow.yy",},
     {"name":"sLogoBig","order":14,"path":"sprites/sLogoBig/sLogoBig.yy",},
     {"name":"msc_Floor1","order":1,"path":"sounds/msc_Floor1/msc_Floor1.yy",},
     {"name":"sPlayerWallSlide","order":5,"path":"sprites/sPlayerWallSlide/sPlayerWallSlide.yy",},

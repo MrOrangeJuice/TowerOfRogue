@@ -430,6 +430,7 @@
     {"id":{"name":"sBlockA","path":"sprites/sBlockA/sBlockA.yy",},},
     {"id":{"name":"sBumperA","path":"sprites/sBumperA/sBumperA.yy",},},
     {"id":{"name":"sShockwave","path":"sprites/sShockwave/sShockwave.yy",},},
+    {"id":{"name":"oDiceBubbleRegrow","path":"objects/oDiceBubbleRegrow/oDiceBubbleRegrow.yy",},},
     {"id":{"name":"sLogoBig","path":"sprites/sLogoBig/sLogoBig.yy",},},
     {"id":{"name":"msc_Floor1","path":"sounds/msc_Floor1/msc_Floor1.yy",},},
     {"id":{"name":"sPlayerWallSlide","path":"sprites/sPlayerWallSlide/sPlayerWallSlide.yy",},},

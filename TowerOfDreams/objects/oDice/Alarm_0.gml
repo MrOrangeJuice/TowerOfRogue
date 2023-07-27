@@ -3,6 +3,8 @@
 audio_play_sound(snd_Reroll,5,false);
 ScreenShake(4,12);
 instance_create_layer(x,y,"VFX",oItemVFX);
+// Spawn new bubble
+instance_create_layer(296,1520,"Walls",oDiceBubbleRegrow);
 
 // Reroll
 with(oItemBubble)
