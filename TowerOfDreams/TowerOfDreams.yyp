@@ -120,6 +120,7 @@
     {"id":{"name":"fMenu","path":"fonts/fMenu/fMenu.yy",},},
     {"id":{"name":"rRunTest4","path":"rooms/rRunTest4/rRunTest4.yy",},},
     {"id":{"name":"sUseItemFadeIn","path":"sprites/sUseItemFadeIn/sUseItemFadeIn.yy",},},
+    {"id":{"name":"sDiceBubbleGrow","path":"sprites/sDiceBubbleGrow/sDiceBubbleGrow.yy",},},
     {"id":{"name":"oDustSlashBumper","path":"objects/oDustSlashBumper/oDustSlashBumper.yy",},},
     {"id":{"name":"oGravityEnemyDustVFX","path":"objects/oGravityEnemyDustVFX/oGravityEnemyDustVFX.yy",},},
     {"id":{"name":"sStartController","path":"sprites/sStartController/sStartController.yy",},},

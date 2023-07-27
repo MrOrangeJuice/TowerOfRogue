@@ -99,6 +99,7 @@
     {"name":"fMenu","order":1,"path":"fonts/fMenu/fMenu.yy",},
     {"name":"rRunTest4","order":3,"path":"rooms/rRunTest4/rRunTest4.yy",},
     {"name":"sUseItemFadeIn","order":15,"path":"sprites/sUseItemFadeIn/sUseItemFadeIn.yy",},
+    {"name":"sDiceBubbleGrow","order":29,"path":"sprites/sDiceBubbleGrow/sDiceBubbleGrow.yy",},
     {"name":"oDustSlashBumper","order":8,"path":"objects/oDustSlashBumper/oDustSlashBumper.yy",},
     {"name":"oGravityEnemyDustVFX","order":21,"path":"objects/oGravityEnemyDustVFX/oGravityEnemyDustVFX.yy",},
     {"name":"sStartController","order":6,"path":"sprites/sStartController/sStartController.yy",},
