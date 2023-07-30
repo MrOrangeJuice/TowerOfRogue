@@ -23,6 +23,31 @@ if(!global.paused && !global.hitStop)
 		}
 		vsp = 0;
 	}
+	
+	// Check for leaving the ground
+	if (!place_meeting(x,y+1,oWall))
+	{
+		if(!airborne) airborne = true;	
+	}
+	
+	// Check for landing
+	if(airborne && place_meeting(x,y+1,oWall))
+	{
+		landing = true;
+		airborne = false;
+		alarm[1] = room_speed * 0.1;
+		instance_create_layer(x,y,"VFX",oGravityEnemyDustVFX);
+	}
+	
+	// Animate
+	if(landing)
+	{
+		sprite_index = landingSprite;
+	}
+	else
+	{
+		sprite_index = regularSprite;
+	}
 
 	x = x + (hsp * dir);
 	y = y + vsp;
