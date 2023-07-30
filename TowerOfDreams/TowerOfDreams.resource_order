@@ -79,6 +79,7 @@
     {"name":"snd_ArmorBreak","order":48,"path":"sounds/snd_ArmorBreak/snd_ArmorBreak.yy",},
     {"name":"rTutorial2","order":3,"path":"rooms/rTutorial2/rTutorial2.yy",},
     {"name":"rFloor1_2","order":1,"path":"rooms/rFloor1_2/rFloor1_2.yy",},
+    {"name":"oBallEnemy","order":16,"path":"objects/oBallEnemy/oBallEnemy.yy",},
     {"name":"sBumperRails","order":3,"path":"sprites/sBumperRails/sBumperRails.yy",},
     {"name":"oPlayerLava","order":23,"path":"objects/oPlayerLava/oPlayerLava.yy",},
     {"name":"oRedPortal","order":22,"path":"objects/oRedPortal/oRedPortal.yy",},

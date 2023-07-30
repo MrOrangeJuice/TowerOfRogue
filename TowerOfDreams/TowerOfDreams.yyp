@@ -100,6 +100,7 @@
     {"id":{"name":"snd_ArmorBreak","path":"sounds/snd_ArmorBreak/snd_ArmorBreak.yy",},},
     {"id":{"name":"rTutorial2","path":"rooms/rTutorial2/rTutorial2.yy",},},
     {"id":{"name":"rFloor1_2","path":"rooms/rFloor1_2/rFloor1_2.yy",},},
+    {"id":{"name":"oBallEnemy","path":"objects/oBallEnemy/oBallEnemy.yy",},},
     {"id":{"name":"sBumperRails","path":"sprites/sBumperRails/sBumperRails.yy",},},
     {"id":{"name":"oPlayerLava","path":"objects/oPlayerLava/oPlayerLava.yy",},},
     {"id":{"name":"oRedPortal","path":"objects/oRedPortal/oRedPortal.yy",},},
