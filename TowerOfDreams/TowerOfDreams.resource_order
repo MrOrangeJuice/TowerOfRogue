@@ -93,7 +93,7 @@
     {"name":"oUpConveyer","order":17,"path":"objects/oUpConveyer/oUpConveyer.yy",},
     {"name":"sPlayerSlashSmall","order":12,"path":"sprites/sPlayerSlashSmall/sPlayerSlashSmall.yy",},
     {"name":"rTutorialOld","order":4,"path":"rooms/rTutorialOld/rTutorialOld.yy",},
-    {"name":"oShineVFX","order":30,"path":"objects/oShineVFX/oShineVFX.yy",},
+    {"name":"oShineVFX","order":33,"path":"objects/oShineVFX/oShineVFX.yy",},
     {"name":"snd_Rage","order":24,"path":"sounds/snd_Rage/snd_Rage.yy",},
     {"name":"sGravityEnemyHusk","order":10,"path":"sprites/sGravityEnemyHusk/sGravityEnemyHusk.yy",},
     {"name":"sGravityEnemyLandUp","order":5,"path":"sprites/sGravityEnemyLandUp/sGravityEnemyLandUp.yy",},

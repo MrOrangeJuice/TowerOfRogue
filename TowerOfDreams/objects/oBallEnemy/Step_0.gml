@@ -24,17 +24,6 @@ if(!global.paused && !global.hitStop)
 		vsp = 0;
 	}
 
-	// Vertical Collision
-	// If no ground below you reverse direction
-	/*
-	if (!place_meeting(x+(16*dir),y+1,oWall))
-	{
-		dir *= -1;
-		vsp = 0;
-	}
-	*/
-
-
 	x = x + (hsp * dir);
 	y = y + vsp;
 }

@@ -7,7 +7,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "VFX",
-    "path": "folders/Sprites/VFX.yy",
+    "path": "folders/Objects/VFX.yy",
   },
   "parentObjectId": {
     "name": "oVFX",
