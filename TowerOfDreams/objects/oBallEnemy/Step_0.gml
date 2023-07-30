@@ -35,7 +35,7 @@ if(!global.paused && !global.hitStop)
 	{
 		landing = true;
 		airborne = false;
-		alarm[1] = room_speed * 0.1;
+		alarm[1] = room_speed * 0.15;
 		instance_create_layer(x,y,"VFX",oGravityEnemyDustVFX);
 	}
 	
