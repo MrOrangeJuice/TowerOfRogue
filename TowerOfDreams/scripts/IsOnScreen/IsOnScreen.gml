@@ -29,4 +29,29 @@ function IsOnScreen(argument0)
 			}
 		}
 	}
+	else if(instance_exists(oFullCamera))
+	{
+		if(global.res1610)
+		{
+			if(argument0 > oFullCamera.y - 72 && argument0 < oFullCamera.y + 72)
+			{
+				return true;	
+			}
+			else
+			{
+				return false;	
+			}
+		}
+		else
+		{
+			if(argument0 > oFullCamera.y - 80 && argument0 < oFullCamera.y + 80)
+			{
+				return true;	
+			}
+			else
+			{
+				return false;	
+			}
+		}
+	}
 }

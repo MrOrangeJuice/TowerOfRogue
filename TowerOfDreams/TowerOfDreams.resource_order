@@ -32,6 +32,7 @@
     {"name":"Collectables","order":12,"path":"folders/Sprites/Collectables.yy",},
     {"name":"Decorations","order":21,"path":"folders/Sprites/Decorations.yy",},
     {"name":"Enemies","order":17,"path":"folders/Sprites/Enemies.yy",},
+    {"name":"Ball Enemy","order":25,"path":"folders/Sprites/Enemies/Ball Enemy.yy",},
     {"name":"GravityEnemy","order":11,"path":"folders/Sprites/Enemies/GravityEnemy.yy",},
     {"name":"Missile","order":20,"path":"folders/Sprites/Enemies/Missile.yy",},
     {"name":"Tank Enemy Elite","order":21,"path":"folders/Sprites/Enemies/Tank Enemy Elite.yy",},
@@ -49,7 +50,6 @@
     {"name":"Numbers","order":14,"path":"folders/Sprites/VFX/Numbers.yy",},
     {"name":"Tile Sets","order":1,"path":"folders/Tile Sets.yy",},
     {"name":"Timelines","order":7,"path":"folders/Timelines.yy",},
-    {"name":"Ball Enemy","order":25,"path":"folders/Sprites/Enemies/Ball Enemy.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"sUseItemControllerFadeIn","order":16,"path":"sprites/sUseItemControllerFadeIn/sUseItemControllerFadeIn.yy",},
