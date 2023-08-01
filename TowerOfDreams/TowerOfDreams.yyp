@@ -345,6 +345,7 @@
     {"id":{"name":"sBootsUI","path":"sprites/sBootsUI/sBootsUI.yy",},},
     {"id":{"name":"sCritVFX","path":"sprites/sCritVFX/sCritVFX.yy",},},
     {"id":{"name":"sArmor","path":"sprites/sArmor/sArmor.yy",},},
+    {"id":{"name":"sSlimeBlock","path":"sprites/sSlimeBlock/sSlimeBlock.yy",},},
     {"id":{"name":"sHoldJump","path":"sprites/sHoldJump/sHoldJump.yy",},},
     {"id":{"name":"shHit","path":"shaders/shHit/shHit.yy",},},
     {"id":{"name":"snd_SRank","path":"sounds/snd_SRank/snd_SRank.yy",},},

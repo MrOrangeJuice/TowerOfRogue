@@ -311,6 +311,7 @@
     {"name":"sBootsUI","order":2,"path":"sprites/sBootsUI/sBootsUI.yy",},
     {"name":"sCritVFX","order":13,"path":"sprites/sCritVFX/sCritVFX.yy",},
     {"name":"sArmor","order":3,"path":"sprites/sArmor/sArmor.yy",},
+    {"name":"sSlimeBlock","order":37,"path":"sprites/sSlimeBlock/sSlimeBlock.yy",},
     {"name":"sHoldJump","order":9,"path":"sprites/sHoldJump/sHoldJump.yy",},
     {"name":"snd_SRank","order":51,"path":"sounds/snd_SRank/snd_SRank.yy",},
     {"name":"sMessageBox","order":13,"path":"sprites/sMessageBox/sMessageBox.yy",},
