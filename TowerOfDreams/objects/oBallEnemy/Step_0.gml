@@ -12,6 +12,7 @@ if(!global.paused && !global.hitStop)
 	if (place_meeting(x+(hsp*dir),y,oWall))
 	{
 		dir *= -1;
+		if(IsOnScreen(y)) audio_play_sound(snd_Land,5,false);
 	}
 	
 		
@@ -53,6 +54,7 @@ if(!global.paused && !global.hitStop)
 		airborne = false;
 		alarm[1] = room_speed * 0.15;
 		instance_create_layer(x,y,"VFX",oGravityEnemyDustVFX);
+		if(IsOnScreen(y)) audio_play_sound(snd_Land,5,false);
 	}
 	
 	// Animate
