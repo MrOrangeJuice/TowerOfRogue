@@ -24,3 +24,9 @@ if(drawLevelName)
 {
 	draw_text(x,y-32,levelName);
 }
+
+if(drawPrevBest)
+{
+	bestString = "Prev. Best: " +string(prevBestRank);
+	draw_text(x,y-24,bestString);
+}

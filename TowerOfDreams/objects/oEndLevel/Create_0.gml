@@ -51,6 +51,36 @@ else
 	yourRank = "D";	
 }
 
+// Save rank
+switch(room)
+{
+	case rFloor1_1:
+		global.best1_1 = yourRank;
+		break;
+	case rFloor1_2:
+		global.best1_2 = yourRank;
+		break;
+	case rFloor1_3:
+		global.best1_3 = yourRank;
+		break;
+	case rFloor1_4:
+		global.best1_4 = yourRank;
+		break;
+	case rFloor1_5:
+		global.best1_5 = yourRank;
+		break;
+	case rFloor2_1:
+		global.best2_1 = yourRank;
+		break;
+	case rFloor2_2:
+		global.best2_2 = yourRank;
+		break;
+	case rFloor2_3:
+		global.best2_3 = yourRank;
+		break;
+}
+
+Save();
 
 
 // Gem alarm
