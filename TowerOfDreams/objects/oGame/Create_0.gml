@@ -114,3 +114,17 @@ UIOffset = 0;
 volumeArrows = true;
 
 Load();
+
+// If save file doesn't have best scores, add them in
+if(global.best1_1 == "0")
+{
+	global.best1_1 = "F";
+	global.best1_2 = "F";
+	global.best1_3 = "F";
+	global.best1_4 = "F";
+	global.best1_5 = "F";
+	global.best2_1 = "F";
+	global.best2_2 = "F";
+	global.best2_3 = "F";
+	Save();
+}
