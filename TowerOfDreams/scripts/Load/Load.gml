@@ -12,5 +12,6 @@ function Load(){
 	global.best2_1 = ini_read_string("savegame", "best2_1", 0);
 	global.best2_2 = ini_read_string("savegame", "best2_2", 0);
 	global.best2_3 = ini_read_string("savegame", "best2_3", 0);
+	global.bestOverall = ini_read_string("savegame", "bestOverall", 0);
 	ini_close();
 }

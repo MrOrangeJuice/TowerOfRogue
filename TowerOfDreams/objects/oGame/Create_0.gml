@@ -81,6 +81,7 @@ global.best1_5 = "F";
 global.best2_1 = "F";
 global.best2_2 = "F";
 global.best2_3 = "F";
+global.bestOverall = "F";
 
 // Determine default resolution
 if(display_get_width() / display_get_height() == 1.6)
@@ -126,5 +127,6 @@ if(global.best1_1 == "0")
 	global.best2_1 = "F";
 	global.best2_2 = "F";
 	global.best2_3 = "F";
+	global.bestOverall = "F";
 	Save();
 }
