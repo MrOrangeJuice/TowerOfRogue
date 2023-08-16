@@ -46,11 +46,11 @@
     {"name":"Lava","order":8,"path":"folders/Sprites/Tilesets/Lava.yy",},
     {"name":"Tutorials","order":13,"path":"folders/Sprites/Tutorials.yy",},
     {"name":"UI","order":15,"path":"folders/Sprites/UI.yy",},
+    {"name":"Rank Letters","order":30,"path":"folders/Sprites/UI/Rank Letters.yy",},
     {"name":"VFX","order":11,"path":"folders/Sprites/VFX.yy",},
     {"name":"Numbers","order":14,"path":"folders/Sprites/VFX/Numbers.yy",},
     {"name":"Tile Sets","order":1,"path":"folders/Tile Sets.yy",},
     {"name":"Timelines","order":7,"path":"folders/Timelines.yy",},
-    {"name":"Rank Letters","order":30,"path":"folders/Sprites/UI/Rank Letters.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"sUseItemControllerFadeIn","order":16,"path":"sprites/sUseItemControllerFadeIn/sUseItemControllerFadeIn.yy",},
