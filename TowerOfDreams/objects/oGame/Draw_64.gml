@@ -243,7 +243,7 @@ if(room == rTitle)
 }
 
 // Draw HUD
-if(room != rTitle)
+if(room != rTitle && room != rRunComplete)
 {
 	// Add spacing to HUD
 	hudMod = 9 * (((global.maxHealth - 6) / 2) + global.armor);

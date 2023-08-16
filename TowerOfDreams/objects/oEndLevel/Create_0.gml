@@ -16,6 +16,8 @@ rankLetter = false;
 perfectRank = false;
 continutePrompt = false;
 
+levelProgressed = false;
+
 // Determine rank
 rankScore = 20;
 yourRank = "B";
@@ -50,6 +52,9 @@ else
 {
 	yourRank = "D";	
 }
+
+// Add rank to array
+global.ranks[global.levelCount] = yourRank;
 
 // Save rank
 switch(room)

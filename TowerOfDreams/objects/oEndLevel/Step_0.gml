@@ -20,7 +20,7 @@ if(gamepad_button_check(0,gp_face1) || gamepad_button_check(4,gp_face1))
 	global.controller = 1;
 }
 
-if(key_select_pressed)
+if(key_select_pressed && !levelProgressed)
 {
 	audio_play_sound(snd_MenuSelect,5,false);
 	// Reset side room
@@ -33,4 +33,6 @@ if(key_select_pressed)
 	global.shopY = 0;
 	global.levelCount++;
 	PickNextLevel();
+	// Prevent mashing to increment level more than once
+	levelProgressed = true;
 }

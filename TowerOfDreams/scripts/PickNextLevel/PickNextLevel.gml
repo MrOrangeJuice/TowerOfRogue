@@ -3,9 +3,10 @@
 function PickNextLevel(){
 
 	// Determine next room
-	// If player has beaten six levels, send them back to the hub
+	// If player has beaten six levels, send them to run complete screen
 	if(global.levelCount >= 6)
 	{
+		/*
 		SlideTransition(TRANS_MODE.GOTO,rHub);
 		// Reset run
 		global.usedArray = [false,false,false,false,false];
@@ -31,11 +32,13 @@ function PickNextLevel(){
 		// Reset instance lists
 		global.coinArray = ds_list_create();
 		global.enemyArray = ds_list_create();
+		*/
 		audio_stop_sound(msc_Floor1);
 		audio_stop_sound(msc_Floor2);
 		audio_stop_sound(snd_BoomerangReturn);
 		global.floor1Music = false;
 		Save();
+		SlideTransition(TRANS_MODE.GOTO,rRunComplete);
 	}
 	// Otherwise, pick a new level that the player hasn't played yet
 	else
