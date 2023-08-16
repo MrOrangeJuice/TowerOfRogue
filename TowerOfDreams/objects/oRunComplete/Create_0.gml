@@ -78,5 +78,56 @@ else
 }
 
 // Save rank
-global.bestOverall = overallRank;
+
+// Only save rank if it's better than current one
+switch(overallRank)
+{
+	case "S":
+		global.bestOverall = overallRank;
+		break;
+	case "A":
+		switch(global.bestOverall)
+		{
+			case "A":
+				global.bestOverall = overallRank;
+				break;
+			case "B":
+				global.bestOverall = overallRank;
+				break;
+			case "C":
+				global.bestOverall = overallRank;
+				break;
+			case "D":
+				global.bestOverall = overallRank;
+				break;
+		}
+		break;
+	case "B":
+		switch(global.bestOverall)
+		{
+			case "B":
+				global.bestOverall = overallRank;
+				break;
+			case "C":
+				global.bestOverall = overallRank;
+				break;
+			case "D":
+				global.bestOverall = overallRank;
+		}
+		break;
+	case "C":
+		switch(global.bestOverall)
+		{
+			case "C":
+				global.bestOverall = overallRank;
+				break;
+			case "D":
+				global.bestOverall = overallRank;
+			break;
+		}
+	case "D":
+		if(global.bestOverall == "D") global.bestOverall = overallRank;
+		break;
+}
+
 Save();
