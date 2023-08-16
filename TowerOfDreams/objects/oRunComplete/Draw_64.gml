@@ -8,7 +8,8 @@ if(drawOverallRankText)
 
 if(drawOverallRank)
 {
-	draw_sprite(sS,0,128,display_get_gui_height()/2 + 8);
+	
+	draw_sprite(rankSprite,0,128,display_get_gui_height()/2 + 8);
 }
 
 if(drawContinue)

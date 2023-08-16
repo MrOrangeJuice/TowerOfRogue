@@ -228,6 +228,7 @@ if(room == rTitle)
 				global.best2_1 = "F";
 				global.best2_2 = "F";
 				global.best2_3 = "F";
+				global.bestOverall = "F";
 				// Make new default file
 				Save();
 				break;
@@ -399,6 +400,7 @@ if(global.paused)
 					global.item1Bought = false;
 					global.item2Bought = false;
 					global.item3Bought = false;
+					global.ranks = ["D","D","D","D","D","D"];
 					// Reset instance lists
 					global.coinArray = ds_list_create();
 					global.enemyArray = ds_list_create();
