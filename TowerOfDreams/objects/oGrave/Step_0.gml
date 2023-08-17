@@ -33,8 +33,6 @@ if(key_select_pressed)
 	global.armor = 0;
 	global.coins = 0;
 	global.localCoins = 0;
-	global.overallCoins += global.coinsThisRun;
-	global.coinsThisRun = 0;
 	global.localDamage = 0;
 	global.item = -1;
 	global.passiveItems = [];
@@ -78,7 +76,9 @@ if (place_meeting(x,y+vsp,oWall))
 		endSpawned = true;
 		audio_play_sound(snd_Grave,5,false);
 		alarm[0] = room_speed * 1;
-		alarm[1] = room_speed * 2;
+		alarm[2] = room_speed * 1.5;
+		alarm[3] = room_speed * 2;
+		alarm[4] = room_speed * 2.5;
 	}
 }
 	
