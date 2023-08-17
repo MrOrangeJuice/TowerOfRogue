@@ -229,6 +229,8 @@ if(room == rTitle)
 				global.best2_2 = "F";
 				global.best2_3 = "F";
 				global.bestOverall = "F";
+				global.overallCoins = 0;
+				global.healthUpgrades = 0;
 				// Make new default file
 				Save();
 				break;
@@ -378,6 +380,7 @@ if(global.paused)
 					global.usedArray2 = [false,false,false,false,false];
 					global.inARun = false;
 					global.coins = 0;
+					global.coinsThisRun = 0;
 					global.localCoins = 0;
 					global.localDamage = 0;
 					global.item = -1;

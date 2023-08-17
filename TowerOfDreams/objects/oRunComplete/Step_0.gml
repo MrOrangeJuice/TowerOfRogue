@@ -33,6 +33,8 @@ if(key_select_pressed)
 	global.armor = 0;
 	global.coins = 0;
 	global.localCoins = 0;
+	global.overallCoins += global.coinsThisRun;
+	global.coinsThisRun = 0;
 	global.localDamage = 0;
 	global.item = -1;
 	global.passiveItems = [];

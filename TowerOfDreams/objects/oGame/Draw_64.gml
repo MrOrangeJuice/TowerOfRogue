@@ -307,7 +307,14 @@ if(room != rTitle && room != rRunComplete)
 	coinTextScale = max(coinTextScale * .95, 1);
 	draw_set_halign(fa_left);
 	draw_sprite_stretched(sGem,0,7,15,8*coinTextScale,8*coinTextScale);
-	draw_text_transformed(17,11,global.coins,coinTextScale,coinTextScale,0);
+	if(room == rHub)
+	{
+		draw_text_transformed(17,11,global.overallCoins,coinTextScale,coinTextScale,0);
+	}
+	else
+	{
+		draw_text_transformed(17,11,global.coins,coinTextScale,coinTextScale,0);
+	}
 	
 	// Draw item box
 	itemTextScale = max(itemTextScale * .95, 1);

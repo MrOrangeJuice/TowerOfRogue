@@ -13,5 +13,7 @@ function Save(){
 	ini_write_string("savegame", "best2_2", global.best2_2);
 	ini_write_string("savegame", "best2_3", global.best2_3);
 	ini_write_string("savegame", "bestOverall", global.bestOverall);
+	ini_write_real("savegame", "overallCoins", global.overallCoins);
+	ini_write_real("savegame", "healthUpgrades", global.healthUpgrades);
 	ini_close();
 }

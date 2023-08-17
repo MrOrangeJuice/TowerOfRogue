@@ -49,6 +49,8 @@ else
 	{
 		// Restore health
 		global.health = global.maxHealth;
+		global.overallCoins += global.coins;
+		global.coins = 0;
 		SlideTransition(TRANS_MODE.NEXT);	
 		if(!global.tutorialCompleted) global.tutorialCompleted = true;
 		audio_stop_sound(msc_Tutorial);

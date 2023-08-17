@@ -6,8 +6,11 @@ global.paused = false;
 global.hitStop = false;
 global.canPause = false;
 global.coins = 0;
+global.overallCoins = 0;
+global.coinsThisRun = 0;
 global.localCoins = 0;
 global.localDamage = 0;
+global.healthUpgrades = 0;
 global.maxHealth = 6;
 global.health = 6;
 global.armor = 0;
@@ -116,7 +119,7 @@ volumeArrows = true;
 
 Load();
 
-// If save file doesn't have best scores, add them in
+// If save file doesn't have new stuff, add them in
 if(global.best1_1 == "0")
 {
 	global.best1_1 = "F";
@@ -128,5 +131,7 @@ if(global.best1_1 == "0")
 	global.best2_2 = "F";
 	global.best2_3 = "F";
 	global.bestOverall = "F";
+	global.overallCoins = 0;
+	global.healthUpgrades = 0;
 	Save();
 }
