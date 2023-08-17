@@ -17,6 +17,7 @@ if(other.canGrab)
 		{
 			// Grant 10 gems for a half-overheal
 			global.coins += 10;
+			global.coinsThisRun += 10;
 			instance_create_layer(other.x+4,other.y-8,"Instances",o10);
 			audio_play_sound(snd_Overheal,5,false);
 		}
@@ -24,6 +25,7 @@ if(other.canGrab)
 		{
 			// Grant 20 gems for a full-overheal
 			global.coins += 20;
+			global.coinsThisRun += 20;
 			instance_create_layer(other.x+4,other.y-8,"Instances",o20);
 			audio_play_sound(snd_Overheal,5,false);
 		}

@@ -4,7 +4,6 @@ if(room == rTitle)
 {
 	audio_play_sound(snd_SwordGet,5,false);
 	global.tutorialCompleted = true;
-	global.runCompleted = true;
 	global.best1_1 = "F";
 	global.best1_2 = "F";
 	global.best1_3 = "F";
