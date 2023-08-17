@@ -26,8 +26,6 @@
     {"name":"inst_3BF4310","path":"rooms/rHub/rHub.yy",},
     {"name":"inst_E290866","path":"rooms/rHub/rHub.yy",},
     {"name":"inst_7BA5A666","path":"rooms/rHub/rHub.yy",},
-    {"name":"inst_572F58C4","path":"rooms/rHub/rHub.yy",},
-    {"name":"inst_5B184C25","path":"rooms/rHub/rHub.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -71,8 +69,6 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_3BF4310","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oBoomerangItem","path":"objects/oBoomerangItem/oBoomerangItem.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":168.0,"y":1384.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_E290866","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oLightItem","path":"objects/oLightItem/oLightItem.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":184.0,"y":1384.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_7BA5A666","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oRankingSign","path":"objects/oRankingSign/oRankingSign.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1120.0,"y":1248.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_572F58C4","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oArmor","path":"objects/oArmor/oArmor.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":448.0,"y":1384.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_5B184C25","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oArmor","path":"objects/oArmor/oArmor.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":440.0,"y":1384.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"CoinVFX","depth":800,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"VFX","depth":900,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},

@@ -253,22 +253,22 @@ if(room != rTitle && room != rRunComplete)
 	{
 		if(global.overallCoins > 9999)
 		{
-			if(hudMod < 8) hudMod = 8;	
+			if(hudMod < 10) hudMod = 10;	
 		}
 		else if(global.overallCoins > 999)
 		{
-			if(hudMod < 2) hudMod = 2;
+			if(hudMod < 4) hudMod = 4;
 		}
 	}
 	else
 	{
 		if(global.coins > 9999)
 		{
-			if(hudMod < 8) hudMod = 8;	
+			if(hudMod < 10) hudMod = 10;	
 		}
 		else if(global.coins > 999)
 		{
-			if(hudMod < 2) hudMod = 2;
+			if(hudMod < 4) hudMod = 4;
 		}
 	}
 	
