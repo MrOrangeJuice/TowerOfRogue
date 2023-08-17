@@ -248,6 +248,30 @@ if(room != rTitle && room != rRunComplete)
 	// Add spacing to HUD
 	hudMod = 9 * (((global.maxHealth - 6) / 2) + global.armor);
 	if(hudMod < 0) hudMod = 0;
+	// Account for coins
+	if(room == rHub)
+	{
+		if(global.overallCoins > 9999)
+		{
+			if(hudMod < 8) hudMod = 8;	
+		}
+		else if(global.overallCoins > 999)
+		{
+			if(hudMod < 2) hudMod = 2;
+		}
+	}
+	else
+	{
+		if(global.coins > 9999)
+		{
+			if(hudMod < 8) hudMod = 8;	
+		}
+		else if(global.coins > 999)
+		{
+			if(hudMod < 2) hudMod = 2;
+		}
+	}
+	
 	// Draw HUD Background
 	//draw_sprite(sHUD,0,1,1);
 	draw_sprite(sHUDStart,0,1,1);
