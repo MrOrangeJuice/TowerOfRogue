@@ -1,41 +1,4 @@
-/// @description Reset
+/// @description Spawn "You Perished"
 
-// Reset run
-global.usedArray = [false,false,false,false,false];
-global.usedArray2 = [false,false,false,false,false];
-global.inARun = false;
-global.health = global.maxHealth;
-global.armor = 0;
-global.coins = 0;
-global.localCoins = 0;
-global.overallCoins += global.coinsThisRun;
-global.coinsThisRun = 0;
-global.localDamage = 0;
-global.item = -1;
-global.passiveItems = [];
-global.levelCount = 0;
-global.sideRoom = rTitle;
-global.shopRoom = rTitle;
-global.sideChestOpened = false;
-global.pipeSpawned = false;
-global.shopSpawned = false;
-global.pipeY = 0;
-global.shopY = 0;
-global.gobletCombo = 0;
-global.floor1Music = false;
-global.tutorialMusic = false;
-global.shopItem1 = -1;
-global.shopItem2 = -1;
-global.shopItem3 = -1;
-global.item1Bought = false;
-global.item2Bought = false;
-global.item3Bought = false;
-global.rerollTax = 0;
-global.ranks = ["D","D","D","D","D","D"];
-// Reset instance lists
-global.coinArray = ds_list_create();
-global.enemyArray = ds_list_create();
-
-Save();
-
-SlideTransition(TRANS_MODE.GOTO,rHub);
+drawYouPerished = true;
+audio_play_sound(snd_LevelIntro1,5,false);

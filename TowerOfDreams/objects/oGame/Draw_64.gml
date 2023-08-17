@@ -306,13 +306,14 @@ if(room != rTitle && room != rRunComplete)
 	// Draw Coins
 	coinTextScale = max(coinTextScale * .95, 1);
 	draw_set_halign(fa_left);
-	draw_sprite_stretched(sGem,0,7,15,8*coinTextScale,8*coinTextScale);
 	if(room == rHub)
 	{
+		draw_sprite_stretched(sChestUI,0,7,15,8*coinTextScale,8*coinTextScale);
 		draw_text_transformed(17,11,global.overallCoins,coinTextScale,coinTextScale,0);
 	}
 	else
 	{
+		draw_sprite_stretched(sGem,0,7,15,8*coinTextScale,8*coinTextScale);
 		draw_text_transformed(17,11,global.coins,coinTextScale,coinTextScale,0);
 	}
 	
