@@ -29,6 +29,7 @@
     {"name":"Sounds","order":2,"path":"folders/Sounds.yy",},
     {"name":"Music","order":25,"path":"folders/Sounds/Music.yy",},
     {"name":"Backgrounds","order":8,"path":"folders/Sprites/Backgrounds.yy",},
+    {"name":"Buildings","order":23,"path":"folders/Sprites/Buildings.yy",},
     {"name":"Collectables","order":12,"path":"folders/Sprites/Collectables.yy",},
     {"name":"Decorations","order":21,"path":"folders/Sprites/Decorations.yy",},
     {"name":"Enemies","order":17,"path":"folders/Sprites/Enemies.yy",},
@@ -51,7 +52,6 @@
     {"name":"Numbers","order":14,"path":"folders/Sprites/VFX/Numbers.yy",},
     {"name":"Tile Sets","order":1,"path":"folders/Tile Sets.yy",},
     {"name":"Timelines","order":7,"path":"folders/Timelines.yy",},
-    {"name":"Buildings","order":23,"path":"folders/Sprites/Buildings.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"sUseItemControllerFadeIn","order":16,"path":"sprites/sUseItemControllerFadeIn/sUseItemControllerFadeIn.yy",},

@@ -4,7 +4,7 @@ draw_set_halign(fa_center);
 
 if(drawYouPerished)
 {
-	draw_sprite(sYouPerished,0,128,display_get_gui_height()/2 - 56);
+	draw_sprite(sYouPerished,0,128,display_get_gui_height()/2 - 40);
 }
 
 if(drawGems)
