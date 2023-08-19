@@ -39,7 +39,7 @@ switch(global.pipeCount)
 	case 2:
 		image_speed = 0;
 		SlideTransition(TRANS_MODE.GOTO,global.originalRoom);
-		audio_stop_sound(msc_Chest);
+		audio_stop_sound(msc_Shop);
 		global.treasureMusic = false;
 		global.pipeCount++;
 		break;

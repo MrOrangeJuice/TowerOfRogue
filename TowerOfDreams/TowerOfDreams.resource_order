@@ -11,6 +11,7 @@
     {"name":"Level Objects","order":18,"path":"folders/Objects/Level Objects.yy",},
     {"name":"NPC","order":21,"path":"folders/Objects/NPC.yy",},
     {"name":"Pickups","order":17,"path":"folders/Objects/Pickups.yy",},
+    {"name":"Shop Items","order":27,"path":"folders/Objects/Shop Items.yy",},
     {"name":"Tutorials","order":6,"path":"folders/Objects/Tutorials.yy",},
     {"name":"UI","order":7,"path":"folders/Objects/UI.yy",},
     {"name":"VFX","order":3,"path":"folders/Objects/VFX.yy",},
@@ -52,7 +53,6 @@
     {"name":"Numbers","order":14,"path":"folders/Sprites/VFX/Numbers.yy",},
     {"name":"Tile Sets","order":1,"path":"folders/Tile Sets.yy",},
     {"name":"Timelines","order":7,"path":"folders/Timelines.yy",},
-    {"name":"Shop Items","order":27,"path":"folders/Objects/Shop Items.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"sUseItemControllerFadeIn","order":16,"path":"sprites/sUseItemControllerFadeIn/sUseItemControllerFadeIn.yy",},
@@ -194,6 +194,7 @@
     {"name":"sSageThumbnail","order":26,"path":"sprites/sSageThumbnail/sSageThumbnail.yy",},
     {"name":"sTankEnemyIdle","order":3,"path":"sprites/sTankEnemyIdle/sTankEnemyIdle.yy",},
     {"name":"sSlimeBlockRight","order":40,"path":"sprites/sSlimeBlockRight/sSlimeBlockRight.yy",},
+    {"name":"msc_HubShop","order":8,"path":"sounds/msc_HubShop/msc_HubShop.yy",},
     {"name":"oBoomerangParticle","order":20,"path":"objects/oBoomerangParticle/oBoomerangParticle.yy",},
     {"name":"sPlayerJumpGreen","order":17,"path":"sprites/sPlayerJumpGreen/sPlayerJumpGreen.yy",},
     {"name":"snd_Gem","order":4,"path":"sounds/snd_Gem/snd_Gem.yy",},
