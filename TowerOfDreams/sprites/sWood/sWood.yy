@@ -2,7 +2,7 @@
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "sWood",
-  "bbox_bottom": 15,
+  "bbox_bottom": 31,
   "bbox_left": 8,
   "bbox_right": 63,
   "bbox_top": 0,
