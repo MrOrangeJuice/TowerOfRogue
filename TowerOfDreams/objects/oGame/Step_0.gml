@@ -422,6 +422,8 @@ if(global.paused)
 					global.treasureMusic = false;
 					audio_stop_sound(msc_Hub);
 					global.hubMusic = false;
+					audio_stop_sound(msc_HubShop);
+					global.hubShopMusic = false;
 				}
 				else
 				{

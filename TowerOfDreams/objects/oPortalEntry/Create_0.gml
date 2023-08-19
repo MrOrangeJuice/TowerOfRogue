@@ -10,5 +10,7 @@ else
 	audio_play_sound(snd_Portal,5,false);
 	alarm[0] = room_speed * 0.25;
 	audio_stop_sound(msc_Hub);
+	audio_stop_sound(msc_HubShop);
 	global.hubMusic = false;
+	global.hubShopMusic = false;
 }
