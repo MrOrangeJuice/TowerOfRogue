@@ -100,6 +100,9 @@ switch(overallRank)
 			case "D":
 				global.bestOverall = overallRank;
 				break;
+			case "F":
+				global.bestOverall = overallRank;
+				break;
 		}
 		break;
 	case "B":
@@ -113,6 +116,10 @@ switch(overallRank)
 				break;
 			case "D":
 				global.bestOverall = overallRank;
+				break;
+			case "F":
+				global.bestOverall = overallRank;
+				break;
 		}
 		break;
 	case "C":
@@ -123,10 +130,22 @@ switch(overallRank)
 				break;
 			case "D":
 				global.bestOverall = overallRank;
-			break;
+				break;
+			case "F":
+				global.bestOverall = overallRank;
+				break;
 		}
+		break;
 	case "D":
-		if(global.bestOverall == "D") global.bestOverall = overallRank;
+		switch(global.bestOverall)
+		{
+			case "D":
+				global.bestOverall = overallRank;
+				break;
+			case "F":
+				global.bestOverall = overallRank;
+				break;
+		}
 		break;
 }
 

@@ -330,7 +330,7 @@ if(room != rTitle && room != rRunComplete)
 	// Draw Coins
 	coinTextScale = max(coinTextScale * .95, 1);
 	draw_set_halign(fa_left);
-	if(room == rHub)
+	if(room == rHub || room == rHubShop)
 	{
 		draw_sprite_stretched(sChestUI,0,7,15,8*coinTextScale,8*coinTextScale);
 		draw_text_transformed(17,11,global.overallCoins,coinTextScale,coinTextScale,0);
