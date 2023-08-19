@@ -474,6 +474,7 @@
     {"name":"sOptionsMenuDeletedSave","order":8,"path":"sprites/sOptionsMenuDeletedSave/sOptionsMenuDeletedSave.yy",},
     {"name":"sClouds2","order":7,"path":"sprites/sClouds2/sClouds2.yy",},
     {"name":"oCannon","order":4,"path":"objects/oCannon/oCannon.yy",},
+    {"name":"sFlyingHeart","order":4,"path":"sprites/sFlyingHeart/sFlyingHeart.yy",},
     {"name":"oPlayerBit","order":13,"path":"objects/oPlayerBit/oPlayerBit.yy",},
     {"name":"sBumper","order":1,"path":"sprites/sBumper/sBumper.yy",},
     {"name":"oCamera","order":1,"path":"objects/oCamera/oCamera.yy",},

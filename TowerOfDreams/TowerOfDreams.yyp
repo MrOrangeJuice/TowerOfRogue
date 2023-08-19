@@ -522,6 +522,7 @@
     {"id":{"name":"oEnemy","path":"objects/oEnemy/oEnemy.yy",},},
     {"id":{"name":"sClouds2","path":"sprites/sClouds2/sClouds2.yy",},},
     {"id":{"name":"oCannon","path":"objects/oCannon/oCannon.yy",},},
+    {"id":{"name":"sFlyingHeart","path":"sprites/sFlyingHeart/sFlyingHeart.yy",},},
     {"id":{"name":"oPlayerBit","path":"objects/oPlayerBit/oPlayerBit.yy",},},
     {"id":{"name":"rShop","path":"rooms/rShop/rShop.yy",},},
     {"id":{"name":"sBumper","path":"sprites/sBumper/sBumper.yy",},},
