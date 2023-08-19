@@ -112,6 +112,7 @@
     {"id":{"name":"sBumperRails","path":"sprites/sBumperRails/sBumperRails.yy",},},
     {"id":{"name":"oPlayerLava","path":"objects/oPlayerLava/oPlayerLava.yy",},},
     {"id":{"name":"oRedPortal","path":"objects/oRedPortal/oRedPortal.yy",},},
+    {"id":{"name":"sPlant","path":"sprites/sPlant/sPlant.yy",},},
     {"id":{"name":"oBallEnemyElite","path":"objects/oBallEnemyElite/oBallEnemyElite.yy",},},
     {"id":{"name":"snd_Impact","path":"sounds/snd_Impact/snd_Impact.yy",},},
     {"id":{"name":"oGame","path":"objects/oGame/oGame.yy",},},

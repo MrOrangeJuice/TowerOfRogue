@@ -91,6 +91,7 @@
     {"name":"sBumperRails","order":3,"path":"sprites/sBumperRails/sBumperRails.yy",},
     {"name":"oPlayerLava","order":23,"path":"objects/oPlayerLava/oPlayerLava.yy",},
     {"name":"oRedPortal","order":22,"path":"objects/oRedPortal/oRedPortal.yy",},
+    {"name":"sPlant","order":3,"path":"sprites/sPlant/sPlant.yy",},
     {"name":"oBallEnemyElite","order":17,"path":"objects/oBallEnemyElite/oBallEnemyElite.yy",},
     {"name":"snd_Impact","order":3,"path":"sounds/snd_Impact/snd_Impact.yy",},
     {"name":"oGame","order":4,"path":"objects/oGame/oGame.yy",},
