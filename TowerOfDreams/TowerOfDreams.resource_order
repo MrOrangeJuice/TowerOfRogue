@@ -199,6 +199,7 @@
     {"name":"snd_Crit","order":23,"path":"sounds/snd_Crit/snd_Crit.yy",},
     {"name":"sMissileLeftDown","order":2,"path":"sprites/sMissileLeftDown/sMissileLeftDown.yy",},
     {"name":"sStart","order":5,"path":"sprites/sStart/sStart.yy",},
+    {"name":"sCustomer","order":7,"path":"sprites/sCustomer/sCustomer.yy",},
     {"name":"TakeDamage","order":2,"path":"scripts/TakeDamage/TakeDamage.yy",},
     {"name":"sGrass","order":1,"path":"sprites/sGrass/sGrass.yy",},
     {"name":"sItemBubble","order":9,"path":"sprites/sItemBubble/sItemBubble.yy",},

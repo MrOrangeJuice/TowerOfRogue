@@ -227,6 +227,7 @@
     {"id":{"name":"rFloor1_1","path":"rooms/rFloor1_1/rFloor1_1.yy",},},
     {"id":{"name":"sMissileLeftDown","path":"sprites/sMissileLeftDown/sMissileLeftDown.yy",},},
     {"id":{"name":"sStart","path":"sprites/sStart/sStart.yy",},},
+    {"id":{"name":"sCustomer","path":"sprites/sCustomer/sCustomer.yy",},},
     {"id":{"name":"TakeDamage","path":"scripts/TakeDamage/TakeDamage.yy",},},
     {"id":{"name":"sGrass","path":"sprites/sGrass/sGrass.yy",},},
     {"id":{"name":"sItemBubble","path":"sprites/sItemBubble/sItemBubble.yy",},},
