@@ -161,6 +161,7 @@
     {"name":"sHealthGetVFX","order":15,"path":"sprites/sHealthGetVFX/sHealthGetVFX.yy",},
     {"name":"oBallPipeLeft","order":25,"path":"objects/oBallPipeLeft/oBallPipeLeft.yy",},
     {"name":"sBG2","order":1,"path":"sprites/sBG2/sBG2.yy",},
+    {"name":"sPillar","order":8,"path":"sprites/sPillar/sPillar.yy",},
     {"name":"sThanks","order":17,"path":"sprites/sThanks/sThanks.yy",},
     {"name":"snd_Portal","order":7,"path":"sounds/snd_Portal/snd_Portal.yy",},
     {"name":"sBlockBOff","order":27,"path":"sprites/sBlockBOff/sBlockBOff.yy",},

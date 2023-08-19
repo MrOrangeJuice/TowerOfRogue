@@ -185,6 +185,7 @@
     {"id":{"name":"sHealthGetVFX","path":"sprites/sHealthGetVFX/sHealthGetVFX.yy",},},
     {"id":{"name":"oBallPipeLeft","path":"objects/oBallPipeLeft/oBallPipeLeft.yy",},},
     {"id":{"name":"sBG2","path":"sprites/sBG2/sBG2.yy",},},
+    {"id":{"name":"sPillar","path":"sprites/sPillar/sPillar.yy",},},
     {"id":{"name":"rFloor2_1","path":"rooms/rFloor2_1/rFloor2_1.yy",},},
     {"id":{"name":"sThanks","path":"sprites/sThanks/sThanks.yy",},},
     {"id":{"name":"snd_Portal","path":"sounds/snd_Portal/snd_Portal.yy",},},
