@@ -249,7 +249,7 @@ if(room != rTitle && room != rRunComplete)
 	hudMod = 9 * (((global.maxHealth - 6) / 2) + global.armor);
 	if(hudMod < 0) hudMod = 0;
 	// Account for coins
-	if(room == rHub)
+	if(room == rHub || room == rHubShop)
 	{
 		if(global.overallCoins > 9999)
 		{
