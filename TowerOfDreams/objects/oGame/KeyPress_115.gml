@@ -1,5 +1,5 @@
 /// @description Coin cheat
-if(room == rHub)
+if(room == rHub || room == rHubShop)
 {
 	global.overallCoins += 50;
 	audio_play_sound(snd_SwordGet,5,false);	

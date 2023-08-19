@@ -119,6 +119,10 @@ volumeArrows = true;
 
 Load();
 
+// Change max health depending on what was loaded
+global.maxHealth += (global.healthUpgrades * 2);
+global.health += (global.healthUpgrades * 2);
+
 // If save file doesn't have new stuff, add them in
 if(global.best1_1 == "0")
 {
