@@ -318,6 +318,7 @@
     {"name":"sHeartVFX","order":11,"path":"sprites/sHeartVFX/sHeartVFX.yy",},
     {"name":"sRunCompleteIntro","order":28,"path":"sprites/sRunCompleteIntro/sRunCompleteIntro.yy",},
     {"name":"sDustWall","order":2,"path":"sprites/sDustWall/sDustWall.yy",},
+    {"name":"sMessageBoxSmall","order":34,"path":"sprites/sMessageBoxSmall/sMessageBoxSmall.yy",},
     {"name":"sHoldJumpController","order":10,"path":"sprites/sHoldJumpController/sHoldJumpController.yy",},
     {"name":"oShopBag","order":2,"path":"objects/oShopBag/oShopBag.yy",},
     {"name":"msc_Shop","order":3,"path":"sounds/msc_Shop/msc_Shop.yy",},

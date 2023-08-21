@@ -353,6 +353,7 @@
     {"id":{"name":"sHeartVFX","path":"sprites/sHeartVFX/sHeartVFX.yy",},},
     {"id":{"name":"sRunCompleteIntro","path":"sprites/sRunCompleteIntro/sRunCompleteIntro.yy",},},
     {"id":{"name":"sDustWall","path":"sprites/sDustWall/sDustWall.yy",},},
+    {"id":{"name":"sMessageBoxSmall","path":"sprites/sMessageBoxSmall/sMessageBoxSmall.yy",},},
     {"id":{"name":"sHoldJumpController","path":"sprites/sHoldJumpController/sHoldJumpController.yy",},},
     {"id":{"name":"oShopBag","path":"objects/oShopBag/oShopBag.yy",},},
     {"id":{"name":"msc_Shop","path":"sounds/msc_Shop/msc_Shop.yy",},},
