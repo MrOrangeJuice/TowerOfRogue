@@ -10,7 +10,7 @@
   "bitRate": 128,
   "compression": 0,
   "conversionMode": 0,
-  "duration": 192.41795,
+  "duration": 198.42609,
   "parent": {
     "name": "Music",
     "path": "folders/Sounds/Music.yy",
@@ -19,5 +19,5 @@
   "sampleRate": 44100,
   "soundFile": "msc_TitleScreen.mp3",
   "type": 0,
-  "volume": 0.3,
+  "volume": 0.5,
 }
