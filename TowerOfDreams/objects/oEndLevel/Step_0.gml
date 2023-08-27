@@ -23,6 +23,7 @@ if(gamepad_button_check(0,gp_face1) || gamepad_button_check(4,gp_face1))
 if(key_select_pressed && !levelProgressed)
 {
 	audio_play_sound(snd_MenuSelect,5,false);
+	audio_stop_sound(snd_GemLoop);
 	// Reset side room
 	global.sideRoom = rTitle;
 	global.shopRoom = rTitle;

@@ -25,6 +25,7 @@ if(gamepad_button_check(0,gp_face1) || gamepad_button_check(4,gp_face1))
 if(key_select_pressed)
 {
 	audio_play_sound(snd_MenuSelect,5,false);
+	audio_stop_sound(snd_GemLoop);
 	// Reset run
 	global.usedArray = [false,false,false,false,false];
 	global.usedArray2 = [false,false,false,false,false];
