@@ -1219,30 +1219,30 @@ if(!global.paused && !global.hitStop)
 	{
 		if(chargeSlash)
 		{
-			sprite_index = sPlayerSlashDouble;	
+			sprite_index = doubleSlashSprite;	
 		}
 		else
 		{
-			sprite_index = sPlayerSlashSmall;	
+			sprite_index = slashSprite;	
 		}
 	}
 	else if(hit)
 	{
-		sprite_index = sPlayerHit;	
+		sprite_index = hitSprite;	
 	}
 	else if(wallSliding)
 	{
-		sprite_index = sPlayerWallSlide;	
+		sprite_index = wallSprite;	
 	}
 	else if(airborne && !landing)
 	{
 		if (vsp <= 0) 
 		{
-			sprite_index = sPlayerJump;
+			sprite_index = jumpSprite;
 		}
 		if (vsp > 0)
 		{
-			sprite_index = sPlayerFall;
+			sprite_index = fallSprite;
 		}
 	}
 	else if(!landing)
@@ -1257,16 +1257,16 @@ if(!global.paused && !global.hitStop)
 			{
 				image_speed = 1;	
 			}
-			sprite_index = sPlayerRun;
+			sprite_index = runSprite;
 		}
 		else
 		{
-			sprite_index = sPlayerIdle;
+			sprite_index = idleSprite;
 		}
 	}
 	else if(landing)
 	{
-		sprite_index = sPlayerLand;	
+		sprite_index = landSprite;	
 	}
 
 	if (hsp != 0 && !slashing && !hit) image_xscale = sign(hsp);

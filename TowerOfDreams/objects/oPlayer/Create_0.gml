@@ -39,3 +39,53 @@ chargeSlash = false;
 dashing = false;
 airDash = false;
 dashOver = false;
+
+// Sprites
+idleSprite = sPlayerIdle;
+runSprite = sPlayerRun;
+jumpSprite = sPlayerJump;
+fallSprite = sPlayerFall;
+slashSprite = sPlayerSlashSmall;
+doubleSlashSprite = sPlayerSlashDouble;
+hitSprite = sPlayerHit;
+wallSprite = sPlayerWallSlide;
+landSprite = sPlayerLand;
+
+
+// Skin
+switch(global.palette)
+{
+	case 0:
+		idleSprite = sPlayerIdle;
+		runSprite = sPlayerRun;
+		jumpSprite = sPlayerJump;
+		fallSprite = sPlayerFall;
+		slashSprite = sPlayerSlashSmall;
+		doubleSlashSprite = sPlayerSlashDouble;
+		hitSprite = sPlayerHit;
+		wallSprite = sPlayerWallSlide;
+		landSprite = sPlayerLand;
+		break;
+	case 1:
+		idleSprite = sPlayerIdleRed;
+		runSprite = sPlayerRunRed;
+		jumpSprite = sPlayerJumpRed;
+		fallSprite = sPlayerFallRed;
+		slashSprite = sPlayerSlashSmallRed;
+		doubleSlashSprite = sPlayerSlashDoubleRed;
+		hitSprite = sPlayerHitRed;
+		wallSprite = sPlayerWallSlideRed;
+		landSprite = sPlayerLandRed;
+		break;
+	case 2:
+		idleSprite = sPlayerIdleGreen;
+		runSprite = sPlayerRunGreen;
+		jumpSprite = sPlayerJumpGreenSkin;
+		fallSprite = sPlayerFallGreen;
+		slashSprite = sPlayerSlashSmallGreen;
+		doubleSlashSprite = sPlayerSlashDoubleGreen;
+		hitSprite = sPlayerHitGreen;
+		wallSprite = sPlayerWallSlideGreen;
+		landSprite = sPlayerLandGreen;
+		break;
+}

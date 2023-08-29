@@ -87,6 +87,9 @@ global.best2_2 = "F";
 global.best2_3 = "F";
 global.bestOverall = "F";
 
+// Armor sets
+global.palette = 0;
+
 // Determine default resolution
 if(display_get_width() / display_get_height() == 1.6)
 {

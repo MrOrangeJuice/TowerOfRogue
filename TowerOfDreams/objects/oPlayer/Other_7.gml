@@ -2,12 +2,12 @@
 // You can write your code in this editor
 
 
-if (sprite_index == sPlayerLand)
+if (sprite_index == landSprite)
 {
 	landing = false;
 }
 
-if (sprite_index == sPlayerSlashSmall)
+if (sprite_index == slashSprite)
 {
 	// Set slash cooldown
 	canSlash = false;
@@ -16,7 +16,7 @@ if (sprite_index == sPlayerSlashSmall)
 	hasSlashJumped = false;
 }
 
-if (sprite_index == sPlayerSlashDouble)
+if (sprite_index == doubleSlashSprite)
 {
 	// Set slash cooldown
 	canSlash = false;
