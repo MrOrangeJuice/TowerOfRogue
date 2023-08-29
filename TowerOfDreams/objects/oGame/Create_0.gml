@@ -89,6 +89,8 @@ global.bestOverall = "F";
 
 // Armor sets
 global.palette = 0;
+global.redUnlocked = false;
+global.greenUnlocked = false;
 
 // Determine default resolution
 if(display_get_width() / display_get_height() == 1.6)
@@ -141,5 +143,7 @@ if(global.best1_1 == "0")
 	global.bestOverall = "F";
 	global.overallCoins = 0;
 	global.healthUpgrades = 0;
+	global.redUnlocked = false;
+	global.greenUnlocked = false;
 	Save();
 }

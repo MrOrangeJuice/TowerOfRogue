@@ -231,6 +231,9 @@ if(room == rTitle)
 				global.bestOverall = "F";
 				global.overallCoins = 0;
 				global.healthUpgrades = 0;
+				global.redUnlocked = false;
+				global.greenUnlocked = false;
+				global.palette = 0;
 				global.maxHealth = 6;
 				global.health = 6;
 				// Make new default file
