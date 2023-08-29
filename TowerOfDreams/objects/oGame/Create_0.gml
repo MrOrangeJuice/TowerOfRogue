@@ -145,5 +145,6 @@ if(global.best1_1 == "0")
 	global.healthUpgrades = 0;
 	global.redUnlocked = false;
 	global.greenUnlocked = false;
+	global.palette = 0;
 	Save();
 }

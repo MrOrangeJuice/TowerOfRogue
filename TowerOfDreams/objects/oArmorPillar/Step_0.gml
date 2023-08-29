@@ -58,12 +58,14 @@ if(place_meeting(x,y,oPlayer))
 				global.palette = 0;
 				ChangePlayerSkin();
 				audio_play_sound(snd_UpgradeMaxHealth,5,false);
+				Save();
 			}
 			else
 			{
 				global.palette = paletteNum;
 				ChangePlayerSkin();
 				audio_play_sound(snd_UpgradeMaxHealth,5,false);
+				Save();
 			}
 		}
 	}

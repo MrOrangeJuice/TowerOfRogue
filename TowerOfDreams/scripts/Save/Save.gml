@@ -17,5 +17,6 @@ function Save(){
 	ini_write_real("savegame", "healthUpgrades", global.healthUpgrades);
 	ini_write_real("savegame", "redUnlocked", global.redUnlocked);
 	ini_write_real("savegame", "greenUnlocked", global.greenUnlocked);
+	ini_write_real("savegame", "palette", global.palette);
 	ini_close();
 }
