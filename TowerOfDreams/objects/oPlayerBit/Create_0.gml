@@ -10,3 +10,16 @@ grv = 0.15;
 
 // Set despawn timer
 alarm[0] = room_speed * 2;
+
+switch(global.palette)
+{
+	case 0:
+		sprite_index = sPlayerBit;
+		break;
+	case 1:
+		sprite_index = sPlayerBitRed;
+		break;
+	case 2:
+		sprite_index = sPlayerBitGreen;
+		break;
+}
