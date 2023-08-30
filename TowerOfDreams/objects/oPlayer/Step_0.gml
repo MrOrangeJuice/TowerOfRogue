@@ -665,14 +665,14 @@ if(!global.paused && !global.hitStop)
 						{
 							// Grant 10 gems for a half-overheal
 							global.coins += 10;
-							if(instance_exists(oPlayer)) instance_create_layer(oPlayer.x,oPlayer.y-8,"Instances",o10);
+							instance_create_layer(x,y-8,"Instances",o10);
 							audio_play_sound(snd_Overheal,5,false);
 						}
 						else if(global.health > global.maxHealth + 1)
 						{
 							// Grant a max of 20 gems for a full-overheal
 							global.coins += 20;
-							if(instance_exists(oPlayer)) instance_create_layer(oPlayer.x,oPlayer.y-8,"Instances",o20);
+							instance_create_layer(x,y-8,"Instances",o20);
 							audio_play_sound(snd_Overheal,5,false);
 						}
 						if(global.health > global.maxHealth) global.health = global.maxHealth;
