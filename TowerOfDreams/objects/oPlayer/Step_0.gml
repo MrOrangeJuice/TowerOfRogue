@@ -656,6 +656,28 @@ if(!global.paused && !global.hitStop)
 				if(critChance <= 5 + (25 * crit))
 				{
 					enemy.hp -= (2 + critPB) * (1 + rageDamage + chargeNum);
+					// Heal from peanut butter
+					if(critPB > 0 && enemy.givesHealth)
+					{
+						global.health += critPB;
+						// Overheal gems
+						if(global.health == global.maxHealth + 1)
+						{
+							// Grant 10 gems for a half-overheal
+							global.coins += 10;
+							if(instance_exists(oPlayer)) instance_create_layer(oPlayer.x,oPlayer.y-8,"Instances",o10);
+							audio_play_sound(snd_Overheal,5,false);
+						}
+						else if(global.health > global.maxHealth + 1)
+						{
+							// Grant a max of 20 gems for a full-overheal
+							global.coins += 20;
+							if(instance_exists(oPlayer)) instance_create_layer(oPlayer.x,oPlayer.y-8,"Instances",o20);
+							audio_play_sound(snd_Overheal,5,false);
+						}
+						if(global.health > global.maxHealth) global.health = global.maxHealth;
+						audio_play_sound(snd_Heal,5,false);
+					}
 					instance_create_layer(enemy.x,enemy.y-10,"Instances",oCritVFX);
 					ScreenShake(4,12);
 					audio_play_sound(snd_Crit,5,false);
