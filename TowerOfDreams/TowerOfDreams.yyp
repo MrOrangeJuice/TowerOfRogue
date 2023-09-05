@@ -622,6 +622,7 @@
     {"id":{"name":"oDustSlash","path":"objects/oDustSlash/oDustSlash.yy",},},
     {"id":{"name":"oColaItem","path":"objects/oColaItem/oColaItem.yy",},},
     {"id":{"name":"sPlayerPortalReverse","path":"sprites/sPlayerPortalReverse/sPlayerPortalReverse.yy",},},
+    {"id":{"name":"rFloor2_4","path":"rooms/rFloor2_4/rFloor2_4.yy",},},
     {"id":{"name":"oThanks","path":"objects/oThanks/oThanks.yy",},},
     {"id":{"name":"sPlayerJumpRed","path":"sprites/sPlayerJumpRed/sPlayerJumpRed.yy",},},
     {"id":{"name":"sGroundEnemy","path":"sprites/sGroundEnemy/sGroundEnemy.yy",},},
@@ -706,6 +707,7 @@
     {"roomId":{"name":"rFloor1_5","path":"rooms/rFloor1_5/rFloor1_5.yy",},},
     {"roomId":{"name":"rRunComplete","path":"rooms/rRunComplete/rRunComplete.yy",},},
     {"roomId":{"name":"rHubShop","path":"rooms/rHubShop/rHubShop.yy",},},
+    {"roomId":{"name":"rFloor2_4","path":"rooms/rFloor2_4/rFloor2_4.yy",},},
   ],
   "TextureGroups": [
     {"resourceType":"GMTextureGroup","resourceVersion":"1.3","name":"Default","autocrop":true,"border":2,"compressFormat":"bz2","directory":"","groupParent":null,"isScaled":true,"loadType":"default","mipsToGenerate":0,"targets":-1,},
