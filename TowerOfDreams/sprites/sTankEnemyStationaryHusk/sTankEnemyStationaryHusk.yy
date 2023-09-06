@@ -1,7 +1,7 @@
 {
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
-  "name": "sTankEnemyStationary",
+  "name": "sTankEnemyStationaryHusk",
   "bbox_bottom": 19,
   "bbox_left": 0,
   "bbox_right": 21,
@@ -28,14 +28,14 @@
   "nineSlice": null,
   "origin": 4,
   "parent": {
-    "name": "Tank Enemy Stationary",
-    "path": "folders/Sprites/Enemies/Tank Enemy Stationary.yy",
+    "name": "Tank Enemy Stationary Husk",
+    "path": "folders/Sprites/Enemies/Tank Enemy Stationary Husk.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
     "resourceType": "GMSequence",
     "resourceVersion": "1.4",
-    "name": "sTankEnemyStationary",
+    "name": "sTankEnemyStationaryHusk",
     "autoRecord": true,
     "backdropHeight": 768,
     "backdropImageOpacity": 0.5,
@@ -57,10 +57,10 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"c6dff1b5-c334-478e-9dc4-69193b9057f0","path":"sprites/sTankEnemyStationary/sTankEnemyStationary.yy",},},},"Disabled":false,"id":"cf2e7ce1-52e2-40a1-930d-4107833d5034","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"03b2f5d8-406f-430a-ab5f-7b79d28991d7","path":"sprites/sTankEnemyStationary/sTankEnemyStationary.yy",},},},"Disabled":false,"id":"e7282cce-8d9d-43ff-b8b2-9b69691b31fa","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"99d2e9b3-ee0a-4123-89e8-fd08cc3f1bdf","path":"sprites/sTankEnemyStationary/sTankEnemyStationary.yy",},},},"Disabled":false,"id":"1916c184-7663-43d3-ad2c-05fe866e90ac","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"b916c790-0dce-4e2a-9e25-2e00ec431273","path":"sprites/sTankEnemyStationary/sTankEnemyStationary.yy",},},},"Disabled":false,"id":"adcbee28-8f05-4b4b-8701-b8c37634afa3","IsCreationKey":false,"Key":3.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"c6dff1b5-c334-478e-9dc4-69193b9057f0","path":"sprites/sTankEnemyStationaryHusk/sTankEnemyStationaryHusk.yy",},},},"Disabled":false,"id":"f1f9a369-0095-43d0-8f26-b0324c652cbd","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"03b2f5d8-406f-430a-ab5f-7b79d28991d7","path":"sprites/sTankEnemyStationaryHusk/sTankEnemyStationaryHusk.yy",},},},"Disabled":false,"id":"3f119738-45a6-4aea-ada5-9d47ec3a6462","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"99d2e9b3-ee0a-4123-89e8-fd08cc3f1bdf","path":"sprites/sTankEnemyStationaryHusk/sTankEnemyStationaryHusk.yy",},},},"Disabled":false,"id":"eb1fae94-da7c-4846-ac64-7806e203b872","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"b916c790-0dce-4e2a-9e25-2e00ec431273","path":"sprites/sTankEnemyStationaryHusk/sTankEnemyStationaryHusk.yy",},},},"Disabled":false,"id":"ae92dfc4-eb1b-44b7-88c3-cf13cdc6c6f9","IsCreationKey":false,"Key":3.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
