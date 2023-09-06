@@ -1,0 +1,43 @@
+{
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "oTankEnemyStationary",
+  "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":7,"eventType":7,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,},
+  ],
+  "managed": true,
+  "overriddenProperties": [
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oCannon","path":"objects/oCannon/oCannon.yy",},"propertyId":{"name":"dir","path":"objects/oCannon/oCannon.yy",},"value":"1",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oCannon","path":"objects/oCannon/oCannon.yy",},"propertyId":{"name":"fireGap","path":"objects/oCannon/oCannon.yy",},"value":"3",},
+  ],
+  "parent": {
+    "name": "Enemies",
+    "path": "folders/Objects/Enemies.yy",
+  },
+  "parentObjectId": {
+    "name": "oCannon",
+    "path": "objects/oCannon/oCannon.yy",
+  },
+  "persistent": false,
+  "physicsAngularDamping": 0.1,
+  "physicsDensity": 0.5,
+  "physicsFriction": 0.2,
+  "physicsGroup": 1,
+  "physicsKinematic": false,
+  "physicsLinearDamping": 0.1,
+  "physicsObject": false,
+  "physicsRestitution": 0.1,
+  "physicsSensor": false,
+  "physicsShape": 1,
+  "physicsShapePoints": [],
+  "physicsStartAwake": true,
+  "properties": [],
+  "solid": false,
+  "spriteId": {
+    "name": "sTankEnemyStationary",
+    "path": "sprites/sTankEnemyStationary/sTankEnemyStationary.yy",
+  },
+  "spriteMaskId": null,
+  "visible": true,
+}

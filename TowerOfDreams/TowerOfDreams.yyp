@@ -130,6 +130,7 @@
     {"id":{"name":"oChest","path":"objects/oChest/oChest.yy",},},
     {"id":{"name":"sPlayerIdle","path":"sprites/sPlayerIdle/sPlayerIdle.yy",},},
     {"id":{"name":"oHeartVFX","path":"objects/oHeartVFX/oHeartVFX.yy",},},
+    {"id":{"name":"oTankEnemyStationary","path":"objects/oTankEnemyStationary/oTankEnemyStationary.yy",},},
     {"id":{"name":"oUpConveyer","path":"objects/oUpConveyer/oUpConveyer.yy",},},
     {"id":{"name":"sPlayerSlashSmall","path":"sprites/sPlayerSlashSmall/sPlayerSlashSmall.yy",},},
     {"id":{"name":"oSlimeBlock","path":"objects/oSlimeBlock/oSlimeBlock.yy",},},
