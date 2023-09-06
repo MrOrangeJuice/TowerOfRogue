@@ -270,6 +270,7 @@
     {"name":"oChargeItem","order":24,"path":"objects/oChargeItem/oChargeItem.yy",},
     {"name":"sDummy","order":9,"path":"sprites/sDummy/sDummy.yy",},
     {"name":"PickSideArea","order":6,"path":"scripts/PickSideArea/PickSideArea.yy",},
+    {"name":"oTankEnemyStationaryHusk","order":19,"path":"objects/oTankEnemyStationaryHusk/oTankEnemyStationaryHusk.yy",},
     {"name":"snd_Damage","order":13,"path":"sounds/snd_Damage/snd_Damage.yy",},
     {"name":"sSlimeBlockDestroy","order":38,"path":"sprites/sSlimeBlockDestroy/sSlimeBlockDestroy.yy",},
     {"name":"oJumpTutorial","order":2,"path":"objects/oJumpTutorial/oJumpTutorial.yy",},

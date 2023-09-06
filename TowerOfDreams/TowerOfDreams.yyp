@@ -302,6 +302,7 @@
     {"id":{"name":"oChargeItem","path":"objects/oChargeItem/oChargeItem.yy",},},
     {"id":{"name":"sDummy","path":"sprites/sDummy/sDummy.yy",},},
     {"id":{"name":"PickSideArea","path":"scripts/PickSideArea/PickSideArea.yy",},},
+    {"id":{"name":"oTankEnemyStationaryHusk","path":"objects/oTankEnemyStationaryHusk/oTankEnemyStationaryHusk.yy",},},
     {"id":{"name":"snd_Damage","path":"sounds/snd_Damage/snd_Damage.yy",},},
     {"id":{"name":"sSlimeBlockDestroy","path":"sprites/sSlimeBlockDestroy/sSlimeBlockDestroy.yy",},},
     {"id":{"name":"oJumpTutorial","path":"objects/oJumpTutorial/oJumpTutorial.yy",},},
