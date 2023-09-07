@@ -9,7 +9,7 @@
   "managed": true,
   "overriddenProperties": [
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oCannon","path":"objects/oCannon/oCannon.yy",},"propertyId":{"name":"dir","path":"objects/oCannon/oCannon.yy",},"value":"1",},
-    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oCannon","path":"objects/oCannon/oCannon.yy",},"propertyId":{"name":"fireGap","path":"objects/oCannon/oCannon.yy",},"value":"3",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oCannon","path":"objects/oCannon/oCannon.yy",},"propertyId":{"name":"fireGap","path":"objects/oCannon/oCannon.yy",},"value":"2",},
   ],
   "parent": {
     "name": "Enemies",

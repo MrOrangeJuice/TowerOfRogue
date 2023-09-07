@@ -36,5 +36,5 @@
     "path": "sprites/sLavaDebug/sLavaDebug.yy",
   },
   "spriteMaskId": null,
-  "visible": false,
+  "visible": true,
 }
