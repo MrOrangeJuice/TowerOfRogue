@@ -196,6 +196,7 @@
     {"id":{"name":"sPortalExit","path":"sprites/sPortalExit/sPortalExit.yy",},},
     {"id":{"name":"IsOnScreen","path":"scripts/IsOnScreen/IsOnScreen.yy",},},
     {"id":{"name":"oCritVFX","path":"objects/oCritVFX/oCritVFX.yy",},},
+    {"id":{"name":"rFloor1_6","path":"rooms/rFloor1_6/rFloor1_6.yy",},},
     {"id":{"name":"sHealthGetVFX","path":"sprites/sHealthGetVFX/sHealthGetVFX.yy",},},
     {"id":{"name":"oBallPipeLeft","path":"objects/oBallPipeLeft/oBallPipeLeft.yy",},},
     {"id":{"name":"sBG2","path":"sprites/sBG2/sBG2.yy",},},
@@ -720,6 +721,7 @@
     {"roomId":{"name":"rRunComplete","path":"rooms/rRunComplete/rRunComplete.yy",},},
     {"roomId":{"name":"rHubShop","path":"rooms/rHubShop/rHubShop.yy",},},
     {"roomId":{"name":"rFloor2_4","path":"rooms/rFloor2_4/rFloor2_4.yy",},},
+    {"roomId":{"name":"rFloor1_6","path":"rooms/rFloor1_6/rFloor1_6.yy",},},
   ],
   "templateType": null,
   "TextureGroups": [

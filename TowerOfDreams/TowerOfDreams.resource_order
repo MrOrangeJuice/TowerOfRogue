@@ -171,6 +171,7 @@
     {"name":"sPortalExit","order":4,"path":"sprites/sPortalExit/sPortalExit.yy",},
     {"name":"IsOnScreen","order":8,"path":"scripts/IsOnScreen/IsOnScreen.yy",},
     {"name":"oCritVFX","order":16,"path":"objects/oCritVFX/oCritVFX.yy",},
+    {"name":"rFloor1_6","order":5,"path":"rooms/rFloor1_6/rFloor1_6.yy",},
     {"name":"sHealthGetVFX","order":15,"path":"sprites/sHealthGetVFX/sHealthGetVFX.yy",},
     {"name":"oBallPipeLeft","order":25,"path":"objects/oBallPipeLeft/oBallPipeLeft.yy",},
     {"name":"sBG2","order":1,"path":"sprites/sBG2/sBG2.yy",},
