@@ -1,7 +1,7 @@
 {
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
-  "name": "sMushroomJump",
+  "name": "sMushroomJumpOld",
   "bbox_bottom": 17,
   "bbox_left": 0,
   "bbox_right": 17,
@@ -13,6 +13,7 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"5dbcc4b7-f681-4d09-a212-3a1ce5f5da5f",},
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"73d4ce49-fe69-4e2f-9fbe-03e8421390d8",},
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"70c4dc47-a667-4864-8bdd-abb174e24159",},
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"aa12c429-2f55-42c5-a714-730ca628f67c",},
@@ -34,7 +35,7 @@
   "sequence": {
     "resourceType": "GMSequence",
     "resourceVersion": "1.4",
-    "name": "sMushroomJump",
+    "name": "sMushroomJumpOld",
     "autoRecord": true,
     "backdropHeight": 768,
     "backdropImageOpacity": 0.5,
@@ -45,7 +46,7 @@
     "events": {"resourceType":"KeyframeStore<MessageEventKeyframe>","resourceVersion":"1.0","Keyframes":[],},
     "eventStubScript": null,
     "eventToFunction": {},
-    "length": 3.0,
+    "length": 4.0,
     "lockOrigin": false,
     "moments": {"resourceType":"KeyframeStore<MomentsEventKeyframe>","resourceVersion":"1.0","Keyframes":[],},
     "playback": 1,
@@ -56,9 +57,10 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"73d4ce49-fe69-4e2f-9fbe-03e8421390d8","path":"sprites/sMushroomJump/sMushroomJump.yy",},},},"Disabled":false,"id":"92833fba-7b34-4751-b737-1094eb20cb7a","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"70c4dc47-a667-4864-8bdd-abb174e24159","path":"sprites/sMushroomJump/sMushroomJump.yy",},},},"Disabled":false,"id":"0e7b2983-40fd-4766-8563-dd9606fed24c","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"aa12c429-2f55-42c5-a714-730ca628f67c","path":"sprites/sMushroomJump/sMushroomJump.yy",},},},"Disabled":false,"id":"993692aa-a72c-4a75-867e-326f2809b483","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"5dbcc4b7-f681-4d09-a212-3a1ce5f5da5f","path":"sprites/sMushroomJumpOld/sMushroomJumpOld.yy",},},},"Disabled":false,"id":"9848cf31-eb4b-4021-8294-9f98c9dd444d","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"73d4ce49-fe69-4e2f-9fbe-03e8421390d8","path":"sprites/sMushroomJumpOld/sMushroomJumpOld.yy",},},},"Disabled":false,"id":"1fe5b395-74b3-4920-98a7-70b662f7399d","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"70c4dc47-a667-4864-8bdd-abb174e24159","path":"sprites/sMushroomJumpOld/sMushroomJumpOld.yy",},},},"Disabled":false,"id":"a10fae7c-b14a-4b89-b0a6-65e15926d054","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"aa12c429-2f55-42c5-a714-730ca628f67c","path":"sprites/sMushroomJumpOld/sMushroomJumpOld.yy",},},},"Disabled":false,"id":"16c63d20-10dc-48e9-94c0-1c467b408646","IsCreationKey":false,"Key":3.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,

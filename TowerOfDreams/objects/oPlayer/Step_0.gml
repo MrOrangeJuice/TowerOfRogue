@@ -461,7 +461,16 @@ if(!global.paused && !global.hitStop)
 			}
 			bumper.image_speed = 1;
 			bumper.hit = true;
-			vsp = -3;	
+			if(bumper.object_index == oMushroom)
+			{
+				vsp = -5;
+				bumper.sprite_index = sMushroomJump;
+				bumper.image_index = 0;
+			}
+			else
+			{
+				vsp = -3;	
+			}
 			if(chargeSlash)
 			{
 				instance_create_layer(bumper.x+8,bumper.y,"VFX",oDustSlashBumperGreen);
