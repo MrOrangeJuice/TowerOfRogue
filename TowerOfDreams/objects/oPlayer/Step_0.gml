@@ -463,7 +463,7 @@ if(!global.paused && !global.hitStop)
 			bumper.hit = true;
 			if(bumper.object_index == oMushroom)
 			{
-				vsp = -5;
+				vsp = -4;
 				bumper.sprite_index = sMushroomJump;
 				bumper.image_index = 0;
 			}
