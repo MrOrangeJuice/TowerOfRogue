@@ -349,6 +349,7 @@
     {"name":"oShopBag","order":2,"path":"objects/oShopBag/oShopBag.yy",},
     {"name":"msc_Shop","order":3,"path":"sounds/msc_Shop/msc_Shop.yy",},
     {"name":"sUseItem","order":13,"path":"sprites/sUseItem/sUseItem.yy",},
+    {"name":"sFlyingEnemy","order":20,"path":"sprites/sFlyingEnemy/sFlyingEnemy.yy",},
     {"name":"sBlockB","order":26,"path":"sprites/sBlockB/sBlockB.yy",},
     {"name":"sSpikeBox","order":21,"path":"sprites/sSpikeBox/sSpikeBox.yy",},
     {"name":"sHeartUISmall","order":3,"path":"sprites/sHeartUISmall/sHeartUISmall.yy",},
