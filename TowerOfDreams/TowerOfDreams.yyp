@@ -478,6 +478,7 @@
     {"id":{"name":"oAxeItem","path":"objects/oAxeItem/oAxeItem.yy",},},
     {"id":{"name":"sBagUI","path":"sprites/sBagUI/sBagUI.yy",},},
     {"id":{"name":"oTitle","path":"objects/oTitle/oTitle.yy",},},
+    {"id":{"name":"oFlyingEnemy","path":"objects/oFlyingEnemy/oFlyingEnemy.yy",},},
     {"id":{"name":"sOverallRank","path":"sprites/sOverallRank/sOverallRank.yy",},},
     {"id":{"name":"sPlayerRunGreen","path":"sprites/sPlayerRunGreen/sPlayerRunGreen.yy",},},
     {"id":{"name":"sPlayerHitGreen","path":"sprites/sPlayerHitGreen/sPlayerHitGreen.yy",},},
