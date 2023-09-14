@@ -462,12 +462,14 @@ if(!global.paused && !global.hitStop)
 			bumper.image_speed = 1;
 			bumper.hit = true;
 			vfxMod = 0;
+			vfyMod = 0;
 			if(bumper.object_index == oMushroom)
 			{
 				vsp = -4;
 				bumper.sprite_index = sMushroomJump;
 				bumper.image_index = 0;
-				vfxMod = 1;
+				vfxMod = 8;
+				vfyMod = 10;
 			}
 			else
 			{
@@ -475,11 +477,11 @@ if(!global.paused && !global.hitStop)
 			}
 			if(chargeSlash)
 			{
-				instance_create_layer(bumper.x+8+vfxMod,bumper.y,"VFX",oDustSlashBumperGreen);
+				instance_create_layer(bumper.x+8-vfxMod,bumper.y-vfyMod,"VFX",oDustSlashBumperGreen);
 			}
 			else
 			{
-				instance_create_layer(bumper.x+8+vfxMod,bumper.y,"VFX",oDustSlashBumper);
+				instance_create_layer(bumper.x+8-vfxMod,bumper.y-vfyMod,"VFX",oDustSlashBumper);
 			}
 			airborne = true;
 			hasSlashed = true;
