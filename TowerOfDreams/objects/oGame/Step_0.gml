@@ -225,9 +225,11 @@ if(room == rTitle)
 				global.best1_3 = "F";
 				global.best1_4 = "F";
 				global.best1_5 = "F";
+				global.best1_6 = "F";
 				global.best2_1 = "F";
 				global.best2_2 = "F";
 				global.best2_3 = "F";
+				global.best2_4 = "F";
 				global.bestOverall = "F";
 				global.overallCoins = 0;
 				global.healthUpgrades = 0;

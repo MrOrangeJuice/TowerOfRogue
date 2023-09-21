@@ -135,20 +135,65 @@ global.health += (global.healthUpgrades * 2);
 if(global.best1_1 == "0")
 {
 	global.best1_1 = "F";
+	Save();
+}
+
+if(global.best1_2 == "0")
+{
 	global.best1_2 = "F";
+	Save();
+}
+
+if(global.best1_3 == "0")
+{
 	global.best1_3 = "F";
+	Save();
+}
+
+if(global.best1_4 == "0")
+{
 	global.best1_4 = "F";
+	Save();
+}
+
+if(global.best1_5 == "0")
+{
 	global.best1_5 = "F";
+	Save();
+}
+
+if(global.best1_6 == "0")
+{
 	global.best1_6 = "F";
+	Save();
+}
+
+if(global.best2_1 == "0")
+{
 	global.best2_1 = "F";
+	Save();
+}
+
+if(global.best2_2 == "0")
+{
 	global.best2_2 = "F";
+	Save();
+}
+
+if(global.best2_3 == "0")
+{
 	global.best2_3 = "F";
+	Save();
+}
+
+if(global.best2_4 == "0")
+{
 	global.best2_4 = "F";
+	Save();
+}
+
+if(global.bestOverall == "0")
+{
 	global.bestOverall = "F";
-	global.overallCoins = 0;
-	global.healthUpgrades = 0;
-	global.redUnlocked = false;
-	global.greenUnlocked = false;
-	global.palette = 0;
 	Save();
 }
