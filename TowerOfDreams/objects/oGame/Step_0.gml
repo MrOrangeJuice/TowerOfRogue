@@ -383,8 +383,8 @@ if(global.paused)
 					global.health = global.maxHealth;
 					global.armor = 0;
 					// Reset run
-					global.usedArray = [false,false,false,false,false];
-					global.usedArray2 = [false,false,false,false,false];
+					global.usedArray = [false,false,false,false,false,false,false,false,false,false];
+					global.usedArray2 = [false,false,false,false,false,false,false,false,false,false];
 					global.inARun = false;
 					global.coins = 0;
 					global.coinsThisRun = 0;

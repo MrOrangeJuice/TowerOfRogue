@@ -25,8 +25,8 @@ if(key_select_pressed)
 	audio_play_sound(snd_MenuSelect,5,false);
 	// Reset
 	SlideTransition(TRANS_MODE.GOTO,rHub);
-	global.usedArray = [false,false,false,false,false];
-	global.usedArray2 = [false,false,false,false,false];
+	global.usedArray = [false,false,false,false,false,false,false,false,false,false];
+	global.usedArray2 = [false,false,false,false,false,false,false,false,false,false];
 	global.inARun = false;
 	global.runCompleted = true;
 	global.health = global.maxHealth;

@@ -27,8 +27,8 @@ if(key_select_pressed)
 	audio_play_sound(snd_MenuSelect,5,false);
 	audio_stop_sound(snd_GemLoop);
 	// Reset run
-	global.usedArray = [false,false,false,false,false];
-	global.usedArray2 = [false,false,false,false,false];
+	global.usedArray = [false,false,false,false,false,false,false,false,false,false];
+	global.usedArray2 = [false,false,false,false,false,false,false,false,false,false];
 	global.inARun = false;
 	global.health = global.maxHealth;
 	global.armor = 0;
