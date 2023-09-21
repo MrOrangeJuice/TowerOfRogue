@@ -31,10 +31,10 @@ global.sideRoomArray = [rTreasureRoom,rTreasureRoom2];
 global.sideRoomArray2 = [rTreasureRoomFloor2,rTreasureRoom2Floor2];
 global.shopRoomArray = [rShop,rShop2];
 global.shopRoomArray2 = [rShopFloor2,rShop2Floor2];
-global.levelArray = [rFloor1_1,rFloor1_2,rFloor1_3,rFloor1_4,rFloor1_5];
+global.levelArray = [rFloor1_1,rFloor1_2,rFloor1_3,rFloor1_4,rFloor1_5,rFloor1_6];
 global.levelArray2 = [rFloor2_1,rFloor2_2,rFloor2_3,rFloor2_4];
-global.usedArray = [false,false,false,false,false];
-global.usedArray2 = [false,false,false,false,false];
+global.usedArray = [false,false,false,false,false,false];
+global.usedArray2 = [false,false,false,false,false,false];
 global.levelCount = 0;
 global.pipeCount = 0;
 global.shopPipeCount = 0;
@@ -82,9 +82,11 @@ global.best1_2 = "F";
 global.best1_3 = "F";
 global.best1_4 = "F";
 global.best1_5 = "F";
+global.best1_6 = "F";
 global.best2_1 = "F";
 global.best2_2 = "F";
 global.best2_3 = "F";
+global.best2_4 = "F";
 global.bestOverall = "F";
 
 // Armor sets
@@ -137,9 +139,11 @@ if(global.best1_1 == "0")
 	global.best1_3 = "F";
 	global.best1_4 = "F";
 	global.best1_5 = "F";
+	global.best1_6 = "F";
 	global.best2_1 = "F";
 	global.best2_2 = "F";
 	global.best2_3 = "F";
+	global.best2_4 = "F";
 	global.bestOverall = "F";
 	global.overallCoins = 0;
 	global.healthUpgrades = 0;

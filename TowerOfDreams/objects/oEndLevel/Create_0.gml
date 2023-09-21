@@ -74,6 +74,9 @@ switch(room)
 	case rFloor1_5:
 		global.best1_5 = yourRank;
 		break;
+	case rFloor1_6:
+		global.best1_6 = yourRank;
+		break;
 	case rFloor2_1:
 		global.best2_1 = yourRank;
 		break;
@@ -82,6 +85,9 @@ switch(room)
 		break;
 	case rFloor2_3:
 		global.best2_3 = yourRank;
+		break;
+	case rFloor2_4:
+		global.best2_4 = yourRank;
 		break;
 }
 

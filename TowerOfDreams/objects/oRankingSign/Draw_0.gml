@@ -10,9 +10,11 @@ draw_text(x+64,y+52,"Gravity Gauntlet: " + string(global.best1_2));
 draw_text(x+64,y+60,"Swap Hop: " + string(global.best1_3));
 draw_text(x+64,y+68,"Bumper Buster: " + string(global.best1_4));
 draw_text(x+64,y+76,"On A Roll: " + string(global.best1_5));
-draw_text(x+64,y+84,"Construction Calamity: " + string(global.best2_1));
-draw_text(x+64,y+92,"Vertical Velocity: " + string(global.best2_2));
-draw_text(x+64,y+100,"Block Party: " + string(global.best2_3));
-draw_text(x+64,y+112,"Run Best: " + string(global.bestOverall));
+draw_text(x+64,y+84,"Shrooms of Doom: " + string(global.best1_6));
+draw_text(x+64,y+92,"Construction Calamity: " + string(global.best2_1));
+draw_text(x+64,y+100,"Vertical Velocity: " + string(global.best2_2));
+draw_text(x+64,y+112,"Block Party: " + string(global.best2_3));
+draw_text(x+64,y+120,"Missile Mayhem: " + string(global.best2_4));
+draw_text(x+64,y+128,"Run Best: " + string(global.bestOverall));
 
 draw_set_halign(fa_left);

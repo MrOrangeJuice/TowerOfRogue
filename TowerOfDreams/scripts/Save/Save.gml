@@ -9,9 +9,11 @@ function Save(){
 	ini_write_string("savegame", "best1_3", global.best1_3);
 	ini_write_string("savegame", "best1_4", global.best1_4);
 	ini_write_string("savegame", "best1_5", global.best1_5);
+	ini_write_string("savegame", "best1_6", global.best1_6);
 	ini_write_string("savegame", "best2_1", global.best2_1);
 	ini_write_string("savegame", "best2_2", global.best2_2);
 	ini_write_string("savegame", "best2_3", global.best2_3);
+	ini_write_string("savegame", "best2_4", global.best2_4);
 	ini_write_string("savegame", "bestOverall", global.bestOverall);
 	ini_write_real("savegame", "overallCoins", global.overallCoins);
 	ini_write_real("savegame", "healthUpgrades", global.healthUpgrades);
