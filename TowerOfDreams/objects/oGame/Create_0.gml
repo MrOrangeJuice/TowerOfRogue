@@ -131,7 +131,7 @@ Load();
 global.maxHealth += (global.healthUpgrades * 2);
 global.health += (global.healthUpgrades * 2);
 
-// If save file doesn't have new stuff, add them in
+// If save file doesn't have variable that doesn't default to 0, change to actual default value
 if(global.best1_1 == "0")
 {
 	global.best1_1 = "F";
