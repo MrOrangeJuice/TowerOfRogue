@@ -1252,6 +1252,34 @@ if(!global.paused && !global.hitStop)
 			}
 			
 			break;
+		// Spray N' Pray
+		case 20:
+			if(key_item_pressed)
+			{
+				audio_play_sound(snd_Kunai,5,false);
+				if(!(wallSliding && image_xscale == 1))
+				{
+					sprayRight = instance_create_layer(x+4,y,"Walls",oSpray);
+					sprayRight.initialDir = 1;
+					sprayRight.sprite_index = sRightSpray;
+				}
+				if(!(wallSliding && image_xscale == -1))
+				{
+					sprayLeft = instance_create_layer(x-4,y,"Walls",oSpray);
+					sprayLeft.initialDir = -1;
+					sprayLeft.sprite_index = sLeftSpray;
+				}
+				sprayUp = instance_create_layer(x,y-4,"Walls",oSpray);
+				sprayUp.initialYDir = -1;
+				sprayUp.sprite_index = sUpSpray;
+				if(airborne)
+				{
+					sprayDown = instance_create_layer(x,y+4,"Walls",oSpray);
+					sprayDown.initialYDir = 1;
+					sprayDown.sprite_index = sDownSpray;
+				}
+			}
+			break;	
 			
 	}
 
