@@ -16,9 +16,11 @@ for(i = 0; i < array_length(global.passiveItems); i++)
 }
 
 rerollDiscount = dice * 10;
+price = itemPrice+global.rerollTax-rerollDiscount;
+if(price < 0) price = 0;
 
 draw_set_halign(fa_center);
-draw_text(x+9,y-14,(itemPrice+global.rerollTax-rerollDiscount) * (1 - (card * 0.2))); 
+draw_text(x+9,y-14,price * (1 - (card * 0.2))); 
 
 // Draw item name
 if(instance_exists(oPlayer))

@@ -542,8 +542,10 @@ if(!global.paused && !global.hitStop)
 			
 			if(bubble.object_index == oDiceBubble)
 			{
+				price = 10+global.rerollTax-rerollDiscount;
+				if(price < 0) price = 0;
 				// Check if item can be bought
-				if(global.coins >= (10+global.rerollTax-rerollDiscount) * (1 - (0.2 * card)))
+				if(global.coins >= price * (1 - (0.2 * card)))
 				{
 					if(chargeSlash)
 					{
@@ -559,7 +561,7 @@ if(!global.paused && !global.hitStop)
 					alarm[5] = room_speed * 0.2;
 					// Spawn item
 					newItem = instance_create_layer(bubble.x+4,bubble.y+4,"Collectables",oDice);
-					global.coins -= (10+global.rerollTax-rerollDiscount) * (1 - (0.2 * card));
+					global.coins -= price * (1 - (0.2 * card));
 					instance_destroy(bubble);
 				}
 				else
