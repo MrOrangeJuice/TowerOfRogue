@@ -5,3 +5,6 @@ grv = 0.05;
 hsp = 0;
 canGrab = false;
 alarm[0] = room_speed * 0.2;
+
+// Magnetism
+hsp = 0;

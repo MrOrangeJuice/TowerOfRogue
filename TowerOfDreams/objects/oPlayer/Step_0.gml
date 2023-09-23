@@ -505,13 +505,19 @@ if(!global.paused && !global.hitStop)
 		if(bubble)
 		{
 			card = 0;
+			dice = 0;
 			for(i = 0; i < array_length(global.passiveItems); i++)
 			{
 				if(global.passiveItems[i] == 4)
 				{
 					card++;
 				}
+				if(global.passiveItems[i] == 13)
+				{
+					dice++;
+				}
 			}
+			rerollDiscount = dice * 10;
 			vsp = -3;
 			airborne = true;
 			hasSlashed = true;
@@ -537,7 +543,7 @@ if(!global.paused && !global.hitStop)
 			if(bubble.object_index == oDiceBubble)
 			{
 				// Check if item can be bought
-				if(global.coins >= (10+global.rerollTax) * (1 - (0.2 * card)))
+				if(global.coins >= (10+global.rerollTax-rerollDiscount) * (1 - (0.2 * card)))
 				{
 					if(chargeSlash)
 					{
@@ -553,7 +559,7 @@ if(!global.paused && !global.hitStop)
 					alarm[5] = room_speed * 0.2;
 					// Spawn item
 					newItem = instance_create_layer(bubble.x+4,bubble.y+4,"Collectables",oDice);
-					global.coins -= (10+global.rerollTax) * (1 - (0.2 * card));
+					global.coins -= (10+global.rerollTax-rerollDiscount) * (1 - (0.2 * card));
 					instance_destroy(bubble);
 				}
 				else

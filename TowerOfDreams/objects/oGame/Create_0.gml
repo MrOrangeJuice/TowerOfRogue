@@ -72,6 +72,8 @@ global.rerollTax = 0;
 // Passive items
 global.magnet = false;
 global.magnetNum = 0;
+global.heartMagnet = false;
+global.heartMagnetNum = 0;
 
 // Overall run ranks
 global.ranks = ["D","D","D","D","D","D"];

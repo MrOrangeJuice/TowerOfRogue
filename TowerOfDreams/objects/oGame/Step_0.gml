@@ -454,12 +454,20 @@ if(global.paused)
 // Check for passive items
 global.magnet = false;
 global.magnetNum = 0;
+global.heartMagnet = false;
+global.heartMagnetNum = 0;
 for(i = 0; i < array_length(global.passiveItems); i++)
 {
 	if(global.passiveItems[i] == 7)
 	{
 		global.magnet = true;
 		global.magnetNum++;
+	}
+	
+	if(global.passiveItems[i] == 12)
+	{
+		global.heartMagnet = true;
+		global.heartMagnetNum++;
 	}
 }
 
