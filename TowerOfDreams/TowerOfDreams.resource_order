@@ -42,6 +42,7 @@
     {"name":"Tank Enemy Stationary","order":18,"path":"folders/Sprites/Enemies/Tank Enemy Stationary.yy",},
     {"name":"Tank Enemy","order":14,"path":"folders/Sprites/Enemies/Tank Enemy.yy",},
     {"name":"Items","order":19,"path":"folders/Sprites/Items.yy",},
+    {"name":"SprayShots","order":33,"path":"folders/Sprites/Items/SprayShots.yy",},
     {"name":"Level Objects","order":9,"path":"folders/Sprites/Level Objects.yy",},
     {"name":"NPCs","order":20,"path":"folders/Sprites/NPCs.yy",},
     {"name":"Player","order":5,"path":"folders/Sprites/Player.yy",},
@@ -58,7 +59,6 @@
     {"name":"Numbers","order":14,"path":"folders/Sprites/VFX/Numbers.yy",},
     {"name":"Tile Sets","order":1,"path":"folders/Tile Sets.yy",},
     {"name":"Timelines","order":7,"path":"folders/Timelines.yy",},
-    {"name":"SprayShots","order":33,"path":"folders/Sprites/Items/SprayShots.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"sUseItemControllerFadeIn","order":16,"path":"sprites/sUseItemControllerFadeIn/sUseItemControllerFadeIn.yy",},
