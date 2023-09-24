@@ -147,6 +147,7 @@
     {"name":"snd_PlayerDeath","order":21,"path":"sounds/snd_PlayerDeath/snd_PlayerDeath.yy",},
     {"name":"snd_Cannon","order":35,"path":"sounds/snd_Cannon/snd_Cannon.yy",},
     {"name":"msc_Floor2","order":5,"path":"sounds/msc_Floor2/msc_Floor2.yy",},
+    {"name":"msc_Floor1Variant","order":10,"path":"sounds/msc_Floor1Variant/msc_Floor1Variant.yy",},
     {"name":"oFullCamera","order":5,"path":"objects/oFullCamera/oFullCamera.yy",},
     {"name":"sGobletUI","order":7,"path":"sprites/sGobletUI/sGobletUI.yy",},
     {"name":"oDustSmall","order":2,"path":"objects/oDustSmall/oDustSmall.yy",},

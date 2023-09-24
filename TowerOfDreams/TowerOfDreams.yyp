@@ -170,6 +170,7 @@
     {"id":{"name":"snd_PlayerDeath","path":"sounds/snd_PlayerDeath/snd_PlayerDeath.yy",},},
     {"id":{"name":"snd_Cannon","path":"sounds/snd_Cannon/snd_Cannon.yy",},},
     {"id":{"name":"msc_Floor2","path":"sounds/msc_Floor2/msc_Floor2.yy",},},
+    {"id":{"name":"msc_Floor1Variant","path":"sounds/msc_Floor1Variant/msc_Floor1Variant.yy",},},
     {"id":{"name":"oFullCamera","path":"objects/oFullCamera/oFullCamera.yy",},},
     {"id":{"name":"sGobletUI","path":"sprites/sGobletUI/sGobletUI.yy",},},
     {"id":{"name":"oDustSmall","path":"objects/oDustSmall/oDustSmall.yy",},},
