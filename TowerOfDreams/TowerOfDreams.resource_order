@@ -62,6 +62,7 @@
     {"name":"Regular","order":15,"path":"folders/Sprites/Enemies/GravityEnemy/Regular.yy",},
     {"name":"Elite","order":16,"path":"folders/Sprites/Enemies/GravityEnemy/Elite.yy",},
     {"name":"Husk","order":17,"path":"folders/Sprites/Enemies/GravityEnemy/Husk.yy",},
+    {"name":"Tank Enemy Stationary Elite","order":24,"path":"folders/Sprites/Enemies/Tank Enemy Stationary Elite.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"sUseItemControllerFadeIn","order":16,"path":"sprites/sUseItemControllerFadeIn/sUseItemControllerFadeIn.yy",},
@@ -447,6 +448,7 @@
     {"name":"snd_SwordGet","order":14,"path":"sounds/snd_SwordGet/snd_SwordGet.yy",},
     {"name":"oAxeItem","order":16,"path":"objects/oAxeItem/oAxeItem.yy",},
     {"name":"sBagUI","order":22,"path":"sprites/sBagUI/sBagUI.yy",},
+    {"name":"sTankEnemyStationaryEliteFire","order":1,"path":"sprites/sTankEnemyStationaryEliteFire/sTankEnemyStationaryEliteFire.yy",},
     {"name":"oFlyingEnemy","order":19,"path":"objects/oFlyingEnemy/oFlyingEnemy.yy",},
     {"name":"sOverallRank","order":31,"path":"sprites/sOverallRank/sOverallRank.yy",},
     {"name":"sPlayerRunGreen","order":8,"path":"sprites/sPlayerRunGreen/sPlayerRunGreen.yy",},
@@ -551,6 +553,7 @@
     {"name":"oPlayerBit","order":13,"path":"objects/oPlayerBit/oPlayerBit.yy",},
     {"name":"sBumper","order":1,"path":"sprites/sBumper/sBumper.yy",},
     {"name":"oCamera","order":1,"path":"objects/oCamera/oCamera.yy",},
+    {"name":"oTankEnemyStationaryElite","order":23,"path":"objects/oTankEnemyStationaryElite/oTankEnemyStationaryElite.yy",},
     {"name":"oPillar","order":1,"path":"objects/oPillar/oPillar.yy",},
     {"name":"sGravityEnemyFallUp","order":2,"path":"sprites/sGravityEnemyFallUp/sGravityEnemyFallUp.yy",},
     {"name":"s10","order":6,"path":"sprites/s10/s10.yy",},
