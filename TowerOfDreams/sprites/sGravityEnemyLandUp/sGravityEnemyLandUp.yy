@@ -27,8 +27,8 @@
   "nineSlice": null,
   "origin": 4,
   "parent": {
-    "name": "GravityEnemy",
-    "path": "folders/Sprites/Enemies/GravityEnemy.yy",
+    "name": "Regular",
+    "path": "folders/Sprites/Enemies/GravityEnemy/Regular.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

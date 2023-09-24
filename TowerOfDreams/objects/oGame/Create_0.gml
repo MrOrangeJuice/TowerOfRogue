@@ -59,6 +59,7 @@ global.bumpersSwitching = false;
 global.lavaId = 0;
 global.displayLC = false;
 global.volume = 6;
+global.hardMode = false;
 
 // Shop items
 global.shopItem1 = -1;
