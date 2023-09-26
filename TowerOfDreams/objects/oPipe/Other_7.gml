@@ -19,7 +19,9 @@ switch(global.pipeCount)
 		}
 		global.pipeCount++;
 		audio_stop_sound(msc_Floor1);
+		audio_stop_sound(msc_Floor1Variant);
 		audio_stop_sound(msc_Floor2);
+		audio_stop_sound(msc_Floor2Variant);
 		global.floor1Music = false;
 		break;
 	// spit out player

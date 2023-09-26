@@ -232,11 +232,31 @@ if(!global.paused && !global.hitStop)
 		{
 			if(global.levelCount < 3)
 			{
-				audio_play_sound(msc_Floor1,5,true);
+				// Randomize music
+				randomize();
+				musicRand = irandom_range(0,4);
+				if(musicRand == 0)
+				{
+					audio_play_sound(msc_Floor1Variant,5,true);
+				}
+				else
+				{
+					audio_play_sound(msc_Floor1,5,true);
+				}
 			}
 			else
 			{
-				audio_play_sound(msc_Floor2,5,true);	
+				// Randomize music
+				randomize();
+				musicRand = irandom_range(0,4);
+				if(musicRand == 0)
+				{
+					audio_play_sound(msc_Floor2Variant,5,true);
+				}
+				else
+				{
+					audio_play_sound(msc_Floor2,5,true);
+				}
 			}
 			global.floor1Music = true;
 		}

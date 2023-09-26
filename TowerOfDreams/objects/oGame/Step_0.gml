@@ -419,7 +419,9 @@ if(global.paused)
 					audio_stop_sound(msc_Tutorial);
 					global.tutorialMusic = false;
 					audio_stop_sound(msc_Floor1);
+					audio_stop_sound(msc_Floor1Variant);
 					audio_stop_sound(msc_Floor2);
+					audio_stop_sound(msc_Floor2Variant);
 					global.floor1Music = false;
 					audio_stop_sound(msc_Shop);
 					global.shopMusic = false;

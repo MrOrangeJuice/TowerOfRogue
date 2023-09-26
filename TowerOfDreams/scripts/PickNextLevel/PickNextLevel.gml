@@ -34,7 +34,9 @@ function PickNextLevel(){
 		global.enemyArray = ds_list_create();
 		*/
 		audio_stop_sound(msc_Floor1);
+		audio_stop_sound(msc_Floor1Variant);
 		audio_stop_sound(msc_Floor2);
+		audio_stop_sound(msc_Floor2Variant);
 		audio_stop_sound(snd_BoomerangReturn);
 		global.floor1Music = false;
 		Save();
@@ -61,6 +63,7 @@ function PickNextLevel(){
 			if(global.levelCount == 3)
 			{
 				audio_stop_sound(msc_Floor1);
+				audio_stop_sound(msc_Floor1Variant);
 				global.floor1Music = false;
 			}
 			levelChoice = irandom_range(0,array_length(global.levelArray2)-1);
