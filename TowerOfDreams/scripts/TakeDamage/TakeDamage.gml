@@ -9,7 +9,7 @@ function TakeDamage(argument0,argument1,argument2,argument3)
 		{
 			global.localDamage++;
 			audio_play_sound(snd_Damage,5,false);
-			if (!global.infiniteHealth) 
+			if (!global.infiniteHealth && room != rHub) 
 			{
 				if(global.armor > 0)
 				{
