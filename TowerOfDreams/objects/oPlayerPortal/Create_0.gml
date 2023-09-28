@@ -13,4 +13,7 @@ switch(global.palette)
 	case 2:
 		sprite_index = sPlayerPortalGreen;
 		break;
+	case 3:
+		sprite_index = sPlayerPortalZombie;
+		break;
 }

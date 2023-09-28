@@ -337,6 +337,7 @@
     {"name":"oBootsItem","order":3,"path":"objects/oBootsItem/oBootsItem.yy",},
     {"name":"snd_MenuMove","order":10,"path":"sounds/snd_MenuMove/snd_MenuMove.yy",},
     {"name":"Save","order":3,"path":"scripts/Save/Save.yy",},
+    {"name":"oZombieArmor","order":6,"path":"objects/oZombieArmor/oZombieArmor.yy",},
     {"name":"sDustSmall","order":1,"path":"sprites/sDustSmall/sDustSmall.yy",},
     {"name":"sAngryVFX","order":17,"path":"sprites/sAngryVFX/sAngryVFX.yy",},
     {"name":"msc_Chest","order":6,"path":"sounds/msc_Chest/msc_Chest.yy",},

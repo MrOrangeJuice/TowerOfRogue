@@ -23,6 +23,10 @@ if(global.greenUnlocked && paletteNum == 2)
 {
 	prevBought = true;	
 }
+if(global.zombieUnlocked && paletteNum == 3)
+{
+	prevBought = true;	
+}
 
 if(place_meeting(x,y,oPlayer))
 {
@@ -44,6 +48,9 @@ if(place_meeting(x,y,oPlayer))
 						break;
 					case 2:
 						global.greenUnlocked = true;
+						break;
+					case 3:
+						global.zombieUnlocked = true;
 						break;
 				}
 				audio_play_sound(snd_UpgradeMaxHealth,5,false);

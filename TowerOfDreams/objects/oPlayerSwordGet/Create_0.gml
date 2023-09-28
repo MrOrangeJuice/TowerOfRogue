@@ -13,4 +13,7 @@ switch(global.palette)
 	case 2:
 		sprite_index = sPlayerSwordGetGreen;
 		break;
+	case 3:
+		sprite_index = sPlayerSwordGetZombie;
+		break;
 }

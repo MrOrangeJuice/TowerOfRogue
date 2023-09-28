@@ -374,6 +374,7 @@
     {"id":{"name":"sShopHub","path":"sprites/sShopHub/sShopHub.yy",},},
     {"id":{"name":"snd_MenuMove","path":"sounds/snd_MenuMove/snd_MenuMove.yy",},},
     {"id":{"name":"Save","path":"scripts/Save/Save.yy",},},
+    {"id":{"name":"oZombieArmor","path":"objects/oZombieArmor/oZombieArmor.yy",},},
     {"id":{"name":"sDustSmall","path":"sprites/sDustSmall/sDustSmall.yy",},},
     {"id":{"name":"sAngryVFX","path":"sprites/sAngryVFX/sAngryVFX.yy",},},
     {"id":{"name":"msc_Chest","path":"sounds/msc_Chest/msc_Chest.yy",},},
