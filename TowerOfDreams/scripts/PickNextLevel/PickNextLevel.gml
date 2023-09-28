@@ -99,5 +99,6 @@ function PickNextLevel(){
 		// Reset instance lists
 		global.coinArray = ds_list_create();
 		global.enemyArray = ds_list_create();
+		global.slimeArray = ds_list_create();
 	}
 }

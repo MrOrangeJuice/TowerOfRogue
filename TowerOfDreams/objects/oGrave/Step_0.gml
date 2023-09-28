@@ -59,6 +59,7 @@ if(key_select_pressed)
 	// Reset instance lists
 	global.coinArray = ds_list_create();
 	global.enemyArray = ds_list_create();
+	global.slimeArray = ds_list_create();
 	Save();
 	SlideTransition(TRANS_MODE.GOTO,rHub);
 }

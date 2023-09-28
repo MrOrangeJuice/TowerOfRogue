@@ -109,6 +109,7 @@ else
 
 global.coinArray = ds_list_create();
 global.enemyArray = ds_list_create();
+global.slimeArray = ds_list_create();
 menuOption = 0;
 analogUpPrev = false;
 analogDownPrev = false;

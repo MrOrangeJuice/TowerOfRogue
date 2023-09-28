@@ -414,6 +414,7 @@ if(global.paused)
 					// Reset instance lists
 					global.coinArray = ds_list_create();
 					global.enemyArray = ds_list_create();
+					global.slimeArray = ds_list_create();
 					instance_destroy(oItemPopup);
 					SlideTransition(TRANS_MODE.GOTO, rTitle);
 					audio_stop_sound(msc_Tutorial);
