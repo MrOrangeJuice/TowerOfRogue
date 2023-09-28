@@ -198,6 +198,7 @@
     {"id":{"name":"sJumpController","path":"sprites/sJumpController/sJumpController.yy",},},
     {"id":{"name":"sKunai","path":"sprites/sKunai/sKunai.yy",},},
     {"id":{"name":"sLeftConveyer","path":"sprites/sLeftConveyer/sLeftConveyer.yy",},},
+    {"id":{"name":"RankIsBetter","path":"scripts/RankIsBetter/RankIsBetter.yy",},},
     {"id":{"name":"oGreenArmor","path":"objects/oGreenArmor/oGreenArmor.yy",},},
     {"id":{"name":"oDashVFX","path":"objects/oDashVFX/oDashVFX.yy",},},
     {"id":{"name":"oRichard","path":"objects/oRichard/oRichard.yy",},},

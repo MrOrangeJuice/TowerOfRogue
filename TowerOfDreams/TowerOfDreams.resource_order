@@ -172,6 +172,7 @@
     {"name":"sJumpController","order":3,"path":"sprites/sJumpController/sJumpController.yy",},
     {"name":"sKunai","order":1,"path":"sprites/sKunai/sKunai.yy",},
     {"name":"sLeftConveyer","order":19,"path":"sprites/sLeftConveyer/sLeftConveyer.yy",},
+    {"name":"RankIsBetter","order":11,"path":"scripts/RankIsBetter/RankIsBetter.yy",},
     {"name":"oGreenArmor","order":5,"path":"objects/oGreenArmor/oGreenArmor.yy",},
     {"name":"oDashVFX","order":32,"path":"objects/oDashVFX/oDashVFX.yy",},
     {"name":"oRichard","order":1,"path":"objects/oRichard/oRichard.yy",},
