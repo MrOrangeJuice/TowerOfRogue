@@ -14,6 +14,12 @@ if(global.inARun)
 		newArray = [instance_find(oEnemy,i),true];
 		ds_list_add(global.enemyArray,newArray);
 	}
+	
+	for(i = 0; i < instance_number(oSlimeBlock); i++)
+	{
+		newArray = [instance_find(oSlimeBlock,i),true];
+		ds_list_add(global.slimeArray,newArray);
+	}
 }
 
 // Check for items
