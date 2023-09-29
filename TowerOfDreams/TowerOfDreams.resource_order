@@ -53,6 +53,7 @@
     {"name":"Extra Colors","order":23,"path":"folders/Sprites/Player/Extra Colors.yy",},
     {"name":"Green","order":2,"path":"folders/Sprites/Player/Extra Colors/Green.yy",},
     {"name":"Red","order":1,"path":"folders/Sprites/Player/Extra Colors/Red.yy",},
+    {"name":"Zombie","order":3,"path":"folders/Sprites/Player/Extra Colors/Zombie.yy",},
     {"name":"Tilesets","order":6,"path":"folders/Sprites/Tilesets.yy",},
     {"name":"Conveyer","order":10,"path":"folders/Sprites/Tilesets/Conveyer.yy",},
     {"name":"Lava","order":8,"path":"folders/Sprites/Tilesets/Lava.yy",},
@@ -63,7 +64,6 @@
     {"name":"Numbers","order":14,"path":"folders/Sprites/VFX/Numbers.yy",},
     {"name":"Tile Sets","order":1,"path":"folders/Tile Sets.yy",},
     {"name":"Timelines","order":7,"path":"folders/Timelines.yy",},
-    {"name":"Zombie","order":3,"path":"folders/Sprites/Player/Extra Colors/Zombie.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"sUseItemControllerFadeIn","order":16,"path":"sprites/sUseItemControllerFadeIn/sUseItemControllerFadeIn.yy",},
