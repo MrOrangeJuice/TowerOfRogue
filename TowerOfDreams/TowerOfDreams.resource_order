@@ -626,6 +626,7 @@
     {"name":"sGravityEnemyEliteFall","order":1,"path":"sprites/sGravityEnemyEliteFall/sGravityEnemyEliteFall.yy",},
     {"name":"oAngerVFX","order":20,"path":"objects/oAngerVFX/oAngerVFX.yy",},
     {"name":"ChangeVolume","order":9,"path":"scripts/ChangeVolume/ChangeVolume.yy",},
+    {"name":"oSkull","order":2,"path":"objects/oSkull/oSkull.yy",},
     {"name":"sCannonFire","order":6,"path":"sprites/sCannonFire/sCannonFire.yy",},
     {"name":"sPortal","order":3,"path":"sprites/sPortal/sPortal.yy",},
     {"name":"oItemBubble","order":10,"path":"objects/oItemBubble/oItemBubble.yy",},
