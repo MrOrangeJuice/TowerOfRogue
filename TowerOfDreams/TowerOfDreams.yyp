@@ -193,6 +193,7 @@
     {"id":{"name":"rHubShop","path":"rooms/rHubShop/rHubShop.yy",},},
     {"id":{"name":"sBlockAOff","path":"sprites/sBlockAOff/sBlockAOff.yy",},},
     {"id":{"name":"sPlayerHelmet","path":"sprites/sPlayerHelmet/sPlayerHelmet.yy",},},
+    {"id":{"name":"sSkull","path":"sprites/sSkull/sSkull.yy",},},
     {"id":{"name":"sConveyerRightEnd","path":"sprites/sConveyerRightEnd/sConveyerRightEnd.yy",},},
     {"id":{"name":"sTankEnemy","path":"sprites/sTankEnemy/sTankEnemy.yy",},},
     {"id":{"name":"oBallVFX","path":"objects/oBallVFX/oBallVFX.yy",},},

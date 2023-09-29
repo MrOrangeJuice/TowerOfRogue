@@ -169,6 +169,7 @@
     {"name":"rHubShop","order":13,"path":"rooms/rHubShop/rHubShop.yy",},
     {"name":"sBlockAOff","order":25,"path":"sprites/sBlockAOff/sBlockAOff.yy",},
     {"name":"sPlayerHelmet","order":24,"path":"sprites/sPlayerHelmet/sPlayerHelmet.yy",},
+    {"name":"sSkull","order":4,"path":"sprites/sSkull/sSkull.yy",},
     {"name":"sConveyerRightEnd","order":2,"path":"sprites/sConveyerRightEnd/sConveyerRightEnd.yy",},
     {"name":"oBallVFX","order":10,"path":"objects/oBallVFX/oBallVFX.yy",},
     {"name":"sGravityEnemyFall","order":1,"path":"sprites/sGravityEnemyFall/sGravityEnemyFall.yy",},
