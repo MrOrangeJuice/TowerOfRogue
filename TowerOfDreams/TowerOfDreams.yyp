@@ -161,6 +161,7 @@
     {"id":{"name":"sDiceBubbleGrow","path":"sprites/sDiceBubbleGrow/sDiceBubbleGrow.yy",},},
     {"id":{"name":"oDustSlashBumper","path":"objects/oDustSlashBumper/oDustSlashBumper.yy",},},
     {"id":{"name":"oGravityEnemyDustVFX","path":"objects/oGravityEnemyDustVFX/oGravityEnemyDustVFX.yy",},},
+    {"id":{"name":"oGoldArmor","path":"objects/oGoldArmor/oGoldArmor.yy",},},
     {"id":{"name":"sStartController","path":"sprites/sStartController/sStartController.yy",},},
     {"id":{"name":"sPlayerRunZombie","path":"sprites/sPlayerRunZombie/sPlayerRunZombie.yy",},},
     {"id":{"name":"sHUD","path":"sprites/sHUD/sHUD.yy",},},

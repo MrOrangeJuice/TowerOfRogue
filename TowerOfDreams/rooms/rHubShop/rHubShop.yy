@@ -23,6 +23,8 @@
     {"name":"inst_58D02083","path":"rooms/rHubShop/rHubShop.yy",},
     {"name":"inst_481C82CD","path":"rooms/rHubShop/rHubShop.yy",},
     {"name":"inst_7F8FD2A7","path":"rooms/rHubShop/rHubShop.yy",},
+    {"name":"inst_6F4E3E7F","path":"rooms/rHubShop/rHubShop.yy",},
+    {"name":"inst_23946201","path":"rooms/rHubShop/rHubShop.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -69,6 +71,15 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_7F8FD2A7","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oZombieArmor","path":"objects/oZombieArmor/oZombieArmor.yy",},"properties":[
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oShopArmor","path":"objects/oShopArmor/oShopArmor.yy",},"propertyId":{"name":"paletteNum","path":"objects/oShopArmor/oShopArmor.yy",},"value":"3",},
           ],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":392.0,"y":1524.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_6F4E3E7F","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oArmorPillar","path":"objects/oArmorPillar/oArmorPillar.yy",},"properties":[
+            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oArmorPillar","path":"objects/oArmorPillar/oArmorPillar.yy",},"propertyId":{"name":"itemPrice","path":"objects/oArmorPillar/oArmorPillar.yy",},"value":"2000",},
+            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oArmorPillar","path":"objects/oArmorPillar/oArmorPillar.yy",},"propertyId":{"name":"armorName","path":"objects/oArmorPillar/oArmorPillar.yy",},"value":"Golden Mail",},
+            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oArmorPillar","path":"objects/oArmorPillar/oArmorPillar.yy",},"propertyId":{"name":"armorDesc","path":"objects/oArmorPillar/oArmorPillar.yy",},"value":"SHINY!",},
+            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oArmorPillar","path":"objects/oArmorPillar/oArmorPillar.yy",},"propertyId":{"name":"paletteNum","path":"objects/oArmorPillar/oArmorPillar.yy",},"value":"4",},
+          ],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":256.0,"y":1528.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_23946201","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oGoldArmor","path":"objects/oGoldArmor/oGoldArmor.yy",},"properties":[
+            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oShopArmor","path":"objects/oShopArmor/oShopArmor.yy",},"propertyId":{"name":"paletteNum","path":"objects/oShopArmor/oShopArmor.yy",},"value":"4",},
+          ],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":264.0,"y":1524.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"CoinVFX","depth":800,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"VFX","depth":900,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},

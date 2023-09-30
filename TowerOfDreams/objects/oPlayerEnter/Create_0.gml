@@ -14,4 +14,7 @@ switch(global.palette)
 	case 3:
 		sprite_index = sPlayerPortalReverseZombie;
 		break;
+	case 4:
+		sprite_index = sPlayerPortalReverseGold;
+		break;
 }

@@ -25,4 +25,7 @@ switch(global.palette)
 	case 3:
 		sprite_index = sPlayerBitZombie;
 		break;
+	case 4:
+		sprite_index = sPlayerBitGold;
+		break;
 }

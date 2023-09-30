@@ -17,4 +17,7 @@ switch(global.palette)
 	case 3:
 		sprite_index = sPlayerLavaZombie;
 		break;
+	case 4:
+		sprite_index = sPlayerLavaGold;
+		break;
 }

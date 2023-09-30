@@ -50,6 +50,17 @@ function ChangePlayerSkin()
 				oPlayer.wallSprite = sPlayerWallSlideZombie;
 				oPlayer.landSprite = sPlayerLandZombie;
 				break;
+			case 4:
+				oPlayer.idleSprite = sPlayerIdleGold;
+				oPlayer.runSprite = sPlayerRunGold;
+				oPlayer.jumpSprite = sPlayerJumpGold;
+				oPlayer.fallSprite = sPlayerFallGold;
+				oPlayer.slashSprite = sPlayerSlashSmallGold;
+				oPlayer.doubleSlashSprite = sPlayerSlashDoubleGold;
+				oPlayer.hitSprite = sPlayerHitGold;
+				oPlayer.wallSprite = sPlayerWallSlideGold;
+				oPlayer.landSprite = sPlayerLandGold;
+				break;
 		}
 	}
 }

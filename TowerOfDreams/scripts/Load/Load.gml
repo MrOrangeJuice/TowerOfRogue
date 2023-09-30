@@ -20,6 +20,7 @@ function Load(){
 	global.redUnlocked = ini_read_real("savegame", "redUnlocked", 0);
 	global.greenUnlocked = ini_read_real("savegame", "greenUnlocked", 0);
 	global.zombieUnlocked = ini_read_real("savegame", "zombieUnlocked", 0);
+	global.goldUnlocked = ini_read_real("savegame", "goldUnlocked", 0);
 	global.palette = ini_read_real("savegame", "palette", 0);
 	ini_close();
 }
