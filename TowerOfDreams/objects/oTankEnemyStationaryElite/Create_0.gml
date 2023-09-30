@@ -1,6 +1,6 @@
 /// @description Init
 
+elite = true;
 event_inherited();
 
-elite = true;
 hp = 4;

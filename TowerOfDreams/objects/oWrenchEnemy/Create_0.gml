@@ -7,10 +7,7 @@ image_xscale = dir * -1;
 hp = 2;
 
 // Spawn for hard mode
-if(global.hardMode && !elite)
+if(global.hardMode && object_index != Object179)
 {
-	hardEnemy = instance_create_layer(x,y,"Enemies",oGroundEnemyElite);
-	hardEnemy.dir = dir;
-	hardEnemy.delay = delay;
-	instance_destroy();
+	instance_change(oWrenchEnemyElite,true);
 }

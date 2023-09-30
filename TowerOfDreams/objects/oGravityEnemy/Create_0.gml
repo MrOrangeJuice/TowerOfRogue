@@ -8,9 +8,7 @@ alarm[0] = room_speed * (1 + offset);
 landing = false;
 
 // Spawn for hard mode
-if(global.hardMode && !elite)
+if(global.hardMode && object_index != oGravityEnemyElite)
 {
-	hardEnemy = instance_create_layer(x,y,"Enemies",oGravityEnemyElite);
-	hardEnemy.offset = offset;
-	instance_destroy();
+	instance_change(oGravityEnemyElite,true);
 }

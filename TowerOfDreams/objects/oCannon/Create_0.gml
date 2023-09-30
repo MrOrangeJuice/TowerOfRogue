@@ -5,21 +5,14 @@ image_xscale = dir;
 alarm[0] = room_speed * (fireGap + offset);
 
 // Spawn for hard mode
-if(global.hardMode && !elite)
+if(global.hardMode && (object_index != oCannonElite || object_index != oTankEnemyStationaryElite))
 {
 	if(object_index == oCannon)
 	{
-		hardEnemy = instance_create_layer(x,y,"Enemies",oCannonElite);
-		hardEnemy.dir = dir;
-		hardEnemy.offset = offset;
-		hardEnemy.fireGap = fireGap;
+		instance_change(oCannonElite,true);
 	}
 	else if(object_index == oTankEnemyStationary)
 	{
-		hardEnemy = instance_create_layer(x,y,"Enemies",oTankEnemyStationaryElite);
-		hardEnemy.dir = dir;
-		hardEnemy.offset = offset;
-		hardEnemy.fireGap = fireGap;
+		instance_change(oTankEnemyStationaryElite,true);
 	}
-	instance_destroy();
 }

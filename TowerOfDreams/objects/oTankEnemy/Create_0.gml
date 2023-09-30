@@ -24,9 +24,7 @@ fire = sTankEnemyFire;
 image_xscale = dir;
 
 // Spawn for hard mode
-if(global.hardMode && !elite)
+if(global.hardMode && object_index != oTankEnemyElite)
 {
-	hardEnemy = instance_create_layer(x,y,"Enemies",oTankEnemyElite);
-	hardEnemy.dir = dir;
-	instance_destroy();
+	instance_change(oTankEnemyElite,true);
 }
