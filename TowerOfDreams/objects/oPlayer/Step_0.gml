@@ -869,8 +869,16 @@ if(!global.paused && !global.hitStop)
 			hasSlashJumped = true;
 			extraJump = true;
 			
-			if(global.hardMode) global.hardMode = false;
-			else global.hardMode = true;
+			if(global.hardMode) 
+			{
+				global.hardMode = false;
+				audio_play_sound(snd_Dream,5,false);
+			}
+			else 
+			{
+				global.hardMode = true;
+				audio_play_sound(snd_Nightmare,5,false);
+			}
 		}
 	}
 

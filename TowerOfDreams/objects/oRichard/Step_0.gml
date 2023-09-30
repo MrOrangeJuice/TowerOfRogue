@@ -7,6 +7,7 @@ if(place_meeting(x,y,oPlayer))
 		colliding = true;
 		// Regenerate phrase
 		signMessage = phrases[random_range(0,array_length(phrases))];
+		audio_play_sound(snd_Richard,5,false);
 	}
 }
 else
