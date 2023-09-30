@@ -74,3 +74,12 @@ else
 {
 	image_speed = 0;	
 }
+
+// Spawn for hard mode
+if(global.hardMode && object_index != oBallEnemyElite && givesHealth)
+{
+	instance_change(oBallEnemyElite,false);
+	hp = 4;
+	hsp = 1.5;
+	elite = true;
+}

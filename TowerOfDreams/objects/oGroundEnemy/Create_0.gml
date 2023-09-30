@@ -12,5 +12,8 @@ image_xscale = dir;
 // Spawn for hard mode
 if(global.hardMode && object_index != oGroundEnemyElite)
 {
-	instance_change(oGroundEnemyElite,true);
+	instance_change(oGroundEnemyElite,false);
+	hp = 4;
+	hsp = 0.8;
+	elite = true;
 }

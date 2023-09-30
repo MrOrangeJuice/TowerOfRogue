@@ -10,5 +10,8 @@ image_xscale = dir;
 // Spawn for hard mode
 if(global.hardMode && object_index != oFlyingEnemyElite)
 {
-	instance_change(oFlyingEnemyElite,true);
+	instance_change(oFlyingEnemyElite,false);
+	hp = 4;
+	hsp = 0.8;
+	elite = true;
 }

@@ -17,9 +17,3 @@ landingSprite = sBallEnemySquish;
 alarm[0] = room_speed * 0.1;
 
 image_xscale = -dir;
-
-// Spawn for hard mode
-if(global.hardMode && object_index != oBallEnemyElite && givesHealth)
-{
-	instance_change(oBallEnemyElite,true);
-}

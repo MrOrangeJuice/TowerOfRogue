@@ -26,5 +26,11 @@ image_xscale = dir;
 // Spawn for hard mode
 if(global.hardMode && object_index != oTankEnemyElite)
 {
-	instance_change(oTankEnemyElite,true);
+	instance_change(oTankEnemyElite,false);
+	hp = 6;// Sprites
+	elite = true;
+	idle = sTankEnemyIdleElite;
+	run = sTankEnemyElite;
+	back = sTankEnemyBackElite;
+	fire = sTankEnemyFireElite;
 }
