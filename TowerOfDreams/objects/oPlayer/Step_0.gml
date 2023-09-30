@@ -845,6 +845,33 @@ if(!global.paused && !global.hitStop)
 			}
 			audio_play_sound(snd_Lever,5,false);
 		}
+		
+		// Hard mode switch
+		skull = instance_place(x,y+9,oSkull);
+		if(skull)
+		{
+			// Push player up
+			while(place_meeting(x,y+8,oSkull))
+			{
+				y -= 1;	
+			}
+			vsp = -3;
+			if(chargeSlash)
+			{
+				instance_create_layer(skull.x+16,skull.y+8,"VFX",oDustSlashBumperGreen);
+			}
+			else
+			{
+				instance_create_layer(skull.x+16,skull.y+8,"VFX",oDustSlashBumper);
+			}
+			airborne = true;
+			hasSlashed = true;
+			hasSlashJumped = true;
+			extraJump = true;
+			
+			if(global.hardMode) global.hardMode = false;
+			else global.hardMode = true;
+		}
 	}
 
 	// Jump
