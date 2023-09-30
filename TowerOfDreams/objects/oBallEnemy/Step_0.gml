@@ -82,4 +82,7 @@ if(global.hardMode && object_index != oBallEnemyElite && givesHealth)
 	hp = 4;
 	hsp = 1.5;
 	elite = true;
+	// Sprites
+	regularSprite = sBallEnemyElite;
+	landingSprite = sBallEnemyEliteSquish;
 }
