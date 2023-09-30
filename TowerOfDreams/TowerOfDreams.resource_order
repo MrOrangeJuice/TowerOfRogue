@@ -461,6 +461,7 @@
     {"name":"sPlayerHit","order":10,"path":"sprites/sPlayerHit/sPlayerHit.yy",},
     {"name":"sPlayerSwordGet","order":11,"path":"sprites/sPlayerSwordGet/sPlayerSwordGet.yy",},
     {"name":"sSlashControllerFadeIn","order":8,"path":"sprites/sSlashControllerFadeIn/sSlashControllerFadeIn.yy",},
+    {"name":"sSkullNightmare","order":5,"path":"sprites/sSkullNightmare/sSkullNightmare.yy",},
     {"name":"snd_Wings","order":27,"path":"sounds/snd_Wings/snd_Wings.yy",},
     {"name":"sMushroomJump","order":46,"path":"sprites/sMushroomJump/sMushroomJump.yy",},
     {"name":"sBallExplosion","order":10,"path":"sprites/sBallExplosion/sBallExplosion.yy",},

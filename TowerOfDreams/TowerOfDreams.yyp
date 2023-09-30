@@ -508,6 +508,7 @@
     {"id":{"name":"sPlayerHit","path":"sprites/sPlayerHit/sPlayerHit.yy",},},
     {"id":{"name":"sPlayerSwordGet","path":"sprites/sPlayerSwordGet/sPlayerSwordGet.yy",},},
     {"id":{"name":"sSlashControllerFadeIn","path":"sprites/sSlashControllerFadeIn/sSlashControllerFadeIn.yy",},},
+    {"id":{"name":"sSkullNightmare","path":"sprites/sSkullNightmare/sSkullNightmare.yy",},},
     {"id":{"name":"sBallEnemy","path":"sprites/sBallEnemy/sBallEnemy.yy",},},
     {"id":{"name":"snd_Wings","path":"sounds/snd_Wings/snd_Wings.yy",},},
     {"id":{"name":"sMushroomJump","path":"sprites/sMushroomJump/sMushroomJump.yy",},},
