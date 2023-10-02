@@ -16,7 +16,7 @@ function TakeDamage(argument0,argument1,argument2,argument3)
 					global.armor -= argument0 * (global.hardMode + 1);
 					if(global.armor == -1)
 					{
-						global.health -= 2;
+						global.health -= 1;
 						global.armor = 0;
 					}
 					audio_play_sound(snd_ArmorBreak,5,false);
