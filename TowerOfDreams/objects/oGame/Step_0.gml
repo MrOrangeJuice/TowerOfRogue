@@ -219,6 +219,7 @@ if(room == rTitle)
 					file_delete("savedata.ini");
 				}
 				global.tutorialCompleted = false;
+				global.floor1Completed = false;
 				global.runCompleted = false;
 				global.best1_1 = "F";
 				global.best1_2 = "F";

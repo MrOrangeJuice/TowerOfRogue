@@ -59,6 +59,12 @@ function PickNextLevel(){
 		// Floor 2
 		if(global.levelCount >= 3)
 		{
+			// Save if first time making it to floor 2
+			if(!global.floor1Completed)
+			{
+				global.floor1Completed = true;
+				Save();
+			}
 			// Transition music
 			if(global.levelCount == 3)
 			{

@@ -25,6 +25,7 @@ global.passiveItems = [];
 global.passiveItemSprites = [sShockUI,sCritUI,sGobletUI,sColaUI,sCardUI,sHeartTrophyUI,sPickaxeUI,sMagnetUI,sCritPBUI,sBagUI,sChargeUI,sShieldUI,sHeartMagnetUI,sFuzzyDiceUI];
 global.sword = true;
 global.tutorialCompleted = false;
+global.floor1Completed = false;
 global.runCompleted = false;
 global.inARun = false;
 global.sideRoomArray = [rTreasureRoom,rTreasureRoom2];
@@ -137,70 +138,3 @@ Load();
 // Change max health depending on what was loaded
 global.maxHealth += (global.healthUpgrades * 2);
 global.health += (global.healthUpgrades * 2);
-
-// If save file doesn't have variable that doesn't default to 0, change to actual default value
-if(global.best1_1 == "0")
-{
-	global.best1_1 = "F";
-	Save();
-}
-
-if(global.best1_2 == "0")
-{
-	global.best1_2 = "F";
-	Save();
-}
-
-if(global.best1_3 == "0")
-{
-	global.best1_3 = "F";
-	Save();
-}
-
-if(global.best1_4 == "0")
-{
-	global.best1_4 = "F";
-	Save();
-}
-
-if(global.best1_5 == "0")
-{
-	global.best1_5 = "F";
-	Save();
-}
-
-if(global.best1_6 == "0")
-{
-	global.best1_6 = "F";
-	Save();
-}
-
-if(global.best2_1 == "0")
-{
-	global.best2_1 = "F";
-	Save();
-}
-
-if(global.best2_2 == "0")
-{
-	global.best2_2 = "F";
-	Save();
-}
-
-if(global.best2_3 == "0")
-{
-	global.best2_3 = "F";
-	Save();
-}
-
-if(global.best2_4 == "0")
-{
-	global.best2_4 = "F";
-	Save();
-}
-
-if(global.bestOverall == "0")
-{
-	global.bestOverall = "F";
-	Save();
-}

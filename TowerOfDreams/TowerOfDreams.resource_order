@@ -89,6 +89,7 @@
     {"name":"oDoor","order":15,"path":"objects/oDoor/oDoor.yy",},
     {"name":"sChargeUI","order":23,"path":"sprites/sChargeUI/sChargeUI.yy",},
     {"name":"sArrowSign","order":1,"path":"sprites/sArrowSign/sArrowSign.yy",},
+    {"name":"sLock","order":37,"path":"sprites/sLock/sLock.yy",},
     {"name":"sLightUI","order":24,"path":"sprites/sLightUI/sLightUI.yy",},
     {"name":"oSlashTutorial","order":3,"path":"objects/oSlashTutorial/oSlashTutorial.yy",},
     {"name":"oSpray","order":35,"path":"objects/oSpray/oSpray.yy",},
