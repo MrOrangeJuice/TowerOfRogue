@@ -191,6 +191,7 @@
     {"name":"oRichard","order":1,"path":"objects/oRichard/oRichard.yy",},
     {"name":"sPlayerJumpZombie","order":6,"path":"sprites/sPlayerJumpZombie/sPlayerJumpZombie.yy",},
     {"name":"sPlayerWallSlideGold","order":14,"path":"sprites/sPlayerWallSlideGold/sPlayerWallSlideGold.yy",},
+    {"name":"tFloor3","order":8,"path":"tilesets/tFloor3/tFloor3.yy",},
     {"name":"sPortalExit","order":4,"path":"sprites/sPortalExit/sPortalExit.yy",},
     {"name":"IsOnScreen","order":8,"path":"scripts/IsOnScreen/IsOnScreen.yy",},
     {"name":"oCritVFX","order":16,"path":"objects/oCritVFX/oCritVFX.yy",},
