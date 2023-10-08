@@ -20,6 +20,7 @@
     {"name":"Rooms","order":9,"path":"folders/Rooms.yy",},
     {"name":"Floor 1","order":7,"path":"folders/Rooms/Floor 1.yy",},
     {"name":"Floor 2","order":10,"path":"folders/Rooms/Floor 2.yy",},
+    {"name":"Floor 3","order":14,"path":"folders/Rooms/Floor 3.yy",},
     {"name":"Side Areas","order":6,"path":"folders/Rooms/Side Areas.yy",},
     {"name":"Floor 1","order":4,"path":"folders/Rooms/Side Areas/Floor 1.yy",},
     {"name":"Floor 2","order":5,"path":"folders/Rooms/Side Areas/Floor 2.yy",},
@@ -65,7 +66,6 @@
     {"name":"Numbers","order":14,"path":"folders/Sprites/VFX/Numbers.yy",},
     {"name":"Tile Sets","order":1,"path":"folders/Tile Sets.yy",},
     {"name":"Timelines","order":7,"path":"folders/Timelines.yy",},
-    {"name":"Floor 3","order":14,"path":"folders/Rooms/Floor 3.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"sUseItemControllerFadeIn","order":16,"path":"sprites/sUseItemControllerFadeIn/sUseItemControllerFadeIn.yy",},
