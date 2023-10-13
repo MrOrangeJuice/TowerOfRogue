@@ -8,7 +8,7 @@ if(instance_exists(oPlayer))
 	{
 		draw_set_halign(fa_center);
 		if(global.hardMode) draw_text(x+16,y-16,"Difficulty: Nightmare");
-		else draw_text(x+16,y-16,"Difficulty: Dream");
+		else draw_text(x+16,y-16,"Difficulty: Daydream");
 		draw_set_halign(fa_left);
 	}
 }
