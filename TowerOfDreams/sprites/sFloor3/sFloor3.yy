@@ -4,7 +4,7 @@
   "name": "sFloor3",
   "bbox_bottom": 15,
   "bbox_left": 8,
-  "bbox_right": 47,
+  "bbox_right": 63,
   "bbox_top": 0,
   "bboxMode": 0,
   "collisionKind": 1,
