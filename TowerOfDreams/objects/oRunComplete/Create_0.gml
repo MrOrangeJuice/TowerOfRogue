@@ -4,6 +4,16 @@
 audio_stop_sound(msc_Floor1);
 audio_stop_sound(msc_Floor2);
 
+// Sprites
+intro = sRunCompleteIntro;
+animated = sRunCompleteAnimated;
+if(global.hardMode)
+{
+	intro = sRunCompleteIntroNightmare;
+	sprite_index = sRunCompleteIntroNightmare;
+	animated = sRunCompleteAnimatedNightmare;
+}
+
 lettersRemaining = 12;
 drawOverallRankText = false;
 drawOverallRank = false;
