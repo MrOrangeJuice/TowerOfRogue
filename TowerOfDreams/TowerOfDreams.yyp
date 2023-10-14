@@ -121,6 +121,7 @@
     {"id":{"name":"sRunCompleteAnimated","path":"sprites/sRunCompleteAnimated/sRunCompleteAnimated.yy",},},
     {"id":{"name":"sSlashController","path":"sprites/sSlashController/sSlashController.yy",},},
     {"id":{"name":"sC","path":"sprites/sC/sC.yy",},},
+    {"id":{"name":"sBombUI","path":"sprites/sBombUI/sBombUI.yy",},},
     {"id":{"name":"rRunTest","path":"rooms/rRunTest/rRunTest.yy",},},
     {"id":{"name":"sDoubleGem","path":"sprites/sDoubleGem/sDoubleGem.yy",},},
     {"id":{"name":"sPlayerHelmetZombie","path":"sprites/sPlayerHelmetZombie/sPlayerHelmetZombie.yy",},},
