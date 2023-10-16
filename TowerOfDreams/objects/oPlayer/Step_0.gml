@@ -1152,8 +1152,8 @@ if(!global.paused && !global.hitStop)
 	// Drop Item
 	if(key_drop_item && global.item != -1)
 	{
-		dropItemHold++;
-		if(dropItemHold >= 30)
+		global.dropItemHold++;
+		if(global.dropItemHold >= 30)
 		{
 			with(oGame) itemTextScale = 1.3;
 			// Reset walksp in case of boots or lightning
@@ -1169,12 +1169,12 @@ if(!global.paused && !global.hitStop)
 			
 			// Reset
 			global.item = -1;
-			dropItemHold = 0;
+			global.dropItemHold = 0;
 		}
 	}
 	else
 	{
-		dropItemHold = 0;
+		global.dropItemHold = 0;
 	}
 	
 	// Items

@@ -641,6 +641,7 @@
     {"id":{"name":"snd_ChargeHit","path":"sounds/snd_ChargeHit/snd_ChargeHit.yy",},},
     {"id":{"name":"sPlayerLavaRed","path":"sprites/sPlayerLavaRed/sPlayerLavaRed.yy",},},
     {"id":{"name":"s4","path":"sprites/s4/s4.yy",},},
+    {"id":{"name":"sDropUI","path":"sprites/sDropUI/sDropUI.yy",},},
     {"id":{"name":"sGem","path":"sprites/sGem/sGem.yy",},},
     {"id":{"name":"sWingsUI","path":"sprites/sWingsUI/sWingsUI.yy",},},
     {"id":{"name":"sHUDStart","path":"sprites/sHUDStart/sHUDStart.yy",},},

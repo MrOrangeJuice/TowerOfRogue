@@ -348,6 +348,9 @@ if(room != rTitle && room != rRunComplete)
 	// Draw item in box
 	if(global.item != -1) draw_sprite_stretched(global.itemSprites[global.item],0,44+hudMod,5,8*itemTextScale,8*itemTextScale);
 	
+	// Draw drop item meter
+	if(global.dropItemHold > 0) draw_sprite(sDropUI,floor(global.dropItemHold/2),40+hudMod,18);
+	
 	// Draw passive items
 	passiveItemTextScale = max(passiveItemTextScale * .95, 1);
 	for(i = 0; i < array_length(global.passiveItems); i++)
