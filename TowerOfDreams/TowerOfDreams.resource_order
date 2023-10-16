@@ -147,6 +147,7 @@
     {"name":"sHUD","order":4,"path":"sprites/sHUD/sHUD.yy",},
     {"name":"sMenuBoxBig","order":21,"path":"sprites/sMenuBoxBig/sMenuBoxBig.yy",},
     {"name":"snd_GravLand","order":37,"path":"sounds/snd_GravLand/snd_GravLand.yy",},
+    {"name":"sItemFrogTongue","order":7,"path":"sprites/sItemFrogTongue/sItemFrogTongue.yy",},
     {"name":"sShieldUI","order":25,"path":"sprites/sShieldUI/sShieldUI.yy",},
     {"name":"oRightConveyer","order":15,"path":"objects/oRightConveyer/oRightConveyer.yy",},
     {"name":"sA","order":1,"path":"sprites/sA/sA.yy",},
