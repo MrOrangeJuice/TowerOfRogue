@@ -39,6 +39,7 @@ chargeSlash = false;
 dashing = false;
 airDash = false;
 dashOver = false;
+dropItemHold = 0;
 
 // Sprites
 idleSprite = sPlayerIdle;

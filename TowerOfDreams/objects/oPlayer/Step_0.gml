@@ -6,8 +6,9 @@ key_jump = keyboard_check(vk_space) || keyboard_check(ord("Z")) || keyboard_chec
 key_jump_released = keyboard_check_released(vk_space) || keyboard_check_released(ord("Z")) || keyboard_check_released(ord("P"));
 key_item_pressed = keyboard_check_pressed(ord("X")) || keyboard_check_pressed(ord("O")) || keyboard_check_pressed(vk_lshift);
 key_item = keyboard_check(ord("X")) || keyboard_check(ord("O")) || keyboard_check(vk_lshift);
+key_drop_item = keyboard_check(ord("C")) || keyboard_check(ord("I")) || keyboard_check(vk_rshift);
 
-if (key_left) || (key_right) || (key_jump) || (key_item) || (key_item_pressed)
+if (key_left) || (key_right) || (key_jump) || (key_item) || (key_item_pressed) || (key_drop_item)
 {
 	global.controller = 0;
 }
@@ -52,6 +53,12 @@ if (gamepad_button_check_pressed(0,gp_face2) || gamepad_button_check_pressed(0,g
 if (gamepad_button_check(0,gp_face2) || gamepad_button_check(0,gp_face3) || gamepad_button_check(4,gp_face2) || gamepad_button_check(4,gp_face3))
 {
 	key_item = 1;
+	global.controller = 1;
+}
+
+if (gamepad_button_check(0,gp_face4) || gamepad_button_check(4,gp_face4))
+{
+	key_drop_item = 1;
 	global.controller = 1;
 }
 
@@ -1140,6 +1147,34 @@ if(!global.paused && !global.hitStop)
 		audio_play_sound(snd_Land, 5, false);
 		hit = false;
 		chargeBounces = 0;
+	}
+	
+	// Drop Item
+	if(key_drop_item && global.item != -1)
+	{
+		dropItemHold++;
+		if(dropItemHold >= 30)
+		{
+			with(oGame) itemTextScale = 1.3;
+			// Reset walksp in case of boots or lightning
+			walksp = 1;
+			running = false;
+			dashing = false;
+			// Reset extra jump variable for wings
+			extraJump = true;
+
+			// Drop the item on the ground
+			oldItem = instance_create_layer(x-4,y-8,"Collectables",global.itemObjects[global.item]);
+			oldItem.vsp = -3;
+			
+			// Reset
+			global.item = -1;
+			dropItemHold = 0;
+		}
+	}
+	else
+	{
+		dropItemHold = 0;
 	}
 	
 	// Items
