@@ -511,6 +511,7 @@
     {"id":{"name":"sShopDoorSmall","path":"sprites/sShopDoorSmall/sShopDoorSmall.yy",},},
     {"id":{"name":"sTankEnemyBack","path":"sprites/sTankEnemyBack/sTankEnemyBack.yy",},},
     {"id":{"name":"oPlayerEnter","path":"objects/oPlayerEnter/oPlayerEnter.yy",},},
+    {"id":{"name":"sItemFrog","path":"sprites/sItemFrog/sItemFrog.yy",},},
     {"id":{"name":"sMove","path":"sprites/sMove/sMove.yy",},},
     {"id":{"name":"rTreasureRoomFloor2","path":"rooms/rTreasureRoomFloor2/rTreasureRoomFloor2.yy",},},
     {"id":{"name":"sBallPipeElite","path":"sprites/sBallPipeElite/sBallPipeElite.yy",},},

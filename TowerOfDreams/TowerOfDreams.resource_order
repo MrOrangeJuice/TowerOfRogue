@@ -465,6 +465,7 @@
     {"name":"sShopDoorSmall","order":44,"path":"sprites/sShopDoorSmall/sShopDoorSmall.yy",},
     {"name":"sTankEnemyBack","order":1,"path":"sprites/sTankEnemyBack/sTankEnemyBack.yy",},
     {"name":"oPlayerEnter","order":10,"path":"objects/oPlayerEnter/oPlayerEnter.yy",},
+    {"name":"sItemFrog","order":6,"path":"sprites/sItemFrog/sItemFrog.yy",},
     {"name":"rTreasureRoomFloor2","order":3,"path":"rooms/rTreasureRoomFloor2/rTreasureRoomFloor2.yy",},
     {"name":"sBallPipeElite","order":33,"path":"sprites/sBallPipeElite/sBallPipeElite.yy",},
     {"name":"sPlayerSlashDoubleGold","order":11,"path":"sprites/sPlayerSlashDoubleGold/sPlayerSlashDoubleGold.yy",},
