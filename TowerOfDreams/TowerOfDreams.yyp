@@ -775,6 +775,7 @@
     {"id":{"name":"sPlayerBit","path":"sprites/sPlayerBit/sPlayerBit.yy",},},
     {"id":{"name":"oDust","path":"objects/oDust/oDust.yy",},},
     {"id":{"name":"snd_Lever","path":"sounds/snd_Lever/snd_Lever.yy",},},
+    {"id":{"name":"oItemFrog","path":"objects/oItemFrog/oItemFrog.yy",},},
     {"id":{"name":"rShop2Floor2","path":"rooms/rShop2Floor2/rShop2Floor2.yy",},},
     {"id":{"name":"rTest","path":"rooms/rTest/rTest.yy",},},
   ],

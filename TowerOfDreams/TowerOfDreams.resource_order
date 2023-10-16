@@ -703,5 +703,6 @@
     {"name":"oLightItem","order":26,"path":"objects/oLightItem/oLightItem.yy",},
     {"name":"sPlayerBit","order":14,"path":"sprites/sPlayerBit/sPlayerBit.yy",},
     {"name":"snd_Lever","order":33,"path":"sounds/snd_Lever/snd_Lever.yy",},
+    {"name":"oItemFrog","order":3,"path":"objects/oItemFrog/oItemFrog.yy",},
   ],
 }
