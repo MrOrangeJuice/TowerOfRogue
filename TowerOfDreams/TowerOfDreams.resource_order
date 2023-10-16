@@ -595,6 +595,7 @@
     {"name":"sShopPipe","order":15,"path":"sprites/sShopPipe/sShopPipe.yy",},
     {"name":"oTransition","order":8,"path":"objects/oTransition/oTransition.yy",},
     {"name":"sShopShelfRight","order":6,"path":"sprites/sShopShelfRight/sShopShelfRight.yy",},
+    {"name":"snd_Dropitem","order":61,"path":"sounds/snd_Dropitem/snd_Dropitem.yy",},
     {"name":"sDustSlashGreen","order":27,"path":"sprites/sDustSlashGreen/sDustSlashGreen.yy",},
     {"name":"sOptionsMenuDeletedSave","order":8,"path":"sprites/sOptionsMenuDeletedSave/sOptionsMenuDeletedSave.yy",},
     {"name":"sClouds2","order":7,"path":"sprites/sClouds2/sClouds2.yy",},

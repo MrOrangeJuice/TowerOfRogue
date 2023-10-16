@@ -1167,6 +1167,8 @@ if(!global.paused && !global.hitStop)
 			oldItem = instance_create_layer(x-4,y-8,"Collectables",global.itemObjects[global.item]);
 			oldItem.vsp = -3;
 			
+			audio_play_sound(snd_Dropitem,5,false);
+			
 			// Reset
 			global.item = -1;
 			global.dropItemHold = 0;
