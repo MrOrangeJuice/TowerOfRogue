@@ -1165,7 +1165,7 @@ if(!global.paused && !global.hitStop)
 
 			// Drop the item on the ground
 			oldItem = instance_create_layer(x-4,y-8,"Collectables",global.itemObjects[global.item]);
-			oldItem.vsp = -3;
+			oldItem.vsp = -6;
 			
 			audio_play_sound(snd_Dropitem,5,false);
 			
