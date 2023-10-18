@@ -2,6 +2,6 @@
 
 if(tongue)
 {
-	global.overallCoins += global.itemPrices[other.itemId] / 2;
+	item = other.itemId;
 	instance_destroy(other);
 }
