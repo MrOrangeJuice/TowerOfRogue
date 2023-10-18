@@ -45,4 +45,6 @@ else
 	global.infiniteHealth = false;	
 }
 
+// Stop just in case
 audio_stop_sound(snd_BoomerangReturn);
+audio_stop_sound(snd_GemLoop);
