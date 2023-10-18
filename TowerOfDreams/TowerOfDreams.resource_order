@@ -443,6 +443,7 @@
     {"name":"sPauseMenu","order":5,"path":"sprites/sPauseMenu/sPauseMenu.yy",},
     {"name":"sPlayerSlashDouble","order":16,"path":"sprites/sPlayerSlashDouble/sPlayerSlashDouble.yy",},
     {"name":"sScytheUI","order":16,"path":"sprites/sScytheUI/sScytheUI.yy",},
+    {"name":"oGiantGem","order":28,"path":"objects/oGiantGem/oGiantGem.yy",},
     {"name":"sPlayerHelmetGreen","order":12,"path":"sprites/sPlayerHelmetGreen/sPlayerHelmetGreen.yy",},
     {"name":"oPortalExit","order":3,"path":"objects/oPortalExit/oPortalExit.yy",},
     {"name":"sBoomerang","order":20,"path":"sprites/sBoomerang/sBoomerang.yy",},

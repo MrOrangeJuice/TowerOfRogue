@@ -487,6 +487,7 @@
     {"id":{"name":"sPauseMenu","path":"sprites/sPauseMenu/sPauseMenu.yy",},},
     {"id":{"name":"sPlayerSlashDouble","path":"sprites/sPlayerSlashDouble/sPlayerSlashDouble.yy",},},
     {"id":{"name":"sScytheUI","path":"sprites/sScytheUI/sScytheUI.yy",},},
+    {"id":{"name":"oGiantGem","path":"objects/oGiantGem/oGiantGem.yy",},},
     {"id":{"name":"sPlayerHelmetGreen","path":"sprites/sPlayerHelmetGreen/sPlayerHelmetGreen.yy",},},
     {"id":{"name":"oPortalExit","path":"objects/oPortalExit/oPortalExit.yy",},},
     {"id":{"name":"sBoomerang","path":"sprites/sBoomerang/sBoomerang.yy",},},
