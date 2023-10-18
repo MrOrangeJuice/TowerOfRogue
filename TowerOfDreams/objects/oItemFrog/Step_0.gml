@@ -10,7 +10,8 @@ if(!global.paused)
 		sprite_index = sItemFrogTongue;
 		alarm[0] = room_speed * 0.3;
 		alarm[1] = room_speed * 1.2;
-		alarm[2] = room_speed * 1.65;
+		alarm[2] = room_speed * 2.35;
+		alarm[3] = room_speed * 2.15;
 	}
 }
 else
@@ -18,5 +19,6 @@ else
 	alarm[0]++;
 	alarm[1]++;
 	alarm[2]++;
+	alarm[3]++;
 	image_speed = 0;	
 }

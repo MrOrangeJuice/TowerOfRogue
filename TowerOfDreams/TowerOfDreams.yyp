@@ -213,6 +213,7 @@
     {"id":{"name":"sPlayerRunGold","path":"sprites/sPlayerRunGold/sPlayerRunGold.yy",},},
     {"id":{"name":"sAxeUI","path":"sprites/sAxeUI/sAxeUI.yy",},},
     {"id":{"name":"sLavaDebug","path":"sprites/sLavaDebug/sLavaDebug.yy",},},
+    {"id":{"name":"snd_Burp","path":"sounds/snd_Burp/snd_Burp.yy",},},
     {"id":{"name":"sJumpController","path":"sprites/sJumpController/sJumpController.yy",},},
     {"id":{"name":"sKunai","path":"sprites/sKunai/sKunai.yy",},},
     {"id":{"name":"sLeftConveyer","path":"sprites/sLeftConveyer/sLeftConveyer.yy",},},
