@@ -328,6 +328,7 @@
     {"id":{"name":"s5","path":"sprites/s5/s5.yy",},},
     {"id":{"name":"sAxplosion","path":"sprites/sAxplosion/sAxplosion.yy",},},
     {"id":{"name":"rRunTest3","path":"rooms/rRunTest3/rRunTest3.yy",},},
+    {"id":{"name":"sBigCoinVFX","path":"sprites/sBigCoinVFX/sBigCoinVFX.yy",},},
     {"id":{"name":"oAxeParticle","path":"objects/oAxeParticle/oAxeParticle.yy",},},
     {"id":{"name":"snd_Dream","path":"sounds/snd_Dream/snd_Dream.yy",},},
     {"id":{"name":"sPlayerLavaGreen","path":"sprites/sPlayerLavaGreen/sPlayerLavaGreen.yy",},},

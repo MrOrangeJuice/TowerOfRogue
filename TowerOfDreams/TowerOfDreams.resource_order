@@ -293,6 +293,7 @@
     {"name":"s5","order":4,"path":"sprites/s5/s5.yy",},
     {"name":"sAxplosion","order":25,"path":"sprites/sAxplosion/sAxplosion.yy",},
     {"name":"rRunTest3","order":2,"path":"rooms/rRunTest3/rRunTest3.yy",},
+    {"name":"sBigCoinVFX","order":31,"path":"sprites/sBigCoinVFX/sBigCoinVFX.yy",},
     {"name":"oAxeParticle","order":21,"path":"objects/oAxeParticle/oAxeParticle.yy",},
     {"name":"snd_Dream","order":60,"path":"sounds/snd_Dream/snd_Dream.yy",},
     {"name":"sPlayerLavaGreen","order":5,"path":"sprites/sPlayerLavaGreen/sPlayerLavaGreen.yy",},
