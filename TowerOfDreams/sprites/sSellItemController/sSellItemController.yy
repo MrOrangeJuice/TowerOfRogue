@@ -2,7 +2,7 @@
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "sSellItemController",
-  "bbox_bottom": 67,
+  "bbox_bottom": 77,
   "bbox_left": 0,
   "bbox_right": 39,
   "bbox_top": 5,

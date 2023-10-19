@@ -17,6 +17,7 @@
     {"name":"inst_699462CA_3","path":"rooms/rTreasureRoomFloor2/rTreasureRoomFloor2.yy",},
     {"name":"inst_7633B0D2_2","path":"rooms/rTreasureRoomFloor2/rTreasureRoomFloor2.yy",},
     {"name":"inst_30F1216F","path":"rooms/rTreasureRoomFloor2/rTreasureRoomFloor2.yy",},
+    {"name":"inst_2E94F228","path":"rooms/rTreasureRoomFloor2/rTreasureRoomFloor2.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -44,6 +45,7 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_76B667D1_2","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oChest","path":"objects/oChest/oChest.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":320.0,"y":1508.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_7633B0D2_2","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oItemTutorialFadeIn","path":"objects/oItemTutorialFadeIn/oItemTutorialFadeIn.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":308.0,"y":1460.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_30F1216F","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oItemFrog","path":"objects/oItemFrog/oItemFrog.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":400.0,"y":1528.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_2E94F228","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oSellItemTutorialFadeIn","path":"objects/oSellItemTutorialFadeIn/oSellItemTutorialFadeIn.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":388.0,"y":1435.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"CoinVFX","depth":700,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"VFX","depth":800,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
