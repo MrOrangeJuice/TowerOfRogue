@@ -83,7 +83,7 @@
   "isEcma": false,
   "LibraryEmitters": [],
   "MetaData": {
-    "IDEVersion": "2023.8.2.108",
+    "IDEVersion": "2023.8.1.102",
   },
   "resources": [
     {"id":{"name":"sUseItemControllerFadeIn","path":"sprites/sUseItemControllerFadeIn/sUseItemControllerFadeIn.yy",},},
@@ -208,6 +208,7 @@
     {"id":{"name":"oBallVFX","path":"objects/oBallVFX/oBallVFX.yy",},},
     {"id":{"name":"sLavaTest","path":"sprites/sLavaTest/sLavaTest.yy",},},
     {"id":{"name":"sGravityEnemyFall","path":"sprites/sGravityEnemyFall/sGravityEnemyFall.yy",},},
+    {"id":{"name":"oGhostJarItem","path":"objects/oGhostJarItem/oGhostJarItem.yy",},},
     {"id":{"name":"sGravityEnemyHuskFallUp","path":"sprites/sGravityEnemyHuskFallUp/sGravityEnemyHuskFallUp.yy",},},
     {"id":{"name":"sPlayerHitGold","path":"sprites/sPlayerHitGold/sPlayerHitGold.yy",},},
     {"id":{"name":"sGroundEnemySmall","path":"sprites/sGroundEnemySmall/sGroundEnemySmall.yy",},},
@@ -216,6 +217,7 @@
     {"id":{"name":"sLavaDebug","path":"sprites/sLavaDebug/sLavaDebug.yy",},},
     {"id":{"name":"snd_Burp","path":"sounds/snd_Burp/snd_Burp.yy",},},
     {"id":{"name":"sJumpController","path":"sprites/sJumpController/sJumpController.yy",},},
+    {"id":{"name":"sGhostJarUI","path":"sprites/sGhostJarUI/sGhostJarUI.yy",},},
     {"id":{"name":"sKunai","path":"sprites/sKunai/sKunai.yy",},},
     {"id":{"name":"sLeftConveyer","path":"sprites/sLeftConveyer/sLeftConveyer.yy",},},
     {"id":{"name":"RankIsBetter","path":"scripts/RankIsBetter/RankIsBetter.yy",},},

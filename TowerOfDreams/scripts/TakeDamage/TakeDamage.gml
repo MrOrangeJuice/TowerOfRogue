@@ -45,15 +45,24 @@ function TakeDamage(argument0,argument1,argument2,argument3)
 			else
 			{
 				vsp = -argument1;
+				ghostNum = 0;
+				// Check invulernability items
+				for(i = 0; i < array_length(global.passiveItems); i++)
+				{
+					if(global.passiveItems[i] == 14)
+					{
+						ghostNum++;
+					}
+				}
 				// Set hsp to the opposite of your current direction
 				if (argument3) currentwalksp = -sign(image_xscale) * argument2;
 				if (argument3) 
 				{
-					invulnerable = 100;
+					invulnerable = 100 + (ghostNum * 50);
 				}
 				else
 				{
-					invulnerable = 50;	
+					invulnerable = 50 + (ghostNum * 50);
 				}
 				if(argument3) hit = true;
 				if(argument3) canJump = true;
