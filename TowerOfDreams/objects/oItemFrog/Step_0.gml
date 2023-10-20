@@ -14,7 +14,7 @@ if(!global.paused)
 		alarm[3] = room_speed * 2.15;
 	}
 	
-	if(place_meeting(x,y,oPlayer) && global.item == -1)
+	if(place_meeting(x,y,oPlayer) && playerHasNoItem)
 	{
 		if(!colliding)
 		{

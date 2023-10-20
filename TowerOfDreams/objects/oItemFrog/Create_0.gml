@@ -9,4 +9,7 @@ yAccel = 0.02;
 vsp = 0;
 yOffset = 0;
 
-phrases = ["I love\nactive items!","Active items\nsure are tasty!","Active items\nare scrumptious!"];
+playerHasNoItem = false;
+if(global.item == -1) playerHasNoItem = true;
+
+phrases = ["I love\nactive items!","Active items\nare tasty!"];

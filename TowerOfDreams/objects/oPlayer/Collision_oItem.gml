@@ -34,6 +34,8 @@ if(other.canGrab)
 	
 		// Spawn tutorial
 		if(instance_exists(oItemTutorialFadeIn)) oItemTutorialFadeIn.image_speed = 1;
+		// Remove dialogue for frog
+		if(instance_exists(oItemFrog)) oItemFrog.playerHasNoItem = false;
 	}
 	// Passive item
 	else
