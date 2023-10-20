@@ -13,6 +13,28 @@ if(!global.paused)
 		alarm[2] = room_speed * 2.35;
 		alarm[3] = room_speed * 2.15;
 	}
+	
+	if(place_meeting(x,y,oPlayer) && global.item == -1)
+	{
+		if(!colliding)
+		{
+			colliding = true;
+			// Regenerate phrase
+			signMessage = phrases[random_range(0,array_length(phrases))];
+			audio_play_sound(snd_Richard,5,false);
+		}
+	}
+	else
+	{
+		colliding = false;	
+	}
+	
+	if(vsp > 0.2 || vsp < -0.2)
+	{
+		yAccel *= -1;	
+	}
+	vsp += yAccel;
+	yOffset = yOffset + vsp;
 }
 else
 {
