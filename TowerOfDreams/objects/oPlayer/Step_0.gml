@@ -1147,6 +1147,7 @@ if(!global.paused && !global.hitStop)
 		audio_play_sound(snd_Land, 5, false);
 		hit = false;
 		chargeBounces = 0;
+		bombNum = 2;
 	}
 	
 	// Drop Item
@@ -1374,7 +1375,30 @@ if(!global.paused && !global.hitStop)
 				}
 			}
 			break;	
-			
+		// Jester Bomb
+		case 22:
+			if(key_item_pressed)
+			{
+				audio_play_sound(snd_Kunai,5,false);
+				// If on ground, just spawn explosion and shoot straight up
+				if(!airborne)
+				{
+					vsp = -4;
+					extraJump = false;
+					instance_create_layer(x,y,"VFX",oBombExplosionVFX);
+					audio_play_sound(snd_EnemyDeath,5,false);
+					ScreenShake(2,10);
+				}
+				// Otherwise throw bomb straight down and get a little bit of lift
+				else if(bombNum > 0)
+				{
+					vsp = -2;
+					extraJump = false;
+					bombNum--;
+					instance_create_layer(x-4,y-4,"Walls",oBomb);
+				}
+			}
+			break;
 	}
 
 	// Animation

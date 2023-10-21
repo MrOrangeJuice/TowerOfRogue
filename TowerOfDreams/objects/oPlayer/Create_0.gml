@@ -39,6 +39,7 @@ chargeSlash = false;
 dashing = false;
 airDash = false;
 dashOver = false;
+bombNum = 2;
 
 // Sprites
 idleSprite = sPlayerIdle;
