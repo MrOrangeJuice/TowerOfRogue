@@ -534,6 +534,7 @@
     {"name":"sItemUI","order":10,"path":"sprites/sItemUI/sItemUI.yy",},
     {"name":"rRunComplete","order":12,"path":"rooms/rRunComplete/rRunComplete.yy",},
     {"name":"SlideTransition","order":1,"path":"scripts/SlideTransition/SlideTransition.yy",},
+    {"name":"sBomb","order":36,"path":"sprites/sBomb/sBomb.yy",},
     {"name":"snd_PauseOut","order":9,"path":"sounds/snd_PauseOut/snd_PauseOut.yy",},
     {"name":"sClouds3","order":10,"path":"sprites/sClouds3/sClouds3.yy",},
     {"name":"o10","order":5,"path":"objects/o10/o10.yy",},

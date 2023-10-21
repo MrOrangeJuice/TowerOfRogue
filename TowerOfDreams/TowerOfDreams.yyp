@@ -585,6 +585,7 @@
     {"id":{"name":"rRunComplete","path":"rooms/rRunComplete/rRunComplete.yy",},},
     {"id":{"name":"SlideTransition","path":"scripts/SlideTransition/SlideTransition.yy",},},
     {"id":{"name":"sPlayerFallRed","path":"sprites/sPlayerFallRed/sPlayerFallRed.yy",},},
+    {"id":{"name":"sBomb","path":"sprites/sBomb/sBomb.yy",},},
     {"id":{"name":"snd_PauseOut","path":"sounds/snd_PauseOut/snd_PauseOut.yy",},},
     {"id":{"name":"sClouds3","path":"sprites/sClouds3/sClouds3.yy",},},
     {"id":{"name":"o10","path":"objects/o10/o10.yy",},},
