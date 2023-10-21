@@ -140,6 +140,7 @@
     {"name":"sUseItemFadeIn","order":15,"path":"sprites/sUseItemFadeIn/sUseItemFadeIn.yy",},
     {"name":"sDiceBubbleGrow","order":29,"path":"sprites/sDiceBubbleGrow/sDiceBubbleGrow.yy",},
     {"name":"oDustSlashBumper","order":8,"path":"objects/oDustSlashBumper/oDustSlashBumper.yy",},
+    {"name":"sBombExplosion","order":32,"path":"sprites/sBombExplosion/sBombExplosion.yy",},
     {"name":"oGravityEnemyDustVFX","order":21,"path":"objects/oGravityEnemyDustVFX/oGravityEnemyDustVFX.yy",},
     {"name":"oGoldArmor","order":7,"path":"objects/oGoldArmor/oGoldArmor.yy",},
     {"name":"sStartController","order":6,"path":"sprites/sStartController/sStartController.yy",},
