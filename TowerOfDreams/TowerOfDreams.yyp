@@ -83,7 +83,7 @@
   "isEcma": false,
   "LibraryEmitters": [],
   "MetaData": {
-    "IDEVersion": "2023.8.1.102",
+    "IDEVersion": "2023.8.2.108",
   },
   "resources": [
     {"id":{"name":"sUseItemControllerFadeIn","path":"sprites/sUseItemControllerFadeIn/sUseItemControllerFadeIn.yy",},},
@@ -395,6 +395,7 @@
     {"id":{"name":"sBoomerangUI","path":"sprites/sBoomerangUI/sBoomerangUI.yy",},},
     {"id":{"name":"oShopDoor","path":"objects/oShopDoor/oShopDoor.yy",},},
     {"id":{"name":"sBumperBOff","path":"sprites/sBumperBOff/sBumperBOff.yy",},},
+    {"id":{"name":"oHammerItem","path":"objects/oHammerItem/oHammerItem.yy",},},
     {"id":{"name":"oSprayItem","path":"objects/oSprayItem/oSprayItem.yy",},},
     {"id":{"name":"oLevelInfo","path":"objects/oLevelInfo/oLevelInfo.yy",},},
     {"id":{"name":"sPlayerRunYellow","path":"sprites/sPlayerRunYellow/sPlayerRunYellow.yy",},},
@@ -675,6 +676,7 @@
     {"id":{"name":"sOptionsMenuDeletedSave","path":"sprites/sOptionsMenuDeletedSave/sOptionsMenuDeletedSave.yy",},},
     {"id":{"name":"sStamper","path":"sprites/sStamper/sStamper.yy",},},
     {"id":{"name":"oEnemy","path":"objects/oEnemy/oEnemy.yy",},},
+    {"id":{"name":"sHammerUI","path":"sprites/sHammerUI/sHammerUI.yy",},},
     {"id":{"name":"sClouds2","path":"sprites/sClouds2/sClouds2.yy",},},
     {"id":{"name":"oCannon","path":"objects/oCannon/oCannon.yy",},},
     {"id":{"name":"sFlyingHeart","path":"sprites/sFlyingHeart/sFlyingHeart.yy",},},
