@@ -464,6 +464,7 @@ if(!global.paused && !global.hitStop)
 			hasSlashed = true;
 			hasSlashJumped = true;
 			extraJump = true;
+			bombNum = 2;
 			if(chargeInItems) 
 			{
 				chargeBounces++;
@@ -514,6 +515,7 @@ if(!global.paused && !global.hitStop)
 			hasSlashed = true;
 			hasSlashJumped = true;
 			extraJump = true;
+			bombNum = 2;
 			if(chargeInItems) 
 			{
 				chargeBounces++;
@@ -550,6 +552,7 @@ if(!global.paused && !global.hitStop)
 			hasSlashed = true;
 			hasSlashJumped = true;
 			extraJump = true;
+			bombNum = 2;
 			if(chargeInItems) 
 			{
 				chargeBounces++;
@@ -762,6 +765,7 @@ if(!global.paused && !global.hitStop)
 			hasSlashed = true;
 			hasSlashJumped = true;
 			extraJump = true;
+			bombNum = 2;
 			if(chargeInItems) 
 			{
 				chargeBounces++;
@@ -795,6 +799,7 @@ if(!global.paused && !global.hitStop)
 			hasSlashed = true;
 			hasSlashJumped = true;
 			extraJump = true;
+			bombNum = 2;
 			if(chargeInItems) 
 			{
 				chargeBounces++;
@@ -839,6 +844,7 @@ if(!global.paused && !global.hitStop)
 			hasSlashed = true;
 			hasSlashJumped = true;
 			extraJump = true;
+			bombNum = 2;
 			if(chargeInItems) 
 			{
 				chargeBounces++;
@@ -875,7 +881,7 @@ if(!global.paused && !global.hitStop)
 			hasSlashed = true;
 			hasSlashJumped = true;
 			extraJump = true;
-			
+			bombNum = 2;
 			if(global.hardMode) 
 			{
 				global.hardMode = false;
@@ -1386,7 +1392,7 @@ if(!global.paused && !global.hitStop)
 					vsp = -4;
 					extraJump = false;
 					instance_create_layer(x,y,"VFX",oBombExplosionVFX);
-					audio_play_sound(snd_EnemyDeath,5,false);
+					audio_play_sound(snd_BombJump,5,false);
 					ScreenShake(2,10);
 				}
 				// Otherwise throw bomb straight down and get a little bit of lift
@@ -1396,6 +1402,7 @@ if(!global.paused && !global.hitStop)
 					extraJump = false;
 					bombNum--;
 					instance_create_layer(x-4,y-4,"Walls",oBomb);
+					audio_play_sound(snd_Kunai,5,false);
 				}
 			}
 			break;
