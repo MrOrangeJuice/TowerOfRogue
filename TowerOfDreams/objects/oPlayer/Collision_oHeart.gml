@@ -4,8 +4,17 @@ if(other.canGrab)
 {
 	if(other.object_index == oArmor)
 	{
+		// Check for armor item
+		hammerNum = 0;
+		for(i = 0; i < array_length(global.passiveItems); i++)
+		{
+			if(global.passiveItems[i] == 15)
+			{
+				hammerNum++;
+			}
+		}
 		instance_create_layer(other.x,other.y,"CoinVFX",oItemVFX);
-		global.armor++;
+		global.armor += 1 + hammerNum;
 		audio_play_sound(snd_Armor,5,false);
 		with (oGame) armorTextScale = 1.15;
 	}

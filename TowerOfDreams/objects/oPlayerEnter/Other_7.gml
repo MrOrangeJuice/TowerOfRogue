@@ -25,18 +25,23 @@ if(global.inARun)
 // Check for items
 randomize();
 shield = 0;
+hammerNum = 0;
 for(i = 0; i < array_length(global.passiveItems); i++)
 {
 	if(global.passiveItems[i] == 11)
 	{
 		shield++;
 	}
+	if(global.passiveItems[i] == 15)
+	{
+		hammerNum++;
+	}
 }
 
 // Give armor
 if(shield > 0)
 {
-	global.armor += shield;
+	global.armor += (shield + hammerNum);
 	audio_play_sound(snd_Armor,5,false);
 	with (oGame) armorTextScale = 1.15;
 }
