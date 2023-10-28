@@ -793,6 +793,7 @@
     {"id":{"name":"sMissileLeftUp","path":"sprites/sMissileLeftUp/sMissileLeftUp.yy",},},
     {"id":{"name":"sGroundEnemyElite","path":"sprites/sGroundEnemyElite/sGroundEnemyElite.yy",},},
     {"id":{"name":"sFloor1","path":"sprites/sFloor1/sFloor1.yy",},},
+    {"id":{"name":"rFloor2_5","path":"rooms/rFloor2_5/rFloor2_5.yy",},},
     {"id":{"name":"snd_Chest","path":"sounds/snd_Chest/snd_Chest.yy",},},
     {"id":{"name":"sLeftSpray","path":"sprites/sLeftSpray/sLeftSpray.yy",},},
     {"id":{"name":"oLightItem","path":"objects/oLightItem/oLightItem.yy",},},
@@ -840,6 +841,7 @@
     {"roomId":{"name":"rFloor2_4","path":"rooms/rFloor2_4/rFloor2_4.yy",},},
     {"roomId":{"name":"rFloor1_6","path":"rooms/rFloor1_6/rFloor1_6.yy",},},
     {"roomId":{"name":"rRoomTemplate3","path":"rooms/rRoomTemplate3/rRoomTemplate3.yy",},},
+    {"roomId":{"name":"rFloor2_5","path":"rooms/rFloor2_5/rFloor2_5.yy",},},
   ],
   "templateType": null,
   "TextureGroups": [

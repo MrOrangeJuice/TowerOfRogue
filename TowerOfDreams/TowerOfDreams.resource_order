@@ -723,6 +723,7 @@
     {"name":"sMissileLeftUp","order":1,"path":"sprites/sMissileLeftUp/sMissileLeftUp.yy",},
     {"name":"sGroundEnemyElite","order":3,"path":"sprites/sGroundEnemyElite/sGroundEnemyElite.yy",},
     {"name":"sFloor1","order":2,"path":"sprites/sFloor1/sFloor1.yy",},
+    {"name":"rFloor2_5","order":4,"path":"rooms/rFloor2_5/rFloor2_5.yy",},
     {"name":"snd_Chest","order":18,"path":"sounds/snd_Chest/snd_Chest.yy",},
     {"name":"sLeftSpray","order":1,"path":"sprites/sLeftSpray/sLeftSpray.yy",},
     {"name":"oLightItem","order":26,"path":"objects/oLightItem/oLightItem.yy",},

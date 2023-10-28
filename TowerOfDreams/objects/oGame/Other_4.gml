@@ -31,7 +31,7 @@ if(room == rFloor1_3 || room == rFloor2_3)
 
 if(room == rTitle)
 {
-	audio_play_sound(msc_TitleScreen,5,true);	
+	if(global.music) audio_play_sound(msc_TitleScreen,5,true);	
 	global.paused = false;
 	menuOption = 0;
 }

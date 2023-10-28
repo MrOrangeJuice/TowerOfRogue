@@ -205,67 +205,71 @@ if(!global.paused && !global.hitStop)
 		airborne = false;	
 		jumpBuffer = 5;
 		hasSlashed = false;
-		if(room == rTutorial && !global.tutorialMusic)
+		// Pick music
+		if(global.music)
 		{
-			audio_play_sound(msc_Tutorial,5,true);
-			global.tutorialMusic = true;
-		}
-		if(room == rHub && !global.hubMusic)
-		{
-			audio_play_sound(msc_Hub,5,true);
-			global.hubMusic = true;
-		}
+			if(room == rTutorial && !global.tutorialMusic)
+			{
+				audio_play_sound(msc_Tutorial,5,true);
+				global.tutorialMusic = true;
+			}
+			if(room == rHub && !global.hubMusic)
+			{
+				audio_play_sound(msc_Hub,5,true);
+				global.hubMusic = true;
+			}
 
-		if(!global.shopMusic && (room == rShop || room == rShop2 ||  room == rShopFloor2 || room == rShop2Floor2))
-		{
-			audio_play_sound(msc_Chest,5,true);
-			global.shopMusic = true;
-		}
-		
-		if(!global.hubShopMusic && room == rHubShop)
-		{
-			audio_play_sound(msc_HubShop,5,true);	
-			global.hubShopMusic = true;
-			audio_stop_sound(msc_Hub);
-			global.hubMusic = false;
-		}
-		
-		if(!global.treasureMusic && (room == rTreasureRoom || room == rTreasureRoom2 || room == rTreasureRoomFloor2 || room == rTreasureRoom2Floor2))
-		{
-			audio_play_sound(msc_Shop,5,true);
-			global.treasureMusic = true;
-		}
-		if(global.inARun && !global.floor1Music && room != rHub && room != rTreasureRoom && room != rTreasureRoom2 && room != rShop && room != rShop2  && room != rTreasureRoomFloor2 && room != rTreasureRoom2Floor2 && room != rShopFloor2 && room != rShop2Floor2)
-		{
-			if(global.levelCount < 3)
+			if(!global.shopMusic && (room == rShop || room == rShop2 ||  room == rShopFloor2 || room == rShop2Floor2))
 			{
-				// Randomize music
-				randomize();
-				musicRand = irandom_range(0,4);
-				if(musicRand == 0)
+				audio_play_sound(msc_Chest,5,true);
+				global.shopMusic = true;
+			}
+		
+			if(!global.hubShopMusic && room == rHubShop)
+			{
+				audio_play_sound(msc_HubShop,5,true);	
+				global.hubShopMusic = true;
+				audio_stop_sound(msc_Hub);
+				global.hubMusic = false;
+			}
+		
+			if(!global.treasureMusic && (room == rTreasureRoom || room == rTreasureRoom2 || room == rTreasureRoomFloor2 || room == rTreasureRoom2Floor2))
+			{
+				audio_play_sound(msc_Shop,5,true);
+				global.treasureMusic = true;
+			}
+			if(global.inARun && !global.floor1Music && room != rHub && room != rTreasureRoom && room != rTreasureRoom2 && room != rShop && room != rShop2  && room != rTreasureRoomFloor2 && room != rTreasureRoom2Floor2 && room != rShopFloor2 && room != rShop2Floor2)
+			{
+				if(global.levelCount < 3)
 				{
-					audio_play_sound(msc_Floor1Variant,5,true);
+					// Randomize music
+					randomize();
+					musicRand = irandom_range(0,4);
+					if(musicRand == 0)
+					{
+						audio_play_sound(msc_Floor1Variant,5,true);
+					}
+					else
+					{
+						audio_play_sound(msc_Floor1,5,true);
+					}
 				}
 				else
 				{
-					audio_play_sound(msc_Floor1,5,true);
+					// Randomize music
+					randomize();
+					musicRand = irandom_range(0,4);
+					if(musicRand == 0)
+					{
+						audio_play_sound(msc_Floor2Variant,5,true);
+					}
+					else
+					{
+						audio_play_sound(msc_Floor2,5,true);
+					}
 				}
+				global.floor1Music = true;
 			}
-			else
-			{
-				// Randomize music
-				randomize();
-				musicRand = irandom_range(0,4);
-				if(musicRand == 0)
-				{
-					audio_play_sound(msc_Floor2Variant,5,true);
-				}
-				else
-				{
-					audio_play_sound(msc_Floor2,5,true);
-				}
-			}
-			global.floor1Music = true;
 		}
 	}
 

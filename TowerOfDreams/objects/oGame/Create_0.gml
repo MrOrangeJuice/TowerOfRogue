@@ -60,6 +60,7 @@ global.bumpersSwitching = false;
 global.lavaId = 0;
 global.displayLC = false;
 global.volume = 6;
+global.music = true;
 global.hardMode = false;
 global.dropItemHold = 0;
 
