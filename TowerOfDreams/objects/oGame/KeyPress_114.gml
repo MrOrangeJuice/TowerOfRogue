@@ -2,7 +2,7 @@
 
 if(room == rTitle)
 {
-	SlideTransition(TRANS_MODE.GOTO,rRoomTemplate3);
+	SlideTransition(TRANS_MODE.GOTO,rRoomTemplate4);
 	audio_stop_sound(msc_TitleScreen);
 	audio_play_sound(snd_SwordGet,5,false);
 }
