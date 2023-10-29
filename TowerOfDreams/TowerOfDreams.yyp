@@ -700,6 +700,7 @@
     {"id":{"name":"sSideRoomPipe","path":"sprites/sSideRoomPipe/sSideRoomPipe.yy",},},
     {"id":{"name":"rRunTest6","path":"rooms/rRunTest6/rRunTest6.yy",},},
     {"id":{"name":"msc_Tutorial","path":"sounds/msc_Tutorial/msc_Tutorial.yy",},},
+    {"id":{"name":"sClouds4","path":"sprites/sClouds4/sClouds4.yy",},},
     {"id":{"name":"snd_Kunai","path":"sounds/snd_Kunai/snd_Kunai.yy",},},
     {"id":{"name":"snd_SlimeExplosion","path":"sounds/snd_SlimeExplosion/snd_SlimeExplosion.yy",},},
     {"id":{"name":"sSpikeDebug","path":"sprites/sSpikeDebug/sSpikeDebug.yy",},},

@@ -641,6 +641,7 @@
     {"name":"sSlashFadeIn","order":7,"path":"sprites/sSlashFadeIn/sSlashFadeIn.yy",},
     {"name":"sSideRoomPipe","order":9,"path":"sprites/sSideRoomPipe/sSideRoomPipe.yy",},
     {"name":"rRunTest6","order":5,"path":"rooms/rRunTest6/rRunTest6.yy",},
+    {"name":"sClouds4","order":12,"path":"sprites/sClouds4/sClouds4.yy",},
     {"name":"snd_Kunai","order":16,"path":"sounds/snd_Kunai/snd_Kunai.yy",},
     {"name":"snd_SlimeExplosion","order":53,"path":"sounds/snd_SlimeExplosion/snd_SlimeExplosion.yy",},
     {"name":"sSpikeDebug","order":2,"path":"sprites/sSpikeDebug/sSpikeDebug.yy",},
