@@ -765,7 +765,7 @@ if(!global.paused && !global.hitStop)
 				{
 					for(i = 0; i < 10; i++)
 					{
-						instance_create_layer(enemy.x,enemy.y-2,"Pipes",oSlashParticleCharged);
+						instance_create_layer(enemy.x,enemy.y,"Pipes",oSlashParticleCharged);
 					}
 				}
 			}
@@ -777,7 +777,7 @@ if(!global.paused && !global.hitStop)
 				{
 					for(i = 0; i < 10; i++)
 					{
-						instance_create_layer(enemy.x,enemy.y-2,"Pipes",oSlashParticle);
+						instance_create_layer(enemy.x,enemy.y,"Pipes",oSlashParticle);
 					}
 				}
 			}
