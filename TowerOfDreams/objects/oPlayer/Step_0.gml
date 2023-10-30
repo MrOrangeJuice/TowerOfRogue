@@ -759,11 +759,27 @@ if(!global.paused && !global.hitStop)
 			vsp = -3;
 			if(chargeSlash)
 			{
-				instance_create_layer(enemy.x,enemy.y-4,"VFX",oDustSlashBumperGreen);
+				instance_create_layer(enemy.x,enemy.y-4,"UI",oDustSlashBumperGreen);
+				// Spawn particles
+				if(!enemy.invincible)
+				{
+					for(i = 0; i < 10; i++)
+					{
+						instance_create_layer(enemy.x,enemy.y-2,"Pipes",oSlashParticleCharged);
+					}
+				}
 			}
 			else
 			{
-				instance_create_layer(enemy.x,enemy.y-4,"VFX",oDustSlashBumper);
+				instance_create_layer(enemy.x,enemy.y-4,"UI",oDustSlashBumper);
+				// Spawn particles
+				if(!enemy.invincible)
+				{
+					for(i = 0; i < 10; i++)
+					{
+						instance_create_layer(enemy.x,enemy.y-2,"Pipes",oSlashParticle);
+					}
+				}
 			}
 			airborne = true;
 			hasSlashed = true;
