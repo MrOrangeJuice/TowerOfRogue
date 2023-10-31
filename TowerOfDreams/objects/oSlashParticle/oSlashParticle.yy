@@ -32,8 +32,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "sSlashParticle",
-    "path": "sprites/sSlashParticle/sSlashParticle.yy",
+    "name": "sSlashParticleBig",
+    "path": "sprites/sSlashParticleBig/sSlashParticleBig.yy",
   },
   "spriteMaskId": null,
   "visible": true,
