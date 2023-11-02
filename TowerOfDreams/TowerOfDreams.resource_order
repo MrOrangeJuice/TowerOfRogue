@@ -102,6 +102,7 @@
     {"name":"sC","order":3,"path":"sprites/sC/sC.yy",},
     {"name":"sBombUI","order":34,"path":"sprites/sBombUI/sBombUI.yy",},
     {"name":"sDoubleGem","order":2,"path":"sprites/sDoubleGem/sDoubleGem.yy",},
+    {"name":"sItemParticle","order":38,"path":"sprites/sItemParticle/sItemParticle.yy",},
     {"name":"sPlayerHelmetZombie","order":3,"path":"sprites/sPlayerHelmetZombie/sPlayerHelmetZombie.yy",},
     {"name":"snd_ArmorBreak","order":48,"path":"sounds/snd_ArmorBreak/snd_ArmorBreak.yy",},
     {"name":"snd_SlimeScream","order":54,"path":"sounds/snd_SlimeScream/snd_SlimeScream.yy",},

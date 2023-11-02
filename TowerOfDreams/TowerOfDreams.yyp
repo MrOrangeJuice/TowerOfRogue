@@ -124,6 +124,7 @@
     {"id":{"name":"sBombUI","path":"sprites/sBombUI/sBombUI.yy",},},
     {"id":{"name":"rRunTest","path":"rooms/rRunTest/rRunTest.yy",},},
     {"id":{"name":"sDoubleGem","path":"sprites/sDoubleGem/sDoubleGem.yy",},},
+    {"id":{"name":"sItemParticle","path":"sprites/sItemParticle/sItemParticle.yy",},},
     {"id":{"name":"sPlayerHelmetZombie","path":"sprites/sPlayerHelmetZombie/sPlayerHelmetZombie.yy",},},
     {"id":{"name":"snd_ArmorBreak","path":"sounds/snd_ArmorBreak/snd_ArmorBreak.yy",},},
     {"id":{"name":"snd_SlimeScream","path":"sounds/snd_SlimeScream/snd_SlimeScream.yy",},},
