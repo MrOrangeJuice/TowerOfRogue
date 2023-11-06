@@ -28,7 +28,7 @@
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"621b01b5-ded3-4761-b550-f99008903c21","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
-  "origin": 7,
+  "origin": 4,
   "parent": {
     "name": "VFX",
     "path": "folders/Sprites/VFX.yy",
@@ -70,7 +70,7 @@
     "visibleRange": null,
     "volume": 1.0,
     "xorigin": 6,
-    "yorigin": 12,
+    "yorigin": 6,
   },
   "swatchColours": null,
   "swfPrecision": 2.525,

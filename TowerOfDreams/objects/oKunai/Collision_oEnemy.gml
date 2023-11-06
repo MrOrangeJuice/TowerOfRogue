@@ -11,4 +11,14 @@ else
 {
 	audio_play_sound(snd_Klang,5,false);	
 }
+// Spawn VFX
+if(initialDir == -1)
+{
+	instance_create_layer(x,y,"Pipes",oDustSlashBumperRight);
+}
+if(initialDir == 1)
+{
+	instance_create_layer(x,y,"Pipes",oDustSlashBumperLeft);
+}
+
 instance_destroy();
