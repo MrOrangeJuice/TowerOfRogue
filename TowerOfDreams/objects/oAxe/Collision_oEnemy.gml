@@ -4,6 +4,15 @@ if(!other.invincible)
 {
 	if(canHit)
 	{
+		// Spawn VFX down if axe is going down
+		if(vsp > 0)
+		{
+			instance_create_layer(x,y,"Pipes",oDustSlashBumperDown);
+			for(i = 0; i < 10; i++)
+			{
+				instance_create_layer(other.x,other.y,"Pipes",oItemDownParticle);
+			}
+		}
 		other.flash = 5;
 		other.hp -= (1 + dmgMultiplier);
 		ScreenShake(2,10);
