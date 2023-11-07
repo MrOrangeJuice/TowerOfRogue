@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "oSlashParticleCharged",
+  "name": "oItemLeftParticle",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
   ],
@@ -31,8 +31,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "sSlashParticleChargedBig",
-    "path": "sprites/sSlashParticleChargedBig/sSlashParticleChargedBig.yy",
+    "name": "sItemParticle",
+    "path": "sprites/sItemParticle/sItemParticle.yy",
   },
   "spriteMaskId": null,
   "visible": true,

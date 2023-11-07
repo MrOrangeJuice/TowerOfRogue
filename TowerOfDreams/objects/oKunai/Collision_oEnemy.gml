@@ -2,6 +2,22 @@
 
 if(!other.invincible)
 {
+	// Spawn particles
+	// Spawn VFX
+	if(initialDir == -1)
+	{
+		for(i = 0; i < 10; i++)
+		{
+			instance_create_layer(other.x,other.y,"Pipes",oItemLeftParticle);
+		}
+	}
+	if(initialDir == 1)
+	{
+		for(i = 0; i < 10; i++)
+		{
+			instance_create_layer(other.x,other.y,"Pipes",oItemRightParticle);
+		}
+	}
 	other.flash = 5;
 	other.hp -= 0.5;
 	ScreenShake(1,5);
