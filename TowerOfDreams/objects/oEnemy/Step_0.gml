@@ -15,9 +15,8 @@ if(hp <= 0)
 		}
 		heartChance = irandom_range(1,100);
 		armorChance = irandom_range(1,100);
-		if(armorChance <= 5)
+		if(armorChance <= 5 && room != rTutorial && room != rTutorial2)
 		{
-
 			armor = instance_create_layer(x-4,y-4,"Collectables",oArmor);	
 			armor.vsp = -2;
 			armor.canGrab = true;
