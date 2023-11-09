@@ -678,6 +678,7 @@
     {"id":{"name":"snd_Bomb","path":"sounds/snd_Bomb/snd_Bomb.yy",},},
     {"id":{"name":"sColaUI","path":"sprites/sColaUI/sColaUI.yy",},},
     {"id":{"name":"oBlockB","path":"objects/oBlockB/oBlockB.yy",},},
+    {"id":{"name":"sWIshlist","path":"sprites/sWIshlist/sWIshlist.yy",},},
     {"id":{"name":"sPlayerIdleGold","path":"sprites/sPlayerIdleGold/sPlayerIdleGold.yy",},},
     {"id":{"name":"snd_ChargeHit","path":"sounds/snd_ChargeHit/snd_ChargeHit.yy",},},
     {"id":{"name":"sPlayerLavaRed","path":"sprites/sPlayerLavaRed/sPlayerLavaRed.yy",},},
@@ -737,6 +738,7 @@
     {"id":{"name":"fUI","path":"fonts/fUI/fUI.yy",},},
     {"id":{"name":"sPlayerJumpGreenSkin","path":"sprites/sPlayerJumpGreenSkin/sPlayerJumpGreenSkin.yy",},},
     {"id":{"name":"sKunaiUI","path":"sprites/sKunaiUI/sKunaiUI.yy",},},
+    {"id":{"name":"rCallToAction","path":"rooms/rCallToAction/rCallToAction.yy",},},
     {"id":{"name":"sMushroom","path":"sprites/sMushroom/sMushroom.yy",},},
     {"id":{"name":"sRightSpray","path":"sprites/sRightSpray/sRightSpray.yy",},},
     {"id":{"name":"o1","path":"objects/o1/o1.yy",},},
@@ -867,6 +869,7 @@
     {"roomId":{"name":"rRoomTemplate3","path":"rooms/rRoomTemplate3/rRoomTemplate3.yy",},},
     {"roomId":{"name":"rFloor2_5","path":"rooms/rFloor2_5/rFloor2_5.yy",},},
     {"roomId":{"name":"rRoomTemplate4","path":"rooms/rRoomTemplate4/rRoomTemplate4.yy",},},
+    {"roomId":{"name":"rCallToAction","path":"rooms/rCallToAction/rCallToAction.yy",},},
   ],
   "templateType": null,
   "TextureGroups": [
