@@ -107,6 +107,7 @@
     {"id":{"name":"sPlayerRunYellowLeft","path":"sprites/sPlayerRunYellowLeft/sPlayerRunYellowLeft.yy",},},
     {"id":{"name":"oGem","path":"objects/oGem/oGem.yy",},},
     {"id":{"name":"sTankEnemyStationaryHusk","path":"sprites/sTankEnemyStationaryHusk/sTankEnemyStationaryHusk.yy",},},
+    {"id":{"name":"msc_TutorialV2","path":"sounds/msc_TutorialV2/msc_TutorialV2.yy",},},
     {"id":{"name":"oDoor","path":"objects/oDoor/oDoor.yy",},},
     {"id":{"name":"sChargeUI","path":"sprites/sChargeUI/sChargeUI.yy",},},
     {"id":{"name":"sArrowSign","path":"sprites/sArrowSign/sArrowSign.yy",},},

@@ -87,6 +87,7 @@
     {"name":"sPlayerSwordGetRed","order":13,"path":"sprites/sPlayerSwordGetRed/sPlayerSwordGetRed.yy",},
     {"name":"sPlayerRunYellowLeft","order":20,"path":"sprites/sPlayerRunYellowLeft/sPlayerRunYellowLeft.yy",},
     {"name":"oGem","order":2,"path":"objects/oGem/oGem.yy",},
+    {"name":"msc_TutorialV2","order":12,"path":"sounds/msc_TutorialV2/msc_TutorialV2.yy",},
     {"name":"oDoor","order":15,"path":"objects/oDoor/oDoor.yy",},
     {"name":"sChargeUI","order":23,"path":"sprites/sChargeUI/sChargeUI.yy",},
     {"name":"sArrowSign","order":1,"path":"sprites/sArrowSign/sArrowSign.yy",},

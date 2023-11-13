@@ -420,7 +420,7 @@ if(global.paused)
 					global.slimeArray = ds_list_create();
 					instance_destroy(oItemPopup);
 					SlideTransition(TRANS_MODE.GOTO, rTitle);
-					audio_stop_sound(msc_Tutorial);
+					audio_stop_sound(msc_TutorialV2);
 					global.tutorialMusic = false;
 					audio_stop_sound(msc_Floor1);
 					audio_stop_sound(msc_Floor1Variant);

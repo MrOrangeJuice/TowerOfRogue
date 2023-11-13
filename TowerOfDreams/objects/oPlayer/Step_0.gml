@@ -210,7 +210,7 @@ if(!global.paused && !global.hitStop)
 		{
 			if(room == rTutorial && !global.tutorialMusic)
 			{
-				audio_play_sound(msc_Tutorial,5,true);
+				audio_play_sound(msc_TutorialV2,5,true);
 				global.tutorialMusic = true;
 			}
 			if(room == rHub && !global.hubMusic)

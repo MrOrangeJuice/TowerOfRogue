@@ -53,7 +53,7 @@ else
 		global.coins = 0;
 		SlideTransition(TRANS_MODE.NEXT);	
 		if(!global.tutorialCompleted) global.tutorialCompleted = true;
-		audio_stop_sound(msc_Tutorial);
+		audio_stop_sound(msc_TutorialV2);
 		global.tutorialMusic = false;
 		Save();
 	}
