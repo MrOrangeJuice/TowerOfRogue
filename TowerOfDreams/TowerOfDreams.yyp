@@ -370,6 +370,7 @@
     {"id":{"name":"oTankEnemyStationaryHusk","path":"objects/oTankEnemyStationaryHusk/oTankEnemyStationaryHusk.yy",},},
     {"id":{"name":"snd_Damage","path":"sounds/snd_Damage/snd_Damage.yy",},},
     {"id":{"name":"sSlimeBlockDestroy","path":"sprites/sSlimeBlockDestroy/sSlimeBlockDestroy.yy",},},
+    {"id":{"name":"sBounce","path":"sprites/sBounce/sBounce.yy",},},
     {"id":{"name":"oJumpTutorial","path":"objects/oJumpTutorial/oJumpTutorial.yy",},},
     {"id":{"name":"sPlayerPortalGreen","path":"sprites/sPlayerPortalGreen/sPlayerPortalGreen.yy",},},
     {"id":{"name":"sPlayerLandGreen","path":"sprites/sPlayerLandGreen/sPlayerLandGreen.yy",},},
