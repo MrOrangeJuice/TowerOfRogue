@@ -335,7 +335,6 @@
     {"name":"oTankEnemyStationaryHusk","order":17,"path":"objects/oTankEnemyStationaryHusk/oTankEnemyStationaryHusk.yy",},
     {"name":"snd_Damage","order":13,"path":"sounds/snd_Damage/snd_Damage.yy",},
     {"name":"sSlimeBlockDestroy","order":38,"path":"sprites/sSlimeBlockDestroy/sSlimeBlockDestroy.yy",},
-    {"name":"sBounce","order":48,"path":"sprites/sBounce/sBounce.yy",},
     {"name":"oJumpTutorial","order":2,"path":"objects/oJumpTutorial/oJumpTutorial.yy",},
     {"name":"sPlayerPortalGreen","order":6,"path":"sprites/sPlayerPortalGreen/sPlayerPortalGreen.yy",},
     {"name":"sPlayerLandGreen","order":4,"path":"sprites/sPlayerLandGreen/sPlayerLandGreen.yy",},
