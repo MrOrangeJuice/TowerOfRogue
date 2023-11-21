@@ -383,6 +383,7 @@
     {"id":{"name":"oBagItem","path":"objects/oBagItem/oBagItem.yy",},},
     {"id":{"name":"sMainMenu","path":"sprites/sMainMenu/sMainMenu.yy",},},
     {"id":{"name":"sMissileRightDown","path":"sprites/sMissileRightDown/sMissileRightDown.yy",},},
+    {"id":{"name":"sCannonCloud","path":"sprites/sCannonCloud/sCannonCloud.yy",},},
     {"id":{"name":"snd_Richard","path":"sounds/snd_Richard/snd_Richard.yy",},},
     {"id":{"name":"oGrave","path":"objects/oGrave/oGrave.yy",},},
     {"id":{"name":"sDoorNew","path":"sprites/sDoorNew/sDoorNew.yy",},},

@@ -348,6 +348,7 @@
     {"name":"oBagItem","order":23,"path":"objects/oBagItem/oBagItem.yy",},
     {"name":"sMainMenu","order":6,"path":"sprites/sMainMenu/sMainMenu.yy",},
     {"name":"sMissileRightDown","order":7,"path":"sprites/sMissileRightDown/sMissileRightDown.yy",},
+    {"name":"sCannonCloud","order":27,"path":"sprites/sCannonCloud/sCannonCloud.yy",},
     {"name":"snd_Richard","order":58,"path":"sounds/snd_Richard/snd_Richard.yy",},
     {"name":"oGrave","order":20,"path":"objects/oGrave/oGrave.yy",},
     {"name":"sDoorNew","order":17,"path":"sprites/sDoorNew/sDoorNew.yy",},
