@@ -2,14 +2,22 @@
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
   "name": "oCannonCloud",
-  "eventList": [],
+  "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":7,"eventType":7,"isDnD":false,},
+  ],
   "managed": true,
-  "overriddenProperties": [],
+  "overriddenProperties": [
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oCannon","path":"objects/oCannon/oCannon.yy",},"propertyId":{"name":"dir","path":"objects/oCannon/oCannon.yy",},"value":"1",},
+  ],
   "parent": {
     "name": "Enemies",
     "path": "folders/Objects/Enemies.yy",
   },
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "oCannon",
+    "path": "objects/oCannon/oCannon.yy",
+  },
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,

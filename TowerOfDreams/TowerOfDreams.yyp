@@ -233,6 +233,7 @@
     {"id":{"name":"oBigCoinVFX","path":"objects/oBigCoinVFX/oBigCoinVFX.yy",},},
     {"id":{"name":"oRichard","path":"objects/oRichard/oRichard.yy",},},
     {"id":{"name":"sPlayerJumpZombie","path":"sprites/sPlayerJumpZombie/sPlayerJumpZombie.yy",},},
+    {"id":{"name":"oCannonBallDown","path":"objects/oCannonBallDown/oCannonBallDown.yy",},},
     {"id":{"name":"sPlayerWallSlideGold","path":"sprites/sPlayerWallSlideGold/sPlayerWallSlideGold.yy",},},
     {"id":{"name":"tFloor3","path":"tilesets/tFloor3/tFloor3.yy",},},
     {"id":{"name":"sPortalExit","path":"sprites/sPortalExit/sPortalExit.yy",},},
