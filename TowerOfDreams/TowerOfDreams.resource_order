@@ -36,6 +36,7 @@
     {"name":"Decorations","order":21,"path":"folders/Sprites/Decorations.yy",},
     {"name":"Enemies","order":17,"path":"folders/Sprites/Enemies.yy",},
     {"name":"Ball Enemy","order":17,"path":"folders/Sprites/Enemies/Ball Enemy.yy",},
+    {"name":"Cannon Cloud","order":29,"path":"folders/Sprites/Enemies/Cannon Cloud.yy",},
     {"name":"GravityEnemy","order":10,"path":"folders/Sprites/Enemies/GravityEnemy.yy",},
     {"name":"Elite","order":16,"path":"folders/Sprites/Enemies/GravityEnemy/Elite.yy",},
     {"name":"Husk","order":17,"path":"folders/Sprites/Enemies/GravityEnemy/Husk.yy",},
@@ -66,7 +67,6 @@
     {"name":"Numbers","order":14,"path":"folders/Sprites/VFX/Numbers.yy",},
     {"name":"Tile Sets","order":1,"path":"folders/Tile Sets.yy",},
     {"name":"Timelines","order":7,"path":"folders/Timelines.yy",},
-    {"name":"Cannon Cloud","order":29,"path":"folders/Sprites/Enemies/Cannon Cloud.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"sUseItemControllerFadeIn","order":16,"path":"sprites/sUseItemControllerFadeIn/sUseItemControllerFadeIn.yy",},
@@ -516,6 +516,7 @@
     {"name":"snd_Wings","order":27,"path":"sounds/snd_Wings/snd_Wings.yy",},
     {"name":"sMushroomJump","order":46,"path":"sprites/sMushroomJump/sMushroomJump.yy",},
     {"name":"sBallExplosion","order":10,"path":"sprites/sBallExplosion/sBallExplosion.yy",},
+    {"name":"sFirePlant","order":30,"path":"sprites/sFirePlant/sFirePlant.yy",},
     {"name":"sCoinVFX","order":5,"path":"sprites/sCoinVFX/sCoinVFX.yy",},
     {"name":"oCritItem","order":7,"path":"objects/oCritItem/oCritItem.yy",},
     {"name":"oHealthGetVFX","order":18,"path":"objects/oHealthGetVFX/oHealthGetVFX.yy",},
