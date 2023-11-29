@@ -11,4 +11,5 @@ else
 	image_speed = 0;
 	// Extend alarm
 	alarm[0]++;
+	alarm[1]++;
 }
