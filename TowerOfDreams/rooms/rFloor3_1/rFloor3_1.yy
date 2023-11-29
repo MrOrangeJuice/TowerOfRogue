@@ -19,6 +19,8 @@
     {"name":"inst_65CD0357_2","path":"rooms/rFloor3_1/rFloor3_1.yy",},
     {"name":"inst_2E91A9EF","path":"rooms/rFloor3_1/rFloor3_1.yy",},
     {"name":"inst_108F877","path":"rooms/rFloor3_1/rFloor3_1.yy",},
+    {"name":"inst_6145B7AF","path":"rooms/rFloor3_1/rFloor3_1.yy",},
+    {"name":"inst_7AA1542D","path":"rooms/rFloor3_1/rFloor3_1.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -34,6 +36,8 @@
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Enemies","depth":300,"effectEnabled":true,"effectType":null,"gridX":8,"gridY":8,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_2E91A9EF","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oCannonCloud","path":"objects/oCannonCloud/oCannonCloud.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":248.0,"y":1472.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_108F877","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oCannonCloud","path":"objects/oCannonCloud/oCannonCloud.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":272.0,"y":1472.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_6145B7AF","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oFirePlant","path":"objects/oFirePlant/oFirePlant.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":408.0,"y":1536.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_7AA1542D","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oCannon","path":"objects/oCannon/oCannon.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":384.0,"y":1536.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Collectables","depth":400,"effectEnabled":true,"effectType":null,"gridX":8,"gridY":8,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Instances","depth":500,"effectEnabled":true,"effectType":null,"gridX":8,"gridY":8,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
