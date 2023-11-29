@@ -154,6 +154,7 @@
     {"name":"snd_GravLand","order":37,"path":"sounds/snd_GravLand/snd_GravLand.yy",},
     {"name":"sItemFrogTongue","order":7,"path":"sprites/sItemFrogTongue/sItemFrogTongue.yy",},
     {"name":"sShieldUI","order":25,"path":"sprites/sShieldUI/sShieldUI.yy",},
+    {"name":"sFirePlantFlame","order":31,"path":"sprites/sFirePlantFlame/sFirePlantFlame.yy",},
     {"name":"oRightConveyer","order":15,"path":"objects/oRightConveyer/oRightConveyer.yy",},
     {"name":"sA","order":1,"path":"sprites/sA/sA.yy",},
     {"name":"sCannonBall","order":5,"path":"sprites/sCannonBall/sCannonBall.yy",},

@@ -1,4 +1,5 @@
 /// @description Fire Cannon ball
+/// @description Fire Cannon ball
 
 if(sprite_index == sCannonCloudFire)
 {

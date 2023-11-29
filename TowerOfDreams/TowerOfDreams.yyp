@@ -178,6 +178,7 @@
     {"id":{"name":"snd_GravLand","path":"sounds/snd_GravLand/snd_GravLand.yy",},},
     {"id":{"name":"sItemFrogTongue","path":"sprites/sItemFrogTongue/sItemFrogTongue.yy",},},
     {"id":{"name":"sShieldUI","path":"sprites/sShieldUI/sShieldUI.yy",},},
+    {"id":{"name":"sFirePlantFlame","path":"sprites/sFirePlantFlame/sFirePlantFlame.yy",},},
     {"id":{"name":"oRightConveyer","path":"objects/oRightConveyer/oRightConveyer.yy",},},
     {"id":{"name":"sA","path":"sprites/sA/sA.yy",},},
     {"id":{"name":"sCannonBall","path":"sprites/sCannonBall/sCannonBall.yy",},},
