@@ -628,6 +628,7 @@
     {"id":{"name":"oCardItem","path":"objects/oCardItem/oCardItem.yy",},},
     {"id":{"name":"sDust","path":"sprites/sDust/sDust.yy",},},
     {"id":{"name":"sMountains2","path":"sprites/sMountains2/sMountains2.yy",},},
+    {"id":{"name":"sFireBall","path":"sprites/sFireBall/sFireBall.yy",},},
     {"id":{"name":"sShopSpawner","path":"sprites/sShopSpawner/sShopSpawner.yy",},},
     {"id":{"name":"sTankEnemyStationary","path":"sprites/sTankEnemyStationary/sTankEnemyStationary.yy",},},
     {"id":{"name":"snd_Reappear","path":"sounds/snd_Reappear/snd_Reappear.yy",},},
