@@ -11,6 +11,9 @@ else
 	UIOffset = 0;	
 }
 
+// Debug controller
+//draw_text(252,0,global.controller);
+
 // Draw Pause Menu
 if(global.paused)
 {

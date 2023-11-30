@@ -4,7 +4,7 @@ if(global.controller == 2)
 {
 	sprite_index = sJumpControllerPS;	
 }
-if(global.controller == 1)
+else if(global.controller == 1)
 {
 	sprite_index = sJumpController;	
 }
