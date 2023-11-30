@@ -53,7 +53,18 @@ if(drawOverallGems)
 
 if(drawContinue)
 {
-	if(global.controller)
+	if(global.controller == 2)
+	{
+		if(key_select)
+		{
+			draw_sprite(sContinueControllerPS,1,128,display_get_gui_height()/2 + 48);	
+		}
+		else
+		{
+			draw_sprite(sContinueControllerPS,0,128,display_get_gui_height()/2 + 48);	
+		}
+	}
+	else if(global.controller == 1)
 	{
 		if(key_select)
 		{
