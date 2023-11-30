@@ -1,6 +1,6 @@
 /// @description Fire Cannon ball
 
-if(sprite_index == sCannonCloudFire)
+if(sprite_index == sCannonCloudEliteFire)
 {
 	if(IsOnScreen(y))
 	{
@@ -8,6 +8,6 @@ if(sprite_index == sCannonCloudFire)
 	}
 	ball = instance_create_layer(x,y+12,"Enemies",oCannonBallDown);
 	ball.dir = dir;
-	sprite_index = sCannonCloudIdle;
+	sprite_index = sCannonCloudEliteIdle;
 	alarm[0] = room_speed * fireGap;
 }
