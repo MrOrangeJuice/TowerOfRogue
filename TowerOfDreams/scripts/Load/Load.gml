@@ -23,5 +23,6 @@ function Load(){
 	global.zombieUnlocked = ini_read_real("savegame", "zombieUnlocked", 0);
 	global.goldUnlocked = ini_read_real("savegame", "goldUnlocked", 0);
 	global.palette = ini_read_real("savegame", "palette", 0);
+	global.volume = ini_read_real("savegame", "volume", 6);
 	ini_close();
 }

@@ -23,5 +23,6 @@ function Save(){
 	ini_write_real("savegame", "zombieUnlocked", global.zombieUnlocked);
 	ini_write_real("savegame", "goldUnlocked", global.goldUnlocked);
 	ini_write_real("savegame", "palette", global.palette);
+	ini_write_real("savegame", "volume", global.volume);
 	ini_close();
 }
