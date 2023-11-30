@@ -443,11 +443,11 @@ if(!global.paused && !global.hitStop)
 			vsp = -(3+bagNum);	
 			if(chargeSlash)
 			{
-				instance_create_layer(x,y+6,"VFX",oDustSlashGreen);
+				instance_create_layer(x,y+6,"UI",oDustSlashGreen);
 			}
 			else
 			{
-				instance_create_layer(x,y+6,"VFX",oDustSlash);
+				instance_create_layer(x,y+6,"UI",oDustSlash);
 			}
 			if(bagNum > 0) audio_play_sound(snd_Winds,5,false);
 			if(shock)
