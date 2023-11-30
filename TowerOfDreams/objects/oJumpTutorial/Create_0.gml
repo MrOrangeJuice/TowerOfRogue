@@ -2,7 +2,11 @@
 
 event_inherited();
 
-if(global.controller)
+if(global.controller == 2)
+{
+	sprite_index = sJumpControllerPS;	
+}
+if(global.controller == 1)
 {
 	sprite_index = sJumpController;	
 }

@@ -1,6 +1,10 @@
 /// @description Get Input
 
-if(global.controller)
+if(global.controller == 2)
+{
+	sprite_index = sUseItemControllerPS;	
+}
+else if(global.controller == 1)
 {
 	sprite_index = sUseItemController;	
 }
@@ -11,10 +15,15 @@ else
 
 key_item = keyboard_check(ord("X")) || keyboard_check(ord("O")) || keyboard_check(vk_lshift);
 
-if (gamepad_button_check(0,gp_face2) || gamepad_button_check(0,gp_face3) || gamepad_button_check(4,gp_face2) || gamepad_button_check(4,gp_face3))
+if (gamepad_button_check(0,gp_face2) || gamepad_button_check(0,gp_face3))
 {
 	key_item = 1;
 	global.controller = 1;
+}
+if (gamepad_button_check(4,gp_face2) || gamepad_button_check(4,gp_face3))
+{
+	key_item = 1;
+	global.controller = 2;
 }
 
 if(!global.paused)

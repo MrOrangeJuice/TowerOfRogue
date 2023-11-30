@@ -8,22 +8,41 @@ if (key_left) || (key_right) || (key_jump)
 }
 
 // Gamepad input
-if (gamepad_button_check_pressed(0,gp_face1) || gamepad_button_check_pressed(4,gp_face1))
+if (gamepad_button_check_pressed(0,gp_face1))
 {
 	key_jump = 1;
 	global.controller = 1;
 }
-if (gamepad_axis_value(0,gp_axislh) < -0.2 || gamepad_button_check(0,gp_padl) || gamepad_axis_value(4,gp_axislh) < -0.2 || gamepad_button_check(4,gp_padl))
+if (gamepad_button_check_pressed(4,gp_face1))
+{
+	key_jump = 1;
+	global.controller = 2;
+}
+
+if (gamepad_axis_value(0,gp_axislh) < -0.2 || gamepad_button_check(0,gp_padl))
 {
 	global.controller = 1;
 }
+if (gamepad_axis_value(4,gp_axislh) < -0.2 || gamepad_button_check(4,gp_padl))
+{
+	global.controller = 2;
+}
 
-if (gamepad_axis_value(0,gp_axislh) > 0.2 || gamepad_button_check(0,gp_padr) || gamepad_axis_value(4,gp_axislh) > 0.2 || gamepad_button_check(4,gp_padr))
+if (gamepad_axis_value(0,gp_axislh) > 0.2 || gamepad_button_check(0,gp_padr))
 {
 	global.controller = 1;
 }
+if (gamepad_axis_value(4,gp_axislh) > 0.2 || gamepad_button_check(4,gp_padr))
+{
+	global.controller = 2;
+}
 
-if(global.controller)
+
+if(global.controller == 2)
+{
+	sprite_index = sStartControllerPS;	
+}
+if(global.controller == 1)
 {
 	sprite_index = sStartController;	
 }

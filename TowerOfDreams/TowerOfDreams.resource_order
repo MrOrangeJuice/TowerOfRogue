@@ -762,6 +762,7 @@
     {"name":"sLavaBit","order":22,"path":"sprites/sLavaBit/sLavaBit.yy",},
     {"name":"sDashVFX","order":28,"path":"sprites/sDashVFX/sDashVFX.yy",},
     {"name":"rFloor2_3","order":2,"path":"rooms/rFloor2_3/rFloor2_3.yy",},
+    {"name":"sJumpControllerPS","order":35,"path":"sprites/sJumpControllerPS/sJumpControllerPS.yy",},
     {"name":"sSwordShrine","order":6,"path":"sprites/sSwordShrine/sSwordShrine.yy",},
     {"name":"sPlayerHitZombie","order":4,"path":"sprites/sPlayerHitZombie/sPlayerHitZombie.yy",},
     {"name":"sPlayerJump","order":2,"path":"sprites/sPlayerJump/sPlayerJump.yy",},

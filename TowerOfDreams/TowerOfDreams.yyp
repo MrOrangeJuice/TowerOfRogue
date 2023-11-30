@@ -835,6 +835,7 @@
     {"id":{"name":"sLavaBit","path":"sprites/sLavaBit/sLavaBit.yy",},},
     {"id":{"name":"sDashVFX","path":"sprites/sDashVFX/sDashVFX.yy",},},
     {"id":{"name":"rFloor2_3","path":"rooms/rFloor2_3/rFloor2_3.yy",},},
+    {"id":{"name":"sJumpControllerPS","path":"sprites/sJumpControllerPS/sJumpControllerPS.yy",},},
     {"id":{"name":"sSwordShrine","path":"sprites/sSwordShrine/sSwordShrine.yy",},},
     {"id":{"name":"sPlayerHitZombie","path":"sprites/sPlayerHitZombie/sPlayerHitZombie.yy",},},
     {"id":{"name":"sPlayerJump","path":"sprites/sPlayerJump/sPlayerJump.yy",},},

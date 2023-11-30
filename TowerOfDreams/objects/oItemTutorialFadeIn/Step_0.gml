@@ -1,6 +1,10 @@
 /// @description Get Input
 
-if(global.controller)
+if(global.controller == 2)
+{
+	sprite_index = sUseItemControllerPSFadeIn;	
+}
+else if(global.controller == 1)
 {
 	sprite_index = sUseItemControllerFadeIn;	
 }
@@ -8,6 +12,7 @@ else
 {
 	sprite_index = sUseItemFadeIn;	
 }
+
 if(!global.paused)
 {
 	if (spawned) image_speed = 1;
