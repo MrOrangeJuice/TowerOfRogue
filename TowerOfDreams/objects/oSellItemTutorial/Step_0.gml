@@ -15,10 +15,15 @@ else
 
 key_sell = keyboard_check(ord("C")) || keyboard_check(ord("I")) || keyboard_check(vk_rshift);
 
-if (gamepad_button_check(0,gp_face4) || gamepad_button_check(4,gp_face4))
+if (gamepad_button_check(0,gp_face4))
 {
 	key_sell = 1;
 	global.controller = 1;
+}
+if (gamepad_button_check(4,gp_face4))
+{
+	key_sell = 1;
+	global.controller = 2;
 }
 
 if(!global.paused)
