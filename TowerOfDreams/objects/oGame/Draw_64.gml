@@ -12,7 +12,7 @@ else
 }
 
 // Debug controller
-//draw_text(252,0,global.controller);
+draw_text(252,0,global.controller);
 
 // Draw Pause Menu
 if(global.paused)
