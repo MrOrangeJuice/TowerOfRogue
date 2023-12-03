@@ -100,6 +100,7 @@
     {"id":{"name":"oArmorPillar","path":"objects/oArmorPillar/oArmorPillar.yy",},},
     {"id":{"name":"snd_Tank","path":"sounds/snd_Tank/snd_Tank.yy",},},
     {"id":{"name":"sSlashParticle","path":"sprites/sSlashParticle/sSlashParticle.yy",},},
+    {"id":{"name":"oDashFruit","path":"objects/oDashFruit/oDashFruit.yy",},},
     {"id":{"name":"oEndLevel","path":"objects/oEndLevel/oEndLevel.yy",},},
     {"id":{"name":"sBGPres","path":"sprites/sBGPres/sBGPres.yy",},},
     {"id":{"name":"sSellItemControllerPS","path":"sprites/sSellItemControllerPS/sSellItemControllerPS.yy",},},
