@@ -490,6 +490,7 @@
     {"id":{"name":"oShopArmor","path":"objects/oShopArmor/oShopArmor.yy",},},
     {"id":{"name":"sBumperAOff","path":"sprites/sBumperAOff/sBumperAOff.yy",},},
     {"id":{"name":"oFastJumpVFX","path":"objects/oFastJumpVFX/oFastJumpVFX.yy",},},
+    {"id":{"name":"sDashFruit","path":"sprites/sDashFruit/sDashFruit.yy",},},
     {"id":{"name":"sCannonElite","path":"sprites/sCannonElite/sCannonElite.yy",},},
     {"id":{"name":"oShopSpawner","path":"objects/oShopSpawner/oShopSpawner.yy",},},
     {"id":{"name":"sMountains","path":"sprites/sMountains/sMountains.yy",},},

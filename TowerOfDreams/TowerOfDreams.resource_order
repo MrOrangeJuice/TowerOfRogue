@@ -449,6 +449,7 @@
     {"name":"oShopArmor","order":3,"path":"objects/oShopArmor/oShopArmor.yy",},
     {"name":"sBumperAOff","order":12,"path":"sprites/sBumperAOff/sBumperAOff.yy",},
     {"name":"oFastJumpVFX","order":27,"path":"objects/oFastJumpVFX/oFastJumpVFX.yy",},
+    {"name":"sDashFruit","order":5,"path":"sprites/sDashFruit/sDashFruit.yy",},
     {"name":"sCannonElite","order":22,"path":"sprites/sCannonElite/sCannonElite.yy",},
     {"name":"oShopSpawner","order":11,"path":"objects/oShopSpawner/oShopSpawner.yy",},
     {"name":"sMountains","order":4,"path":"sprites/sMountains/sMountains.yy",},
