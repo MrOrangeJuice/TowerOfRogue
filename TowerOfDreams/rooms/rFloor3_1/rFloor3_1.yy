@@ -20,6 +20,8 @@
     {"name":"inst_108F877","path":"rooms/rFloor3_1/rFloor3_1.yy",},
     {"name":"inst_6145B7AF","path":"rooms/rFloor3_1/rFloor3_1.yy",},
     {"name":"inst_6A4E80E4","path":"rooms/rFloor3_1/rFloor3_1.yy",},
+    {"name":"inst_4200E4","path":"rooms/rFloor3_1/rFloor3_1.yy",},
+    {"name":"inst_7026FB05","path":"rooms/rFloor3_1/rFloor3_1.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -36,6 +38,8 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_108F877","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oCannonCloud","path":"objects/oCannonCloud/oCannonCloud.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":360.0,"y":1424.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_6145B7AF","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oFirePlant","path":"objects/oFirePlant/oFirePlant.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":408.0,"y":1536.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_6A4E80E4","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oCannonCloud","path":"objects/oCannonCloud/oCannonCloud.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":328.0,"y":1424.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_4200E4","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oDashFruit","path":"objects/oDashFruit/oDashFruit.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":264.0,"y":1472.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_7026FB05","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oDashFruit","path":"objects/oDashFruit/oDashFruit.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":376.0,"y":1464.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Collectables","depth":400,"effectEnabled":true,"effectType":null,"gridX":8,"gridY":8,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Instances","depth":500,"effectEnabled":true,"effectType":null,"gridX":8,"gridY":8,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
