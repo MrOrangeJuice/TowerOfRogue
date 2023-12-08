@@ -85,7 +85,7 @@
   "isEcma": false,
   "LibraryEmitters": [],
   "MetaData": {
-    "IDEVersion": "2023.8.2.108",
+    "IDEVersion": "2023.11.0.121",
   },
   "resources": [
     {"id":{"name":"sUseItemControllerFadeIn","path":"sprites/sUseItemControllerFadeIn/sUseItemControllerFadeIn.yy",},},
@@ -384,6 +384,7 @@
     {"id":{"name":"sDummy","path":"sprites/sDummy/sDummy.yy",},},
     {"id":{"name":"PickSideArea","path":"scripts/PickSideArea/PickSideArea.yy",},},
     {"id":{"name":"oTankEnemyStationaryHusk","path":"objects/oTankEnemyStationaryHusk/oTankEnemyStationaryHusk.yy",},},
+    {"id":{"name":"sCannonCloudHusk","path":"sprites/sCannonCloudHusk/sCannonCloudHusk.yy",},},
     {"id":{"name":"snd_Damage","path":"sounds/snd_Damage/snd_Damage.yy",},},
     {"id":{"name":"sSlimeBlockDestroy","path":"sprites/sSlimeBlockDestroy/sSlimeBlockDestroy.yy",},},
     {"id":{"name":"oJumpTutorial","path":"objects/oJumpTutorial/oJumpTutorial.yy",},},
@@ -555,6 +556,7 @@
     {"id":{"name":"sBallPipeEliteLeft","path":"sprites/sBallPipeEliteLeft/sBallPipeEliteLeft.yy",},},
     {"id":{"name":"sPlayerPortalReverseGold","path":"sprites/sPlayerPortalReverseGold/sPlayerPortalReverseGold.yy",},},
     {"id":{"name":"oGobletItem","path":"objects/oGobletItem/oGobletItem.yy",},},
+    {"id":{"name":"sCannonCloudHuskFire","path":"sprites/sCannonCloudHuskFire/sCannonCloudHuskFire.yy",},},
     {"id":{"name":"oSellItemTutorial","path":"objects/oSellItemTutorial/oSellItemTutorial.yy",},},
     {"id":{"name":"sCannonCloudEliteIdle","path":"sprites/sCannonCloudEliteIdle/sCannonCloudEliteIdle.yy",},},
     {"id":{"name":"sSellItemController","path":"sprites/sSellItemController/sSellItemController.yy",},},
@@ -694,6 +696,7 @@
     {"id":{"name":"sGravityEnemyHuskLand","path":"sprites/sGravityEnemyHuskLand/sGravityEnemyHuskLand.yy",},},
     {"id":{"name":"sEmpty","path":"sprites/sEmpty/sEmpty.yy",},},
     {"id":{"name":"sWrenchEnemyElite","path":"sprites/sWrenchEnemyElite/sWrenchEnemyElite.yy",},},
+    {"id":{"name":"sCannonCloudUpIdle","path":"sprites/sCannonCloudUpIdle/sCannonCloudUpIdle.yy",},},
     {"id":{"name":"sPalette","path":"sprites/sPalette/sPalette.yy",},},
     {"id":{"name":"oWingsItem","path":"objects/oWingsItem/oWingsItem.yy",},},
     {"id":{"name":"snd_Klang","path":"sounds/snd_Klang/snd_Klang.yy",},},
