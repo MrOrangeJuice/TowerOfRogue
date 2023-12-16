@@ -599,6 +599,7 @@
     {"name":"snd_BoomerangThrow","order":40,"path":"sounds/snd_BoomerangThrow/snd_BoomerangThrow.yy",},
     {"name":"sSellItem","order":21,"path":"sprites/sSellItem/sSellItem.yy",},
     {"name":"sFloor2","order":4,"path":"sprites/sFloor2/sFloor2.yy",},
+    {"name":"oDashFruitRespawn","order":30,"path":"objects/oDashFruitRespawn/oDashFruitRespawn.yy",},
     {"name":"sUpConveyer","order":23,"path":"sprites/sUpConveyer/sUpConveyer.yy",},
     {"name":"oCardItem","order":11,"path":"objects/oCardItem/oCardItem.yy",},
     {"name":"sMountains2","order":5,"path":"sprites/sMountains2/sMountains2.yy",},

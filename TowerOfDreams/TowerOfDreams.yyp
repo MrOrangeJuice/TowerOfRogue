@@ -651,6 +651,7 @@
     {"id":{"name":"snd_BoomerangThrow","path":"sounds/snd_BoomerangThrow/snd_BoomerangThrow.yy",},},
     {"id":{"name":"sSellItem","path":"sprites/sSellItem/sSellItem.yy",},},
     {"id":{"name":"sFloor2","path":"sprites/sFloor2/sFloor2.yy",},},
+    {"id":{"name":"oDashFruitRespawn","path":"objects/oDashFruitRespawn/oDashFruitRespawn.yy",},},
     {"id":{"name":"sUpConveyer","path":"sprites/sUpConveyer/sUpConveyer.yy",},},
     {"id":{"name":"oCardItem","path":"objects/oCardItem/oCardItem.yy",},},
     {"id":{"name":"sDust","path":"sprites/sDust/sDust.yy",},},
