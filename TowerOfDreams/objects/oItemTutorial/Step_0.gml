@@ -6,7 +6,7 @@ if(global.controller == 2)
 }
 else if(global.controller == 1)
 {
-	sprite_index = sUseItemController;	
+	sprite_index = sUseItemController;
 }
 else
 {

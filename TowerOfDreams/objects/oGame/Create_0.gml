@@ -62,6 +62,7 @@ global.displayLC = false;
 global.volume = 6;
 global.music = true;
 global.HUD = true;
+global.controllerDebug = false;
 global.hardMode = false;
 global.dropItemHold = 0;
 
