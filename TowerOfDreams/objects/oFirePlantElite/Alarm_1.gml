@@ -4,7 +4,7 @@ if(sprite_index == sFirePlantEliteFlame)
 {
 	if(IsOnScreen(y))
 	{
-		audio_play_sound(snd_Cannon,5,false);
+		audio_play_sound(snd_Kunai,5,false);
 	}
 	ball = instance_create_layer(x+(dir*8),y+1,"Enemies",oFireBall);
 	ball.dir = dir;

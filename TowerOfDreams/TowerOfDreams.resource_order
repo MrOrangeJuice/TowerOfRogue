@@ -260,6 +260,7 @@
     {"name":"tFloor4","order":9,"path":"tilesets/tFloor4/tFloor4.yy",},
     {"name":"snd_Winds","order":43,"path":"sounds/snd_Winds/snd_Winds.yy",},
     {"name":"sDashFruitRespawn","order":49,"path":"sprites/sDashFruitRespawn/sDashFruitRespawn.yy",},
+    {"name":"snd_FruitJump","order":68,"path":"sounds/snd_FruitJump/snd_FruitJump.yy",},
     {"name":"oShockwaveVFX","order":15,"path":"objects/oShockwaveVFX/oShockwaveVFX.yy",},
     {"name":"sCannonCloudUpFire","order":9,"path":"sprites/sCannonCloudUpFire/sCannonCloudUpFire.yy",},
     {"name":"oRunComplete","order":2,"path":"objects/oRunComplete/oRunComplete.yy",},

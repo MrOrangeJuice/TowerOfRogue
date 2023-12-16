@@ -288,6 +288,7 @@
     {"id":{"name":"tFloor4","path":"tilesets/tFloor4/tFloor4.yy",},},
     {"id":{"name":"snd_Winds","path":"sounds/snd_Winds/snd_Winds.yy",},},
     {"id":{"name":"sDashFruitRespawn","path":"sprites/sDashFruitRespawn/sDashFruitRespawn.yy",},},
+    {"id":{"name":"snd_FruitJump","path":"sounds/snd_FruitJump/snd_FruitJump.yy",},},
     {"id":{"name":"oShockwaveVFX","path":"objects/oShockwaveVFX/oShockwaveVFX.yy",},},
     {"id":{"name":"sShopSign","path":"sprites/sShopSign/sShopSign.yy",},},
     {"id":{"name":"sCannonCloudUpFire","path":"sprites/sCannonCloudUpFire/sCannonCloudUpFire.yy",},},
