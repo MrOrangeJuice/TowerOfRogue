@@ -85,7 +85,7 @@
   "isEcma": false,
   "LibraryEmitters": [],
   "MetaData": {
-    "IDEVersion": "2023.11.0.121",
+    "IDEVersion": "2023.11.1.129",
   },
   "resources": [
     {"id":{"name":"sUseItemControllerFadeIn","path":"sprites/sUseItemControllerFadeIn/sUseItemControllerFadeIn.yy",},},
@@ -287,6 +287,7 @@
     {"id":{"name":"o3","path":"objects/o3/o3.yy",},},
     {"id":{"name":"tFloor4","path":"tilesets/tFloor4/tFloor4.yy",},},
     {"id":{"name":"snd_Winds","path":"sounds/snd_Winds/snd_Winds.yy",},},
+    {"id":{"name":"sDashFruitRespawn","path":"sprites/sDashFruitRespawn/sDashFruitRespawn.yy",},},
     {"id":{"name":"oShockwaveVFX","path":"objects/oShockwaveVFX/oShockwaveVFX.yy",},},
     {"id":{"name":"sShopSign","path":"sprites/sShopSign/sShopSign.yy",},},
     {"id":{"name":"sCannonCloudUpFire","path":"sprites/sCannonCloudUpFire/sCannonCloudUpFire.yy",},},
