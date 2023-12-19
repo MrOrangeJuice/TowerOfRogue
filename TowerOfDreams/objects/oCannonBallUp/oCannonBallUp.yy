@@ -35,8 +35,8 @@
   ],
   "solid": false,
   "spriteId": {
-    "name": "sCannonBall",
-    "path": "sprites/sCannonBall/sCannonBall.yy",
+    "name": "sCannonBallFlipped",
+    "path": "sprites/sCannonBallFlipped/sCannonBallFlipped.yy",
   },
   "spriteMaskId": null,
   "visible": true,

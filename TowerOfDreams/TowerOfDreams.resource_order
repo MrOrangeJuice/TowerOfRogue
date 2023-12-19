@@ -787,6 +787,7 @@
     {"name":"sSwordShrine","order":6,"path":"sprites/sSwordShrine/sSwordShrine.yy",},
     {"name":"sPlayerHitZombie","order":4,"path":"sprites/sPlayerHitZombie/sPlayerHitZombie.yy",},
     {"name":"sPlayerJump","order":2,"path":"sprites/sPlayerJump/sPlayerJump.yy",},
+    {"name":"sCannonBallFlipped","order":34,"path":"sprites/sCannonBallFlipped/sCannonBallFlipped.yy",},
     {"name":"tFloor1","order":2,"path":"tilesets/tFloor1/tFloor1.yy",},
     {"name":"oLavaBubble","order":25,"path":"objects/oLavaBubble/oLavaBubble.yy",},
     {"name":"oBombItem","order":37,"path":"objects/oBombItem/oBombItem.yy",},

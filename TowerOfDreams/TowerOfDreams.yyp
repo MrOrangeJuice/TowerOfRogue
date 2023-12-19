@@ -860,6 +860,7 @@
     {"id":{"name":"sSwordShrine","path":"sprites/sSwordShrine/sSwordShrine.yy",},},
     {"id":{"name":"sPlayerHitZombie","path":"sprites/sPlayerHitZombie/sPlayerHitZombie.yy",},},
     {"id":{"name":"sPlayerJump","path":"sprites/sPlayerJump/sPlayerJump.yy",},},
+    {"id":{"name":"sCannonBallFlipped","path":"sprites/sCannonBallFlipped/sCannonBallFlipped.yy",},},
     {"id":{"name":"tFloor1","path":"tilesets/tFloor1/tFloor1.yy",},},
     {"id":{"name":"oLavaBubble","path":"objects/oLavaBubble/oLavaBubble.yy",},},
     {"id":{"name":"oBombItem","path":"objects/oBombItem/oBombItem.yy",},},
