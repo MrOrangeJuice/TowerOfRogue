@@ -616,6 +616,7 @@
     {"id":{"name":"sPlayerHitGreen","path":"sprites/sPlayerHitGreen/sPlayerHitGreen.yy",},},
     {"id":{"name":"sHuskCannon","path":"sprites/sHuskCannon/sHuskCannon.yy",},},
     {"id":{"name":"sAxe","path":"sprites/sAxe/sAxe.yy",},},
+    {"id":{"name":"sDashFruitHorizontal","path":"sprites/sDashFruitHorizontal/sDashFruitHorizontal.yy",},},
     {"id":{"name":"sPlayerFallGold","path":"sprites/sPlayerFallGold/sPlayerFallGold.yy",},},
     {"id":{"name":"sFloatingLeverGreen","path":"sprites/sFloatingLeverGreen/sFloatingLeverGreen.yy",},},
     {"id":{"name":"oBubbleVFX","path":"objects/oBubbleVFX/oBubbleVFX.yy",},},

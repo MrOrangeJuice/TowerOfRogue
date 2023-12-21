@@ -565,6 +565,7 @@
     {"name":"sPlayerHitGreen","order":1,"path":"sprites/sPlayerHitGreen/sPlayerHitGreen.yy",},
     {"name":"sHuskCannon","order":7,"path":"sprites/sHuskCannon/sHuskCannon.yy",},
     {"name":"sAxe","order":17,"path":"sprites/sAxe/sAxe.yy",},
+    {"name":"sDashFruitHorizontal","order":50,"path":"sprites/sDashFruitHorizontal/sDashFruitHorizontal.yy",},
     {"name":"sPlayerFallGold","order":1,"path":"sprites/sPlayerFallGold/sPlayerFallGold.yy",},
     {"name":"sFloatingLeverGreen","order":29,"path":"sprites/sFloatingLeverGreen/sFloatingLeverGreen.yy",},
     {"name":"oBubbleVFX","order":23,"path":"objects/oBubbleVFX/oBubbleVFX.yy",},
