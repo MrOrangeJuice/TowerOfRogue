@@ -11,7 +11,7 @@ if(global.pipeY != 0)
 while(!global.pipeSpawned)
 {
 	// Check if it's in a corner
-	if(place_meeting(x+1,y,oWall) && place_meeting(x,y+1,oWall) && !place_meeting(x+1,y,oSpikes) && !place_meeting(x,y+1,oSpikes) && !place_meeting(x,y,oWall) && y > oPortal.y)
+	if(place_meeting(x+1,y,oWall) && place_meeting(x,y+1,oWall) && !place_meeting(x+1,y,oSpikes) && !place_meeting(x,y+1,oSpikes) && !place_meeting(x+1,y,oLava) && !place_meeting(x,y+1,oLava) && !place_meeting(x,y,oWall) && y > oPortal.y)
 	{
 		randomize();
 		randomChance = irandom_range(0,2);
