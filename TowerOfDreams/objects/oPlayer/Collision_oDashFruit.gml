@@ -5,6 +5,8 @@ while(place_meeting(x,y,other))
 {
 	y -= 1;	
 }
+// Push player to center
+//x = other.x+8;
 
 audio_play_sound(snd_Gulp,5,false);
 audio_play_sound(snd_FruitJump,5,false);
