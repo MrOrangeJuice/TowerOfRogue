@@ -819,6 +819,7 @@
     {"id":{"name":"rShopFloor2","path":"rooms/rShopFloor2/rShopFloor2.yy",},},
     {"id":{"name":"oDustSlash","path":"objects/oDustSlash/oDustSlash.yy",},},
     {"id":{"name":"oColaItem","path":"objects/oColaItem/oColaItem.yy",},},
+    {"id":{"name":"sDashFruitHorizontalRespawn","path":"sprites/sDashFruitHorizontalRespawn/sDashFruitHorizontalRespawn.yy",},},
     {"id":{"name":"sPlayerPortalReverse","path":"sprites/sPlayerPortalReverse/sPlayerPortalReverse.yy",},},
     {"id":{"name":"rFloor2_4","path":"rooms/rFloor2_4/rFloor2_4.yy",},},
     {"id":{"name":"sCannonCloudDance","path":"sprites/sCannonCloudDance/sCannonCloudDance.yy",},},

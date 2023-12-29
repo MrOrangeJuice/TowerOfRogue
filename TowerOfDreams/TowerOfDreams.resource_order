@@ -750,6 +750,7 @@
     {"name":"rShopFloor2","order":1,"path":"rooms/rShopFloor2/rShopFloor2.yy",},
     {"name":"oDustSlash","order":1,"path":"objects/oDustSlash/oDustSlash.yy",},
     {"name":"oColaItem","order":9,"path":"objects/oColaItem/oColaItem.yy",},
+    {"name":"sDashFruitHorizontalRespawn","order":51,"path":"sprites/sDashFruitHorizontalRespawn/sDashFruitHorizontalRespawn.yy",},
     {"name":"sPlayerPortalReverse","order":8,"path":"sprites/sPlayerPortalReverse/sPlayerPortalReverse.yy",},
     {"name":"rFloor2_4","order":3,"path":"rooms/rFloor2_4/rFloor2_4.yy",},
     {"name":"oThanks","order":9,"path":"objects/oThanks/oThanks.yy",},
