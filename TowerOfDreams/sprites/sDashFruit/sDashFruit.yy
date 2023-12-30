@@ -40,8 +40,8 @@
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "Level Objects",
-    "path": "folders/Sprites/Level Objects.yy",
+    "name": "Dash Fruit",
+    "path": "folders/Sprites/Level Objects/Dash Fruit.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

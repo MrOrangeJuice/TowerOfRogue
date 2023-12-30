@@ -35,8 +35,8 @@
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "Level Objects",
-    "path": "folders/Sprites/Level Objects.yy",
+    "name": "Slime Block",
+    "path": "folders/Sprites/Level Objects/Slime Block.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
