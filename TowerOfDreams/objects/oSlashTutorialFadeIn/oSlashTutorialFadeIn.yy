@@ -33,8 +33,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "sSlash",
-    "path": "sprites/sSlash/sSlash.yy",
+    "name": "sSlashFadeIn",
+    "path": "sprites/sSlashFadeIn/sSlashFadeIn.yy",
   },
   "spriteMaskId": null,
   "visible": true,
