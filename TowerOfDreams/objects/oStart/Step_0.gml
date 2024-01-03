@@ -38,11 +38,11 @@ if (gamepad_axis_value(4,gp_axislh) > 0.2 || gamepad_button_check(4,gp_padr))
 }
 
 
-if(global.controller == 2)
+if(global.controller == 2 && !gamepad_is_connected(0))
 {
 	sprite_index = sStartControllerPS;	
 }
-if(global.controller == 1)
+else if(global.controller == 1 || global.controller == 2)
 {
 	sprite_index = sStartController;	
 }
