@@ -6,6 +6,9 @@ while(place_meeting(x,y,other))
 	x -= 1;	
 }
 
+// Set player to top of fruit
+y = other.y;
+
 audio_play_sound(snd_Gulp,5,false);
 audio_play_sound(snd_FruitJump,5,false);
 instance_create_layer(other.x+2,other.y+2,"CoinVFX",oHorizontalDashFruitVFX);
