@@ -2,7 +2,7 @@
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "sFloor3",
-  "bbox_bottom": 23,
+  "bbox_bottom": 47,
   "bbox_left": 8,
   "bbox_right": 63,
   "bbox_top": 0,
