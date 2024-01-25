@@ -171,6 +171,7 @@
     {"id":{"name":"sCannonCloudUpEliteFire","path":"sprites/sCannonCloudUpEliteFire/sCannonCloudUpEliteFire.yy",},},
     {"id":{"name":"sPlayerSlashDoubleZombie","path":"sprites/sPlayerSlashDoubleZombie/sPlayerSlashDoubleZombie.yy",},},
     {"id":{"name":"snd_Rage","path":"sounds/snd_Rage/snd_Rage.yy",},},
+    {"id":{"name":"rFloor3_3","path":"rooms/rFloor3_3/rFloor3_3.yy",},},
     {"id":{"name":"sPlayerWallSlideZombie","path":"sprites/sPlayerWallSlideZombie/sPlayerWallSlideZombie.yy",},},
     {"id":{"name":"sGravityEnemyHusk","path":"sprites/sGravityEnemyHusk/sGravityEnemyHusk.yy",},},
     {"id":{"name":"sGravityEnemyLandUp","path":"sprites/sGravityEnemyLandUp/sGravityEnemyLandUp.yy",},},
@@ -961,6 +962,7 @@
     {"roomId":{"name":"rTreasureRoom2Floor3","path":"rooms/rTreasureRoom2Floor3/rTreasureRoom2Floor3.yy",},},
     {"roomId":{"name":"rTreasureRoomFloor3","path":"rooms/rTreasureRoomFloor3/rTreasureRoomFloor3.yy",},},
     {"roomId":{"name":"rShop2Floor3","path":"rooms/rShop2Floor3/rShop2Floor3.yy",},},
+    {"roomId":{"name":"rFloor3_3","path":"rooms/rFloor3_3/rFloor3_3.yy",},},
   ],
   "templateType": null,
   "TextureGroups": [

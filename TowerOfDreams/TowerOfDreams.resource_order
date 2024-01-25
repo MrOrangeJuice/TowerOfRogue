@@ -148,6 +148,7 @@
     {"name":"sCannonCloudUpEliteFire","order":11,"path":"sprites/sCannonCloudUpEliteFire/sCannonCloudUpEliteFire.yy",},
     {"name":"sPlayerSlashDoubleZombie","order":12,"path":"sprites/sPlayerSlashDoubleZombie/sPlayerSlashDoubleZombie.yy",},
     {"name":"snd_Rage","order":24,"path":"sounds/snd_Rage/snd_Rage.yy",},
+    {"name":"rFloor3_3","order":2,"path":"rooms/rFloor3_3/rFloor3_3.yy",},
     {"name":"sPlayerWallSlideZombie","order":15,"path":"sprites/sPlayerWallSlideZombie/sPlayerWallSlideZombie.yy",},
     {"name":"sGravityEnemyLandUp","order":4,"path":"sprites/sGravityEnemyLandUp/sGravityEnemyLandUp.yy",},
     {"name":"snd_Item","order":17,"path":"sounds/snd_Item/snd_Item.yy",},
