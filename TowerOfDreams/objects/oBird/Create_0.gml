@@ -1,6 +1,6 @@
 /// @description Init
 
-grv = 0.05;
+grv = 0.1;
 walksp = 1;
 hsp = 0;
 vsp = 0;

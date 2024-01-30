@@ -8,8 +8,13 @@ if (instance_exists(oPlayer))
 }
 else
 {
-	
-	if (instance_exists(oPortalEntry))
+	if (instance_exists(oBird))
+	{
+		follow = oBird;
+		//xTo = follow.x;
+		yTo = follow.y;
+	}
+	else if (instance_exists(oPortalEntry))
 	{
 		follow = oPortalEntry;
 		//xTo = follow.x;

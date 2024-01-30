@@ -55,86 +55,103 @@ if (gamepad_button_check_pressed(4,gp_face2) || gamepad_button_check_pressed(4,g
 	global.controller = 2;
 }
 
-// Build up speed depending on inputs
-if(key_left && !key_right)
+if(!global.paused)
 {
-	if(currentwalksp == -walksp)
+	image_speed = 1;
+	// Build up speed depending on inputs
+	if(key_left && !key_right)
 	{
-		// Don't do anything
+		if(currentwalksp == -walksp)
+		{
+			// Don't do anything
+		}
+		else if(currentwalksp < -walksp) 
+		{
+			currentwalksp += acceleration;
+		}
+		else
+		{
+			currentwalksp -= acceleration;
+		}
 	}
-	else if(currentwalksp < -walksp) 
+	if(key_right && !key_left)
 	{
-		currentwalksp += acceleration;
+		if(currentwalksp == walksp)
+		{
+			// Don't do anything
+		}
+		else if(currentwalksp > walksp) 
+		{
+			currentwalksp -= acceleration;
+		}
+		else
+		{
+			currentwalksp += acceleration;
+		}
 	}
-	else
+	// Slow down if not moving
+	if (!(key_left || key_right) || (key_left && key_right))
 	{
-		currentwalksp -= acceleration;
+		if(currentwalksp < 0)
+		{
+			currentwalksp += acceleration;
+		}
+		if(currentwalksp > 0)
+		{
+			currentwalksp -= acceleration;
+		}
 	}
-}
-if(key_right && !key_left)
-{
-	if(currentwalksp == walksp)
-	{
-		// Don't do anything
-	}
-	else if(currentwalksp > walksp) 
-	{
-		currentwalksp -= acceleration;
-	}
-	else
-	{
-		currentwalksp += acceleration;
-	}
-}
-// Slow down if not moving
-if (!(key_left || key_right) || (key_left && key_right))
-{
-	if(currentwalksp < 0)
-	{
-		currentwalksp += acceleration;
-	}
-	if(currentwalksp > 0)
-	{
-		currentwalksp -= acceleration;
-	}
-}
 
-hsp = currentwalksp;
-vsp = vsp + grv;
-// Clamp fall speed
-if(vsp > maxFallSpeed)
-{
-	vsp = maxFallSpeed;	
-}
-
-// Jump
-if(key_jump_pressed)
-{
-	vsp = -2;	
-}
-
-// Horizontal Collision
-if (place_meeting(x+hsp,y,oWall))
-{
-	while (!place_meeting(x+sign(hsp),y,oWall))
+	hsp = currentwalksp;
+	vsp = vsp + grv;
+	// Clamp fall speed
+	if(vsp > maxFallSpeed)
 	{
-		x = x + sign(hsp);
+		vsp = maxFallSpeed;	
 	}
-	hsp = 0;
-}
 
-// Vertical Collision
-if (place_meeting(x,y+vsp,oWall))
-{
-	while (!place_meeting(x,y+sign(vsp),oWall))
+	// Jump
+	if(key_jump_pressed)
 	{
-		y = y + sign(vsp);
+		vsp = -2;
+		audio_play_sound(snd_Flap,5,false);
 	}
-	vsp = 0;
+	
+	// Lay Egg
+	if(key_item_pressed)
+	{
+		instance_create_layer(x-4,y+4,"Walls",oEgg);	
+		audio_play_sound(snd_Kunai,5,false);
+		vsp = -1;
+	}
+
+	// Horizontal Collision
+	if (place_meeting(x+hsp,y,oWall))
+	{
+		while (!place_meeting(x+sign(hsp),y,oWall))
+		{
+			x = x + sign(hsp);
+		}
+		hsp = 0;
+	}
+
+	// Vertical Collision
+	if (place_meeting(x,y+vsp,oWall))
+	{
+		while (!place_meeting(x,y+sign(vsp),oWall))
+		{
+			y = y + sign(vsp);
+		}
+		vsp = 0;
+	}
+
+	x += hsp;
+	y += vsp;
+
+	// Animation
+	if (hsp != 0) image_xscale = sign(hsp);
 }
-
-x += hsp;
-y += vsp;
-
-// Animation
-if (hsp != 0) image_xscale = sign(hsp);
+else
+{
+	image_speed = 0;	
+}
