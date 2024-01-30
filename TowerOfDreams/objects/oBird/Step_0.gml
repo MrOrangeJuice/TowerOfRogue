@@ -110,10 +110,13 @@ if(!global.paused)
 		vsp = maxFallSpeed;	
 	}
 
-	// Jump
+	// Flap
 	if(key_jump_pressed)
 	{
 		vsp = -2;
+		sprite_index = sBirdFlap;
+		flapping = true;
+		image_index = 0;
 		audio_play_sound(snd_Flap,5,false);
 	}
 	

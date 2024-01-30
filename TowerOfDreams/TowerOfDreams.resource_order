@@ -787,6 +787,7 @@
     {"name":"sPlayerJumpRed","order":3,"path":"sprites/sPlayerJumpRed/sPlayerJumpRed.yy",},
     {"name":"sGroundEnemy","order":1,"path":"sprites/sGroundEnemy/sGroundEnemy.yy",},
     {"name":"PickNextLevel","order":5,"path":"scripts/PickNextLevel/PickNextLevel.yy",},
+    {"name":"sBirdFlap","order":3,"path":"sprites/sBirdFlap/sBirdFlap.yy",},
     {"name":"sPlayerJumpGreenLeft","order":18,"path":"sprites/sPlayerJumpGreenLeft/sPlayerJumpGreenLeft.yy",},
     {"name":"sGravityEnemyEliteFall","order":1,"path":"sprites/sGravityEnemyEliteFall/sGravityEnemyEliteFall.yy",},
     {"name":"oAngerVFX","order":20,"path":"objects/oAngerVFX/oAngerVFX.yy",},

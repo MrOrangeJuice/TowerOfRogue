@@ -863,6 +863,7 @@
     {"id":{"name":"sPlayerJumpRed","path":"sprites/sPlayerJumpRed/sPlayerJumpRed.yy",},},
     {"id":{"name":"sGroundEnemy","path":"sprites/sGroundEnemy/sGroundEnemy.yy",},},
     {"id":{"name":"PickNextLevel","path":"scripts/PickNextLevel/PickNextLevel.yy",},},
+    {"id":{"name":"sBirdFlap","path":"sprites/sBirdFlap/sBirdFlap.yy",},},
     {"id":{"name":"sPlayerJumpGreenLeft","path":"sprites/sPlayerJumpGreenLeft/sPlayerJumpGreenLeft.yy",},},
     {"id":{"name":"sGravityEnemyEliteFall","path":"sprites/sGravityEnemyEliteFall/sGravityEnemyEliteFall.yy",},},
     {"id":{"name":"oAngerVFX","path":"objects/oAngerVFX/oAngerVFX.yy",},},
