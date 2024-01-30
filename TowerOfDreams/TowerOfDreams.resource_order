@@ -72,6 +72,7 @@
     {"name":"Numbers","order":14,"path":"folders/Sprites/VFX/Numbers.yy",},
     {"name":"Tile Sets","order":1,"path":"folders/Tile Sets.yy",},
     {"name":"Timelines","order":7,"path":"folders/Timelines.yy",},
+    {"name":"Bird","order":24,"path":"folders/Sprites/Bird.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"sUseItemControllerFadeIn","order":16,"path":"sprites/sUseItemControllerFadeIn/sUseItemControllerFadeIn.yy",},
