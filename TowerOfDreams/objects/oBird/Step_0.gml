@@ -55,7 +55,7 @@ if (gamepad_button_check_pressed(4,gp_face2) || gamepad_button_check_pressed(4,g
 	global.controller = 2;
 }
 
-if(!global.paused)
+if(!global.paused && !global.hitStop)
 {
 	image_speed = 1;
 	// Build up speed depending on inputs
@@ -126,6 +126,44 @@ if(!global.paused)
 		instance_create_layer(x-4,y+4,"Walls",oEgg);	
 		audio_play_sound(snd_Kunai,5,false);
 		vsp = -1;
+	}
+	
+	// Take Damage
+	if(!invulnerable)
+	{
+		enemyHitRight = instance_place(x+(1*image_xscale),y,oEnemy);
+		enemyHitLeft = instance_place(x-(1*image_xscale),y,oEnemy);
+		
+		if(enemyHitRight && !enemyHitRight.noDamage)
+		{
+			TakeDamage(1,1.5,3.5,true);
+		}
+		else if(enemyHitLeft && !enemyHitLeft.noDamage)
+		{
+			TakeDamage(1,1.5,-3.5,true);
+		}
+		
+		spikeHitRight = instance_place(x+(1*image_xscale),y,oSpikes);
+		spikeHitLeft = instance_place(x-(1*image_xscale),y,oSpikes);
+		spikeHitDown = instance_place(x,y+1,oSpikes);
+		spikeHitUp = instance_place(x,y-1,oSpikes);
+		
+		if(spikeHitRight)
+		{
+			TakeDamage(1,1.5,3.5,true);
+		}
+		else if(spikeHitLeft)
+		{	
+			TakeDamage(1,1.5,-3.5,true);
+		}
+		else if(spikeHitDown)
+		{
+			TakeDamage(1,1.75,0,true);	
+		}
+		else if(spikeHitUp)
+		{
+			TakeDamage(1,-0.5,0,true);
+		}
 	}
 
 	// Horizontal Collision
