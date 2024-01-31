@@ -10,7 +10,7 @@ else if(global.controller == 1 || global.controller == 2)
 }
 else
 {
-	sprite_index = sSlash;	
+	sprite_index = sSlashFadeIn;	
 }
 
 
