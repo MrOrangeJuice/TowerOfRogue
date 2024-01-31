@@ -5,6 +5,7 @@
     {"name":"Fonts","order":6,"path":"folders/Fonts.yy",},
     {"name":"Notes","order":12,"path":"folders/Notes.yy",},
     {"name":"Objects","order":8,"path":"folders/Objects.yy",},
+    {"name":"Bird","order":30,"path":"folders/Objects/Bird.yy",},
     {"name":"Decorations","order":22,"path":"folders/Objects/Decorations.yy",},
     {"name":"Enemies","order":11,"path":"folders/Objects/Enemies.yy",},
     {"name":"Items","order":16,"path":"folders/Objects/Items.yy",},
@@ -73,7 +74,6 @@
     {"name":"Numbers","order":14,"path":"folders/Sprites/VFX/Numbers.yy",},
     {"name":"Tile Sets","order":1,"path":"folders/Tile Sets.yy",},
     {"name":"Timelines","order":7,"path":"folders/Timelines.yy",},
-    {"name":"Bird","order":30,"path":"folders/Objects/Bird.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"sUseItemControllerFadeIn","order":16,"path":"sprites/sUseItemControllerFadeIn/sUseItemControllerFadeIn.yy",},
@@ -577,6 +577,7 @@
     {"name":"oSlashParticle","order":37,"path":"objects/oSlashParticle/oSlashParticle.yy",},
     {"name":"sSkullNightmare","order":5,"path":"sprites/sSkullNightmare/sSkullNightmare.yy",},
     {"name":"snd_Wings","order":27,"path":"sounds/snd_Wings/snd_Wings.yy",},
+    {"name":"sDemo","order":48,"path":"sprites/sDemo/sDemo.yy",},
     {"name":"sMushroomJump","order":46,"path":"sprites/sMushroomJump/sMushroomJump.yy",},
     {"name":"sFirePlantElite","order":2,"path":"sprites/sFirePlantElite/sFirePlantElite.yy",},
     {"name":"sBallExplosion","order":10,"path":"sprites/sBallExplosion/sBallExplosion.yy",},
