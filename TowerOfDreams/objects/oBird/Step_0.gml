@@ -123,7 +123,7 @@ if(!global.paused && !global.hitStop)
 	// Lay Egg
 	if(key_item_pressed)
 	{
-		instance_create_layer(x-5,y+4,"Walls",oEgg);	
+		instance_create_layer(x-(4+image_xscale),y+4,"Walls",oEgg);	
 		audio_play_sound(snd_Kunai,5,false);
 		vsp = -1;
 	}
