@@ -723,6 +723,7 @@
     {"name":"sFruitJumpVFX","order":44,"path":"sprites/sFruitJumpVFX/sFruitJumpVFX.yy",},
     {"name":"sPipeSpawner","order":10,"path":"sprites/sPipeSpawner/sPipeSpawner.yy",},
     {"name":"sShopPipe","order":15,"path":"sprites/sShopPipe/sShopPipe.yy",},
+    {"name":"oBirdFlyAway","order":3,"path":"objects/oBirdFlyAway/oBirdFlyAway.yy",},
     {"name":"oTransition","order":8,"path":"objects/oTransition/oTransition.yy",},
     {"name":"sShopShelfRight","order":6,"path":"sprites/sShopShelfRight/sShopShelfRight.yy",},
     {"name":"rFloor3_2","order":1,"path":"rooms/rFloor3_2/rFloor3_2.yy",},

@@ -785,6 +785,7 @@
     {"id":{"name":"sFruitJumpVFX","path":"sprites/sFruitJumpVFX/sFruitJumpVFX.yy",},},
     {"id":{"name":"sPipeSpawner","path":"sprites/sPipeSpawner/sPipeSpawner.yy",},},
     {"id":{"name":"sShopPipe","path":"sprites/sShopPipe/sShopPipe.yy",},},
+    {"id":{"name":"oBirdFlyAway","path":"objects/oBirdFlyAway/oBirdFlyAway.yy",},},
     {"id":{"name":"oTransition","path":"objects/oTransition/oTransition.yy",},},
     {"id":{"name":"sShopShelfRight","path":"sprites/sShopShelfRight/sShopShelfRight.yy",},},
     {"id":{"name":"rFloor3_2","path":"rooms/rFloor3_2/rFloor3_2.yy",},},
