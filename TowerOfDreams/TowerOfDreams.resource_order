@@ -378,6 +378,7 @@
     {"name":"oMug","order":4,"path":"objects/oMug/oMug.yy",},
     {"name":"sFlapControllerFadeIn","order":40,"path":"sprites/sFlapControllerFadeIn/sFlapControllerFadeIn.yy",},
     {"name":"sGravityEnemyDustUpVFX","order":19,"path":"sprites/sGravityEnemyDustUpVFX/sGravityEnemyDustUpVFX.yy",},
+    {"name":"ChangeBirdSkin","order":12,"path":"scripts/ChangeBirdSkin/ChangeBirdSkin.yy",},
     {"name":"oPlayerPortal","order":9,"path":"objects/oPlayerPortal/oPlayerPortal.yy",},
     {"name":"sContinueController","order":20,"path":"sprites/sContinueController/sContinueController.yy",},
     {"name":"oWrench","order":24,"path":"objects/oWrench/oWrench.yy",},

@@ -1,7 +1,7 @@
 /// @description End flapping
 
-if(sprite_index = sBirdFlap && flapping)
+if(sprite_index == flap && flapping)
 {
 	flapping = false;
-	sprite_index = sBird;
+	sprite_index = idle;
 }

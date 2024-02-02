@@ -414,6 +414,7 @@
     {"id":{"name":"oMug","path":"objects/oMug/oMug.yy",},},
     {"id":{"name":"sFlapControllerFadeIn","path":"sprites/sFlapControllerFadeIn/sFlapControllerFadeIn.yy",},},
     {"id":{"name":"sGravityEnemyDustUpVFX","path":"sprites/sGravityEnemyDustUpVFX/sGravityEnemyDustUpVFX.yy",},},
+    {"id":{"name":"ChangeBirdSkin","path":"scripts/ChangeBirdSkin/ChangeBirdSkin.yy",},},
     {"id":{"name":"oPlayerPortal","path":"objects/oPlayerPortal/oPlayerPortal.yy",},},
     {"id":{"name":"sContinueController","path":"sprites/sContinueController/sContinueController.yy",},},
     {"id":{"name":"oWrench","path":"objects/oWrench/oWrench.yy",},},

@@ -114,7 +114,7 @@ if(!global.paused && !global.hitStop)
 	if(key_jump_pressed)
 	{
 		vsp = -2;
-		sprite_index = sBirdFlap;
+		sprite_index = flap;
 		flapping = true;
 		image_index = 0;
 		audio_play_sound(snd_Flap,5,false);

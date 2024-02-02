@@ -12,3 +12,9 @@ invulnerable = false;
 
 oFlapTutorialFadeIn.image_speed = 1;
 oEggTutorialFadeIn.image_speed = 1;
+
+// Sprites
+idle = sBird;
+flap = sBirdFlap;
+
+ChangeBirdSkin();
