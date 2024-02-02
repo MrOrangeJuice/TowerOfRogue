@@ -262,7 +262,7 @@ if(!global.paused && !global.hitStop)
 				global.hubMusic = false;
 			}
 		
-			if(!global.treasureMusic && (room == rTreasureRoom || room == rTreasureRoom2 || room == rTreasureRoomFloor2 || room == rTreasureRoom2Floor2) || room == rTreasureRoomFloor3 || room == rTreasureRoom2Floor3)
+			if(!global.treasureMusic && (room == rTreasureRoom || room == rTreasureRoom2 || room == rTreasureRoomFloor2 || room == rTreasureRoom2Floor2 || room == rTreasureRoomFloor3 || room == rTreasureRoom2Floor3))
 			{
 				audio_play_sound(msc_Shop,5,true);
 				global.treasureMusic = true;

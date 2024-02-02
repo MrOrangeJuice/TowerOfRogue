@@ -32,6 +32,15 @@ else
 			global.armor = 0;
 			PickNextLevel();
 		}
+		else if(yellow)
+		{
+			global.inARun = true;
+			global.item = -1;
+			global.passiveItems = [];
+			global.levelCount = 6;
+			global.armor = 0;
+			PickNextLevel();
+		}
 		else
 		{
 			SlideTransition(TRANS_MODE.GOTO,rTutorial);	
