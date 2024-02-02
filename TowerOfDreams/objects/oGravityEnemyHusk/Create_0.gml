@@ -2,4 +2,4 @@
 event_inherited();
 
 invincible = true;
-grv = 0.2;
+grv = 0.15;
