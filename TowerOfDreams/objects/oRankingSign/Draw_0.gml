@@ -14,10 +14,13 @@ draw_text(x+64,y+84,"Bumper Buster: " + string(global.best1_4));
 draw_text(x+64,y+92,"On A Roll: " + string(global.best1_5));
 draw_text(x+64,y+100,"Shrooms of Doom: " + string(global.best1_6));
 
-draw_text(x+192,y+52,"Floor 2");
+draw_text(x+192,y+52,"Floor 2 and 3");
 draw_text(x+192,y+60,"Construction Calamity: " + string(global.best2_1));
 draw_text(x+192,y+68,"Vertical Velocity: " + string(global.best2_2));
 draw_text(x+192,y+76,"Block Party: " + string(global.best2_3));
 draw_text(x+192,y+84,"Missile Mayhem: " + string(global.best2_4));
+draw_text(x+192,y+92,"Cloudy Catastrophe: " + string(global.best3_1));
+draw_text(x+192,y+100,"Dash Fruit Smoothie: " + string(global.best3_2));
+draw_text(x+192,y+108,"Larry's Liftoff: " + string(global.best3_3));
 
 draw_set_halign(fa_left);

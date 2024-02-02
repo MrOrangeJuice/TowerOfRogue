@@ -43,6 +43,13 @@ switch(room)
 			prevBestRank = global.best1_5;
 		}
 		break;
+	case rFloor1_6:
+		if(global.best1_6 != "F") 
+		{
+			alarm[2] = room_speed * 1.5;
+			prevBestRank = global.best1_6;
+		}
+		break;
 	case rFloor2_1:
 		if(global.best2_1 != "F") 
 		{
@@ -62,6 +69,34 @@ switch(room)
 		{
 			alarm[2] = room_speed * 1.5;
 			prevBestRank = global.best2_3;
+		}
+		break;
+	case rFloor2_4:
+		if(global.best2_4 != "F") 
+		{
+			alarm[2] = room_speed * 1.5;
+			prevBestRank = global.best2_4;
+		}
+		break;
+	case rFloor3_1:
+		if(global.best3_1 != "F") 
+		{
+			alarm[2] = room_speed * 1.5;
+			prevBestRank = global.best3_1;
+		}
+		break;
+	case rFloor3_2:
+		if(global.best3_2 != "F") 
+		{
+			alarm[2] = room_speed * 1.5;
+			prevBestRank = global.best3_2;
+		}
+		break;
+	case rFloor3_3:
+		if(global.best3_3 != "F") 
+		{
+			alarm[2] = room_speed * 1.5;
+			prevBestRank = global.best3_3;
 		}
 		break;
 }

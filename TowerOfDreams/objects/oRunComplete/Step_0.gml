@@ -27,6 +27,7 @@ if(key_select_pressed)
 	SlideTransition(TRANS_MODE.GOTO,rHub);
 	global.usedArray = [false,false,false,false,false,false,false,false,false,false];
 	global.usedArray2 = [false,false,false,false,false,false,false,false,false,false];
+	global.usedArray3 = [false,false,false,false,false,false,false,false,false,false];
 	global.inARun = false;
 	global.runCompleted = true;
 	global.health = global.maxHealth;

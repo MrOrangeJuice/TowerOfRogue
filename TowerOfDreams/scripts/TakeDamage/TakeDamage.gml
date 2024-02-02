@@ -38,6 +38,8 @@ function TakeDamage(argument0,argument1,argument2,argument3)
 				audio_stop_sound(msc_Floor1Variant);
 				audio_stop_sound(msc_Floor2);
 				audio_stop_sound(msc_Floor2Variant);
+				audio_stop_sound(msc_Floor3);
+				audio_stop_sound(msc_Floor3Variant);
 				hitStop = instance_create_layer(0,0,"Instances",oHitstopLong);
 				hitStop.death = true;
 			}
@@ -110,6 +112,8 @@ function TakeDamage(argument0,argument1,argument2,argument3)
 				audio_stop_sound(msc_Floor1Variant);
 				audio_stop_sound(msc_Floor2);
 				audio_stop_sound(msc_Floor2Variant);
+				audio_stop_sound(msc_Floor3);
+				audio_stop_sound(msc_Floor3Variant);
 				hitStop = instance_create_layer(0,0,"Instances",oHitstopLong);
 				hitStop.death = true;
 			}

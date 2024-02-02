@@ -4,6 +4,7 @@ function Load(){
 	ini_open("savedata.ini");
 	global.tutorialCompleted = ini_read_real("savegame", "tutorialCompleted", 0);
 	global.floor1Completed = ini_read_real("savegame", "floor1Completed", 0);
+	global.floor2Completed = ini_read_real("savegame", "floor2Completed", 0);
 	global.runCompleted = ini_read_real("savegame", "runCompleted", 0);
 	global.best1_1 = ini_read_string("savegame", "best1_1", "F");
 	global.best1_2 = ini_read_string("savegame", "best1_2", "F");
@@ -15,6 +16,9 @@ function Load(){
 	global.best2_2 = ini_read_string("savegame", "best2_2", "F");
 	global.best2_3 = ini_read_string("savegame", "best2_3", "F");
 	global.best2_4 = ini_read_string("savegame", "best2_4", "F");
+	global.best3_1 = ini_read_string("savegame", "best3_1", "F");
+	global.best3_2 = ini_read_string("savegame", "best3_2", "F");
+	global.best3_3 = ini_read_string("savegame", "best3_3", "F");
 	global.bestOverall = ini_read_string("savegame", "bestOverall", "F");
 	global.overallCoins = ini_read_real("savegame", "overallCoins", 0);
 	global.healthUpgrades = ini_read_real("savegame", "healthUpgrades", 0);

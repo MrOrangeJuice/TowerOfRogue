@@ -22,6 +22,8 @@ switch(global.shopPipeCount)
 		audio_stop_sound(msc_Floor1Variant);
 		audio_stop_sound(msc_Floor2);
 		audio_stop_sound(msc_Floor2Variant);
+		audio_stop_sound(msc_Floor3);
+		audio_stop_sound(msc_Floor3Variant);
 		global.floor1Music = false;
 		break;
 	// spit out player

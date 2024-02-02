@@ -14,11 +14,19 @@ function PickShopArea(){
 		SlideTransition(TRANS_MODE.GOTO,global.shopRoomArray[levelChoice]);
 	}
 	// Floor 2
-	else
+	else if(global.levelCount < 6)
 	{
 		levelChoice = irandom_range(0,array_length(global.shopRoomArray2)-1);
 		
 		// Go to level we picked
 		SlideTransition(TRANS_MODE.GOTO,global.shopRoomArray2[levelChoice]);
+	}
+	// Floor 3
+	else
+	{
+		levelChoice = irandom_range(0,array_length(global.shopRoomArray3)-1);
+		
+		// Go to level we picked
+		SlideTransition(TRANS_MODE.GOTO,global.shopRoomArray3[levelChoice]);
 	}
 }

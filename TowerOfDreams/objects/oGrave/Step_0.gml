@@ -32,6 +32,7 @@ if(key_select_pressed)
 	// Reset run
 	global.usedArray = [false,false,false,false,false,false,false,false,false,false];
 	global.usedArray2 = [false,false,false,false,false,false,false,false,false,false];
+	global.usedArray3 = [false,false,false,false,false,false,false,false,false,false];
 	global.inARun = false;
 	global.health = global.maxHealth;
 	global.armor = 0;

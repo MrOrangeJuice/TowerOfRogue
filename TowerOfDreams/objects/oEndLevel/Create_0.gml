@@ -36,15 +36,15 @@ if(rankScore == 20)
 {
 	yourRank = "S";	
 }
-else if(rankScore >= 15)
+else if(rankScore >= 17)
 {
 	yourRank = "A";	
 }
-else if(rankScore >= 10)
+else if(rankScore >= 12)
 {
 	yourRank = "B";	
 }
-else if(rankScore >= 5)
+else if(rankScore >= 7)
 {
 	yourRank = "C";	
 }
@@ -88,6 +88,15 @@ switch(room)
 		break;
 	case rFloor2_4:
 		if(RankIsBetter(yourRank, global.best2_4)) global.best2_4 = yourRank;
+		break;
+	case rFloor3_1:
+		if(RankIsBetter(yourRank, global.best3_1)) global.best3_1 = yourRank;
+		break;
+	case rFloor3_2:
+		if(RankIsBetter(yourRank, global.best3_2)) global.best3_2 = yourRank;
+		break;
+	case rFloor3_3:
+		if(RankIsBetter(yourRank, global.best3_3)) global.best3_3 = yourRank;
 		break;
 }
 

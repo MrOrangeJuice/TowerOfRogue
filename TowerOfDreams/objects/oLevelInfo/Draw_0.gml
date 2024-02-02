@@ -11,6 +11,11 @@ if(drawLevelNum)
 		floorNum = 1;
 		levelNum = global.levelCount + 1;
 	}
+	else if(global.levelCount >= 6)
+	{
+		floorNum = 3;
+		levelNum = global.levelCount - 5;
+	}
 	else if(global.levelCount >= 3)
 	{
 		floorNum = 2;

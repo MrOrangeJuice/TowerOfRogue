@@ -4,6 +4,7 @@ function Save(){
 	ini_open("savedata.ini");
 	ini_write_real("savegame", "tutorialCompleted", global.tutorialCompleted);
 	ini_write_real("savegame", "floor1Completed", global.floor1Completed);
+	ini_write_real("savegame", "floor2Completed", global.floor2Completed);
 	ini_write_real("savegame", "runCompleted", global.runCompleted);
 	ini_write_string("savegame", "best1_1", global.best1_1);
 	ini_write_string("savegame", "best1_2", global.best1_2);
@@ -15,6 +16,9 @@ function Save(){
 	ini_write_string("savegame", "best2_2", global.best2_2);
 	ini_write_string("savegame", "best2_3", global.best2_3);
 	ini_write_string("savegame", "best2_4", global.best2_4);
+	ini_write_string("savegame", "best3_1", global.best3_1);
+	ini_write_string("savegame", "best3_2", global.best3_2);
+	ini_write_string("savegame", "best3_3", global.best3_3);
 	ini_write_string("savegame", "bestOverall", global.bestOverall);
 	ini_write_real("savegame", "overallCoins", global.overallCoins);
 	ini_write_real("savegame", "healthUpgrades", global.healthUpgrades);

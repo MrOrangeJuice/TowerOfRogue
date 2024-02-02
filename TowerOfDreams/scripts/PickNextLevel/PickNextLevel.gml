@@ -3,8 +3,8 @@
 function PickNextLevel(){
 
 	// Determine next room
-	// If player has beaten six levels, send them to run complete screen
-	if(global.levelCount >= 6)
+	// If player has beaten nine levels, send them to run complete screen
+	if(global.levelCount >= 9)
 	{
 		/*
 		SlideTransition(TRANS_MODE.GOTO,rHub);
@@ -37,6 +37,8 @@ function PickNextLevel(){
 		audio_stop_sound(msc_Floor1Variant);
 		audio_stop_sound(msc_Floor2);
 		audio_stop_sound(msc_Floor2Variant);
+		audio_stop_sound(msc_Floor3);
+		audio_stop_sound(msc_Floor3Variant);
 		audio_stop_sound(snd_BoomerangReturn);
 		global.floor1Music = false;
 		Save();
@@ -56,8 +58,38 @@ function PickNextLevel(){
 		global.rerollTax = 0;
 		levelChoice = 0;
 		randomize();
+		
+		// Floor 3
+		if(global.levelCount >= 6)
+		{
+			// Save if first time making it to floor 3
+			if(!global.floor2Completed)
+			{
+				global.floor2Completed = true;
+				Save();
+			}
+			// Transition music
+			if(global.levelCount == 6)
+			{
+				audio_stop_sound(msc_Floor2);
+				audio_stop_sound(msc_Floor2Variant);
+				global.floor1Music = false;
+			}
+			levelChoice = irandom_range(0,array_length(global.levelArray3)-1);
+			// Make sure it picks level that hasn't been used yet
+			while(global.usedArray3[levelChoice])
+			{
+				randomize();
+				levelChoice = irandom_range(0,array_length(global.levelArray3)-1);
+			}
+			// Set level picked to true so it won't be used again
+			global.usedArray3[levelChoice] = true;
+		
+			// Go to level we picked
+			SlideTransition(TRANS_MODE.GOTO,global.levelArray3[levelChoice]);
+		}
 		// Floor 2
-		if(global.levelCount >= 3)
+		else if(global.levelCount >= 3)
 		{
 			// Save if first time making it to floor 2
 			if(!global.floor1Completed)

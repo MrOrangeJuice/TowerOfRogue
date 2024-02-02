@@ -2,7 +2,11 @@
 
 // Stop music just in case
 audio_stop_sound(msc_Floor1);
+audio_stop_sound(msc_Floor1Variant);
 audio_stop_sound(msc_Floor2);
+audio_stop_sound(msc_Floor2Variant);
+audio_stop_sound(msc_Floor3);
+audio_stop_sound(msc_Floor3Variant);
 
 // Sprites
 intro = sRunCompleteIntro;
@@ -55,27 +59,27 @@ for(i = 0; i < array_length(global.ranks); i++)
 	}
 }
 
-if(overallScore >= 30)
+if(overallScore >= 45)
 {
 	overallRank = "S";
 	rankSprite = sS;
 }
-else if(overallScore >= 24)
+else if(overallScore >= 36)
 {
 	overallRank = "A";
 	rankSprite = sA;
 }
-else if(overallScore >= 18)
+else if(overallScore >= 27)
 {
 	overallRank = "B";	
 	rankSprite = sB;
 }
-else if(overallScore >= 12)
+else if(overallScore >= 18)
 {
 	overallRank = "C";	
 	rankSprite = sC;
 }
-else if(overallScore >= 6)
+else if(overallScore >= 9)
 {
 	overallRank = "D";	
 	rankSprite = sD;

@@ -259,6 +259,7 @@ if(room == rTitle)
 				}
 				global.tutorialCompleted = false;
 				global.floor1Completed = false;
+				global.floor2Completed = false;
 				global.runCompleted = false;
 				global.best1_1 = "F";
 				global.best1_2 = "F";
@@ -270,6 +271,9 @@ if(room == rTitle)
 				global.best2_2 = "F";
 				global.best2_3 = "F";
 				global.best2_4 = "F";
+				global.best3_1 = "F";
+				global.best3_2 = "F";
+				global.best3_3 = "F";
 				global.bestOverall = "F";
 				global.overallCoins = 0;
 				global.healthUpgrades = 0;
@@ -427,6 +431,7 @@ if(global.paused)
 					// Reset run
 					global.usedArray = [false,false,false,false,false,false,false,false,false,false];
 					global.usedArray2 = [false,false,false,false,false,false,false,false,false,false];
+					global.usedArray3 = [false,false,false,false,false,false,false,false,false,false];
 					global.inARun = false;
 					global.coins = 0;
 					global.coinsThisRun = 0;
@@ -465,6 +470,8 @@ if(global.paused)
 					audio_stop_sound(msc_Floor1Variant);
 					audio_stop_sound(msc_Floor2);
 					audio_stop_sound(msc_Floor2Variant);
+					audio_stop_sound(msc_Floor3);
+					audio_stop_sound(msc_Floor3Variant);
 					global.floor1Music = false;
 					audio_stop_sound(msc_Shop);
 					global.shopMusic = false;
