@@ -1,4 +1,5 @@
 /// @description Switch music on or off
+/*
 if(global.music)
 {
 	audio_stop_all();
@@ -10,3 +11,4 @@ else if(!global.music)
 	audio_play_sound(snd_SwordGet,5,false);
 	global.music = true;	
 }
+*/

@@ -1,5 +1,6 @@
 /// @description Toggle show collision
 
+/*
 if(room != rTitle)
 {
 	if(global.showCollision)
@@ -17,3 +18,4 @@ if(room != rTitle)
 		layer_set_visible("Tiles",false);
 	}
 }
+*/

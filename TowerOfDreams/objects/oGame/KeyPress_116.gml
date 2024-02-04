@@ -1,5 +1,6 @@
 /// @description Change resolution
 
+/*
 if(!global.res1610)
 {
 	window_set_size(1280,800);
@@ -20,3 +21,4 @@ else if(global.res1610)
 	oTransition.h_half = 72;
 	global.res1610 = false;
 }
+*/
