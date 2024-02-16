@@ -1,6 +1,5 @@
 /// @description Cheat up tower
 
-/*
 if(global.inARun)
 {
 	audio_play_sound(snd_SwordGet,5,false);
@@ -15,4 +14,3 @@ if(global.inARun)
 	global.levelCount++;
 	PickNextLevel();
 }
-*/

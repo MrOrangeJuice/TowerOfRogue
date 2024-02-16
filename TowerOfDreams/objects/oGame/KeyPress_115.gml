@@ -1,5 +1,4 @@
 /// @description Coin cheat
-/*
 if(room == rHub || room == rHubShop)
 {
 	global.overallCoins += 500;
@@ -11,4 +10,3 @@ else if(room != rTitle)
 	global.coinsThisRun += 50;
 	audio_play_sound(snd_SwordGet,5,false);
 }
-*/
