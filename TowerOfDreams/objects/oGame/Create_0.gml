@@ -106,6 +106,62 @@ global.best3_2 = "F";
 global.best3_3 = "F";
 global.bestOverall = "F";
 
+// Grave data
+// Floor 1
+global.graveX1_1 = 0;
+global.graveY1_1 = 0;
+global.graveItem1_1 = -1;
+
+global.graveX1_2 = 0;
+global.graveY1_2 = 0;
+global.graveItem1_2 = -1;
+
+global.graveX1_3 = 0;
+global.graveY1_3 = 0;
+global.graveItem1_3 = -1;
+
+global.graveX1_4 = 0;
+global.graveY1_4 = 0;
+global.graveItem1_4 = -1;
+
+global.graveX1_5 = 0;
+global.graveY1_5 = 0;
+global.graveItem1_5 = -1;
+
+global.graveX1_6 = 0;
+global.graveY1_6 = 0;
+global.graveItem1_6 = -1;
+
+// Floor 2
+global.graveX2_1 = 0;
+global.graveY2_1 = 0;
+global.graveItem2_1 = -1;
+
+global.graveX2_2 = 0;
+global.graveY2_2 = 0;
+global.graveItem2_2 = -1;
+
+global.graveX2_3 = 0;
+global.graveY2_3 = 0;
+global.graveItem2_3 = -1;
+
+global.graveX2_4 = 0;
+global.graveY2_4 = 0;
+global.graveItem2_4 = -1;
+
+// Floor 3
+global.graveX3_1 = 0;
+global.graveY3_1 = 0;
+global.graveItem3_1 = -1;
+
+global.graveX3_2 = 0;
+global.graveY3_2 = 0;
+global.graveItem3_2 = -1;
+
+global.graveX3_3 = 0;
+global.graveY3_3 = 0;
+global.graveItem3_3 = -1;
+
 // Armor sets
 global.palette = 0;
 global.redUnlocked = false;
