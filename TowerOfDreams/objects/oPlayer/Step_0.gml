@@ -1030,11 +1030,11 @@ if(!global.paused && !global.hitStop)
 		enemyHitRight = instance_place(x+(1*image_xscale),y,oEnemy);
 		enemyHitLeft = instance_place(x-(1*image_xscale),y,oEnemy);
 		
-		if(enemyHitRight && !enemyHitRight.noDamage)
+		if(enemyHitRight && !enemyHitRight.noDamage && enemyHitRight.object_index != oPastGrave)
 		{
 			TakeDamage(1,2.75,3.5,true);
 		}
-		else if(enemyHitLeft && !enemyHitLeft.noDamage)
+		else if(enemyHitLeft && !enemyHitLeft.noDamage && enemyHitLeft.object_index != oPastGrave)
 		{
 			TakeDamage(1,2.75,-3.5,true);
 		}

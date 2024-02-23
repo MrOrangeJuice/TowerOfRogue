@@ -14,7 +14,7 @@ if(hp <= 0)
 	
 	// Spawn explosion
 	audio_play_sound(snd_EnemyDeath,5,false);
-	instance_create_layer(x,y,"Enemies",oEnemyEliteDeath);
+	instance_create_layer(x+4,y+4,"Enemies",oEnemyEliteDeath);
 	
 	DeleteGraveData();
 	
