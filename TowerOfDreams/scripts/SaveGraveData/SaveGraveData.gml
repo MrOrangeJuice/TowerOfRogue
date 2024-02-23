@@ -6,7 +6,7 @@ function SaveGraveData(argument0,argument1){
 	randomize();
 	
 	// Version with both
-	if(global.item != -1 && global.passiveItems != [])
+	if(global.item != -1 && array_length(global.passiveItems) != 0)
 	{
 		randItem = irandom_range(0,array_length(global.passiveItems));
 		// Active item
