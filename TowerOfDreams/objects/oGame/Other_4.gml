@@ -1,5 +1,8 @@
 /// @description Take away sword for tutorial
 
+// Spawn grave if needed
+
+
 if(global.res1610)
 {
 	window_set_size(1280,800);

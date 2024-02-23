@@ -879,6 +879,7 @@
     {"id":{"name":"sWrench","path":"sprites/sWrench/sWrench.yy",},},
     {"id":{"name":"sSellItemControllerPSFadeIn","path":"sprites/sSellItemControllerPSFadeIn/sSellItemControllerPSFadeIn.yy",},},
     {"id":{"name":"sLavaTestTop","path":"sprites/sLavaTestTop/sLavaTestTop.yy",},},
+    {"id":{"name":"SpawnGrave","path":"scripts/SpawnGrave/SpawnGrave.yy",},},
     {"id":{"name":"sS","path":"sprites/sS/sS.yy",},},
     {"id":{"name":"snd_MenuSelect","path":"sounds/snd_MenuSelect/snd_MenuSelect.yy",},},
     {"id":{"name":"rHub","path":"rooms/rHub/rHub.yy",},},
