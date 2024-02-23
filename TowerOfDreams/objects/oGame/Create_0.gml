@@ -88,7 +88,7 @@ global.heartMagnet = false;
 global.heartMagnetNum = 0;
 
 // Overall run ranks
-global.ranks = ["D","D","D","D","D","D"];
+global.ranks = ["D","D","D","D","D","D","D","D","D"];
 
 // Best Ranks
 global.best1_1 = "F";

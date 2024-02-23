@@ -13,8 +13,20 @@ if(drawGems)
 	{
 		if (!finishedShifting) 
 		{
-			global.coinsThisRun--;
-			global.overallCoins++;
+			if(global.coinsThisRun > 0)
+			{
+				// Go way faster if more than 100 gems to tally
+				if(global.coinsThisRun > 100)
+				{
+					global.coinsThisRun -= 5;
+					global.overallCoins += 5;
+				}
+				else
+				{
+					global.coinsThisRun--;
+					global.overallCoins++;
+				}
+			}
 			if(global.coinsThisRun <= 0)
 			{
 				finishedShifting = true;

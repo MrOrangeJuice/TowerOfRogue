@@ -405,6 +405,7 @@
     {"name":"oGroundEnemy","order":1,"path":"objects/oGroundEnemy/oGroundEnemy.yy",},
     {"name":"sShopBag","order":2,"path":"sprites/sShopBag/sShopBag.yy",},
     {"name":"oCannonBall","order":4,"path":"objects/oCannonBall/oCannonBall.yy",},
+    {"name":"SaveGraveData","order":14,"path":"scripts/SaveGraveData/SaveGraveData.yy",},
     {"name":"oBagItem","order":23,"path":"objects/oBagItem/oBagItem.yy",},
     {"name":"sMainMenu","order":6,"path":"sprites/sMainMenu/sMainMenu.yy",},
     {"name":"sMissileRightDown","order":7,"path":"sprites/sMissileRightDown/sMissileRightDown.yy",},

@@ -442,6 +442,7 @@
     {"id":{"name":"oGroundEnemy","path":"objects/oGroundEnemy/oGroundEnemy.yy",},},
     {"id":{"name":"sShopBag","path":"sprites/sShopBag/sShopBag.yy",},},
     {"id":{"name":"oCannonBall","path":"objects/oCannonBall/oCannonBall.yy",},},
+    {"id":{"name":"SaveGraveData","path":"scripts/SaveGraveData/SaveGraveData.yy",},},
     {"id":{"name":"oBagItem","path":"objects/oBagItem/oBagItem.yy",},},
     {"id":{"name":"sMainMenu","path":"sprites/sMainMenu/sMainMenu.yy",},},
     {"id":{"name":"sMissileRightDown","path":"sprites/sMissileRightDown/sMissileRightDown.yy",},},
