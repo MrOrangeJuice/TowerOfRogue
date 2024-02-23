@@ -26,7 +26,7 @@ function SaveGraveData(argument0,argument1){
 		item = global.item;
 	}
 	// Version without active item
-	else if(global.passiveItems != [])
+	else if(array_length(global.passiveItems) != 0)
 	{
 		item = global.passiveItems[irandom_range(0,array_length(global.passiveItems)-1)];
 	}
