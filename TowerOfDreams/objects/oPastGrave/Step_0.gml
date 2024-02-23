@@ -3,7 +3,7 @@
 if(hp <= 0)
 {
 	// Coverage just in case something goes wrong
-	if(item >= 0 && item <= array_length(global.itemObjects - 1))
+	if(item >= 0 && item <= array_length(global.itemObjects) - 1)
 	{
 		// Spawn item
 		newItem = instance_create_layer(x,y-4,"Collectables",global.itemObjects[item]);

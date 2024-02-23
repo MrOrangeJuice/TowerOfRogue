@@ -1,7 +1,7 @@
 /// @description Take away sword for tutorial
 
 // Spawn grave if needed
-
+SpawnGrave();
 
 if(global.res1610)
 {

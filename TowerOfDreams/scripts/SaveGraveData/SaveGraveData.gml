@@ -33,7 +33,7 @@ function SaveGraveData(argument0,argument1){
 	// If no item, leave heart
 	else
 	{
-		item = global.itemObjects[array_length(global.itemObjects)-1];
+		item = array_length(global.itemObjects)-1;
 	}
 	
 	// Save data
