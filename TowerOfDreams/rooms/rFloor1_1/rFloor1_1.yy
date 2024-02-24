@@ -230,6 +230,7 @@
     {"name":"inst_FDDDAC","path":"rooms/rFloor1_1/rFloor1_1.yy",},
     {"name":"inst_4279DCD1","path":"rooms/rFloor1_1/rFloor1_1.yy",},
     {"name":"inst_7AD81C68","path":"rooms/rFloor1_1/rFloor1_1.yy",},
+    {"name":"inst_2D68D508","path":"rooms/rFloor1_1/rFloor1_1.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -523,6 +524,7 @@
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oLevelInfo","path":"objects/oLevelInfo/oLevelInfo.yy",},"propertyId":{"name":"levelName","path":"objects/oLevelInfo/oLevelInfo.yy",},"value":"Cannon Conundrum",},
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oLevelInfo","path":"objects/oLevelInfo/oLevelInfo.yy",},"propertyId":{"name":"totalGems","path":"objects/oLevelInfo/oLevelInfo.yy",},"value":"116",},
           ],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":240.0,"y":1512.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_2D68D508","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oGhostJarItem","path":"objects/oGhostJarItem/oGhostJarItem.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":248.0,"y":1520.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"CoinVFX","depth":700,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"VFX","depth":800,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},

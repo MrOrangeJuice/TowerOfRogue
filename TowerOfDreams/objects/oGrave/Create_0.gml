@@ -10,3 +10,4 @@ drawOverallGems = false;
 shiftToTotal = false;
 finishedShifting = false;
 gemString = "";
+graveDataSaved = false;

@@ -24,7 +24,11 @@ if(gamepad_button_check(0,gp_face1) || gamepad_button_check(4,gp_face1))
 
 if(key_select_pressed)
 {
-	SaveGraveData(x,y);
+	if(!graveDataSaved)
+	{
+		SaveGraveData(x,y);
+		graveDataSaved = true;
+	}
 	
 	if(!finishedShifting) global.overallCoins += global.coinsThisRun;
 	finishedShifting = true;

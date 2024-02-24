@@ -14,6 +14,7 @@ function SaveGraveData(argument0,argument1){
 		{
 			item = global.item;
 		}
+		// Passive item
 		else
 		{
 			item = global.passiveItems[randItem];
@@ -31,7 +32,7 @@ function SaveGraveData(argument0,argument1){
 		item = global.passiveItems[irandom_range(0,array_length(global.passiveItems)-1)];
 	}
 	// If no item, leave heart
-	else
+	else if(array_length(global.passiveItems) == 0 && global.item == -1)
 	{
 		item = array_length(global.itemObjects)-1;
 	}
@@ -62,7 +63,7 @@ function SaveGraveData(argument0,argument1){
 		case rFloor1_5:
 			global.graveX1_5 = argument0;
 			global.graveY1_5 = argument1;
-			global.graveItem1_6 = item;
+			global.graveItem1_5 = item;
 			break;
 		case rFloor1_6:
 			global.graveX1_6 = argument0;
