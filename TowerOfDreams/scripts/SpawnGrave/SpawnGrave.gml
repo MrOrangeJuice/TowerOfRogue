@@ -75,7 +75,7 @@ function SpawnGrave(){
 			}
 			break;
 		case rFloor3_1:
-			if(global.graveX3_1 != 0 && global.graveY3_2 != 0)
+			if(global.graveX3_1 != 0 && global.graveY3_1 != 0)
 			{
 				newGrave = instance_create_layer(global.graveX3_1,global.graveY3_1,"Enemies",oPastGrave);
 				newGrave.item = global.graveItem3_1;

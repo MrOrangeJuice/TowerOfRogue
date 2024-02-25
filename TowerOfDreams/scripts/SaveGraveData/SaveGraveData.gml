@@ -17,7 +17,14 @@ function SaveGraveData(argument0,argument1){
 		// Passive item
 		else
 		{
-			item = global.passiveItems[randItem];
+			// Find index of passive item in main item list
+			for(i = 0; i < array_length(global.itemObjects); i++)
+			{
+				if(global.itemObjects[i] == global.passiveItemObjects[global.passiveItems[randItem]])
+				{
+					item = i;	
+				}
+			}
 		}
 			
 	}
@@ -29,7 +36,14 @@ function SaveGraveData(argument0,argument1){
 	// Version without active item
 	else if(array_length(global.passiveItems) != 0)
 	{
-		item = global.passiveItems[irandom_range(0,array_length(global.passiveItems)-1)];
+		randItem = irandom_range(0,array_length(global.passiveItems) - 1);
+		for(i = 0; i < array_length(global.itemObjects); i++)
+		{
+			if(global.itemObjects[i] == global.passiveItemObjects[global.passiveItems[randItem]])
+			{
+				item = i;	
+			}
+		}
 	}
 	// If no item, leave heart
 	else if(array_length(global.passiveItems) == 0 && global.item == -1)

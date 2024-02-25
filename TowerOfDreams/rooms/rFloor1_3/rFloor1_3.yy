@@ -221,13 +221,11 @@
     {"name":"inst_13B2A8DA","path":"rooms/rFloor1_3/rFloor1_3.yy",},
     {"name":"inst_6469A8D6","path":"rooms/rFloor1_3/rFloor1_3.yy",},
     {"name":"inst_1437430A","path":"rooms/rFloor1_3/rFloor1_3.yy",},
-    {"name":"inst_3DDBA3B6","path":"rooms/rFloor1_3/rFloor1_3.yy",},
   ],
   "isDnd": false,
   "layers": [
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Pipes","depth":0,"effectEnabled":true,"effectType":null,"gridX":8,"gridY":8,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_43D262EE_1_1_1_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oPipeSpawner","path":"objects/oPipeSpawner/oPipeSpawner.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":432.0,"y":1496.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_3DDBA3B6","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oGhostJarItem","path":"objects/oGhostJarItem/oGhostJarItem.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":256.0,"y":1536.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Tiles","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":200,"SerialiseWidth":80,"TileCompressedData":[
 -186,1,1,9,-28,3,1,8,-50,1,1,5,-28,0,1,4,-50,1,1,5,-28,0,1,4,-50,1,1,5,-28,0,1,4,-50,1,1,5,-28,0,1,4,-50,1,1,5,-28,0,1,4,-50,1,1,5,-28,0,1,4,-50,1,1,5,-28,0,1,4,-50,1,1,5,-28,0,1,4,-50,1,1,5,-28,0,1,4,
