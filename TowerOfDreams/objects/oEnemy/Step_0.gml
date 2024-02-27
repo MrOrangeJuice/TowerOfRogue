@@ -77,10 +77,32 @@ if(hp <= 0)
 	if (elite)
 	{
 		instance_create_layer(x,y,"Enemies",oEnemyEliteDeath);
+		// Spawn bits
+		instance_create_layer(x,y,"Pipes",oPlayerBit);
+		instance_create_layer(x,y,"Pipes",oPlayerBit);
+		instance_create_layer(x,y,"Pipes",oPlayerBit);
+		instance_create_layer(x,y,"Pipes",oPlayerBit);
+		instance_create_layer(x,y,"Pipes",oPlayerBit);
+		instance_create_layer(x,y,"Pipes",oPlayerBit);
+		instance_create_layer(x,y,"Pipes",oPlayerBit);
+		instance_create_layer(x,y,"Pipes",oPlayerBit);
 	}
 	else
 	{
 		instance_create_layer(x,y,"Enemies",oEnemyDeath);
+		// Spawn bits
+		instance_create_layer(x,y,"Pipes",oEnemyBit);
+		instance_create_layer(x,y,"Pipes",oEnemyBit);
+		instance_create_layer(x,y,"Pipes",oEnemyBit);
+		instance_create_layer(x,y,"Pipes",oEnemyBit);
+		// Spawn less for cannon ball
+		if(object_index != oCannonBall)
+		{
+			instance_create_layer(x,y,"Pipes",oEnemyBit);
+			instance_create_layer(x,y,"Pipes",oEnemyBit);
+			instance_create_layer(x,y,"Pipes",oEnemyBit);
+			instance_create_layer(x,y,"Pipes",oEnemyBit);
+		}
 	}
 	
 	
