@@ -825,6 +825,7 @@ if(!global.paused && !global.hitStop)
 				}
 			}
 			// Spawn bits
+			/*
 			if(enemy.elite)
 			{
 				instance_create_layer(enemy.x,enemy.y-4,"Pipes",oPlayerBit);
@@ -839,6 +840,7 @@ if(!global.paused && !global.hitStop)
 				instance_create_layer(enemy.x,enemy.y-4,"Pipes",oEnemyBit);
 				instance_create_layer(enemy.x,enemy.y-4,"Pipes",oEnemyBit);
 			}
+			*/
 			airborne = true;
 			hasSlashed = true;
 			hasSlashJumped = true;
