@@ -423,6 +423,20 @@ if(!global.paused && !global.hitStop)
 		// Swap sprite direction immediately
 		if (currentwalksp != 0) image_xscale = sign(currentwalksp);
 	}
+	
+	// Ground dust
+	if(!airborne && hsp != 0)
+	{
+		// Spawn ground dust
+		if(canSpawnGroundDust)
+		{
+			newDust = instance_create_layer(x - (sign(hsp) * 2) + random_range(-2,2),y + 2 + random_range(-1,2),"VFX",oDustWallSmall);
+			if(hsp < 0) newDust.image_xscale = -1;
+			// Set wall dust timer
+			canSpawnGroundDust = false;
+			alarm[10] = room_speed * (0.15 + random_range(0,0.1));
+		}
+	}
 
 	// Slash
 	if (key_jump) && (canJump) && (airborne) && (!slashing) && (canSlash) && (jumpBuffer <= 0) && (global.sword) && (!wallJumpCoyote)

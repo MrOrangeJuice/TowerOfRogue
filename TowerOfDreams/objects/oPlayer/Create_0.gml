@@ -19,6 +19,7 @@ hasSlashed = false;
 hasSlashJumped = false;
 canWallSlide = true;
 canSpawnWallDust = true;
+canSpawnGroundDust = true;
 wallSliding = false;
 wallJumpCoyote = false;
 prevWallSliding = false;
