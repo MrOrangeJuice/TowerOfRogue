@@ -1,5 +1,12 @@
 /// @description Update
 
+
+// Set to elite enemies to elite just in case
+if(object_index == oBallEnemyElite || object_index == oCannonCloudElite || object_index == oCannonCloudUpElite || object_index == oFirePlantElite || object_index == oFlyingEnemyElite || object_index == oGravityEnemyElite || object_index == oGroundEnemyElite || object_index == oTankEnemyElite || object_index == oTankEnemyStationaryElite || object_index == oWrenchEnemyElite)
+{
+	elite = true;
+}
+
 if(hp <= 0)
 {
 	if(givesHealth)
