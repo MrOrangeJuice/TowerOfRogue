@@ -67,5 +67,6 @@ function Load(){
 	global.goldUnlocked = ini_read_real("savegame", "goldUnlocked", 0);
 	global.palette = ini_read_real("savegame", "palette", 0);
 	global.volume = ini_read_real("savegame", "volume", 6);
+	global.totalDeaths = ini_read_real("savegame", "totalDeaths", 0);
 	ini_close();
 }

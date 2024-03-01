@@ -72,6 +72,7 @@ global.controllerDebug = false;
 global.showCollision = false;
 global.hardMode = false;
 global.dropItemHold = 0;
+global.totalDeaths = 0;
 
 // Shop items
 global.shopItem1 = -1;

@@ -24,9 +24,11 @@ if(gamepad_button_check(0,gp_face1) || gamepad_button_check(4,gp_face1))
 
 if(key_select_pressed)
 {
+	
 	if(!graveDataSaved)
 	{
 		SaveGraveData(x,y);
+		global.totalDeaths++;
 		graveDataSaved = true;
 	}
 	
