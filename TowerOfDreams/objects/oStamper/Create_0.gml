@@ -20,4 +20,4 @@ yAccel = 0.02;
 vsp = 0;
 yOffset = 0;
 
-phrases = ["Remember,\n passive items stack!", "You can only hold\none active item!","Tired of the same items?\nTry a reroll!",string("Did you know you've\ndied {0} times",global.totalDeaths)];
+phrases = ["Passive\nitems stack!", "See you\nnext floor!","Bored?\nTry a reroll!","Apply for our\nrewards card!","Try a critical\nhit PB&J!","Some items have\nstrong synergies",string("You've died\n{0} times!",global.totalDeaths)];

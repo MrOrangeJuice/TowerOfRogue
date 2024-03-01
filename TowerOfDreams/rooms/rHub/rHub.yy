@@ -37,7 +37,6 @@
     {"name":"inst_3667F45C","path":"rooms/rHub/rHub.yy",},
     {"name":"inst_7F3DFF98","path":"rooms/rHub/rHub.yy",},
     {"name":"inst_453FEB74","path":"rooms/rHub/rHub.yy",},
-    {"name":"inst_34CC6B1E","path":"rooms/rHub/rHub.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -86,7 +85,6 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_3667F45C","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oBumper","path":"objects/oBumper/oBumper.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":96.0,"y":1360.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_7F3DFF98","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oBumper","path":"objects/oBumper/oBumper.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":232.0,"y":1360.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_453FEB74","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oYellowPortal","path":"objects/oYellowPortal/oYellowPortal.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1048.0,"y":1360.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_34CC6B1E","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oStamper","path":"objects/oStamper/oStamper.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":560.0,"y":1328.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRAssetLayer","resourceVersion":"1.0","name":"Tutorials","assets":[
         {"resourceType":"GMRSpriteGraphic","resourceVersion":"1.0","name":"graphic_60B10E11","animationSpeed":1.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"spriteId":{"name":"sReplayTutorial","path":"sprites/sReplayTutorial/sReplayTutorial.yy",},"x":840.0,"y":1320.0,},

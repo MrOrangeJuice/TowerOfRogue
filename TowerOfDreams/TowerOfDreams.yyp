@@ -546,6 +546,7 @@
     {"id":{"name":"sHeartUISmall","path":"sprites/sHeartUISmall/sHeartUISmall.yy",},},
     {"id":{"name":"sGraveBroken","path":"sprites/sGraveBroken/sGraveBroken.yy",},},
     {"id":{"name":"oSpikes","path":"objects/oSpikes/oSpikes.yy",},},
+    {"id":{"name":"sMessageBoxWide","path":"sprites/sMessageBoxWide/sMessageBoxWide.yy",},},
     {"id":{"name":"snd_LevelIntro1","path":"sounds/snd_LevelIntro1/snd_LevelIntro1.yy",},},
     {"id":{"name":"oShopArmor","path":"objects/oShopArmor/oShopArmor.yy",},},
     {"id":{"name":"sBumperAOff","path":"sprites/sBumperAOff/sBumperAOff.yy",},},

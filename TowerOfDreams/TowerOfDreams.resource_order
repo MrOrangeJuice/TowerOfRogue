@@ -502,6 +502,7 @@
     {"name":"sHeartUISmall","order":3,"path":"sprites/sHeartUISmall/sHeartUISmall.yy",},
     {"name":"sGraveBroken","order":25,"path":"sprites/sGraveBroken/sGraveBroken.yy",},
     {"name":"oSpikes","order":26,"path":"objects/oSpikes/oSpikes.yy",},
+    {"name":"sMessageBoxWide","order":41,"path":"sprites/sMessageBoxWide/sMessageBoxWide.yy",},
     {"name":"snd_LevelIntro1","order":38,"path":"sounds/snd_LevelIntro1/snd_LevelIntro1.yy",},
     {"name":"oShopArmor","order":3,"path":"objects/oShopArmor/oShopArmor.yy",},
     {"name":"sBumperAOff","order":12,"path":"sprites/sBumperAOff/sBumperAOff.yy",},

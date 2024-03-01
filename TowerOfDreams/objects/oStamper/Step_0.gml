@@ -19,7 +19,7 @@ if(!global.paused)
 			audio_play_sound(snd_Richard,5,false);
 			// Start talking animation
 			sprite_index = sStamperTalk;
-			alarm[0] = room_speed * 1;
+			image_index = 0;
 			audio_play_sound(snd_Richard,5,false);
 		}
 	}
