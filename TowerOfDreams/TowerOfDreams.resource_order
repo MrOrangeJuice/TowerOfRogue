@@ -681,6 +681,7 @@
     {"name":"msc_Floor1","order":1,"path":"sounds/msc_Floor1/msc_Floor1.yy",},
     {"name":"sPlayerWallSlide","order":5,"path":"sprites/sPlayerWallSlide/sPlayerWallSlide.yy",},
     {"name":"sSlash","order":2,"path":"sprites/sSlash/sSlash.yy",},
+    {"name":"sStamperTalk","order":8,"path":"sprites/sStamperTalk/sStamperTalk.yy",},
     {"name":"msc_TitleScreen","order":9,"path":"sounds/msc_TitleScreen/msc_TitleScreen.yy",},
     {"name":"sGravityEnemyHuskLandUp","order":4,"path":"sprites/sGravityEnemyHuskLandUp/sGravityEnemyHuskLandUp.yy",},
     {"name":"snd_Flap3","order":70,"path":"sounds/snd_Flap3/snd_Flap3.yy",},

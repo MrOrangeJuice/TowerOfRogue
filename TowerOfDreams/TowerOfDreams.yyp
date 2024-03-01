@@ -740,6 +740,7 @@
     {"id":{"name":"msc_Floor1","path":"sounds/msc_Floor1/msc_Floor1.yy",},},
     {"id":{"name":"sPlayerWallSlide","path":"sprites/sPlayerWallSlide/sPlayerWallSlide.yy",},},
     {"id":{"name":"sSlash","path":"sprites/sSlash/sSlash.yy",},},
+    {"id":{"name":"sStamperTalk","path":"sprites/sStamperTalk/sStamperTalk.yy",},},
     {"id":{"name":"msc_TitleScreen","path":"sounds/msc_TitleScreen/msc_TitleScreen.yy",},},
     {"id":{"name":"sGravityEnemyHuskLandUp","path":"sprites/sGravityEnemyHuskLandUp/sGravityEnemyHuskLandUp.yy",},},
     {"id":{"name":"snd_Flap3","path":"sounds/snd_Flap3/snd_Flap3.yy",},},
