@@ -12,4 +12,4 @@ yOffset = 0;
 playerHasNoItem = false;
 if(global.item == -1) playerHasNoItem = true;
 
-phrases = ["I love\nactive items!","Active items\nare tasty!"];
+phrases = ["I love\nactive items!","Active items\nare tasty!","Feed me\nacttive items!","I crave\nactive items!"];

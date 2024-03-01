@@ -102,8 +102,8 @@ if(hp <= 0)
 		instance_create_layer(x,y,"Pipes",oEnemyBit);
 		instance_create_layer(x,y,"Pipes",oEnemyBit);
 		instance_create_layer(x,y,"Pipes",oEnemyBit);
-		// Spawn less for cannon ball
-		if(object_index != oCannonBall)
+		// Spawn less for cannon ball type enemies
+		if(object_index != oCannonBall && object_index != oCannonBallUp && object_index != oCannonBallDown && object_index != oFireBall && object_index != oMissile && object_index != oWrench)
 		{
 			instance_create_layer(x,y,"Pipes",oEnemyBit);
 			instance_create_layer(x,y,"Pipes",oEnemyBit);
