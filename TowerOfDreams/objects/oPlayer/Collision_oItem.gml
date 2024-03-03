@@ -12,8 +12,6 @@ if(other.canGrab)
 		dashing = false;
 		// Reset extra jump variable for wings
 		extraJump = true;
-		// Reset armed variable for cake
-		global.armed = false;
 
 		// If you already have an item, drop it on the ground
 		if(global.item != -1)

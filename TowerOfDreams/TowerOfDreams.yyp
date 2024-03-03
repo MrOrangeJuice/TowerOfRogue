@@ -473,6 +473,7 @@
     {"id":{"name":"sPlayerHelmetGold","path":"sprites/sPlayerHelmetGold/sPlayerHelmetGold.yy",},},
     {"id":{"name":"oDustSlashBumperUp","path":"objects/oDustSlashBumperUp/oDustSlashBumperUp.yy",},},
     {"id":{"name":"tWood","path":"tilesets/tWood/tWood.yy",},},
+    {"id":{"name":"snd_Button","path":"sounds/snd_Button/snd_Button.yy",},},
     {"id":{"name":"sBG3","path":"sprites/sBG3/sBG3.yy",},},
     {"id":{"name":"sOptionsTitle","path":"sprites/sOptionsTitle/sOptionsTitle.yy",},},
     {"id":{"name":"s1","path":"sprites/s1/s1.yy",},},

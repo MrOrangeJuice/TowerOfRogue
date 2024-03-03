@@ -436,6 +436,7 @@
     {"name":"sPlayerHelmetGold","order":2,"path":"sprites/sPlayerHelmetGold/sPlayerHelmetGold.yy",},
     {"name":"oDustSlashBumperUp","order":46,"path":"objects/oDustSlashBumperUp/oDustSlashBumperUp.yy",},
     {"name":"tWood","order":7,"path":"tilesets/tWood/tWood.yy",},
+    {"name":"snd_Button","order":74,"path":"sounds/snd_Button/snd_Button.yy",},
     {"name":"sBG3","order":2,"path":"sprites/sBG3/sBG3.yy",},
     {"name":"sOptionsTitle","order":25,"path":"sprites/sOptionsTitle/sOptionsTitle.yy",},
     {"name":"sFlyingEnemyElite","order":21,"path":"sprites/sFlyingEnemyElite/sFlyingEnemyElite.yy",},

@@ -1501,7 +1501,7 @@ if(!global.paused && !global.hitStop)
 					{
 						vsp = -2;
 						extraJump = false;
-						instance_create_layer(x-4,y-4,"Enemies",oBirthdayFall);
+						instance_create_layer(x-4,y-4,"Instances",oBirthdayFall);
 						audio_play_sound(snd_Kunai,5,false);
 					}
 				}
@@ -1521,6 +1521,7 @@ if(!global.paused && !global.hitStop)
 						instance_create_layer(oBirthdayMine.x+4,oBirthdayMine.y+4,"Pipes",oPlayerBit);
 						instance_destroy(oBirthdayMine);
 						audio_play_sound(snd_EnemyDeath,5,false);
+						//audio_play_sound(snd_Button,5,false);
 						global.armed = false;
 					}
 				}
