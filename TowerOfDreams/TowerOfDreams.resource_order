@@ -228,6 +228,7 @@
     {"name":"sPlayerRunGold","order":10,"path":"sprites/sPlayerRunGold/sPlayerRunGold.yy",},
     {"name":"sAxeUI","order":18,"path":"sprites/sAxeUI/sAxeUI.yy",},
     {"name":"sBirdRed","order":4,"path":"sprites/sBirdRed/sBirdRed.yy",},
+    {"name":"sBirthdayUI","order":38,"path":"sprites/sBirthdayUI/sBirthdayUI.yy",},
     {"name":"sLavaDebug","order":18,"path":"sprites/sLavaDebug/sLavaDebug.yy",},
     {"name":"snd_Burp","order":64,"path":"sounds/snd_Burp/snd_Burp.yy",},
     {"name":"sJumpController","order":3,"path":"sprites/sJumpController/sJumpController.yy",},

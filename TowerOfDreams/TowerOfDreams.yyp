@@ -256,6 +256,7 @@
     {"id":{"name":"sPlayerRunGold","path":"sprites/sPlayerRunGold/sPlayerRunGold.yy",},},
     {"id":{"name":"sAxeUI","path":"sprites/sAxeUI/sAxeUI.yy",},},
     {"id":{"name":"sBirdRed","path":"sprites/sBirdRed/sBirdRed.yy",},},
+    {"id":{"name":"sBirthdayUI","path":"sprites/sBirthdayUI/sBirthdayUI.yy",},},
     {"id":{"name":"sLavaDebug","path":"sprites/sLavaDebug/sLavaDebug.yy",},},
     {"id":{"name":"snd_Burp","path":"sounds/snd_Burp/snd_Burp.yy",},},
     {"id":{"name":"sJumpController","path":"sprites/sJumpController/sJumpController.yy",},},
