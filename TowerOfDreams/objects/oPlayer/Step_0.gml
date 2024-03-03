@@ -1483,6 +1483,49 @@ if(!global.paused && !global.hitStop)
 				}
 			}
 			break;
+		case 24:
+			if(key_item_pressed)
+			{
+				// Spawn mine
+				if(!instance_exists(oBirthdayMine) && !instance_exists(oBirthdayFall))
+				{
+					audio_play_sound(snd_Kunai,5,false);
+					// If on ground, just spawn cake mine immediately
+					if(!airborne)
+					{	
+						instance_create_layer(x-4,y-4,"Instances",oBirthdayMine);
+						audio_play_sound(snd_Cake,5,false);
+					}
+					// Otherwise throw cake mine straight down and get a little bit of lift
+					else
+					{
+						vsp = -2;
+						extraJump = false;
+						instance_create_layer(x-4,y-4,"Enemies",oBirthdayFall);
+						audio_play_sound(snd_Kunai,5,false);
+					}
+				}
+				// Detonate mine
+				else if(global.armed)
+				{
+					if(instance_exists(oBirthdayMine))
+					{
+						instance_create_layer(oBirthdayMine.x+4,oBirthdayMine.y+4,"UI",oBirthdayExplosion);
+						instance_create_layer(oBirthdayMine.x+4,oBirthdayMine.y+4,"Pipes",oPlayerBit);
+						instance_create_layer(oBirthdayMine.x+4,oBirthdayMine.y+4,"Pipes",oPlayerBit);
+						instance_create_layer(oBirthdayMine.x+4,oBirthdayMine.y+4,"Pipes",oPlayerBit);
+						instance_create_layer(oBirthdayMine.x+4,oBirthdayMine.y+4,"Pipes",oPlayerBit);
+						instance_create_layer(oBirthdayMine.x+4,oBirthdayMine.y+4,"Pipes",oPlayerBit);
+						instance_create_layer(oBirthdayMine.x+4,oBirthdayMine.y+4,"Pipes",oPlayerBit);
+						instance_create_layer(oBirthdayMine.x+4,oBirthdayMine.y+4,"Pipes",oPlayerBit);
+						instance_create_layer(oBirthdayMine.x+4,oBirthdayMine.y+4,"Pipes",oPlayerBit);
+						instance_destroy(oBirthdayMine);
+						audio_play_sound(snd_EnemyDeath,5,false);
+						global.armed = false;
+					}
+				}
+			}
+			break;
 	}
 
 	// Animation

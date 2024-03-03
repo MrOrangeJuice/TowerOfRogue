@@ -51,3 +51,4 @@ else
 // Stop just in case
 audio_stop_sound(snd_BoomerangReturn);
 audio_stop_sound(snd_GemLoop);
+global.armed = false;

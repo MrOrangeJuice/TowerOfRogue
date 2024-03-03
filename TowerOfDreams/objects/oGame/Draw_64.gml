@@ -356,7 +356,8 @@ if(global.HUD)
 		draw_sprite_stretched(sItemBox,0,40+hudMod,1,16*itemTextScale,16*itemTextScale);
 	
 		// Draw item in box
-		if(global.item != -1) draw_sprite_stretched(global.itemSprites[global.item],0,44+hudMod,5,8*itemTextScale,8*itemTextScale);
+		if(global.item == 24 && global.armed) draw_sprite_stretched(sRemoteUI,0,44+hudMod,5,8*itemTextScale,8*itemTextScale);
+		else if(global.item != -1) draw_sprite_stretched(global.itemSprites[global.item],0,44+hudMod,5,8*itemTextScale,8*itemTextScale);
 	
 		// Draw drop item meter
 		if(global.dropItemHold > 0) draw_sprite(sDropUI,floor(global.dropItemHold/2),40+hudMod,18);
