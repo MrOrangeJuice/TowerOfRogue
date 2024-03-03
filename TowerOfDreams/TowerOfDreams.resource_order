@@ -317,6 +317,7 @@
     {"name":"sRankingSign","order":4,"path":"sprites/sRankingSign/sRankingSign.yy",},
     {"name":"sFlapControllerPS","order":38,"path":"sprites/sFlapControllerPS/sFlapControllerPS.yy",},
     {"name":"oCannonCloudUp","order":33,"path":"objects/oCannonCloudUp/oCannonCloudUp.yy",},
+    {"name":"sBirthdayFall","order":39,"path":"sprites/sBirthdayFall/sBirthdayFall.yy",},
     {"name":"sDustSlashBumper","order":4,"path":"sprites/sDustSlashBumper/sDustSlashBumper.yy",},
     {"name":"oVFX","order":4,"path":"objects/oVFX/oVFX.yy",},
     {"name":"sDustSlashBumperGreen","order":35,"path":"sprites/sDustSlashBumperGreen/sDustSlashBumperGreen.yy",},

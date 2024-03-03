@@ -349,6 +349,7 @@
     {"id":{"name":"sRankingSign","path":"sprites/sRankingSign/sRankingSign.yy",},},
     {"id":{"name":"sFlapControllerPS","path":"sprites/sFlapControllerPS/sFlapControllerPS.yy",},},
     {"id":{"name":"oCannonCloudUp","path":"objects/oCannonCloudUp/oCannonCloudUp.yy",},},
+    {"id":{"name":"sBirthdayFall","path":"sprites/sBirthdayFall/sBirthdayFall.yy",},},
     {"id":{"name":"sDustSlashBumper","path":"sprites/sDustSlashBumper/sDustSlashBumper.yy",},},
     {"id":{"name":"oVFX","path":"objects/oVFX/oVFX.yy",},},
     {"id":{"name":"sDustSlashBumperGreen","path":"sprites/sDustSlashBumperGreen/sDustSlashBumperGreen.yy",},},
