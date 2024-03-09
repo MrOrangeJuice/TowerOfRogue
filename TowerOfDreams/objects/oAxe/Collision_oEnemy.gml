@@ -22,6 +22,7 @@ if(!other.invincible)
 		// Turn off collision breifly
 		canHit = false;
 		alarm[0] = room_speed * 0.2;
+		SpawnPepperExplosion(x,y);
 	}
 }
 else
@@ -34,5 +35,6 @@ else
 		// Turn off collision breifly
 		canHit = false;
 		alarm[0] = room_speed * 0.2;
+		SpawnPepperExplosion(x,y);
 	}
 }

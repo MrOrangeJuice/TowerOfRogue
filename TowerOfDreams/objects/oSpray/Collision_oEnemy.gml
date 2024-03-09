@@ -58,4 +58,5 @@ if(initialYDir == 1)
 	instance_create_layer(x,y,"Pipes",oDustSlashBumperDown);
 }
 
+SpawnPepperExplosion(x,y);
 instance_destroy();

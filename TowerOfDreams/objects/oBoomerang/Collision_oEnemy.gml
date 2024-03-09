@@ -24,11 +24,13 @@ if(!other.invincible)
 	// Turn off collision breifly
 	canHit = false;
 	alarm[0] = room_speed * 0.2;
+	SpawnPepperExplosion(x,y);
 }
 else
 {
 	audio_play_sound(snd_Klang,5,false);	
 	instance_create_layer(x,y,"Enemies",oPlayerExplosion);
+	SpawnPepperExplosion(x,y);
 }
 
 // Spawn VFX

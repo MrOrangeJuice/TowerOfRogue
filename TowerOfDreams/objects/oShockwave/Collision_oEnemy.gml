@@ -11,4 +11,5 @@ else
 {
 	audio_play_sound(snd_Klang,5,false);	
 }
+SpawnPepperExplosion(x,y);
 instance_destroy();
