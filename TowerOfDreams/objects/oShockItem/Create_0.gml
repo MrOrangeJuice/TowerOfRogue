@@ -5,4 +5,4 @@ event_inherited();
 passive = true;
 itemPassiveId = 0;
 itemName = "Shock Bracelet";
-itemDesc = "Slash to spawn shockwaves";
+itemDesc = "Strike the earth for a shock";

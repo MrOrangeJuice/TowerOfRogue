@@ -1216,6 +1216,34 @@ if(!global.paused && !global.hitStop)
 
 	if(prevAirborne && !airborne)
 	{
+		heavyBoots = false;
+		heavyBootsNum = 0;
+		for(i = 0; i < array_length(global.passiveItems); i++)
+		{
+			if(global.passiveItems[i] == 17)
+			{
+				heavyBoots = true;
+				heavyBootsNum++;
+			}
+		}
+		
+		if(heavyBoots)
+		{
+			ScreenShake(1,5);
+			audio_play_sound(snd_Impact,5,false);
+			// Spawn shock waves
+			instance_create_layer(x,y,"Instances",oShockwave);
+			rightShock = instance_create_layer(x,y,"Instances",oShockwave);
+			rightShock.dir = 1;
+			heavyBootsNum--;
+			bootsX = x;
+			bootsY = y;
+			if(heavyBootsNum > 0)
+			{
+				alarm[11] = room_speed * 0.1;	
+			}
+		}
+		
 		landing = true;
 		extraJump = true;
 		// Reset conveyer boost on landing
