@@ -7,6 +7,19 @@ if(object_index == oBallEnemyElite || object_index == oCannonCloudElite || objec
 	elite = true;
 }
 
+if(!global.paused)
+{
+	// Spawn gilded effects
+	if(gilded && givesHealth && !invincible)
+	{
+		randInt = irandom_range(0,19);
+		if(randInt < 2)
+		{
+			instance_create_layer(x+irandom_range(-sprite_width/2,sprite_width/2),y+irandom_range(-sprite_height/2,sprite_height/2),"UI",oGildedVFX);	
+		}
+	}
+}
+
 if(hp <= 0)
 {
 	if(givesHealth)
@@ -111,7 +124,6 @@ if(hp <= 0)
 			instance_create_layer(x,y,"Pipes",oEnemyBit);
 		}
 	}
-	
 	
 	// Update spot in array
 	listSize = ds_list_size(global.enemyArray);
