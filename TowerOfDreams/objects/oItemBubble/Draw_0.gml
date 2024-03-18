@@ -12,7 +12,8 @@ for(i = 0; i < array_length(global.passiveItems); i++)
 
 draw_sprite(global.itemSprites[item],0,x+4,y+4);
 draw_set_halign(fa_center);
-itemPrice = global.itemPrices[item] * (1 - (card * 0.2));
+
+itemPrice = (global.itemPrices[item] + (DetermineFloorTax() * 50)) * (1 - (card * 0.2));
 draw_text(x+9,y-14,itemPrice); 
 
 // Draw item name

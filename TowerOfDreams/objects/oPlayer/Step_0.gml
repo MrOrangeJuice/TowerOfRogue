@@ -671,7 +671,7 @@ if(!global.paused && !global.hitStop)
 			else
 			{
 				// Check if item can be bought
-				if(global.coins >= global.itemPrices[bubble.item] * (1 - (0.2 * card)))
+				if(global.coins >= (global.itemPrices[bubble.item] + (DetermineFloorTax() * 50)) * (1 - (0.2 * card)))
 				{
 					if(chargeSlash)
 					{
@@ -708,7 +708,7 @@ if(!global.paused && !global.hitStop)
 							global.item3Bought = true;
 							break;
 					}
-					global.coins -= global.itemPrices[bubble.item] * (1 - (0.2 * card));
+					global.coins -= (global.itemPrices[bubble.item] + (DetermineFloorTax() * 50)) * (1 - (0.2 * card));
 					instance_destroy(bubble);
 				}
 				else
