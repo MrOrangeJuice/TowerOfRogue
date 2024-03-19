@@ -25,7 +25,7 @@ else
 }
 global.coins += other.value;
 global.coinsThisRun += other.value;
-global.localCoins++;
+if(other.object_index != oGildedGem) global.localCoins++;
 audio_play_sound(snd_Gem,5,false);
 with (oGame) coinTextScale = 1.15;
 instance_destroy(other);
