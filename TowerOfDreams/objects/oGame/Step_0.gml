@@ -340,6 +340,7 @@ if(room == rTitle)
 				global.palette = 0;
 				global.maxHealth = 6;
 				global.health = 6;
+				global.hardMode = false;
 				// Make new default file
 				Save();
 				break;
