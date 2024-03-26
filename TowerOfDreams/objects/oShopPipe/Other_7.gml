@@ -51,11 +51,12 @@ switch(global.shopPipeCount)
 	case 3:
 		image_speed = 0;
 		playerJustSpawned = true;
-		alarm[0] = room_speed * 0.5;
+		alarm[0] = room_speed * 1.5;
 		audio_play_sound(snd_Bumper,5,false);
 		player = instance_create_layer(x-(32*image_xscale),y,"Instances",oPlayer);
 		player.currentwalksp = -3 * image_xscale;
 		player.vsp = -2;
+		player.invulnerable = 50;
 		global.shopPipeCount = 0;
 		image_xscale = 1;
 		global.canPause = true;
