@@ -12,7 +12,18 @@ gilded = false;
 randomize();
 gildRand = irandom_range(0,19);
 
-if(gildRand < 1)
+rabbitInItems = false;
+rabbitNum = 0;
+for(i = 0; i < array_length(global.passiveItems); i++)
+{
+	if(global.passiveItems[i] == 18)
+	{
+		rabbitInItems = true;
+		rabbitNum++;
+	}
+}
+
+if(gildRand < (1 + (rabbitNum * 2)))
 {
 	gilded = true;	
 }

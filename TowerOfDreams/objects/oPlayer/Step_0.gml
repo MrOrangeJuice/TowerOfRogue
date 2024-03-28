@@ -1555,6 +1555,42 @@ if(!global.paused && !global.hitStop)
 				}
 			}
 			break;
+		case 29:
+			if(key_item_pressed)
+			{
+				if(global.coins > 0 || room == rHub)
+				{
+					audio_play_sound(snd_GemShot,5,false);
+					if(!airborne)
+					{
+						if(image_xscale > 0)
+						{
+							gem = instance_create_layer(x+(4*image_xscale),y,"Walls",oGemBulletRight);
+							gem.initialDir = image_xscale;
+							if(room != rHub) global.coins--;
+						}
+						else
+						{
+							gem = instance_create_layer(x+(4*image_xscale),y,"Walls",oGemBulletLeft);
+							gem.initialDir = image_xscale;
+							if(room != rHub) global.coins--;
+						}
+					}
+					else
+					{
+						gem = instance_create_layer(x,y+4,"Walls",oGemBulletDown);
+						gem.initialYDir = 1;
+						vsp = -1.5;
+						extraJump = false;
+						if(room != rHub) global.coins--;
+					}
+				}
+				else
+				{
+					audio_play_sound(snd_NoAmmo,5,false);
+				}
+			}
+			break;
 	}
 
 	// Animation

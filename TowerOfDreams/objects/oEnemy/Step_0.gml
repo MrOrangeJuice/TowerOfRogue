@@ -128,10 +128,20 @@ if(hp <= 0)
 	// Spawn gilded gems
 	if(gilded && givesHealth && !invincible)
 	{
+		dynamiteInItems = false;
+		dynamiteNum = 0;
+		for(i = 0; i < array_length(global.passiveItems); i++)
+		{
+			if(global.passiveItems[i] == 18)
+			{
+				dynamiteInItems = true;
+				dynamiteNum++;
+			}
+		}
 		randomize();
 		randX = 0;
 		randY = 0;
-		for(i = 0; i < 10; i++)
+		for(i = 0; i < (10 + (dynamiteNum * 20)); i++)
 		{
 			randX = random_range(-1.5,1.5);
 			randY = random_range(-1,-3);
