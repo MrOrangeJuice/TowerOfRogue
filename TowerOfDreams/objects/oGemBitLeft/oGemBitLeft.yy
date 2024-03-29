@@ -1,21 +1,19 @@
 {
   "$GMObject":"",
-  "%Name":"oGemBulletDown",
+  "%Name":"oGemBitLeft",
   "eventList":[
-    {"$GMEvent":"","%Name":"","collisionObjectId":{"name":"oEnemy","path":"objects/oEnemy/oEnemy.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"","%Name":"","collisionObjectId":{"name":"oWall","path":"objects/oWall/oWall.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"oGemBulletDown",
+  "name":"oGemBitLeft",
   "overriddenProperties":[],
   "parent":{
-    "name":"Items",
-    "path":"folders/Objects/Items.yy",
+    "name":"VFX",
+    "path":"folders/Objects/VFX.yy",
   },
   "parentObjectId":{
-    "name":"oSpray",
-    "path":"objects/oSpray/oSpray.yy",
+    "name":"oGemBit",
+    "path":"objects/oGemBit/oGemBit.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -35,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sGemDown",
-    "path":"sprites/sGemDown/sGemDown.yy",
+    "name":"sGemBit",
+    "path":"sprites/sGemBit/sGemBit.yy",
   },
   "spriteMaskId":null,
   "visible":true,

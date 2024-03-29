@@ -58,5 +58,11 @@ if(initialYDir == 1)
 	instance_create_layer(x,y,"Pipes",oDustSlashBumperDown);
 }
 
+// Spawn bits
+instance_create_layer(x,y,"Pipes",oGemBit);
+instance_create_layer(x,y,"Pipes",oGemBit);
+instance_create_layer(x,y,"Pipes",oGemBit);
+instance_create_layer(x,y,"Pipes",oGemBit);
+
 SpawnPepperExplosion(x,y);
 instance_destroy();

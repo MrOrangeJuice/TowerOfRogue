@@ -23,7 +23,7 @@ for(i = 0; i < array_length(global.passiveItems); i++)
 	}
 }
 
-if(gildRand < (1 + (rabbitNum * 2)))
+if(gildRand < (1 + (rabbitNum * 3)))
 {
 	gilded = true;	
 }
