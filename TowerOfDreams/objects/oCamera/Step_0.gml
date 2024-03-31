@@ -69,8 +69,8 @@ else
 // Parallax
 if (layer_exists("Background"))
 {
-	layer_x("Background",x/20);
-	layer_y("Background",y/20);
+	layer_x("Background",x/10);
+	layer_y("Background",y/10);
 }
 
 if (layer_exists("Clouds"))
