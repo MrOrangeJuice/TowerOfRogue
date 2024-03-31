@@ -527,7 +527,7 @@
             {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"oLevelInfo","path":"objects/oLevelInfo/oLevelInfo.yy",},"propertyId":{"name":"levelName","path":"objects/oLevelInfo/oLevelInfo.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Bumper Buster",},
             {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"oLevelInfo","path":"objects/oLevelInfo/oLevelInfo.yy",},"propertyId":{"name":"totalGems","path":"objects/oLevelInfo/oLevelInfo.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"100",},
           ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":240.0,"y":1472.0,},
-      ],"layers":[],"name":"Walls","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":false,},
+      ],"layers":[],"name":"Walls","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRTileLayer":"","%Name":"Rails","depth":700,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Rails","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":200,"SerialiseWidth":80,"TileCompressedData":[
           -1164,-2147483648,-9,0,-71,-2147483648,-9,0,-63,-2147483648,2,42,43,-8,44,4,45,46,3,4,-3,0,-63,-2147483648,
           2,50,51,-8,52,4,53,54,11,12,-3,0,-71,-2147483648,-4,0,2,19,20,-3,0,-71,-2147483648,-4,0,2,19,20,-3,0,
