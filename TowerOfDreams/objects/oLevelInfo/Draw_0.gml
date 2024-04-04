@@ -52,13 +52,13 @@ if(drawPrevBest)
 	bestString = "Prev. Best: " +string(prevBestRank);
 	
 	draw_set_color(#4d456d);
-	draw_text(x,y-23,prevBestRank);
-	draw_text(x,y-25,prevBestRank);
-	draw_text(x+1,y-24,prevBestRank);
-	draw_text(x-1,y-24,prevBestRank);
+	draw_text(x,y-23,bestString);
+	draw_text(x,y-25,bestString);
+	draw_text(x+1,y-24,bestString);
+	draw_text(x-1,y-24,bestString);
 	
 	draw_set_color(#f0d7b1);
-	draw_text(x,y-24,prevBestRank);
+	draw_text(x,y-24,bestString);
 }
 
 // Reset color
