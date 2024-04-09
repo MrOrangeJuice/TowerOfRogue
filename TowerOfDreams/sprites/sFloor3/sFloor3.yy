@@ -2,7 +2,7 @@
   "$GMSprite":"",
   "%Name":"sFloor3",
   "bboxMode":0,
-  "bbox_bottom":77,
+  "bbox_bottom":108,
   "bbox_left":2,
   "bbox_right":63,
   "bbox_top":0,
