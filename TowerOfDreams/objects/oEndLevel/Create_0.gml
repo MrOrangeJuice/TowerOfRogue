@@ -22,6 +22,9 @@ levelProgressed = false;
 rankScore = 20;
 yourRank = "B";
 
+// Protection in case localCoins has issues
+if(global.localCoins > oLevelInfo.totalGems) global.localCoins = oLevelInfo.totalGems;
+
 // Gems
 rankScore -= floor((oLevelInfo.totalGems - global.localCoins) / 5);
 

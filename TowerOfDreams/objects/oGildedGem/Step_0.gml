@@ -45,10 +45,31 @@ if(!global.paused)
 		{
 			if(point_distance(x+4,y+4,oPlayer.x,oPlayer.y) < 20 * global.magnetNum)
 			{
-				angle = arctan2(oPlayer.y - y, oPlayer.x - x);
-				hsp += cos(angle) * 1;
-				vsp += sin(angle) * 1;
+				magnetised = true;
 			}
+		}		
+		else if(instance_exists(oBird))
+		{
+			if(point_distance(x+4,y+4,oBird.x,oBird.y) < 20 * global.magnetNum)
+			{
+				magnetised = true;
+			}
+		}
+	}
+	
+	if(magnetised)
+	{
+		if(instance_exists(oPlayer))
+		{
+			angle = arctan2(oPlayer.y - y, oPlayer.x - x);
+			hsp += cos(angle) * 1;
+			vsp += sin(angle) * 1;
+		}
+		else if(instance_exists(oBird))
+		{
+			angle = arctan2(oBird.y - y, oBird.x - x);
+			hsp += cos(angle) * 1;
+			vsp += sin(angle) * 1;
 		}
 		
 		if(hsp > 3)
@@ -68,10 +89,11 @@ if(!global.paused)
 		if (abs (hsp) < 0.3) hsp = 0;
 		if (abs (vsp) < 0.3) vsp = 0;
 	}
-	
-			
-	x += hsp;
-	y += vsp;
+	else
+	{
+		x += hsp;
+		y += vsp;
+	}
 }
 else
 {

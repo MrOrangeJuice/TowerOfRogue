@@ -28,3 +28,4 @@ if(pickaxe)
 // Magnetism
 hsp = 0;
 vsp = 0;
+magnetised = false;

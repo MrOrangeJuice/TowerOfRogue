@@ -32,4 +32,4 @@ if(pickaxe)
 }
 
 // Magnetism
-hsp = 0;
+magnetised = false;
