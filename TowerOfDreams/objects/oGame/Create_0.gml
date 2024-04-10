@@ -90,6 +90,9 @@ global.magnetNum = 0;
 global.heartMagnet = false;
 global.heartMagnetNum = 0;
 
+global.devItem = 0;
+global.drawDevItem = false;
+
 // Overall run ranks
 global.ranks = ["D","D","D","D","D","D","D","D","D"];
 

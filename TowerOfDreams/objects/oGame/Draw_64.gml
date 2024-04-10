@@ -368,5 +368,12 @@ if(global.HUD)
 		{
 			draw_sprite_stretched(global.passiveItemSprites[global.passiveItems[i]],0,58+(10*i)+hudMod,5,8*passiveItemTextScale,8*passiveItemTextScale);
 		}
+		
+		// Draw dev item
+		if(global.drawDevItem)
+		{
+			draw_sprite(global.itemSprites[global.devItem],0,4,30);	
+			draw_text(5,33,"F1");
+		}
 	}
 }
