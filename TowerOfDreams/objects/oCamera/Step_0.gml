@@ -4,7 +4,7 @@ if (instance_exists(oPlayer))
 {
 	follow = oPlayer;
 	//xTo = follow.x;
-	yTo = follow.y;
+	yTo = follow.y + yOffset;
 }
 else
 {
@@ -12,27 +12,27 @@ else
 	{
 		follow = oBird;
 		//xTo = follow.x;
-		yTo = follow.y;
+		yTo = follow.y + yOffset;
 	}
 	else if (instance_exists(oPortalEntry))
 	{
 		follow = oPortalEntry;
 		//xTo = follow.x;
-		yTo = follow.y;
+		yTo = follow.y + yOffset;
 	}
 	else if (instance_exists(oShopPipe) && global.shopPipeCount == 3)
 	{
 		follow = oShopPipe;
 		//xTo = follow.x;
-		yTo = follow.y;
-		y = global.shopY;
+		yTo = follow.y + yOffset;
+		y = global.shopY + yOffset;
 	}
 	else if (instance_exists(oPipe) && global.pipeCount == 3)
 	{
 		follow = oPipe;
 		//xTo = follow.x;
-		yTo = follow.y;
-		y = global.pipeY;
+		yTo = follow.y + yOffset;
+		y = global.pipeY + yOffset;
 	}
 }
 
