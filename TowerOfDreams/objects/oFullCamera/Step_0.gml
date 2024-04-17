@@ -3,7 +3,7 @@
 if (instance_exists(oPlayer))
 {
 	xTo = follow.x;
-	yTo = follow.y;
+	yTo = follow.y + yOffset;
 }
 
 // Update object position
