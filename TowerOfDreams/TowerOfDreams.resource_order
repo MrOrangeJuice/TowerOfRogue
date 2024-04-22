@@ -826,6 +826,7 @@
     {"name":"sPortalPurple","order":58,"path":"sprites/sPortalPurple/sPortalPurple.yy",},
     {"name":"sPortalRed","order":31,"path":"sprites/sPortalRed/sPortalRed.yy",},
     {"name":"sPortalYellow","order":56,"path":"sprites/sPortalYellow/sPortalYellow.yy",},
+    {"name":"sPlayerEssence","order":27,"path":"sprites/sPlayerEssence/sPlayerEssence.yy",},
     {"name":"sRabbitUI","order":46,"path":"sprites/sRabbitUI/sRabbitUI.yy",},
     {"name":"sRageVFX","order":16,"path":"sprites/sRageVFX/sRageVFX.yy",},
     {"name":"sRankingSign","order":4,"path":"sprites/sRankingSign/sRankingSign.yy",},

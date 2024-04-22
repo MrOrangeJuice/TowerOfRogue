@@ -895,6 +895,7 @@
     {"id":{"name":"sPortalPurple","path":"sprites/sPortalPurple/sPortalPurple.yy",},},
     {"id":{"name":"sPortalRed","path":"sprites/sPortalRed/sPortalRed.yy",},},
     {"id":{"name":"sPortalYellow","path":"sprites/sPortalYellow/sPortalYellow.yy",},},
+    {"id":{"name":"sPlayerEssence","path":"sprites/sPlayerEssence/sPlayerEssence.yy",},},
     {"id":{"name":"sRabbitUI","path":"sprites/sRabbitUI/sRabbitUI.yy",},},
     {"id":{"name":"sRageVFX","path":"sprites/sRageVFX/sRageVFX.yy",},},
     {"id":{"name":"sRankingSign","path":"sprites/sRankingSign/sRankingSign.yy",},},
