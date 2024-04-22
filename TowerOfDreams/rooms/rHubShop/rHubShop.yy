@@ -39,13 +39,14 @@
   "layers":[
     {"$GMRInstanceLayer":"","%Name":"Pipes","depth":0,"effectEnabled":true,"effectType":null,"gridX":8,"gridY":8,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"name":"Pipes","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRTileLayer":"","%Name":"Tiles","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Tiles","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":200,"SerialiseWidth":80,"TileCompressedData":[
-          -11680,0,-1693,1,1,10,-49,3,1,13,-29,1,1,5,-49,0,1,4,-29,1,1,5,-49,0,1,4,-29,1,1,5,-49,0,1,4,-29,1,1,
+          -11680,0,-1693,1,1,10,-49,3,1,13,-29,1,1,5,-49,0,1,4,-29,1,1,5,-49,0,1,4,-29,1,1,5,-10,0,1,32,-3,0,1,
+          32,-3,0,1,32,-3,0,1,32,-3,0,1,32,-3,0,1,32,-3,0,1,32,-3,0,1,32,-10,0,1,4,-29,1,1,5,-49,0,1,4,-29,1,1,
           5,-49,0,1,4,-29,1,1,5,-49,0,1,4,-29,1,1,5,-49,0,1,4,-29,1,1,5,-49,0,1,4,-29,1,1,5,-49,0,1,4,-29,1,1,
           5,-49,0,1,4,-29,1,1,5,-49,0,1,4,-29,1,1,5,-49,0,1,4,-29,1,1,5,-49,0,1,4,-29,1,1,5,-49,0,1,4,-29,1,1,
-          5,-49,0,1,4,-29,1,1,11,-18,2,1,7,-3,0,1,6,-14,2,1,7,-3,0,1,6,-7,2,1,12,-48,1,1,5,-3,0,1,4,-14,1,1,5,
-          -3,0,1,4,-56,1,1,5,-3,0,1,14,-14,3,1,15,-3,0,1,4,-56,1,1,5,-22,0,1,4,-56,1,1,5,-22,0,1,4,-56,1,1,5,-22,
+          11,-18,2,1,7,-3,0,1,6,-14,2,1,7,-3,0,1,6,-7,2,1,12,-48,1,1,5,-3,0,1,4,-14,1,1,5,-3,0,1,4,-56,1,1,5,-3,
+          0,1,14,-14,3,1,15,-3,0,1,4,-56,1,1,5,-22,0,1,4,-56,1,1,5,-22,0,1,4,-56,1,1,5,-22,0,1,4,-56,1,1,5,-22,
           0,1,4,-56,1,1,5,-22,0,1,4,-56,1,1,5,-22,0,1,4,-56,1,1,5,-22,0,1,4,-56,1,1,5,-22,0,1,4,-56,1,1,5,-22,
-          0,1,4,-56,1,1,5,-22,0,1,4,-56,1,1,11,-22,2,1,12,-424,1,
+          0,1,4,-56,1,1,11,-22,2,1,12,-424,1,
         ],"TileDataFormat":1,},"tilesetId":{"name":"tWood","path":"tilesets/tWood/tWood.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"$GMRInstanceLayer":"","%Name":"UI","depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"name":"UI","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Enemies","depth":300,"effectEnabled":true,"effectType":null,"gridX":4,"gridY":4,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"name":"Enemies","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
