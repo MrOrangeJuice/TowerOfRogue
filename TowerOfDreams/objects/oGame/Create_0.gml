@@ -176,7 +176,7 @@ global.zombieUnlocked = false;
 global.goldUnlocked = false;
 
 // Determine default resolution
-if(display_get_width() / display_get_height() == 1.6)
+if(display_get_width() / display_get_height() <= 1.6)
 {
 	global.res1610 = true;
 }
