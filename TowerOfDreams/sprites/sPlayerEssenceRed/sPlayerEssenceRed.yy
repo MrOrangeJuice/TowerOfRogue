@@ -32,8 +32,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"Player",
-    "path":"folders/Sprites/Player.yy",
+    "name":"Red",
+    "path":"folders/Sprites/Player/Extra Colors/Red.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

@@ -170,6 +170,7 @@ global.graveItem3_3 = -1;
 
 // Armor sets
 global.palette = 0;
+global.essence = 0;
 global.redUnlocked = false;
 global.greenUnlocked = false;
 global.zombieUnlocked = false;

@@ -338,6 +338,7 @@ if(room == rTitle)
 				global.zombieUnlocked = false;
 				global.goldUnlocked = false;
 				global.palette = 0;
+				global.essence = 0;
 				global.maxHealth = 6;
 				global.health = 6;
 				global.hardMode = false;

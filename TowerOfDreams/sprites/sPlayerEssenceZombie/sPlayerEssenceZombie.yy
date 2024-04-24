@@ -32,8 +32,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"Player",
-    "path":"folders/Sprites/Player.yy",
+    "name":"Zombie",
+    "path":"folders/Sprites/Player/Extra Colors/Zombie.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
