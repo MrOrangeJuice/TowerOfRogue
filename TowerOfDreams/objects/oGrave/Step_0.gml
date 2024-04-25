@@ -44,6 +44,7 @@ if(key_select_pressed)
 	global.inARun = false;
 	global.health = global.maxHealth;
 	global.armor = 0;
+	global.zombieRevive = true;
 	global.coins = 0;
 	global.localCoins = 0;
 	global.localDamage = 0;

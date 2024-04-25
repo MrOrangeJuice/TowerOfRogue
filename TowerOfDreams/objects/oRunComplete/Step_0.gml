@@ -32,6 +32,7 @@ if(key_select_pressed)
 	global.runCompleted = true;
 	global.health = global.maxHealth;
 	global.armor = 0;
+	global.zombieRevive = true;
 	global.coins = 0;
 	global.localCoins = 0;
 	global.overallCoins += global.coinsThisRun;

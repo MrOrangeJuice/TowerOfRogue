@@ -491,6 +491,7 @@ if(global.paused)
 					global.usedArray2 = [false,false,false,false,false,false,false,false,false,false];
 					global.usedArray3 = [false,false,false,false,false,false,false,false,false,false];
 					global.inARun = false;
+					global.zombieRevive = true;
 					global.coins = 0;
 					global.coinsThisRun = 0;
 					global.localCoins = 0;
