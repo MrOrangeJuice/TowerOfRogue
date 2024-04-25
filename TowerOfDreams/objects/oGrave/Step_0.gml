@@ -97,6 +97,7 @@ if (place_meeting(x,y+vsp,oWall))
 			player = instance_create_layer(x+4,y+4,"Walls",oPlayer);
 			player.vsp = -3;
 			player.lavaBoost = true;
+			player.invulnerable = 50;
 			global.health = 2;
 			global.floor1Music = false;
 			global.zombieRevive = false;
