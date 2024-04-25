@@ -43,6 +43,7 @@ dashing = false;
 airDash = false;
 dashOver = false;
 bombNum = 2;
+lavaBoost = false;
 
 // Sprites
 idleSprite = sPlayerIdle;

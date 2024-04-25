@@ -1033,7 +1033,7 @@ if(!global.paused && !global.hitStop)
 	// Turn off variable jump height after using an extra jump
 	if(extraJump)
 	{
-		if vsp < 0 && (!(key_jump) && !hasSlashed) && !upConveyerBoost //if you're moving upwards in the air but not holding down jump
+		if vsp < 0 && (!(key_jump) && !hasSlashed) && !upConveyerBoost && !lavaBoost//if you're moving upwards in the air but not holding down jump
 		{
 			vsp *= 0.85; //essentially, divide your vertical speed
 		}
@@ -1053,48 +1053,51 @@ if(!global.paused && !global.hitStop)
 			TakeDamage(1,2.75,-3.5,true);
 		}
 		
-		spikeHitRight = instance_place(x+(1*image_xscale),y,oSpikes);
-		spikeHitLeft = instance_place(x-(1*image_xscale),y,oSpikes);
-		spikeHitDown = instance_place(x,y+1,oSpikes);
-		spikeHitUp = instance_place(x,y-1,oSpikes);
+		if(global.essence != 1)
+		{
+			spikeHitRight = instance_place(x+(1*image_xscale),y,oSpikes);
+			spikeHitLeft = instance_place(x-(1*image_xscale),y,oSpikes);
+			spikeHitDown = instance_place(x,y+1,oSpikes);
+			spikeHitUp = instance_place(x,y-1,oSpikes);
 		
-		if(spikeHitRight)
-		{
-			TakeDamage(1,2.75,3.5,true);
-		}
-		else if(spikeHitLeft)
-		{	
-			TakeDamage(1,2.75,-3.5,true);
-		}
-		else if(spikeHitDown)
-		{
-			TakeDamage(1,3,0,true);	
-		}
-		else if(spikeHitUp)
-		{
-			TakeDamage(1,-1,0,true);	
-		}
+			if(spikeHitRight)
+			{
+				TakeDamage(1,2.75,3.5,true);
+			}
+			else if(spikeHitLeft)
+			{	
+				TakeDamage(1,2.75,-3.5,true);
+			}
+			else if(spikeHitDown)
+			{
+				TakeDamage(1,3,0,true);	
+			}
+			else if(spikeHitUp)
+			{
+				TakeDamage(1,-1,0,true);	
+			}
 		
-		spikeHitRight = instance_place(x+(1*image_xscale),y,oSpikeBox);
-		spikeHitLeft = instance_place(x-(1*image_xscale),y,oSpikeBox);
-		spikeHitDown = instance_place(x,y+1,oSpikeBox);
-		spikeHitUp = instance_place(x,y-1,oSpikeBox);
+			spikeHitRight = instance_place(x+(1*image_xscale),y,oSpikeBox);
+			spikeHitLeft = instance_place(x-(1*image_xscale),y,oSpikeBox);
+			spikeHitDown = instance_place(x,y+1,oSpikeBox);
+			spikeHitUp = instance_place(x,y-1,oSpikeBox);
 		
-		if(spikeHitRight)
-		{
-			TakeDamage(1,2.75,3.5,true);
-		}
-		else if(spikeHitLeft)
-		{	
-			TakeDamage(1,2.75,-3.5,true);
-		}
-		else if(spikeHitDown)
-		{
-			TakeDamage(1,3,0,true);	
-		}
-		else if(spikeHitUp)
-		{
-			TakeDamage(1,-1,0,true);	
+			if(spikeHitRight)
+			{
+				TakeDamage(1,2.75,3.5,true);
+			}
+			else if(spikeHitLeft)
+			{	
+				TakeDamage(1,2.75,-3.5,true);
+			}
+			else if(spikeHitDown)
+			{
+				TakeDamage(1,3,0,true);	
+			}
+			else if(spikeHitUp)
+			{
+				TakeDamage(1,-1,0,true);	
+			}
 		}
 	}
 
@@ -1254,6 +1257,7 @@ if(!global.paused && !global.hitStop)
 			conveyerBoost = false;
 		}
 		upConveyerBoost = false;
+		lavaBoost = false;
 		instance_create_layer(x,y,"VFX",oDustSmall);
 		audio_play_sound(snd_Land, 5, false);
 		hit = false;
