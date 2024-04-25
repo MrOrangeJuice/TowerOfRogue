@@ -14,6 +14,10 @@ if(place_meeting(x,y,oLava))
 	{
 		vsp = -3;
 		lavaBoost = true;
+		for(i = 0; i < 10; i++)
+		{
+			instance_create_layer(x+irandom_range(-8,8),y+8,"UI",oLavaBit);	
+		}
 		audio_play_sound(snd_Singe,5,false);
 	}
 }
