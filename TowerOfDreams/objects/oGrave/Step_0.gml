@@ -110,6 +110,8 @@ if (place_meeting(x,y+vsp,oWall))
 			// Spawn explosion
 			audio_play_sound(snd_EnemyDeath,5,false);
 			instance_create_layer(x+4,y+4,"Enemies",oEnemyEliteDeath);
+			
+			audio_play_sound(snd_Revive,5,false);
 			instance_destroy();
 		}
 		// Spawn death data
