@@ -5,7 +5,14 @@ if(!global.paused && !global.hitStop)
 	xSpeed -= 0.07;
 	if(xSpeed < 0)
 	{
-		dmgMultiplier = 1;
+		if(global.essence == 4)
+		{
+			dmgMultiplier = 2.5;
+		}
+		else
+		{
+			dmgMultiplier = 1;
+		}
 		if(!particlesStarted)
 		{
 			audio_play_sound(snd_BoomerangReturn,5,true);

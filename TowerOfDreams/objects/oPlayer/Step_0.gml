@@ -1022,7 +1022,14 @@ if(!global.paused && !global.hitStop)
 	// Extra Jump
 	if (global.item == 8) && (key_item_pressed) && (extraJump) && (!wallSliding)
 	{
-		vsp = -3;
+		if(global.essence == 4)
+		{
+			vsp = -4;
+		}
+		else
+		{
+			vsp = -3;
+		}
 		extraJump = false;
 		instance_create_layer(x,y,"VFX",oWingVFX);
 		if(!airborne) instance_create_layer(x,y,"VFX",oDust);
@@ -1319,7 +1326,14 @@ if(!global.paused && !global.hitStop)
 		case 1:
 			if(key_item && !airborne)
 			{
-				walksp = 1.5;
+				if(global.essence == 4)
+				{
+					walksp = 2;
+				}
+				else
+				{
+					walksp = 1.5;
+				}
 				if(!running)
 				{
 					running = true;
@@ -1345,7 +1359,12 @@ if(!global.paused && !global.hitStop)
 			break;
 		// Bouncing Axe
 		case 11:
-			if(key_item_pressed && instance_number(oAxe) <= 1)
+			axeLimit = 1;
+			if(global.essence == 4)
+			{
+				axeLimit = 2;	
+			}
+			if(key_item_pressed && instance_number(oAxe) <= axeLimit)
 			{
 				if(!wallSliding)
 				{
@@ -1362,7 +1381,12 @@ if(!global.paused && !global.hitStop)
 			break;	
 		// Doomerang
 		case 12:
-			if(key_item_pressed && instance_number(oBoomerang) <= 0)
+			rangLimit = 0;
+			if(global.essence == 4)
+			{
+				rangLimit = 1;	
+			}
+			if(key_item_pressed && instance_number(oBoomerang) <= rangLimit)
 			{
 				if(!wallSliding)
 				{

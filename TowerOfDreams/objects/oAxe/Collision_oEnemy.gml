@@ -14,10 +14,24 @@ if(!other.invincible)
 			}
 		}
 		other.flash = 5;
-		other.hp -= (1 + dmgMultiplier);
+		if(global.essence == 4)
+		{
+			other.hp -= (1.5 + dmgMultiplier);
+		}
+		else
+		{
+			other.hp -= (1 + dmgMultiplier);
+		}
 		ScreenShake(2,10);
 		audio_play_sound(snd_Hit,5,false);
-		dmgMultiplier += 1;
+		if(global.essence == 4)
+		{
+			dmgMultiplier += 1.5;
+		}
+		else
+		{
+			dmgMultiplier += 1;
+		}
 		vsp = -2.5;
 		// Turn off collision breifly
 		canHit = false;
@@ -30,7 +44,14 @@ else
 	if(canHit)
 	{
 		audio_play_sound(snd_Klang,5,false);	
-		dmgMultiplier += 1;
+		if(global.essence == 4)
+		{
+			dmgMultiplier += 1.5;
+		}
+		else
+		{
+			dmgMultiplier += 1;
+		}
 		vsp = -2.5;
 		// Turn off collision breifly
 		canHit = false;
