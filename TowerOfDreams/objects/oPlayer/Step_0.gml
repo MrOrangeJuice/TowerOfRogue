@@ -1522,7 +1522,14 @@ if(!global.paused && !global.hitStop)
 				// If on ground, just spawn explosion and shoot straight up
 				if(!airborne)
 				{
-					vsp = -4;
+					if(global.essence == 4)
+					{
+						vsp = -4.5;
+					}
+					else
+					{
+						vsp = -4;
+					}
 					extraJump = false;
 					instance_create_layer(x,y,"VFX",oBombExplosionVFX);
 					audio_play_sound(snd_BombJump,5,false);

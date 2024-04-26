@@ -43,6 +43,10 @@ dashing = false;
 airDash = false;
 dashOver = false;
 bombNum = 2;
+if(global.essence == 4)
+{
+	bombNum = 3;
+}
 lavaBoost = false;
 
 // Sprites
