@@ -283,10 +283,37 @@ if(global.HUD)
 		}
 	
 		// Draw HUD Background
-		//draw_sprite(sHUD,0,1,1);
-		draw_sprite(sHUDStart,0,1,1);
-		draw_sprite_stretched(sHUDMiddle,0,9,1,22+hudMod,27);
-		draw_sprite(sHUDEnd,0,31+hudMod,1);
+		startSprite = sHUDStart;
+		middleSprite = sHUDMiddle;
+		endSprite = sHUDEnd;
+		
+		switch(global.essence)
+		{
+			case 1:
+				startSprite = sHUDStartRed;
+				middleSprite = sHUDMiddleRed;
+				endSprite = sHUDEndRed;
+				break;
+			case 2:
+				startSprite = sHUDStartGreen;
+				middleSprite = sHUDMiddleGreen;
+				endSprite = sHUDEndGreen;
+				break;
+			case 3:
+				startSprite = sHUDStartZombie;
+				middleSprite = sHUDMiddleZombie;
+				endSprite = sHUDEndZombie;
+				break;
+			case 4:
+				startSprite = sHUDStartGold;
+				middleSprite = sHUDMiddleGold;
+				endSprite = sHUDEndGold;
+				break;
+		}
+		
+		draw_sprite(startSprite,0,1,1);
+		draw_sprite_stretched(middleSprite,0,9,1,22+hudMod,27);
+		draw_sprite(endSprite,0,31+hudMod,1);
 	
 		healthTextScale = max(healthTextScale * .95, 1);
 		healthToDraw = global.health;
