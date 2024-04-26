@@ -1405,10 +1405,15 @@ if(!global.paused && !global.hitStop)
 		case 16:
 			if(key_item_pressed && !dashing)
 			{
+				speedValue = 4;
+				if(global.essence == 4) 
+				{
+					speedValue = 5;
+				}
 				dashing = true;
 				initialRunDir = image_xscale;
 				dashOver = false;
-				walksp = 4;
+				walksp = speedValue;
 				if(!wallSliding)
 				{
 					if(key_right)

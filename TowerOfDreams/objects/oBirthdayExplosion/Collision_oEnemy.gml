@@ -7,7 +7,14 @@ if(!array_contains(enemies,other))
 		// Add hit enemy to list so they aren't hit again
 		array_push(enemies,other);
 		other.flash = 5;
-		other.hp -= 2;
+		if(global.essence == 4)
+		{
+			other.hp -= 4;
+		}
+		else
+		{
+			other.hp -= 2;
+		}
 		ScreenShake(2,10);
 		audio_play_sound(snd_Hit,5,false);
 	}
