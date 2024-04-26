@@ -1418,22 +1418,22 @@ if(!global.paused && !global.hitStop)
 				{
 					if(key_right)
 					{
-						currentwalksp = 4;
+						currentwalksp = speedValue;
 					}
 					else if(key_left)
 					{
-						currentwalksp = -4;
+						currentwalksp = -speedValue;
 					}
 					else
 					{
-						currentwalksp = 4 * sign(image_xscale);
+						currentwalksp = speedValue * sign(image_xscale);
 					}
 					dashVFX = instance_create_layer(x,y,"VFX",oDashVFX);
 					if (image_xscale == -1) dashVFX.image_xscale = -1;
 				}
 				else
 				{
-					currentwalksp = 4 * -sign(image_xscale);
+					currentwalksp = speedValue * -sign(image_xscale);
 					dashVFX = instance_create_layer(x,y,"VFX",oDashVFX);
 					if (image_xscale == 1) dashVFX.image_xscale = -1;
 				}
