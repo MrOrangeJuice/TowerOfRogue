@@ -143,26 +143,29 @@ if(!global.paused && !global.hitStop)
 			TakeDamage(1,1.5,-3.5,true);
 		}
 		
-		spikeHitRight = instance_place(x+(1*image_xscale),y,oSpikes);
-		spikeHitLeft = instance_place(x-(1*image_xscale),y,oSpikes);
-		spikeHitDown = instance_place(x,y+1,oSpikes);
-		spikeHitUp = instance_place(x,y-1,oSpikes);
+		if(global.essence != 1)
+		{
+			spikeHitRight = instance_place(x+(1*image_xscale),y,oSpikes);
+			spikeHitLeft = instance_place(x-(1*image_xscale),y,oSpikes);
+			spikeHitDown = instance_place(x,y+1,oSpikes);
+			spikeHitUp = instance_place(x,y-1,oSpikes);
 		
-		if(spikeHitRight)
-		{
-			TakeDamage(1,1.5,3.5,true);
-		}
-		else if(spikeHitLeft)
-		{	
-			TakeDamage(1,1.5,-3.5,true);
-		}
-		else if(spikeHitDown)
-		{
-			TakeDamage(1,1.75,0,true);	
-		}
-		else if(spikeHitUp)
-		{
-			TakeDamage(1,-0.5,0,true);
+			if(spikeHitRight)
+			{
+				TakeDamage(1,1.5,3.5,true);
+			}
+			else if(spikeHitLeft)
+			{	
+				TakeDamage(1,1.5,-3.5,true);
+			}
+			else if(spikeHitDown)
+			{
+				TakeDamage(1,1.75,0,true);	
+			}
+			else if(spikeHitUp)
+			{
+				TakeDamage(1,-0.5,0,true);
+			}
 		}
 	}
 

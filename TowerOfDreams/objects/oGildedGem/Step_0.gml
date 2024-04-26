@@ -1,7 +1,7 @@
 /// @description Update
 
 if(!global.paused)
-{
+{	
 	image_speed = 1;
 	
 	vsp += grv;
@@ -98,4 +98,6 @@ if(!global.paused)
 else
 {
 	image_speed = 0;
+	alarm[0]++;
+	alarm[1]++;
 }

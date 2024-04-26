@@ -33,3 +33,5 @@ if(pickaxe)
 
 // Magnetism
 magnetised = false;
+
+alarm[1] = room_speed * 0.3;

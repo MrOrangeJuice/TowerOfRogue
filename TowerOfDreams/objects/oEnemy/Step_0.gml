@@ -151,6 +151,23 @@ if(hp <= 0)
 		}
 	}
 	
+	// Spawn lime essence gems
+	if(global.essence == 2 && givesHealth && !invincible)
+	{
+		randomize();
+		randX = 0;
+		randY = 0;
+		for(i = 0; i < irandom_range(3,9); i++)
+		{
+			randX = random_range(-1.5,1.5);
+			randY = random_range(-1,-3);
+			newGem = instance_create_layer(x,y,"Collectables",oGildedGem);
+			newGem.hsp = randX;
+			newGem.vsp = randY;
+			newGem.instaMagnet = true;
+		}	
+	}
+	
 	// Update spot in array
 	listSize = ds_list_size(global.enemyArray);
 	for(i = 0; i < listSize; i++)
