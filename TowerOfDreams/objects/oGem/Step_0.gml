@@ -27,14 +27,14 @@ if(!global.paused)
 		if(instance_exists(oPlayer))
 		{
 			angle = arctan2(oPlayer.y - y, oPlayer.x - x);
-			hsp += cos(angle) * 1;
-			vsp += sin(angle) * 1;
+			hsp += (cos(angle) * 0.8);
+			vsp += (sin(angle) * 0.8);
 		}
 		else if(instance_exists(oBird))
 		{
 			angle = arctan2(oBird.y - y, oBird.x - x);
-			hsp += cos(angle) * 1;
-			vsp += sin(angle) * 1;
+			hsp += (cos(angle) * 0.8);
+			vsp += (sin(angle) * 0.8);
 		}
 		
 		if(hsp > 3)
