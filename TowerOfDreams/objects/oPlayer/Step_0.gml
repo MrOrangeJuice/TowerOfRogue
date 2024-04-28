@@ -1269,7 +1269,14 @@ if(!global.paused && !global.hitStop)
 		audio_play_sound(snd_Land, 5, false);
 		hit = false;
 		chargeBounces = 0;
-		bombNum = 2;
+		if(global.essence == 4)
+		{
+			bombNum = 3;
+		}
+		else
+		{
+			bombNum = 2;
+		}
 	}
 	
 	// Drop Item
