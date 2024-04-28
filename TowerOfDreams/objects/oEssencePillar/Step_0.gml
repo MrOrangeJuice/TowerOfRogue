@@ -41,7 +41,7 @@ if(global.goldUnlocked && paletteNum == 4)
 if(place_meeting(x,y,oPlayer))
 {
 	colliding = true;	
-	if(key_up)
+	if(key_up && prevBought)
 	{
 		// Switch between owned essence
 		if(paletteNum == global.essence)
