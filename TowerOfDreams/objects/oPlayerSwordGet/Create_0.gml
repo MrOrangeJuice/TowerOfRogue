@@ -1,6 +1,8 @@
 /// @description Init
 
 audio_play_sound(snd_SwordGet,5,false);
+audio_stop_sound(msc_TutorialIntro);
+global.tutorialMusic = false;
 
 switch(global.palette)
 {

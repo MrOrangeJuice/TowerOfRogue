@@ -239,7 +239,14 @@ if(!global.paused && !global.hitStop)
 		{
 			if(room == rTutorial && !global.tutorialMusic)
 			{
-				audio_play_sound(msc_TutorialV2,5,true);
+				if(global.sword)
+				{
+					audio_play_sound(msc_TutorialV3,5,true);
+				}
+				else
+				{
+					audio_play_sound(msc_TutorialIntro,5,true);
+				}
 				global.tutorialMusic = true;
 			}
 			if(room == rHub && !global.hubMusic)

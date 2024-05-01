@@ -523,7 +523,8 @@ if(global.paused)
 					global.slimeArray = ds_list_create();
 					instance_destroy(oItemPopup);
 					SlideTransition(TRANS_MODE.GOTO, rTitle);
-					audio_stop_sound(msc_TutorialV2);
+					audio_stop_sound(msc_TutorialV3);
+					audio_stop_sound(msc_TutorialIntro);
 					global.tutorialMusic = false;
 					audio_stop_sound(msc_Floor1);
 					audio_stop_sound(msc_Floor1Variant);
