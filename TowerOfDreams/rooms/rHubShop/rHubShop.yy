@@ -29,7 +29,6 @@
     {"name":"inst_2CFF09F2","path":"rooms/rHubShop/rHubShop.yy",},
     {"name":"inst_32CEA4DD","path":"rooms/rHubShop/rHubShop.yy",},
     {"name":"inst_4D340D78","path":"rooms/rHubShop/rHubShop.yy",},
-    {"name":"inst_1E08C461","path":"rooms/rHubShop/rHubShop.yy",},
     {"name":"inst_6366BB9","path":"rooms/rHubShop/rHubShop.yy",},
     {"name":"inst_44491BA2","path":"rooms/rHubShop/rHubShop.yy",},
     {"name":"inst_1E0D55D8","path":"rooms/rHubShop/rHubShop.yy",},
@@ -107,9 +106,6 @@
         {"$GMRInstance":"","%Name":"inst_2CFF09F2","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_2CFF09F2","objectId":{"name":"oWall","path":"objects/oWall/oWall.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":8.0,"scaleY":5.0,"x":440.0,"y":1456.0,},
         {"$GMRInstance":"","%Name":"inst_32CEA4DD","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_32CEA4DD","objectId":{"name":"oBumper","path":"objects/oBumper/oBumper.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":268.0,"y":1528.0,},
         {"$GMRInstance":"","%Name":"inst_4D340D78","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_4D340D78","objectId":{"name":"oBumper","path":"objects/oBumper/oBumper.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":420.0,"y":1528.0,},
-        {"$GMRInstance":"","%Name":"inst_1E08C461","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_1E08C461","objectId":{"name":"oSign","path":"objects/oSign/oSign.yy",},"properties":[
-            {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"oSign","path":"objects/oSign/oSign.yy",},"propertyId":{"name":"signMessage","path":"objects/oSign/oSign.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"More comin' soon!\\n-Richard",},
-          ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":240.0,"y":1440.0,},
         {"$GMRInstance":"","%Name":"inst_6366BB9","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_6366BB9","objectId":{"name":"oGreenEssence","path":"objects/oGreenEssence/oGreenEssence.yy",},"properties":[
             {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"oShopEssence","path":"objects/oShopEssence/oShopEssence.yy",},"propertyId":{"name":"paletteNum","path":"objects/oShopEssence/oShopEssence.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"2",},
           ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":364.0,"y":1527.0,},
