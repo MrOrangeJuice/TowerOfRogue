@@ -91,7 +91,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.2.0.132",
+    "IDEVersion":"2024.4.0.137",
   },
   "name":"TowerOfDreams",
   "resources":[
@@ -572,6 +572,7 @@
     {"id":{"name":"sBomb","path":"sprites/sBomb/sBomb.yy",},},
     {"id":{"name":"sBombExplosion","path":"sprites/sBombExplosion/sBombExplosion.yy",},},
     {"id":{"name":"sBombUI","path":"sprites/sBombUI/sBombUI.yy",},},
+    {"id":{"name":"sBonusBG","path":"sprites/sBonusBG/sBonusBG.yy",},},
     {"id":{"name":"sBoomerang","path":"sprites/sBoomerang/sBoomerang.yy",},},
     {"id":{"name":"sBoomerangUI","path":"sprites/sBoomerangUI/sBoomerangUI.yy",},},
     {"id":{"name":"sBootsUI","path":"sprites/sBootsUI/sBootsUI.yy",},},
@@ -609,6 +610,7 @@
     {"id":{"name":"sChargeUI","path":"sprites/sChargeUI/sChargeUI.yy",},},
     {"id":{"name":"sChest","path":"sprites/sChest/sChest.yy",},},
     {"id":{"name":"sChestUI","path":"sprites/sChestUI/sChestUI.yy",},},
+    {"id":{"name":"sChooseItem","path":"sprites/sChooseItem/sChooseItem.yy",},},
     {"id":{"name":"sClouds","path":"sprites/sClouds/sClouds.yy",},},
     {"id":{"name":"sClouds2","path":"sprites/sClouds2/sClouds2.yy",},},
     {"id":{"name":"sClouds3","path":"sprites/sClouds3/sClouds3.yy",},},
@@ -923,7 +925,6 @@
     {"id":{"name":"sPortalPurple","path":"sprites/sPortalPurple/sPortalPurple.yy",},},
     {"id":{"name":"sPortalRed","path":"sprites/sPortalRed/sPortalRed.yy",},},
     {"id":{"name":"sPortalYellow","path":"sprites/sPortalYellow/sPortalYellow.yy",},},
-    {"id":{"name":"sChooseItem","path":"sprites/sChooseItem/sChooseItem.yy",},},
     {"id":{"name":"sRabbitUI","path":"sprites/sRabbitUI/sRabbitUI.yy",},},
     {"id":{"name":"sRageVFX","path":"sprites/sRageVFX/sRageVFX.yy",},},
     {"id":{"name":"sRankingSign","path":"sprites/sRankingSign/sRankingSign.yy",},},

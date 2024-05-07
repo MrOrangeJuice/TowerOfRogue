@@ -9,7 +9,7 @@
   "managed":true,
   "name":"oSpray",
   "overriddenProperties":[
-    {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"oKunai","path":"objects/oKunai/oKunai.yy",},"propertyId":{"name":"initialDir","path":"objects/oKunai/oKunai.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"0",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oKunai","path":"objects/oKunai/oKunai.yy",},"propertyId":{"name":"initialDir","path":"objects/oKunai/oKunai.yy",},"resource":null,"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"0",},
   ],
   "parent":{
     "name":"Items",
@@ -33,7 +33,7 @@
   "physicsShapePoints":[],
   "physicsStartAwake":true,
   "properties":[
-    {"$GMObjectProperty":"","%Name":"initialYDir","filters":[],"listItems":[],"multiselect":false,"name":"initialYDir","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":1,},
+    {"$GMObjectProperty":"v1","%Name":"initialYDir","filters":[],"listItems":[],"multiselect":false,"name":"initialYDir","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":null,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":1,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

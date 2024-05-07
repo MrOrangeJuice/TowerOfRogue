@@ -5,7 +5,7 @@
   "managed":true,
   "name":"oHitstopLong",
   "overriddenProperties":[
-    {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"oHitstop","path":"objects/oHitstop/oHitstop.yy",},"propertyId":{"name":"hitStopTime","path":"objects/oHitstop/oHitstop.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"0.5",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oHitstop","path":"objects/oHitstop/oHitstop.yy",},"propertyId":{"name":"hitStopTime","path":"objects/oHitstop/oHitstop.yy",},"resource":null,"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"0.5",},
   ],
   "parent":{
     "name":"Objects",
