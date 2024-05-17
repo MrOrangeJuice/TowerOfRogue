@@ -826,6 +826,7 @@
     {"id":{"name":"sPepperUI","path":"sprites/sPepperUI/sPepperUI.yy",},},
     {"id":{"name":"sPickaxeUI","path":"sprites/sPickaxeUI/sPickaxeUI.yy",},},
     {"id":{"name":"sPillar","path":"sprites/sPillar/sPillar.yy",},},
+    {"id":{"name":"sPipeFlea","path":"sprites/sPipeFlea/sPipeFlea.yy",},},
     {"id":{"name":"sPipeSpawner","path":"sprites/sPipeSpawner/sPipeSpawner.yy",},},
     {"id":{"name":"sPlayerBig","path":"sprites/sPlayerBig/sPlayerBig.yy",},},
     {"id":{"name":"sPlayerBit","path":"sprites/sPlayerBit/sPlayerBit.yy",},},
