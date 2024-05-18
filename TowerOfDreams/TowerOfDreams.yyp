@@ -284,6 +284,7 @@
     {"id":{"name":"oPickaxeItem","path":"objects/oPickaxeItem/oPickaxeItem.yy",},},
     {"id":{"name":"oPillar","path":"objects/oPillar/oPillar.yy",},},
     {"id":{"name":"oPipe","path":"objects/oPipe/oPipe.yy",},},
+    {"id":{"name":"oPipeFlea","path":"objects/oPipeFlea/oPipeFlea.yy",},},
     {"id":{"name":"oPipeSpawner","path":"objects/oPipeSpawner/oPipeSpawner.yy",},},
     {"id":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},},
     {"id":{"name":"oPlayerBit","path":"objects/oPlayerBit/oPlayerBit.yy",},},

@@ -257,6 +257,7 @@
     {"name":"oPickaxeItem","order":14,"path":"objects/oPickaxeItem/oPickaxeItem.yy",},
     {"name":"oPillar","order":1,"path":"objects/oPillar/oPillar.yy",},
     {"name":"oPipe","order":6,"path":"objects/oPipe/oPipe.yy",},
+    {"name":"oPipeFlea","order":14,"path":"objects/oPipeFlea/oPipeFlea.yy",},
     {"name":"oPipeSpawner","order":7,"path":"objects/oPipeSpawner/oPipeSpawner.yy",},
     {"name":"oPlayerBit","order":13,"path":"objects/oPlayerBit/oPlayerBit.yy",},
     {"name":"oPlayerChargeParticle","order":25,"path":"objects/oPlayerChargeParticle/oPlayerChargeParticle.yy",},
