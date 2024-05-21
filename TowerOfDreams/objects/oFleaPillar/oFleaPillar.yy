@@ -1,13 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"oArmorPillar",
+  "%Name":"oFleaPillar",
   "eventList":[
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"oArmorPillar",
+  "name":"oFleaPillar",
   "overriddenProperties":[],
   "parent":{
     "name":"Shop Items",
@@ -27,12 +27,7 @@
   "physicsShape":1,
   "physicsShapePoints":[],
   "physicsStartAwake":true,
-  "properties":[
-    {"$GMObjectProperty":"v1","%Name":"itemPrice","filters":[],"listItems":[],"multiselect":false,"name":"itemPrice","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"1000","varType":1,},
-    {"$GMObjectProperty":"v1","%Name":"armorName","filters":[],"listItems":[],"multiselect":false,"name":"armorName","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"Cool Armor","varType":2,},
-    {"$GMObjectProperty":"v1","%Name":"armorDesc","filters":[],"listItems":[],"multiselect":false,"name":"armorDesc","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"Makes you cool","varType":2,},
-    {"$GMObjectProperty":"v1","%Name":"paletteNum","filters":[],"listItems":[],"multiselect":false,"name":"paletteNum","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"1","varType":1,},
-  ],
+  "properties":[],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,

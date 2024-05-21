@@ -180,6 +180,7 @@
     {"name":"oFirePlantElite","order":30,"path":"objects/oFirePlantElite/oFirePlantElite.yy",},
     {"name":"oFlapTutorial","order":12,"path":"objects/oFlapTutorial/oFlapTutorial.yy",},
     {"name":"oFlapTutorialFadeIn","order":13,"path":"objects/oFlapTutorialFadeIn/oFlapTutorialFadeIn.yy",},
+    {"name":"oFleaPillar","order":15,"path":"objects/oFleaPillar/oFleaPillar.yy",},
     {"name":"oFloatingLever","order":21,"path":"objects/oFloatingLever/oFloatingLever.yy",},
     {"name":"oFlyingEnemy","order":18,"path":"objects/oFlyingEnemy/oFlyingEnemy.yy",},
     {"name":"oFlyingEnemyElite","order":19,"path":"objects/oFlyingEnemyElite/oFlyingEnemyElite.yy",},

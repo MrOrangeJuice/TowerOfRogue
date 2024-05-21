@@ -40,6 +40,7 @@
     {"name":"inst_6C944AB3","path":"rooms/rHubShop/rHubShop.yy",},
     {"name":"inst_5792D924","path":"rooms/rHubShop/rHubShop.yy",},
     {"name":"inst_16AF641E","path":"rooms/rHubShop/rHubShop.yy",},
+    {"name":"inst_5ABFE1B3","path":"rooms/rHubShop/rHubShop.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -143,6 +144,7 @@
         {"$GMRInstance":"","%Name":"inst_6C944AB3","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_6C944AB3","objectId":{"name":"oWall","path":"objects/oWall/oWall.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":15.0,"scaleY":7.0,"x":112.0,"y":1496.0,},
         {"$GMRInstance":"","%Name":"inst_5792D924","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_5792D924","objectId":{"name":"oWall","path":"objects/oWall/oWall.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":4.0,"scaleY":7.0,"x":472.0,"y":1496.0,},
         {"$GMRInstance":"","%Name":"inst_16AF641E","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_16AF641E","objectId":{"name":"oPipeFlea","path":"objects/oPipeFlea/oPipeFlea.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":240.0,"y":1424.0,},
+        {"$GMRInstance":"","%Name":"inst_5ABFE1B3","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_5ABFE1B3","objectId":{"name":"oFleaPillar","path":"objects/oFleaPillar/oFleaPillar.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":240.0,"y":1440.0,},
       ],"layers":[],"name":"Walls","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"CoinVFX","depth":800,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"name":"CoinVFX","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"VFX","depth":900,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"name":"VFX","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},

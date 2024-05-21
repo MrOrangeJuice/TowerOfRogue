@@ -333,6 +333,7 @@ if(room == rTitle)
 				
 				global.overallCoins = 0;
 				global.healthUpgrades = 0;
+				global.itemUpgrades = 0;
 				global.redUnlocked = false;
 				global.greenUnlocked = false;
 				global.zombieUnlocked = false;

@@ -11,6 +11,7 @@ global.coinsThisRun = 0;
 global.localCoins = 0;
 global.localDamage = 0;
 global.healthUpgrades = 0;
+global.itemUpgrades = 0;
 global.maxHealth = 6;
 global.health = 6;
 global.armor = 0;

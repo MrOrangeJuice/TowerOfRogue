@@ -204,6 +204,7 @@
     {"id":{"name":"oFirePlantElite","path":"objects/oFirePlantElite/oFirePlantElite.yy",},},
     {"id":{"name":"oFlapTutorial","path":"objects/oFlapTutorial/oFlapTutorial.yy",},},
     {"id":{"name":"oFlapTutorialFadeIn","path":"objects/oFlapTutorialFadeIn/oFlapTutorialFadeIn.yy",},},
+    {"id":{"name":"oFleaPillar","path":"objects/oFleaPillar/oFleaPillar.yy",},},
     {"id":{"name":"oFloatingLever","path":"objects/oFloatingLever/oFloatingLever.yy",},},
     {"id":{"name":"oFlyingEnemy","path":"objects/oFlyingEnemy/oFlyingEnemy.yy",},},
     {"id":{"name":"oFlyingEnemyElite","path":"objects/oFlyingEnemyElite/oFlyingEnemyElite.yy",},},

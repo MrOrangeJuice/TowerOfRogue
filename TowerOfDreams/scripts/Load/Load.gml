@@ -61,6 +61,7 @@ function Load(){
 	global.bestOverall = ini_read_string("savegame", "bestOverall", "F");
 	global.overallCoins = ini_read_real("savegame", "overallCoins", 0);
 	global.healthUpgrades = ini_read_real("savegame", "healthUpgrades", 0);
+	global.itemUpgrades = ini_read_real("savegame", "itemUpgrades", 0);
 	global.redUnlocked = ini_read_real("savegame", "redUnlocked", 0);
 	global.greenUnlocked = ini_read_real("savegame", "greenUnlocked", 0);
 	global.zombieUnlocked = ini_read_real("savegame", "zombieUnlocked", 0);
