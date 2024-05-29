@@ -109,6 +109,7 @@
     {"name":"oBomb","order":38,"path":"objects/oBomb/oBomb.yy",},
     {"name":"oBombExplosionVFX","order":36,"path":"objects/oBombExplosionVFX/oBombExplosionVFX.yy",},
     {"name":"oBombItem","order":37,"path":"objects/oBombItem/oBombItem.yy",},
+    {"name":"oBonusItem","order":32,"path":"objects/oBonusItem/oBonusItem.yy",},
     {"name":"oBoomerang","order":19,"path":"objects/oBoomerang/oBoomerang.yy",},
     {"name":"oBoomerangItem","order":18,"path":"objects/oBoomerangItem/oBoomerangItem.yy",},
     {"name":"oBoomerangParticle","order":20,"path":"objects/oBoomerangParticle/oBoomerangParticle.yy",},
