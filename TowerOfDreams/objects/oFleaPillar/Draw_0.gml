@@ -1,4 +1,4 @@
-o// Draw item name
+// Draw item name
 
 
 draw_set_color($B1D7F0);

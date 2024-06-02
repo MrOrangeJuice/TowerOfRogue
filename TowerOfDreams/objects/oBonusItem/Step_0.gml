@@ -40,3 +40,59 @@ if (gamepad_button_check_pressed(4,gp_face1))
 	key_select = 1;
 	global.controller = 2;
 }
+
+if(key_left)
+{
+	audio_play_sound(snd_MenuMove,5,false);
+	currentItem--;	
+	if(currentItem < 0)
+	{
+		currentItem	= array_length(itemList) - 1;
+	}
+}
+
+if(key_right)
+{
+	audio_play_sound(snd_MenuMove,5,false);
+	currentItem++;	
+	if(currentItem > array_length(itemList) - 1)
+	{
+		currentItem = 0;	
+	}
+}
+
+if(gamepad_axis_value(0,gp_axislh) < -0.4)
+{
+	analogLeftPrev = true;	
+}
+else
+{
+	analogLeftPrev = false;	
+}
+
+if(gamepad_axis_value(0,gp_axislh) > 0.4)
+{
+	analogRightPrev = true;	
+}
+else
+{
+	analogRightPrev = false;	
+}
+
+if(gamepad_axis_value(4,gp_axislh) < -0.4)
+{
+	analogLeftPrevD = true;	
+}
+else
+{
+	analogLeftPrevD = false;	
+}
+
+if(gamepad_axis_value(4,gp_axislh) > 0.4)
+{
+	analogRightPrevD = true;	
+}
+else
+{
+	analogRightPrevD = false;	
+}
