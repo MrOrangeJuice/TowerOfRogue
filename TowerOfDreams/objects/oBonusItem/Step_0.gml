@@ -41,7 +41,7 @@ if (gamepad_button_check_pressed(4,gp_face1))
 	global.controller = 2;
 }
 
-if(key_left)
+if(key_left && !selected)
 {
 	audio_play_sound(snd_MenuMove,5,false);
 	currentItem--;	
@@ -51,7 +51,7 @@ if(key_left)
 	}
 }
 
-if(key_right)
+if(key_right && !selected)
 {
 	audio_play_sound(snd_MenuMove,5,false);
 	currentItem++;	
@@ -60,6 +60,28 @@ if(key_right)
 		currentItem = 0;	
 	}
 }
+
+if(key_select && !selected)
+{
+	audio_play_sound(snd_MenuSelect,5,false);
+	selected = true;
+}
+
+if(selected)
+{
+	if(selectedOffset == 0) 
+	{
+		selectedOffset = 1;
+	}
+	else
+	{
+		selectedOffset *= 1.3;
+	}
+}
+
+itemOffsetY += itemOffsetYSpeed;
+if(itemOffsetY > 1) itemOffsetYSpeed -= 0.1;
+if(itemOffsetY < -1) itemOffsetYSpeed += 0.1;
 
 if(gamepad_axis_value(0,gp_axislh) < -0.4)
 {
