@@ -31,7 +31,14 @@ if(place_meeting(x,y,oPlayer))
 		global.armor = 0;
 		global.localCoins = 0;
 		audio_play_sound(snd_Door,5,false);
-		PickNextLevel();	
+		if(global.itemUpgrades <= 0)
+		{
+			PickNextLevel();
+		}
+		else
+		{
+			SlideTransition(TRANS_MODE.GOTO,rBonusItem);
+		}
 	}
 }
 else

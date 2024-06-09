@@ -136,6 +136,13 @@ if(room == rTitle)
 	{
 		draw_sprite(sMenuBox,0,128,76+UIOffset);
 		
+		/*
+		draw_set_color($6d454d);
+		draw_text(129,88+UIOffset,"START");
+		draw_text(127,88+UIOffset,"START");
+		draw_text(128,87+UIOffset,"START");
+		draw_text(128,89+UIOffset,"START");
+		*/
 		if(menuOption == 0)
 		{
 			draw_set_color($A3A7E9);

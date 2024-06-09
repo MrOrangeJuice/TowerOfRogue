@@ -10,6 +10,8 @@ newItem = irandom_range(0,array_length(global.itemObjects)-3);
 selected = false;
 selectedOffset = 0;
 
+itemEaten = false;
+
 itemOffsetX = 0;
 itemOffsetY = 0;
 itemOffsetYSpeed = 0.3;

@@ -65,6 +65,24 @@ if(key_select && !selected)
 {
 	audio_play_sound(snd_MenuSelect,5,false);
 	selected = true;
+	// Add item to inventory
+	if(global.itemTypes[itemList[currentItem]] == "Active")
+	{
+		global.item = itemList[currentItem];
+	}
+	else if(global.itemTypes[itemList[currentItem]] == "Passive")
+	{
+		passiveItemIndex = -1;
+		// Find object in passive items array
+		for(i = 0; i < array_length(global.passiveItemObjects); i++)
+		{
+			if(global.itemObjects[itemList[currentItem]] == global.passiveItemObjects[i]) passiveItemIndex = i;
+		}
+		if(passiveItemIndex != -1)
+		{
+			array_push(global.passiveItems,passiveItemIndex);
+		}
+	}
 }
 
 if(selected)
