@@ -3,6 +3,9 @@
 analogLeftPrev = false;
 analogRightPrev = false;
 
+global.canPause = false;
+audio_play_sound(msc_BonusItem,5,true);
+
 itemList = [];
 randomize();
 newItem = irandom_range(0,array_length(global.itemObjects)-3);

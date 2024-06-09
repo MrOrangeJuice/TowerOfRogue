@@ -38,6 +38,7 @@ if(place_meeting(x,y,oPlayer))
 		else
 		{
 			SlideTransition(TRANS_MODE.GOTO,rBonusItem);
+			audio_stop_sound(msc_Hub);
 		}
 	}
 }

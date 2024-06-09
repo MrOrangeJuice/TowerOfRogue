@@ -43,7 +43,7 @@ if (gamepad_button_check_pressed(4,gp_face1))
 
 if(key_left && !selected)
 {
-	audio_play_sound(snd_MenuMove,5,false);
+	audio_play_sound(snd_ItemMove,5,false);
 	currentItem--;	
 	if(currentItem < 0)
 	{
@@ -53,7 +53,7 @@ if(key_left && !selected)
 
 if(key_right && !selected)
 {
-	audio_play_sound(snd_MenuMove,5,false);
+	audio_play_sound(snd_ItemMove,5,false);
 	currentItem++;	
 	if(currentItem > array_length(itemList) - 1)
 	{
@@ -63,7 +63,7 @@ if(key_right && !selected)
 
 if(key_select && !selected)
 {
-	audio_play_sound(snd_MenuSelect,5,false);
+	audio_play_sound(snd_ItemSelect,5,false);
 	selected = true;
 	// Add item to inventory
 	if(global.itemTypes[itemList[currentItem]] == "Active")
