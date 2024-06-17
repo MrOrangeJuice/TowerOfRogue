@@ -444,7 +444,7 @@
     {"name":"snd_Hit","order":12,"path":"sounds/snd_Hit/snd_Hit.yy",},
     {"name":"snd_Impact","order":3,"path":"sounds/snd_Impact/snd_Impact.yy",},
     {"name":"snd_Item","order":17,"path":"sounds/snd_Item/snd_Item.yy",},
-    {"name":"snd_ItemMove","order":81,"path":"sounds/snd_ItemMove/snd_ItemMove.yy",},
+    {"name":"snd_ItemMove","order":83,"path":"sounds/snd_ItemMove/snd_ItemMove.yy",},
     {"name":"snd_ItemSelect","order":82,"path":"sounds/snd_ItemSelect/snd_ItemSelect.yy",},
     {"name":"snd_Klang","order":19,"path":"sounds/snd_Klang/snd_Klang.yy",},
     {"name":"snd_Kunai","order":16,"path":"sounds/snd_Kunai/snd_Kunai.yy",},
