@@ -1645,6 +1645,30 @@ if(!global.paused && !global.hitStop)
 				}
 			}
 			break;
+		case 30:
+			if(key_item_pressed)
+			{
+				// Determine player position
+				if(place_meeting(x,y+8,oWall))
+				{
+					// Right facing
+					if(image_xscale >= 0)
+					{
+						instance_create_layer(x+blockOffset,y,"Walls",oBlockathan);
+					}
+					// Left facing
+					else if(image_xscale < 0)
+					{
+						instance_create_layer(x-blockOffset,y,"Walls",oBlockathan);
+					}
+				}
+				// Down
+				else
+				{
+					instance_create_layer(x,y+blockOffset,"Walls",oBlockathan);
+				}
+			}
+			break;
 	}
 
 	// Animation

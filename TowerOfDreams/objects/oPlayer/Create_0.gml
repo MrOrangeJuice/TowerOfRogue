@@ -43,6 +43,11 @@ dashing = false;
 airDash = false;
 dashOver = false;
 bombNum = 2;
+blockX = x;
+blockY = y;
+blockTargetX = x;
+blockTargetY = y;
+blockOffset = 12;
 if(global.essence == 4)
 {
 	bombNum = 3;

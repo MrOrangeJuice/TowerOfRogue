@@ -9,7 +9,10 @@
     "name":"Items",
     "path":"folders/Objects/Items.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"oWall",
+    "path":"objects/oWall/oWall.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -28,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sBlockUI",
-    "path":"sprites/sBlockUI/sBlockUI.yy",
+    "name":"sBlockathan",
+    "path":"sprites/sBlockathan/sBlockathan.yy",
   },
   "spriteMaskId":null,
   "visible":true,
