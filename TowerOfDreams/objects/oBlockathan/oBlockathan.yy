@@ -1,7 +1,11 @@
 {
   "$GMObject":"",
   "%Name":"oBlockathan",
-  "eventList":[],
+  "eventList":[
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":7,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
   "name":"oBlockathan",
   "overriddenProperties":[],
@@ -31,8 +35,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sBlockathan",
-    "path":"sprites/sBlockathan/sBlockathan.yy",
+    "name":"sBlockathanAppear",
+    "path":"sprites/sBlockathanAppear/sBlockathanAppear.yy",
   },
   "spriteMaskId":null,
   "visible":true,

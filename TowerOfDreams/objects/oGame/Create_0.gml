@@ -75,6 +75,7 @@ global.hardMode = false;
 global.dropItemHold = 0;
 global.totalDeaths = 0;
 global.armed = false;
+global.blockSpawning = false;
 
 // Shop items
 global.shopItem1 = -1;

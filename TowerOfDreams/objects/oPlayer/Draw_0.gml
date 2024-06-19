@@ -36,26 +36,30 @@ if(global.item == 30)
 		// Right facing
 		if(image_xscale >= 0)
 		{
-			blockTargetX = x + blockOffset;
+			blockTargetX = x + blockOffset + (hsp*2);
 			blockTargetY = y;
 		}
 		// Left facing
 		else if(image_xscale < 0)
 		{
-			blockTargetX = x - blockOffset;
+			blockTargetX = x - blockOffset + (hsp*2);
 			blockTargetY = y;
 		}
 	}
 	// Down
 	else
 	{
-		blockTargetX = x;
-		blockTargetY = y + blockOffset;
+		blockTargetX = x + (hsp*2);
+		blockTargetY = y + blockOffset + (vsp*2);
 	}
 	
 	// lerp and draw target
 	blockX = lerp(blockX,blockTargetX,0.3);
 	blockY = lerp(blockY,blockTargetY,0.3);
 	
-	draw_sprite(sBlockTarget,0,blockX,blockY);
+	blockCursorCooldown--;
+	if(blockCursorCooldown < 0)
+	{
+		draw_sprite(sBlockTarget,0,blockX,blockY);
+	}
 }
