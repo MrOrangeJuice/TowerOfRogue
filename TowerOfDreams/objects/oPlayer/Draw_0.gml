@@ -60,6 +60,14 @@ if(global.item == 30)
 	blockCursorCooldown--;
 	if(blockCursorCooldown < 0)
 	{
-		draw_sprite(sBlockTarget,0,blockX,blockY);
+		// Draw cursor as a different color if enemy is blocking placement
+		if(!place_meeting(blockTargetX,blockTargetY,oEnemy))
+		{
+			draw_sprite(sBlockTarget,0,blockX,blockY);
+		}
+		else
+		{
+			draw_sprite(sBlockTarget,1,blockX,blockY);
+		}
 	}
 }

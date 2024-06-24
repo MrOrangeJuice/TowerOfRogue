@@ -1651,8 +1651,6 @@ if(!global.paused && !global.hitStop)
 		case 30:
 			if(key_item_pressed)
 			{
-				blockCursorCooldown = 20;
-				audio_play_sound(snd_Block,5,false);
 				// Destroy any other block
 				if(instance_exists(oBlockathan)) oBlockathan.sprite_index = sBlockDissapear;
 				// Determine player position
@@ -1661,18 +1659,33 @@ if(!global.paused && !global.hitStop)
 					// Right facing
 					if(image_xscale >= 0)
 					{
-						instance_create_layer(x + blockOffset + (hsp*2),y,"Walls",oBlockathan);
+						if(!place_meeting(x + blockOffset + (hsp*2),y,oEnemy)) 
+						{
+							blockCursorCooldown = 20;
+							audio_play_sound(snd_Block,5,false);
+							instance_create_layer(x + blockOffset + (hsp*2),y,"Walls",oBlockathan);
+						}
 					}
 					// Left facing
 					else if(image_xscale < 0)
 					{
-						instance_create_layer(x - blockOffset + (hsp*2),y,"Walls",oBlockathan);
+						if(!place_meeting(x - blockOffset + (hsp*2),y,oEnemy)) 
+						{
+							blockCursorCooldown = 20;
+							audio_play_sound(snd_Block,5,false);
+							instance_create_layer(x - blockOffset + (hsp*2),y,"Walls",oBlockathan);
+						}
 					}
 				}
 				// Down
 				else
 				{
-					instance_create_layer(x + (hsp*2),y + blockOffset + (vsp*2),"Walls",oBlockathan);
+					if(!place_meeting(x + (hsp*2),y + blockOffset + (vsp*2),oEnemy)) 
+					{
+						blockCursorCooldown = 20;
+						audio_play_sound(snd_Block,5,false);
+						instance_create_layer(x + (hsp*2),y + blockOffset + (vsp*2),"Walls",oBlockathan);
+					}
 				}
 			}
 			break;
