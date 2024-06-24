@@ -455,6 +455,7 @@
     {"id":{"name":"snd_Axe","path":"sounds/snd_Axe/snd_Axe.yy",},},
     {"id":{"name":"snd_BigGem","path":"sounds/snd_BigGem/snd_BigGem.yy",},},
     {"id":{"name":"snd_Block","path":"sounds/snd_Block/snd_Block.yy",},},
+    {"id":{"name":"snd_BlockFail","path":"sounds/snd_BlockFail/snd_BlockFail.yy",},},
     {"id":{"name":"snd_Bomb","path":"sounds/snd_Bomb/snd_Bomb.yy",},},
     {"id":{"name":"snd_BombJump","path":"sounds/snd_BombJump/snd_BombJump.yy",},},
     {"id":{"name":"snd_BoomerangReturn","path":"sounds/snd_BoomerangReturn/snd_BoomerangReturn.yy",},},

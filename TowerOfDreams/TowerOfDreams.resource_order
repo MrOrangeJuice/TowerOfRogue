@@ -411,6 +411,7 @@
     {"name":"snd_Axe","order":42,"path":"sounds/snd_Axe/snd_Axe.yy",},
     {"name":"snd_BigGem","order":65,"path":"sounds/snd_BigGem/snd_BigGem.yy",},
     {"name":"snd_Block","order":18,"path":"sounds/snd_Block/snd_Block.yy",},
+    {"name":"snd_BlockFail","order":84,"path":"sounds/snd_BlockFail/snd_BlockFail.yy",},
     {"name":"snd_Bomb","order":67,"path":"sounds/snd_Bomb/snd_Bomb.yy",},
     {"name":"snd_BombJump","order":66,"path":"sounds/snd_BombJump/snd_BombJump.yy",},
     {"name":"snd_BoomerangReturn","order":41,"path":"sounds/snd_BoomerangReturn/snd_BoomerangReturn.yy",},
