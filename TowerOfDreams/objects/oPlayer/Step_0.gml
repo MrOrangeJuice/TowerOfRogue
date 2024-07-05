@@ -479,7 +479,37 @@ if(!global.paused && !global.hitStop)
 
 	// Slash collision
 	if(slashing && !hasSlashJumped)
-	{	
+	{
+		// Block
+		block = instance_place(x,y+9,oBlockathan);
+		if(block)
+		{
+			// Push player up
+			while(place_meeting(x,y+8,oBlockathan))
+			{
+				y -= 1;	
+			}
+			vsp = -3;
+			if(chargeSlash)
+			{
+				instance_create_layer(block.x,block.y-2,"VFX",oDustSlashBumperGreen);
+			}
+			else
+			{
+				instance_create_layer(block.x,block.y-2,"VFX",oDustSlashBumper);
+			}
+			airborne = true;
+			hasSlashed = true;
+			hasSlashJumped = true;
+			extraJump = true;
+			bombNum = 2;
+			audio_play_sound(snd_BlockHit,5,false);
+			audio_play_sound(snd_Hit,5,false);
+			instance_create_layer(block.x,block.y,"Walls",oBlockathanFall);
+			instance_destroy(block);
+		}
+		
+		// Wall
 		if(place_meeting(x,y+9,oWall))
 		{
 			// Check for slash items
@@ -977,6 +1007,7 @@ if(!global.paused && !global.hitStop)
 				audio_play_sound(snd_Nightmare,5,false);
 			}
 		}
+		
 	}
 
 	// Jump

@@ -91,7 +91,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.4.1.152",
+    "IDEVersion":"2024.6.0.157",
   },
   "name":"TowerOfDreams",
   "resources":[
@@ -127,6 +127,7 @@
     {"id":{"name":"oBirthdayMine","path":"objects/oBirthdayMine/oBirthdayMine.yy",},},
     {"id":{"name":"oBlockA","path":"objects/oBlockA/oBlockA.yy",},},
     {"id":{"name":"oBlockathan","path":"objects/oBlockathan/oBlockathan.yy",},},
+    {"id":{"name":"oBlockathanFall","path":"objects/oBlockathanFall/oBlockathanFall.yy",},},
     {"id":{"name":"oBlockB","path":"objects/oBlockB/oBlockB.yy",},},
     {"id":{"name":"oBlockItem","path":"objects/oBlockItem/oBlockItem.yy",},},
     {"id":{"name":"oBomb","path":"objects/oBomb/oBomb.yy",},},
@@ -456,6 +457,7 @@
     {"id":{"name":"snd_BigGem","path":"sounds/snd_BigGem/snd_BigGem.yy",},},
     {"id":{"name":"snd_Block","path":"sounds/snd_Block/snd_Block.yy",},},
     {"id":{"name":"snd_BlockFail","path":"sounds/snd_BlockFail/snd_BlockFail.yy",},},
+    {"id":{"name":"snd_BlockHit","path":"sounds/snd_BlockHit/snd_BlockHit.yy",},},
     {"id":{"name":"snd_Bomb","path":"sounds/snd_Bomb/snd_Bomb.yy",},},
     {"id":{"name":"snd_BombJump","path":"sounds/snd_BombJump/snd_BombJump.yy",},},
     {"id":{"name":"snd_BoomerangReturn","path":"sounds/snd_BoomerangReturn/snd_BoomerangReturn.yy",},},
@@ -583,6 +585,7 @@
     {"id":{"name":"sBlockAOff","path":"sprites/sBlockAOff/sBlockAOff.yy",},},
     {"id":{"name":"sBlockathan","path":"sprites/sBlockathan/sBlockathan.yy",},},
     {"id":{"name":"sBlockathanAppear","path":"sprites/sBlockathanAppear/sBlockathanAppear.yy",},},
+    {"id":{"name":"sBlockathanFall","path":"sprites/sBlockathanFall/sBlockathanFall.yy",},},
     {"id":{"name":"sBlockB","path":"sprites/sBlockB/sBlockB.yy",},},
     {"id":{"name":"sBlockBOff","path":"sprites/sBlockBOff/sBlockBOff.yy",},},
     {"id":{"name":"sBlockDissapear","path":"sprites/sBlockDissapear/sBlockDissapear.yy",},},
