@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"PickNextLevel",
   "isCompatibility":false,
   "isDnD":false,

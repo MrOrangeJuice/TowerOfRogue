@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"DetermineFloorTax",
   "isCompatibility":false,
   "isDnD":false,

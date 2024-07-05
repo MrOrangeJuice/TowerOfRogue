@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"ChangePlayerSkin",
   "isCompatibility":false,
   "isDnD":false,

@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"PickSideArea",
   "isCompatibility":false,
   "isDnD":false,

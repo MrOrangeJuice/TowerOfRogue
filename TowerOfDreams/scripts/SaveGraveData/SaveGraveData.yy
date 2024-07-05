@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"SaveGraveData",
   "isCompatibility":false,
   "isDnD":false,

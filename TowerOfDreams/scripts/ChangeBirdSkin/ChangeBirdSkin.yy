@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"ChangeBirdSkin",
   "isCompatibility":false,
   "isDnD":false,

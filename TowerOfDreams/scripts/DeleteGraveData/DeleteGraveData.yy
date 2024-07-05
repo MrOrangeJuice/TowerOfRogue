@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"DeleteGraveData",
   "isCompatibility":false,
   "isDnD":false,

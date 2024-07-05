@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"SpawnPepperExplosion",
   "isCompatibility":false,
   "isDnD":false,
