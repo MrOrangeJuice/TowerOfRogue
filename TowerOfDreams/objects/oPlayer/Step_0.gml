@@ -516,6 +516,8 @@ if(!global.paused && !global.hitStop)
 			shock = false;
 			shockNum = 0;
 			bagNum = 0;
+			rocks = false;
+			rockNum = 0;
 			for(i = 0; i < array_length(global.passiveItems); i++)
 			{
 				if(global.passiveItems[i] == 0)
@@ -526,6 +528,11 @@ if(!global.paused && !global.hitStop)
 				if(global.passiveItems[i] == 9)
 				{
 					bagNum += 0.5;
+				}
+				if(global.passiveItems[i] == 21)
+				{
+					rocks = true;
+					rockNum++;
 				}
 			}
 			
@@ -556,6 +563,14 @@ if(!global.paused && !global.hitStop)
 				if(shockNum > 0)
 				{
 					alarm[6] = room_speed * 0.1;	
+				}
+			}
+			if(rocks)
+			{
+				audio_play_sound(snd_Dig,5,false);
+				for(i = 0; i < (rockNum * 4); i++)
+				{
+					instance_create_layer(x,y,"Enemies",oDirt);
 				}
 			}
 			airborne = true;
