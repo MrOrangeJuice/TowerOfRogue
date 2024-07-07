@@ -17,6 +17,4 @@ function SpawnPepperExplosion(argument0,argument1){
 		explosion = instance_create_layer(argument0,argument1,"Enemies",oPepperExplosion);
 		explosion.damage = pepperNum;
 	}
-	
-	return pepperInItems;
 }

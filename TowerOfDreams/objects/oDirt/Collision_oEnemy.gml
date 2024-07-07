@@ -14,24 +14,32 @@ if(!other.invincible)
 	other.flash = 5;
 	if(global.essence == 4)
 	{
-		other.hp -= (1.5 + dmgMultiplier);
+		other.hp -= 1.5;
 	}
 	else
 	{
-		other.hp -= (1 + dmgMultiplier);
+		other.hp -= 1;
 	}
 	ScreenShake(2,10);
 	audio_play_sound(snd_Hit,5,false);
-	if(global.essence == 4)
+	alarm[0] = room_speed * 0.2;
+	pepperInItems = false;
+	for(i = 0; i < array_length(global.passiveItems); i++)
 	{
-		dmgMultiplier += 1.5;
+		if(global.passiveItems[i] == 16)
+		{
+			pepperInItems = true;
+		}
+	}
+	if(!pepperInItems)
+	{
+		instance_create_layer(x+2,y+2,"Enemies",oDirtExplosionVFX);
 	}
 	else
 	{
-		dmgMultiplier += 1;
+		SpawnPepperExplosion(x+2,y+2);
 	}
-	alarm[0] = room_speed * 0.2;
-	if(!SpawnPepperExplosion(x+2,y+2)) instance_create_layer(x+2,x+2,"Enemies",oDirtExplosionVFX);
+	
 	instance_destroy();
 }
 else
