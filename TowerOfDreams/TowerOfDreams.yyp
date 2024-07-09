@@ -851,6 +851,7 @@
     {"id":{"name":"sMushroom","path":"sprites/sMushroom/sMushroom.yy",},},
     {"id":{"name":"sMushroomJump","path":"sprites/sMushroomJump/sMushroomJump.yy",},},
     {"id":{"name":"sMushroomJumpOld","path":"sprites/sMushroomJumpOld/sMushroomJumpOld.yy",},},
+    {"id":{"name":"sNinja","path":"sprites/sNinja/sNinja.yy",},},
     {"id":{"name":"sNinjaUI","path":"sprites/sNinjaUI/sNinjaUI.yy",},},
     {"id":{"name":"sOptionsMenu","path":"sprites/sOptionsMenu/sOptionsMenu.yy",},},
     {"id":{"name":"sOptionsMenuDeletedSave","path":"sprites/sOptionsMenuDeletedSave/sOptionsMenuDeletedSave.yy",},},

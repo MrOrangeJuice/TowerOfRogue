@@ -786,6 +786,7 @@
     {"name":"sMushroom","order":45,"path":"sprites/sMushroom/sMushroom.yy",},
     {"name":"sMushroomJump","order":46,"path":"sprites/sMushroomJump/sMushroomJump.yy",},
     {"name":"sMushroomJumpOld","order":47,"path":"sprites/sMushroomJumpOld/sMushroomJumpOld.yy",},
+    {"name":"sNinja","order":65,"path":"sprites/sNinja/sNinja.yy",},
     {"name":"sNinjaUI","order":62,"path":"sprites/sNinjaUI/sNinjaUI.yy",},
     {"name":"sOptionsMenu","order":7,"path":"sprites/sOptionsMenu/sOptionsMenu.yy",},
     {"name":"sOptionsMenuDeletedSave","order":8,"path":"sprites/sOptionsMenuDeletedSave/sOptionsMenuDeletedSave.yy",},
