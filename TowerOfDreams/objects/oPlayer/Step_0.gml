@@ -1735,6 +1735,36 @@ if(!global.paused && !global.hitStop)
 				}
 			}
 			break;
+		// Ninja Star
+		case 33:
+			if(key_item_pressed)
+			{
+				// Shoot star
+				if(!instance_exists(oNinjaStar))
+				{
+					if(!wallSliding)
+					{
+						kunai = instance_create_layer(x+(4*image_xscale),y,"Walls",oNinjaStar);
+						kunai.initialDir = image_xscale;
+					}
+					else
+					{
+						kunai = instance_create_layer(x+(4*-image_xscale),y,"Walls",oNinjaStar);
+						kunai.initialDir = -image_xscale;
+					}
+				}
+				// Teleport
+				else
+				{
+					instance_create_layer(x,y,"UI",oSmokeVFX);
+					instance_create_layer(x,y,"Walls",oLog);
+					x = oNinjaStar.x;
+					y = oNinjaStar.y;
+					instance_destroy(oNinjaStar);
+					instance_create_layer(x,y,"UI",oSmokeVFX);
+				}
+			}
+			break;	
 	}
 
 	// Animation
