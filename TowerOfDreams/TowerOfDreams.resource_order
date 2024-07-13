@@ -952,6 +952,8 @@
     {"name":"sSlimeBlockLeftClose","order":3,"path":"sprites/sSlimeBlockLeftClose/sSlimeBlockLeftClose.yy",},
     {"name":"sSlimeBlockRight","order":4,"path":"sprites/sSlimeBlockRight/sSlimeBlockRight.yy",},
     {"name":"sSlimeBlockRightClose","order":5,"path":"sprites/sSlimeBlockRightClose/sSlimeBlockRightClose.yy",},
+    {"name":"sSmallExplosionVFX","order":53,"path":"sprites/sSmallExplosionVFX/sSmallExplosionVFX.yy",},
+    {"name":"sSmokeVFX","order":54,"path":"sprites/sSmokeVFX/sSmokeVFX.yy",},
     {"name":"sSpikeBox","order":21,"path":"sprites/sSpikeBox/sSpikeBox.yy",},
     {"name":"sSpikeDebug","order":2,"path":"sprites/sSpikeDebug/sSpikeDebug.yy",},
     {"name":"sSpottedVFX","order":24,"path":"sprites/sSpottedVFX/sSpottedVFX.yy",},
