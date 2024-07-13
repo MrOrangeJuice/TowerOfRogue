@@ -763,6 +763,7 @@
     {"name":"sLever","order":28,"path":"sprites/sLever/sLever.yy",},
     {"name":"sLightUI","order":24,"path":"sprites/sLightUI/sLightUI.yy",},
     {"name":"sLock","order":37,"path":"sprites/sLock/sLock.yy",},
+    {"name":"sLog","order":66,"path":"sprites/sLog/sLog.yy",},
     {"name":"sLogoBig","order":14,"path":"sprites/sLogoBig/sLogoBig.yy",},
     {"name":"sMagnetUI","order":15,"path":"sprites/sMagnetUI/sMagnetUI.yy",},
     {"name":"sMainMenu","order":6,"path":"sprites/sMainMenu/sMainMenu.yy",},

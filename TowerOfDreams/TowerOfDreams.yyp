@@ -91,7 +91,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.6.0.157",
+    "IDEVersion":"2024.6.1.160",
   },
   "name":"TowerOfDreams",
   "resources":[
@@ -825,6 +825,7 @@
     {"id":{"name":"sLever","path":"sprites/sLever/sLever.yy",},},
     {"id":{"name":"sLightUI","path":"sprites/sLightUI/sLightUI.yy",},},
     {"id":{"name":"sLock","path":"sprites/sLock/sLock.yy",},},
+    {"id":{"name":"sLog","path":"sprites/sLog/sLog.yy",},},
     {"id":{"name":"sLogo","path":"sprites/sLogo/sLogo.yy",},},
     {"id":{"name":"sLogoBig","path":"sprites/sLogoBig/sLogoBig.yy",},},
     {"id":{"name":"sMagnetUI","path":"sprites/sMagnetUI/sMagnetUI.yy",},},
