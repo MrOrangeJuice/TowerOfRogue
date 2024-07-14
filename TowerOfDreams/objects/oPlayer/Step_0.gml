@@ -1757,11 +1757,18 @@ if(!global.paused && !global.hitStop)
 				else
 				{
 					instance_create_layer(x,y,"UI",oSmokeVFX);
+					// Spawn an extra log
+					if(global.essence == 4)
+					{
+						instance_create_layer(x,y,"Walls",oLog);
+					}
 					instance_create_layer(x,y,"Walls",oLog);
 					x = oNinjaStar.x;
 					y = oNinjaStar.y;
 					instance_destroy(oNinjaStar);
 					instance_create_layer(x,y,"UI",oSmokeVFX);
+					ScreenShake(1,5);
+					audio_play_sound(snd_Teleport,5,false);
 				}
 			}
 			break;	

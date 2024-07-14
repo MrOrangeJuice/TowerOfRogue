@@ -810,6 +810,7 @@
     {"id":{"name":"sItemParticle","path":"sprites/sItemParticle/sItemParticle.yy",},},
     {"id":{"name":"sItemUI","path":"sprites/sItemUI/sItemUI.yy",},},
     {"id":{"name":"sItemVFX","path":"sprites/sItemVFX/sItemVFX.yy",},},
+    {"id":{"name":"sItemx2VFX","path":"sprites/sItemx2VFX/sItemx2VFX.yy",},},
     {"id":{"name":"sJump","path":"sprites/sJump/sJump.yy",},},
     {"id":{"name":"sJumpController","path":"sprites/sJumpController/sJumpController.yy",},},
     {"id":{"name":"sJumpControllerPS","path":"sprites/sJumpControllerPS/sJumpControllerPS.yy",},},
