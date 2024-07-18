@@ -1711,6 +1711,11 @@ if(!global.paused && !global.hitStop)
 							audio_play_sound(snd_Block,5,false);
 							instance_create_layer(x + blockOffset + (hsp*2),y,"Walls",oBlockathan);
 						}
+						else
+						{
+							ScreenShake(1,5);	
+							audio_play_sound(snd_BlockFail,5,false);
+						}
 					}
 					// Left facing
 					else if(image_xscale < 0)
@@ -1720,6 +1725,11 @@ if(!global.paused && !global.hitStop)
 							blockCursorCooldown = 20;
 							audio_play_sound(snd_Block,5,false);
 							instance_create_layer(x - blockOffset + (hsp*2),y,"Walls",oBlockathan);
+						}
+						else
+						{
+							ScreenShake(1,5);	
+							audio_play_sound(snd_BlockFail,5,false);
 						}
 					}
 				}
@@ -1731,6 +1741,11 @@ if(!global.paused && !global.hitStop)
 						blockCursorCooldown = 20;
 						audio_play_sound(snd_Block,5,false);
 						instance_create_layer(x + (hsp*2),y + blockOffset + (vsp*2),"Walls",oBlockathan);
+					}
+					else
+					{
+						ScreenShake(1,5);	
+						audio_play_sound(snd_BlockFail,5,false);
 					}
 				}
 			}

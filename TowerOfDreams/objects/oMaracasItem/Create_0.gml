@@ -5,4 +5,4 @@ event_inherited();
 passive = true;
 itemPassiveId = 23;
 itemName = "Mitosis Maracas";
-itemDesc = "Doubles every third passive item";
+itemDesc = "x2 every third passive item";

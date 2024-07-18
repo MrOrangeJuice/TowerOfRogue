@@ -91,7 +91,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.6.1.160",
+    "IDEVersion":"2024.6.2.162",
   },
   "name":"TowerOfDreams",
   "resources":[
@@ -268,6 +268,7 @@
     {"id":{"name":"oItemTutorialFadeIn","path":"objects/oItemTutorialFadeIn/oItemTutorialFadeIn.yy",},},
     {"id":{"name":"oItemUpParticle","path":"objects/oItemUpParticle/oItemUpParticle.yy",},},
     {"id":{"name":"oItemVFX","path":"objects/oItemVFX/oItemVFX.yy",},},
+    {"id":{"name":"oItemx2VFX","path":"objects/oItemx2VFX/oItemx2VFX.yy",},},
     {"id":{"name":"oJumpTutorial","path":"objects/oJumpTutorial/oJumpTutorial.yy",},},
     {"id":{"name":"oKunai","path":"objects/oKunai/oKunai.yy",},},
     {"id":{"name":"oKunaiExplosionVFX","path":"objects/oKunaiExplosionVFX/oKunaiExplosionVFX.yy",},},

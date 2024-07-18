@@ -42,6 +42,7 @@ if(key_select_pressed)
 	global.passiveItems = [];
 	global.levelCount = 0;
 	global.gobletCombo = 0;
+	global.maracasCombo = 0;
 	global.shopItem1 = -1;
 	global.shopItem2 = -1;
 	global.shopItem3 = -1;

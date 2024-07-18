@@ -40,6 +40,32 @@ if(other.canGrab)
 	// Passive item
 	else
 	{
+		// Check for maracas duplication first
+		maracas = false;
+		maracasNum = 0;
+		for(i = 0; i < array_length(global.passiveItems); i++)
+		{
+			if(global.passiveItems[i] == 23)
+			{
+				maracas = true;
+				maracasNum++;
+			}
+		}
+		
+		if(maracas)
+		{
+			instance_create_layer(x,y-16,"Instances",global.maracasVFX[global.maracasCombo]);
+			global.maracasCombo++;
+			if(global.maracasCombo >= 3)
+			{
+				for(i = 0; i < maracasNum; i++)
+				{
+					array_push(global.passiveItems,other.itemPassiveId);
+				}
+				global.maracasCombo = 0;
+			}
+		}
+		
 		with(oGame) passiveItemTextScale = 1.3;
 		array_push(global.passiveItems,other.itemPassiveId);
 		// Create item pop up

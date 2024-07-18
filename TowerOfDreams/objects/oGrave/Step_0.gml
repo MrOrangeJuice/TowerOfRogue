@@ -61,6 +61,7 @@ if(global.essence != 3 || (global.essence == 3 && !global.zombieRevive))
 		global.pipeY = 0;
 		global.shopY = 0;
 		global.gobletCombo = 0;
+		global.maracasCombo = 0;
 		global.floor1Music = false;
 		global.tutorialMusic = false;
 		global.shopItem1 = -1;

@@ -241,6 +241,7 @@
     {"name":"oItemTutorialFadeIn","order":5,"path":"objects/oItemTutorialFadeIn/oItemTutorialFadeIn.yy",},
     {"name":"oItemUpParticle","order":43,"path":"objects/oItemUpParticle/oItemUpParticle.yy",},
     {"name":"oItemVFX","order":9,"path":"objects/oItemVFX/oItemVFX.yy",},
+    {"name":"oItemx2VFX","order":61,"path":"objects/oItemx2VFX/oItemx2VFX.yy",},
     {"name":"oJumpTutorial","order":2,"path":"objects/oJumpTutorial/oJumpTutorial.yy",},
     {"name":"oKunai","order":2,"path":"objects/oKunai/oKunai.yy",},
     {"name":"oKunaiExplosionVFX","order":53,"path":"objects/oKunaiExplosionVFX/oKunaiExplosionVFX.yy",},
