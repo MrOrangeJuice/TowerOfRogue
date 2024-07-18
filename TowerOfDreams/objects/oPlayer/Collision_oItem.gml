@@ -58,6 +58,7 @@ if(other.canGrab)
 			global.maracasCombo++;
 			if(global.maracasCombo >= 3)
 			{
+				audio_play_sound(snd_DoubleItem,5,false);
 				for(i = 0; i < maracasNum; i++)
 				{
 					array_push(global.passiveItems,other.itemPassiveId);

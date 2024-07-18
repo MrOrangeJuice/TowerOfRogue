@@ -442,6 +442,7 @@
     {"name":"snd_Dash","order":44,"path":"sounds/snd_Dash/snd_Dash.yy",},
     {"name":"snd_Dig","order":82,"path":"sounds/snd_Dig/snd_Dig.yy",},
     {"name":"snd_Door","order":15,"path":"sounds/snd_Door/snd_Door.yy",},
+    {"name":"snd_DoubleItem","order":85,"path":"sounds/snd_DoubleItem/snd_DoubleItem.yy",},
     {"name":"snd_Dream","order":57,"path":"sounds/snd_Dream/snd_Dream.yy",},
     {"name":"snd_Dropitem","order":58,"path":"sounds/snd_Dropitem/snd_Dropitem.yy",},
     {"name":"snd_Drumroll","order":53,"path":"sounds/snd_Drumroll/snd_Drumroll.yy",},

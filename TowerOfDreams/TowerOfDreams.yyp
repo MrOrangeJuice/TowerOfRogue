@@ -486,6 +486,7 @@
     {"id":{"name":"snd_Dash","path":"sounds/snd_Dash/snd_Dash.yy",},},
     {"id":{"name":"snd_Dig","path":"sounds/snd_Dig/snd_Dig.yy",},},
     {"id":{"name":"snd_Door","path":"sounds/snd_Door/snd_Door.yy",},},
+    {"id":{"name":"snd_DoubleItem","path":"sounds/snd_DoubleItem/snd_DoubleItem.yy",},},
     {"id":{"name":"snd_Dream","path":"sounds/snd_Dream/snd_Dream.yy",},},
     {"id":{"name":"snd_Dropitem","path":"sounds/snd_Dropitem/snd_Dropitem.yy",},},
     {"id":{"name":"snd_Drumroll","path":"sounds/snd_Drumroll/snd_Drumroll.yy",},},
