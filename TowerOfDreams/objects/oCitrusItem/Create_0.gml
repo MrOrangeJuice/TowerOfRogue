@@ -4,5 +4,5 @@ event_inherited();
 
 passive = true;
 itemPassiveId = 22;
-itemName = "Ring of Interest";
-itemDesc = "Earn interest on gems";
+itemName = "Speed Citrus";
+itemDesc = "Strike ground for speed ";

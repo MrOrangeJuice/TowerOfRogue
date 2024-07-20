@@ -518,6 +518,8 @@ if(!global.paused && !global.hitStop)
 			bagNum = 0;
 			rocks = false;
 			rockNum = 0;
+			citrus = false;
+			citrusNum = 0;
 			for(i = 0; i < array_length(global.passiveItems); i++)
 			{
 				if(global.passiveItems[i] == 0)
@@ -534,6 +536,11 @@ if(!global.paused && !global.hitStop)
 					rocks = true;
 					rockNum++;
 				}
+				if(global.passiveItems[i] == 22)
+				{
+					citrus = true;
+					citrusNum++;
+				}
 			}
 			
 			// Push player up
@@ -541,7 +548,51 @@ if(!global.paused && !global.hitStop)
 			{
 				y -= 1;	
 			}
-			vsp = -(3+bagNum);	
+			vsp = -(3+bagNum);
+			if(citrus)
+			{
+				if(key_right && key_left)
+				{
+					
+				}
+				else if(key_right)
+				{
+					audio_play_sound(snd_Winds,5,false);
+					walksp = (1 + citrusNum + citrusBoosts);
+					currentwalksp = walksp;
+					citrusBoost = true;
+					citrusBoosts++;
+					initialCitrusDir = sign(currentwalksp);
+					instance_create_layer(x,y,"CoinVFX",oFastJumpVFX);
+				}
+				else if(key_left)
+				{
+					audio_play_sound(snd_Winds,5,false);
+					walksp = (1 + citrusNum + citrusBoosts);
+					currentwalksp = -walksp;
+					citrusBoost = true;
+					citrusBoosts++;
+					initialCitrusDir = sign(currentwalksp);
+					instance_create_layer(x,y,"CoinVFX",oFastJumpLeftVFX);
+				}
+				else if(currentwalksp != 0)
+				{
+					audio_play_sound(snd_Winds,5,false);
+					walksp = (1 + citrusNum + citrusBoosts);
+					currentwalksp = sign(currentwalksp) * walksp;
+					citrusBoost = true;
+					citrusBoosts++;
+					initialCitrusDir = sign(currentwalksp);
+					if(initialCitrusDir > 0)
+					{
+						instance_create_layer(x,y,"CoinVFX",oFastJumpLeftVFX);
+					}
+					else
+					{
+						instance_create_layer(x,y,"CoinVFX",oFastJumpVFX);
+					}
+				}
+			}
 			if(chargeSlash)
 			{
 				instance_create_layer(x,y+6,"UI",oDustSlashGreen);
@@ -1072,6 +1123,32 @@ if(!global.paused && !global.hitStop)
 		}
 	}
 	
+	// Reset citrus speed in midair
+	if(airborne && citrusBoost)
+	{
+		if(initialCitrusDir == 1 && key_left)
+		{
+			walksp = 1;
+			initialCitrusDir = 0;
+			citrusBoost = false;
+			citrusBoosts = 0;
+		}
+		else if(initialCitrusDir == -1 && key_right)
+		{
+			walksp = 1;
+			initialCitrusDir = 0;
+			citrusBoost = false;
+			citrusBoosts = 0;
+		}
+		else if(sign(currentwalksp) != initialCitrusDir)
+		{
+			walksp = 1;
+			initialCitrusDir = 0;
+			citrusBoost = false;
+			citrusBoosts = 0;
+		}
+	}
+	
 	// Extra Jump
 	if (global.item == 8) && (key_item_pressed) && (extraJump) && (!wallSliding)
 	{
@@ -1315,6 +1392,14 @@ if(!global.paused && !global.hitStop)
 			walksp = 1;
 			initialConveyerRunDir = 0;
 			conveyerBoost = false;
+		}
+		// Reset citrus boost on landing
+		if(citrusBoost)
+		{
+			walksp = 1;
+			initialCitrusDir = 0;
+			citrusBoost = false;
+			citrusBoosts = 0;
 		}
 		upConveyerBoost = false;
 		lavaBoost = false;
