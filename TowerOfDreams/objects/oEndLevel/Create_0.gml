@@ -15,6 +15,7 @@ rank = false;
 rankLetter = false;
 perfectRank = false;
 continutePrompt = false;
+interestPrompt = false;
 
 levelProgressed = false;
 
