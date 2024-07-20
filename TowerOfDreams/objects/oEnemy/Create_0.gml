@@ -16,7 +16,7 @@ rabbitInItems = false;
 rabbitNum = 0;
 for(i = 0; i < array_length(global.passiveItems); i++)
 {
-	if(global.passiveItems[i] == 18)
+	if(global.passiveItems[i] == 19)
 	{
 		rabbitInItems = true;
 		rabbitNum++;
