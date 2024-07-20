@@ -558,7 +558,7 @@ if(!global.paused && !global.hitStop)
 				else if(key_right)
 				{
 					audio_play_sound(snd_Winds,5,false);
-					walksp = (1 + citrusNum + citrusBoosts);
+					walksp = (1 + ((citrusNum + citrusBoosts) * 0.5));
 					currentwalksp = walksp;
 					citrusBoost = true;
 					citrusBoosts++;
@@ -568,7 +568,7 @@ if(!global.paused && !global.hitStop)
 				else if(key_left)
 				{
 					audio_play_sound(snd_Winds,5,false);
-					walksp = (1 + citrusNum + citrusBoosts);
+					walksp = (1 + ((citrusNum + citrusBoosts) * 0.5));
 					currentwalksp = -walksp;
 					citrusBoost = true;
 					citrusBoosts++;
@@ -578,7 +578,7 @@ if(!global.paused && !global.hitStop)
 				else if(currentwalksp != 0)
 				{
 					audio_play_sound(snd_Winds,5,false);
-					walksp = (1 + citrusNum + citrusBoosts);
+					walksp = (1 + ((citrusNum + citrusBoosts) * 0.5));
 					currentwalksp = sign(currentwalksp) * walksp;
 					citrusBoost = true;
 					citrusBoosts++;
