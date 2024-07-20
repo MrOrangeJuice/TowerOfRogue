@@ -13,11 +13,11 @@ if(!other.invincible)
 	other.flash = 5;
 	if(global.essence == 4)
 	{
-		other.hp -= 1;
+		other.hp -= 2;
 	}
 	else
 	{
-		other.hp -= 0.5;
+		other.hp -= 1;
 	}
 	audio_play_sound(snd_Hit,5,false);
 }
