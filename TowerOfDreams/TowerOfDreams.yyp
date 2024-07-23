@@ -983,6 +983,7 @@
     {"id":{"name":"sRemoteUI","path":"sprites/sRemoteUI/sRemoteUI.yy",},},
     {"id":{"name":"sReplayTutorial","path":"sprites/sReplayTutorial/sReplayTutorial.yy",},},
     {"id":{"name":"sRichard","path":"sprites/sRichard/sRichard.yy",},},
+    {"id":{"name":"sRichardTalk","path":"sprites/sRichardTalk/sRichardTalk.yy",},},
     {"id":{"name":"sRightConveyer","path":"sprites/sRightConveyer/sRightConveyer.yy",},},
     {"id":{"name":"sRightSpray","path":"sprites/sRightSpray/sRightSpray.yy",},},
     {"id":{"name":"sRunCompleteAnimated","path":"sprites/sRunCompleteAnimated/sRunCompleteAnimated.yy",},},

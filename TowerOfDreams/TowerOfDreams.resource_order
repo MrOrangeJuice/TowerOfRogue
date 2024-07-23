@@ -913,6 +913,7 @@
     {"name":"sRemoteUI","order":42,"path":"sprites/sRemoteUI/sRemoteUI.yy",},
     {"name":"sReplayTutorial","order":11,"path":"sprites/sReplayTutorial/sReplayTutorial.yy",},
     {"name":"sRichard","order":3,"path":"sprites/sRichard/sRichard.yy",},
+    {"name":"sRichardTalk","order":9,"path":"sprites/sRichardTalk/sRichardTalk.yy",},
     {"name":"sRightConveyer","order":20,"path":"sprites/sRightConveyer/sRightConveyer.yy",},
     {"name":"sRunCompleteAnimated","order":29,"path":"sprites/sRunCompleteAnimated/sRunCompleteAnimated.yy",},
     {"name":"sRunCompleteAnimatedNightmare","order":39,"path":"sprites/sRunCompleteAnimatedNightmare/sRunCompleteAnimatedNightmare.yy",},
