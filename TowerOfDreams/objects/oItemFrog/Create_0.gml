@@ -13,3 +13,4 @@ playerHasNoItem = false;
 if(global.item == -1) playerHasNoItem = true;
 
 phrases = ["I love\nactive items!","Active items\nare tasty!","Feed me\nactive items!","I crave\nactive items!"];
+prevPhrase = "";

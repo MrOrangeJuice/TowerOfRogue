@@ -811,6 +811,7 @@
     {"id":{"name":"sItemBox","path":"sprites/sItemBox/sItemBox.yy",},},
     {"id":{"name":"sItemBubble","path":"sprites/sItemBubble/sItemBubble.yy",},},
     {"id":{"name":"sItemFrog","path":"sprites/sItemFrog/sItemFrog.yy",},},
+    {"id":{"name":"sItemFrogTalk","path":"sprites/sItemFrogTalk/sItemFrogTalk.yy",},},
     {"id":{"name":"sItemFrogTongue","path":"sprites/sItemFrogTongue/sItemFrogTongue.yy",},},
     {"id":{"name":"sItemParticle","path":"sprites/sItemParticle/sItemParticle.yy",},},
     {"id":{"name":"sItemUI","path":"sprites/sItemUI/sItemUI.yy",},},

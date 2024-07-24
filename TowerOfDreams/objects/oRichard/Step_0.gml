@@ -6,7 +6,12 @@ if(place_meeting(x,y,oPlayer))
 	{
 		colliding = true;
 		// Regenerate phrase
-		signMessage = phrases[random_range(0,array_length(phrases))];
+		signMessage = phrases[random_range(0,array_length(phrases))];	
+		while(signMessage == prevPhrase)
+		{
+			signMessage = phrases[random_range(0,array_length(phrases))];		
+		}
+		prevPhrase = signMessage;
 		// Start talking animation
 		sprite_index = sRichardTalk;
 		image_index = 0;

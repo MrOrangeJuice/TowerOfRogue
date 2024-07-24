@@ -751,6 +751,7 @@
     {"name":"sItemBox","order":9,"path":"sprites/sItemBox/sItemBox.yy",},
     {"name":"sItemBubble","order":9,"path":"sprites/sItemBubble/sItemBubble.yy",},
     {"name":"sItemFrog","order":6,"path":"sprites/sItemFrog/sItemFrog.yy",},
+    {"name":"sItemFrogTalk","order":10,"path":"sprites/sItemFrogTalk/sItemFrogTalk.yy",},
     {"name":"sItemFrogTongue","order":7,"path":"sprites/sItemFrogTongue/sItemFrogTongue.yy",},
     {"name":"sItemParticle","order":38,"path":"sprites/sItemParticle/sItemParticle.yy",},
     {"name":"sItemUI","order":10,"path":"sprites/sItemUI/sItemUI.yy",},
