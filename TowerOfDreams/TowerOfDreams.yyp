@@ -996,6 +996,7 @@
     {"id":{"name":"sSageThumbnailBig","path":"sprites/sSageThumbnailBig/sSageThumbnailBig.yy",},},
     {"id":{"name":"sSageThumbnailItch","path":"sprites/sSageThumbnailItch/sSageThumbnailItch.yy",},},
     {"id":{"name":"sSageThumbnailItchBig","path":"sprites/sSageThumbnailItchBig/sSageThumbnailItchBig.yy",},},
+    {"id":{"name":"sSawblade","path":"sprites/sSawblade/sSawblade.yy",},},
     {"id":{"name":"sScytheUI","path":"sprites/sScytheUI/sScytheUI.yy",},},
     {"id":{"name":"sSellItem","path":"sprites/sSellItem/sSellItem.yy",},},
     {"id":{"name":"sSellItemController","path":"sprites/sSellItemController/sSellItemController.yy",},},
