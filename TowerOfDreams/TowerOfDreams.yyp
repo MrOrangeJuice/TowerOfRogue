@@ -323,6 +323,7 @@
     {"id":{"name":"oRichard","path":"objects/oRichard/oRichard.yy",},},
     {"id":{"name":"oRightConveyer","path":"objects/oRightConveyer/oRightConveyer.yy",},},
     {"id":{"name":"oRunComplete","path":"objects/oRunComplete/oRunComplete.yy",},},
+    {"id":{"name":"oSawBladeEnemyHusk","path":"objects/oSawBladeEnemyHusk/oSawBladeEnemyHusk.yy",},},
     {"id":{"name":"oSellItemTutorial","path":"objects/oSellItemTutorial/oSellItemTutorial.yy",},},
     {"id":{"name":"oSellItemTutorialFadeIn","path":"objects/oSellItemTutorialFadeIn/oSellItemTutorialFadeIn.yy",},},
     {"id":{"name":"oShieldItem","path":"objects/oShieldItem/oShieldItem.yy",},},

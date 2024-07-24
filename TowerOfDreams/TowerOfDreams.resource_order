@@ -295,6 +295,7 @@
     {"name":"oRichard","order":1,"path":"objects/oRichard/oRichard.yy",},
     {"name":"oRightConveyer","order":15,"path":"objects/oRightConveyer/oRightConveyer.yy",},
     {"name":"oRunComplete","order":2,"path":"objects/oRunComplete/oRunComplete.yy",},
+    {"name":"oSawBladeEnemyHusk","order":36,"path":"objects/oSawBladeEnemyHusk/oSawBladeEnemyHusk.yy",},
     {"name":"oSellItemTutorial","order":10,"path":"objects/oSellItemTutorial/oSellItemTutorial.yy",},
     {"name":"oSellItemTutorialFadeIn","order":11,"path":"objects/oSellItemTutorialFadeIn/oSellItemTutorialFadeIn.yy",},
     {"name":"oShieldItem","order":28,"path":"objects/oShieldItem/oShieldItem.yy",},
