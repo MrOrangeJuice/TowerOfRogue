@@ -61,6 +61,31 @@ if(!global.paused && !global.hitStop)
 
 	x += (xDir * initialSpeed);
 	y += (yDir * initialSpeed);
+	
+	// Make particles
+	bit = instance_create_layer(x+random_range(-4,4),y+random_range(-4,4),"Walls",oLavaBit);
+	bit.vsp = -1;
+	if(xDir == -1)
+	{
+		if(place_meeting(x,y+14,oWall)) bit.direction = random_range(0, 45);
+		else if(place_meeting(x,y-14,oWall)) bit.direction = random_range(315,360);
+	}
+	else if(xDir == 1)
+	{
+		if(place_meeting(x,y+14,oWall)) bit.direction = random_range(135, 180);
+		else if(place_meeting(x,y-14,oWall)) bit.direction = random_range(180,225);
+	}
+	else if(yDir == -1)
+	{
+		if(place_meeting(x+14,y,oWall)) bit.direction = random_range(225, 270);
+		else if(place_meeting(x-14,y,oWall)) bit.direction = random_range(270,315);
+	}
+	else if(yDir == 1)
+	{
+		if(place_meeting(x+14,y,oWall)) bit.direction = random_range(90, 135);
+		else if(place_meeting(x-14,y,oWall)) bit.direction = random_range(45,90);
+	}
+	
 }
 else
 {

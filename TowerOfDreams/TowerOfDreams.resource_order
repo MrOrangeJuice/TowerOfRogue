@@ -926,6 +926,7 @@
     {"name":"sSageThumbnailItch","order":35,"path":"sprites/sSageThumbnailItch/sSageThumbnailItch.yy",},
     {"name":"sSageThumbnailItchBig","order":36,"path":"sprites/sSageThumbnailItchBig/sSageThumbnailItchBig.yy",},
     {"name":"sSawblade","order":35,"path":"sprites/sSawblade/sSawblade.yy",},
+    {"name":"sSawbladeRight","order":36,"path":"sprites/sSawbladeRight/sSawbladeRight.yy",},
     {"name":"sScytheUI","order":16,"path":"sprites/sScytheUI/sScytheUI.yy",},
     {"name":"sSellItem","order":21,"path":"sprites/sSellItem/sSellItem.yy",},
     {"name":"sSellItemController","order":22,"path":"sprites/sSellItemController/sSellItemController.yy",},
