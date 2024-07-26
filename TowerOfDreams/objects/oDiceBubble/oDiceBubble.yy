@@ -8,8 +8,8 @@
   "managed":true,
   "name":"oDiceBubble",
   "overriddenProperties":[
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oItemBubble","path":"objects/oItemBubble/oItemBubble.yy",},"propertyId":{"name":"bubbleNum","path":"objects/oItemBubble/oItemBubble.yy",},"resource":null,"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"0",},
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oItemBubble","path":"objects/oItemBubble/oItemBubble.yy",},"propertyId":{"name":"dir","path":"objects/oItemBubble/oItemBubble.yy",},"resource":null,"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"-1",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oItemBubble","path":"objects/oItemBubble/oItemBubble.yy",},"propertyId":{"name":"bubbleNum","path":"objects/oItemBubble/oItemBubble.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"0",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oItemBubble","path":"objects/oItemBubble/oItemBubble.yy",},"propertyId":{"name":"dir","path":"objects/oItemBubble/oItemBubble.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"-1",},
   ],
   "parent":{
     "name":"Items",
