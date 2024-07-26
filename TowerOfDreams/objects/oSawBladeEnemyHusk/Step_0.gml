@@ -4,7 +4,7 @@ event_inherited();
 
 if(!global.paused && !global.hitStop)
 {
-	image_speed = 1;
+	image_speed = initialSpeed;
 
 	// If no ground in front of you change direction
 	if (!place_meeting(x+(turnCheck*xDir),y,oWall) && xDir != 0)
