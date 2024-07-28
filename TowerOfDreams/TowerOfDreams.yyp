@@ -393,6 +393,7 @@
     {"id":{"name":"rFloor3_1","path":"rooms/rFloor3_1/rFloor3_1.yy",},},
     {"id":{"name":"rFloor3_2","path":"rooms/rFloor3_2/rFloor3_2.yy",},},
     {"id":{"name":"rFloor3_3","path":"rooms/rFloor3_3/rFloor3_3.yy",},},
+    {"id":{"name":"rFloor3_4","path":"rooms/rFloor3_4/rFloor3_4.yy",},},
     {"id":{"name":"rFloor4_1","path":"rooms/rFloor4_1/rFloor4_1.yy",},},
     {"id":{"name":"rHub","path":"rooms/rHub/rHub.yy",},},
     {"id":{"name":"rHubShop","path":"rooms/rHubShop/rHubShop.yy",},},
@@ -1158,6 +1159,7 @@
     {"roomId":{"name":"rShop2Floor3","path":"rooms/rShop2Floor3/rShop2Floor3.yy",},},
     {"roomId":{"name":"rFloor3_3","path":"rooms/rFloor3_3/rFloor3_3.yy",},},
     {"roomId":{"name":"rBonusItem","path":"rooms/rBonusItem/rBonusItem.yy",},},
+    {"roomId":{"name":"rFloor3_4","path":"rooms/rFloor3_4/rFloor3_4.yy",},},
   ],
   "templateType":null,
   "TextureGroups":[

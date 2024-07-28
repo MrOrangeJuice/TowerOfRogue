@@ -358,6 +358,7 @@
     {"name":"rFloor2_5","order":4,"path":"rooms/rFloor2_5/rFloor2_5.yy",},
     {"name":"rFloor3_2","order":1,"path":"rooms/rFloor3_2/rFloor3_2.yy",},
     {"name":"rFloor3_3","order":2,"path":"rooms/rFloor3_3/rFloor3_3.yy",},
+    {"name":"rFloor3_4","order":3,"path":"rooms/rFloor3_4/rFloor3_4.yy",},
     {"name":"rHub","order":5,"path":"rooms/rHub/rHub.yy",},
     {"name":"rHubShop","order":13,"path":"rooms/rHubShop/rHubShop.yy",},
     {"name":"rRoomTemplate","order":9,"path":"rooms/rRoomTemplate/rRoomTemplate.yy",},

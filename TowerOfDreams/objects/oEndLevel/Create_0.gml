@@ -93,6 +93,9 @@ switch(room)
 	case rFloor2_4:
 		if(RankIsBetter(yourRank, global.best2_4)) global.best2_4 = yourRank;
 		break;
+	case rFloor2_5:
+		if(RankIsBetter(yourRank, global.best2_5)) global.best2_5 = yourRank;
+		break;
 	case rFloor3_1:
 		if(RankIsBetter(yourRank, global.best3_1)) global.best3_1 = yourRank;
 		break;
@@ -101,6 +104,9 @@ switch(room)
 		break;
 	case rFloor3_3:
 		if(RankIsBetter(yourRank, global.best3_3)) global.best3_3 = yourRank;
+		break;
+	case rFloor3_4:
+		if(RankIsBetter(yourRank, global.best3_4)) global.best3_4 = yourRank;
 		break;
 }
 

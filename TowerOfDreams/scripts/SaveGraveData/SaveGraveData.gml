@@ -104,6 +104,11 @@ function SaveGraveData(argument0,argument1){
 			global.graveY2_4 = argument1;
 			global.graveItem2_4 = item;
 			break;
+		case rFloor2_5:
+			global.graveX2_5 = argument0;
+			global.graveY2_5 = argument1;
+			global.graveItem2_5 = item;
+			break;
 		case rFloor3_1:
 			global.graveX3_1 = argument0;
 			global.graveY3_1 = argument1;
@@ -118,6 +123,11 @@ function SaveGraveData(argument0,argument1){
 			global.graveX3_3 = argument0;
 			global.graveY3_3 = argument1;
 			global.graveItem3_3 = item;
+			break;
+		case rFloor3_4:
+			global.graveX3_4 = argument0;
+			global.graveY3_4 = argument1;
+			global.graveItem3_4 = item;
 			break;
 	}
 	Save();

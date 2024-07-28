@@ -38,7 +38,7 @@ global.shopRoomArray = [rShop,rShop2];
 global.shopRoomArray2 = [rShopFloor2,rShop2Floor2];
 global.shopRoomArray3 = [rShopFloor3,rShop2Floor3];
 global.levelArray = [rFloor1_1,rFloor1_2,rFloor1_3,rFloor1_4,rFloor1_5,rFloor1_6];
-global.levelArray2 = [rFloor2_1,rFloor2_2,rFloor2_3,rFloor2_4];
+global.levelArray2 = [rFloor2_1,rFloor2_2,rFloor2_3,rFloor2_4,rFloor2_5];
 global.levelArray3 = [rFloor3_1,rFloor3_2,rFloor3_3];
 global.usedArray = [false,false,false,false,false,false,false,false,false,false];
 global.usedArray2 = [false,false,false,false,false,false,false,false,false,false];
@@ -111,9 +111,11 @@ global.best2_1 = "F";
 global.best2_2 = "F";
 global.best2_3 = "F";
 global.best2_4 = "F";
+global.best2_5 = "F";
 global.best3_1 = "F";
 global.best3_2 = "F";
 global.best3_3 = "F";
+global.best3_4 = "F";
 global.bestOverall = "F";
 
 // Grave data
@@ -159,6 +161,10 @@ global.graveX2_4 = 0;
 global.graveY2_4 = 0;
 global.graveItem2_4 = -1;
 
+global.graveX2_5 = 0;
+global.graveY2_5 = 0;
+global.graveItem2_5 = -1;
+
 // Floor 3
 global.graveX3_1 = 0;
 global.graveY3_1 = 0;
@@ -171,6 +177,10 @@ global.graveItem3_2 = -1;
 global.graveX3_3 = 0;
 global.graveY3_3 = 0;
 global.graveItem3_3 = -1;
+
+global.graveX3_4 = 0;
+global.graveY3_4 = 0;
+global.graveItem3_4 = -1;
 
 // Armor sets
 global.palette = 0;
