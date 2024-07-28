@@ -26,33 +26,33 @@ if(!global.paused && !global.hitStop)
 	// Reverse direction if you hit a wall
 	// Horizontal Collision
 	// If wall you're on is below you
-	if(place_meeting(x,y+14,oWall) && xDir != 0)
+	if(place_meeting(x,y+wallCheck,oWall) && xDir != 0)
 	{
-		if (place_meeting(x,y-14,oWall) && xDir != 0)
+		if (place_meeting(x,y-wallCheck,oWall) && xDir != 0)
 		{
 			xDir *= -1;
 		}
 	}
 	// If wall you're on is above you
-	else if(place_meeting(x,y-14,oWall) && xDir != 0)
+	else if(place_meeting(x,y-wallCheck,oWall) && xDir != 0)
 	{
-		if (place_meeting(x,y+14,oWall) && xDir != 0)
+		if (place_meeting(x,y+wallCheck,oWall) && xDir != 0)
 		{
 			xDir *= -1;
 		}
 	}
 	
 	// Vertical Collision
-	if(place_meeting(x+14,y,oWall) && yDir != 0)
+	if(place_meeting(x+wallCheck,y,oWall) && yDir != 0)
 	{
-		if (place_meeting(x-14,y,oWall) && yDir != 0)
+		if (place_meeting(x-wallCheck,y,oWall) && yDir != 0)
 		{
 			yDir *= -1;
 		}
 	}
-	else if(place_meeting(x-14,y,oWall) && yDir != 0)
+	else if(place_meeting(x-wallCheck,y,oWall) && yDir != 0)
 	{
-		if (place_meeting(x+14,y,oWall) && yDir != 0)
+		if (place_meeting(x+wallCheck,y,oWall) && yDir != 0)
 		{
 			yDir *= -1;
 		}
