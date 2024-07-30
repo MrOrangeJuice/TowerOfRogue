@@ -30,7 +30,15 @@ else
 			global.passiveItems = [];
 			global.levelCount = 3;
 			global.armor = 0;
-			PickNextLevel();
+			if(global.itemUpgrades <= 0)
+			{
+				PickNextLevel();
+			}
+			else
+			{
+				SlideTransition(TRANS_MODE.GOTO,rBonusItem);
+				audio_stop_sound(msc_Hub);
+			}
 		}
 		else if(yellow)
 		{
@@ -39,7 +47,15 @@ else
 			global.passiveItems = [];
 			global.levelCount = 6;
 			global.armor = 0;
-			PickNextLevel();
+			if(global.itemUpgrades <= 0)
+			{
+				PickNextLevel();
+			}
+			else
+			{
+				SlideTransition(TRANS_MODE.GOTO,rBonusItem);
+				audio_stop_sound(msc_Hub);
+			}
 		}
 		else
 		{
