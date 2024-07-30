@@ -746,6 +746,7 @@
     {"name":"sHUDStartGreen","order":2,"path":"sprites/sHUDStartGreen/sHUDStartGreen.yy",},
     {"name":"sHUDStartRed","order":5,"path":"sprites/sHUDStartRed/sHUDStartRed.yy",},
     {"name":"sHUDStartZombie","order":11,"path":"sprites/sHUDStartZombie/sHUDStartZombie.yy",},
+    {"name":"sHurtbox","order":28,"path":"sprites/sHurtbox/sHurtbox.yy",},
     {"name":"sHuskCannon","order":7,"path":"sprites/sHuskCannon/sHuskCannon.yy",},
     {"name":"sHuskCannonFire","order":8,"path":"sprites/sHuskCannonFire/sHuskCannonFire.yy",},
     {"name":"sInfinity","order":11,"path":"sprites/sInfinity/sInfinity.yy",},

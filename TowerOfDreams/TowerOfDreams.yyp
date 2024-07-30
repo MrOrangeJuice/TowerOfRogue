@@ -806,6 +806,7 @@
     {"id":{"name":"sHUDStartGreen","path":"sprites/sHUDStartGreen/sHUDStartGreen.yy",},},
     {"id":{"name":"sHUDStartRed","path":"sprites/sHUDStartRed/sHUDStartRed.yy",},},
     {"id":{"name":"sHUDStartZombie","path":"sprites/sHUDStartZombie/sHUDStartZombie.yy",},},
+    {"id":{"name":"sHurtbox","path":"sprites/sHurtbox/sHurtbox.yy",},},
     {"id":{"name":"sHuskCannon","path":"sprites/sHuskCannon/sHuskCannon.yy",},},
     {"id":{"name":"sHuskCannonFire","path":"sprites/sHuskCannonFire/sHuskCannonFire.yy",},},
     {"id":{"name":"sInfinity","path":"sprites/sInfinity/sInfinity.yy",},},

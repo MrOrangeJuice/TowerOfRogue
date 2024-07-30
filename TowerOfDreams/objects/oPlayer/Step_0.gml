@@ -1178,6 +1178,7 @@ if(!global.paused && !global.hitStop)
 	
 	if(!invulnerable && !dashing)
 	{
+		mask_index = sHurtbox;
 		enemyHitRight = instance_place(x+(1*image_xscale),y,oEnemy);
 		enemyHitLeft = instance_place(x-(1*image_xscale),y,oEnemy);
 		
@@ -1192,6 +1193,7 @@ if(!global.paused && !global.hitStop)
 		
 		if(global.essence != 1)
 		{
+			mask_index = sPlayerIdle;
 			spikeHitRight = instance_place(x+(1*image_xscale),y,oSpikes);
 			spikeHitLeft = instance_place(x-(1*image_xscale),y,oSpikes);
 			spikeHitDown = instance_place(x,y+1,oSpikes);
@@ -1214,6 +1216,7 @@ if(!global.paused && !global.hitStop)
 				TakeDamage(1,-1,0,true);	
 			}
 		
+			mask_index = sHurtbox;
 			spikeHitRight = instance_place(x+(1*image_xscale),y,oSpikeBox);
 			spikeHitLeft = instance_place(x-(1*image_xscale),y,oSpikeBox);
 			spikeHitDown = instance_place(x,y+1,oSpikeBox);
@@ -1236,6 +1239,8 @@ if(!global.paused && !global.hitStop)
 				TakeDamage(1,-1,0,true);	
 			}
 		}
+		
+		mask_index = sPlayerIdle;
 	}
 
 	// Horizontal Collision
