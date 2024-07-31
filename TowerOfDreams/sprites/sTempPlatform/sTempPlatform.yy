@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"Level Objects",
-    "path":"folders/Sprites/Level Objects.yy",
+    "name":"Temp Block",
+    "path":"folders/Sprites/Level Objects/Temp Block.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
