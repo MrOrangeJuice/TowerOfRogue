@@ -480,6 +480,46 @@ if(!global.paused && !global.hitStop)
 	// Slash collision
 	if(slashing && !hasSlashJumped)
 	{
+		// Temp block
+		temp = instance_place(x,y+9,oTempPlatform);
+		if(temp)
+		{
+			// Push player up
+			while(place_meeting(x,y+8,oTempPlatform))
+			{
+				y -= 1;	
+			}
+			vsp = -3;
+			if(chargeSlash)
+			{
+				instance_create_layer(temp.x+4,temp.y,"VFX",oDustSlashBumperGreen);
+			}
+			else
+			{
+				instance_create_layer(temp.x+4,temp.y,"VFX",oDustSlashBumper);
+			}
+			airborne = true;
+			hasSlashed = true;
+			hasSlashJumped = true;
+			extraJump = true;
+			bombNum = 2;
+			if(chargeInItems) 
+			{
+				chargeBounces++;
+				// Start spawning player particles if next hit is a charge hit
+				if(chargeBounces == 2) 
+				{
+					particles = instance_create_layer(x,y,"Walls",oPlayerChargeParticle);
+					audio_play_sound(snd_Charge,5,false);
+					alarm[7] = room_speed * 0.1;
+				}
+			}
+			audio_play_sound(snd_BlockHit,5,false);
+			audio_play_sound(snd_Hit,5,false);
+			instance_create_layer(temp.x,temp.y,"Walls",oTempPlatformDissappearVFX);
+			instance_destroy(temp);
+			tempBlockSlashed = true;
+		}
 		// Block
 		block = instance_place(x,y+9,oBlockathan);
 		if(block)
@@ -503,6 +543,17 @@ if(!global.paused && !global.hitStop)
 			hasSlashJumped = true;
 			extraJump = true;
 			bombNum = 2;
+			if(chargeInItems) 
+			{
+				chargeBounces++;
+				// Start spawning player particles if next hit is a charge hit
+				if(chargeBounces == 2) 
+				{
+					particles = instance_create_layer(x,y,"Walls",oPlayerChargeParticle);
+					audio_play_sound(snd_Charge,5,false);
+					alarm[7] = room_speed * 0.1;
+				}
+			}
 			audio_play_sound(snd_BlockHit,5,false);
 			audio_play_sound(snd_Hit,5,false);
 			instance_create_layer(block.x,block.y,"Walls",oBlockathanFall);
@@ -593,13 +644,16 @@ if(!global.paused && !global.hitStop)
 					}
 				}
 			}
-			if(chargeSlash)
+			if(!tempBlockSlashed)
 			{
-				instance_create_layer(x,y+6,"UI",oDustSlashGreen);
-			}
-			else
-			{
-				instance_create_layer(x,y+6,"UI",oDustSlash);
+				if(chargeSlash)
+				{
+					instance_create_layer(x,y+6,"UI",oDustSlashGreen);
+				}
+				else
+				{
+					instance_create_layer(x,y+6,"UI",oDustSlash);
+				}
 			}
 			if(bagNum > 0) audio_play_sound(snd_Winds,5,false);
 			if(shock)
@@ -1075,6 +1129,9 @@ if(!global.paused && !global.hitStop)
 		}
 		
 	}
+	
+	// Reset temp block slash
+	tempBlockSlashed = false;
 
 	// Jump
 	if (jumpBuffer > 0) && (key_jump) && (canJump)

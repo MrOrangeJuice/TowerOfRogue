@@ -3,8 +3,16 @@
 if(!global.paused)
 {
 	image_speed = 1;
-	if(place_meeting(x,y-1,oPlayer))
+	if(place_meeting(x,y-1,oPlayer) || place_meeting(x,y-1,oEnemy))
 	{
+		if(place_meeting(x,y-1,oBallEnemy))
+		{
+			image_speed = 4;	
+		}
+		else
+		{
+			image_speed = 1;	
+		}
 		// Squish in
 		leftPlat = instance_place(x-4,y,oTempPlatform);
 		rightPlat = instance_place(x+4,y,oTempPlatform);

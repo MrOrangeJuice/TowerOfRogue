@@ -52,6 +52,7 @@ blockTargetX = x;
 blockTargetY = y;
 blockOffset = 14;
 blockCursorCooldown = 0;
+tempBlockSlashed = false;
 if(global.essence == 4)
 {
 	bombNum = 3;
