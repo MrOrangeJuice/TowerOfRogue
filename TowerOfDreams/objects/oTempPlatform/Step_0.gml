@@ -3,7 +3,7 @@
 if(!global.paused)
 {
 	image_speed = 1;
-	if(place_meeting(x,y-1,oPlayer) || place_meeting(x,y-1,oEnemy))
+	if(place_meeting(x,y-1,oPlayer) || place_meeting(x,y-1,oBallEnemy))
 	{
 		if(place_meeting(x,y-1,oBallEnemy))
 		{
