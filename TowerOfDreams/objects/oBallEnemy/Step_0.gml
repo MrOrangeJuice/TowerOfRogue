@@ -17,7 +17,22 @@ if(!global.paused && !global.hitStop)
 	
 		
 	// Spike collision
-	if (place_meeting(x,y+vsp,oSpikes))
+	if (place_meeting(x+hsp,y+vsp,oSpikes))
+	{
+		if (elite)
+		{
+			instance_create_layer(x,y,"Enemies",oEnemyEliteDeath);
+		}
+		else
+		{
+			instance_create_layer(x,y,"Enemies",oEnemyDeath);
+		}
+
+		instance_destroy();
+	}
+	
+	// Lava collision
+	if (place_meeting(x,y+vsp,oLava))
 	{
 		if (elite)
 		{
