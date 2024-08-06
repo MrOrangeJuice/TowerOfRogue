@@ -3,7 +3,7 @@
   "%Name":"sFloor3",
   "bboxMode":0,
   "bbox_bottom":111,
-  "bbox_left":2,
+  "bbox_left":0,
   "bbox_right":63,
   "bbox_top":0,
   "collisionKind":1,
