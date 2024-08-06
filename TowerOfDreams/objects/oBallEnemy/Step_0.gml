@@ -13,6 +13,20 @@ if(!global.paused && !global.hitStop)
 	{
 		dir *= -1;
 		if(IsOnScreen(y)) audio_play_sound(snd_Land,5,false);
+		// Destroy on the side of temp platforms to prevent funky collision
+		if (place_meeting(x+(hsp*dir),y,oTempPlatform))
+		{
+			if (elite)
+			{
+				instance_create_layer(x,y,"Enemies",oEnemyEliteDeath);
+			}
+			else
+			{
+				instance_create_layer(x,y,"Enemies",oEnemyDeath);
+			}
+
+			instance_destroy();
+		}
 	}
 	
 		
