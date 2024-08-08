@@ -41,6 +41,13 @@ function PickNextLevel(){
 		audio_stop_sound(msc_Floor3Variant);
 		audio_stop_sound(snd_BoomerangReturn);
 		global.floor1Music = false;
+		// Save if first time making it to floor 4
+		if(!global.floor3Completed)
+		{
+			global.floor3Completed = true;
+			Save();
+			CheckForAchievements();
+		}
 		Save();
 		SlideTransition(TRANS_MODE.GOTO,rRunComplete);
 	}
@@ -67,6 +74,7 @@ function PickNextLevel(){
 			{
 				global.floor2Completed = true;
 				Save();
+				CheckForAchievements();
 			}
 			// Transition music
 			if(global.levelCount == 6)
@@ -96,6 +104,7 @@ function PickNextLevel(){
 			{
 				global.floor1Completed = true;
 				Save();
+				CheckForAchievements();
 			}
 			// Transition music
 			if(global.levelCount == 3)

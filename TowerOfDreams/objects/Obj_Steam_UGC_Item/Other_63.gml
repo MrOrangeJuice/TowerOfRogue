@@ -1,4 +1,4 @@
-
+/*
 Obj_Steam_UGC_Item_Actions.visible = false;
 
 var exists, info_map;

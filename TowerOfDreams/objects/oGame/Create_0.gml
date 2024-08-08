@@ -1,5 +1,6 @@
 /// @description Init
 
+steam_init();
 display_set_gui_size(256,144);
 global.controller = 0;
 global.paused = false;
@@ -29,6 +30,7 @@ global.sword = true;
 global.tutorialCompleted = false;
 global.floor1Completed = false;
 global.floor2Completed = false;
+global.floor3Completed = false;
 global.runCompleted = false;
 global.inARun = false;
 global.sideRoomArray = [rTreasureRoom,rTreasureRoom2];

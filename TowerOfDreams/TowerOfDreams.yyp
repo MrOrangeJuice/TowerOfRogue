@@ -533,6 +533,7 @@
     {"id":{"name":"ChangeBirdSkin","path":"scripts/ChangeBirdSkin/ChangeBirdSkin.yy",},},
     {"id":{"name":"ChangePlayerSkin","path":"scripts/ChangePlayerSkin/ChangePlayerSkin.yy",},},
     {"id":{"name":"ChangeVolume","path":"scripts/ChangeVolume/ChangeVolume.yy",},},
+    {"id":{"name":"CheckForAchievements","path":"scripts/CheckForAchievements/CheckForAchievements.yy",},},
     {"id":{"name":"DeleteGraveData","path":"scripts/DeleteGraveData/DeleteGraveData.yy",},},
     {"id":{"name":"DetermineFloorTax","path":"scripts/DetermineFloorTax/DetermineFloorTax.yy",},},
     {"id":{"name":"IsOnScreen","path":"scripts/IsOnScreen/IsOnScreen.yy",},},

@@ -1,5 +1,7 @@
 /// @description Update
 
+steam_update();
+
 key_restart = keyboard_check_pressed(ord("R"));
 key_pause = keyboard_check_pressed(vk_escape);
 key_up = keyboard_check_pressed(ord("W")) || keyboard_check_pressed(vk_up);
@@ -239,6 +241,7 @@ if(room == rTitle)
 			case 2:
 				if(!options)
 				{
+					steam_shutdown();
 					game_end();
 				}
 				else

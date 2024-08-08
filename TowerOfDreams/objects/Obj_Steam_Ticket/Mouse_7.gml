@@ -1,4 +1,4 @@
-
+/*
 var buff = buffer_create(0,buffer_fixed,1)
 steam_user_request_encrypted_app_ticket(buff)
 buffer_delete(buff)

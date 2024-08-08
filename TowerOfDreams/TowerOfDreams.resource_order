@@ -476,6 +476,7 @@
     {"name":"ChangeBirdSkin","order":12,"path":"scripts/ChangeBirdSkin/ChangeBirdSkin.yy",},
     {"name":"ChangePlayerSkin","order":10,"path":"scripts/ChangePlayerSkin/ChangePlayerSkin.yy",},
     {"name":"ChangeVolume","order":9,"path":"scripts/ChangeVolume/ChangeVolume.yy",},
+    {"name":"CheckForAchievements","order":18,"path":"scripts/CheckForAchievements/CheckForAchievements.yy",},
     {"name":"DeleteGraveData","order":13,"path":"scripts/DeleteGraveData/DeleteGraveData.yy",},
     {"name":"DetermineFloorTax","order":17,"path":"scripts/DetermineFloorTax/DetermineFloorTax.yy",},
     {"name":"IsOnScreen","order":8,"path":"scripts/IsOnScreen/IsOnScreen.yy",},
