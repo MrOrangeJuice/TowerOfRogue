@@ -46,4 +46,21 @@ if(key_select_pressed && !levelProgressed)
 	PickNextLevel();
 	// Prevent mashing to increment level more than once
 	levelProgressed = true;
+	// Check for specific achievements
+	// Aced it!
+	if(yourRank == "S")
+	{
+		if(!steam_get_achievement("SRANKONCE"))
+		{
+			steam_set_achievement("SRANKONCE");
+		}
+	}
+	// The Floor is Lava
+	if(!global.floor1Music)
+	{
+		if(!steam_get_achievement("NOTOUCHGROUND"))
+		{
+			steam_set_achievement("NOTOUCHGROUND");
+		}
+	}
 }

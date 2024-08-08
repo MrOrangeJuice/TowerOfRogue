@@ -32,6 +32,7 @@ global.floor1Completed = false;
 global.floor2Completed = false;
 global.floor3Completed = false;
 global.runCompleted = false;
+global.runCompletedHard = false;
 global.inARun = false;
 global.sideRoomArray = [rTreasureRoom,rTreasureRoom2];
 global.sideRoomArray2 = [rTreasureRoomFloor2,rTreasureRoom2Floor2];
@@ -228,6 +229,7 @@ volumeArrows = true;
 
 Load();
 ChangeVolume();
+CheckForAchievements();
 
 // Change max health depending on what was loaded
 global.maxHealth += (global.healthUpgrades * 2);

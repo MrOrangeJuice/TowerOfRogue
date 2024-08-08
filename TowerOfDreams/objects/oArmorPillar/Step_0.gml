@@ -68,6 +68,7 @@ if(place_meeting(x,y,oPlayer))
 				}
 				audio_play_sound(snd_UpgradeMaxHealth,5,false);
 				Save();
+				CheckForAchievements();
 			}
 		}
 		// Switch between owned armor

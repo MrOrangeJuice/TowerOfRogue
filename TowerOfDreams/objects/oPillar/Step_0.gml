@@ -52,6 +52,7 @@ if(place_meeting(x,y,oPlayer))
 			global.health += 2;
 			audio_play_sound(snd_UpgradeMaxHealth,5,false);
 			Save();
+			CheckForAchievements();
 		}
 	}
 }

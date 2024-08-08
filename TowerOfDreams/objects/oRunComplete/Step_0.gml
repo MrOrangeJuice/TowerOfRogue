@@ -30,6 +30,7 @@ if(key_select_pressed)
 	global.usedArray3 = [false,false,false,false,false,false,false,false,false,false];
 	global.inARun = false;
 	global.runCompleted = true;
+	if(global.hardMode) global.runCompletedHard = true;
 	global.health = global.maxHealth;
 	global.armor = 0;
 	global.zombieRevive = true;
@@ -56,4 +57,22 @@ if(key_select_pressed)
 	global.enemyArray = ds_list_create();
 	audio_stop_sound(msc_RunComplete);
 	Save();
+	// Check for specific achievements
+	// King of Dreams
+	if(overallRank == "S")
+	{
+		if(!steam_get_achievement("BEATTHEGAMESRANK"))
+		{
+			steam_set_achievement("BEATTHEGAMESRANK");
+		}
+	}
+	// King of Nightmares
+	if(overallRank == "S" && global.hardMode)
+	{
+		if(!steam_get_achievement("BEATTHEGAMESRANKHARD"))
+		{
+			steam_set_achievement("BEATTHEGAMESRANKHARD");
+		}
+	}
+	CheckForAchievements();
 }

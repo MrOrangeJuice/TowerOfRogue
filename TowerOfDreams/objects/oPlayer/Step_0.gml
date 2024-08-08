@@ -865,6 +865,15 @@ if(!global.paused && !global.hitStop)
 							global.item3Bought = true;
 							break;
 					}
+					
+					// Cleaned Out!
+					if(global.item1Bought && global.item2Bought && global.item3Bought)
+					{
+						if(!steam_get_achievement("BUYALLSTAMPERITEMS"))
+						{
+							steam_set_achievement("BUYALLSTAMPERITEMS");
+						}
+					}
 					global.coins -= (global.itemPrices[bubble.item] + (DetermineFloorTax() * 50)) * (1 - (0.2 * card));
 					instance_destroy(bubble);
 				}
