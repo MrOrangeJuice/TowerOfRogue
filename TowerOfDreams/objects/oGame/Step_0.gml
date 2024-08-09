@@ -271,9 +271,11 @@ if(room == rTitle)
 				global.best2_2 = "F";
 				global.best2_3 = "F";
 				global.best2_4 = "F";
+				global.best2_5 = "F";
 				global.best3_1 = "F";
 				global.best3_2 = "F";
 				global.best3_3 = "F";
+				global.best3_4 = "F";
 				global.bestOverall = "F";
 				// Grave data
 				// Floor 1
