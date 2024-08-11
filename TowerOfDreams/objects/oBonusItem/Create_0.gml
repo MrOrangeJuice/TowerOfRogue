@@ -4,7 +4,7 @@ analogLeftPrev = false;
 analogRightPrev = false;
 
 global.canPause = false;
-audio_play_sound(msc_BonusItem,5,true);
+if (global.music) audio_play_sound(msc_BonusItem,5,true);
 
 itemList = [];
 randomize();
