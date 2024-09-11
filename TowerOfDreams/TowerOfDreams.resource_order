@@ -918,6 +918,7 @@
     {"name":"sRabbitUI","order":46,"path":"sprites/sRabbitUI/sRabbitUI.yy",},
     {"name":"sRageVFX","order":16,"path":"sprites/sRageVFX/sRageVFX.yy",},
     {"name":"sRankingSign","order":4,"path":"sprites/sRankingSign/sRankingSign.yy",},
+    {"name":"sReleaseDate","order":52,"path":"sprites/sReleaseDate/sReleaseDate.yy",},
     {"name":"sRemoteUI","order":42,"path":"sprites/sRemoteUI/sRemoteUI.yy",},
     {"name":"sReplayTutorial","order":11,"path":"sprites/sReplayTutorial/sReplayTutorial.yy",},
     {"name":"sRichard","order":3,"path":"sprites/sRichard/sRichard.yy",},

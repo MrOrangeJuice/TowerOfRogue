@@ -988,6 +988,7 @@
     {"id":{"name":"sRabbitUI","path":"sprites/sRabbitUI/sRabbitUI.yy",},},
     {"id":{"name":"sRageVFX","path":"sprites/sRageVFX/sRageVFX.yy",},},
     {"id":{"name":"sRankingSign","path":"sprites/sRankingSign/sRankingSign.yy",},},
+    {"id":{"name":"sReleaseDate","path":"sprites/sReleaseDate/sReleaseDate.yy",},},
     {"id":{"name":"sRemoteUI","path":"sprites/sRemoteUI/sRemoteUI.yy",},},
     {"id":{"name":"sReplayTutorial","path":"sprites/sReplayTutorial/sReplayTutorial.yy",},},
     {"id":{"name":"sRichard","path":"sprites/sRichard/sRichard.yy",},},
