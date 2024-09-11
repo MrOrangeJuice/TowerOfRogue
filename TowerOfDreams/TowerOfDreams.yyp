@@ -145,6 +145,7 @@
     {"id":{"name":"oBumper","path":"objects/oBumper/oBumper.yy",},},
     {"id":{"name":"oBumperA","path":"objects/oBumperA/oBumperA.yy",},},
     {"id":{"name":"oBumperB","path":"objects/oBumperB/oBumperB.yy",},},
+    {"id":{"name":"oCallToAction","path":"objects/oCallToAction/oCallToAction.yy",},},
     {"id":{"name":"oCamera","path":"objects/oCamera/oCamera.yy",},},
     {"id":{"name":"oCannon","path":"objects/oCannon/oCannon.yy",},},
     {"id":{"name":"oCannonBall","path":"objects/oCannonBall/oCannonBall.yy",},},

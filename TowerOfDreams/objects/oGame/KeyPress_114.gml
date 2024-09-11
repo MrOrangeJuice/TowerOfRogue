@@ -1,7 +1,7 @@
 /// @description Go to test room
 if(room == rTitle)
 {
-	SlideTransition(TRANS_MODE.GOTO,rFloor1_4);
+	SlideTransition(TRANS_MODE.GOTO,rCallToAction);
 	audio_stop_sound(msc_TitleScreen);
 	audio_play_sound(snd_SwordGet,5,false);
 }

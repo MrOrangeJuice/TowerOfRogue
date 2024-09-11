@@ -123,6 +123,7 @@
     {"name":"oBubbleVFX","order":23,"path":"objects/oBubbleVFX/oBubbleVFX.yy",},
     {"name":"oBumperA","order":8,"path":"objects/oBumperA/oBumperA.yy",},
     {"name":"oBumperB","order":9,"path":"objects/oBumperB/oBumperB.yy",},
+    {"name":"oCallToAction","order":4,"path":"objects/oCallToAction/oCallToAction.yy",},
     {"name":"oCamera","order":1,"path":"objects/oCamera/oCamera.yy",},
     {"name":"oCannon","order":3,"path":"objects/oCannon/oCannon.yy",},
     {"name":"oCannonBall","order":4,"path":"objects/oCannonBall/oCannonBall.yy",},
