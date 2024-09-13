@@ -260,7 +260,7 @@ if(room == rTitle)
 // Draw HUD
 if(global.HUD)
 {
-	if(room != rTitle && room != rRunComplete && room != rBonusItem)
+	if(room != rTitle && room != rRunComplete && room != rBonusItem && room != rCallToAction)
 	{
 		// Add spacing to HUD
 		hudMod = 9 * (((global.maxHealth - 6) / 2) + global.armor);

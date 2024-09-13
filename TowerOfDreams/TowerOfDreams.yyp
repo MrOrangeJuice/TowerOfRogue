@@ -113,7 +113,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.6.2.162",
+    "IDEVersion":"2024.8.1.171",
   },
   "name":"TowerOfDreams",
   "resources":[
@@ -234,6 +234,7 @@
     {"id":{"name":"oBumper","path":"objects/oBumper/oBumper.yy",},},
     {"id":{"name":"oBumperA","path":"objects/oBumperA/oBumperA.yy",},},
     {"id":{"name":"oBumperB","path":"objects/oBumperB/oBumperB.yy",},},
+    {"id":{"name":"oCallToAction","path":"objects/oCallToAction/oCallToAction.yy",},},
     {"id":{"name":"oCamera","path":"objects/oCamera/oCamera.yy",},},
     {"id":{"name":"oCannon","path":"objects/oCannon/oCannon.yy",},},
     {"id":{"name":"oCannonBall","path":"objects/oCannonBall/oCannonBall.yy",},},
@@ -1105,6 +1106,7 @@
     {"id":{"name":"sRabbitUI","path":"sprites/sRabbitUI/sRabbitUI.yy",},},
     {"id":{"name":"sRageVFX","path":"sprites/sRageVFX/sRageVFX.yy",},},
     {"id":{"name":"sRankingSign","path":"sprites/sRankingSign/sRankingSign.yy",},},
+    {"id":{"name":"sReleaseDate","path":"sprites/sReleaseDate/sReleaseDate.yy",},},
     {"id":{"name":"sRemoteUI","path":"sprites/sRemoteUI/sRemoteUI.yy",},},
     {"id":{"name":"sReplayTutorial","path":"sprites/sReplayTutorial/sReplayTutorial.yy",},},
     {"id":{"name":"sRichard","path":"sprites/sRichard/sRichard.yy",},},
