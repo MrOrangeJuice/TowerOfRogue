@@ -11,6 +11,11 @@ else
 	UIOffset = 0;	
 }
 
+if(global.debugDisplay) 
+{
+	if(global.debug) draw_text(0,128,"DEBUG ENABLED");
+	else draw_text(0,128,"DEBUG DISABLED");
+}
 // Debug controller
 if(global.controllerDebug)
 {

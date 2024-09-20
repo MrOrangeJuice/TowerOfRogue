@@ -1,13 +1,18 @@
-/// @description Toggle Controller Debug
+/// @description Turn on debug mode
 
-
-if(global.controllerDebug)
-{
-	audio_play_sound(snd_Gulp,5,false);
-	global.controllerDebug = false;
-}
-else if(!global.controllerDebug)
+global.debugCounter++;
+if(global.debugCounter == 5)
 {
 	audio_play_sound(snd_SwordGet,5,false);
-	global.controllerDebug = true;	
+	if(!global.debug)
+	{
+		global.debug = true;	
+	}
+	else
+	{
+		global.debug = false;
+	}
+	global.debugDisplay = true;
+	global.debugCounter = 0;
+	alarm[1] = room_speed * 1;
 }
