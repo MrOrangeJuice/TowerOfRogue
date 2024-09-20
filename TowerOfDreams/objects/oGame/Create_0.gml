@@ -81,6 +81,9 @@ global.dropItemHold = 0;
 global.totalDeaths = 0;
 global.armed = false;
 global.blockSpawning = false;
+global.debug = false;
+global.debugCounter = 0;
+global.debugDisplay = 0;
 
 // Shop items
 global.shopItem1 = -1;

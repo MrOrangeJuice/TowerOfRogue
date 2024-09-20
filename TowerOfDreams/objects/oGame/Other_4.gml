@@ -1,5 +1,8 @@
 /// @description Take away sword for tutorial
 
+// Reset debug counter
+global.debugCounter = 0;
+
 // Spawn grave if needed
 SpawnGrave();
 
