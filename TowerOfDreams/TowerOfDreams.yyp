@@ -991,6 +991,7 @@
     {"id":{"name":"sOptionsMenu","path":"sprites/sOptionsMenu/sOptionsMenu.yy",},},
     {"id":{"name":"sOptionsMenuDeletedSave","path":"sprites/sOptionsMenuDeletedSave/sOptionsMenuDeletedSave.yy",},},
     {"id":{"name":"sOptionsTitle","path":"sprites/sOptionsTitle/sOptionsTitle.yy",},},
+    {"id":{"name":"sOutNow","path":"sprites/sOutNow/sOutNow.yy",},},
     {"id":{"name":"sOverallRank","path":"sprites/sOverallRank/sOverallRank.yy",},},
     {"id":{"name":"sPalette","path":"sprites/sPalette/sPalette.yy",},},
     {"id":{"name":"sPauseMenu","path":"sprites/sPauseMenu/sPauseMenu.yy",},},

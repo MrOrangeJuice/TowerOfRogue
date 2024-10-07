@@ -910,6 +910,7 @@
     {"name":"sOptionsMenu","order":7,"path":"sprites/sOptionsMenu/sOptionsMenu.yy",},
     {"name":"sOptionsMenuDeletedSave","order":8,"path":"sprites/sOptionsMenuDeletedSave/sOptionsMenuDeletedSave.yy",},
     {"name":"sOptionsTitle","order":25,"path":"sprites/sOptionsTitle/sOptionsTitle.yy",},
+    {"name":"sOutNow","order":53,"path":"sprites/sOutNow/sOutNow.yy",},
     {"name":"sOverallRank","order":31,"path":"sprites/sOverallRank/sOverallRank.yy",},
     {"name":"sPalette","order":1,"path":"sprites/sPalette/sPalette.yy",},
     {"name":"sPauseMenu","order":5,"path":"sprites/sPauseMenu/sPauseMenu.yy",},
