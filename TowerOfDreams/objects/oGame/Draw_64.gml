@@ -375,7 +375,7 @@ if(global.HUD)
 			// If remaining armor is at least 5, draw a big sprite instead
 			if(global.armor - i >= 5)
 			{
-				draw_sprite_stretched(sArmor5,0,7 + (xMod * 9),6,8*armorTextScale,8*armorTextScale);
+				draw_sprite_stretched(sArmor5Smaller,0,7 + (xMod * 9),6,8*armorTextScale,8*armorTextScale);
 				i += 4;
 			}
 			else
