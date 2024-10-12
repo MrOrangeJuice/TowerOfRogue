@@ -268,7 +268,7 @@ if(global.HUD)
 	if(room != rTitle && room != rRunComplete && room != rBonusItem && room != rCallToAction)
 	{
 		// Add spacing to HUD
-		hudMod = 9 * (((global.maxHealth - 6) / 2) + global.armor);
+		hudMod = 9 * (((global.maxHealth - 6) / 2) + (global.armor % 5 + floor(global.armor / 5)));
 		if(hudMod < 0) hudMod = 0;
 		// Account for coins
 		if(room == rHub || room == rHubShop)
@@ -372,7 +372,16 @@ if(global.HUD)
 		// Draw Armor
 		for(i = 0; i < global.armor; i++)
 		{
-			draw_sprite_stretched(sArmor,0,7 + (xMod * 9),6,8*armorTextScale,8*armorTextScale);
+			// If remaining armor is at least 5, draw a big sprite instead
+			if(global.armor - i >= 5)
+			{
+				draw_sprite_stretched(sArmor5,0,7 + (xMod * 9),6,8*armorTextScale,8*armorTextScale);
+				i += 4;
+			}
+			else
+			{
+				draw_sprite_stretched(sArmor,0,7 + (xMod * 9),6,8*armorTextScale,8*armorTextScale);
+			}
 			xMod++;
 		}
 	

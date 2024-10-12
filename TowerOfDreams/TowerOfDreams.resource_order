@@ -519,6 +519,8 @@
     {"name":"sA","order":1,"path":"sprites/sA/sA.yy",},
     {"name":"sAngryVFX","order":17,"path":"sprites/sAngryVFX/sAngryVFX.yy",},
     {"name":"sArmor","order":3,"path":"sprites/sArmor/sArmor.yy",},
+    {"name":"sArmor5","order":7,"path":"sprites/sArmor5/sArmor5.yy",},
+    {"name":"sArmor5Small","order":6,"path":"sprites/sArmor5Small/sArmor5Small.yy",},
     {"name":"sArmorTrophyUI","order":59,"path":"sprites/sArmorTrophyUI/sArmorTrophyUI.yy",},
     {"name":"sArrow","order":12,"path":"sprites/sArrow/sArrow.yy",},
     {"name":"sArrowSign","order":1,"path":"sprites/sArrowSign/sArrowSign.yy",},
