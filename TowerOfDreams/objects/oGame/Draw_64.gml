@@ -414,7 +414,15 @@ if(global.HUD)
 		passiveItemTextScale = max(passiveItemTextScale * .95, 1);
 		for(i = 0; i < array_length(global.passiveItems); i++)
 		{
-			draw_sprite_stretched(global.passiveItemSprites[global.passiveItems[i]],0,58+(10*i)+hudMod,5,8*passiveItemTextScale,8*passiveItemTextScale);
+			// Wrap items
+			if (i < (global.passiveUIWrap - (hudMod / 9)))
+			{
+				draw_sprite_stretched(global.passiveItemSprites[global.passiveItems[i]],0,58+(10*i)+hudMod,5,8*passiveItemTextScale,8*passiveItemTextScale);
+			}
+			else
+			{
+				draw_sprite_stretched(global.passiveItemSprites[global.passiveItems[i]],0,58+(10*(i-(global.passiveUIWrap - (hudMod / 9))))+hudMod,14,8*passiveItemTextScale,8*passiveItemTextScale);
+			}
 		}
 		
 		// Draw dev item

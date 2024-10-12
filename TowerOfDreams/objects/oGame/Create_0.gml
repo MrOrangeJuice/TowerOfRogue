@@ -24,6 +24,7 @@ global.itemPrices = [120,100,100,100,120,80,100,150,150,100,120,120,120,100,120,
 global.itemNames = ["Kunai","Winged Boots","Shock Bracelet","Crit Jelly","Goblet of Blood","Rage Cola","Rewards Card","Heart Trophy","Wax Wings","Lucky Pickaxe","Gem Magnet","Bouncing Axe","Doomerang","Crit Peanut Butter","Bag of Winds","Charge Blade","Lightning in a Bottle","Enchanted Shield","Heart Magnet","Fuzzy Dice","The Spray N' Pray","Ghost in a Jar","Jester Bomb","Blacksmith's Hammer","Remote Birthday Surprise","Scoville Screamer","Heavy Boots","Diamond Dynamite","Were-Rabbit's Foot","Gem Cannon","Blockathan","Armor Trophy","Chaos Shovel","Ninja Star","Speed Citrus","Mitosis Maracas","Armor","Heart"];
 global.itemTypes = ["Active","Active","Passive","Passive","Passive","Passive","Passive","Passive","Active","Passive","Passive","Active","Active","Passive","Passive","Passive","Active","Passive","Passive","Passive","Active","Passive","Active","Passive","Active","Passive","Passive","Passive","Passive","Active","Active","Passive","Passive","Active","Passive","Passive","Pickup","Pickup"];
 global.passiveItems = [];
+global.passiveUIWrap = 20;
 global.passiveItemSprites = [sShockUI,sCritUI,sGobletUI,sColaUI,sCardUI,sHeartTrophyUI,sPickaxeUI,sMagnetUI,sCritPBUI,sBagUI,sChargeUI,sShieldUI,sHeartMagnetUI,sFuzzyDiceUI,sGhostJarUI,sHammerUI,sPepperUI,sHeavyBootsUI,sDynamiteUI,sRabbitUI,sArmorTrophyUI,sShovelUI,sCitrusUI,sMaracasUI];
 global.sword = true;
 global.tutorialCompleted = false;
