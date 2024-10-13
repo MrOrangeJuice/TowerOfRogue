@@ -47,7 +47,7 @@ if(gems)
 if(damage)
 {
 	damageString = "Damage: ";
-	if(damageDisplay) damageString = "Damage: " + string(global.localDamage);
+	if(damageDisplay) damageString = "Damage: " + string(damageNum);
 	draw_set_color($6D454D);
 	draw_text(128,display_get_gui_height()/2 - 7,damageString);
 	draw_text(128,display_get_gui_height()/2 - 9,damageString);
