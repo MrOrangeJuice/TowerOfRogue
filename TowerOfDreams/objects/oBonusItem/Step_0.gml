@@ -95,6 +95,15 @@ if(selected)
 	{
 		selectedOffset *= 1.3;
 	}
+	if(selectedOffsetDouble == 0) 
+	{
+		selectedOffsetDouble = 1;
+	}
+	else
+	{
+		selectedOffsetDouble *= 1.3;
+		selectedOffsetDouble *= 1.4;
+	}
 }
 
 itemOffsetY += itemOffsetYSpeed;

@@ -26,6 +26,43 @@ global.itemTypes = ["Active","Active","Passive","Passive","Passive","Passive","P
 global.passiveItems = [];
 global.passiveUIWrap = 20;
 global.passiveItemSprites = [sShockUI,sCritUI,sGobletUI,sColaUI,sCardUI,sHeartTrophyUI,sPickaxeUI,sMagnetUI,sCritPBUI,sBagUI,sChargeUI,sShieldUI,sHeartMagnetUI,sFuzzyDiceUI,sGhostJarUI,sHammerUI,sPepperUI,sHeavyBootsUI,sDynamiteUI,sRabbitUI,sArmorTrophyUI,sShovelUI,sCitrusUI,sMaracasUI];
+global.itemDescriptions = 
+["A quick throwing knife",
+"Hold to run",
+"Strike the earth to spawn shockwaves",
+"Critical hit chance up by 25%",
+"Get 6 kills to get a heart",
+"Double damage on 1 heart",
+"20% off in the shop",
+"Hearts drop more often",
+"Grants an extra jump",
+"Gems have a 20% chance to be worth double",
+"Attracts gems",
+"Bounces and increases damage when hitting an enemy",
+"Does double damage on the way back",
+"Critical hits heal you for half a heart",
+"Get a bigger bounce when striking the ground",
+"Every third sword strike does double damage",
+"Grants a quick invincible dash",
+"Get a piece of armor every level",
+"Attracts hearts",
+"Rerolls are 10 gems cheaper in the shop",
+"Shoots small projectiles in all directions",
+"More invincibility when hit",
+"Throw a bomb straight down, use on the ground to soar",
+"Anytime you gain 1 armor, gain 2 instead",
+"Press once to set a remote mine, press again to detonate",
+"Your projectiles EXPLODE",
+"Spawn shockwaves when you land",
+"Gilded enemies spawn WAY more gems when killed",
+"Gilded enemies appear more often",
+"Shoots strong projectiles but uses gems as ammo",
+"Spawn a block under you",
+"Armor drops more often",
+"Strike the ground to spawn dirt projectiles",
+"Throw a ninja star and press again to teleport to it",
+"Strike the ground for a huge burst of momentum",
+"Get 2 of every third passive item you pick up"];
 global.sword = true;
 global.tutorialCompleted = false;
 global.floor1Completed = false;
