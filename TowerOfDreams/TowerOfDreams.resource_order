@@ -984,6 +984,7 @@
     {"name":"sSpikeDebug","order":2,"path":"sprites/sSpikeDebug/sSpikeDebug.yy",},
     {"name":"sSpottedVFX","order":24,"path":"sprites/sSpottedVFX/sSpottedVFX.yy",},
     {"name":"sSprayUI","order":32,"path":"sprites/sSprayUI/sSprayUI.yy",},
+    {"name":"sStampBoy","order":44,"path":"sprites/sStampBoy/sStampBoy.yy",},
     {"name":"sStamperBuy","order":1,"path":"sprites/sStamperBuy/sStamperBuy.yy",},
     {"name":"sStamperTalk","order":8,"path":"sprites/sStamperTalk/sStamperTalk.yy",},
     {"name":"sStamperWave","order":2,"path":"sprites/sStamperWave/sStamperWave.yy",},

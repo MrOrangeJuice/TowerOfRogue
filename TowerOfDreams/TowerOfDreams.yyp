@@ -1059,6 +1059,7 @@
     {"id":{"name":"sSpikeDebug","path":"sprites/sSpikeDebug/sSpikeDebug.yy",},},
     {"id":{"name":"sSpottedVFX","path":"sprites/sSpottedVFX/sSpottedVFX.yy",},},
     {"id":{"name":"sSprayUI","path":"sprites/sSprayUI/sSprayUI.yy",},},
+    {"id":{"name":"sStampBoy","path":"sprites/sStampBoy/sStampBoy.yy",},},
     {"id":{"name":"sStamper","path":"sprites/sStamper/sStamper.yy",},},
     {"id":{"name":"sStamperBuy","path":"sprites/sStamperBuy/sStamperBuy.yy",},},
     {"id":{"name":"sStamperTalk","path":"sprites/sStamperTalk/sStamperTalk.yy",},},
