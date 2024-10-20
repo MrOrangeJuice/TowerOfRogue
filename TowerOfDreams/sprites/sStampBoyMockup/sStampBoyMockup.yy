@@ -19,6 +19,8 @@
   "height":144,
   "HTile":false,
   "layers":[
+    {"$GMImageLayer":"","%Name":"9435c6c4-9cc2-424d-9a59-9612fd9f6231","blendMode":0,"displayName":"Layer 2","isLocked":false,"name":"9435c6c4-9cc2-424d-9a59-9612fd9f6231","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"8b034411-15c8-4a2c-bb17-66caec19a0db","blendMode":0,"displayName":"Layer 1","isLocked":false,"name":"8b034411-15c8-4a2c-bb17-66caec19a0db","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
     {"$GMImageLayer":"","%Name":"be0edc09-a058-486b-b311-686833ca93b1","blendMode":0,"displayName":"default","isLocked":false,"name":"be0edc09-a058-486b-b311-686833ca93b1","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"sStampBoyMockup",
