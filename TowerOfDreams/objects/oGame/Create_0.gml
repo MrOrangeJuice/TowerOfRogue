@@ -6,6 +6,7 @@ global.paused = false;
 global.dreamBoy = false;
 global.dreamBoyYTarget = 192;
 global.dreamBoyY = global.dreamBoyYTarget;
+global.dreamBoyOn = false;
 global.hitStop = false;
 global.canPause = false;
 global.coins = 0;

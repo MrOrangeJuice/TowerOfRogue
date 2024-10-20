@@ -132,7 +132,8 @@ if(key_dreamBoy)
 	{
 		if(!global.paused)
 		{
-			audio_play_sound(snd_DreamBoyOpen,5,false);
+			//audio_play_sound(snd_DreamBoyOpen,5,false);
+			audio_play_sound(snd_DreamBoyTurnOn,5,false);
 			global.dreamBoy = true;
 			global.paused = true;
 			global.dreamBoyYTarget = 0;
@@ -143,7 +144,10 @@ if(key_dreamBoy)
 		// Start animation for dream boy exiting screen
 		global.dreamBoy = false;
 		global.paused = false;
-		audio_play_sound(snd_DreamBoyClose,5,false);
+		audio_stop_sound(snd_DreamBoyTurnOn);
+		//audio_play_sound(snd_DreamBoyClose,5,false);
+		if(global.dreamBoyOn) audio_play_sound(snd_DreamBoyShutDown,5,false);
+		global.dreamBoyOn = false;
 		global.dreamBoyYTarget = 192;
 		if(instance_exists(oPlayer))
 		{

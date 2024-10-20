@@ -443,5 +443,13 @@ draw_sprite(sDreamBoy,0,48,global.dreamBoyY);
 
 if(global.dreamBoy)
 {
+	if(global.dreamBoyY == global.dreamBoyYTarget && !global.dreamBoyOn)
+	{
+		global.dreamBoyOn = true;	
+	}
 	
+	if(global.dreamBoyOn)
+	{
+		draw_sprite(sDreamBoyScreen,0,86,33);	
+	}
 }
