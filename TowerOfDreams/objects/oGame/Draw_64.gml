@@ -261,10 +261,6 @@ if(room == rTitle)
 	// Reset color
 	draw_set_color($6D454D);
 }
-else if(global.dreamBoy)
-{
-		
-}
 
 // Draw HUD
 if(global.HUD)
@@ -436,4 +432,16 @@ if(global.HUD)
 			draw_text(5,33,"F1");
 		}
 	}
+}
+
+// Draw Dream Boy offscreen always
+if(global.dreamBoyY != global.dreamBoyYTarget)
+{
+	global.dreamBoyY = lerp(global.dreamBoyY,global.dreamBoyYTarget,0.2);
+}
+draw_sprite(sDreamBoy,0,48,global.dreamBoyY);
+
+if(global.dreamBoy)
+{
+	
 }

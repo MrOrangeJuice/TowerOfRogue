@@ -4,6 +4,8 @@ display_set_gui_size(256,144);
 global.controller = 0;
 global.paused = false;
 global.dreamBoy = false;
+global.dreamBoyYTarget = 192;
+global.dreamBoyY = global.dreamBoyYTarget;
 global.hitStop = false;
 global.canPause = false;
 global.coins = 0;
