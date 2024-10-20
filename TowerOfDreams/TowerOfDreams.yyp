@@ -497,6 +497,8 @@
     {"id":{"name":"snd_Door","path":"sounds/snd_Door/snd_Door.yy",},},
     {"id":{"name":"snd_DoubleItem","path":"sounds/snd_DoubleItem/snd_DoubleItem.yy",},},
     {"id":{"name":"snd_Dream","path":"sounds/snd_Dream/snd_Dream.yy",},},
+    {"id":{"name":"snd_DreamBoyClose","path":"sounds/snd_DreamBoyClose/snd_DreamBoyClose.yy",},},
+    {"id":{"name":"snd_DreamBoyOpen","path":"sounds/snd_DreamBoyOpen/snd_DreamBoyOpen.yy",},},
     {"id":{"name":"snd_Dropitem","path":"sounds/snd_Dropitem/snd_Dropitem.yy",},},
     {"id":{"name":"snd_Drumroll","path":"sounds/snd_Drumroll/snd_Drumroll.yy",},},
     {"id":{"name":"snd_EnemyDeath","path":"sounds/snd_EnemyDeath/snd_EnemyDeath.yy",},},

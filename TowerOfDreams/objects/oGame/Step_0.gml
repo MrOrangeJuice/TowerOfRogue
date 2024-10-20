@@ -2,6 +2,7 @@
 
 key_restart = keyboard_check_pressed(ord("R"));
 key_pause = keyboard_check_pressed(vk_escape);
+key_dreamBoy = keyboard_check_pressed(vk_tab);
 key_up = keyboard_check_pressed(ord("W")) || keyboard_check_pressed(vk_up);
 key_down = keyboard_check_pressed(ord("S")) || keyboard_check_pressed(vk_down);
 key_left = keyboard_check_pressed(ord("A")) || keyboard_check_pressed(vk_left);
@@ -89,6 +90,17 @@ if (gamepad_button_check_pressed(4,gp_start))
 
 if (gamepad_button_check_pressed(0,gp_select))
 {
+	key_dreamBoy = 1;
+	global.controller = 1;
+}
+if (gamepad_button_check_pressed(4,gp_select))
+{
+	key_select = 1;
+	global.controller = 2;
+}
+
+if (gamepad_button_check_pressed(0,gp_select))
+{
 	key_restart = 1;
 	global.controller = 1;
 }
@@ -111,6 +123,25 @@ if(key_pause)
 	{
 		audio_play_sound(snd_PauseIn,5,false);
 		global.paused = true;
+	}
+}
+
+if(key_dreamBoy)
+{
+	if(!global.dreamBoy && global.canPause)
+	{
+		if(!global.paused)
+		{
+			audio_play_sound(snd_DreamBoyOpen,5,false);
+			global.dreamBoy = true;
+			global.paused = true;
+		}
+	}
+	else if(global.dreamBoy)
+	{
+		audio_play_sound(snd_DreamBoyClose,5,false);
+		global.dreamBoy = false;
+		global.paused = false;
 	}
 }
 

@@ -25,7 +25,7 @@ if(global.controllerDebug)
 }
 
 // Draw Pause Menu
-if(global.paused)
+if(global.paused && !global.dreamBoy)
 {
 	draw_set_halign(fa_center);
 	draw_set_font(fMenu);
@@ -260,6 +260,10 @@ if(room == rTitle)
 	
 	// Reset color
 	draw_set_color($6D454D);
+}
+else if(global.dreamBoy)
+{
+		
 }
 
 // Draw HUD

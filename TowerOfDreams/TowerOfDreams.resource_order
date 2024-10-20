@@ -453,6 +453,8 @@
     {"name":"snd_Door","order":15,"path":"sounds/snd_Door/snd_Door.yy",},
     {"name":"snd_DoubleItem","order":85,"path":"sounds/snd_DoubleItem/snd_DoubleItem.yy",},
     {"name":"snd_Dream","order":57,"path":"sounds/snd_Dream/snd_Dream.yy",},
+    {"name":"snd_DreamBoyClose","order":88,"path":"sounds/snd_DreamBoyClose/snd_DreamBoyClose.yy",},
+    {"name":"snd_DreamBoyOpen","order":87,"path":"sounds/snd_DreamBoyOpen/snd_DreamBoyOpen.yy",},
     {"name":"snd_Dropitem","order":58,"path":"sounds/snd_Dropitem/snd_Dropitem.yy",},
     {"name":"snd_Drumroll","order":53,"path":"sounds/snd_Drumroll/snd_Drumroll.yy",},
     {"name":"snd_EnemyDeath","order":11,"path":"sounds/snd_EnemyDeath/snd_EnemyDeath.yy",},
