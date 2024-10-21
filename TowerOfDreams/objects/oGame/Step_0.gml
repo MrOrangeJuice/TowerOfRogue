@@ -110,7 +110,7 @@ if (gamepad_button_check_pressed(4,gp_select))
 	global.controller = 2;
 }
 
-if(key_pause)
+if(key_pause && !global.dreamBoy)
 {
 	if(global.paused)
 	{
