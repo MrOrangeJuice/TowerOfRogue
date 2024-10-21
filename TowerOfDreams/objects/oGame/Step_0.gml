@@ -144,6 +144,8 @@ if(key_dreamBoy)
 		if(global.dreamBoyOn)
 		{
 			global.dreamBoyOn = false;
+			global.blockScales = [0,0,0];
+			global.targetBlockScales = [0,0,0];
 			alarm[2] = room_speed * 0.5;
 			audio_play_sound(snd_DreamBoyShutDown,5,false);
 		}
@@ -152,10 +154,16 @@ if(key_dreamBoy)
 			// Start animation for dream boy exiting screen
 			global.dreamBoy = false;
 			global.dreamBoyTurnedOn = false;
+			global.blockScales = [0,0,0];
+			global.targetBlockScales = [0,0,0];
 			global.paused = false;
 			audio_stop_sound(snd_DreamBoyTurnOn);
 			audio_play_sound(snd_DreamBoyClose,5,false);
 			global.dreamBoyYTarget = 192;
+			global.UIBarYTarget = 0;
+			global.UIBarY = 0;
+			global.labelY = [0,0,0];
+			global.labelYTarget = [0,0,0];
 			if(instance_exists(oPlayer))
 			{
 				oPlayer.canJump = true;	
@@ -618,6 +626,29 @@ if(!global.dreamBoy)
 			}
 		}
 	}
+}
+
+// Get dream boy inputs
+if(global.dreamBoyOn)
+{
+	if(key_left)
+	{
+		global.currentApp--;
+		if(global.currentApp < 0) global.currentApp = 2;
+		audio_play_sound(snd_DreamBoyMenuMove,5,false);
+	}
+	if(key_right)
+	{
+		global.currentApp++;
+		if(global.currentApp > 2) global.currentApp = 0;
+		audio_play_sound(snd_DreamBoyMenuMove,5,false);
+	}
+	if(key_select)
+	{
+		audio_play_sound(snd_DreamBoySelect,5,false);
+		audio_play_sound(snd_DreamBoySelect2,5,false);
+	}
+	
 }
 
 // Check for passive items

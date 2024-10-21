@@ -3,11 +3,25 @@
 display_set_gui_size(256,144);
 global.controller = 0;
 global.paused = false;
+
 global.dreamBoy = false;
 global.dreamBoyYTarget = 192;
 global.dreamBoyY = global.dreamBoyYTarget;
 global.dreamBoyOn = false;
 global.dreamBoyTurnedOn = false;
+global.blockSprites = [sBlockathan3D,sGravitro3D,sExtras3D];
+global.blockScales = [0,0,0];
+global.UIBarY = 0;
+global.UIBarYTarget = 0;
+global.dreamBoyState = 0;
+global.targetBlockScales = [0,0,0];
+global.currentApp = 0;
+global.labelSprites = [sItemLabel,sFoesLabel,sExtrasLabel];
+global.labelY = [0,0,0];
+global.labelYTarget = [0,0,0];
+global.blockXTarget = [0,0,0];
+global.blockX = [0,0,0];
+
 global.hitStop = false;
 global.canPause = false;
 global.coins = 0;

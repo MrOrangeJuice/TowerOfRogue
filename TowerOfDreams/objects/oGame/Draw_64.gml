@@ -447,10 +447,56 @@ if(global.dreamBoy)
 	{
 		global.dreamBoyOn = true;	
 		global.dreamBoyTurnedOn = true;	
+		global.UIBarYTarget = 7;
 	}
 	
 	if(global.dreamBoyOn)
 	{
 		draw_sprite(sDreamBoyScreen,0,86,36);	
+		// Reset before checking later
+		global.targetBlockScales = [1,1,1];
+		global.labelYTarget = [0,0,0];
+		
+		// Draw blocks
+		for(i = 0; i < array_length(global.blockScales); i++)
+		{
+			// Determine block X offset
+			if(i < global.currentApp) global.blockXTarget[i] = -1;
+			if(i == global.currentApp) global.blockXTarget[i] = 0;
+			if(i > global.currentApp) global.blockXTarget[i] = 1;
+			
+			if(global.currentApp == i) 
+			{
+				global.targetBlockScales[i] = 2;
+				global.labelYTarget[i] = 64;
+			}
+			if(global.blockScales[i] != global.targetBlockScales[i]) global.blockScales[i] = lerp(global.blockScales[i],global.targetBlockScales[i],0.2);	
+			if(global.labelY[i] != global.labelYTarget[i]) global.labelY[i] = lerp(global.labelY[i],global.labelYTarget[i],0.2);	
+			if(global.blockX[i] != global.blockXTarget[i]) global.blockX[i] = lerp(global.blockX[i],global.blockXTarget[i],0.2);	
+			
+			// Draw objects
+
+			// Get the width and height of the sprite
+			var spr_width = sprite_get_width(global.blockSprites[i]);
+			var spr_height = sprite_get_height(global.blockSprites[i]);
+
+			// Calculate the new scaled width and height
+			var new_width = spr_width * global.blockScales[i];
+			var new_height = spr_height * global.blockScales[i];
+
+			// Draw the sprite stretched, but offset the position to center it
+			draw_sprite_stretched(global.blockSprites[i], -1, (103 + (25 * i) + (global.blockX[i] * 8)) - new_width / 2, 70 - new_height / 2, new_width, new_height);
+			draw_sprite(global.labelSprites[i],0,(103 + (25 * i)),(158 - global.labelY[i]));
+		}
+		
+		// Draw UI bars
+		if(global.UIBarY != global.UIBarYTarget) global.UIBarY = lerp(global.UIBarY,global.UIBarYTarget,0.3);
+		
+		draw_sprite(sStampOSUITop,global.dreamBoyState,86,29 + global.UIBarY);
+		draw_sprite(sStampOSUIBottom,0,86,114 - global.UIBarY);
+		
 	}
+	
+	// Draw additional dream boy outline to cover up the overscan
+	draw_sprite(sDreamBoyOutline,global.dreamBoyOn,48,global.dreamBoyY);
 }

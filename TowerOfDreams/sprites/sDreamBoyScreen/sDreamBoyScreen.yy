@@ -19,7 +19,7 @@
   "height":78,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"a86bc29f-4f07-4640-817b-d9df7f298d2b","blendMode":0,"displayName":"Layer 1","isLocked":false,"name":"a86bc29f-4f07-4640-817b-d9df7f298d2b","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"a86bc29f-4f07-4640-817b-d9df7f298d2b","blendMode":0,"displayName":"Layer 1","isLocked":false,"name":"a86bc29f-4f07-4640-817b-d9df7f298d2b","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":false,},
     {"$GMImageLayer":"","%Name":"1ea83817-fa0b-40eb-b0b3-8b62c89dca2d","blendMode":0,"displayName":"default","isLocked":false,"name":"1ea83817-fa0b-40eb-b0b3-8b62c89dca2d","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"sDreamBoyScreen",
