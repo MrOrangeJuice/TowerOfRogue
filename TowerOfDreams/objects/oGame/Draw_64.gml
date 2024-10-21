@@ -439,17 +439,18 @@ if(global.dreamBoyY != global.dreamBoyYTarget)
 {
 	global.dreamBoyY = lerp(global.dreamBoyY,global.dreamBoyYTarget,0.2);
 }
-draw_sprite(sDreamBoy,0,48,global.dreamBoyY);
+draw_sprite(sDreamBoy,global.dreamBoyOn,48,global.dreamBoyY);
 
 if(global.dreamBoy)
 {
-	if(global.dreamBoyY == global.dreamBoyYTarget && !global.dreamBoyOn)
+	if(global.dreamBoyY == global.dreamBoyYTarget && !global.dreamBoyOn && !global.dreamBoyTurnedOn)
 	{
 		global.dreamBoyOn = true;	
+		global.dreamBoyTurnedOn = true;	
 	}
 	
 	if(global.dreamBoyOn)
 	{
-		draw_sprite(sDreamBoyScreen,0,86,33);	
+		draw_sprite(sDreamBoyScreen,0,86,36);	
 	}
 }

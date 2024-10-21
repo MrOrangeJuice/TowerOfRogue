@@ -2,7 +2,7 @@
   "$GMSprite":"",
   "%Name":"sDreamBoy",
   "bboxMode":0,
-  "bbox_bottom":159,
+  "bbox_bottom":162,
   "bbox_left":0,
   "bbox_right":159,
   "bbox_top":1,
@@ -13,14 +13,14 @@
   "For3D":false,
   "frames":[
     {"$GMSpriteFrame":"","%Name":"0adb4339-ee7b-4bd8-bb01-ae31287a5541","name":"0adb4339-ee7b-4bd8-bb01-ae31287a5541","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"b29868ca-855f-4e54-b2f1-809077e0504b","name":"b29868ca-855f-4e54-b2f1-809077e0504b","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
-  "height":160,
+  "height":163,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"811fe6dc-bf3a-4965-9a05-3e5d40f99852","blendMode":0,"displayName":"Layer 1","isLocked":false,"name":"811fe6dc-bf3a-4965-9a05-3e5d40f99852","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
-    {"$GMImageLayer":"","%Name":"be0edc09-a058-486b-b311-686833ca93b1","blendMode":0,"displayName":"default","isLocked":false,"name":"be0edc09-a058-486b-b311-686833ca93b1","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"1ab3ee0a-65ed-40c2-900f-f1e3ccd15c47","blendMode":0,"displayName":"Layer 2","isLocked":false,"name":"1ab3ee0a-65ed-40c2-900f-f1e3ccd15c47","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"sDreamBoy",
   "nineSlice":null,
@@ -50,7 +50,7 @@
     },
     "eventStubScript":null,
     "eventToFunction":{},
-    "length":1.0,
+    "length":2.0,
     "lockOrigin":false,
     "moments":{
       "$KeyframeStore<MomentsEventKeyframe>":"",
@@ -72,6 +72,9 @@
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
                 "0":{"$SpriteFrameKeyframe":"","Id":{"name":"0adb4339-ee7b-4bd8-bb01-ae31287a5541","path":"sprites/sDreamBoy/sDreamBoy.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"5aeda070-9550-4d94-9ab1-5d277cc90e98","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"b29868ca-855f-4e54-b2f1-809077e0504b","path":"sprites/sDreamBoy/sDreamBoy.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"7f682456-ae82-432b-bcc9-b674cacff29a","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
