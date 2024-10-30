@@ -79,6 +79,7 @@
     {"name":"Timelines","order":7,"path":"folders/Timelines.yy",},
   ],
   "ResourceOrderSettings":[
+    {"name":"fDreamBoy","order":2,"path":"fonts/fDreamBoy/fDreamBoy.yy",},
     {"name":"fMenu","order":1,"path":"fonts/fMenu/fMenu.yy",},
     {"name":"o10","order":5,"path":"objects/o10/o10.yy",},
     {"name":"o2","order":1,"path":"objects/o2/o2.yy",},
@@ -645,6 +646,7 @@
     {"name":"sDashFruitHorizontalRespawn","order":4,"path":"sprites/sDashFruitHorizontalRespawn/sDashFruitHorizontalRespawn.yy",},
     {"name":"sDashFruitRespawn","order":5,"path":"sprites/sDashFruitRespawn/sDashFruitRespawn.yy",},
     {"name":"sDashVFX","order":28,"path":"sprites/sDashVFX/sDashVFX.yy",},
+    {"name":"sDBFont","order":53,"path":"sprites/sDBFont/sDBFont.yy",},
     {"name":"sDemo","order":48,"path":"sprites/sDemo/sDemo.yy",},
     {"name":"sDice","order":26,"path":"sprites/sDice/sDice.yy",},
     {"name":"sDiceBubble","order":27,"path":"sprites/sDiceBubble/sDiceBubble.yy",},

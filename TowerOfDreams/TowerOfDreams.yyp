@@ -97,6 +97,7 @@
   },
   "name":"TowerOfDreams",
   "resources":[
+    {"id":{"name":"fDreamBoy","path":"fonts/fDreamBoy/fDreamBoy.yy",},},
     {"id":{"name":"fMenu","path":"fonts/fMenu/fMenu.yy",},},
     {"id":{"name":"fUI","path":"fonts/fUI/fUI.yy",},},
     {"id":{"name":"o1","path":"objects/o1/o1.yy",},},
@@ -698,6 +699,7 @@
     {"id":{"name":"sDashFruitHorizontalRespawn","path":"sprites/sDashFruitHorizontalRespawn/sDashFruitHorizontalRespawn.yy",},},
     {"id":{"name":"sDashFruitRespawn","path":"sprites/sDashFruitRespawn/sDashFruitRespawn.yy",},},
     {"id":{"name":"sDashVFX","path":"sprites/sDashVFX/sDashVFX.yy",},},
+    {"id":{"name":"sDBFont","path":"sprites/sDBFont/sDBFont.yy",},},
     {"id":{"name":"sDemo","path":"sprites/sDemo/sDemo.yy",},},
     {"id":{"name":"sDice","path":"sprites/sDice/sDice.yy",},},
     {"id":{"name":"sDiceBubble","path":"sprites/sDiceBubble/sDiceBubble.yy",},},
