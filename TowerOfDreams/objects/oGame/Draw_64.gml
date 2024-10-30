@@ -452,7 +452,7 @@ if(global.dreamBoy)
 	
 	if(global.dreamBoyOn)
 	{
-		draw_sprite(sDreamBoyScreen,0,86,36);	
+		draw_sprite(sDreamBoyScreenAnimatedBigger,image_index / 3.75,86,36);	
 		// Reset before checking later
 		global.targetBlockScales = [1,1,1];
 		global.labelYTarget = [0,0,0];

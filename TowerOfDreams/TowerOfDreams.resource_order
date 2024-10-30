@@ -667,6 +667,7 @@
     {"name":"sDreamBoyOutline","order":47,"path":"sprites/sDreamBoyOutline/sDreamBoyOutline.yy",},
     {"name":"sDreamBoyScreen","order":46,"path":"sprites/sDreamBoyScreen/sDreamBoyScreen.yy",},
     {"name":"sDreamBoyScreenAnimated","order":52,"path":"sprites/sDreamBoyScreenAnimated/sDreamBoyScreenAnimated.yy",},
+    {"name":"sDreamBoyScreenAnimatedBigger","order":54,"path":"sprites/sDreamBoyScreenAnimatedBigger/sDreamBoyScreenAnimatedBigger.yy",},
     {"name":"sDropUI","order":40,"path":"sprites/sDropUI/sDropUI.yy",},
     {"name":"sDummy","order":9,"path":"sprites/sDummy/sDummy.yy",},
     {"name":"sDustSlash","order":6,"path":"sprites/sDustSlash/sDustSlash.yy",},
