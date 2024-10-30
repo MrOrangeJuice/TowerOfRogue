@@ -486,7 +486,7 @@ if(global.dreamBoy)
 
 			// Draw the sprite stretched, but offset the position to center it
 			draw_sprite_stretched(global.blockSprites[i], -1, (103 + (25 * i) + (global.blockX[i] * 8)) - new_width / 2, 70 - new_height / 2, new_width, new_height);
-			draw_sprite(global.labelSprites[i],0,(103 + (25 * i)),(158 - global.labelY[i]));
+			draw_sprite(global.labelSprites[i],image_index / 3.75,(103 + (25 * i)),(158 - global.labelY[i]));
 		}
 		
 		// Draw UI bars
