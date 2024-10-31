@@ -684,6 +684,7 @@ if(global.dreamBoyOn)
 	{
 		if(global.dreamBoyState != 0)
 		{
+			audio_play_sound(snd_DreamBoyMenuBack,5,false);
 			global.dreamBoyState = 0;	
 		}
 	}

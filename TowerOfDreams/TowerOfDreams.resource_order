@@ -459,6 +459,7 @@
     {"name":"snd_DoubleItem","order":85,"path":"sounds/snd_DoubleItem/snd_DoubleItem.yy",},
     {"name":"snd_Dream","order":57,"path":"sounds/snd_Dream/snd_Dream.yy",},
     {"name":"snd_DreamBoyClose","order":88,"path":"sounds/snd_DreamBoyClose/snd_DreamBoyClose.yy",},
+    {"name":"snd_DreamBoyMenuBack","order":96,"path":"sounds/snd_DreamBoyMenuBack/snd_DreamBoyMenuBack.yy",},
     {"name":"snd_DreamBoyMenuMove","order":93,"path":"sounds/snd_DreamBoyMenuMove/snd_DreamBoyMenuMove.yy",},
     {"name":"snd_DreamBoyOpen","order":87,"path":"sounds/snd_DreamBoyOpen/snd_DreamBoyOpen.yy",},
     {"name":"snd_DreamBoySelect","order":94,"path":"sounds/snd_DreamBoySelect/snd_DreamBoySelect.yy",},
