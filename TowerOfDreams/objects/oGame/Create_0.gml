@@ -22,6 +22,16 @@ global.labelYTarget = [0,0,0];
 global.blockXTarget = [0,0,0];
 global.blockX = [0,0,0];
 
+// DB Items
+global.dbItemSprites = [tile000,tile001,tile002,tile003,tile004,tile005,tile006,tile007,tile008,tile009,tile010,tile011,tile012,tile013,tile014,tile015,tile016,tile017,tile018,tile019,tile020,tile021,tile022,tile023,tile024,tile025,tile026,tile027,tile028,tile029,tile030,tile031,tile032,tile033,tile034,tile035];
+global.itemWindowY = 0;
+global.itemWindowYTarget = 0;
+global.currentItem = 0;
+global.floppyY = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+global.floppyYTarget = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+global.floppyX = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+global.floppyXTarget = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+
 global.hitStop = false;
 global.canPause = false;
 global.coins = 0;

@@ -8,8 +8,9 @@ key_down = keyboard_check_pressed(ord("S")) || keyboard_check_pressed(vk_down);
 key_left = keyboard_check_pressed(ord("A")) || keyboard_check_pressed(vk_left);
 key_right = keyboard_check_pressed(ord("D")) || keyboard_check_pressed(vk_right);
 key_select = keyboard_check_pressed(ord("Z")) || keyboard_check_pressed(ord("P")) || keyboard_check_pressed(vk_space) || keyboard_check_pressed(vk_enter);
+key_back = keyboard_check_pressed(ord("X")) || keyboard_check_pressed(ord("O")) || keyboard_check_pressed(vk_lshift);
 
-if (key_restart || key_pause || key_up || key_down || key_left || key_right || key_select)
+if (key_restart || key_pause || key_up || key_down || key_left || key_right || key_select || key_back || key_dreamBoy)
 {
 	global.controller = 0;
 }
@@ -77,6 +78,17 @@ if (gamepad_button_check_pressed(4,gp_face1))
 	global.controller = 2;
 }
 
+if (gamepad_button_check_pressed(0,gp_face2) || gamepad_button_check_pressed(0,gp_face3))
+{
+	key_back = 1;
+	global.controller = 1;
+}
+if (gamepad_button_check_pressed(4,gp_face2) || gamepad_button_check_pressed(4,gp_face3))
+{
+	key_back = 1;
+	global.controller = 2;
+}
+
 if (gamepad_button_check_pressed(0,gp_start))
 {
 	key_pause = 1;
@@ -95,7 +107,7 @@ if (gamepad_button_check_pressed(0,gp_select))
 }
 if (gamepad_button_check_pressed(4,gp_select))
 {
-	key_select = 1;
+	key_dreamBoy = 1;
 	global.controller = 2;
 }
 
@@ -144,8 +156,6 @@ if(key_dreamBoy)
 		if(global.dreamBoyOn)
 		{
 			global.dreamBoyOn = false;
-			global.blockScales = [0,0,0];
-			global.targetBlockScales = [0,0,0];
 			alarm[2] = room_speed * 0.5;
 			audio_play_sound(snd_DreamBoyShutDown,5,false);
 		}
@@ -633,22 +643,50 @@ if(global.dreamBoyOn)
 {
 	if(key_left)
 	{
-		global.currentApp--;
-		if(global.currentApp < 0) global.currentApp = 2;
-		audio_play_sound(snd_DreamBoyMenuMove,5,false);
+		if(global.dreamBoyState == 0)
+		{
+			global.currentApp--;
+			if(global.currentApp < 0) global.currentApp = 2;
+			audio_play_sound(snd_DreamBoyMenuMove,5,false);
+		}
+		else if(global.dreamBoyState == 1)
+		{
+			global.currentItem--;
+			if(global.currentItem < 0) global.currentItem = 35;
+			audio_play_sound(snd_DreamBoyMenuMove,5,false);
+		}
 	}
 	if(key_right)
 	{
-		global.currentApp++;
-		if(global.currentApp > 2) global.currentApp = 0;
-		audio_play_sound(snd_DreamBoyMenuMove,5,false);
+		if(global.dreamBoyState == 0)
+		{
+			global.currentApp++;
+			if(global.currentApp > 2) global.currentApp = 0;
+			audio_play_sound(snd_DreamBoyMenuMove,5,false);
+		}
+		else if(global.dreamBoyState == 1)
+		{
+			global.currentItem++;
+			if(global.currentItem > 35) global.currentItem = 0;
+			audio_play_sound(snd_DreamBoyMenuMove,5,false);
+		}
 	}
 	if(key_select)
 	{
+		if(global.dreamBoyState == 0)
+		{
+			global.dreamBoyState = global.currentApp + 1;
+		}
 		audio_play_sound(snd_DreamBoySelect,5,false);
 		audio_play_sound(snd_DreamBoySelect2,5,false);
 	}
-	
+	if(key_back)
+	{
+		if(global.dreamBoyState != 0)
+		{
+			global.dreamBoyState = 0;	
+		}
+	}
 }
 
 // Check for passive items

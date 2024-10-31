@@ -456,6 +456,9 @@ if(global.dreamBoy)
 		// Reset before checking later
 		global.targetBlockScales = [1,1,1];
 		global.labelYTarget = [0,0,0];
+		global.itemWindowYTarget = 0;
+		global.floppyYTarget = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+		global.floopyXTarget = 0;
 		
 		// Draw blocks
 		for(i = 0; i < array_length(global.blockScales); i++)
@@ -465,13 +468,21 @@ if(global.dreamBoy)
 			if(i == global.currentApp) global.blockXTarget[i] = 0;
 			if(i > global.currentApp) global.blockXTarget[i] = 1;
 			
-			if(global.currentApp == i) 
+			// Set targets
+			if(global.dreamBoyState == 0)
 			{
-				global.targetBlockScales[i] = 1.25;
-				global.labelYTarget[i] = 64;
+				if(global.currentApp == i) 
+				{
+					global.targetBlockScales[i] = 1.25;
+				}
 			}
-			if(global.blockScales[i] != global.targetBlockScales[i]) global.blockScales[i] = lerp(global.blockScales[i],global.targetBlockScales[i],0.2);	
-			if(global.labelY[i] != global.labelYTarget[i]) global.labelY[i] = lerp(global.labelY[i],global.labelYTarget[i],0.2);	
+			else 
+			{
+				global.targetBlockScales[i] = 0;
+			}
+			
+			// Lerp everything
+			if(global.blockScales[i] != global.targetBlockScales[i]) global.blockScales[i] = lerp(global.blockScales[i],global.targetBlockScales[i],0.2);
 			if(global.blockX[i] != global.blockXTarget[i]) global.blockX[i] = lerp(global.blockX[i],global.blockXTarget[i],0.2);	
 			
 			// Draw objects
@@ -486,8 +497,73 @@ if(global.dreamBoy)
 
 			// Draw the sprite stretched, but offset the position to center it
 			draw_sprite_stretched(global.blockSprites[i], -1, (103 + (25 * i) + (global.blockX[i] * 8)) - new_width / 2, 70 - new_height / 2, new_width, new_height);
+		}
+		
+		// Draw labels
+		for(i = 0; i < array_length(global.labelSprites); i++)
+		{
+			// Set targets
+			if(global.dreamBoyState == 0)
+			{
+				if(global.currentApp == i) 
+				{
+					global.labelYTarget[i] = 64;
+				}
+			}
+			else 
+			{
+				global.labelYTarget[i] = 0;
+			}
+			
+			if(global.labelY[i] != global.labelYTarget[i]) global.labelY[i] = lerp(global.labelY[i],global.labelYTarget[i],0.2);	
+			
 			draw_sprite(global.labelSprites[i],image_index / 5,(103 + (25 * i)),(158 - global.labelY[i]));
 		}
+		
+		// Draw floppys
+		for(i = 0; i < array_length(global.floppyYTarget); i++)
+		{
+			if(global.dreamBoyState == 1)
+			{
+				if(global.currentItem == i)
+				{
+					global.floppyYTarget[i] = 67;
+				}
+				else
+				{
+					global.floppyYTarget[i] = 64;
+				}
+				global.floppyXTarget[i] = (118 + (i * 20) - (global.currentItem * 20));
+			}
+			else
+			{
+				global.floppyYTarget[i] = 0;
+			}
+			
+			// Lerp everything
+			if(global.floppyY[i] != global.floppyYTarget[i]) global.floppyY[i] = lerp(global.floppyY[i],global.floppyYTarget[i],0.2);	
+			if(global.floppyX[i] != global.floppyXTarget[i]) global.floppyX[i] = lerp(global.floppyX[i],global.floppyXTarget[i],0.2);	
+			
+			// Draw
+			if(global.floppyY[i] > 24 && global.floppyX[i] > 64 && global.floppyX[i] < 172) 
+			{
+				draw_sprite(sFloppy,0,global.floppyX[i],-24 + global.floppyY[i]);
+				draw_sprite(global.dbItemSprites[i],0,global.floppyX[i] + 5,-10 + global.floppyY[i]);
+			}
+		}
+		
+		// Draw item window
+		if(global.dreamBoyState == 1)
+		{
+			global.itemWindowYTarget = 64;
+		}
+		else
+		{
+			global.itemWindowYTarget = 0;
+		}
+		
+		if(global.itemWindowY != global.itemWindowYTarget) global.itemWindowY = lerp(global.itemWindowY,global.itemWindowYTarget,0.2);	
+		
 		
 		// Draw UI bars
 		if(global.UIBarY != global.UIBarYTarget) global.UIBarY = lerp(global.UIBarY,global.UIBarYTarget,0.3);
