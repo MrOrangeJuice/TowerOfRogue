@@ -533,7 +533,7 @@ if(global.dreamBoy)
 				{
 					global.floppyYTarget[i] = 64;
 				}
-				global.floppyXTarget[i] = (118 + (i * 20) - (global.currentItem * 20));
+				global.floppyXTarget[i] = (119 + (i * 20) - (global.currentItem * 20));
 			}
 			else
 			{
@@ -563,6 +563,10 @@ if(global.dreamBoy)
 		}
 		
 		if(global.itemWindowY != global.itemWindowYTarget) global.itemWindowY = lerp(global.itemWindowY,global.itemWindowYTarget,0.2);	
+		
+		// Draw
+		draw_sprite(sItemWindow,0,87,132-global.itemWindowY);
+		draw_sprite(global.dbItemSprites[global.currentItem],0,97,147-global.itemWindowY);
 		
 		
 		// Draw UI bars
