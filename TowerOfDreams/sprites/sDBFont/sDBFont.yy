@@ -2,7 +2,7 @@
   "$GMSprite":"",
   "%Name":"sDBFont",
   "bboxMode":0,
-  "bbox_bottom":15,
+  "bbox_bottom":19,
   "bbox_left":0,
   "bbox_right":38,
   "bbox_top":0,
@@ -16,7 +16,7 @@
   ],
   "gridX":3,
   "gridY":4,
-  "height":16,
+  "height":20,
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"1db30fff-cc31-4161-bbed-a082ccc6bd2b","blendMode":0,"displayName":"default","isLocked":false,"name":"1db30fff-cc31-4161-bbed-a082ccc6bd2b","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
