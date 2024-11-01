@@ -574,7 +574,7 @@ if(global.dreamBoy)
 		draw_set_color(#5a5f92);
 		
 		draw_text(91,132-global.itemWindowY,global.itemFileNames[global.currentItem]);
-		draw_text_ext(116, 143-global.itemWindowY, global.itemDescriptions[global.currentItem], 5, 47);
+		draw_text_ext(116, 143-global.itemWindowY, global.itemFileDescriptions[global.currentItem], 5, 47);
 		
 		// Reset drawing
 		draw_set_color($6D454D);
