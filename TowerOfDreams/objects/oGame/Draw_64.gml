@@ -568,6 +568,16 @@ if(global.dreamBoy)
 		draw_sprite(sItemWindow,0,87,132-global.itemWindowY);
 		draw_sprite(global.dbItemSprites[global.currentItem],0,97,147-global.itemWindowY);
 		
+		// Draw item info
+		draw_set_font(fDreamBoy);
+		draw_set_halign(fa_left);
+		draw_set_color(#5a5f92);
+		
+		draw_text(91,132-global.itemWindowY,global.itemFileNames[global.currentItem]);
+		
+		// Reset drawing
+		draw_set_color($6D454D);
+		draw_set_font(fUI);
 		
 		// Draw UI bars
 		if(global.UIBarY != global.UIBarYTarget) global.UIBarY = lerp(global.UIBarY,global.UIBarYTarget,0.3);
