@@ -570,11 +570,13 @@ if(global.dreamBoy)
 		
 		// Draw item info
 		draw_set_font(fDreamBoy);
-		draw_set_halign(fa_left);
 		draw_set_color(#5a5f92);
 		
+		draw_set_halign(fa_left);
 		draw_text(91,132-global.itemWindowY,global.itemFileNames[global.currentItem]);
-		draw_text_ext(116, 143-global.itemWindowY, global.itemFileDescriptions[global.currentItem], 5, 47);
+		draw_set_halign(fa_center);
+		draw_text_ext(139, 142-global.itemWindowY, global.itemFileDescriptions[global.currentItem], 5, 47);
+		draw_set_halign(fa_left);
 		
 		// Reset drawing
 		draw_set_color($6D454D);
