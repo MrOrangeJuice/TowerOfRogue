@@ -458,7 +458,10 @@ if(global.dreamBoy)
 		global.labelYTarget = [0,0,0];
 		global.itemWindowYTarget = 0;
 		global.floppyYTarget = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
-		global.floopyXTarget = 0;
+		global.floppyXTarget = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+		global.FoeWindowYTarget = 0;
+		global.floppyFoeYTarget = [0,0,0,0,0,0,0,0,0,0,0];
+		global.floppyFoeXTarget = [0,0,0,0,0,0,0,0,0,0,0];
 		
 		// Draw blocks
 		for(i = 0; i < array_length(global.blockScales); i++)
