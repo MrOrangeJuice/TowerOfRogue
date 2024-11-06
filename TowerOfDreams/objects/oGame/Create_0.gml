@@ -72,8 +72,8 @@ global.itemFileDescriptions =
 
 // DB Foes
 global.dbFoeSprites = [sSlimeGB,sCannonGB,sGravityGB,sBallGB,sFlyingGB,sWrenchGB,sTankGB,sTankStationaryGB,sSawbladeGB,sCloudGB,sFirePlantGB];
-global.FoeWindowY = 0;
-global.FoeWindowYTarget = 0;
+global.foeWindowY = 0;
+global.foeWindowYTarget = 0;
 global.currentFoe = 0;
 global.floppyFoeY = [0,0,0,0,0,0,0,0,0,0,0];
 global.floppyFoeYTarget = [0,0,0,0,0,0,0,0,0,0,0];
@@ -87,11 +87,11 @@ global.foeFileDescriptions =
 "ROLLS AND BOUNCES OFF WALLS",
 "A DEMON THAT FLIES BACK AND FORTH",
 "WINDS UP AND LOBS WRENCHES",
-"A MOVING TANK THAT SHOOTS HOMING MISSLES",
-"A STATIONARY SENTRY THAT SHOOTS HOMING MISSLES",
+"A MOVING TANK THAT SHOOTS MISSLES",
+"A STATIONARY SENTRY THAT SHOOTS MISSLES",
 "A DEADLY SHARP ENEMY THAT CLINGS TO WALLS",
 "A CLOUD THAT SHOOTS CANNON BALLS VERTICALLY",
-"A VOLITALE PLANT THAT SHOOTS FOUR FIREBALLS IN A ROW"];
+"A PLANT THAT SHOOTS FOUR FIREBALLS IN A ROW"];
 
 global.hitStop = false;
 global.canPause = false;

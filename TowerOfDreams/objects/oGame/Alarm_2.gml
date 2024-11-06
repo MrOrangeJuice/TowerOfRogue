@@ -22,6 +22,13 @@ global.floppyY = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 global.floppyYTarget = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
 global.floppyX = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
 global.floppyXTarget = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+global.foeWindowY = 0;
+global.foeWindowYTarget = 0;
+global.currentFoe = 0;
+global.floppyFoeY = [0,0,0,0,0,0,0,0,0,0,0];
+global.floppyFoeYTarget = [0,0,0,0,0,0,0,0,0,0,0];
+global.floppyFoeX = [0,0,0,0,0,0,0,0,0,0,0];
+global.floppyFoeXTarget = [0,0,0,0,0,0,0,0,0,0,0];
 
 if(instance_exists(oPlayer))
 {

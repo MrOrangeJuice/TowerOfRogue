@@ -597,13 +597,27 @@ if(global.dreamBoy)
 			global.itemWindowYTarget = 0;
 		}
 		
+		// Draw foe item window
+		if(global.dreamBoyState == 2)
+		{
+			global.foeWindowYTarget = 64;
+		}
+		else
+		{
+			global.foeWindowYTarget = 0;
+		}
+		
 		if(global.itemWindowY != global.itemWindowYTarget) global.itemWindowY = lerp(global.itemWindowY,global.itemWindowYTarget,0.2);	
+		if(global.foeWindowY != global.foeWindowYTarget) global.foeWindowY = lerp(global.foeWindowY,global.foeWindowYTarget,0.2);	
 		
 		// Draw
 		draw_sprite(sItemWindow,0,87,132-global.itemWindowY);
 		draw_sprite(global.dbItemSprites[global.currentItem],0,97,147-global.itemWindowY);
 		
-		// Draw item info
+		draw_sprite(sItemWindow,0,87,132-global.foeWindowY);
+		draw_sprite(global.dbFoeSprites[global.currentFoe],0,97,147-global.foeWindowY);
+		
+		// Draw item and foe info
 		draw_set_font(fDreamBoy);
 		draw_set_color(#5a5f92);
 		
@@ -611,6 +625,12 @@ if(global.dreamBoy)
 		draw_text(91,132-global.itemWindowY,global.itemFileNames[global.currentItem]);
 		draw_set_halign(fa_center);
 		draw_text_ext(139, 142-global.itemWindowY, global.itemFileDescriptions[global.currentItem], 5, 47);
+		draw_set_halign(fa_left);
+		
+		draw_set_halign(fa_left);
+		draw_text(91,132-global.foeWindowY,global.foeFileNames[global.currentFoe]);
+		draw_set_halign(fa_center);
+		draw_text_ext(139, 142-global.foeWindowY, global.foeFileDescriptions[global.currentFoe], 5, 47);
 		draw_set_halign(fa_left);
 		
 		// Reset drawing
