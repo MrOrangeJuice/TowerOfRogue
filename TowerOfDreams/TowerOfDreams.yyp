@@ -786,6 +786,7 @@
     {"id":{"name":"sFlyingGBBig","path":"sprites/sFlyingGBBig/sFlyingGBBig.yy",},},
     {"id":{"name":"sFlyingHeart","path":"sprites/sFlyingHeart/sFlyingHeart.yy",},},
     {"id":{"name":"sFoesLabel","path":"sprites/sFoesLabel/sFoesLabel.yy",},},
+    {"id":{"name":"sFoeWindow","path":"sprites/sFoeWindow/sFoeWindow.yy",},},
     {"id":{"name":"sFruitHorizontalVFX","path":"sprites/sFruitHorizontalVFX/sFruitHorizontalVFX.yy",},},
     {"id":{"name":"sFruitJumpVFX","path":"sprites/sFruitJumpVFX/sFruitJumpVFX.yy",},},
     {"id":{"name":"sFruitVFX","path":"sprites/sFruitVFX/sFruitVFX.yy",},},

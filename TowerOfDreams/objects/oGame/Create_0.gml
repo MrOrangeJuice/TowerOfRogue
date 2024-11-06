@@ -72,6 +72,7 @@ global.itemFileDescriptions =
 
 // DB Foes
 global.dbFoeSprites = [sSlimeGB,sCannonGB,sGravityGB,sBallGB,sFlyingGB,sWrenchGB,sTankGB,sTankStationaryGB,sSawbladeGB,sCloudGB,sFirePlantGB];
+global.dbFoeBigSprites = [sSlimeGBBig,sCannonGBBig,sGravityGBBig,sBallGBBig,sFlyingGBBig,sWrenchGBBig,sTankGBBig,sTankStationaryGBBig,sSawbladeGBBig,sCloudGBBig,sFirePlantGBBig];
 global.foeWindowY = 0;
 global.foeWindowYTarget = 0;
 global.currentFoe = 0;
@@ -79,19 +80,19 @@ global.floppyFoeY = [0,0,0,0,0,0,0,0,0,0,0];
 global.floppyFoeYTarget = [0,0,0,0,0,0,0,0,0,0,0];
 global.floppyFoeX = [0,0,0,0,0,0,0,0,0,0,0];
 global.floppyFoeXTarget = [0,0,0,0,0,0,0,0,0,0,0];
-global.foeFileNames = ["COMMON SLIME","GIZMO CANNON","GRAVITY JACK","BARROLLO","FLAP DEMON","GIZMO WRENCH", "GIZMO TANK MODEL TREADS", "GIZMO TANK MODEL SENTRY","SAWBLADE","CANNON CLOUD","CALIENTE SHRUB"];
+global.foeFileNames = ["COMMON SLIME","GIZMO CANNON","GRAVITY JACK","BARROLLO","FLAP DEMON","GIZMO WRENCH", "GIZMO TREADS", "GIZMO SENTRY","SAWBLADE","CANNON CLOUD","CALIENTE SHRUB"];
 global.foeFileDescriptions =
 ["A COMMON ENEMY THAT WALKS BACK AND FORTH",
 "WINDS UP AND SHOOTS CANNON BALLS",
-"SWITCHES ITS OWN GRAVITY BETWEEN UP AND DOWN",
+"SWITCHES GRAVITY BETWEEN UP AND DOWN",
 "ROLLS AND BOUNCES OFF WALLS",
 "A DEMON THAT FLIES BACK AND FORTH",
 "WINDS UP AND LOBS WRENCHES",
 "A MOVING TANK THAT SHOOTS MISSLES",
-"A STATIONARY SENTRY THAT SHOOTS MISSLES",
+"A ROOTED SENTRY THAT SHOOTS MISSLES",
 "A DEADLY SHARP ENEMY THAT CLINGS TO WALLS",
-"A CLOUD THAT SHOOTS CANNON BALLS VERTICALLY",
-"A PLANT THAT SHOOTS FOUR FIREBALLS IN A ROW"];
+"A CLOUD THAT SHOOTS VERTICALLY",
+"A PLANT THAT SHOOTS FOUR TIMES"];
 
 global.hitStop = false;
 global.canPause = false;

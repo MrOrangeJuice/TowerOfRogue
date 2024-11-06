@@ -731,6 +731,7 @@
     {"name":"sFlyingGBBig","order":13,"path":"sprites/sFlyingGBBig/sFlyingGBBig.yy",},
     {"name":"sFlyingHeart","order":4,"path":"sprites/sFlyingHeart/sFlyingHeart.yy",},
     {"name":"sFoesLabel","order":49,"path":"sprites/sFoesLabel/sFoesLabel.yy",},
+    {"name":"sFoeWindow","order":57,"path":"sprites/sFoeWindow/sFoeWindow.yy",},
     {"name":"sFruitHorizontalVFX","order":45,"path":"sprites/sFruitHorizontalVFX/sFruitHorizontalVFX.yy",},
     {"name":"sFruitJumpVFX","order":44,"path":"sprites/sFruitJumpVFX/sFruitJumpVFX.yy",},
     {"name":"sFruitVFX","order":43,"path":"sprites/sFruitVFX/sFruitVFX.yy",},

@@ -26,7 +26,7 @@
   ],
   "name":"sCloudGBBig",
   "nineSlice":null,
-  "origin":9,
+  "origin":4,
   "parent":{
     "name":"GB Sprites",
     "path":"folders/Sprites/Enemies/GB Sprites.yy",
@@ -88,7 +88,7 @@
     "visibleRange":null,
     "volume":1.0,
     "xorigin":8,
-    "yorigin":8,
+    "yorigin":10,
   },
   "swatchColours":null,
   "swfPrecision":2.525,
