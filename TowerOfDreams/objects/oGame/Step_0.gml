@@ -655,6 +655,12 @@ if(global.dreamBoyOn)
 			if(global.currentItem < 0) global.currentItem = 35;
 			audio_play_sound(snd_DreamBoyMenuMove,5,false);
 		}
+		else if(global.dreamBoyState == 2)
+		{
+			global.currentFoe--;
+			if(global.currentFoe < 0) global.currentFoe = 10;
+			audio_play_sound(snd_DreamBoyMenuMove,5,false);
+		}
 	}
 	if(key_right)
 	{
@@ -668,6 +674,12 @@ if(global.dreamBoyOn)
 		{
 			global.currentItem++;
 			if(global.currentItem > 35) global.currentItem = 0;
+			audio_play_sound(snd_DreamBoyMenuMove,5,false);
+		}
+		else if(global.dreamBoyState == 2)
+		{
+			global.currentFoe++;
+			if(global.currentFoe > 10) global.currentFoe = 0;
 			audio_play_sound(snd_DreamBoyMenuMove,5,false);
 		}
 	}

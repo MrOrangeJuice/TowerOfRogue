@@ -555,6 +555,38 @@ if(global.dreamBoy)
 			}
 		}
 		
+		// Draw foe floppys
+		for(i = 0; i < array_length(global.floppyFoeYTarget); i++)
+		{
+			if(global.dreamBoyState == 2)
+			{
+				if(global.currentFoe == i)
+				{
+					global.floppyFoeYTarget[i] = 67;
+				}
+				else
+				{
+					global.floppyFoeYTarget[i] = 64;
+				}
+				global.floppyFoeXTarget[i] = (119 + (i * 20) - (global.currentFoe * 20));
+			}
+			else
+			{
+				global.floppyFoeYTarget[i] = 0;
+			}
+			
+			// Lerp everything
+			if(global.floppyFoeY[i] != global.floppyFoeYTarget[i]) global.floppyFoeY[i] = lerp(global.floppyFoeY[i],global.floppyFoeYTarget[i],0.2);	
+			if(global.floppyFoeX[i] != global.floppyFoeXTarget[i]) global.floppyFoeX[i] = lerp(global.floppyFoeX[i],global.floppyFoeXTarget[i],0.2);	
+			
+			// Draw
+			if(global.floppyFoeY[i] > 24 && global.floppyFoeX[i] > 64 && global.floppyFoeX[i] < 172) 
+			{
+				draw_sprite(sFloppy,0,global.floppyFoeX[i],-24 + global.floppyFoeY[i]);
+				draw_sprite(global.dbFoeSprites[i],0,global.floppyFoeX[i] + 5,-10 + global.floppyFoeY[i]);
+			}
+		}
+		
 		// Draw item window
 		if(global.dreamBoyState == 1)
 		{
