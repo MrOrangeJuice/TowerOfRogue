@@ -672,6 +672,7 @@
     {"name":"sDownSpray","order":3,"path":"sprites/sDownSpray/sDownSpray.yy",},
     {"name":"sDreamBoy","order":44,"path":"sprites/sDreamBoy/sDreamBoy.yy",},
     {"name":"sDreamBoyMockup","order":45,"path":"sprites/sDreamBoyMockup/sDreamBoyMockup.yy",},
+    {"name":"sDreamBoyMockupExtras","order":58,"path":"sprites/sDreamBoyMockupExtras/sDreamBoyMockupExtras.yy",},
     {"name":"sDreamBoyMockupItems","order":51,"path":"sprites/sDreamBoyMockupItems/sDreamBoyMockupItems.yy",},
     {"name":"sDreamBoyOutline","order":47,"path":"sprites/sDreamBoyOutline/sDreamBoyOutline.yy",},
     {"name":"sDreamBoyScreen","order":46,"path":"sprites/sDreamBoyScreen/sDreamBoyScreen.yy",},

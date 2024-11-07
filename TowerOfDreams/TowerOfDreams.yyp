@@ -725,6 +725,7 @@
     {"id":{"name":"sDownSpray","path":"sprites/sDownSpray/sDownSpray.yy",},},
     {"id":{"name":"sDreamBoy","path":"sprites/sDreamBoy/sDreamBoy.yy",},},
     {"id":{"name":"sDreamBoyMockup","path":"sprites/sDreamBoyMockup/sDreamBoyMockup.yy",},},
+    {"id":{"name":"sDreamBoyMockupExtras","path":"sprites/sDreamBoyMockupExtras/sDreamBoyMockupExtras.yy",},},
     {"id":{"name":"sDreamBoyMockupItems","path":"sprites/sDreamBoyMockupItems/sDreamBoyMockupItems.yy",},},
     {"id":{"name":"sDreamBoyOutline","path":"sprites/sDreamBoyOutline/sDreamBoyOutline.yy",},},
     {"id":{"name":"sDreamBoyScreen","path":"sprites/sDreamBoyScreen/sDreamBoyScreen.yy",},},
