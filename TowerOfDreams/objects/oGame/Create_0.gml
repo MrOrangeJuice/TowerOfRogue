@@ -99,6 +99,10 @@ global.extraSprites = [sPostcard];
 global.extraSpriteY = 0;
 global.extraSpriteYTarget = 0;
 
+// DB Unlocks
+global.itemsFound = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+global.enemiesFound = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+
 global.hitStop = false;
 global.canPause = false;
 global.coins = 0;

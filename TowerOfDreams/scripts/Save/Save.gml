@@ -78,5 +78,13 @@ function Save(){
 	ini_write_real("savegame", "essence", global.essence);
 	ini_write_real("savegame", "volume", global.volume);
 	ini_write_real("savegame", "totalDeaths", global.totalDeaths);
+	for(i = 0; i < array_length(global.itemsFound); i++)
+	{
+		ini_write_real("savegame","itemsFound"+string(i), global.itemsFound[i]);
+	}
+	for(i = 0; i < array_length(global.enemiesFound); i++)
+	{
+		ini_write_real("savegame","enemiesFound"+string(i), global.enemiesFound[i]);
+	}
 	ini_close();
 }

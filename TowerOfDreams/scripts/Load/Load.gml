@@ -78,5 +78,13 @@ function Load(){
 	global.essence = ini_read_real("savegame", "essence", 0);
 	global.volume = ini_read_real("savegame", "volume", 6);
 	global.totalDeaths = ini_read_real("savegame", "totalDeaths", 0);
+	for(i = 0; i < array_length(global.itemsFound); i++)
+	{
+		global.itemsFound[i] = ini_read_real("savegame","itemsFound"+string(i),0);
+	}
+	for(i = 0; i < array_length(global.enemiesFound); i++)
+	{
+		global.enemiesFound[i] = ini_read_real("savegame","enemiesFound"+string(i),0);
+	}
 	ini_close();
 }
