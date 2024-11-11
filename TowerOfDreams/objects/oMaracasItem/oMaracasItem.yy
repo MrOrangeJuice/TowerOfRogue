@@ -6,7 +6,9 @@
   ],
   "managed":true,
   "name":"oMaracasItem",
-  "overriddenProperties":[],
+  "overriddenProperties":[
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oItem","path":"objects/oItem/oItem.yy",},"propertyId":{"name":"dbId","path":"objects/oItem/oItem.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"26",},
+  ],
   "parent":{
     "name":"Items",
     "path":"folders/Objects/Items.yy",
