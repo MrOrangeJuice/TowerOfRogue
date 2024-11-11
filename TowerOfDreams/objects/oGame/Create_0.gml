@@ -94,6 +94,11 @@ global.foeFileDescriptions =
 "A CLOUD THAT SHOOTS VERTICALLY",
 "A PLANT THAT SHOOTS FOUR TIMES"];
 
+// DB Extras
+global.extraSprites = [sPostcard];
+global.extraSpriteY = 0;
+global.extraSpriteYTarget = 0;
+
 global.hitStop = false;
 global.canPause = false;
 global.coins = 0;

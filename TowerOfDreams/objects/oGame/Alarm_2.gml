@@ -29,6 +29,8 @@ global.floppyFoeY = [0,0,0,0,0,0,0,0,0,0,0];
 global.floppyFoeYTarget = [0,0,0,0,0,0,0,0,0,0,0];
 global.floppyFoeX = [0,0,0,0,0,0,0,0,0,0,0];
 global.floppyFoeXTarget = [0,0,0,0,0,0,0,0,0,0,0];
+global.extraSpriteY = 0;
+global.extraSpriteYTarget = 0;
 
 if(instance_exists(oPlayer))
 {

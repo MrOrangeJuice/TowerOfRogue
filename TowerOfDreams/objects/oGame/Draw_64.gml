@@ -607,8 +607,19 @@ if(global.dreamBoy)
 			global.foeWindowYTarget = 0;
 		}
 		
+		// Draw extra window
+		if(global.dreamBoyState == 3)
+		{
+			global.extraSpriteYTarget = 80;
+		}
+		else
+		{
+			global.extraSpriteYTarget = 0;
+		}
+		
 		if(global.itemWindowY != global.itemWindowYTarget) global.itemWindowY = lerp(global.itemWindowY,global.itemWindowYTarget,0.2);	
 		if(global.foeWindowY != global.foeWindowYTarget) global.foeWindowY = lerp(global.foeWindowY,global.foeWindowYTarget,0.2);	
+		if(global.extraSpriteY != global.extraSpriteYTarget) global.extraSpriteY = lerp(global.extraSpriteY,global.extraSpriteYTarget,0.2);
 		
 		// Draw
 		draw_sprite(sItemWindow,0,87,132-global.itemWindowY);
@@ -616,6 +627,8 @@ if(global.dreamBoy)
 		
 		draw_sprite(sFoeWindow,0,87,132-global.foeWindowY);
 		draw_sprite(global.dbFoeBigSprites[global.currentFoe],image_index/7.5,102,154-global.foeWindowY);
+		
+		draw_sprite(global.extraSprites[0],0,88,125-global.extraSpriteY);
 		
 		// Draw item and foe info
 		draw_set_font(fDreamBoy);
