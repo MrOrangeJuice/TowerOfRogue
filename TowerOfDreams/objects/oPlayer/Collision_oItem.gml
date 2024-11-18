@@ -2,6 +2,9 @@
 
 if(other.canGrab)
 {
+	// Update item database if necessary
+	if(!global.itemsFound[other.dbId]) global.itemsFound[other.dbId] = true;
+	
 	// Active item
 	if(!other.passive)
 	{

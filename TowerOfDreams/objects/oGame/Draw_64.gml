@@ -551,7 +551,8 @@ if(global.dreamBoy)
 			if(global.floppyY[i] > 24 && global.floppyX[i] > 64 && global.floppyX[i] < 172) 
 			{
 				draw_sprite(sFloppy,0,global.floppyX[i],-24 + global.floppyY[i]);
-				draw_sprite(global.dbItemSprites[i],0,global.floppyX[i] + 5,-10 + global.floppyY[i]);
+				if(global.itemsFound[i]) draw_sprite(global.dbItemSprites[i],0,global.floppyX[i] + 5,-10 + global.floppyY[i]);
+				else draw_sprite(sQuestion,0,global.floppyX[i] + 5,-10 + global.floppyY[i]);
 			}
 		}
 		
@@ -583,7 +584,8 @@ if(global.dreamBoy)
 			if(global.floppyFoeY[i] > 24 && global.floppyFoeX[i] > 64 && global.floppyFoeX[i] < 172) 
 			{
 				draw_sprite(sFloppy,0,global.floppyFoeX[i],-24 + global.floppyFoeY[i]);
-				draw_sprite(global.dbFoeSprites[i],0,global.floppyFoeX[i] + 5,-10 + global.floppyFoeY[i]);
+				if(global.enemiesFound[i]) draw_sprite(global.dbFoeSprites[i],0,global.floppyFoeX[i] + 5,-10 + global.floppyFoeY[i]);
+				else draw_sprite(sQuestion,0,global.floppyFoeX[i] + 5,-10 + global.floppyFoeY[i]);
 			}
 		}
 		
@@ -623,10 +625,12 @@ if(global.dreamBoy)
 		
 		// Draw
 		draw_sprite(sItemWindow,0,87,132-global.itemWindowY);
-		draw_sprite(global.dbItemSprites[global.currentItem],0,97,147-global.itemWindowY);
+		if(global.itemsFound[global.currentItem]) draw_sprite(global.dbItemSprites[global.currentItem],0,97,147-global.itemWindowY);
+		else draw_sprite(sQuestion,0,97,147-global.itemWindowY);
 		
 		draw_sprite(sFoeWindow,0,87,132-global.foeWindowY);
-		draw_sprite(global.dbFoeBigSprites[global.currentFoe],image_index/7.5,102,154-global.foeWindowY);
+		if(global.enemiesFound[global.currentFoe]) draw_sprite(global.dbFoeBigSprites[global.currentFoe],image_index/7.5,102,154-global.foeWindowY);
+		else draw_sprite(sQuestion,image_index/7.5,98,150-global.foeWindowY);
 		
 		draw_sprite(global.extraSprites[0],0,88,125-global.extraSpriteY);
 		
@@ -635,15 +639,19 @@ if(global.dreamBoy)
 		draw_set_color(#5a5f92);
 		
 		draw_set_halign(fa_left);
-		draw_text(91,132-global.itemWindowY,global.itemFileNames[global.currentItem]);
+		if(global.itemsFound[global.currentItem]) draw_text(91,132-global.itemWindowY,global.itemFileNames[global.currentItem]);
+		else draw_text(91,132-global.itemWindowY,"FILE NOT FOUND");
 		draw_set_halign(fa_center);
-		draw_text_ext(139, 142-global.itemWindowY, global.itemFileDescriptions[global.currentItem], 5, 47);
+		if(global.itemsFound[global.currentItem]) draw_text_ext(139, 142-global.itemWindowY, global.itemFileDescriptions[global.currentItem], 5, 47);
+		else draw_text_ext(139, 142-global.itemWindowY, "ASCEND HIGHER TO DISCOVER THIS ITEM", 5, 47);
 		draw_set_halign(fa_left);
 		
 		draw_set_halign(fa_left);
-		draw_text(91,132-global.foeWindowY,global.foeFileNames[global.currentFoe]);
+		if(global.enemiesFound[global.currentFoe]) draw_text(91,132-global.foeWindowY,global.foeFileNames[global.currentFoe]);
+		else draw_text(91,132-global.foeWindowY,"FILE NOT FOUND");
 		draw_set_halign(fa_center);
-		draw_text_ext(141, 142-global.foeWindowY, global.foeFileDescriptions[global.currentFoe], 5, 43);
+		if(global.enemiesFound[global.currentFoe]) draw_text_ext(141, 142-global.foeWindowY, global.foeFileDescriptions[global.currentFoe], 5, 43);
+		else draw_text_ext(141, 142-global.foeWindowY,"ASCEND HIGHER TO DISCOVER THIS FOE", 5, 43);
 		draw_set_halign(fa_left);
 		
 		// Reset drawing
