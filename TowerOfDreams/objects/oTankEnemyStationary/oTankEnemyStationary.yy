@@ -10,6 +10,7 @@
   "overriddenProperties":[
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oCannon","path":"objects/oCannon/oCannon.yy",},"propertyId":{"name":"dir","path":"objects/oCannon/oCannon.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"1",},
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oCannon","path":"objects/oCannon/oCannon.yy",},"propertyId":{"name":"fireGap","path":"objects/oCannon/oCannon.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"2",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oEnemy","path":"objects/oEnemy/oEnemy.yy",},"propertyId":{"name":"dbId","path":"objects/oEnemy/oEnemy.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"7",},
   ],
   "parent":{
     "name":"Enemies",
