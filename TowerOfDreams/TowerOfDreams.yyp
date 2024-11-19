@@ -1036,6 +1036,7 @@
     {"id":{"name":"sPortalYellow","path":"sprites/sPortalYellow/sPortalYellow.yy",},},
     {"id":{"name":"sPostcard","path":"sprites/sPostcard/sPostcard.yy",},},
     {"id":{"name":"sQuestion","path":"sprites/sQuestion/sQuestion.yy",},},
+    {"id":{"name":"sQuestionGBBig","path":"sprites/sQuestionGBBig/sQuestionGBBig.yy",},},
     {"id":{"name":"sRabbitUI","path":"sprites/sRabbitUI/sRabbitUI.yy",},},
     {"id":{"name":"sRageVFX","path":"sprites/sRageVFX/sRageVFX.yy",},},
     {"id":{"name":"sRankingSign","path":"sprites/sRankingSign/sRankingSign.yy",},},

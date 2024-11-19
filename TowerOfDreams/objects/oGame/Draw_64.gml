@@ -630,7 +630,7 @@ if(global.dreamBoy)
 		
 		draw_sprite(sFoeWindow,0,87,132-global.foeWindowY);
 		if(global.enemiesFound[global.currentFoe]) draw_sprite(global.dbFoeBigSprites[global.currentFoe],image_index/7.5,102,154-global.foeWindowY);
-		else draw_sprite(sQuestion,image_index/7.5,98,150-global.foeWindowY);
+		else draw_sprite(sQuestionGBBig,image_index/7.5,102,154-global.foeWindowY);
 		
 		draw_sprite(global.extraSprites[0],0,88,125-global.extraSpriteY);
 		

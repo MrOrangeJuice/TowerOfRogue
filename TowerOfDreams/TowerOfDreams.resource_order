@@ -965,6 +965,7 @@
     {"name":"sPortalYellow","order":56,"path":"sprites/sPortalYellow/sPortalYellow.yy",},
     {"name":"sPostcard","order":59,"path":"sprites/sPostcard/sPostcard.yy",},
     {"name":"sQuestion","order":36,"path":"sprites/sQuestion/sQuestion.yy",},
+    {"name":"sQuestionGBBig","order":22,"path":"sprites/sQuestionGBBig/sQuestionGBBig.yy",},
     {"name":"sRabbitUI","order":46,"path":"sprites/sRabbitUI/sRabbitUI.yy",},
     {"name":"sRageVFX","order":16,"path":"sprites/sRageVFX/sRageVFX.yy",},
     {"name":"sRankingSign","order":4,"path":"sprites/sRankingSign/sRankingSign.yy",},
