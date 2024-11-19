@@ -415,6 +415,8 @@ if(!global.dreamBoy)
 					global.maxHealth = 6;
 					global.health = 6;
 					global.hardMode = false;
+					global.itemsFound = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+					global.enemiesFound = [0,0,0,0,0,0,0,0,0,0,0];
 					// Make new default file
 					Save();
 					break;
