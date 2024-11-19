@@ -55,3 +55,12 @@ else
 audio_stop_sound(snd_BoomerangReturn);
 audio_stop_sound(snd_GemLoop);
 global.armed = false;
+
+// Check for new enemies
+if(instance_exists(oEnemy))
+{
+	for(i = 0; i < array_length(global.enemiesFound); i++)
+	{
+		if(!global.enemiesFound[oEnemy.dbId]) global.enemiesFound[oEnemy.dbId] = true;
+	}
+}
