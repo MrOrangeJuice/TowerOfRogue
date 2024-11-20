@@ -638,6 +638,7 @@
     {"name":"sClouds4","order":12,"path":"sprites/sClouds4/sClouds4.yy",},
     {"name":"sCoinVFX","order":5,"path":"sprites/sCoinVFX/sCoinVFX.yy",},
     {"name":"sColaUI","order":8,"path":"sprites/sColaUI/sColaUI.yy",},
+    {"name":"sComputer","order":16,"path":"sprites/sComputer/sComputer.yy",},
     {"name":"sContinue","order":19,"path":"sprites/sContinue/sContinue.yy",},
     {"name":"sContinueController","order":20,"path":"sprites/sContinueController/sContinueController.yy",},
     {"name":"sContinueControllerPS","order":27,"path":"sprites/sContinueControllerPS/sContinueControllerPS.yy",},

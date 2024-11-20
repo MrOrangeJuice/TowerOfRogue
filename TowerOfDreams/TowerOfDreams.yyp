@@ -689,6 +689,7 @@
     {"id":{"name":"sClouds4","path":"sprites/sClouds4/sClouds4.yy",},},
     {"id":{"name":"sCoinVFX","path":"sprites/sCoinVFX/sCoinVFX.yy",},},
     {"id":{"name":"sColaUI","path":"sprites/sColaUI/sColaUI.yy",},},
+    {"id":{"name":"sComputer","path":"sprites/sComputer/sComputer.yy",},},
     {"id":{"name":"sContinue","path":"sprites/sContinue/sContinue.yy",},},
     {"id":{"name":"sContinueController","path":"sprites/sContinueController/sContinueController.yy",},},
     {"id":{"name":"sContinueControllerPS","path":"sprites/sContinueControllerPS/sContinueControllerPS.yy",},},
