@@ -61,6 +61,10 @@ if(instance_exists(oEnemy))
 {
 	for(i = 0; i < array_length(global.enemiesFound); i++)
 	{
-		if(!global.enemiesFound[oEnemy.dbId]) global.enemiesFound[oEnemy.dbId] = true;
+		if(!global.enemiesFound[oEnemy.dbId]) 
+		{
+			global.enemiesFound[oEnemy.dbId] = true;
+			Save();
+		}
 	}
 }

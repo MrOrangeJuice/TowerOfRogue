@@ -182,6 +182,7 @@
     {"id":{"name":"oDashFruitRight","path":"objects/oDashFruitRight/oDashFruitRight.yy",},},
     {"id":{"name":"oDashFruitVFX","path":"objects/oDashFruitVFX/oDashFruitVFX.yy",},},
     {"id":{"name":"oDashVFX","path":"objects/oDashVFX/oDashVFX.yy",},},
+    {"id":{"name":"oDBPopup","path":"objects/oDBPopup/oDBPopup.yy",},},
     {"id":{"name":"oDice","path":"objects/oDice/oDice.yy",},},
     {"id":{"name":"oDiceBubble","path":"objects/oDiceBubble/oDiceBubble.yy",},},
     {"id":{"name":"oDiceBubbleRegrow","path":"objects/oDiceBubbleRegrow/oDiceBubbleRegrow.yy",},},

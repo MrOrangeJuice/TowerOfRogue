@@ -160,6 +160,7 @@
     {"name":"oDashFruitRight","order":31,"path":"objects/oDashFruitRight/oDashFruitRight.yy",},
     {"name":"oDashFruitVFX","order":47,"path":"objects/oDashFruitVFX/oDashFruitVFX.yy",},
     {"name":"oDashVFX","order":32,"path":"objects/oDashVFX/oDashVFX.yy",},
+    {"name":"oDBPopup","order":64,"path":"objects/oDBPopup/oDBPopup.yy",},
     {"name":"oDice","order":29,"path":"objects/oDice/oDice.yy",},
     {"name":"oDiceBubble","order":30,"path":"objects/oDiceBubble/oDiceBubble.yy",},
     {"name":"oDiceBubbleRegrow","order":31,"path":"objects/oDiceBubbleRegrow/oDiceBubbleRegrow.yy",},

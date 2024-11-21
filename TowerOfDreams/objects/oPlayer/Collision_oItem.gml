@@ -3,7 +3,15 @@
 if(other.canGrab)
 {
 	// Update item database if necessary
-	if(!global.itemsFound[other.dbId]) global.itemsFound[other.dbId] = true;
+	if(!global.itemsFound[other.dbId]) 
+	{
+		global.itemsFound[other.dbId] = true;
+		// Spawn popup
+		// Destroy any old ones
+		instance_destroy(oDBPopup);
+		dbPopup = instance_create_layer(x,y,"UI",oDBPopup);
+		Save();
+	}
 	
 	// Active item
 	if(!other.passive)
