@@ -579,6 +579,7 @@
     {"id":{"name":"s4","path":"sprites/s4/s4.yy",},},
     {"id":{"name":"s5","path":"sprites/s5/s5.yy",},},
     {"id":{"name":"sA","path":"sprites/sA/sA.yy",},},
+    {"id":{"name":"sAlert","path":"sprites/sAlert/sAlert.yy",},},
     {"id":{"name":"sAngryVFX","path":"sprites/sAngryVFX/sAngryVFX.yy",},},
     {"id":{"name":"sArmor","path":"sprites/sArmor/sArmor.yy",},},
     {"id":{"name":"sArmor5","path":"sprites/sArmor5/sArmor5.yy",},},

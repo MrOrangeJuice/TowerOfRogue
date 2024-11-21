@@ -533,6 +533,7 @@
     {"name":"s4","order":3,"path":"sprites/s4/s4.yy",},
     {"name":"s5","order":4,"path":"sprites/s5/s5.yy",},
     {"name":"sA","order":1,"path":"sprites/sA/sA.yy",},
+    {"name":"sAlert","order":61,"path":"sprites/sAlert/sAlert.yy",},
     {"name":"sAngryVFX","order":17,"path":"sprites/sAngryVFX/sAngryVFX.yy",},
     {"name":"sArmor","order":3,"path":"sprites/sArmor/sArmor.yy",},
     {"name":"sArmor5","order":7,"path":"sprites/sArmor5/sArmor5.yy",},
