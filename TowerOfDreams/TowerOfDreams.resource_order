@@ -830,6 +830,7 @@
     {"name":"sLavaTestTop","order":1,"path":"sprites/sLavaTestTop/sLavaTestTop.yy",},
     {"name":"sLeftConveyer","order":19,"path":"sprites/sLeftConveyer/sLeftConveyer.yy",},
     {"name":"sLeftSpray","order":1,"path":"sprites/sLeftSpray/sLeftSpray.yy",},
+    {"name":"sLester","order":11,"path":"sprites/sLester/sLester.yy",},
     {"name":"sLevelComplete","order":15,"path":"sprites/sLevelComplete/sLevelComplete.yy",},
     {"name":"sLevelCompleteStatic","order":19,"path":"sprites/sLevelCompleteStatic/sLevelCompleteStatic.yy",},
     {"name":"sLever","order":28,"path":"sprites/sLever/sLever.yy",},
