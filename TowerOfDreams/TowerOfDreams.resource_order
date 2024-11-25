@@ -387,6 +387,7 @@
     {"name":"rShop2","order":1,"path":"rooms/rShop2/rShop2.yy",},
     {"name":"rShopFloor2","order":1,"path":"rooms/rShopFloor2/rShopFloor2.yy",},
     {"name":"rShopFloor3","order":1,"path":"rooms/rShopFloor3/rShopFloor3.yy",},
+    {"name":"rTestRoom","order":20,"path":"rooms/rTestRoom/rTestRoom.yy",},
     {"name":"rTitle","order":2,"path":"rooms/rTitle/rTitle.yy",},
     {"name":"rTreasureRoom","order":2,"path":"rooms/rTreasureRoom/rTreasureRoom.yy",},
     {"name":"rTreasureRoom2","order":3,"path":"rooms/rTreasureRoom2/rTreasureRoom2.yy",},

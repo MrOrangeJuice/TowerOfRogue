@@ -428,6 +428,7 @@
     {"id":{"name":"rShopFloor2","path":"rooms/rShopFloor2/rShopFloor2.yy",},},
     {"id":{"name":"rShopFloor3","path":"rooms/rShopFloor3/rShopFloor3.yy",},},
     {"id":{"name":"rTest","path":"rooms/rTest/rTest.yy",},},
+    {"id":{"name":"rTestRoom","path":"rooms/rTestRoom/rTestRoom.yy",},},
     {"id":{"name":"rTitle","path":"rooms/rTitle/rTitle.yy",},},
     {"id":{"name":"rTreasureRoom","path":"rooms/rTreasureRoom/rTreasureRoom.yy",},},
     {"id":{"name":"rTreasureRoom2","path":"rooms/rTreasureRoom2/rTreasureRoom2.yy",},},
@@ -1279,6 +1280,7 @@
     {"roomId":{"name":"rFloor3_3","path":"rooms/rFloor3_3/rFloor3_3.yy",},},
     {"roomId":{"name":"rBonusItem","path":"rooms/rBonusItem/rBonusItem.yy",},},
     {"roomId":{"name":"rFloor3_4","path":"rooms/rFloor3_4/rFloor3_4.yy",},},
+    {"roomId":{"name":"rTestRoom","path":"rooms/rTestRoom/rTestRoom.yy",},},
   ],
   "templateType":null,
   "TextureGroups":[
