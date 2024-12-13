@@ -894,6 +894,7 @@
     {"id":{"name":"sLeftConveyer","path":"sprites/sLeftConveyer/sLeftConveyer.yy",},},
     {"id":{"name":"sLeftSpray","path":"sprites/sLeftSpray/sLeftSpray.yy",},},
     {"id":{"name":"sLester","path":"sprites/sLester/sLester.yy",},},
+    {"id":{"name":"sLesterOld","path":"sprites/sLesterOld/sLesterOld.yy",},},
     {"id":{"name":"sLevelComplete","path":"sprites/sLevelComplete/sLevelComplete.yy",},},
     {"id":{"name":"sLevelCompleteStatic","path":"sprites/sLevelCompleteStatic/sLevelCompleteStatic.yy",},},
     {"id":{"name":"sLever","path":"sprites/sLever/sLever.yy",},},
