@@ -261,6 +261,7 @@
     {"name":"oLavaBit","order":26,"path":"objects/oLavaBit/oLavaBit.yy",},
     {"name":"oLavaBubble","order":25,"path":"objects/oLavaBubble/oLavaBubble.yy",},
     {"name":"oLeftConveyer","order":14,"path":"objects/oLeftConveyer/oLeftConveyer.yy",},
+    {"name":"oLester","order":4,"path":"objects/oLester/oLester.yy",},
     {"name":"oLevelInfo","order":24,"path":"objects/oLevelInfo/oLevelInfo.yy",},
     {"name":"oLever","order":20,"path":"objects/oLever/oLever.yy",},
     {"name":"oLightItem","order":26,"path":"objects/oLightItem/oLightItem.yy",},

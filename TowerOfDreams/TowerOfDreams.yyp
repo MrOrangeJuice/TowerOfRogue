@@ -288,6 +288,7 @@
     {"id":{"name":"oLavaBit","path":"objects/oLavaBit/oLavaBit.yy",},},
     {"id":{"name":"oLavaBubble","path":"objects/oLavaBubble/oLavaBubble.yy",},},
     {"id":{"name":"oLeftConveyer","path":"objects/oLeftConveyer/oLeftConveyer.yy",},},
+    {"id":{"name":"oLester","path":"objects/oLester/oLester.yy",},},
     {"id":{"name":"oLevelInfo","path":"objects/oLevelInfo/oLevelInfo.yy",},},
     {"id":{"name":"oLever","path":"objects/oLever/oLever.yy",},},
     {"id":{"name":"oLightItem","path":"objects/oLightItem/oLightItem.yy",},},
