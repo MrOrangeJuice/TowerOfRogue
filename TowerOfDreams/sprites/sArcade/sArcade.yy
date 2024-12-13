@@ -19,6 +19,7 @@
   "height":96,
   "HTile":false,
   "layers":[
+    {"$GMImageLayer":"","%Name":"a80cc300-b666-4c27-9b07-82062affc3b9","blendMode":0,"displayName":"Layer 1","isLocked":false,"name":"a80cc300-b666-4c27-9b07-82062affc3b9","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
     {"$GMImageLayer":"","%Name":"5b08145c-f5cf-46d5-974c-09243138fd10","blendMode":0,"displayName":"default","isLocked":false,"name":"5b08145c-f5cf-46d5-974c-09243138fd10","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"sArcade",
