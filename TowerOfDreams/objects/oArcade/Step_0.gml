@@ -27,17 +27,19 @@ if(place_meeting(x,y,oPlayer))
     if(key_up)
     {
         image_speed = 0;
-        if(image_index >= 0 && image_index <= 2)
+        if(image_index >= 0 && image_index < 3)
         {
             win = true;
+            audio_play_sound(snd_Arcade,5,false);
         }
         else 
         {
             lose = true;
+            audio_play_sound(snd_ArcadeBad,5,false);
         } 
            
         audio_play_sound(snd_Door,5,false);
-        SlideTransition(TRANS_MODE.GOTO,rTestRoom);
+        alarm[0] = room_speed * 0.1;
     }
 }
 else
