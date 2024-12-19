@@ -110,6 +110,7 @@
     {"id":{"name":"o4","path":"objects/o4/o4.yy",},},
     {"id":{"name":"o5","path":"objects/o5/o5.yy",},},
     {"id":{"name":"oAngerVFX","path":"objects/oAngerVFX/oAngerVFX.yy",},},
+    {"id":{"name":"oArcade","path":"objects/oArcade/oArcade.yy",},},
     {"id":{"name":"oArmor","path":"objects/oArmor/oArmor.yy",},},
     {"id":{"name":"oArmorPillar","path":"objects/oArmorPillar/oArmorPillar.yy",},},
     {"id":{"name":"oArmorTrophyItem","path":"objects/oArmorTrophyItem/oArmorTrophyItem.yy",},},

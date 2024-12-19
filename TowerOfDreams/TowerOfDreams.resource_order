@@ -90,6 +90,7 @@
     {"name":"o4","order":3,"path":"objects/o4/o4.yy",},
     {"name":"o5","order":4,"path":"objects/o5/o5.yy",},
     {"name":"oAngerVFX","order":20,"path":"objects/oAngerVFX/oAngerVFX.yy",},
+    {"name":"oArcade","order":33,"path":"objects/oArcade/oArcade.yy",},
     {"name":"oArmor","order":1,"path":"objects/oArmor/oArmor.yy",},
     {"name":"oArmorPillar","order":2,"path":"objects/oArmorPillar/oArmorPillar.yy",},
     {"name":"oArmorTrophyItem","order":56,"path":"objects/oArmorTrophyItem/oArmorTrophyItem.yy",},
