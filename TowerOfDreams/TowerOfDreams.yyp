@@ -95,7 +95,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.8.1.171",
+    "IDEVersion":"2024.11.0.179",
   },
   "name":"TowerOfDreams",
   "resources":[
@@ -584,6 +584,8 @@
     {"id":{"name":"sAlert","path":"sprites/sAlert/sAlert.yy",},},
     {"id":{"name":"sAngryVFX","path":"sprites/sAngryVFX/sAngryVFX.yy",},},
     {"id":{"name":"sArcade","path":"sprites/sArcade/sArcade.yy",},},
+    {"id":{"name":"sArcadeResult","path":"sprites/sArcadeResult/sArcadeResult.yy",},},
+    {"id":{"name":"sArcadeResultBad","path":"sprites/sArcadeResultBad/sArcadeResultBad.yy",},},
     {"id":{"name":"sArmor","path":"sprites/sArmor/sArmor.yy",},},
     {"id":{"name":"sArmor5","path":"sprites/sArmor5/sArmor5.yy",},},
     {"id":{"name":"sArmor5Small","path":"sprites/sArmor5Small/sArmor5Small.yy",},},

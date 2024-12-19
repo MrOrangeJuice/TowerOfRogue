@@ -538,6 +538,8 @@
     {"name":"sAlert","order":61,"path":"sprites/sAlert/sAlert.yy",},
     {"name":"sAngryVFX","order":17,"path":"sprites/sAngryVFX/sAngryVFX.yy",},
     {"name":"sArcade","order":1,"path":"sprites/sArcade/sArcade.yy",},
+    {"name":"sArcadeResult","order":2,"path":"sprites/sArcadeResult/sArcadeResult.yy",},
+    {"name":"sArcadeResultBad","order":3,"path":"sprites/sArcadeResultBad/sArcadeResultBad.yy",},
     {"name":"sArmor","order":3,"path":"sprites/sArmor/sArmor.yy",},
     {"name":"sArmor5","order":7,"path":"sprites/sArmor5/sArmor5.yy",},
     {"name":"sArmor5Small","order":6,"path":"sprites/sArmor5Small/sArmor5Small.yy",},
