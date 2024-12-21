@@ -661,6 +661,7 @@
     {"name":"sCritPBUI","order":21,"path":"sprites/sCritPBUI/sCritPBUI.yy",},
     {"name":"sCritUI","order":6,"path":"sprites/sCritUI/sCritUI.yy",},
     {"name":"sCritVFX","order":13,"path":"sprites/sCritVFX/sCritVFX.yy",},
+    {"name":"sCursor","order":62,"path":"sprites/sCursor/sCursor.yy",},
     {"name":"sCustomer","order":9,"path":"sprites/sCustomer/sCustomer.yy",},
     {"name":"sD","order":4,"path":"sprites/sD/sD.yy",},
     {"name":"sDashFruitHorizontal","order":1,"path":"sprites/sDashFruitHorizontal/sDashFruitHorizontal.yy",},

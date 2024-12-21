@@ -713,6 +713,7 @@
     {"id":{"name":"sCritPBUI","path":"sprites/sCritPBUI/sCritPBUI.yy",},},
     {"id":{"name":"sCritUI","path":"sprites/sCritUI/sCritUI.yy",},},
     {"id":{"name":"sCritVFX","path":"sprites/sCritVFX/sCritVFX.yy",},},
+    {"id":{"name":"sCursor","path":"sprites/sCursor/sCursor.yy",},},
     {"id":{"name":"sCustomer","path":"sprites/sCustomer/sCustomer.yy",},},
     {"id":{"name":"sD","path":"sprites/sD/sD.yy",},},
     {"id":{"name":"sDashFruit","path":"sprites/sDashFruit/sDashFruit.yy",},},
