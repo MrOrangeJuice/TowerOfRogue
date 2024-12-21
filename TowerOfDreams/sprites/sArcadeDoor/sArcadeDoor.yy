@@ -2,9 +2,9 @@
   "$GMSprite":"",
   "%Name":"sArcadeDoor",
   "bboxMode":0,
-  "bbox_bottom":13,
+  "bbox_bottom":15,
   "bbox_left":0,
-  "bbox_right":21,
+  "bbox_right":23,
   "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -16,7 +16,7 @@
   ],
   "gridX":0,
   "gridY":0,
-  "height":14,
+  "height":16,
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"1a6b4e2f-ff26-4017-a91c-8787bcda125f","blendMode":0,"displayName":"default","isLocked":false,"name":"1a6b4e2f-ff26-4017-a91c-8787bcda125f","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
@@ -86,5 +86,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":22,
+  "width":24,
 }
