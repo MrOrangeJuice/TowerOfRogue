@@ -7,10 +7,7 @@ if(other.canGrab)
 	{
 		global.itemsFound[other.dbId] = true;
 		// Spawn popup
-		// Destroy any old ones
-		instance_destroy(oDBPopup);
 		dbPopup = instance_create_layer(x,y,"UI",oDBPopup);
-        audio_play_sound(snd_Notification,5,false);
 		Save();
 	}
 	
