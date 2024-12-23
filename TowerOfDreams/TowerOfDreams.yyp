@@ -779,6 +779,7 @@
     {"id":{"name":"sEmpty","path":"sprites/sEmpty/sEmpty.yy",},},
     {"id":{"name":"sEnemyExplosion","path":"sprites/sEnemyExplosion/sEnemyExplosion.yy",},},
     {"id":{"name":"sEnemyExplosionElite","path":"sprites/sEnemyExplosionElite/sEnemyExplosionElite.yy",},},
+    {"id":{"name":"sEraser","path":"sprites/sEraser/sEraser.yy",},},
     {"id":{"name":"sExtras3D","path":"sprites/sExtras3D/sExtras3D.yy",},},
     {"id":{"name":"sExtrasLabel","path":"sprites/sExtrasLabel/sExtrasLabel.yy",},},
     {"id":{"name":"sFastJumpLeftVFX","path":"sprites/sFastJumpLeftVFX/sFastJumpLeftVFX.yy",},},

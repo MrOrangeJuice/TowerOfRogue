@@ -724,6 +724,7 @@
     {"name":"sEmpty","order":22,"path":"sprites/sEmpty/sEmpty.yy",},
     {"name":"sEnemyExplosion","order":7,"path":"sprites/sEnemyExplosion/sEnemyExplosion.yy",},
     {"name":"sEnemyExplosionElite","order":8,"path":"sprites/sEnemyExplosionElite/sEnemyExplosionElite.yy",},
+    {"name":"sEraser","order":5,"path":"sprites/sEraser/sEraser.yy",},
     {"name":"sExtras3D","order":2,"path":"sprites/sExtras3D/sExtras3D.yy",},
     {"name":"sExtrasLabel","order":50,"path":"sprites/sExtrasLabel/sExtrasLabel.yy",},
     {"name":"sFastJumpLeftVFX","order":46,"path":"sprites/sFastJumpLeftVFX/sFastJumpLeftVFX.yy",},
