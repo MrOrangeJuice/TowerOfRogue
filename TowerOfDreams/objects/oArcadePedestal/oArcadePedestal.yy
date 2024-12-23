@@ -1,21 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"oArcadeDoor",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"oArcadePedestal",
+  "eventList":[],
   "managed":true,
-  "name":"oArcadeDoor",
+  "name":"oArcadePedestal",
   "overriddenProperties":[],
   "parent":{
     "name":"Buildings",
     "path":"folders/Objects/Buildings.yy",
   },
-  "parentObjectId":{
-    "name":"oDoor",
-    "path":"objects/oDoor/oDoor.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -34,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sArcadeDoor",
-    "path":"sprites/sArcadeDoor/sArcadeDoor.yy",
+    "name":"sArcadePedestal",
+    "path":"sprites/sArcadePedestal/sArcadePedestal.yy",
   },
   "spriteMaskId":null,
   "visible":true,
