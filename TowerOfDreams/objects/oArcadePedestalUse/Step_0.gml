@@ -165,15 +165,34 @@ if(key_select_pressed)
 /*
 if(key_select)
 {
-    cursorBottomLeftXTarget += 2;
-    cursorBottomRightXTarget -= 2;
-    cursorTopLeftXTarget += 2;
-    cursorTopRightXTarget -= 2;
+    if(!zoomedIn)
+    {
+        cursorBottomLeftXTarget += 2;
+        cursorBottomRightXTarget -= 2;
+        cursorTopLeftXTarget += 2;
+        cursorTopRightXTarget -= 2;
+        
+        cursorBottomLeftYTarget -= 2;
+        cursorBottomRightYTarget -= 2;
+        cursorTopLeftYTarget += 2;
+        cursorTopRightYTarget += 2;
+        
+        zoomedIn = true;
+    }
+}
+else 
+{
+    cursorBottomLeftXTarget -= 2;
+    cursorBottomRightXTarget += 2;
+    cursorTopLeftXTarget -= 2;
+    cursorTopRightXTarget += 2;
     
-    cursorBottomLeftYTarget -= 2;
-    cursorBottomRightYTarget -= 2;
-    cursorTopLeftYTarget += 2;
-    cursorTopRightYTarget += 2;
+    cursorBottomLeftYTarget += 2;
+    cursorBottomRightYTarget += 2;
+    cursorTopLeftYTarget -= 2;
+    cursorTopRightYTarget -= 2;
+    
+    zoomedIn = false;
 }
 */
 

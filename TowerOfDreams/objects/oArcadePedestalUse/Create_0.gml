@@ -39,3 +39,5 @@ cursorMove = 8;
 
 spawnX = ((cursorBottomLeftX+cursorBottomRightX)/2)-4;
 spawnY = ((cursorBottomLeftY+cursorTopLeftY)/2)-4;
+
+zoomedIn = false;
