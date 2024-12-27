@@ -41,25 +41,32 @@ else
 // Animation
 
 // Start talking animation
-if(oPlayer.x > x+16)
+if(instance_exists(oPlayer))
 {
-    if(talking)
+    if(oPlayer.x > x+16)
     {
-        sprite_index = sLesterTalkRight;
+        if(talking)
+        {
+            sprite_index = sLesterTalkRight;
+        }
+        else 
+        {
+            sprite_index = sLesterRight;
+        }
     }
     else 
     {
-        sprite_index = sLesterRight;
+        if(talking)
+        {
+            sprite_index = sLesterTalk;
+        }
+        else 
+        {
+            sprite_index = sLester;
+        }
     }
 }
 else 
 {
-    if(talking)
-    {
-        sprite_index = sLesterTalk;
-    }
-    else 
-    {
-        sprite_index = sLester;
-    }
+    sprite_index = sLesterRight;
 }
