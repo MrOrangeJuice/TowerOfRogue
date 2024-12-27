@@ -23,7 +23,7 @@
   ],
   "name":"sCursorTopRight",
   "nineSlice":null,
-  "origin":0,
+  "origin":2,
   "parent":{
     "name":"Cursor",
     "path":"folders/Sprites/UI/Cursor.yy",
@@ -75,7 +75,7 @@
     ],
     "visibleRange":null,
     "volume":1.0,
-    "xorigin":0,
+    "xorigin":5,
     "yorigin":0,
   },
   "swatchColours":null,

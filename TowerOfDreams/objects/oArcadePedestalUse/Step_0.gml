@@ -4,10 +4,11 @@ key_up = keyboard_check_pressed(ord("W")) || keyboard_check_pressed(vk_up);
 key_down = keyboard_check_pressed(ord("S")) || keyboard_check_pressed(vk_down);
 key_left = keyboard_check_pressed(ord("A")) || keyboard_check_pressed(vk_left);
 key_right = keyboard_check_pressed(ord("D")) || keyboard_check_pressed(vk_right);
-key_select = keyboard_check_pressed(ord("Z")) || keyboard_check_pressed(ord("P")) || keyboard_check_pressed(vk_space) || keyboard_check_pressed(vk_enter);
+key_select_pressed = keyboard_check_pressed(ord("Z")) || keyboard_check_pressed(ord("P")) || keyboard_check_pressed(vk_space) || keyboard_check_pressed(vk_enter);
+key_select = keyboard_check(ord("Z")) || keyboard_check(ord("P")) || keyboard_check(vk_space) || keyboard_check(vk_enter);
 key_back = keyboard_check_pressed(ord("X")) || keyboard_check_pressed(ord("O")) || keyboard_check_pressed(vk_lshift);
 
-if (key_up || key_down || key_left || key_right || key_select || key_back)
+if (key_up || key_down || key_left || key_right || key_select_pressed || key_select || key_back)
 {
     global.controller = 0;
 }
@@ -67,10 +68,21 @@ if ((gamepad_axis_value(4,gp_axislh) > 0.4 && analogRightPrevD == false) || game
 
 if (gamepad_button_check_pressed(0,gp_face1))
 {
-    key_select = 1;
+    key_select_pressed = 1;
     global.controller = 1;
 }
 if (gamepad_button_check_pressed(4,gp_face1))
+{
+    key_select_pressed = 1;
+    global.controller = 2;
+}
+
+if (gamepad_button_check(0,gp_face1))
+{
+    key_select = 1;
+    global.controller = 1;
+}
+if (gamepad_button_check(4,gp_face1))
 {
     key_select = 1;
     global.controller = 2;
@@ -87,6 +99,85 @@ if (gamepad_button_check_pressed(4,gp_face2) || gamepad_button_check_pressed(4,g
     global.controller = 2;
 }
 
+// Lerp
+cursorTopLeftX = lerp(cursorTopLeftX,cursorTopLeftXTarget,lerpAmount);
+cursorTopLeftY = lerp(cursorTopLeftY,cursorTopLeftYTarget,lerpAmount);
+
+cursorTopRightX = lerp(cursorTopRightX,cursorTopRightXTarget,lerpAmount);
+cursorTopRightY = lerp(cursorTopRightY,cursorTopRightYTarget,lerpAmount);
+
+cursorBottomLeftX = lerp(cursorBottomLeftX,cursorBottomLeftXTarget,lerpAmount);
+cursorBottomLeftY = lerp(cursorBottomLeftY,cursorBottomLeftYTarget,lerpAmount);
+
+cursorBottomRightX = lerp(cursorBottomRightX,cursorBottomRightXTarget,lerpAmount);
+cursorBottomRightY = lerp(cursorBottomRightY,cursorBottomRightYTarget,lerpAmount);
+
+// Move cursor
+if(key_left)
+{
+    cursorTopLeftXTarget -= cursorMove;
+    cursorTopRightXTarget -= cursorMove;
+    cursorBottomLeftXTarget -= cursorMove;
+    cursorBottomRightXTarget -= cursorMove;
+    
+    audio_play_sound(snd_DreamBoyMenuMove,5,false);
+}
+
+if(key_right)
+{
+    cursorTopLeftXTarget += cursorMove;
+    cursorTopRightXTarget += cursorMove;
+    cursorBottomLeftXTarget += cursorMove;
+    cursorBottomRightXTarget += cursorMove;
+    
+    audio_play_sound(snd_DreamBoyMenuMove,5,false);
+}
+if(key_up)
+{
+    cursorTopLeftYTarget -= cursorMove;
+    cursorTopRightYTarget -= cursorMove;
+    cursorBottomLeftYTarget -= cursorMove;
+    cursorBottomRightYTarget -= cursorMove;
+    
+    audio_play_sound(snd_DreamBoyMenuMove,5,false);
+}
+
+if(key_down)
+{
+    cursorTopLeftYTarget += cursorMove;
+    cursorTopRightYTarget += cursorMove;
+    cursorBottomLeftYTarget += cursorMove;
+    cursorBottomRightYTarget += cursorMove;
+    
+    audio_play_sound(snd_DreamBoyMenuMove,5,false);
+}
+
+// Spawn/Preview location
+spawnX = ((cursorBottomLeftX+cursorBottomRightX)/2)-4;
+spawnY = ((cursorBottomLeftY+cursorTopLeftY)/2)-4;
+
+// Place
+if(key_select_pressed)
+{
+    instance_create_layer(spawnX,spawnY,"Walls",oLightItem);
+}
+
+/*
+if(key_select)
+{
+    cursorBottomLeftXTarget += 2;
+    cursorBottomRightXTarget -= 2;
+    cursorTopLeftXTarget += 2;
+    cursorTopRightXTarget -= 2;
+    
+    cursorBottomLeftYTarget -= 2;
+    cursorBottomRightYTarget -= 2;
+    cursorTopLeftYTarget += 2;
+    cursorTopRightYTarget += 2;
+}
+*/
+
+// Exit
 if(key_back)
 {
     instance_create_layer(x,y,"Walls",oArcadePedestal);
