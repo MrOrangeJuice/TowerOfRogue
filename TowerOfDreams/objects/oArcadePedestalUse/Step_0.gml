@@ -160,9 +160,9 @@ spawnY = ((cursorBottomLeftY+cursorTopLeftY)/2)-4;
 if(key_select_pressed)
 {
     instance_create_layer(spawnX,spawnY,"Walls",oLightItem);
+    audio_play_sound(snd_DreamBoySelect2,5,false);
 }
 
-/*
 if(key_select)
 {
     if(!zoomedIn)
@@ -182,19 +182,21 @@ if(key_select)
 }
 else 
 {
-    cursorBottomLeftXTarget -= 2;
-    cursorBottomRightXTarget += 2;
-    cursorTopLeftXTarget -= 2;
-    cursorTopRightXTarget += 2;
-    
-    cursorBottomLeftYTarget += 2;
-    cursorBottomRightYTarget += 2;
-    cursorTopLeftYTarget -= 2;
-    cursorTopRightYTarget -= 2;
-    
-    zoomedIn = false;
+    if(zoomedIn)
+    {
+        cursorBottomLeftXTarget -= 2;
+        cursorBottomRightXTarget += 2;
+        cursorTopLeftXTarget -= 2;
+        cursorTopRightXTarget += 2;
+        
+        cursorBottomLeftYTarget += 2;
+        cursorBottomRightYTarget += 2;
+        cursorTopLeftYTarget -= 2;
+        cursorTopRightYTarget -= 2;
+        
+        zoomedIn = false;
+    }
 }
-*/
 
 // Exit
 if(key_back)
