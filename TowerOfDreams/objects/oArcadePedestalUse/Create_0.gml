@@ -41,8 +41,12 @@ spawnX = ((cursorBottomLeftX+cursorBottomRightX)/2)-4;
 spawnY = ((cursorBottomLeftY+cursorTopLeftY)/2)-4;
 
 zoomedIn = false;
+zoomedInB = false;
 selectionConfirmed = false;
 currentItem = 0;
+displayArrows = true;
+arrowPulse = 0.25;
+alarm[0] = room_speed * arrowPulse;
 
 // Create list of unlocked stuff
 unlockedItems = [];

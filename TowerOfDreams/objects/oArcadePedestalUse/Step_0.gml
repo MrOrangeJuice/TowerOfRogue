@@ -6,9 +6,10 @@ key_left = keyboard_check_pressed(ord("A")) || keyboard_check_pressed(vk_left);
 key_right = keyboard_check_pressed(ord("D")) || keyboard_check_pressed(vk_right);
 key_select_pressed = keyboard_check_pressed(ord("Z")) || keyboard_check_pressed(ord("P")) || keyboard_check_pressed(vk_space) || keyboard_check_pressed(vk_enter);
 key_select = keyboard_check(ord("Z")) || keyboard_check(ord("P")) || keyboard_check(vk_space) || keyboard_check(vk_enter);
-key_back = keyboard_check_pressed(ord("X")) || keyboard_check_pressed(ord("O")) || keyboard_check_pressed(vk_lshift);
+key_back_pressed = keyboard_check_pressed(ord("X")) || keyboard_check_pressed(ord("O")) || keyboard_check_pressed(vk_lshift);
+key_back = keyboard_check(ord("X")) || keyboard_check(ord("O")) || keyboard_check(vk_lshift);
 
-if (key_up || key_down || key_left || key_right || key_select_pressed || key_select || key_back)
+if (key_up || key_down || key_left || key_right || key_select_pressed || key_select || key_back_pressed || key_back)
 {
     global.controller = 0;
 }
@@ -88,14 +89,25 @@ if (gamepad_button_check(4,gp_face1))
     global.controller = 2;
 }
 
-if (gamepad_button_check_pressed(0,gp_face2) || gamepad_button_check_pressed(0,gp_face3))
+if (gamepad_button_check(0,gp_face2) || gamepad_button_check(0,gp_face3))
 {
     key_back = 1;
     global.controller = 1;
 }
-if (gamepad_button_check_pressed(4,gp_face2) || gamepad_button_check_pressed(4,gp_face3))
+if (gamepad_button_check(4,gp_face2) || gamepad_button_check(4,gp_face3))
 {
     key_back = 1;
+    global.controller = 2;
+}
+
+if (gamepad_button_check_pressed(0,gp_face2) || gamepad_button_check_pressed(0,gp_face3))
+{
+    key_back_pressed = 1;
+    global.controller = 1;
+}
+if (gamepad_button_check_pressed(4,gp_face2) || gamepad_button_check_pressed(4,gp_face3))
+{
+    key_back_pressed = 1;
     global.controller = 2;
 }
 
@@ -153,7 +165,7 @@ if(!selectionConfirmed)
 	}
 	
 	// Exit
-	if(key_back)
+	if(key_back_pressed)
 	{
 		audio_play_sound(snd_DreamBoyMenuBack,5,false);
 	    instance_create_layer(x,y,"Walls",oArcadePedestal);
@@ -210,15 +222,17 @@ else
 	// Place
 	if(key_select_pressed)
 	{
-	    instance_create_layer(spawnX,spawnY,"Walls",global.itemObjects[currentItem]);
+	    instance_create_layer(spawnX,spawnY,"Walls",unlockedItems[currentItem]);
 	    audio_play_sound(snd_DreamBoySelect2,5,false);
 	}
 	
 	// Exit
-	if(key_back)
+	if(key_back_pressed)
 	{
 		selectionConfirmed = false;
 	    audio_play_sound(snd_DreamBoyMenuBack,5,false);
+		displayArrows = true;
+		alarm[0] = room_speed * arrowPulse;
 	}
 }
 
@@ -254,6 +268,41 @@ else
         cursorTopRightYTarget -= 2;
         
         zoomedIn = false;
+    }
+}
+
+if(key_back)
+{
+    if(!zoomedInB)
+    {
+        cursorBottomLeftXTarget -= 2;
+        cursorBottomRightXTarget += 2;
+        cursorTopLeftXTarget -= 2;
+        cursorTopRightXTarget += 2;
+        
+        cursorBottomLeftYTarget += 2;
+        cursorBottomRightYTarget += 2;
+        cursorTopLeftYTarget -= 2;
+        cursorTopRightYTarget -= 2;
+        
+        zoomedInB = true;
+    }
+}
+else 
+{
+    if(zoomedInB)
+    {
+        cursorBottomLeftXTarget += 2;
+        cursorBottomRightXTarget -= 2;
+        cursorTopLeftXTarget += 2;
+        cursorTopRightXTarget -= 2;
+        
+        cursorBottomLeftYTarget -= 2;
+        cursorBottomRightYTarget -= 2;
+        cursorTopLeftYTarget += 2;
+        cursorTopRightYTarget += 2;
+        
+        zoomedInB = false;
     }
 }
 

@@ -606,6 +606,8 @@
     {"id":{"name":"sArmor5Smaller","path":"sprites/sArmor5Smaller/sArmor5Smaller.yy",},},
     {"id":{"name":"sArmorTrophyUI","path":"sprites/sArmorTrophyUI/sArmorTrophyUI.yy",},},
     {"id":{"name":"sArrow","path":"sprites/sArrow/sArrow.yy",},},
+    {"id":{"name":"sArrowLeft","path":"sprites/sArrowLeft/sArrowLeft.yy",},},
+    {"id":{"name":"sArrowRight","path":"sprites/sArrowRight/sArrowRight.yy",},},
     {"id":{"name":"sArrowSign","path":"sprites/sArrowSign/sArrowSign.yy",},},
     {"id":{"name":"sAxe","path":"sprites/sAxe/sAxe.yy",},},
     {"id":{"name":"sAxeUI","path":"sprites/sAxeUI/sAxeUI.yy",},},
