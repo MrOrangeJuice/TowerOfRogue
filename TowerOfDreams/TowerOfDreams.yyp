@@ -219,6 +219,7 @@
     {"id":{"name":"oEnemyDeath","path":"objects/oEnemyDeath/oEnemyDeath.yy",},},
     {"id":{"name":"oEnemyEliteBit","path":"objects/oEnemyEliteBit/oEnemyEliteBit.yy",},},
     {"id":{"name":"oEnemyEliteDeath","path":"objects/oEnemyEliteDeath/oEnemyEliteDeath.yy",},},
+    {"id":{"name":"oEraser","path":"objects/oEraser/oEraser.yy",},},
     {"id":{"name":"oEssencePillar","path":"objects/oEssencePillar/oEssencePillar.yy",},},
     {"id":{"name":"oExtrasUI","path":"objects/oExtrasUI/oExtrasUI.yy",},},
     {"id":{"name":"oFastJumpLeftVFX","path":"objects/oFastJumpLeftVFX/oFastJumpLeftVFX.yy",},},

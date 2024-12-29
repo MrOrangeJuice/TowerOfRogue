@@ -41,3 +41,16 @@ spawnX = ((cursorBottomLeftX+cursorBottomRightX)/2)-4;
 spawnY = ((cursorBottomLeftY+cursorTopLeftY)/2)-4;
 
 zoomedIn = false;
+selectionConfirmed = false;
+currentItem = 0;
+
+// Create list of unlocked stuff
+unlockedItems = [];
+unlockedEnemies = [];
+unlockedTools = [oComputerWall,oEraser];
+
+for(i = 0; i < array_length(global.itemObjects); i++)
+{
+	// Push item to list if you've unlocked it in the database
+	/*if(global.itemsFound[global.itemObjects[i].dbId])*/ array_push(unlockedItems,global.itemObjects[i]);
+}

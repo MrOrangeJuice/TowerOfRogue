@@ -194,6 +194,7 @@
     {"name":"oEnemyDeath","order":6,"path":"objects/oEnemyDeath/oEnemyDeath.yy",},
     {"name":"oEnemyEliteBit","order":52,"path":"objects/oEnemyEliteBit/oEnemyEliteBit.yy",},
     {"name":"oEnemyEliteDeath","order":7,"path":"objects/oEnemyEliteDeath/oEnemyEliteDeath.yy",},
+    {"name":"oEraser","order":40,"path":"objects/oEraser/oEraser.yy",},
     {"name":"oEssencePillar","order":13,"path":"objects/oEssencePillar/oEssencePillar.yy",},
     {"name":"oExtrasUI","order":7,"path":"objects/oExtrasUI/oExtrasUI.yy",},
     {"name":"oFastJumpLeftVFX","order":49,"path":"objects/oFastJumpLeftVFX/oFastJumpLeftVFX.yy",},
