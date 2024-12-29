@@ -32,5 +32,5 @@
     "path":"sprites/sEraser/sEraser.yy",
   },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }

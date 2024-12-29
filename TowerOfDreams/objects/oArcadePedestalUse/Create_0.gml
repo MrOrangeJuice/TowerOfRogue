@@ -49,9 +49,9 @@ arrowPulse = 0.25;
 alarm[0] = room_speed * arrowPulse;
 
 // Create list of unlocked stuff
-unlockedItems = [];
-unlockedEnemies = [];
-unlockedTools = [oComputerWall,oEraser];
+unlockedItems = [oComputerWall,oEraser];
+
+currentList = 0;
 
 for(i = 0; i < array_length(global.dbIds); i++)
 {
