@@ -24,6 +24,7 @@ global.blockX = [0,0,0];
 
 // DB Items
 global.dbItemSprites = [tile000,tile001,tile002,tile003,tile004,tile005,tile006,tile007,tile008,tile009,tile010,tile011,tile012,tile013,tile014,tile015,tile016,tile017,tile018,tile019,tile020,tile021,tile022,tile023,tile024,tile025,tile026,tile027,tile028,tile029,tile030,tile031,tile032,tile033,tile034,tile035];
+global.dbIds = [23,7,32,14,18,12,9,21,35,29,25,1,6,13,2,10,24,31,20,16,24,17,5,19,3,28,22,15,30,8,4,0,33,27,11,26];
 global.itemWindowY = 0;
 global.itemWindowYTarget = 0;
 global.currentItem = 0;

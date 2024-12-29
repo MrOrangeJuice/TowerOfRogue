@@ -53,8 +53,8 @@ unlockedItems = [];
 unlockedEnemies = [];
 unlockedTools = [oComputerWall,oEraser];
 
-for(i = 0; i < array_length(global.itemObjects); i++)
+for(i = 0; i < array_length(global.dbIds); i++)
 {
 	// Push item to list if you've unlocked it in the database
-	/*if(global.itemsFound[global.itemObjects[i].dbId])*/ array_push(unlockedItems,global.itemObjects[i]);
+	if(global.itemsFound[global.dbIds[i]]) array_push(unlockedItems,global.itemObjects[i]);
 }
