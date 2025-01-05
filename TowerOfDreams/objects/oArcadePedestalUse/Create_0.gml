@@ -37,8 +37,8 @@ cursorBottomRightYTarget = startingYNear;
 lerpAmount = 0.3;
 cursorMove = 8;
 
-spawnX = ((cursorBottomLeftX+cursorBottomRightX)/2)-4;
-spawnY = ((cursorBottomLeftY+cursorTopLeftY)/2)-4;
+spawnX = ((cursorBottomLeftXTarget+cursorBottomRightXTarget)/2)-4;
+spawnY = ((cursorBottomLeftYTarget+cursorTopLeftYTarget)/2)-4;
 
 zoomedIn = false;
 zoomedInB = false;
@@ -50,11 +50,16 @@ alarm[0] = room_speed * arrowPulse;
 
 // Create list of unlocked stuff
 unlockedItems = [oComputerWall,oEraser];
+itemNames = ["Wall","Eraser"];
 
 currentList = 0;
 
 for(i = 0; i < array_length(global.dbIds); i++)
 {
 	// Push item to list if you've unlocked it in the database
-	if(global.itemsFound[global.dbIds[i]]) array_push(unlockedItems,global.itemObjects[i]);
+	if(global.itemsFound[global.dbIds[i]]) 
+    {
+        array_push(unlockedItems,global.itemObjects[i]); 
+        array_push(itemNames,global.itemNames[i]); 
+    }
 }

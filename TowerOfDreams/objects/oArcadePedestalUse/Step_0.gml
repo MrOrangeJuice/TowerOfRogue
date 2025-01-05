@@ -154,8 +154,8 @@ if(!selectionConfirmed)
 	
 	
 	// Spawn/Preview location
-	spawnX = ((cursorBottomLeftX+cursorBottomRightX)/2)-4;
-	spawnY = ((cursorBottomLeftY+cursorTopLeftY)/2)-4;
+	spawnX = ((cursorBottomLeftX+cursorBottomRightXTarget)/2)-4;
+	spawnY = ((cursorBottomLeftY+cursorTopLeftYTarget)/2)-4;
 
 	// Select element
 	if(key_select_pressed)
@@ -216,13 +216,34 @@ else
 	}
 	
 	// Spawn/Preview location
-	spawnX = ((cursorBottomLeftX+cursorBottomRightX)/2)-4;
-	spawnY = ((cursorBottomLeftY+cursorTopLeftY)/2)-4;
+	spawnX = ((cursorBottomLeftX+cursorBottomRightXTarget)/2)-4;
+	spawnY = ((cursorBottomLeftY+cursorTopLeftYTarget)/2)-4;
 
 	// Place
 	if(key_select_pressed)
 	{
-	    instance_create_layer(spawnX,spawnY,"Walls",unlockedItems[currentItem]);
+        if(currentItem != 1)
+        { 
+            instance_create_layer(spawnX,spawnY,"Walls",unlockedItems[currentItem]);
+        }
+        else 
+        {
+            wall = instance_place(spawnX,spawnY,oComputerWall);
+            if(wall) 
+            {
+                instance_destroy(wall);
+                audio_play_sound(snd_EnemyDeath,5,false);
+                instance_create_layer(spawnX+4,spawnY+4,"VFX",oKunaiExplosionVFX);
+            }
+                
+            item = instance_place(spawnX,spawnY,oItem);
+            if(item) 
+            {
+                instance_destroy(item);
+                audio_play_sound(snd_EnemyDeath,5,false);
+                instance_create_layer(spawnX+4,spawnY+4,"VFX",oKunaiExplosionVFX);
+            }
+        }
 	    audio_play_sound(snd_DreamBoySelect2,5,false);
 	}
 	
