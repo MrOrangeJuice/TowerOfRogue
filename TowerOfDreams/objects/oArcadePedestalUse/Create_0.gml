@@ -37,8 +37,8 @@ cursorBottomRightYTarget = startingYNear;
 lerpAmount = 0.3;
 cursorMove = 8;
 
-spawnX = ((cursorBottomLeftXTarget+cursorBottomRightXTarget)/2)-4;
-spawnY = ((cursorBottomLeftYTarget+cursorTopLeftYTarget)/2)-4;
+spawnX = ((cursorBottomLeftXTarget+cursorBottomRightX)/2)-4;
+spawnY = ((cursorBottomLeftYTarget+cursorTopLeftY)/2)-4;
 
 zoomedIn = false;
 zoomedInB = false;
@@ -49,8 +49,8 @@ arrowPulse = 0.25;
 alarm[0] = room_speed * arrowPulse;
 
 // Create list of unlocked stuff
-unlockedItems = [oComputerWall,oEraser];
-itemNames = ["Wall","Eraser"];
+unlockedItems = [oComputerWall,oEraser,oDummySpawner];
+itemNames = ["Wall","Eraser","Dummy"];
 
 currentList = 0;
 
