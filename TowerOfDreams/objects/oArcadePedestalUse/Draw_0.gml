@@ -20,7 +20,9 @@ if(!selectionConfirmed)
     draw_text(spawnX + 4,spawnY - 24,itemNames[currentItem]);
     draw_set_alpha(0.5);
     
+    // Reset
     draw_set_halign(fa_left);
+    draw_set_color($6D454D);
 }
     
 if(currentItem != 1 || !selectionConfirmed)
