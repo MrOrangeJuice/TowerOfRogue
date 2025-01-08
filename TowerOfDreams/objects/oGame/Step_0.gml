@@ -388,9 +388,6 @@ if(key_dreamBoy)
 				oTitle.visible = true;
 				oOptionsTitle.visible = false;
 				break;
-				
-            audio_stop_sound(msc_LesterGB);
-            audio_resume_all();
 		}
 	}
 }
