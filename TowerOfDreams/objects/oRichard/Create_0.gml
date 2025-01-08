@@ -2,5 +2,5 @@
 
 event_inherited();
 
-phrases = ["Welcome!","What're ya\nbuyin?","Nice helmet\npal","Name's\nRichard","Rough tower\nhuh?","I love\nflies!","Our prices\nare wacky!","I'm glad\nthat...uh...","Be tower\nDo dreams","Your money\n is tasty","Death is an\ninconvenience","I miss my\nwife, Knight","You look\nscrumptious!","Therapy is\non Monday","Tax fraud?\nYou're crazy!","Eh? Swapping\npalettes?","The heck is\na discount?","Birds, man","I hate\npickles!","I crave\ncheddar","Mmm, lemons","Do I look\nbald?"];
+phrases = ["Welcome!","What're ya buyin?","Nice helmet pal","Name's Richard","Rough tower huh?","I love flies!","Our prices are wacky!","I'm glad that...uh...","Be tower Do dreams","Your money  is tasty","Death is an inconvenience","I miss my wife, Knight","You look scrumptious!","Therapy is on Monday","Tax fraud? You're crazy!","Eh? Swapping palettes?","The heck is a discount?","Birds, man","I hate pickles!","I crave cheddar","Mmm, lemons","Do I look bald?"];
 prevPhrase = "";

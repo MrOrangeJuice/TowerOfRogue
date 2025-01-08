@@ -1,6 +1,6 @@
 /// @description Start Transition
 
-if(!playerJustSpawned)
+if(!playerJustSpawned && !global.paused)
 {
 	// Jump in
 	if(global.shopPipeCount == 0)

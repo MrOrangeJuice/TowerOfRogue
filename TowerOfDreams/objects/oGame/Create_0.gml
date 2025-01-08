@@ -4,6 +4,107 @@ steam_init();
 display_set_gui_size(256,144);
 global.controller = 0;
 global.paused = false;
+
+global.dreamBoy = false;
+global.dreamBoyYTarget = 192;
+global.dreamBoyY = global.dreamBoyYTarget;
+global.dreamBoyOn = false;
+global.dreamBoyTurnedOn = false;
+global.blockSprites = [sBlockathan3D,sGravitro3D,sExtras3D];
+global.blockScales = [0,0,0];
+global.UIBarY = 0;
+global.UIBarYTarget = 0;
+global.dreamBoyState = 0;
+global.targetBlockScales = [0,0,0];
+global.currentApp = 0;
+global.labelSprites = [sItemLabel,sFoesLabel,sExtrasLabel];
+global.labelY = [0,0,0];
+global.labelYTarget = [0,0,0];
+global.blockXTarget = [0,0,0];
+global.blockX = [0,0,0];
+
+// DB Items
+global.dbItemSprites = [tile000,tile001,tile002,tile003,tile004,tile005,tile006,tile007,tile008,tile009,tile010,tile011,tile012,tile013,tile014,tile015,tile016,tile017,tile018,tile019,tile020,tile021,tile022,tile023,tile024,tile025,tile026,tile027,tile028,tile029,tile030,tile031,tile032,tile033,tile034,tile035];
+global.dbIds = [23,7,32,14,18,12,9,21,35,29,25,1,6,13,2,10,24,31,20,16,24,17,5,19,3,28,22,15,30,8,4,0,33,27,11,26];
+global.itemWindowY = 0;
+global.itemWindowYTarget = 0;
+global.currentItem = 0;
+global.floppyY = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+global.floppyYTarget = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+global.floppyX = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+global.floppyXTarget = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+global.itemFileNames = ["ARMOR TROPHY","BOUNCING AXE","BAG OF WINDS","REMOTE SURPRISE","BLOCKATHAN","JESTER BOMB","DOOMERANG","WINGED BOOTS","GEM CANNON","REWARDS CARD","CHARGE BLADE","SPEED CITRUS","RAGE COLA","CRIT PB","CRIT JELLY","DIMAOND DYNAMITE","FUZZY DICE","GHOST IN A JAR","GOBLET OF BLOOD","SMITH HAMMER","HEART MAGNET","HEART TROPHY","HEAVY BOOTS","KUNAI","LIGHTNING BOTTLE","GEM MAGNET","MITOSIS MARACAS","NINJA STAR","THE PEPPER","LUCKY PICKAXE","WERE RABBIT FOOT","ENCHANTED SHIELD","SHOCK BRACELET","CHAOS SHOVEL","SPRAY N PRAY","WAX WINGS"];
+global.itemFileDescriptions =
+["ENEMIES HAVE A HIGHER CHANCE TO DROP ARMOR",
+"BOUNCES OFF ENEMIES AND GAINS POWER WHEN IT DOES",
+"SOAR HIGHER WHEN STRIKING THE GROUND",
+"DEPLOY A MINE AND PRESS AGAIN TO DETONATE",
+"PLACE A BLOCK RIGHT UNDER YOU",
+"THROW A BOMB STRAIGHT DOWN",
+"GETS STRONGER ON THE WAY BACK",
+"HOLD TO RUN",
+"FIRES STRONG PROJECTILES BUT USES GEMS",
+"20 PERCENT OFF IN THE SHOP",
+"EVERY THIRD HIT DOES DOUBLE DAMAGE",
+"STRIKE THE GROUND TO GAIN A BURST OF SPEED",
+"DOUBLE DAMAGE ON ONE HEART",
+"CRITICAL HITS DO MORE DAMAGE AND HEAL YOU",
+"HIGHER CHANCE FOR CRITICAL HITS",
+"GILDED FOES EXPLODE INTO WAY MORE GEMS",
+"REROLLS ARE 10 GEMS OFF IN THE SHOP",
+"STAY INVINCIBLE LONGER AFTER GETTING HIT",
+"HEAL AFTER EVERY 6 KILLS",
+"WHEN YOU GAIN 1 ARMOR GAIN 2 INSTEAD",
+"ATTRACTS HEARTS",
+"ENEMIES HAVE A HIGHER CHANCE TO DROP HEARTS",
+"SPAWN SHOCKWAVES WHEN LANDING",
+"THROW A QUICK KNIFE",
+"GRANTS A SHORT INVINCIBLE DASH",
+"ATTRACTS GEMS",
+"GET 2 OF EVERY THIRD PASSIVE ITEM",
+"PRESS TWICE TO TELEPORT TO NINJA STAR",
+"ALL YOUR PROJECTILES EXPLODE",
+"20 PERCENT CHANCE FOR GEMS TO BE WORTH MORE",
+"GILDED ENEMIES APPEAR MORE OFTEN",
+"GAIN 1 ARMOR AT THE START OF EVERY LEVEL",
+"STRIKE THE GROUND TO SPAWN SHOCKWAVES",
+"STRIKE THE GROUND TO SPAWN DIRT",
+"SHOOTS SMALL PROJECTILES IN ALL DIRECTIONS",
+"GRANTS AN EXTRA JUMP"];
+
+// DB Foes
+global.dbFoeSprites = [sSlimeGB,sCannonGB,sGravityGB,sBallGB,sFlyingGB,sWrenchGB,sTankGB,sTankStationaryGB,sSawbladeGB,sCloudGB,sFirePlantGB];
+global.dbFoeBigSprites = [sSlimeGBBig,sCannonGBBig,sGravityGBBig,sBallGBBig,sFlyingGBBig,sWrenchGBBig,sTankGBBig,sTankStationaryGBBig,sSawbladeGBBig,sCloudGBBig,sFirePlantGBBig];
+global.foeWindowY = 0;
+global.foeWindowYTarget = 0;
+global.currentFoe = 0;
+global.floppyFoeY = [0,0,0,0,0,0,0,0,0,0,0];
+global.floppyFoeYTarget = [0,0,0,0,0,0,0,0,0,0,0];
+global.floppyFoeX = [0,0,0,0,0,0,0,0,0,0,0];
+global.floppyFoeXTarget = [0,0,0,0,0,0,0,0,0,0,0];
+global.foeFileNames = ["COMMON SLIME","GIZMO CANNON","GRAVITY JACK","BARROLLO","FLAP DEMON","GIZMO WRENCH", "GIZMO TREADS", "GIZMO SENTRY","SAWBLADE","CANNON CLOUD","CALIENTE SHRUB"];
+global.foeFileDescriptions =
+["A COMMON ENEMY THAT WALKS BACK AND FORTH",
+"WINDS UP AND SHOOTS CANNON BALLS",
+"SWITCHES GRAVITY BETWEEN UP AND DOWN",
+"ROLLS AND BOUNCES OFF WALLS",
+"A DEMON THAT FLIES BACK AND FORTH",
+"WINDS UP AND LOBS WRENCHES",
+"A MOVING TANK THAT SHOOTS MISSLES",
+"A ROOTED SENTRY THAT SHOOTS MISSLES",
+"A DEADLY SHARP ENEMY THAT CLINGS TO WALLS",
+"A CLOUD THAT SHOOTS VERTICALLY",
+"A PLANT THAT SHOOTS FOUR TIMES"];
+
+// DB Extras
+global.extraSprites = [sPostcard];
+global.extraSpriteY = 0;
+global.extraSpriteYTarget = 0;
+
+// DB Unlocks
+global.itemsFound = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+global.enemiesFound = [0,0,0,0,0,0,0,0,0,0,0];
+
 global.hitStop = false;
 global.canPause = false;
 global.coins = 0;
@@ -27,6 +128,43 @@ global.itemTypes = ["Active","Active","Passive","Passive","Passive","Passive","P
 global.passiveItems = [];
 global.passiveUIWrap = 20;
 global.passiveItemSprites = [sShockUI,sCritUI,sGobletUI,sColaUI,sCardUI,sHeartTrophyUI,sPickaxeUI,sMagnetUI,sCritPBUI,sBagUI,sChargeUI,sShieldUI,sHeartMagnetUI,sFuzzyDiceUI,sGhostJarUI,sHammerUI,sPepperUI,sHeavyBootsUI,sDynamiteUI,sRabbitUI,sArmorTrophyUI,sShovelUI,sCitrusUI,sMaracasUI];
+global.itemDescriptions = 
+["A quick throwing knife",
+"Hold to run",
+"Strike the earth to spawn shockwaves",
+"Critical hit chance up by 25%",
+"Get 6 kills to get a heart",
+"Double damage on 1 heart",
+"20% off in the shop",
+"Hearts drop more often",
+"Grants an extra jump",
+"Gems have a 20% chance to be worth double",
+"Attracts gems",
+"Bounces and increases damage when hitting an enemy",
+"Does double damage on the way back",
+"Critical hits heal you for half a heart",
+"Get a bigger bounce when striking the ground",
+"Every third sword strike does double damage",
+"Grants a quick invincible dash",
+"Get a piece of armor every level",
+"Attracts hearts",
+"Rerolls are 10 gems cheaper in the shop",
+"Shoots small projectiles in all directions",
+"More invincibility when hit",
+"Throw a bomb straight down, use on the ground to soar",
+"Anytime you gain 1 armor, gain 2 instead",
+"Press once to set a remote mine, press again to detonate",
+"Your projectiles EXPLODE",
+"Spawn shockwaves when you land",
+"Gilded enemies spawn WAY more gems when killed",
+"Gilded enemies appear more often",
+"Shoots strong projectiles but uses gems as ammo",
+"Spawn a block under you",
+"Armor drops more often",
+"Strike the ground to spawn dirt projectiles",
+"Throw a ninja star and press again to teleport to it",
+"Strike the ground for a huge burst of momentum",
+"Get 2 of every third passive item you pick up"];
 global.sword = true;
 global.tutorialCompleted = false;
 global.floor1Completed = false;
@@ -68,6 +206,7 @@ global.shopMusic = false;
 global.treasureMusic = false;
 global.hubMusic = false;
 global.hubShopMusic = false;
+global.hubTestMusic = false;
 global.bumperSwitch = true;
 global.bumpersSwitching = false;
 global.lavaId = 0;

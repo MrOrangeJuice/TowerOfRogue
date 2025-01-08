@@ -20,5 +20,5 @@ yAccel = 0.02;
 vsp = 0;
 yOffset = 0;
 
-phrases = ["Passive\nitems stack!", "See you\nnext floor!","Bored?\nTry a reroll!","Don't touch my\nstuff!!","Apply for our\nrewards card!","Try a critical\nhit PB&J!","Some items have\nstrong synergies","Sorry I don't\ntake IOUs","Many never make\nit this far","Careful out\nthere buddy","How's Richard\nthese days?","I'm always\non the left!","There's an item\nfor everything!","Sorry I can't\ngive credit",string("You've died\n{0} times!",global.totalDeaths)];
+phrases = ["Passive items stack!", "See you next floor!","Bored? Try a reroll!","Don't touch my stuff!!","Apply for our rewards card!","Try a critical hit PB&J!","Some items have strong synergies","Sorry I don't take IOUs","Many never make it this far","Careful out there buddy","How's Richard these days?","I'm always on the left!","There's an item for everything!","Sorry I can't give credit",string("You've died {0} times!",global.totalDeaths)];
 prevPhrase = "";

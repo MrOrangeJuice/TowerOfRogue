@@ -3,7 +3,17 @@
 
 draw_set_color($B1D7F0);
 draw_set_halign(fa_center);
-if(!soldOut) draw_text(x+8,y-32,itemPrice); 
+if(!soldOut) 
+{
+    draw_set_color($6D454D);
+    draw_text(x+9,y-32,itemPrice); 
+    draw_text(x+7,y-32,itemPrice); 
+    draw_text(x+8,y-31,itemPrice); 
+    draw_text(x+8,y-33,itemPrice); 
+    
+    draw_set_color($B1D7F0);
+    draw_text(x+8,y-32,itemPrice); 
+}
 
 if(instance_exists(oPlayer))
 {
@@ -12,13 +22,31 @@ if(instance_exists(oPlayer))
 	{
 		if(!soldOut)
 		{
-			draw_text(x+8,y-48,"Golden Heart");
-			draw_text(x+8,y-40,"+1 Max Health");
+            draw_set_color($6D454D);
+            draw_text(x+9,y-52,"Golden Heart"); 
+            draw_text(x+7,y-52,"Golden Heart"); 
+            draw_text(x+8,y-51,"Golden Heart"); 
+            draw_text(x+8,y-53,"Golden Heart"); 
+            draw_text(x+9,y-44,"+1 Max Health");
+            draw_text(x+7,y-44,"+1 Max Health");
+            draw_text(x+8,y-43,"+1 Max Health");
+            draw_text(x+8,y-45,"+1 Max Health");
+            
+            draw_set_color($B1D7F0);
+			draw_text(x+8,y-52,"Golden Heart");
+			draw_text(x+8,y-44,"+1 Max Health");
 			if(global.overallCoins >= itemPrice) draw_sprite(sArrow,0,x+4,y-52);
 		}
 		else
 		{
-			draw_text(x+8,y-32,"SOLD OUT"); 
+            draw_set_color($6D454D);
+            draw_text(x+9,y-36,"SOLD OUT"); 
+            draw_text(x+7,y-36,"SOLD OUT"); 
+            draw_text(x+8,y-35,"SOLD OUT"); 
+            draw_text(x+8,y-37,"SOLD OUT"); 
+            
+            draw_set_color($B1D7F0);
+			draw_text(x+8,y-36,"SOLD OUT"); 
 		}
 	}
 }

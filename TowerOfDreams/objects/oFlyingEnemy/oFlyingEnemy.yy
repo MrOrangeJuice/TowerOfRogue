@@ -7,7 +7,9 @@
   ],
   "managed":true,
   "name":"oFlyingEnemy",
-  "overriddenProperties":[],
+  "overriddenProperties":[
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oEnemy","path":"objects/oEnemy/oEnemy.yy",},"propertyId":{"name":"dbId","path":"objects/oEnemy/oEnemy.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"4",},
+  ],
   "parent":{
     "name":"Enemies",
     "path":"folders/Objects/Enemies.yy",

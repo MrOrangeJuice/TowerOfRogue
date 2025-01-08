@@ -5,6 +5,11 @@ if (instance_exists(oPlayer))
 	xTo = follow.x;
 	yTo = follow.y + yOffset;
 }
+else if(instance_exists(oArcadePedestalUse))
+{
+    xTo = oArcadePedestalUse.spawnX;
+    yTo = oArcadePedestalUse.spawnY;
+}
 
 // Update object position
 dX = (xTo - x) / 8;

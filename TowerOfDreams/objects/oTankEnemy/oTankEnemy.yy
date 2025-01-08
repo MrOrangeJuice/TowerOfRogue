@@ -12,7 +12,9 @@
   ],
   "managed":true,
   "name":"oTankEnemy",
-  "overriddenProperties":[],
+  "overriddenProperties":[
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oEnemy","path":"objects/oEnemy/oEnemy.yy",},"propertyId":{"name":"dbId","path":"objects/oEnemy/oEnemy.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"6",},
+  ],
   "parent":{
     "name":"Enemies",
     "path":"folders/Objects/Enemies.yy",

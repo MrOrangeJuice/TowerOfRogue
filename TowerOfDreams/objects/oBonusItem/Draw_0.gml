@@ -12,16 +12,21 @@ if(!itemEaten)
 			draw_set_color($6d454d);
 			draw_text(128,81+selectedOffset,global.itemNames[itemList[i]]);
 			draw_text(128,89+selectedOffset,global.itemTypes[itemList[i]]);
+			draw_text(128,105+selectedOffsetDouble,global.itemDescriptions[itemList[i]]);
 			draw_text(128,79+selectedOffset,global.itemNames[itemList[i]]);
 			draw_text(128,87+selectedOffset,global.itemTypes[itemList[i]]);
+			draw_text(128,103+selectedOffsetDouble,global.itemDescriptions[itemList[i]]);
 			draw_text(129,80+selectedOffset,global.itemNames[itemList[i]]);
 			draw_text(129,88+selectedOffset,global.itemTypes[itemList[i]]);
+			draw_text(129,104+selectedOffsetDouble,global.itemDescriptions[itemList[i]]);
 			draw_text(127,80+selectedOffset,global.itemNames[itemList[i]]);
 			draw_text(127,88+selectedOffset,global.itemTypes[itemList[i]]);
+			draw_text(127,104+selectedOffsetDouble,global.itemDescriptions[itemList[i]]);
 			
 			draw_set_color($b1d7f0);
 			draw_text(128,80+selectedOffset,global.itemNames[itemList[i]]);
 			draw_text(128,88+selectedOffset,global.itemTypes[itemList[i]]);
+			draw_text(128,104+selectedOffsetDouble,global.itemDescriptions[itemList[i]]);
 		}
 		else
 		{
