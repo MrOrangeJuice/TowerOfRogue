@@ -1,5 +1,25 @@
 /// @description Init
 
+switch(global.palette)
+{
+    case 0:
+        sprite_index = sArcadePedestalUse;
+        break;
+    case 1:
+        sprite_index = sArcadePedestalUseRed;
+        break;
+    case 2:
+        sprite_index = sArcadePedestalUseGreen;
+        break;
+    case 3:
+        sprite_index = sArcadePedestalUseZombie;
+        break;
+    case 4:
+        sprite_index = sArcadePedestalUseGold;
+        break;
+}
+
+
 colliding = false;
 analogUpPrev = false;
 analogUpPrevD = false;
