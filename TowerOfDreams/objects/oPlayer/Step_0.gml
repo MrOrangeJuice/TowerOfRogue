@@ -268,6 +268,14 @@ if(!global.paused && !global.hitStop)
 				audio_stop_sound(msc_Hub);
 				global.hubMusic = false;
 			}
+            
+            if(!global.hubTestMusic && room == rTestRoom)
+            {
+                audio_play_sound(msc_Lester,5,true);	
+                global.hubTestMusic = true;
+                audio_stop_sound(msc_Hub);
+                global.hubMusic = false;
+            }
 		
 			if(!global.treasureMusic && (room == rTreasureRoom || room == rTreasureRoom2 || room == rTreasureRoomFloor2 || room == rTreasureRoom2Floor2 || room == rTreasureRoomFloor3 || room == rTreasureRoom2Floor3))
 			{

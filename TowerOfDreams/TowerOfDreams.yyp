@@ -482,6 +482,8 @@
     {"id":{"name":"msc_Floor4","path":"sounds/msc_Floor4/msc_Floor4.yy",},},
     {"id":{"name":"msc_Hub","path":"sounds/msc_Hub/msc_Hub.yy",},},
     {"id":{"name":"msc_HubShop","path":"sounds/msc_HubShop/msc_HubShop.yy",},},
+    {"id":{"name":"msc_Lester","path":"sounds/msc_Lester/msc_Lester.yy",},},
+    {"id":{"name":"msc_LesterGB","path":"sounds/msc_LesterGB/msc_LesterGB.yy",},},
     {"id":{"name":"msc_RunComplete","path":"sounds/msc_RunComplete/msc_RunComplete.yy",},},
     {"id":{"name":"msc_Shop","path":"sounds/msc_Shop/msc_Shop.yy",},},
     {"id":{"name":"msc_TitleScreen","path":"sounds/msc_TitleScreen/msc_TitleScreen.yy",},},

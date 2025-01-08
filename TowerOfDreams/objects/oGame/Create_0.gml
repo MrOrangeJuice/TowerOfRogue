@@ -203,6 +203,7 @@ global.shopMusic = false;
 global.treasureMusic = false;
 global.hubMusic = false;
 global.hubShopMusic = false;
+global.hubTestMusic = false;
 global.bumperSwitch = true;
 global.bumpersSwitching = false;
 global.lavaId = 0;

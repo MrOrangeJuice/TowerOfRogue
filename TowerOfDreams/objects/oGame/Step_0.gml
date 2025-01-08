@@ -617,6 +617,8 @@ if(!global.dreamBoy)
 						global.hubMusic = false;
 						audio_stop_sound(msc_HubShop);
 						global.hubShopMusic = false;
+                        audio_stop_sound(msc_Lester); 
+                        global.hubTestMusic = false;
 					}
 					else
 					{
