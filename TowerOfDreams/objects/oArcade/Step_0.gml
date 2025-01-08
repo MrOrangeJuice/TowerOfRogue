@@ -24,7 +24,7 @@ if ((gamepad_axis_value(4,gp_axislv) < -0.4 && analogUpPrevD == false) || gamepa
 if(place_meeting(x,y,oPlayer))
 {
     colliding = true;	
-    if(key_up)
+    if(key_up && !locked)
     {
         image_speed = 0;
         if(image_index >= 0 && image_index < 3)

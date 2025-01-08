@@ -551,6 +551,8 @@
     {"name":"sAngryVFX","order":17,"path":"sprites/sAngryVFX/sAngryVFX.yy",},
     {"name":"sArcade","order":1,"path":"sprites/sArcade/sArcade.yy",},
     {"name":"sArcadeDoor","order":4,"path":"sprites/sArcadeDoor/sArcadeDoor.yy",},
+    {"name":"sArcadeLocked","order":11,"path":"sprites/sArcadeLocked/sArcadeLocked.yy",},
+    {"name":"sArcadeLockMessage","order":12,"path":"sprites/sArcadeLockMessage/sArcadeLockMessage.yy",},
     {"name":"sArcadePedestal","order":5,"path":"sprites/sArcadePedestal/sArcadePedestal.yy",},
     {"name":"sArcadePedestalUse","order":6,"path":"sprites/sArcadePedestalUse/sArcadePedestalUse.yy",},
     {"name":"sArcadePedestalUseGold","order":10,"path":"sprites/sArcadePedestalUseGold/sArcadePedestalUseGold.yy",},
