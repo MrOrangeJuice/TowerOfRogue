@@ -444,7 +444,8 @@ draw_sprite(sDreamBoy,global.dreamBoyOn,48,global.dreamBoyY);
 if(global.dreamBoy)
 {
 	if(global.dreamBoyY == global.dreamBoyYTarget && !global.dreamBoyOn && !global.dreamBoyTurnedOn)
-	{
+	{ 
+        audio_play_sound(msc_LesterGB,5,true);
 		global.dreamBoyOn = true;	
 		global.dreamBoyTurnedOn = true;	
 		global.UIBarYTarget = 7;

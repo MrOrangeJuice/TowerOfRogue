@@ -31,6 +31,7 @@ global.floppyFoeX = [0,0,0,0,0,0,0,0,0,0,0];
 global.floppyFoeXTarget = [0,0,0,0,0,0,0,0,0,0,0];
 global.extraSpriteY = 0;
 global.extraSpriteYTarget = 0;
+audio_resume_all();
 
 if(instance_exists(oPlayer))
 {

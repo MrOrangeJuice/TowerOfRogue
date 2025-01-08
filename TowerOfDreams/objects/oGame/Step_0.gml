@@ -144,6 +144,7 @@ if(key_dreamBoy)
 	{
 		if(!global.paused)
 		{
+            audio_pause_all();
 			audio_play_sound(snd_DreamBoyOpen,5,false);
 			audio_play_sound(snd_DreamBoyTurnOn,5,false);
 			global.dreamBoy = true;
@@ -157,6 +158,7 @@ if(key_dreamBoy)
 		{
 			global.dreamBoyOn = false;
 			alarm[2] = room_speed * 0.5;
+            audio_stop_sound(msc_LesterGB);
 			audio_play_sound(snd_DreamBoyShutDown,5,false);
 		}
 		else
@@ -178,6 +180,8 @@ if(key_dreamBoy)
 			{
 				oPlayer.canJump = true;	
 			}
+            audio_stop_sound(msc_LesterGB);
+            audio_resume_all();
 		}
 	}
 }
