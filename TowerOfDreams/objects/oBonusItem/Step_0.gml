@@ -65,6 +65,14 @@ if(key_select && !selected)
 {
 	audio_play_sound(snd_ItemSelect,5,false);
 	selected = true;
+    // Update item database if necessary
+	if(!global.itemsFound[global.dbIds[itemList[currentItem]]]) 
+	{
+		global.itemsFound[global.dbIds[itemList[currentItem]]] = true;
+		// Spawn popup
+		dbPopup = instance_create_layer(x,y,"UI",oDBPopup);
+		Save();
+	}
 	// Add item to inventory
 	if(global.itemTypes[itemList[currentItem]] == "Active")
 	{
