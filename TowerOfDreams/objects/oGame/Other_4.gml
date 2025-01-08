@@ -67,4 +67,6 @@ if(instance_exists(oEnemy))
 			Save();
 		}
 	}
+    
+    CheckDatabaseCompletion();
 }

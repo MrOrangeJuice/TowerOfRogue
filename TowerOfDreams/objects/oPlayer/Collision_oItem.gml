@@ -10,6 +10,8 @@ if(other.canGrab)
 		dbPopup = instance_create_layer(x,y,"UI",oDBPopup);
 		Save();
 	}
+    
+    CheckDatabaseCompletion();
 	
 	// Active item
 	if(!other.passive)
