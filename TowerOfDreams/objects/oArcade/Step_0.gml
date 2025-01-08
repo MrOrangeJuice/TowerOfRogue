@@ -31,9 +31,9 @@ if(place_meeting(x,y,oPlayer))
         {
             win = true;
             audio_play_sound(snd_Arcade,5,false);
-            if(!steam_get_achievement("LESTERBESTER"))
+            if(!steam_get_achievement("LESTERGAME"))
             {
-                steam_set_achievement("LESTERBESTER");
+                steam_set_achievement("LESTERGAME");
             }
         }
         else 
