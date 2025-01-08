@@ -1672,7 +1672,7 @@ if(!global.paused && !global.hitStop)
 			}
 			else
 			{
-				if(!conveyerBoost) walksp = 1;
+				if(!conveyerBoost && !citrusBoost) walksp = 1;
 			}
 			
 			// End Dash
