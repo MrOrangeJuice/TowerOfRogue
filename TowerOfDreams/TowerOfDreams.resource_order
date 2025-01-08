@@ -886,6 +886,7 @@
     {"name":"sMenuBoxBig","order":21,"path":"sprites/sMenuBoxBig/sMenuBoxBig.yy",},
     {"name":"sMenuBoxBigTall","order":22,"path":"sprites/sMenuBoxBigTall/sMenuBoxBigTall.yy",},
     {"name":"sMessageBox","order":13,"path":"sprites/sMessageBox/sMessageBox.yy",},
+    {"name":"sMessageBoxShorter","order":64,"path":"sprites/sMessageBoxShorter/sMessageBoxShorter.yy",},
     {"name":"sMessageBoxSmall","order":34,"path":"sprites/sMessageBoxSmall/sMessageBoxSmall.yy",},
     {"name":"sMessageBoxWide","order":41,"path":"sprites/sMessageBoxWide/sMessageBoxWide.yy",},
     {"name":"sMissileDown","order":4,"path":"sprites/sMissileDown/sMissileDown.yy",},

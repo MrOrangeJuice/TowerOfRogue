@@ -952,6 +952,7 @@
     {"id":{"name":"sMenuBoxBig","path":"sprites/sMenuBoxBig/sMenuBoxBig.yy",},},
     {"id":{"name":"sMenuBoxBigTall","path":"sprites/sMenuBoxBigTall/sMenuBoxBigTall.yy",},},
     {"id":{"name":"sMessageBox","path":"sprites/sMessageBox/sMessageBox.yy",},},
+    {"id":{"name":"sMessageBoxShorter","path":"sprites/sMessageBoxShorter/sMessageBoxShorter.yy",},},
     {"id":{"name":"sMessageBoxSmall","path":"sprites/sMessageBoxSmall/sMessageBoxSmall.yy",},},
     {"id":{"name":"sMessageBoxWide","path":"sprites/sMessageBoxWide/sMessageBoxWide.yy",},},
     {"id":{"name":"sMissileDown","path":"sprites/sMissileDown/sMissileDown.yy",},},
