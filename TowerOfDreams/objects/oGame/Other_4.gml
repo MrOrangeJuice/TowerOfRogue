@@ -75,6 +75,4 @@ if(instance_exists(oTankEnemy))
         global.enemiesFound[oTankEnemy.dbId] = true;
         Save();
     }
-        
-    CheckDatabaseCompletion();
 }
