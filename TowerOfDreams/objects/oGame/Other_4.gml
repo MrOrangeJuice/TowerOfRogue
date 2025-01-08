@@ -68,3 +68,13 @@ if(instance_exists(oEnemy))
 		}
 	}
 }
+if(instance_exists(oTankEnemy))
+{
+    if(!global.enemiesFound[oTankEnemy.dbId]) 
+    {
+        global.enemiesFound[oTankEnemy.dbId] = true;
+        Save();
+    }
+        
+    CheckDatabaseCompletion();
+}
