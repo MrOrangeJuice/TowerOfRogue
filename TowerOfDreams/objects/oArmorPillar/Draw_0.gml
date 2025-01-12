@@ -31,13 +31,6 @@ if(instance_exists(oPlayer))
             draw_text(x+7,y-44,armorDesc);
             draw_text(x+8,y-43,armorDesc);
             draw_text(x+8,y-45,armorDesc);
-            if(global.overallCoins >= itemPrice) 
-            {
-                draw_sprite(sArrow,0,x+3,y-56);
-                draw_sprite(sArrow,0,x+5,y-56);
-                draw_sprite(sArrow,0,x+4,y-55);
-                draw_sprite(sArrow,0,x+4,y-57);
-            }
             
             draw_set_color($B1D7F0);
 			draw_text(x+8,y-52,armorName);

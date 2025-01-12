@@ -35,7 +35,7 @@ if(instance_exists(oPlayer))
             draw_set_color($B1D7F0);
 			draw_text(x+8,y-52,"Golden Heart");
 			draw_text(x+8,y-44,"+1 Max Health");
-			if(global.overallCoins >= itemPrice) draw_sprite(sArrow,0,x+4,y-52);
+			if(global.overallCoins >= itemPrice) draw_sprite(sArrow,0,x+4,y-56);
 		}
 		else
 		{
