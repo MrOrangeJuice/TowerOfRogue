@@ -223,6 +223,10 @@ if(!global.paused)
     	// Place
     	if(key_select_pressed)
         {
+            // Round spawn
+            spawnX = cursorMove * round(spawnX / cursorMove);
+            spawnY = cursorMove * round(spawnY / cursorMove);
+            
             if(currentItem != 1)
             { 
                 instance_create_layer(spawnX,spawnY,"Walls",unlockedItems[currentItem]);
