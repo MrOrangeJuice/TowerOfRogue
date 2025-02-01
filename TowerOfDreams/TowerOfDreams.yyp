@@ -1004,6 +1004,7 @@
     {"id":{"name":"sHoldJump","path":"sprites/sHoldJump/sHoldJump.yy",},},
     {"id":{"name":"sHoldJumpController","path":"sprites/sHoldJumpController/sHoldJumpController.yy",},},
     {"id":{"name":"sHoldJumpControllerPS","path":"sprites/sHoldJumpControllerPS/sHoldJumpControllerPS.yy",},},
+    {"id":{"name":"sHomunculus","path":"sprites/sHomunculus/sHomunculus.yy",},},
     {"id":{"name":"sHubSign","path":"sprites/sHubSign/sHubSign.yy",},},
     {"id":{"name":"sHUD","path":"sprites/sHUD/sHUD.yy",},},
     {"id":{"name":"sHUDEnd","path":"sprites/sHUDEnd/sHUDEnd.yy",},},
