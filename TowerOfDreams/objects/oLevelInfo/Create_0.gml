@@ -113,6 +113,27 @@ switch(room)
 			prevBestRank = global.best3_4;
 		}
 		break;
+    case rFloor4_1:
+        if(global.best4_1 != "F")
+        {
+            alarm[2] = room_speed * 1.5;
+            prevBestRank = global.best4_1;
+        }
+        break;
+    case rFloor4_2:
+        if(global.best4_2 != "F") 
+        {
+            alarm[2] = room_speed * 1.5;
+            prevBestRank = global.best4_2;
+        }
+        break;
+    case rFloor4_3:
+        if(global.best4_3 != "F") 
+        {
+            alarm[2] = room_speed * 1.5;
+            prevBestRank = global.best4_3;
+        }
+        break;
 }
 
 drawLevelNum = false;

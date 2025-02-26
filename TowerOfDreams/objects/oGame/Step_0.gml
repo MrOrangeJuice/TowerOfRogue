@@ -354,6 +354,26 @@ if(!global.dreamBoy)
                     global.best4_2 = "F";
                     global.best4_3 = "F";
 					global.bestOverall = "F";
+                
+                    global.seen1_1 = false;
+                    global.seen1_2 = false;
+                    global.seen1_3 = false;
+                    global.seen1_4 = false;
+                    global.seen1_5 = false;
+                    global.seen1_6 = false;
+                    global.seen2_1 = false;
+                    global.seen2_2 = false;
+                    global.seen2_3 = false;
+                    global.seen2_4 = false;
+                    global.seen2_5 = false;
+                    global.seen3_1 = false;
+                    global.seen3_2 = false;
+                    global.seen3_3 = false;
+                    global.seen3_4 = false;
+                    global.seen4_1 = false;
+                    global.seen4_2 = false;
+                    global.seen4_3 = false;
+                
 					// Grave data
 					// Floor 1
 					global.graveX1_1 = 0;

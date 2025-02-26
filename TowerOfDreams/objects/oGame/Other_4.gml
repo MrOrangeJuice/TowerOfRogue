@@ -76,3 +76,134 @@ if(instance_exists(oTankEnemy))
         Save();
     }
 }
+
+// Check for new levels
+switch(room)
+{
+    case rFloor1_1:
+        if(!global.seen1_1) 
+        {
+            global.seen1_1 = true;
+            Save();
+        }
+        break;
+    case rFloor1_2:
+        if(!global.seen1_2) 
+        {
+            global.seen1_2 = true;
+            Save();
+        }
+        break;
+    case rFloor1_3:
+        if(!global.seen1_3) 
+        {
+            global.seen1_3 = true;
+            Save();
+        }
+        break;
+    case rFloor1_4:
+        if(!global.seen1_4) 
+        {
+            global.seen1_4 = true;
+            Save();
+        }
+        break;
+    case rFloor1_5:
+        if(!global.seen1_5) 
+        {
+            global.seen1_5 = true;
+            Save();
+        }
+        break;
+    case rFloor1_6:
+        if(!global.seen1_6) 
+        {
+            global.seen1_6 = true;
+            Save();
+        }
+        break;
+    case rFloor2_1:
+        if(!global.seen2_1) 
+        {
+            global.seen2_1 = true;
+            Save();
+        }
+        break;
+    case rFloor2_2:
+        if(!global.seen2_2) 
+        {
+            global.seen2_2 = true;
+            Save();
+        }
+        break;
+    case rFloor2_3:
+        if(!global.seen2_3) 
+        {
+            global.seen2_3 = true;
+            Save();
+        }
+        break;
+    case rFloor2_4:
+        if(!global.seen2_4) 
+        {
+            global.seen2_4 = true;
+            Save();
+        }
+        break;
+    case rFloor2_5:
+        if(!global.seen2_5) 
+        {
+            global.seen2_5 = true;
+            Save();
+        }
+        break;
+    case rFloor3_1:
+        if(!global.seen3_1) 
+        {
+            global.seen3_1 = true;
+            Save();
+        }
+        break;
+    case rFloor3_2:
+        if(!global.seen3_2) 
+        {
+            global.seen3_2 = true;
+            Save();
+        }
+        break;
+    case rFloor3_3:
+        if(!global.seen3_3) 
+        {
+            global.seen3_3 = true;
+            Save();
+        }
+        break;
+    case rFloor3_4:
+        if(!global.seen3_4) 
+        {
+            global.seen3_4 = true;
+            Save();
+        }
+        break;
+    case rFloor4_1:
+        if(!global.seen4_1) 
+        {
+            global.seen4_1 = true;
+            Save();
+        }
+        break;
+    case rFloor4_2:
+        if(!global.seen4_2) 
+        {
+            global.seen4_2 = true;
+            Save();
+        }
+        break;
+    case rFloor4_3:
+        if(!global.seen4_3) 
+        {
+            global.seen4_3 = true;
+            Save();
+        }
+        break;
+}

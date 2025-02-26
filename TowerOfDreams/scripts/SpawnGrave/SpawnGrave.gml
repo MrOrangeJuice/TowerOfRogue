@@ -109,5 +109,26 @@ function SpawnGrave(){
 				newGrave.item = global.graveItem3_4;
 			}
 			break;
+        case rFloor4_1:
+            if(global.graveX4_1 != 0 && global.graveY4_1 != 0)
+            {
+                newGrave = instance_create_layer(global.graveX4_1,global.graveY4_1,"Enemies",oPastGrave);
+                newGrave.item = global.graveItem4_1;
+            }
+            break; 
+        case rFloor4_2:
+            if(global.graveX4_2 != 0 && global.graveY4_2 != 0)
+            {
+                newGrave = instance_create_layer(global.graveX4_2,global.graveY4_2,"Enemies",oPastGrave);
+                newGrave.item = global.graveItem4_2;
+            }
+            break;
+        case rFloor4_3:
+            if(global.graveX4_3 != 0 && global.graveY4_3 != 0)
+            {
+                newGrave = instance_create_layer(global.graveX4_3,global.graveY4_3,"Enemies",oPastGrave);
+                newGrave.item = global.graveItem4_3;
+            }
+            break;
 	}
 }
