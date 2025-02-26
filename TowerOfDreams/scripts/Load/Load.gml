@@ -6,6 +6,7 @@ function Load(){
 	global.floor1Completed = ini_read_real("savegame", "floor1Completed", 0);
 	global.floor2Completed = ini_read_real("savegame", "floor2Completed", 0);
 	global.runCompleted = ini_read_real("savegame", "runCompleted", 0);
+    
 	global.best1_1 = ini_read_string("savegame", "best1_1", "F");
 	global.best1_2 = ini_read_string("savegame", "best1_2", "F");
 	global.best1_3 = ini_read_string("savegame", "best1_3", "F");
@@ -21,6 +22,29 @@ function Load(){
 	global.best3_2 = ini_read_string("savegame", "best3_2", "F");
 	global.best3_3 = ini_read_string("savegame", "best3_3", "F");
 	global.best3_4 = ini_read_string("savegame", "best3_4", "F");
+	global.best4_1 = ini_read_string("savegame", "best4_1", "F");
+	global.best4_2 = ini_read_string("savegame", "best4_2", "F");
+	global.best4_3 = ini_read_string("savegame", "best4_3", "F");
+    
+    global.seen1_1 = ini_read_string("savegame", "seen1_1", false);
+    global.seen1_2 = ini_read_string("savegame", "seen1_2", false);
+    global.seen1_3 = ini_read_string("savegame", "seen1_3", false);
+    global.seen1_4 = ini_read_string("savegame", "seen1_4", false);
+    global.seen1_5 = ini_read_string("savegame", "seen1_5", false);
+    global.seen1_6 = ini_read_string("savegame", "seen1_6", false);
+    global.seen2_1 = ini_read_string("savegame", "seen2_1", false);
+    global.seen2_2 = ini_read_string("savegame", "seen2_2", false);
+    global.seen2_3 = ini_read_string("savegame", "seen2_3", false);
+    global.seen2_4 = ini_read_string("savegame", "seen2_4", false);
+    global.seen2_5 = ini_read_string("savegame", "seen2_5", false);
+    global.seen3_1 = ini_read_string("savegame", "seen3_1", false);
+    global.seen3_2 = ini_read_string("savegame", "seen3_2", false);
+    global.seen3_3 = ini_read_string("savegame", "seen3_3", false);
+    global.seen3_4 = ini_read_string("savegame", "seen3_4", false);
+    global.seen4_1 = ini_read_string("savegame", "seen4_1", false);
+    global.seen4_2 = ini_read_string("savegame", "seen4_2", false);
+    global.seen4_3 = ini_read_string("savegame", "seen4_3", false);
+    
 	global.graveX1_1 = ini_read_real("savegame", "graveX1_1", 0);
 	global.graveX1_2 = ini_read_real("savegame", "graveX1_2", 0);
 	global.graveX1_3 = ini_read_real("savegame", "graveX1_3", 0);
@@ -36,6 +60,9 @@ function Load(){
 	global.graveX3_2 = ini_read_real("savegame", "graveX3_2", 0);
 	global.graveX3_3 = ini_read_real("savegame", "graveX3_3", 0);
 	global.graveX3_4 = ini_read_real("savegame", "graveX3_4", 0);
+	global.graveX4_1 = ini_read_real("savegame", "graveX4_1", 0);
+	global.graveX4_2 = ini_read_real("savegame", "graveX4_2", 0);
+	global.graveX4_3 = ini_read_real("savegame", "graveX4_3", 0);
 	global.graveY1_1 = ini_read_real("savegame", "graveY1_1", 0);
 	global.graveY1_2 = ini_read_real("savegame", "graveY1_2", 0);
 	global.graveY1_3 = ini_read_real("savegame", "graveY1_3", 0);
@@ -51,6 +78,9 @@ function Load(){
 	global.graveY3_2 = ini_read_real("savegame", "graveY3_2", 0);
 	global.graveY3_3 = ini_read_real("savegame", "graveY3_3", 0);
 	global.graveY3_4 = ini_read_real("savegame", "graveY3_4", 0);
+	global.graveY4_1 = ini_read_real("savegame", "graveY4_1", 0);
+	global.graveY4_2 = ini_read_real("savegame", "graveY4_2", 0);
+	global.graveY4_3 = ini_read_real("savegame", "graveY4_3", 0);
 	global.graveItem1_1 = ini_read_real("savegame", "graveItem1_1", -1);
 	global.graveItem1_2 = ini_read_real("savegame", "graveItem1_2", -1);
 	global.graveItem1_3 = ini_read_real("savegame", "graveItem1_3", -1);
@@ -66,6 +96,10 @@ function Load(){
 	global.graveItem3_2 = ini_read_real("savegame", "graveItem3_2", -1);
 	global.graveItem3_3 = ini_read_real("savegame", "graveItem3_3", -1);
 	global.graveItem3_4 = ini_read_real("savegame", "graveItem3_4", -1);
+	global.graveItem4_1 = ini_read_real("savegame", "graveItem4_1", -1);
+	global.graveItem4_2 = ini_read_real("savegame", "graveItem4_2", -1);
+	global.graveItem4_3 = ini_read_real("savegame", "graveItem4_3", -1);
+    
 	global.bestOverall = ini_read_string("savegame", "bestOverall", "F");
 	global.overallCoins = ini_read_real("savegame", "overallCoins", 0);
 	global.healthUpgrades = ini_read_real("savegame", "healthUpgrades", 0);

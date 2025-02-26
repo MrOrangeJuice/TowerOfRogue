@@ -6,6 +6,7 @@ function Save(){
 	ini_write_real("savegame", "floor1Completed", global.floor1Completed);
 	ini_write_real("savegame", "floor2Completed", global.floor2Completed);
 	ini_write_real("savegame", "runCompleted", global.runCompleted);
+    
 	ini_write_string("savegame", "best1_1", global.best1_1);
 	ini_write_string("savegame", "best1_2", global.best1_2);
 	ini_write_string("savegame", "best1_3", global.best1_3);
@@ -21,6 +22,29 @@ function Save(){
 	ini_write_string("savegame", "best3_2", global.best3_2);
 	ini_write_string("savegame", "best3_3", global.best3_3);
 	ini_write_string("savegame", "best3_4", global.best3_4);
+	ini_write_string("savegame", "best4_1", global.best4_1);
+	ini_write_string("savegame", "best4_2", global.best4_2);
+	ini_write_string("savegame", "best4_3", global.best4_3);
+    
+    ini_write_string("savegame", "seen1_1", global.seen1_1);
+    ini_write_string("savegame", "seen1_2", global.seen1_2);
+    ini_write_string("savegame", "seen1_3", global.seen1_3);
+    ini_write_string("savegame", "seen1_4", global.seen1_4);
+    ini_write_string("savegame", "seen1_5", global.seen1_5);
+    ini_write_string("savegame", "seen1_6", global.seen1_6);
+    ini_write_string("savegame", "seen2_1", global.seen2_1);
+    ini_write_string("savegame", "seen2_2", global.seen2_2);
+    ini_write_string("savegame", "seen2_3", global.seen2_3);
+    ini_write_string("savegame", "seen2_4", global.seen2_4);
+    ini_write_string("savegame", "seen2_5", global.seen2_5);
+    ini_write_string("savegame", "seen3_1", global.seen3_1);
+    ini_write_string("savegame", "seen3_2", global.seen3_2);
+    ini_write_string("savegame", "seen3_3", global.seen3_3);
+    ini_write_string("savegame", "seen3_4", global.seen3_4);
+    ini_write_string("savegame", "seen4_1", global.seen4_1);
+    ini_write_string("savegame", "seen4_2", global.seen4_2);
+    ini_write_string("savegame", "seen4_3", global.seen4_3);
+    
 	ini_write_real("savegame", "graveX1_1", global.graveX1_1);
 	ini_write_real("savegame", "graveX1_2", global.graveX1_2);
 	ini_write_real("savegame", "graveX1_3", global.graveX1_3);
@@ -36,6 +60,9 @@ function Save(){
 	ini_write_real("savegame", "graveX3_2", global.graveX3_2);
 	ini_write_real("savegame", "graveX3_3", global.graveX3_3);
 	ini_write_real("savegame", "graveX3_4", global.graveX3_4);
+	ini_write_real("savegame", "graveX4_1", global.graveX4_1);
+	ini_write_real("savegame", "graveX4_2", global.graveX4_2);
+	ini_write_real("savegame", "graveX4_3", global.graveX4_3);
 	ini_write_real("savegame", "graveY1_1", global.graveY1_1);
 	ini_write_real("savegame", "graveY1_2", global.graveY1_2);
 	ini_write_real("savegame", "graveY1_3", global.graveY1_3);
@@ -51,6 +78,9 @@ function Save(){
 	ini_write_real("savegame", "graveY3_2", global.graveY3_2);
 	ini_write_real("savegame", "graveY3_3", global.graveY3_3);
 	ini_write_real("savegame", "graveY3_4", global.graveY3_4);
+	ini_write_real("savegame", "graveY4_1", global.graveY4_1);
+	ini_write_real("savegame", "graveY4_2", global.graveY4_2);
+	ini_write_real("savegame", "graveY4_3", global.graveY4_3);
 	ini_write_real("savegame", "graveItem1_1", global.graveItem1_1);
 	ini_write_real("savegame", "graveItem1_2", global.graveItem1_2);
 	ini_write_real("savegame", "graveItem1_3", global.graveItem1_3);
@@ -66,6 +96,10 @@ function Save(){
 	ini_write_real("savegame", "graveItem3_2", global.graveItem3_2);
 	ini_write_real("savegame", "graveItem3_3", global.graveItem3_3);
 	ini_write_real("savegame", "graveItem3_4", global.graveItem3_4);
+	ini_write_real("savegame", "graveItem4_1", global.graveItem4_1);
+	ini_write_real("savegame", "graveItem4_2", global.graveItem4_2);
+	ini_write_real("savegame", "graveItem4_3", global.graveItem4_3);
+    
 	ini_write_string("savegame", "bestOverall", global.bestOverall);
 	ini_write_real("savegame", "overallCoins", global.overallCoins);
 	ini_write_real("savegame", "healthUpgrades", global.healthUpgrades);

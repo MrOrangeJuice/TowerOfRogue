@@ -259,7 +259,30 @@ global.best3_1 = "F";
 global.best3_2 = "F";
 global.best3_3 = "F";
 global.best3_4 = "F";
+global.best4_1 = "F";
+global.best4_2 = "F";
+global.best4_3 = "F";
 global.bestOverall = "F";
+
+// Levels Seen
+global.seen1_1 = false;
+global.seen1_2 = false;
+global.seen1_3 = false;
+global.seen1_4 = false;
+global.seen1_5 = false;
+global.seen1_6 = false;
+global.seen2_1 = false;
+global.seen2_2 = false;
+global.seen2_3 = false;
+global.seen2_4 = false;
+global.seen2_5 = false;
+global.seen3_1 = false;
+global.seen3_2 = false;
+global.seen3_3 = false;
+global.seen3_4 = false;
+global.seen4_1 = false;
+global.seen4_2 = false;
+global.seen4_3 = false;
 
 // Grave data
 // Floor 1
@@ -324,6 +347,19 @@ global.graveItem3_3 = -1;
 global.graveX3_4 = 0;
 global.graveY3_4 = 0;
 global.graveItem3_4 = -1;
+
+// Floor 4
+global.graveX4_1 = 0;
+global.graveY4_1 = 0;
+global.graveItem4_1 = -1;
+
+global.graveX4_2 = 0;
+global.graveY4_2 = 0;
+global.graveItem4_2 = -1;
+
+global.graveX4_3 = 0;
+global.graveY4_3 = 0;
+global.graveItem4_3 = -1;
 
 // Armor sets
 global.palette = 0;

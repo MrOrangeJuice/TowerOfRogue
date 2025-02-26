@@ -350,6 +350,9 @@ if(!global.dreamBoy)
 					global.best3_2 = "F";
 					global.best3_3 = "F";
 					global.best3_4 = "F";
+                    global.best4_1 = "F";
+                    global.best4_2 = "F";
+                    global.best4_3 = "F";
 					global.bestOverall = "F";
 					// Grave data
 					// Floor 1
@@ -393,6 +396,10 @@ if(!global.dreamBoy)
 					global.graveX2_4 = 0;
 					global.graveY2_4 = 0;
 					global.graveItem2_4 = -1;
+                
+                    global.graveX2_5 = 0;
+                    global.graveY2_5 = 0;
+                    global.graveItem2_5 = -1;
 
 					// Floor 3
 					global.graveX3_1 = 0;
@@ -406,6 +413,23 @@ if(!global.dreamBoy)
 					global.graveX3_3 = 0;
 					global.graveY3_3 = 0;
 					global.graveItem3_3 = -1;
+                
+                    global.graveX3_4 = 0;
+                    global.graveY3_4 = 0;
+                    global.graveItem3_4 = -1;
+                
+                    // Floor 4
+                    global.graveX4_1 = 0;
+                    global.graveY4_1 = 0;
+                    global.graveItem4_1 = -1;
+
+                    global.graveX4_2 = 0;
+                    global.graveY4_2 = 0;
+                    global.graveItem4_2 = -1;
+
+                    global.graveX4_3 = 0;
+                    global.graveY4_3 = 0;
+                    global.graveItem4_3 = -1;
 				
 					global.overallCoins = 0;
 					global.healthUpgrades = 0;
