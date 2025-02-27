@@ -891,6 +891,7 @@
     {"name":"sMemoryBG","order":14,"path":"sprites/sMemoryBG/sMemoryBG.yy",},
     {"name":"sMemoryBuilding","order":14,"path":"sprites/sMemoryBuilding/sMemoryBuilding.yy",},
     {"name":"sMemoryGremlin","order":16,"path":"sprites/sMemoryGremlin/sMemoryGremlin.yy",},
+    {"name":"sMemoryGremlinSleep","order":17,"path":"sprites/sMemoryGremlinSleep/sMemoryGremlinSleep.yy",},
     {"name":"sMenuBox","order":20,"path":"sprites/sMenuBox/sMenuBox.yy",},
     {"name":"sMenuBoxBig","order":21,"path":"sprites/sMenuBoxBig/sMenuBoxBig.yy",},
     {"name":"sMenuBoxBigTall","order":22,"path":"sprites/sMenuBoxBigTall/sMenuBoxBigTall.yy",},
