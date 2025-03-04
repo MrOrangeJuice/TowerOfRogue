@@ -957,6 +957,7 @@
     {"id":{"name":"sMemoryBG","path":"sprites/sMemoryBG/sMemoryBG.yy",},},
     {"id":{"name":"sMemoryBuilding","path":"sprites/sMemoryBuilding/sMemoryBuilding.yy",},},
     {"id":{"name":"sMemoryGremlin","path":"sprites/sMemoryGremlin/sMemoryGremlin.yy",},},
+    {"id":{"name":"sMemoryGremlinGrow","path":"sprites/sMemoryGremlinGrow/sMemoryGremlinGrow.yy",},},
     {"id":{"name":"sMemoryGremlinSleep","path":"sprites/sMemoryGremlinSleep/sMemoryGremlinSleep.yy",},},
     {"id":{"name":"sMenuBox","path":"sprites/sMenuBox/sMenuBox.yy",},},
     {"id":{"name":"sMenuBoxBig","path":"sprites/sMenuBoxBig/sMenuBoxBig.yy",},},
