@@ -1,7 +1,7 @@
 {
   "$GMSprite":"",
   "%Name":"sMemoryGremlinAllTheWay",
-  "bboxMode":0,
+  "bboxMode":2,
   "bbox_bottom":39,
   "bbox_left":1,
   "bbox_right":38,
