@@ -1,5 +1,10 @@
 /// @description Take away sword for tutorial
 
+if(room == rMemoryZoo)
+{
+    global.canPause = true;
+}
+
 // Reset debug counter
 global.debugCounter = 0;
 

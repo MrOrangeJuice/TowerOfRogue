@@ -426,6 +426,7 @@
     {"id":{"name":"rFloor4_3","path":"rooms/rFloor4_3/rFloor4_3.yy",},},
     {"id":{"name":"rHub","path":"rooms/rHub/rHub.yy",},},
     {"id":{"name":"rHubShop","path":"rooms/rHubShop/rHubShop.yy",},},
+    {"id":{"name":"rMemoryZoo","path":"rooms/rMemoryZoo/rMemoryZoo.yy",},},
     {"id":{"name":"rRoomTemplate","path":"rooms/rRoomTemplate/rRoomTemplate.yy",},},
     {"id":{"name":"rRoomTemplate2","path":"rooms/rRoomTemplate2/rRoomTemplate2.yy",},},
     {"id":{"name":"rRoomTemplate3","path":"rooms/rRoomTemplate3/rRoomTemplate3.yy",},},
@@ -1288,6 +1289,7 @@
     {"id":{"name":"tGrass","path":"tilesets/tGrass/tGrass.yy",},},
     {"id":{"name":"tLava","path":"tilesets/tLava/tLava.yy",},},
     {"id":{"name":"tLavaFloor3","path":"tilesets/tLavaFloor3/tLavaFloor3.yy",},},
+    {"id":{"name":"tMemoryZoo","path":"tilesets/tMemoryZoo/tMemoryZoo.yy",},},
     {"id":{"name":"tTileset","path":"tilesets/tTileset/tTileset.yy",},},
     {"id":{"name":"tWood","path":"tilesets/tWood/tWood.yy",},},
   ],
@@ -1345,6 +1347,7 @@
     {"roomId":{"name":"rTestRoom","path":"rooms/rTestRoom/rTestRoom.yy",},},
     {"roomId":{"name":"rFloor4_2","path":"rooms/rFloor4_2/rFloor4_2.yy",},},
     {"roomId":{"name":"rFloor4_3","path":"rooms/rFloor4_3/rFloor4_3.yy",},},
+    {"roomId":{"name":"rMemoryZoo","path":"rooms/rMemoryZoo/rMemoryZoo.yy",},},
   ],
   "templateType":null,
   "TextureGroups":[

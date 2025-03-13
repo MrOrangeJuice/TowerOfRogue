@@ -389,6 +389,7 @@
     {"name":"rFloor4_3","order":2,"path":"rooms/rFloor4_3/rFloor4_3.yy",},
     {"name":"rHub","order":5,"path":"rooms/rHub/rHub.yy",},
     {"name":"rHubShop","order":13,"path":"rooms/rHubShop/rHubShop.yy",},
+    {"name":"rMemoryZoo","order":21,"path":"rooms/rMemoryZoo/rMemoryZoo.yy",},
     {"name":"rRoomTemplate","order":9,"path":"rooms/rRoomTemplate/rRoomTemplate.yy",},
     {"name":"rRoomTemplate2","order":11,"path":"rooms/rRoomTemplate2/rRoomTemplate2.yy",},
     {"name":"rRoomTemplate3","order":15,"path":"rooms/rRoomTemplate3/rRoomTemplate3.yy",},
@@ -1199,6 +1200,7 @@
     {"name":"tGrass","order":1,"path":"tilesets/tGrass/tGrass.yy",},
     {"name":"tLava","order":5,"path":"tilesets/tLava/tLava.yy",},
     {"name":"tLavaFloor3","order":10,"path":"tilesets/tLavaFloor3/tLavaFloor3.yy",},
+    {"name":"tMemoryZoo","order":13,"path":"tilesets/tMemoryZoo/tMemoryZoo.yy",},
     {"name":"tWood","order":7,"path":"tilesets/tWood/tWood.yy",},
   ],
 }
