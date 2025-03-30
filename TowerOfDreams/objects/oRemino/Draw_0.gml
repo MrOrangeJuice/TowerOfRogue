@@ -14,6 +14,12 @@ else
 
 labelY = lerp(labelY,labelYTarget,0.2);
 
+if(labelYTarget == 36 && !soundInfoPlayed)
+{
+    audio_play_sound(snd_ReminoInfoIn,5,false);
+    soundInfoPlayed = true;
+}
+
 draw_sprite(sMemoryInfo,0,x-8,(y-64+labelY));
 draw_set_font(fDreamBoy);
 draw_set_halign(fa_center);

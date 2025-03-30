@@ -21,5 +21,6 @@ if(reminoState == state.Portal)
     {
         reminoState = state.Shrink;
         image_index = 0;
+        //audio_play_sound(snd_ReminoInfoOut,5,false);
     }
 }
