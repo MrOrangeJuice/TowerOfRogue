@@ -975,6 +975,7 @@
     {"id":{"name":"sMemoryGremlinShrink","path":"sprites/sMemoryGremlinShrink/sMemoryGremlinShrink.yy",},},
     {"id":{"name":"sMemoryGremlinSleep","path":"sprites/sMemoryGremlinSleep/sMemoryGremlinSleep.yy",},},
     {"id":{"name":"sMemoryInfo","path":"sprites/sMemoryInfo/sMemoryInfo.yy",},},
+    {"id":{"name":"sMemoryInfoNotUnlocked","path":"sprites/sMemoryInfoNotUnlocked/sMemoryInfoNotUnlocked.yy",},},
     {"id":{"name":"sMemoryZoo","path":"sprites/sMemoryZoo/sMemoryZoo.yy",},},
     {"id":{"name":"sMenuBox","path":"sprites/sMenuBox/sMenuBox.yy",},},
     {"id":{"name":"sMenuBoxBig","path":"sprites/sMenuBoxBig/sMenuBoxBig.yy",},},

@@ -29,7 +29,6 @@
   "physicsShapePoints":[],
   "physicsStartAwake":true,
   "properties":[
-    {"$GMObjectProperty":"v1","%Name":"unlocked","filters":[],"listItems":[],"multiselect":false,"name":"unlocked","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"true","varType":3,},
     {"$GMObjectProperty":"v1","%Name":"levelName","filters":[],"listItems":[],"multiselect":false,"name":"levelName","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"COOL LEVEL","varType":2,},
   ],
   "resourceType":"GMObject",
