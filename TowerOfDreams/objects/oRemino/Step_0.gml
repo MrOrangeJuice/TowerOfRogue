@@ -55,6 +55,21 @@ if(!global.paused)
             break;
     }
     
+    // Portal
+    
+    if(reminoState == state.Portal && !portalSpawned)
+    {
+        portal = instance_create_layer(x+14,y+14,"Collectables",oMemoryPortal);
+        portal.specificLevel = levelName;
+        portalSpawned = true;
+    }
+    
+    if(reminoState != state.Portal && portalSpawned)
+    {
+        instance_destroy(portal);
+        portalSpawned = false;
+    }
+    
     // Sounds
     
     if(reminoState == state.Grow || reminoState == state.AllTheWay)

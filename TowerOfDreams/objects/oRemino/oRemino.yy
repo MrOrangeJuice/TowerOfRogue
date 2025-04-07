@@ -29,7 +29,7 @@
   "physicsShapePoints":[],
   "physicsStartAwake":true,
   "properties":[
-    {"$GMObjectProperty":"v1","%Name":"levelName","filters":[],"listItems":[],"multiselect":false,"name":"levelName","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"COOL LEVEL","varType":2,},
+    {"$GMObjectProperty":"v1","%Name":"levelDisplayName","filters":[],"listItems":[],"multiselect":false,"name":"levelDisplayName","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"COOL LEVEL","varType":2,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

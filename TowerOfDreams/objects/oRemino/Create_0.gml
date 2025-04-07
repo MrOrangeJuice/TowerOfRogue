@@ -10,43 +10,50 @@ enum state {
 }
 
 unlocked = false;
+levelName = "";
 
-switch(levelName)
+switch(levelDisplayName)
 {
     case "CANNON CONUNDRUM":
         if(global.seen1_1)
         {
             unlocked = true;
+            levelName = "rFloor1_1";
         }
         break;
     case "GRAVITY GAUNTLET":
         if(global.seen1_2)
         {
             unlocked = true;
+            levelName = "rFloor1_2";
         }
         break;
     case "SWAP HOP":
         if(global.seen1_3)
         {
             unlocked = true;
+            levelName = "rFloor1_3";
         }
         break;
     case "BUMPER BUSTER":
         if(global.seen1_4)
         {
             unlocked = true;
+            levelName = "rFloor1_4";
         }
         break;
     case "ON A ROLL":
         if(global.seen1_5)
         {
             unlocked = true;
+            levelName = "rFloor1_5";
         }
         break;
     case "SHROOMS OF DOOM":
         if(global.seen1_6)
         {
             unlocked = true;
+            levelName = "rFloor1_6";
         }
         break;
     
@@ -54,30 +61,35 @@ switch(levelName)
         if(global.seen2_1)
         {
             unlocked = true;
+            levelName = "rFloor2_1";
         }
         break;
     case "VERTICAL VELOCITY":
         if(global.seen2_2)
         {
             unlocked = true;
+            levelName = "rFloor2_2";
         }
         break;
     case "BLOCK PARTY":
         if(global.seen2_3)
         {
             unlocked = true;
+            levelName = "rFloor2_3";
         }
         break;
     case "MISSILE MAYHEM":
         if(global.seen2_4)
         {
             unlocked = true;
+            levelName = "rFloor2_4";
         }
         break;
     case "SAWBLADE LEVEL":
         if(global.seen2_5)
         {
             unlocked = true;
+            levelName = "rFloor2_5";
         }
         break;
     
@@ -85,24 +97,28 @@ switch(levelName)
         if(global.seen3_1)
         {
             unlocked = true;
+            levelName = "rFloor3_1";
         }
         break;
     case "DASH FRUIT SMOOTHIE":
         if(global.seen3_2)
         {
             unlocked = true;
+            levelName = "rFloor3_2";
         }
         break;
     case "LARRYS LIFTOFF":
         if(global.seen3_3)
         {
             unlocked = true;
+            levelName = "rFloor3_3";
         }
         break;
     case "WATCH YOUR STEP":
         if(global.seen3_4)
         {
             unlocked = true;
+            levelName = "rFloor3_4";
         }
         break;
     
@@ -110,18 +126,21 @@ switch(levelName)
         if(global.seen4_1)
         {
             unlocked = true;
+            levelName = "rFloor4_1";
         }
         break;
     case "HORIZONTAL HUSTLE":
         if(global.seen4_2)
         {
             unlocked = true;
+            levelName = "rFloor4_2";
         }
         break;
     case "CROSSOVER EPISODE":
         if(global.seen4_3)
         {
             unlocked = true;
+            levelName = "rFloor4_3";
         }
         break;
         
@@ -148,3 +167,6 @@ sound5Played = false;
 
 soundInfoPlayed = false;
 soundInfoOutPlayed = false;
+
+portalSpawned = false;
+portal = 0;

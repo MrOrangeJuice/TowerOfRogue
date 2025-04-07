@@ -83,5 +83,13 @@ else
 		global.tutorialMusic = false;
 		Save();
 	}
+    else if(room == rMemoryZoo)
+    {
+        if(specificLevel != "")
+        {
+            global.timeTrial = true;
+            SlideTransition(TRANS_MODE.GOTO,asset_get_index(specificLevel));
+        }
+    }
 }
 instance_destroy();

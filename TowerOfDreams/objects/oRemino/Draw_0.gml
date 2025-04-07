@@ -35,7 +35,7 @@ if(unlocked)
     draw_sprite(sMemoryInfo,0,x-8,(y-64+labelY));
     draw_set_font(fDreamBoy);
     draw_set_halign(fa_center);
-    draw_text_ext(x+20,(y-64+labelY)+7,levelName,5,44);
+    draw_text_ext(x+20,(y-64+labelY)+7,levelDisplayName,5,44);
 }
 else
 {
