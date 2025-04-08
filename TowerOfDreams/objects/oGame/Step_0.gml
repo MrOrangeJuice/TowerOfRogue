@@ -374,6 +374,84 @@ if(!global.dreamBoy)
                     global.seen4_2 = false;
                     global.seen4_3 = false;
                 
+                    // Levels Seen
+                    global.seen1_1 = false;
+                    global.seen1_2 = false;
+                    global.seen1_3 = false;
+                    global.seen1_4 = false;
+                    global.seen1_5 = false;
+                    global.seen1_6 = false;
+                    global.seen2_1 = false;
+                    global.seen2_2 = false;
+                    global.seen2_3 = false;
+                    global.seen2_4 = false;
+                    global.seen2_5 = false;
+                    global.seen3_1 = false;
+                    global.seen3_2 = false;
+                    global.seen3_3 = false;
+                    global.seen3_4 = false;
+                    global.seen4_1 = false;
+                    global.seen4_2 = false;
+                    global.seen4_3 = false;
+                    
+                    // Level Times
+                    global.time1_1 = 0;
+                    global.time1_2 = 0;
+                    global.time1_3 = 0;
+                    global.time1_4 = 0;
+                    global.time1_5 = 0;
+                    global.time1_6 = 0;
+                    global.time2_1 = 0;
+                    global.time2_2 = 0;
+                    global.time2_3 = 0;
+                    global.time2_4 = 0;
+                    global.time2_5 = 0;
+                    global.time3_1 = 0;
+                    global.time3_2 = 0;
+                    global.time3_3 = 0;
+                    global.time3_4 = 0;
+                    global.time4_1 = 0;
+                    global.time4_2 = 0;
+                    global.time4_3 = 0;
+                    
+                    // Level Time Medals
+                    global.timeMedalSilver1_1 = false;
+                    global.timeMedalGold1_1 = false;
+                    global.timeMedalSilver1_2 = false;
+                    global.timeMedalGold1_2 = false;
+                    global.timeMedalSilver1_3 = false;
+                    global.timeMedalGold1_3 = false;
+                    global.timeMedalSilver1_4 = false;
+                    global.timeMedalGold1_4 = false;
+                    global.timeMedalSilver1_5 = false;
+                    global.timeMedalGold1_5 = false;
+                    global.timeMedalSilver1_6 = false;
+                    global.timeMedalGold1_6 = false;
+                    global.timeMedalSilver2_1 = false;
+                    global.timeMedalGold2_1 = false;
+                    global.timeMedalSilver2_2 = false;
+                    global.timeMedalGold2_2 = false;
+                    global.timeMedalSilver2_3 = false;
+                    global.timeMedalGold2_3 = false;
+                    global.timeMedalSilver2_4 = false;
+                    global.timeMedalGold2_4 = false;
+                    global.timeMedalSilver2_5 = false;
+                    global.timeMedalGold2_5 = false;
+                    global.timeMedalSilver3_1 = false;
+                    global.timeMedalGold3_1 = false;
+                    global.timeMedalSilver3_2 = false;
+                    global.timeMedalGold3_2 = false;
+                    global.timeMedalSilver3_3 = false;
+                    global.timeMedalGold3_3 = false;
+                    global.timeMedalSilver3_4 = false;
+                    global.timeMedalGold3_4 = false;
+                    global.timeMedalSilver4_1 = false;
+                    global.timeMedalGold4_1 = false;
+                    global.timeMedalSilver4_2 = false;
+                    global.timeMedalGold4_2 = false;
+                    global.timeMedalSilver4_3 = false;
+                    global.timeMedalGold4_3 = false;
+                
 					// Grave data
 					// Floor 1
 					global.graveX1_1 = 0;
@@ -614,6 +692,7 @@ if(!global.dreamBoy)
 						global.usedArray2 = [false,false,false,false,false,false,false,false,false,false];
 						global.usedArray3 = [false,false,false,false,false,false,false,false,false,false];
 						global.inARun = false;
+                        global.timeTrial = false;
 						global.zombieRevive = true;
 						global.coins = 0;
 						global.coinsThisRun = 0;

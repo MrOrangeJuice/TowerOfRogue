@@ -346,6 +346,9 @@ global.timeMedalGold4_2 = false;
 global.timeMedalSilver4_3 = false;
 global.timeMedalGold4_3 = false;
 
+global.timeTargetGold = 600;
+global.timeTargetSilver = 700;
+
 // Grave data
 // Floor 1
 global.graveX1_1 = 0;
@@ -459,6 +462,7 @@ coinTextScale = 1;
 healthTextScale = 1;
 itemTextScale = 1;
 armorTextScale = 1;
+timeTextScale = 1;
 passiveItemTextScale = 1;
 options = false;
 deleted = false;

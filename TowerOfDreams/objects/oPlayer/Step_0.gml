@@ -282,7 +282,7 @@ if(!global.paused && !global.hitStop)
 				audio_play_sound(msc_Shop,5,true);
 				global.treasureMusic = true;
 			}
-			if(global.inARun && !global.floor1Music && room != rHub && room != rTreasureRoom && room != rTreasureRoom2 && room != rShop && room != rShop2  && room != rTreasureRoomFloor2 && room != rTreasureRoom2Floor2 && room != rShopFloor2 && room != rShop2Floor2 && room != rTreasureRoomFloor3 && room != rTreasureRoom2Floor3 && room != rShopFloor3 && room != rShop2Floor3)
+			if((global.inARun || global.timeTrial) && !global.floor1Music && room != rHub && room != rTreasureRoom && room != rTreasureRoom2 && room != rShop && room != rShop2  && room != rTreasureRoomFloor2 && room != rTreasureRoom2Floor2 && room != rShopFloor2 && room != rShop2Floor2 && room != rTreasureRoomFloor3 && room != rTreasureRoom2Floor3 && room != rShopFloor3 && room != rShop2Floor3)
 			{
 				if(global.levelCount < 3)
 				{

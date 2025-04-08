@@ -431,6 +431,26 @@ if(global.HUD)
 			draw_sprite(global.itemSprites[global.devItem],0,4,30);	
 			draw_text(5,33,"F1");
 		}
+        
+        // Draw time
+        if(global.timeTrial)
+        {
+            global.time++;
+            
+            draw_sprite(sGoldMedal,0,1,29);
+            
+            draw_set_color($6D454D);
+            draw_text(9,25,string_format((global.time / room_speed), 0, 2));
+            draw_text(11,25,string_format((global.time / room_speed), 0, 2));
+            draw_text(10,24,string_format((global.time / room_speed), 0, 2));
+            draw_text(10,26,string_format((global.time / room_speed), 0, 2));
+            
+            draw_set_color($B1D7F0);
+            draw_text(10,25,string_format((global.time / room_speed), 0, 2));
+            
+            // Reset color
+            draw_set_color($6D454D);
+        }
 	}
 }
 
