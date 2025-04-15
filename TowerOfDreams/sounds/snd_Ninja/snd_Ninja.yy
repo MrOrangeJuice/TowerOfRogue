@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":0.405306,
+  "duration":0.40530613,
   "name":"snd_Ninja",
   "parent":{
     "name":"Sounds",

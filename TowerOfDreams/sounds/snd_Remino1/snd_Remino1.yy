@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":0.343741,
+  "duration":0.3437415,
   "name":"snd_Remino1",
   "parent":{
     "name":"Sounds",
