@@ -10,19 +10,27 @@ if(levelFinished)
 
 if(time)
 {
-	timeString = "Time: " + string(timeNum);
+	timeString = "Time: " + string_format((timeNum / room_speed), 0, 2);
 	if(timeNum > global.time)
 	{
-		timeNum--;	
+		if(timeNum > global.time + 60)
+		{
+			timeNum -= 10;	
+		}
+		else
+		{
+			timeNum--;	
+		}
 		if(timeNum < global.timeTargetGold && !perfectTime)
 		{
 			perfectTime = true;
-			audio_play_sound(snd_Perfect,5,false);
+			audio_play_sound(snd_SRank,5,false);
 			audio_play_sound(snd_LevelIntro2,5,false);
 		}
 		else if(timeNum < global.timeTargetSilver && !silverTime)
 		{
 			silverTime = true;
+			audio_play_sound(snd_Perfect,5,false);
 			audio_play_sound(snd_LevelIntro2,5,false);
 		}
 	}
@@ -38,10 +46,10 @@ if(time)
 		}
 	}
 	draw_set_color($6D454D);
-	draw_text(128,display_get_gui_height()/2 - 23,timeString);
-	draw_text(128,display_get_gui_height()/2 - 25,timeString);
-	draw_text(129,display_get_gui_height()/2 - 24,timeString);
-	draw_text(127,display_get_gui_height()/2 - 24,timeString);
+	draw_text(128,display_get_gui_height()/2 - 15,timeString);
+	draw_text(128,display_get_gui_height()/2 - 17,timeString);
+	draw_text(129,display_get_gui_height()/2 - 16,timeString);
+	draw_text(127,display_get_gui_height()/2 - 16,timeString);
 	if(perfectTime)
 	{
 		draw_set_color($DDADE6);
@@ -50,11 +58,11 @@ if(time)
 	{
 		draw_set_color($B1D7F0);
 	}
-	draw_text(128,display_get_gui_height()/2 - 24,timeString);
+	draw_text(128,display_get_gui_height()/2 - 16,timeString);
 	
 	// Draw medals
 	draw_sprite(sMedalBigOutline,0,104,display_get_gui_height()/2);
-	draw_sprite(sMedalBigOutline,0,152,display_get_gui_height()/2);
+	draw_sprite(sMedalBigOutline,0,136,display_get_gui_height()/2);
 	
 	if(silverTime)
 	{
@@ -62,7 +70,7 @@ if(time)
 	}
 	if(perfectTime)
 	{
-		draw_sprite(sGoldMedalBig,0,152,display_get_gui_height()/2);
+		draw_sprite(sGoldMedalBig,0,136,display_get_gui_height()/2);
 	}
 }
 
