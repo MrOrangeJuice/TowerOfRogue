@@ -435,7 +435,7 @@ if(global.HUD)
         // Draw time
         if(global.timeTrial)
         {
-            global.time++;
+            if(global.timeIncrement) global.time++;
             
             draw_sprite(sGoldMedal,0,1,29);
             

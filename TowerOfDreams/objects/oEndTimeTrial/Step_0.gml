@@ -42,8 +42,7 @@ if(key_select_pressed && !levelProgressed)
 	global.shopSpawned = false;
 	global.pipeY = 0;
 	global.shopY = 0;
-	global.levelCount++;
-	PickNextLevel();
+	SlideTransition(TRANS_MODE.GOTO,rMemoryZoo);
 	// Prevent mashing to increment level more than once
 	levelProgressed = true;
 }

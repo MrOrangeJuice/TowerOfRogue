@@ -5,35 +5,44 @@ draw_set_color($B1D7F0);
 
 if(levelFinished)
 {
-	draw_sprite(sLevelCompleteStatic,0,128,display_get_gui_height()/2 - 40);
+	draw_sprite(sTimeTrialCompleteStatic,0,128,display_get_gui_height()/2 - 40);
 }
 
-if(gems)
+if(time)
 {
-	gemString = "Gems: " + string(gemNum) + "/" + string(totalGemNum);
-	if(gemNum < global.localCoins)
+	timeString = "Time: " + string(timeNum);
+	if(timeNum > global.time)
 	{
-		gemNum++;	
+		timeNum--;	
+		if(timeNum < global.timeTargetGold && !perfectTime)
+		{
+			perfectTime = true;
+			audio_play_sound(snd_Perfect,5,false);
+			audio_play_sound(snd_LevelIntro2,5,false);
+		}
+		else if(timeNum < global.timeTargetSilver && !silverTime)
+		{
+			silverTime = true;
+			audio_play_sound(snd_LevelIntro2,5,false);
+		}
 	}
 	else
 	{
-		if(!gemsEnded)
+		if(!timeEnded)
 		{
 			audio_stop_sound(snd_GemLoop);
 			audio_play_sound(snd_LevelIntro2,5,false);
-			if(gemNum >= totalGemNum) perfectGems = true;
-			if(perfectGems) audio_play_sound(snd_Perfect,5,false);
-			// Damage alarm
-			alarm[2] = room_speed * 0.6;
-			gemsEnded = true;
+			// Continue alarm
+			alarm[1] = room_speed * 0.5;
+			timeEnded = true;
 		}
 	}
 	draw_set_color($6D454D);
-	draw_text(128,display_get_gui_height()/2 - 23,gemString);
-	draw_text(128,display_get_gui_height()/2 - 25,gemString);
-	draw_text(129,display_get_gui_height()/2 - 24,gemString);
-	draw_text(127,display_get_gui_height()/2 - 24,gemString);
-	if(perfectGems)
+	draw_text(128,display_get_gui_height()/2 - 23,timeString);
+	draw_text(128,display_get_gui_height()/2 - 25,timeString);
+	draw_text(129,display_get_gui_height()/2 - 24,timeString);
+	draw_text(127,display_get_gui_height()/2 - 24,timeString);
+	if(perfectTime)
 	{
 		draw_set_color($DDADE6);
 	}
@@ -41,47 +50,20 @@ if(gems)
 	{
 		draw_set_color($B1D7F0);
 	}
-	draw_text(128,display_get_gui_height()/2 - 24,gemString);
-}
-
-if(damage)
-{
-	damageString = "Damage: ";
-	if(damageDisplay) damageString = "Damage: " + string(damageNum);
-	draw_set_color($6D454D);
-	draw_text(128,display_get_gui_height()/2 - 7,damageString);
-	draw_text(128,display_get_gui_height()/2 - 9,damageString);
-	draw_text(129,display_get_gui_height()/2 - 8,damageString);
-	draw_text(127,display_get_gui_height()/2 - 8,damageString);
-	if(damageDisplay && perfectDamage)
+	draw_text(128,display_get_gui_height()/2 - 24,timeString);
+	
+	// Draw medals
+	draw_sprite(sMedalBigOutline,0,104,display_get_gui_height()/2);
+	draw_sprite(sMedalBigOutline,0,152,display_get_gui_height()/2);
+	
+	if(silverTime)
 	{
-		draw_set_color($DDADE6);
+		draw_sprite(sSilverMedalBig,0,104,display_get_gui_height()/2);
 	}
-	else
+	if(perfectTime)
 	{
-		draw_set_color($B1D7F0);
+		draw_sprite(sGoldMedalBig,0,152,display_get_gui_height()/2);
 	}
-	draw_text(128,display_get_gui_height()/2 - 8,damageString);
-}
-
-if(rank)
-{
-	rankText = "Rank :";
-	if(rankLetter) rankText = "Rank: " + yourRank;
-	draw_set_color($6D454D);
-	draw_text(128,display_get_gui_height()/2 + 9,rankText);
-	draw_text(128,display_get_gui_height()/2 + 7,rankText);
-	draw_text(129,display_get_gui_height()/2 + 8,rankText);
-	draw_text(127,display_get_gui_height()/2 + 8,rankText);
-	if(rankLetter && perfectRank)
-	{
-		draw_set_color($DDADE6);
-	}
-	else
-	{
-		draw_set_color($B1D7F0);
-	}
-	draw_text(128,display_get_gui_height()/2 + 8,rankText);
 }
 
 if(continutePrompt)

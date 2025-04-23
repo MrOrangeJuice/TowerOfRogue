@@ -4,6 +4,10 @@ if(global.inARun)
 {
 	instance_create_layer(x,y,"Walls",oEndLevel);
 }
+else if(global.timeTrial)
+{
+instance_create_layer(x,y,"Walls",oEndTimeTrial);
+}
 else
 {
 	global.pipeSpawned = false;
