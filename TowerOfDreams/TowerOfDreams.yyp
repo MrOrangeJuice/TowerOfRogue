@@ -541,6 +541,7 @@
     {"id":{"name":"snd_Dropitem","path":"sounds/snd_Dropitem/snd_Dropitem.yy",},},
     {"id":{"name":"snd_Drumroll","path":"sounds/snd_Drumroll/snd_Drumroll.yy",},},
     {"id":{"name":"snd_EnemyDeath","path":"sounds/snd_EnemyDeath/snd_EnemyDeath.yy",},},
+    {"id":{"name":"snd_Finish","path":"sounds/snd_Finish/snd_Finish.yy",},},
     {"id":{"name":"snd_Flap","path":"sounds/snd_Flap/snd_Flap.yy",},},
     {"id":{"name":"snd_Flap2","path":"sounds/snd_Flap2/snd_Flap2.yy",},},
     {"id":{"name":"snd_Flap3","path":"sounds/snd_Flap3/snd_Flap3.yy",},},

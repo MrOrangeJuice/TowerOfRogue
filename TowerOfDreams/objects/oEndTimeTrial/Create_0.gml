@@ -2,6 +2,7 @@
 
 global.timeIncrement = false;
 audio_play_sound(snd_LevelIntro1,5,false);
+audio_play_sound(msc_BonusItem,5,true);
 levelFinished = true;
 time = false;
 timeNum = global.time + 1000;

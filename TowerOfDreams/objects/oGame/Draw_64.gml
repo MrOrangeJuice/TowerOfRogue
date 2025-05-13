@@ -433,7 +433,7 @@ if(global.HUD)
 		}
         
         // Draw time
-        if(global.timeTrial)
+        if(global.timeTrial && room != rMemoryZoo)
         {
             if(global.timeIncrement) global.time++;
             

@@ -34,23 +34,10 @@ if(key_select_pressed && !levelProgressed)
 {
 	audio_play_sound(snd_MenuSelect,5,false);
 	audio_stop_sound(snd_GemLoop);
-	// Reset side room
-	global.sideRoom = rTitle;
-	global.shopRoom = rTitle;
-	global.sideChestOpened = false;
-	global.pipeSpawned = false;
-	global.shopSpawned = false;
-	global.pipeY = 0;
-	global.shopY = 0;
-	audio_stop_sound(msc_Floor1);
-	audio_stop_sound(msc_Floor1Variant);
-	audio_stop_sound(msc_Floor2);
-	audio_stop_sound(msc_Floor2Variant);
-	audio_stop_sound(msc_Floor3);
-	audio_stop_sound(msc_Floor3Variant);
-	global.floor1Music = false;
-	global.timeTrial = false;
+	audio_stop_sound(msc_BonusItem);
 	SlideTransition(TRANS_MODE.GOTO,rMemoryZoo);
 	// Prevent mashing to increment level more than once
 	levelProgressed = true;
+	global.timeTrial = false;
+	global.timeIncrement = true;
 }

@@ -13,7 +13,7 @@ if(time)
 	timeString = "Time: " + string_format((timeNum / room_speed), 0, 2);
 	if(timeNum > global.time)
 	{
-		if(timeNum > global.time + 60)
+		if(timeNum > global.timeTargetSilver + 60)
 		{
 			timeNum -= 10;	
 		}

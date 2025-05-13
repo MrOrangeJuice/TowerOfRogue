@@ -1,6 +1,6 @@
 {
   "$GMSound":"",
-  "%Name":"msc_BonusItem",
+  "%Name":"snd_Finish",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -9,17 +9,17 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":56.084896,
-  "name":"msc_BonusItem",
+  "duration":0.35390022,
+  "name":"snd_Finish",
   "parent":{
-    "name":"Music",
-    "path":"folders/Sounds/Music.yy",
+    "name":"Sounds",
+    "path":"folders/Sounds.yy",
   },
   "preload":false,
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"msc_BonusItem.mp3",
+  "soundFile":"snd_Finish.wav",
   "type":0,
   "volume":0.5,
 }
