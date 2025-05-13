@@ -6,7 +6,7 @@ if(global.inARun)
 }
 else if(global.timeTrial)
 {
-instance_create_layer(x,y,"Walls",oEndTimeTrial);
+	SlideTransition(TRANS_MODE.GOTO,rSpeedrunResults);
 }
 else
 {

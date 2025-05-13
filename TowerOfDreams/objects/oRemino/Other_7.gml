@@ -17,7 +17,7 @@ if(reminoState == state.AllTheWay)
 
 if(reminoState == state.Portal)
 {
-    if(!(place_meeting(x,y,oPlayer)))
+    if(!(place_meeting(x,y,oPlayer)) && !(place_meeting(x,y,oPlayerPortal)))
     {
         reminoState = state.Shrink;
         image_index = 0;
