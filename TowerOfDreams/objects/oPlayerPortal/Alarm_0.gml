@@ -7,6 +7,7 @@ if(global.inARun)
 else if(global.timeTrial)
 {
 	SlideTransition(TRANS_MODE.GOTO,rSpeedrunResults);
+	global.timeLevel = room;
 }
 else
 {

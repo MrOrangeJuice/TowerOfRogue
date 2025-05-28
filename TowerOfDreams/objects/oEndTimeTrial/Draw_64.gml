@@ -13,7 +13,7 @@ if(time)
 	timeString = "Time: " + string_format((timeNum / room_speed), 0, 2);
 	if(timeNum > global.time)
 	{
-		if(timeNum > global.timeTargetSilver + 60)
+		if(timeNum > timeSilverNum + 60)
 		{
 			timeNum -= 10;	
 		}
@@ -21,13 +21,13 @@ if(time)
 		{
 			timeNum--;	
 		}
-		if(timeNum < global.timeTargetGold && !perfectTime)
+		if(timeNum < timeGoldNum && !perfectTime)
 		{
 			perfectTime = true;
 			audio_play_sound(snd_SRank,5,false);
 			audio_play_sound(snd_LevelIntro2,5,false);
 		}
-		else if(timeNum < global.timeTargetSilver && !silverTime)
+		else if(timeNum < timeSilverNum && !silverTime)
 		{
 			silverTime = true;
 			audio_play_sound(snd_Perfect,5,false);
@@ -63,6 +63,10 @@ if(time)
 	// Draw medals
 	draw_sprite(sMedalBigOutline,0,104,display_get_gui_height()/2);
 	draw_sprite(sMedalBigOutline,0,136,display_get_gui_height()/2);
+	
+	// Draw medal time
+	draw_text(112,display_get_gui_height()/2 + 24,string_format((timeSilverNum / room_speed),0,2));
+	draw_text(144,display_get_gui_height()/2 + 24,string_format((timeGoldNum / room_speed),0,2));
 	
 	if(silverTime)
 	{
