@@ -43,72 +43,123 @@ if(key_select_pressed && !levelProgressed)
 			global.time1_1 = global.time;
 			break;
 		case rFloor1_2:
-			timeGoldNum = global.timeMedalGold1_2Target;
-			timeSilverNum = global.timeMedalSilver1_2Target;
+			if(global.time < global.timeMedalSilver1_2Target)
+				global.timeMedalSilver1_2 = true;
+			if(global.time < global.timeMedalGold1_2Target)
+				global.timeMedalGold1_2 = true;
+			global.time1_2 = global.time;
 			break;
 		case rFloor1_3:
-			timeGoldNum = global.timeMedalGold1_3Target;
-			timeSilverNum = global.timeMedalSilver1_3Target;
+			if(global.time < global.timeMedalSilver1_3Target)
+				global.timeMedalSilver1_3 = true;
+			if(global.time < global.timeMedalGold1_3Target)
+				global.timeMedalGold1_3 = true;
+			global.time1_3 = global.time;
 			break;
 		case rFloor1_4:
-			timeGoldNum = global.timeMedalGold1_4Target;
-			timeSilverNum = global.timeMedalSilver1_5Target;
+			if(global.time < global.timeMedalSilver1_4Target)
+				global.timeMedalSilver1_4 = true;
+			if(global.time < global.timeMedalGold1_4Target)
+				global.timeMedalGold1_4 = true;
+			global.time1_4 = global.time;
 			break;
 		case rFloor1_5:
-			timeGoldNum = global.timeMedalGold1_5Target;
-			timeSilverNum = global.timeMedalSilver1_5Target;
+			if(global.time < global.timeMedalSilver1_5Target)
+				global.timeMedalSilver1_5 = true;
+			if(global.time < global.timeMedalGold1_5Target)
+				global.timeMedalGold1_5 = true;
+			global.time1_5 = global.time;
 			break;
 		case rFloor1_6:
-			timeGoldNum = global.timeMedalGold1_6Target;
-			timeSilverNum = global.timeMedalSilver1_6Target;
+			if(global.time < global.timeMedalSilver1_1Target)
+				global.timeMedalSilver1_6 = true;
+			if(global.time < global.timeMedalGold1_6Target)
+				global.timeMedalGold1_6 = true;
+			global.time1_6 = global.time;
 			break;
 		case rFloor2_1:
-			timeGoldNum = global.timeMedalGold2_1Target;
-			timeSilverNum = global.timeMedalSilver2_1Target;
+			if(global.time < global.timeMedalSilver1_1Target)
+				global.timeMedalSilver2_1 = true;
+			if(global.time < global.timeMedalGold1_1Target)
+				global.timeMedalGold2_1 = true;
+			global.time2_1 = global.time;
 			break;
 		case rFloor2_2:
-			timeGoldNum = global.timeMedalGold2_2Target;
-			timeSilverNum = global.timeMedalSilver2_2Target;
+			if(global.time < global.timeMedalSilver1_1Target)
+				global.timeMedalSilver2_2 = true;
+			if(global.time < global.timeMedalGold1_1Target)
+				global.timeMedalGold2_2 = true;
+			global.time2_2 = global.time;
 			break;
 		case rFloor2_3:
-			timeGoldNum = global.timeMedalGold2_3Target;
-			timeSilverNum = global.timeMedalSilver2_3Target;
+			if(global.time < global.timeMedalSilver1_1Target)
+				global.timeMedalSilver2_3 = true;
+			if(global.time < global.timeMedalGold1_1Target)
+				global.timeMedalGold2_3 = true;
+			global.time2_3 = global.time;
 			break;
 		case rFloor2_4:
-			timeGoldNum = global.timeMedalGold2_4Target;
-			timeSilverNum = global.timeMedalSilver2_4Target;
+			if(global.time < global.timeMedalSilver2_4Target)
+				global.timeMedalSilver2_4 = true;
+			if(global.time < global.timeMedalGold2_4Target)
+				global.timeMedalGold2_4 = true;
+			global.time2_4 = global.time;
 			break;
 		case rFloor2_5:
-			timeGoldNum = global.timeMedalGold2_5Target;
-			timeSilverNum = global.timeMedalSilver2_5Target;
+			if(global.time < global.timeMedalSilver2_5Target)
+				global.timeMedalSilver2_5 = true;
+			if(global.time < global.timeMedalGold2_5Target)
+				global.timeMedalGold2_5 = true;
+			global.time2_5 = global.time;
 			break;
 		case rFloor3_1:
-			timeGoldNum = global.timeMedalGold3_1Target;
-			timeSilverNum = global.timeMedalSilver3_1Target;
+			if(global.time < global.timeMedalSilver3_1Target)
+				global.timeMedalSilver3_1 = true;
+			if(global.time < global.timeMedalGold3_1Target)
+				global.timeMedalGold3_1 = true;
+			global.time3_1 = global.time;
 			break;
 		case rFloor3_2:
-			timeGoldNum = global.timeMedalGold3_2Target;
-			timeSilverNum = global.timeMedalSilver3_2Target;
+			if(global.time < global.timeMedalSilver3_2Target)
+				global.timeMedalSilver3_2 = true;
+			if(global.time < global.timeMedalGold3_2Target)
+				global.timeMedalGold3_2 = true;
+			global.time3_2 = global.time;
 			break;
 		case rFloor3_3:
-			timeGoldNum = global.timeMedalGold3_3Target;
-			timeSilverNum = global.timeMedalSilver3_3Target;
+			if(global.time < global.timeMedalSilver3_3Target)
+				global.timeMedalSilver3_3 = true;
+			if(global.time < global.timeMedalGold3_3Target)
+				global.timeMedalGold3_3 = true;
+			global.time3_3 = global.time;
 			break;
 		case rFloor3_4:
-			timeGoldNum = global.timeMedalGold3_4Target;
-			timeSilverNum = global.timeMedalSilver3_4Target;
+			if(global.time < global.timeMedalSilver3_4Target)
+				global.timeMedalSilver3_4 = true;
+			if(global.time < global.timeMedalGold3_4Target)
+				global.timeMedalGold3_4 = true;
+			global.time3_4 = global.time;
 			break;
 		case rFloor4_1:
-			timeGoldNum = global.timeMedalGold4_1Target;
-			timeSilverNum = global.timeMedalSilver4_1Target;
+			if(global.time < global.timeMedalSilver4_1Target)
+				global.timeMedalSilver4_1 = true;
+			if(global.time < global.timeMedalGold4_1Target)
+				global.timeMedalGold4_1 = true;
+			global.time4_1 = global.time;
 			break;
 		case rFloor4_2:
-			timeGoldNum = global.timeMedalGold4_2Target;
-			timeSilverNum = global.timeMedalSilver4_2Target;
+			if(global.time < global.timeMedalSilver4_2Target)
+				global.timeMedalSilver4_2 = true;
+			if(global.time < global.timeMedalGold4_2Target)
+				global.timeMedalGold4_2 = true;
+			global.time4_2 = global.time;
 			break;
 		case rFloor4_3:
-			timeGoldNum = global.timeMedalGold4_3Target;
-			timeSilverNum = global.timeMedalSilver4_3Target;
+			if(global.time < global.timeMedalSilver4_3Target)
+				global.timeMedalSilver4_3 = true;
+			if(global.time < global.timeMedalGold4_3Target)
+				global.timeMedalGold4_3 = true;
+			global.time4_3 = global.time;
 			break;
 	}
 	
