@@ -351,8 +351,8 @@ global.timeMedalGold4_3 = false;
 global.timeTargetGold = 600;
 global.timeTargetSilver = 700;
 
-global.timeMedalSilver1_1Target = 15000;
-global.timeMedalGold1_1Target = 13000;
+global.timeMedalSilver1_1Target = 700;
+global.timeMedalGold1_1Target = 600;
 global.timeMedalSilver1_2Target = 7000;
 global.timeMedalGold1_2Target = 6000;
 global.timeMedalSilver1_3Target = 7000;

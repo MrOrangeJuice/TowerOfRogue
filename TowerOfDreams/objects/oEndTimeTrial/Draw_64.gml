@@ -15,7 +15,7 @@ if(time)
 	{
 		if(timeNum > timeSilverNum + 60)
 		{
-			timeNum -= 10;	
+			timeNum -= 20;	
 		}
 		else
 		{
@@ -65,8 +65,19 @@ if(time)
 	draw_sprite(sMedalBigOutline,0,136,display_get_gui_height()/2);
 	
 	// Draw medal time
-	draw_text(112,display_get_gui_height()/2 + 24,string_format((timeSilverNum / room_speed),0,2));
-	draw_text(144,display_get_gui_height()/2 + 24,string_format((timeGoldNum / room_speed),0,2));
+	draw_set_color($6D454D);
+	draw_text(113,display_get_gui_height()/2 + 12,string_format((timeSilverNum / room_speed),0,2));
+	draw_text(145,display_get_gui_height()/2 + 12,string_format((timeGoldNum / room_speed),0,2));
+	draw_text(111,display_get_gui_height()/2 + 12,string_format((timeSilverNum / room_speed),0,2));
+	draw_text(143,display_get_gui_height()/2 + 12,string_format((timeGoldNum / room_speed),0,2));
+	draw_text(112,display_get_gui_height()/2 + 13,string_format((timeSilverNum / room_speed),0,2));
+	draw_text(144,display_get_gui_height()/2 + 13,string_format((timeGoldNum / room_speed),0,2));
+	draw_text(112,display_get_gui_height()/2 + 11,string_format((timeSilverNum / room_speed),0,2));
+	draw_text(144,display_get_gui_height()/2 + 11,string_format((timeGoldNum / room_speed),0,2));
+	
+	draw_set_color($B1D7F0);
+	draw_text(112,display_get_gui_height()/2 + 12,string_format((timeSilverNum / room_speed),0,2));
+	draw_text(144,display_get_gui_height()/2 + 12,string_format((timeGoldNum / room_speed),0,2));
 	
 	if(silverTime)
 	{

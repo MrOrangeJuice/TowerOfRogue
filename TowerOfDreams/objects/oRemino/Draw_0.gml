@@ -36,6 +36,15 @@ if(unlocked)
     draw_set_font(fDreamBoy);
     draw_set_halign(fa_center);
     draw_text_ext(x+20,(y-64+labelY)+7,levelDisplayName,5,44);
+	// Draw medals
+	if(silverMedal)
+	{
+		draw_sprite(sSilverMedal,0,x+11,(y-45+labelY));
+	}
+	if(goldMedal)
+	{
+		draw_sprite(sGoldMedal,0,x+21,(y-45+labelY));
+	}
 }
 else
 {

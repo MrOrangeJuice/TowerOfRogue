@@ -64,8 +64,8 @@ function Load(){
     global.time4_2 = ini_read_string("savegame", "time4_2", 0);
     global.time4_3 = ini_read_string("savegame", "time4_3", 0);
     
-    global.timeSilverMedal1_1 = ini_read_string("savegame", "timeSilverMedal1_1", false);
-    global.timeGoldMedal1_1 = ini_read_string("savegame", "timeGoldMedal1_1", false);
+    global.timeMedalSilver1_1 = ini_read_string("savegame", "timeMedalSilver1_1", false);
+    global.timeMedalGold1_1 = ini_read_string("savegame", "timeMedalGold1_1", false);
     global.timeSilverMedal1_2 = ini_read_string("savegame", "timeSilverMedal1_2", false);
     global.timeGoldMedal1_2 = ini_read_string("savegame", "timeGoldMedal1_2", false);
     global.timeSilverMedal1_3 = ini_read_string("savegame", "timeSilverMedal1_3", false);

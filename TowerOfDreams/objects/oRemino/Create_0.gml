@@ -11,6 +11,8 @@ enum state {
 
 unlocked = false;
 levelName = "";
+silverMedal = false;
+goldMedal = false;
 
 switch(levelDisplayName)
 {
@@ -19,6 +21,8 @@ switch(levelDisplayName)
         {
             unlocked = true;
             levelName = "rFloor1_1";
+			if(global.timeMedalSilver1_1) silverMedal = true;
+			if(global.timeMedalGold1_1) goldMedal = true;
         }
         break;
     case "GRAVITY GAUNTLET":
