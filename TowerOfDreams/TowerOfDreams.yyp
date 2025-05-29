@@ -635,6 +635,7 @@
     {"id":{"name":"sArmorTrophyUI","path":"sprites/sArmorTrophyUI/sArmorTrophyUI.yy",},},
     {"id":{"name":"sArrow","path":"sprites/sArrow/sArrow.yy",},},
     {"id":{"name":"sArrowDown","path":"sprites/sArrowDown/sArrowDown.yy",},},
+    {"id":{"name":"sArrowGremlin","path":"sprites/sArrowGremlin/sArrowGremlin.yy",},},
     {"id":{"name":"sArrowLeft","path":"sprites/sArrowLeft/sArrowLeft.yy",},},
     {"id":{"name":"sArrowRight","path":"sprites/sArrowRight/sArrowRight.yy",},},
     {"id":{"name":"sArrowSign","path":"sprites/sArrowSign/sArrowSign.yy",},},

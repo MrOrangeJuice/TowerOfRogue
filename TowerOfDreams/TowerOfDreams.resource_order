@@ -587,6 +587,7 @@
     {"name":"sArmorTrophyUI","order":59,"path":"sprites/sArmorTrophyUI/sArmorTrophyUI.yy",},
     {"name":"sArrow","order":12,"path":"sprites/sArrow/sArrow.yy",},
     {"name":"sArrowDown","order":9,"path":"sprites/sArrowDown/sArrowDown.yy",},
+    {"name":"sArrowGremlin","order":22,"path":"sprites/sArrowGremlin/sArrowGremlin.yy",},
     {"name":"sArrowLeft","order":6,"path":"sprites/sArrowLeft/sArrowLeft.yy",},
     {"name":"sArrowRight","order":7,"path":"sprites/sArrowRight/sArrowRight.yy",},
     {"name":"sArrowSign","order":1,"path":"sprites/sArrowSign/sArrowSign.yy",},

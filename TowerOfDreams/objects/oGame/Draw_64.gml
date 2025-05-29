@@ -437,7 +437,133 @@ if(global.HUD)
         {
             if(global.timeIncrement) global.time++;
             
-            draw_sprite(sGoldMedal,0,1,29);
+			var drawGold = false;
+			var drawSilver = false;
+			
+			switch(room)
+			{
+				case rFloor1_1:
+					if(global.time < global.timeMedalSilver1_1Target)
+						drawSilver = true;
+					if(global.time < global.timeMedalGold1_1Target)
+						drawGold = true;
+					break;
+				case rFloor1_2:
+					if(global.time < global.timeMedalSilver1_2Target)
+						drawSilver = true;
+					if(global.time < global.timeMedalGold1_2Target)
+						drawGold = true;
+					break;
+				case rFloor1_3:
+					if(global.time < global.timeMedalSilver1_3Target)
+						drawSilver = true;
+					if(global.time < global.timeMedalGold1_3Target)
+						drawGold = true;
+					break;
+				case rFloor1_4:
+					if(global.time < global.timeMedalSilver1_4Target)
+						drawSilver = true;
+					if(global.time < global.timeMedalGold1_4Target)
+						drawGold = true;
+					break;
+				case rFloor1_5:
+					if(global.time < global.timeMedalSilver1_5Target)
+						drawSilver = true;
+					if(global.time < global.timeMedalGold1_5Target)
+						drawGold = true;
+					break;
+				case rFloor1_6:
+					if(global.time < global.timeMedalSilver1_6Target)
+						drawSilver = true;
+					if(global.time < global.timeMedalGold1_6Target)
+						drawGold = true;
+					break;
+				case rFloor2_1:
+					if(global.time < global.timeMedalSilver2_1Target)
+						drawSilver = true;
+					if(global.time < global.timeMedalGold2_1Target)
+						drawGold = true;
+					break;
+				case rFloor2_2:
+					if(global.time < global.timeMedalSilver2_2Target)
+						drawSilver = true;
+					if(global.time < global.timeMedalGold2_2Target)
+						drawGold = true;
+					break;
+				case rFloor2_3:
+					if(global.time < global.timeMedalSilver2_3Target)
+						drawSilver = true;
+					if(global.time < global.timeMedalGold2_3Target)
+						drawGold = true;
+					break;
+				case rFloor2_4:
+					if(global.time < global.timeMedalSilver2_4Target)
+						drawSilver = true;
+					if(global.time < global.timeMedalGold2_4Target)
+						drawGold = true;
+					break;
+				case rFloor2_5:
+					if(global.time < global.timeMedalSilver2_5Target)
+						drawSilver = true;
+					if(global.time < global.timeMedalGold2_5Target)
+						drawGold = true;
+					break;
+				case rFloor3_1:
+					if(global.time < global.timeMedalSilver3_1Target)
+						drawSilver = true;
+					if(global.time < global.timeMedalGold3_1Target)
+						drawGold = true;
+					break;
+				case rFloor3_2:
+					if(global.time < global.timeMedalSilver3_2Target)
+						drawSilver = true;
+					if(global.time < global.timeMedalGold3_2Target)
+						drawGold = true;
+					break;
+				case rFloor3_3:
+					if(global.time < global.timeMedalSilver3_3Target)
+						drawSilver = true;
+					if(global.time < global.timeMedalGold3_3Target)
+						drawGold = true;
+					break;
+				case rFloor3_4:
+					if(global.time < global.timeMedalSilver3_4Target)
+						drawSilver = true;
+					if(global.time < global.timeMedalGold3_4Target)
+						drawGold = true;
+					break;
+				case rFloor4_1:
+					if(global.time < global.timeMedalSilver4_1Target)
+						drawSilver = true;
+					if(global.time < global.timeMedalGold4_1Target)
+						drawGold = true;
+					break;
+				case rFloor4_2:
+					if(global.time < global.timeMedalSilver4_2Target)
+						drawSilver = true;
+					if(global.time < global.timeMedalGold4_2Target)
+						drawGold = true;
+					break;
+				case rFloor4_3:
+					if(global.time < global.timeMedalSilver4_3Target)
+						drawSilver = true;
+					if(global.time < global.timeMedalGold4_3Target)
+						drawGold = true;
+					break;
+			}
+			
+			if(drawGold)
+			{
+				draw_sprite(sGoldMedal,0,1,29);
+			}
+			else if(drawSilver)
+			{
+				draw_sprite(sSilverMedal,0,1,29);
+			}
+			else
+			{
+				draw_sprite(sMedalOutline,0,1,29);
+			}
             
             draw_set_color($6D454D);
             draw_text(9,25,string_format((global.time / room_speed), 0, 2));
