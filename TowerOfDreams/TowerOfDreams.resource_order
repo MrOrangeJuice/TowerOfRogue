@@ -726,6 +726,7 @@
     {"name":"sDirtExplosionRed","order":49,"path":"sprites/sDirtExplosionRed/sDirtExplosionRed.yy",},
     {"name":"sDirtExplosionZombie","order":52,"path":"sprites/sDirtExplosionZombie/sDirtExplosionZombie.yy",},
     {"name":"sDoor","order":2,"path":"sprites/sDoor/sDoor.yy",},
+    {"name":"sDoorGremlin","order":23,"path":"sprites/sDoorGremlin/sDoorGremlin.yy",},
     {"name":"sDoorNew","order":17,"path":"sprites/sDoorNew/sDoorNew.yy",},
     {"name":"sDoubleGem","order":2,"path":"sprites/sDoubleGem/sDoubleGem.yy",},
     {"name":"sDownSpray","order":3,"path":"sprites/sDownSpray/sDownSpray.yy",},

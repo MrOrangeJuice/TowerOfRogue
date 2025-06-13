@@ -781,6 +781,7 @@
     {"id":{"name":"sDirtExplosionRed","path":"sprites/sDirtExplosionRed/sDirtExplosionRed.yy",},},
     {"id":{"name":"sDirtExplosionZombie","path":"sprites/sDirtExplosionZombie/sDirtExplosionZombie.yy",},},
     {"id":{"name":"sDoor","path":"sprites/sDoor/sDoor.yy",},},
+    {"id":{"name":"sDoorGremlin","path":"sprites/sDoorGremlin/sDoorGremlin.yy",},},
     {"id":{"name":"sDoorNew","path":"sprites/sDoorNew/sDoorNew.yy",},},
     {"id":{"name":"sDoubleGem","path":"sprites/sDoubleGem/sDoubleGem.yy",},},
     {"id":{"name":"sDownSpray","path":"sprites/sDownSpray/sDownSpray.yy",},},
