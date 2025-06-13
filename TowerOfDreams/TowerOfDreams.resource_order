@@ -1122,6 +1122,7 @@
     {"name":"sSlimeGBBig","order":14,"path":"sprites/sSlimeGBBig/sSlimeGBBig.yy",},
     {"name":"sSmallExplosionVFX","order":53,"path":"sprites/sSmallExplosionVFX/sSmallExplosionVFX.yy",},
     {"name":"sSmokeVFX","order":54,"path":"sprites/sSmokeVFX/sSmokeVFX.yy",},
+    {"name":"sSpeedrunBack","order":53,"path":"sprites/sSpeedrunBack/sSpeedrunBack.yy",},
     {"name":"sSpikeBox","order":21,"path":"sprites/sSpikeBox/sSpikeBox.yy",},
     {"name":"sSpikeDebug","order":2,"path":"sprites/sSpikeDebug/sSpikeDebug.yy",},
     {"name":"sSpottedVFX","order":24,"path":"sprites/sSpottedVFX/sSpottedVFX.yy",},

@@ -1201,6 +1201,7 @@
     {"id":{"name":"sSlimeGBBig","path":"sprites/sSlimeGBBig/sSlimeGBBig.yy",},},
     {"id":{"name":"sSmallExplosionVFX","path":"sprites/sSmallExplosionVFX/sSmallExplosionVFX.yy",},},
     {"id":{"name":"sSmokeVFX","path":"sprites/sSmokeVFX/sSmokeVFX.yy",},},
+    {"id":{"name":"sSpeedrunBack","path":"sprites/sSpeedrunBack/sSpeedrunBack.yy",},},
     {"id":{"name":"sSpikeBox","path":"sprites/sSpikeBox/sSpikeBox.yy",},},
     {"id":{"name":"sSpikeDebug","path":"sprites/sSpikeDebug/sSpikeDebug.yy",},},
     {"id":{"name":"sSpottedVFX","path":"sprites/sSpottedVFX/sSpottedVFX.yy",},},
