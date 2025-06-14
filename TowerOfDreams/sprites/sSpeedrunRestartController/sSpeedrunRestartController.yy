@@ -1,11 +1,11 @@
 {
   "$GMSprite":"",
-  "%Name":"sSpeedrunBack",
+  "%Name":"sSpeedrunRestartController",
   "bboxMode":0,
   "bbox_bottom":23,
-  "bbox_left":0,
-  "bbox_right":31,
-  "bbox_top":1,
+  "bbox_left":3,
+  "bbox_right":37,
+  "bbox_top":4,
   "collisionKind":1,
   "collisionTolerance":0,
   "DynamicTexturePage":false,
@@ -20,9 +20,9 @@
   "height":24,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"c6fd26f3-f244-4f1c-b819-2c47b1539e01","blendMode":0,"displayName":"Layer 1","isLocked":false,"name":"c6fd26f3-f244-4f1c-b819-2c47b1539e01","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"d1ca4597-5386-406d-812a-1ff1301a8684","blendMode":0,"displayName":"default","isLocked":false,"name":"d1ca4597-5386-406d-812a-1ff1301a8684","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
-  "name":"sSpeedrunBack",
+  "name":"sSpeedrunRestartController",
   "nineSlice":null,
   "origin":0,
   "parent":{
@@ -34,7 +34,7 @@
   "resourceVersion":"2.0",
   "sequence":{
     "$GMSequence":"v1",
-    "%Name":"sSpeedrunBack",
+    "%Name":"sSpeedrunRestartController",
     "autoRecord":true,
     "backdropHeight":768,
     "backdropImageOpacity":0.5,
@@ -58,24 +58,24 @@
       "resourceType":"KeyframeStore<MomentsEventKeyframe>",
       "resourceVersion":"2.0",
     },
-    "name":"sSpeedrunBack",
+    "name":"sSpeedrunRestartController",
     "playback":1,
     "playbackSpeed":30.0,
     "playbackSpeedType":0,
     "resourceType":"GMSequence",
     "resourceVersion":"2.0",
     "seqHeight":24.0,
-    "seqWidth":32.0,
+    "seqWidth":40.0,
     "showBackdrop":true,
     "showBackdropImage":false,
     "timeUnits":1,
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"651b1b14-ac20-49ad-ac91-7e3f7dfbc0d6","path":"sprites/sSpeedrunBack/sSpeedrunBack.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"651b1b14-ac20-49ad-ac91-7e3f7dfbc0d6","path":"sprites/sSpeedrunRestartController/sSpeedrunRestartController.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"7be96781-07cb-4ebd-b16a-55a7007caec7","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"adb6ba06-0e25-4024-81ae-18f27d779b34","path":"sprites/sSpeedrunBack/sSpeedrunBack.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"adb6ba06-0e25-4024-81ae-18f27d779b34","path":"sprites/sSpeedrunRestartController/sSpeedrunRestartController.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"e9857d60-88f2-4386-9ed7-9851b98599ae","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
@@ -92,5 +92,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":32,
+  "width":40,
 }
