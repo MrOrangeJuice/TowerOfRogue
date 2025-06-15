@@ -32,6 +32,15 @@ if(global.paused && !global.dreamBoy)
 	
 	if (!options)
 	{
+		// Draw time trial options
+		if(global.timeTrial)
+		{
+			draw_sprite(sDoorGremlin,0,24,40+UIOffset);
+			draw_sprite(sArrowGremlin,0,200,40+UIOffset);
+			draw_sprite(sSpeedrunBack,key_back_hold,24,72+UIOffset);
+			draw_sprite(sSpeedrunRestart,key_alt_hold,196,72+UIOffset);
+		}
+		
 		draw_sprite(sMenuBox,0,128,40+UIOffset);
 		
 		if(menuOption == 0)

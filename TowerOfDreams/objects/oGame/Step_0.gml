@@ -9,8 +9,11 @@ key_left = keyboard_check_pressed(ord("A")) || keyboard_check_pressed(vk_left);
 key_right = keyboard_check_pressed(ord("D")) || keyboard_check_pressed(vk_right);
 key_select = keyboard_check_pressed(ord("Z")) || keyboard_check_pressed(ord("P")) || keyboard_check_pressed(vk_space) || keyboard_check_pressed(vk_enter);
 key_back = keyboard_check_pressed(ord("X")) || keyboard_check_pressed(ord("O")) || keyboard_check_pressed(vk_lshift);
+key_back_hold = keyboard_check(ord("X")) || keyboard_check(ord("O")) || keyboard_check(vk_lshift);
+key_alt = keyboard_check_pressed(ord("C")) || keyboard_check_pressed(ord("I"));
+key_alt_hold = keyboard_check(ord("C")) || keyboard_check(ord("I"));
 
-if (key_restart || key_pause || key_up || key_down || key_left || key_right || key_select || key_back || key_dreamBoy)
+if (key_restart || key_pause || key_up || key_down || key_left || key_right || key_select || key_back || key_alt || key_back_hold || key_alt_hold || key_dreamBoy)
 {
 	global.controller = 0;
 }
@@ -88,6 +91,40 @@ if (gamepad_button_check_pressed(4,gp_face2) || gamepad_button_check_pressed(4,g
 	key_back = 1;
 	global.controller = 2;
 }
+ 
+if (gamepad_button_check(0,gp_face2) || gamepad_button_check(0,gp_face3))
+{
+	key_back_hold = 1;
+	global.controller = 1;
+}
+if (gamepad_button_check(4,gp_face2) || gamepad_button_check(4,gp_face3))
+{
+	key_back_hold = 1;
+	global.controller = 2;
+}
+
+if (gamepad_button_check_pressed(0,gp_face4))
+{
+	key_alt = 1;
+	global.controller = 1;
+}
+if (gamepad_button_check_pressed(4,gp_face4))
+{
+	key_alt = 1;
+	global.controller = 2;
+}
+ 
+if (gamepad_button_check(0,gp_face4))
+{
+	key_alt_hold = 1;
+	global.controller = 1;
+}
+if (gamepad_button_check(4,gp_face4))
+{
+	key_alt_hold = 1;
+	global.controller = 2;
+}
+
 
 if (gamepad_button_check_pressed(0,gp_start))
 {
