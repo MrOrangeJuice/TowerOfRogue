@@ -31,18 +31,40 @@ if(global.paused && !global.dreamBoy)
 	draw_set_font(fMenu);
 	
 	if (!options)
-	{
+	{	
+		if(global.timeTrial)
+			draw_sprite(sMenuBoxWide,0,128,24+UIOffset);
+		else
+			draw_sprite(sMenuBox,0,128,40+UIOffset);
+		
 		// Draw time trial options
 		if(global.timeTrial)
 		{
-			draw_sprite(sDoorGremlin,0,24,40+UIOffset);
-			draw_sprite(sArrowGremlin,0,200,40+UIOffset);
-			draw_sprite(sSpeedrunBack,key_back_hold,24,72+UIOffset);
-			draw_sprite(sSpeedrunRestart,key_alt_hold,196,72+UIOffset);
+			var backSprite = sSpeedrunBack;
+			var restartSprite = sSpeedrunRestart;
+			
+			switch(global.controller)
+			{
+				case 0:
+					backSprite = sSpeedrunBack;
+					restartSprite = sSpeedrunRestart;
+					break;
+				case 1:
+					backSprite = sSpeedrunBackController;
+					restartSprite = sSpeedrunRestartController;
+					break;
+				case 2:
+					backSprite = sSpeedrunBackControllerPS;
+					restartSprite = sSpeedrunRestartControllerPS;
+					break;
+			}
+			
+			
+			draw_sprite(global.doorSprite,image_index/4,56,42+UIOffset);
+			draw_sprite(global.arrowSprite,image_index/4,168,42+UIOffset);
+			draw_sprite(backSprite,key_back_hold,56,74+UIOffset);
+			draw_sprite(restartSprite,key_alt_hold,164,74+UIOffset);
 		}
-		
-		draw_sprite(sMenuBox,0,128,40+UIOffset);
-		
 		if(menuOption == 0)
 		{
 			draw_set_color($A3A7E9);
@@ -444,7 +466,7 @@ if(global.HUD)
         // Draw time
         if(global.timeTrial && room != rMemoryZoo)
         {
-            if(global.timeIncrement) global.time++;
+            if(global.timeIncrement && !global.paused) global.time++;
             
 			var drawGold = false;
 			var drawSilver = false;

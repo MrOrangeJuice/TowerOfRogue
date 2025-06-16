@@ -227,6 +227,8 @@ global.blockSpawning = false;
 global.debug = false;
 global.debugCounter = 0;
 global.debugDisplay = 0;
+global.arrowSprite = sArrowGremlinIdle;
+global.doorSprite = sDoorGremlinIdle;
 
 // Shop items
 global.shopItem1 = -1;

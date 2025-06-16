@@ -659,6 +659,22 @@ if(!global.dreamBoy)
 				ChangeVolume();
 			}
 		}
+		
+		if(global.timeTrial && !options)
+		{
+			if(key_back)
+			{
+				global.arrowSprite = sArrowGremlinIdleLook;
+				global.doorSprite = sDoorGremlin;
+				audio_play_sound(snd_MenuSelect,5,false);
+			}
+			if(key_alt)
+			{
+				global.arrowSprite = sArrowGremlin;
+				global.doorSprite = sDoorGremlinIdleLook;
+				audio_play_sound(snd_MenuSelect,5,false);
+			}
+		}
 	
 		if(key_select)
 		{
