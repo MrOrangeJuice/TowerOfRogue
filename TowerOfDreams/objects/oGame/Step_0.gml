@@ -664,15 +664,66 @@ if(!global.dreamBoy)
 		{
 			if(key_back)
 			{
+				// Reset pause menu
+				if(instance_exists(oPlayer))
+				{
+					oPlayer.canJump = false;	
+				}
+				
 				global.arrowSprite = sArrowGremlinIdleLook;
 				global.doorSprite = sDoorGremlin;
 				audio_play_sound(snd_MenuSelect,5,false);
+				
+				global.time = 0;
+				global.overallCoins += global.coins;
+				global.coins = 0;
+				global.time = 0;
+				global.sideRoom = rTitle;
+				global.shopRoom = rTitle;
+				global.sideChestOpened = false;
+				global.pipeSpawned = false;
+				global.shopSpawned = false;
+				global.pipeY = 0;
+				global.shopY = 0;
+				audio_stop_sound(msc_Floor1);
+				audio_stop_sound(msc_Floor1Variant);
+				audio_stop_sound(msc_Floor2);
+				audio_stop_sound(msc_Floor2Variant);
+				audio_stop_sound(msc_Floor3);
+				audio_stop_sound(msc_Floor3Variant);
+				global.floor1Music = false;
+				
+	            SlideTransition(TRANS_MODE.GOTO,rMemoryZoo);
 			}
 			if(key_alt)
 			{
+				// Reset pause menu
+				if(instance_exists(oPlayer))
+				{
+					oPlayer.canJump = false;	
+				}
+				
 				global.arrowSprite = sArrowGremlin;
 				global.doorSprite = sDoorGremlinIdleLook;
 				audio_play_sound(snd_MenuSelect,5,false);
+				
+				global.time = 0;
+				global.sideRoom = rTitle;
+				global.shopRoom = rTitle;
+				global.sideChestOpened = false;
+				global.pipeSpawned = false;
+				global.shopSpawned = false;
+				global.pipeY = 0;
+				global.shopY = 0;
+				audio_stop_sound(msc_Floor1);
+				audio_stop_sound(msc_Floor1Variant);
+				audio_stop_sound(msc_Floor2);
+				audio_stop_sound(msc_Floor2Variant);
+				audio_stop_sound(msc_Floor3);
+				audio_stop_sound(msc_Floor3Variant);
+				global.floor1Music = false;
+				
+				 SlideTransition(TRANS_MODE.GOTO,room);
 			}
 		}
 	

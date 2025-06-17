@@ -172,5 +172,5 @@ if(key_select_pressed && !levelProgressed)
 	// Prevent mashing to increment level more than once
 	levelProgressed = true;
 	global.timeTrial = false;
-	global.timeIncrement = true;
+	global.time = 0;
 }

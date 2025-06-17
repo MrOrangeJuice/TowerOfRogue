@@ -11,7 +11,7 @@ if(levelFinished)
 if(time)
 {
 	timeString = "Time: " + string_format((timeNum / room_speed), 0, 2);
-	if(timeNum > global.time)
+	if(timeNum > global.time && !levelProgressed)
 	{
 		if(timeNum > timeSilverNum + 60)
 		{

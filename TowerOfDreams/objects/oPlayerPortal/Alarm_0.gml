@@ -93,6 +93,7 @@ else
         if(specificLevel != "")
         {
             global.timeTrial = true;
+			global.timeIncrement = true;
 			global.overallCoins += global.coins;
 			global.coins = 0;
             SlideTransition(TRANS_MODE.GOTO,asset_get_index(specificLevel));

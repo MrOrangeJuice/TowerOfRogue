@@ -2,7 +2,11 @@
 
 if(room == rMemoryZoo)
 {
+	global.paused = false;
+	menuOption = 0;
     global.canPause = true;
+	global.timeIncrement = false;
+	global.timeTrial = false;
 }
 
 // Reset debug counter
@@ -43,6 +47,13 @@ if(room == rFloor1_3 || room == rFloor2_3)
 if(room == rTitle)
 {
 	if(global.music) audio_play_sound(msc_TitleScreen,5,true);	
+	global.paused = false;
+	global.timeTrial = false;
+	menuOption = 0;
+}
+
+if(global.timeTrial)
+{
 	global.paused = false;
 	menuOption = 0;
 }
