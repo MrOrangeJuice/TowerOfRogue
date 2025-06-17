@@ -77,7 +77,14 @@ if(global.essence != 3 || (global.essence == 3 && !global.zombieRevive))
 		global.enemyArray = ds_list_create();
 		global.slimeArray = ds_list_create();
 		Save();
-		SlideTransition(TRANS_MODE.GOTO,rHub);
+		if(global.timeTrial)
+		{
+			SlideTransition(TRANS_MODE.GOTO,rMemoryZoo);
+		}
+		else
+		{
+			SlideTransition(TRANS_MODE.GOTO,rHub);
+		}
 	}
 }
 

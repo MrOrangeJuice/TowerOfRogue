@@ -7,6 +7,7 @@ if(room == rMemoryZoo)
     global.canPause = true;
 	global.timeIncrement = false;
 	global.timeTrial = false;
+	global.time = 0;
 }
 
 // Reset debug counter
