@@ -687,6 +687,7 @@ if(!global.dreamBoy)
 				global.time = 0;
 				global.overallCoins += global.coins;
 				global.coins = 0;
+				global.health = global.maxHealth;
 				global.sideRoom = rTitle;
 				global.shopRoom = rTitle;
 				global.sideChestOpened = false;
@@ -719,6 +720,7 @@ if(!global.dreamBoy)
 				global.time = 0;
 				global.overallCoins += global.coins;
 				global.coins = 0;
+				global.health = global.maxHealth;
 				global.sideRoom = rTitle;
 				global.shopRoom = rTitle;
 				global.sideChestOpened = false;

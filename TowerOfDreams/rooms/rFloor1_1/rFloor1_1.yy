@@ -229,7 +229,6 @@
     {"name":"inst_FDDDAC","path":"rooms/rFloor1_1/rFloor1_1.yy",},
     {"name":"inst_4279DCD1","path":"rooms/rFloor1_1/rFloor1_1.yy",},
     {"name":"inst_7AD81C68","path":"rooms/rFloor1_1/rFloor1_1.yy",},
-    {"name":"inst_7074E27F","path":"rooms/rFloor1_1/rFloor1_1.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -549,7 +548,6 @@
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oLevelInfo","path":"objects/oLevelInfo/oLevelInfo.yy",},"propertyId":{"name":"levelName","path":"objects/oLevelInfo/oLevelInfo.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Cannon Conundrum",},
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oLevelInfo","path":"objects/oLevelInfo/oLevelInfo.yy",},"propertyId":{"name":"totalGems","path":"objects/oLevelInfo/oLevelInfo.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"116",},
           ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":272.0,"y":1512.0,},
-        {"$GMRInstance":"v2","%Name":"inst_7074E27F","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_7074E27F","objectId":{"name":"oPortal","path":"objects/oPortal/oPortal.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":392.0,"y":1368.0,},
       ],"layers":[],"name":"Walls","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"CoinVFX","depth":700,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"name":"CoinVFX","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"VFX","depth":800,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"name":"VFX","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},

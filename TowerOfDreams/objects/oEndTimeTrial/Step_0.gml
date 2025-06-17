@@ -172,5 +172,6 @@ if(key_select_pressed && !levelProgressed)
 	// Prevent mashing to increment level more than once
 	levelProgressed = true;
 	global.timeTrial = false;
+	global.health = global.maxHealth;
 	global.time = 0;
 }
