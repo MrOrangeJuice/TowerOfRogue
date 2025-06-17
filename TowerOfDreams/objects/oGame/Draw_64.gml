@@ -2,7 +2,11 @@
 
 draw_set_font(fUI);
 
-if(global.res1610)
+if(global.displayMode == 2)
+{
+	UIOffset = 24;	
+}
+else if(global.displayMode == 1)
 {
 	UIOffset = 8;
 }
@@ -123,7 +127,11 @@ if(global.paused && !global.dreamBoy)
 		{
 			draw_set_color($DDADE6);	
 		}
-		if(global.res1610)
+		if(global.displayMode == 2)
+		{
+			draw_text(128,68+UIOffset,"ASPECT RATIO: RETRO");
+		}
+		else if(global.displayMode == 1)
 		{
 			draw_text(128,68+UIOffset,"ASPECT RATIO: TALL");
 		}
@@ -238,7 +246,11 @@ if(room == rTitle)
 		{
 			draw_set_color($DDADE6);	
 		}
-		if(global.res1610)
+		if(global.displayMode == 2)
+		{
+			draw_text(128,72+UIOffset,"ASPECT RATIO: RETRO");
+		}
+		else if(global.displayMode == 1)
 		{
 			draw_text(128,72+UIOffset,"ASPECT RATIO: TALL");
 		}

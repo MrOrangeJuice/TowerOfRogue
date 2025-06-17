@@ -477,13 +477,17 @@ global.zombieUnlocked = false;
 global.goldUnlocked = false;
 
 // Determine default resolution
-if(display_get_width() / display_get_height() <= 1.6)
+if(display_get_width() / display_get_height() <= 1.25)
 {
-	global.res1610 = true;
+	global.displayMode = 2;
+}
+else if(display_get_width() / display_get_height() <= 1.6)
+{
+	global.displayMode = 1;
 }
 else
 {
-	global.res1610 = false;
+	global.displayMode = 0;
 }
 
 global.coinArray = ds_list_create();
