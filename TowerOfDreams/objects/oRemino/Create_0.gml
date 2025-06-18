@@ -30,6 +30,8 @@ switch(levelDisplayName)
         {
             unlocked = true;
             levelName = "rFloor1_2";
+			if(global.timeMedalSilver1_2) silverMedal = true;
+			if(global.timeMedalGold1_2) goldMedal = true;
         }
         break;
     case "SWAP HOP":
@@ -37,6 +39,8 @@ switch(levelDisplayName)
         {
             unlocked = true;
             levelName = "rFloor1_3";
+			if(global.timeMedalSilver1_3) silverMedal = true;
+			if(global.timeMedalGold1_3) goldMedal = true;
         }
         break;
     case "BUMPER BUSTER":
@@ -44,6 +48,8 @@ switch(levelDisplayName)
         {
             unlocked = true;
             levelName = "rFloor1_4";
+			if(global.timeMedalSilver1_4) silverMedal = true;
+			if(global.timeMedalGold1_4) goldMedal = true;
         }
         break;
     case "ON A ROLL":
@@ -51,6 +57,8 @@ switch(levelDisplayName)
         {
             unlocked = true;
             levelName = "rFloor1_5";
+			if(global.timeMedalSilver1_5) silverMedal = true;
+			if(global.timeMedalGold1_5) goldMedal = true;
         }
         break;
     case "SHROOMS OF DOOM":
@@ -58,6 +66,8 @@ switch(levelDisplayName)
         {
             unlocked = true;
             levelName = "rFloor1_6";
+			if(global.timeMedalSilver1_6) silverMedal = true;
+			if(global.timeMedalGold1_6) goldMedal = true;
         }
         break;
     
@@ -66,6 +76,8 @@ switch(levelDisplayName)
         {
             unlocked = true;
             levelName = "rFloor2_1";
+			if(global.timeMedalSilver2_1) silverMedal = true;
+			if(global.timeMedalGold2_1) goldMedal = true;
         }
         break;
     case "VERTICAL VELOCITY":
@@ -73,6 +85,8 @@ switch(levelDisplayName)
         {
             unlocked = true;
             levelName = "rFloor2_2";
+			if(global.timeMedalSilver2_2) silverMedal = true;
+			if(global.timeMedalGold2_2) goldMedal = true;
         }
         break;
     case "BLOCK PARTY":
@@ -80,6 +94,8 @@ switch(levelDisplayName)
         {
             unlocked = true;
             levelName = "rFloor2_3";
+			if(global.timeMedalSilver2_3) silverMedal = true;
+			if(global.timeMedalGold2_3) goldMedal = true;
         }
         break;
     case "MISSILE MAYHEM":
@@ -87,6 +103,8 @@ switch(levelDisplayName)
         {
             unlocked = true;
             levelName = "rFloor2_4";
+			if(global.timeMedalSilver2_4) silverMedal = true;
+			if(global.timeMedalGold2_4) goldMedal = true;
         }
         break;
     case "SAWBLADE LEVEL":
@@ -94,6 +112,8 @@ switch(levelDisplayName)
         {
             unlocked = true;
             levelName = "rFloor2_5";
+			if(global.timeMedalSilver2_5) silverMedal = true;
+			if(global.timeMedalGold2_5) goldMedal = true;
         }
         break;
     
@@ -102,6 +122,8 @@ switch(levelDisplayName)
         {
             unlocked = true;
             levelName = "rFloor3_1";
+			if(global.timeMedalSilver3_1) silverMedal = true;
+			if(global.timeMedalGold3_1) goldMedal = true;
         }
         break;
     case "DASH FRUIT SMOOTHIE":
@@ -109,6 +131,8 @@ switch(levelDisplayName)
         {
             unlocked = true;
             levelName = "rFloor3_2";
+			if(global.timeMedalSilver3_2) silverMedal = true;
+			if(global.timeMedalGold3_2) goldMedal = true;
         }
         break;
     case "LARRYS LIFTOFF":
@@ -116,6 +140,8 @@ switch(levelDisplayName)
         {
             unlocked = true;
             levelName = "rFloor3_3";
+			if(global.timeMedalSilver3_3) silverMedal = true;
+			if(global.timeMedalGold3_3) goldMedal = true;
         }
         break;
     case "WATCH YOUR STEP":
@@ -123,6 +149,8 @@ switch(levelDisplayName)
         {
             unlocked = true;
             levelName = "rFloor3_4";
+			if(global.timeMedalSilver3_4) silverMedal = true;
+			if(global.timeMedalGold3_4) goldMedal = true;
         }
         break;
     
@@ -131,6 +159,8 @@ switch(levelDisplayName)
         {
             unlocked = true;
             levelName = "rFloor4_1";
+			if(global.timeMedalSilver4_1) silverMedal = true;
+			if(global.timeMedalGold4_1) goldMedal = true;
         }
         break;
     case "HORIZONTAL HUSTLE":
@@ -138,6 +168,8 @@ switch(levelDisplayName)
         {
             unlocked = true;
             levelName = "rFloor4_2";
+			if(global.timeMedalSilver4_2) silverMedal = true;
+			if(global.timeMedalGold4_2) goldMedal = true;
         }
         break;
     case "CROSSOVER EPISODE":
@@ -145,6 +177,8 @@ switch(levelDisplayName)
         {
             unlocked = true;
             levelName = "rFloor4_3";
+			if(global.timeMedalSilver4_3) silverMedal = true;
+			if(global.timeMedalGold4_3) goldMedal = true;
         }
         break;
         
