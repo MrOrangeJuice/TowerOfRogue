@@ -11,3 +11,4 @@ shiftToTotal = false;
 finishedShifting = false;
 gemString = "";
 graveDataSaved = false;
+global.timeIncrement = false;

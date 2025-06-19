@@ -58,7 +58,10 @@ if(drawPrevBest)
 {
 	if(global.timeTrial)
 	{
-		bestString = "Prev. Best Time: " + string_format((prevBestTime / room_speed), 0, 2);
+		if(prevBestTime != 0)
+		{
+			bestString = "Prev. Best Time: " + string_format((prevBestTime / room_speed), 0, 2);
+		}
 	}
 	else
 	{
