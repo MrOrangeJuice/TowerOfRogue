@@ -52,7 +52,7 @@ if(time)
 	draw_text(127,display_get_gui_height()/2 - 16,timeString);
 	if(perfectTime)
 	{
-		draw_set_color($DDADE6);
+		draw_set_color($A3A7E9);
 	}
 	else
 	{
@@ -91,6 +91,25 @@ if(time)
 
 if(continutePrompt)
 {
+	if(newBest)
+	{
+		// Draw new best!
+		draw_set_color($6D454D);
+		draw_text(128,display_get_gui_height()/2 - 23,"NEW BEST!!");
+		draw_text(128,display_get_gui_height()/2 - 25,"NEW BEST!!");
+		draw_text(129,display_get_gui_height()/2 - 24,"NEW BEST!!");
+		draw_text(127,display_get_gui_height()/2 - 24,"NEW BEST!!");
+
+		if(perfectTime)
+		{
+			draw_set_color($A3A7E9);
+		}
+		else
+		{
+			draw_set_color($B1D7F0);
+		}
+		draw_text(128,display_get_gui_height()/2 - 24,"NEW BEST!!");
+	}
 	if(global.controller == 2 && !gamepad_is_connected(0))
 	{
 		if(key_select)
