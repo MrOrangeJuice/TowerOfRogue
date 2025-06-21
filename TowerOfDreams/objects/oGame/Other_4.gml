@@ -81,6 +81,8 @@ else
 audio_stop_sound(snd_BoomerangReturn);
 audio_stop_sound(snd_GemLoop);
 global.armed = false;
+global.arrowSprite = sArrowGremlinIdle;
+global.doorSprite = sDoorGremlinIdle;
 
 // Check for new enemies
 if(instance_exists(oEnemy))
