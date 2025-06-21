@@ -129,7 +129,7 @@ if(global.paused && !global.dreamBoy)
 		}
 		if(global.displayMode == 2)
 		{
-			draw_text(128,68+UIOffset,"ASPECT RATIO: RETRO");
+			draw_text(128,68+UIOffset,"ASPECT RATIO: CRT");
 		}
 		else if(global.displayMode == 1)
 		{
@@ -431,7 +431,7 @@ if(global.HUD)
 		// Draw Coins
 		coinTextScale = max(coinTextScale * .95, 1);
 		draw_set_halign(fa_left);
-		if(room == rHub || room == rHubShop)
+		if(room == rHub || room == rHubShop || room == rMemoryZoo || room == rTestRoom)
 		{
 			draw_sprite_stretched(sChestUI,0,7,15,8*coinTextScale,8*coinTextScale);
 			draw_text_transformed(17,11,global.overallCoins,coinTextScale,coinTextScale,0);

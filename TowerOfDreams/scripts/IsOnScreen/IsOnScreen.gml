@@ -8,7 +8,7 @@ function IsOnScreen(argument0)
 	{
 		if(global.displayMode == 2)
 		{
-			if(argument0 > oCamera.y - 56 && argument0 < oCamera.y + 56)
+			if(argument0 > oCamera.y - 104 && argument0 < oCamera.y + 104)
 			{
 				return true;	
 			}
@@ -19,7 +19,7 @@ function IsOnScreen(argument0)
 		}
 		else if(global.displayMode == 1)
 		{
-			if(argument0 > oCamera.y - 72 && argument0 < oCamera.y + 72)
+			if(argument0 > oCamera.y - 88 && argument0 < oCamera.y + 88)
 			{
 				return true;	
 			}
@@ -44,7 +44,7 @@ function IsOnScreen(argument0)
 	{
 		if(global.displayMode == 2)
 		{
-			if(argument0 > oFullCamera.y - 56 && argument0 < oFullCamera.y + 56)
+			if(argument0 > oFullCamera.y - 104 && argument0 < oFullCamera.y + 104)
 			{
 				return true;	
 			}
@@ -55,7 +55,7 @@ function IsOnScreen(argument0)
 		}
 		else if(global.displayMode == 1)
 		{
-			if(argument0 > oFullCamera.y - 72 && argument0 < oFullCamera.y + 72)
+			if(argument0 > oFullCamera.y - 88 && argument0 < oFullCamera.y + 88)
 			{
 				return true;	
 			}
