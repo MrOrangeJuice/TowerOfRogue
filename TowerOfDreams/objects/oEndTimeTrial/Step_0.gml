@@ -192,4 +192,5 @@ if(key_select_pressed && !levelProgressed)
 	global.timeTrial = false;
 	global.health = global.maxHealth;
 	global.time = 0;
+	global.levelCount = 0;
 }

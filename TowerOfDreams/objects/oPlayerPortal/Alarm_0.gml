@@ -92,6 +92,12 @@ else
     {
         if(specificLevel != "")
         {
+			if(specificLevel == "rFloor2_1" || specificLevel == "rFloor2_2" || specificLevel == "rFloor2_3" || specificLevel == "rFloor2_4" || specificLevel == "rFloor2_5")
+				global.levelCount = 3;
+			if(specificLevel == "rFloor3_1" || specificLevel == "rFloor3_2" || specificLevel == "rFloor3_3" || specificLevel == "rFloor3_4")
+				global.levelCount = 6;
+			if(specificLevel == "rFloor4_1" || specificLevel == "rFloor4_2" || specificLevel == "rFloor4_3")
+				global.levelCount = 9;
             global.timeTrial = true;
 			global.timeIncrement = true;
 			global.overallCoins += global.coins;
