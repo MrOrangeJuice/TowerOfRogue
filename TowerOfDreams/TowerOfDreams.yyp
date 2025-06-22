@@ -990,6 +990,7 @@
     {"id":{"name":"sMemoryGremlinPortal","path":"sprites/sMemoryGremlinPortal/sMemoryGremlinPortal.yy",},},
     {"id":{"name":"sMemoryGremlinShrink","path":"sprites/sMemoryGremlinShrink/sMemoryGremlinShrink.yy",},},
     {"id":{"name":"sMemoryGremlinSleep","path":"sprites/sMemoryGremlinSleep/sMemoryGremlinSleep.yy",},},
+    {"id":{"name":"sMemoryGremlinSleepBG","path":"sprites/sMemoryGremlinSleepBG/sMemoryGremlinSleepBG.yy",},},
     {"id":{"name":"sMemoryInfo","path":"sprites/sMemoryInfo/sMemoryInfo.yy",},},
     {"id":{"name":"sMemoryInfoNotUnlocked","path":"sprites/sMemoryInfoNotUnlocked/sMemoryInfoNotUnlocked.yy",},},
     {"id":{"name":"sMemoryPortal","path":"sprites/sMemoryPortal/sMemoryPortal.yy",},},

@@ -924,6 +924,7 @@
     {"name":"sMemoryGremlinPortal","order":21,"path":"sprites/sMemoryGremlinPortal/sMemoryGremlinPortal.yy",},
     {"name":"sMemoryGremlinShrink","order":19,"path":"sprites/sMemoryGremlinShrink/sMemoryGremlinShrink.yy",},
     {"name":"sMemoryGremlinSleep","order":17,"path":"sprites/sMemoryGremlinSleep/sMemoryGremlinSleep.yy",},
+    {"name":"sMemoryGremlinSleepBG","order":28,"path":"sprites/sMemoryGremlinSleepBG/sMemoryGremlinSleepBG.yy",},
     {"name":"sMemoryInfo","order":65,"path":"sprites/sMemoryInfo/sMemoryInfo.yy",},
     {"name":"sMemoryInfoNotUnlocked","order":69,"path":"sprites/sMemoryInfoNotUnlocked/sMemoryInfoNotUnlocked.yy",},
     {"name":"sMemoryPortal","order":66,"path":"sprites/sMemoryPortal/sMemoryPortal.yy",},
