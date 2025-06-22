@@ -980,6 +980,7 @@
     {"id":{"name":"sMedalBigOutline","path":"sprites/sMedalBigOutline/sMedalBigOutline.yy",},},
     {"id":{"name":"sMedalOutline","path":"sprites/sMedalOutline/sMedalOutline.yy",},},
     {"id":{"name":"sMemoryBG","path":"sprites/sMemoryBG/sMemoryBG.yy",},},
+    {"id":{"name":"sMemoryBGNoScroll","path":"sprites/sMemoryBGNoScroll/sMemoryBGNoScroll.yy",},},
     {"id":{"name":"sMemoryBGPurple","path":"sprites/sMemoryBGPurple/sMemoryBGPurple.yy",},},
     {"id":{"name":"sMemoryBGPurpleNoScroll","path":"sprites/sMemoryBGPurpleNoScroll/sMemoryBGPurpleNoScroll.yy",},},
     {"id":{"name":"sMemoryBuilding","path":"sprites/sMemoryBuilding/sMemoryBuilding.yy",},},
