@@ -193,4 +193,6 @@ if(key_select_pressed && !levelProgressed)
 	global.health = global.maxHealth;
 	global.time = 0;
 	global.levelCount = 0;
+	global.overallCoins += global.coins;
+	global.coins = 0;
 }
