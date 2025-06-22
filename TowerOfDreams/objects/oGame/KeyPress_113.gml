@@ -23,6 +23,24 @@ if(global.debug)
 			audio_play_sound(snd_SwordGet,5,false);
 			global.itemsFound = [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1];
 			global.enemiesFound = [1,1,1,1,1,1,1,1,1,1,1];
+            global.seen1_1 = true;
+            global.seen1_2 = true;
+            global.seen1_3 = true;
+            global.seen1_4 = true;
+            global.seen1_5 = true;
+            global.seen1_6 = true;
+            global.seen2_1 = true;
+            global.seen2_2 = true;
+            global.seen2_3 = true;
+            global.seen2_4 = true;
+            global.seen2_5 = true;
+            global.seen3_1 = true;
+            global.seen3_2 = true;
+            global.seen3_3 = true;
+            global.seen3_4 = true;
+            global.seen4_1 = true;
+            global.seen4_2 = true;
+            global.seen4_3 = true;
 			Save();
 		}
 	}

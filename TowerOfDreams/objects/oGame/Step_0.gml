@@ -11,8 +11,11 @@ key_left = keyboard_check_pressed(ord("A")) || keyboard_check_pressed(vk_left);
 key_right = keyboard_check_pressed(ord("D")) || keyboard_check_pressed(vk_right);
 key_select = keyboard_check_pressed(ord("Z")) || keyboard_check_pressed(ord("P")) || keyboard_check_pressed(vk_space) || keyboard_check_pressed(vk_enter);
 key_back = keyboard_check_pressed(ord("X")) || keyboard_check_pressed(ord("O")) || keyboard_check_pressed(vk_lshift);
+key_back_hold = keyboard_check(ord("X")) || keyboard_check(ord("O")) || keyboard_check(vk_lshift);
+key_alt = keyboard_check_pressed(ord("C")) || keyboard_check_pressed(ord("I"));
+key_alt_hold = keyboard_check(ord("C")) || keyboard_check(ord("I"));
 
-if (key_restart || key_pause || key_up || key_down || key_left || key_right || key_select || key_back || key_dreamBoy)
+if (key_restart || key_pause || key_up || key_down || key_left || key_right || key_select || key_back || key_alt || key_back_hold || key_alt_hold || key_dreamBoy)
 {
 	global.controller = 0;
 }
@@ -90,6 +93,40 @@ if (gamepad_button_check_pressed(4,gp_face2) || gamepad_button_check_pressed(4,g
 	key_back = 1;
 	global.controller = 2;
 }
+ 
+if (gamepad_button_check(0,gp_face2) || gamepad_button_check(0,gp_face3))
+{
+	key_back_hold = 1;
+	global.controller = 1;
+}
+if (gamepad_button_check(4,gp_face2) || gamepad_button_check(4,gp_face3))
+{
+	key_back_hold = 1;
+	global.controller = 2;
+}
+
+if (gamepad_button_check_pressed(0,gp_face4))
+{
+	key_alt = 1;
+	global.controller = 1;
+}
+if (gamepad_button_check_pressed(4,gp_face4))
+{
+	key_alt = 1;
+	global.controller = 2;
+}
+ 
+if (gamepad_button_check(0,gp_face4))
+{
+	key_alt_hold = 1;
+	global.controller = 1;
+}
+if (gamepad_button_check(4,gp_face4))
+{
+	key_alt_hold = 1;
+	global.controller = 2;
+}
+
 
 if (gamepad_button_check_pressed(0,gp_start))
 {
@@ -494,7 +531,7 @@ if(!global.dreamBoy)
 					}
 					else
 					{
-						if(!global.res1610)
+						if(global.displayMode == 0)
 						{
 							window_set_size(1280,800);
 							surface_resize(application_surface,1280,800);
@@ -502,9 +539,19 @@ if(!global.dreamBoy)
 							display_set_gui_size(256,160);
 							oTransition.h = 160;
 							oTransition.h_half = 80;
-							global.res1610 = true;
+							global.displayMode = 1;
 						}
-						else if(global.res1610)
+						else if(global.displayMode == 1)
+						{
+							window_set_size(1280,960);
+							surface_resize(application_surface,1280,960);
+							camera_set_view_size(view_camera[0],256,192);
+							display_set_gui_size(256,192);
+							oTransition.h = 192;
+							oTransition.h_half = 96;
+							global.displayMode = 2;
+						}
+						else if(global.displayMode == 2)
 						{
 							window_set_size(1280,720);
 							surface_resize(application_surface,1280,720);
@@ -512,7 +559,7 @@ if(!global.dreamBoy)
 							display_set_gui_size(256,144);
 							oTransition.h = 144;
 							oTransition.h_half = 72;
-							global.res1610 = false;
+							global.displayMode = 0;
 						}
 					}
 					break;
@@ -556,7 +603,108 @@ if(!global.dreamBoy)
 					global.best3_2 = "F";
 					global.best3_3 = "F";
 					global.best3_4 = "F";
+                    global.best4_1 = "F";
+                    global.best4_2 = "F";
+                    global.best4_3 = "F";
 					global.bestOverall = "F";
+                
+                    global.seen1_1 = false;
+                    global.seen1_2 = false;
+                    global.seen1_3 = false;
+                    global.seen1_4 = false;
+                    global.seen1_5 = false;
+                    global.seen1_6 = false;
+                    global.seen2_1 = false;
+                    global.seen2_2 = false;
+                    global.seen2_3 = false;
+                    global.seen2_4 = false;
+                    global.seen2_5 = false;
+                    global.seen3_1 = false;
+                    global.seen3_2 = false;
+                    global.seen3_3 = false;
+                    global.seen3_4 = false;
+                    global.seen4_1 = false;
+                    global.seen4_2 = false;
+                    global.seen4_3 = false;
+                
+                    // Levels Seen
+                    global.seen1_1 = false;
+                    global.seen1_2 = false;
+                    global.seen1_3 = false;
+                    global.seen1_4 = false;
+                    global.seen1_5 = false;
+                    global.seen1_6 = false;
+                    global.seen2_1 = false;
+                    global.seen2_2 = false;
+                    global.seen2_3 = false;
+                    global.seen2_4 = false;
+                    global.seen2_5 = false;
+                    global.seen3_1 = false;
+                    global.seen3_2 = false;
+                    global.seen3_3 = false;
+                    global.seen3_4 = false;
+                    global.seen4_1 = false;
+                    global.seen4_2 = false;
+                    global.seen4_3 = false;
+                    
+                    // Level Times
+                    global.time1_1 = 0;
+                    global.time1_2 = 0;
+                    global.time1_3 = 0;
+                    global.time1_4 = 0;
+                    global.time1_5 = 0;
+                    global.time1_6 = 0;
+                    global.time2_1 = 0;
+                    global.time2_2 = 0;
+                    global.time2_3 = 0;
+                    global.time2_4 = 0;
+                    global.time2_5 = 0;
+                    global.time3_1 = 0;
+                    global.time3_2 = 0;
+                    global.time3_3 = 0;
+                    global.time3_4 = 0;
+                    global.time4_1 = 0;
+                    global.time4_2 = 0;
+                    global.time4_3 = 0;
+                    
+                    // Level Time Medals
+                    global.timeMedalSilver1_1 = false;
+                    global.timeMedalGold1_1 = false;
+                    global.timeMedalSilver1_2 = false;
+                    global.timeMedalGold1_2 = false;
+                    global.timeMedalSilver1_3 = false;
+                    global.timeMedalGold1_3 = false;
+                    global.timeMedalSilver1_4 = false;
+                    global.timeMedalGold1_4 = false;
+                    global.timeMedalSilver1_5 = false;
+                    global.timeMedalGold1_5 = false;
+                    global.timeMedalSilver1_6 = false;
+                    global.timeMedalGold1_6 = false;
+                    global.timeMedalSilver2_1 = false;
+                    global.timeMedalGold2_1 = false;
+                    global.timeMedalSilver2_2 = false;
+                    global.timeMedalGold2_2 = false;
+                    global.timeMedalSilver2_3 = false;
+                    global.timeMedalGold2_3 = false;
+                    global.timeMedalSilver2_4 = false;
+                    global.timeMedalGold2_4 = false;
+                    global.timeMedalSilver2_5 = false;
+                    global.timeMedalGold2_5 = false;
+                    global.timeMedalSilver3_1 = false;
+                    global.timeMedalGold3_1 = false;
+                    global.timeMedalSilver3_2 = false;
+                    global.timeMedalGold3_2 = false;
+                    global.timeMedalSilver3_3 = false;
+                    global.timeMedalGold3_3 = false;
+                    global.timeMedalSilver3_4 = false;
+                    global.timeMedalGold3_4 = false;
+                    global.timeMedalSilver4_1 = false;
+                    global.timeMedalGold4_1 = false;
+                    global.timeMedalSilver4_2 = false;
+                    global.timeMedalGold4_2 = false;
+                    global.timeMedalSilver4_3 = false;
+                    global.timeMedalGold4_3 = false;
+                
 					// Grave data
 					// Floor 1
 					global.graveX1_1 = 0;
@@ -599,6 +747,10 @@ if(!global.dreamBoy)
 					global.graveX2_4 = 0;
 					global.graveY2_4 = 0;
 					global.graveItem2_4 = -1;
+                
+                    global.graveX2_5 = 0;
+                    global.graveY2_5 = 0;
+                    global.graveItem2_5 = -1;
 
 					// Floor 3
 					global.graveX3_1 = 0;
@@ -612,6 +764,23 @@ if(!global.dreamBoy)
 					global.graveX3_3 = 0;
 					global.graveY3_3 = 0;
 					global.graveItem3_3 = -1;
+                
+                    global.graveX3_4 = 0;
+                    global.graveY3_4 = 0;
+                    global.graveItem3_4 = -1;
+                
+                    // Floor 4
+                    global.graveX4_1 = 0;
+                    global.graveY4_1 = 0;
+                    global.graveItem4_1 = -1;
+
+                    global.graveX4_2 = 0;
+                    global.graveY4_2 = 0;
+                    global.graveItem4_2 = -1;
+
+                    global.graveX4_3 = 0;
+                    global.graveY4_3 = 0;
+                    global.graveItem4_3 = -1;
 				
 					global.overallCoins = 0;
 					global.healthUpgrades = 0;
@@ -706,6 +875,77 @@ if(!global.dreamBoy)
 				ChangeVolume();
 			}
 		}
+		
+		if(global.timeTrial && !options)
+		{
+			if(key_back)
+			{
+				// Reset pause menu
+				if(instance_exists(oPlayer))
+				{
+					oPlayer.canJump = false;	
+				}
+				
+				global.arrowSprite = sArrowGremlinIdleLook;
+				global.doorSprite = sDoorGremlin;
+				audio_play_sound(snd_MenuSelect,5,false);
+				
+				global.time = 0;
+				global.levelCount = 0;
+				global.overallCoins += global.coins;
+				global.coins = 0;
+				global.health = global.maxHealth;
+				global.sideRoom = rTitle;
+				global.shopRoom = rTitle;
+				global.sideChestOpened = false;
+				global.pipeSpawned = false;
+				global.shopSpawned = false;
+				global.pipeY = 0;
+				global.shopY = 0;
+				audio_stop_sound(msc_Floor1);
+				audio_stop_sound(msc_Floor1Variant);
+				audio_stop_sound(msc_Floor2);
+				audio_stop_sound(msc_Floor2Variant);
+				audio_stop_sound(msc_Floor3);
+				audio_stop_sound(msc_Floor3Variant);
+				global.floor1Music = false;
+				
+	            SlideTransition(TRANS_MODE.GOTO,rMemoryZoo);
+			}
+			if(key_alt)
+			{
+				// Reset pause menu
+				if(instance_exists(oPlayer))
+				{
+					oPlayer.canJump = false;	
+				}
+				
+				global.arrowSprite = sArrowGremlin;
+				global.doorSprite = sDoorGremlinIdleLook;
+				audio_play_sound(snd_MenuSelect,5,false);
+				
+				global.time = 0;
+				global.overallCoins += global.coins;
+				global.coins = 0;
+				global.health = global.maxHealth;
+				global.sideRoom = rTitle;
+				global.shopRoom = rTitle;
+				global.sideChestOpened = false;
+				global.pipeSpawned = false;
+				global.shopSpawned = false;
+				global.pipeY = 0;
+				global.shopY = 0;
+				audio_stop_sound(msc_Floor1);
+				audio_stop_sound(msc_Floor1Variant);
+				audio_stop_sound(msc_Floor2);
+				audio_stop_sound(msc_Floor2Variant);
+				audio_stop_sound(msc_Floor3);
+				audio_stop_sound(msc_Floor3Variant);
+				global.floor1Music = false;
+				
+				 SlideTransition(TRANS_MODE.GOTO,room);
+			}
+		}
 	
 		if(key_select)
 		{
@@ -737,7 +977,7 @@ if(!global.dreamBoy)
 					}
 					else
 					{
-						if(!global.res1610)
+						if(global.displayMode == 0)
 						{
 							window_set_size(1280,800);
 							surface_resize(application_surface,1280,800);
@@ -745,9 +985,19 @@ if(!global.dreamBoy)
 							display_set_gui_size(256,160);
 							oTransition.h = 160;
 							oTransition.h_half = 80;
-							global.res1610 = true;
+							global.displayMode = 1;
 						}
-						else if(global.res1610)
+						else if(global.displayMode == 1)
+						{
+							window_set_size(1280,960);
+							surface_resize(application_surface,1280,960);
+							camera_set_view_size(view_camera[0],256,192);
+							display_set_gui_size(256,192);
+							oTransition.h = 192;
+							oTransition.h_half = 96;
+							global.displayMode = 2;
+						}
+						else if(global.displayMode == 2)
 						{
 							window_set_size(1280,720);
 							surface_resize(application_surface,1280,720);
@@ -755,7 +1005,7 @@ if(!global.dreamBoy)
 							display_set_gui_size(256,144);
 							oTransition.h = 144;
 							oTransition.h_half = 72;
-							global.res1610 = false;
+							global.displayMode = 0;
 						}
 					}
 					break;
@@ -776,6 +1026,7 @@ if(!global.dreamBoy)
 						global.usedArray2 = [false,false,false,false,false,false,false,false,false,false];
 						global.usedArray3 = [false,false,false,false,false,false,false,false,false,false];
 						global.inARun = false;
+                        global.timeTrial = false;
 						global.zombieRevive = true;
 						global.coins = 0;
 						global.coinsThisRun = 0;

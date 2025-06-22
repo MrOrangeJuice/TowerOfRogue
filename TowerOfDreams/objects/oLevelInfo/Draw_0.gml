@@ -21,7 +21,14 @@ if(drawLevelNum)
 		floorNum = 2;
 		levelNum = global.levelCount - 2;
 	}
-	levelString = "Level " + string(floorNum) + "-" + string(levelNum);
+	if(global.timeTrial)
+	{
+		levelString = "TIME TRIAL";
+	}
+	else
+	{
+		levelString = "Level " + string(floorNum) + "-" + string(levelNum);
+	}
 	
 	// Draw outline
 	draw_set_color(#4d456d);
@@ -49,7 +56,17 @@ if(drawLevelName)
 
 if(drawPrevBest)
 {
-	bestString = "Prev. Best: " +string(prevBestRank);
+	if(global.timeTrial)
+	{
+		if(prevBestTime != 0)
+		{
+			bestString = "Prev. Best Time: " + string_format((prevBestTime / room_speed), 0, 2);
+		}
+	}
+	else
+	{
+		bestString = "Prev. Best: " +string(prevBestRank);
+	}
 	
 	draw_set_color(#4d456d);
 	draw_text(x,y-23,bestString);

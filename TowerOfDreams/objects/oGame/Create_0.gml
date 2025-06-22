@@ -173,6 +173,11 @@ global.floor3Completed = false;
 global.runCompleted = false;
 global.runCompletedHard = false;
 global.inARun = false;
+global.timeTrial = false;
+global.time = 0;
+global.timeIncrement = true;
+global.timeLevel = 0;
+global.timeMedals = 0;
 global.sideRoomArray = [rTreasureRoom,rTreasureRoom2];
 global.sideRoomArray2 = [rTreasureRoomFloor2,rTreasureRoom2Floor2];
 global.sideRoomArray3 = [rTreasureRoomFloor3,rTreasureRoom2Floor3];
@@ -182,9 +187,11 @@ global.shopRoomArray3 = [rShopFloor3,rShop2Floor3];
 global.levelArray = [rFloor1_1,rFloor1_2,rFloor1_3,rFloor1_4,rFloor1_5,rFloor1_6];
 global.levelArray2 = [rFloor2_1,rFloor2_2,rFloor2_3,rFloor2_4,rFloor2_5];
 global.levelArray3 = [rFloor3_1,rFloor3_2,rFloor3_3,rFloor3_4];
+global.levelArray4 = [rFloor4_1,rFloor4_2,rFloor4_3];
 global.usedArray = [false,false,false,false,false,false,false,false,false,false];
 global.usedArray2 = [false,false,false,false,false,false,false,false,false,false];
 global.usedArray3 = [false,false,false,false,false,false,false,false,false,false];
+global.usedArray4 = [false,false,false,false,false,false,false,false,false,false];
 global.levelCount = 0;
 global.pipeCount = 0;
 global.shopPipeCount = 0;
@@ -224,6 +231,8 @@ global.blockSpawning = false;
 global.debug = false;
 global.debugCounter = 0;
 global.debugDisplay = 0;
+global.arrowSprite = sArrowGremlinIdle;
+global.doorSprite = sDoorGremlinIdle;
 
 // Shop items
 global.shopItem1 = -1;
@@ -262,7 +271,128 @@ global.best3_1 = "F";
 global.best3_2 = "F";
 global.best3_3 = "F";
 global.best3_4 = "F";
+global.best4_1 = "F";
+global.best4_2 = "F";
+global.best4_3 = "F";
 global.bestOverall = "F";
+
+// Levels Seen
+global.seen1_1 = false;
+global.seen1_2 = false;
+global.seen1_3 = false;
+global.seen1_4 = false;
+global.seen1_5 = false;
+global.seen1_6 = false;
+global.seen2_1 = false;
+global.seen2_2 = false;
+global.seen2_3 = false;
+global.seen2_4 = false;
+global.seen2_5 = false;
+global.seen3_1 = false;
+global.seen3_2 = false;
+global.seen3_3 = false;
+global.seen3_4 = false;
+global.seen4_1 = false;
+global.seen4_2 = false;
+global.seen4_3 = false;
+
+// Level Times
+global.time1_1 = 0;
+global.time1_2 = 0;
+global.time1_3 = 0;
+global.time1_4 = 0;
+global.time1_5 = 0;
+global.time1_6 = 0;
+global.time2_1 = 0;
+global.time2_2 = 0;
+global.time2_3 = 0;
+global.time2_4 = 0;
+global.time2_5 = 0;
+global.time3_1 = 0;
+global.time3_2 = 0;
+global.time3_3 = 0;
+global.time3_4 = 0;
+global.time4_1 = 0;
+global.time4_2 = 0;
+global.time4_3 = 0;
+
+// Level Time Medals
+global.timeMedalSilver1_1 = false;
+global.timeMedalGold1_1 = false;
+global.timeMedalSilver1_2 = false;
+global.timeMedalGold1_2 = false;
+global.timeMedalSilver1_3 = false;
+global.timeMedalGold1_3 = false;
+global.timeMedalSilver1_4 = false;
+global.timeMedalGold1_4 = false;
+global.timeMedalSilver1_5 = false;
+global.timeMedalGold1_5 = false;
+global.timeMedalSilver1_6 = false;
+global.timeMedalGold1_6 = false;
+global.timeMedalSilver2_1 = false;
+global.timeMedalGold2_1 = false;
+global.timeMedalSilver2_2 = false;
+global.timeMedalGold2_2 = false;
+global.timeMedalSilver2_3 = false;
+global.timeMedalGold2_3 = false;
+global.timeMedalSilver2_4 = false;
+global.timeMedalGold2_4 = false;
+global.timeMedalSilver2_5 = false;
+global.timeMedalGold2_5 = false;
+global.timeMedalSilver3_1 = false;
+global.timeMedalGold3_1 = false;
+global.timeMedalSilver3_2 = false;
+global.timeMedalGold3_2 = false;
+global.timeMedalSilver3_3 = false;
+global.timeMedalGold3_3 = false;
+global.timeMedalSilver3_4 = false;
+global.timeMedalGold3_4 = false;
+global.timeMedalSilver4_1 = false;
+global.timeMedalGold4_1 = false;
+global.timeMedalSilver4_2 = false;
+global.timeMedalGold4_2 = false;
+global.timeMedalSilver4_3 = false;
+global.timeMedalGold4_3 = false;
+
+global.timeTargetGold = 600;
+global.timeTargetSilver = 700;
+
+global.timeMedalSilver1_1Target = 4020;
+global.timeMedalGold1_1Target = 3720;
+global.timeMedalSilver1_2Target = 3360;
+global.timeMedalGold1_2Target = 3060;
+global.timeMedalSilver1_3Target = 3720;
+global.timeMedalGold1_3Target = 3420;
+global.timeMedalSilver1_4Target = 3300;
+global.timeMedalGold1_4Target = 3000;
+global.timeMedalSilver1_5Target = 3660;
+global.timeMedalGold1_5Target = 3360;
+global.timeMedalSilver1_6Target = 2940;
+global.timeMedalGold1_6Target = 2640;
+global.timeMedalSilver2_1Target = 3420;
+global.timeMedalGold2_1Target = 3120;
+global.timeMedalSilver2_2Target = 2760;
+global.timeMedalGold2_2Target = 2460;
+global.timeMedalSilver2_3Target = 3780;
+global.timeMedalGold2_3Target = 3480;
+global.timeMedalSilver2_4Target = 5160;
+global.timeMedalGold2_4Target = 4860;
+global.timeMedalSilver2_5Target = 4020;
+global.timeMedalGold2_5Target = 3720;
+global.timeMedalSilver3_1Target = 2640;
+global.timeMedalGold3_1Target = 2340;
+global.timeMedalSilver3_2Target = 3300;
+global.timeMedalGold3_2Target = 3000;
+global.timeMedalSilver3_3Target = 4260;
+global.timeMedalGold3_3Target = 3960;
+global.timeMedalSilver3_4Target = 3300;
+global.timeMedalGold3_4Target = 3000;
+global.timeMedalSilver4_1Target = 5300;
+global.timeMedalGold4_1Target = 5000;
+global.timeMedalSilver4_2Target = 5300;
+global.timeMedalGold4_2Target = 5000;
+global.timeMedalSilver4_3Target = 5300;
+global.timeMedalGold4_3Target = 5000;
 
 // Grave data
 // Floor 1
@@ -328,6 +458,19 @@ global.graveX3_4 = 0;
 global.graveY3_4 = 0;
 global.graveItem3_4 = -1;
 
+// Floor 4
+global.graveX4_1 = 0;
+global.graveY4_1 = 0;
+global.graveItem4_1 = -1;
+
+global.graveX4_2 = 0;
+global.graveY4_2 = 0;
+global.graveItem4_2 = -1;
+
+global.graveX4_3 = 0;
+global.graveY4_3 = 0;
+global.graveItem4_3 = -1;
+
 // Armor sets
 global.palette = 0;
 global.essence = 0;
@@ -338,13 +481,17 @@ global.zombieUnlocked = false;
 global.goldUnlocked = false;
 
 // Determine default resolution
-if(display_get_width() / display_get_height() <= 1.6)
+if(display_get_width() / display_get_height() <= 1.25)
 {
-	global.res1610 = true;
+	global.displayMode = 2;
+}
+else if(display_get_width() / display_get_height() <= 1.6)
+{
+	global.displayMode = 1;
 }
 else
 {
-	global.res1610 = false;
+	global.displayMode = 0;
 }
 
 global.coinArray = ds_list_create();
@@ -364,6 +511,7 @@ coinTextScale = 1;
 healthTextScale = 1;
 itemTextScale = 1;
 armorTextScale = 1;
+timeTextScale = 1;
 passiveItemTextScale = 1;
 options = false;
 deleted = false;

@@ -128,100 +128,100 @@ if(!global.paused)
 {
     if(!selectionConfirmed)
     {
-    	// Select row and element
-    	if(key_left)
-    	{
-    		currentItem--;
-    		if(currentItem < 0) currentItem = array_length(unlockedItems) - 1;
-    	    audio_play_sound(snd_DreamBoyMenuMove,5,false);
-    	}
+        // Select row and element
+        if(key_left)
+        {
+            currentItem--;
+            if(currentItem < 0) currentItem = array_length(unlockedItems) - 1;
+            audio_play_sound(snd_DreamBoyMenuMove,5,false);
+        }
     
-    	if(key_right)
-    	{
-    		currentItem++;
-    		if(currentItem > array_length(unlockedItems) - 1) currentItem = 0;
-    	    audio_play_sound(snd_DreamBoyMenuMove,5,false);
-    	}
-    	
-    	if(key_up)
-    	{
-    	    audio_play_sound(snd_DreamBoyMenuMove,5,false);
-    	}
+        if(key_right)
+        {
+            currentItem++;
+            if(currentItem > array_length(unlockedItems) - 1) currentItem = 0;
+            audio_play_sound(snd_DreamBoyMenuMove,5,false);
+        }
+        
+        if(key_up)
+        {
+            audio_play_sound(snd_DreamBoyMenuMove,5,false);
+        }
     
-    	if(key_down)
-    	{
-    	    audio_play_sound(snd_DreamBoyMenuMove,5,false);
-    	}
-    	
-    	
-    	// Spawn/Preview location
-    	spawnX = ((cursorBottomLeftX+cursorBottomRightX)/2)-4;
-    	spawnY = ((cursorBottomLeftY+cursorTopLeftY)/2)-4;
+        if(key_down)
+        {
+            audio_play_sound(snd_DreamBoyMenuMove,5,false);
+        }
+        
+        
+        // Spawn/Preview location
+        spawnX = ((cursorBottomLeftX+cursorBottomRightX)/2)-4;
+        spawnY = ((cursorBottomLeftY+cursorTopLeftY)/2)-4;
     
-    	// Select element
-    	if(key_select_pressed)
-    	{
-    	    selectionConfirmed = true;
-    	    audio_play_sound(snd_DreamBoySelect2,5,false);
-    	}
-    	
-    	// Exit
-    	if(key_back_pressed)
-    	{
-    		audio_play_sound(snd_DreamBoyMenuBack,5,false);
-    	    instance_create_layer(x,y,"Walls",oArcadePedestal);
-    	    instance_create_layer(x+8,y,"Instances",oPlayer);
-    	    instance_destroy();
-    	}
+        // Select element
+        if(key_select_pressed)
+        {
+            selectionConfirmed = true;
+            audio_play_sound(snd_DreamBoySelect2,5,false);
+        }
+        
+        // Exit
+        if(key_back_pressed)
+        {
+            audio_play_sound(snd_DreamBoyMenuBack,5,false);
+            instance_create_layer(x,y,"Walls",oArcadePedestal);
+            instance_create_layer(x+8,y,"Instances",oPlayer);
+            instance_destroy();
+        }
     }
     else
     {
-    	// Move cursor
-    	if(key_left)
-    	{
-    	    cursorTopLeftXTarget -= cursorMove;
-    	    cursorTopRightXTarget -= cursorMove;
-    	    cursorBottomLeftXTarget -= cursorMove;
-    	    cursorBottomRightXTarget -= cursorMove;
+        // Move cursor
+        if(key_left)
+        {
+            cursorTopLeftXTarget -= cursorMove;
+            cursorTopRightXTarget -= cursorMove;
+            cursorBottomLeftXTarget -= cursorMove;
+            cursorBottomRightXTarget -= cursorMove;
         
-    	    audio_play_sound(snd_DreamBoyMenuMove,5,false);
-    	}
+            audio_play_sound(snd_DreamBoyMenuMove,5,false);
+        }
     
-    	if(key_right)
-    	{
-    	    cursorTopLeftXTarget += cursorMove;
-    	    cursorTopRightXTarget += cursorMove;
-    	    cursorBottomLeftXTarget += cursorMove;
-    	    cursorBottomRightXTarget += cursorMove;
+        if(key_right)
+        {
+            cursorTopLeftXTarget += cursorMove;
+            cursorTopRightXTarget += cursorMove;
+            cursorBottomLeftXTarget += cursorMove;
+            cursorBottomRightXTarget += cursorMove;
         
-    	    audio_play_sound(snd_DreamBoyMenuMove,5,false);
-    	}
-    	if(key_up)
-    	{
-    	    cursorTopLeftYTarget -= cursorMove;
-    	    cursorTopRightYTarget -= cursorMove;
-    	    cursorBottomLeftYTarget -= cursorMove;
-    	    cursorBottomRightYTarget -= cursorMove;
+            audio_play_sound(snd_DreamBoyMenuMove,5,false);
+        }
+        if(key_up)
+        {
+            cursorTopLeftYTarget -= cursorMove;
+            cursorTopRightYTarget -= cursorMove;
+            cursorBottomLeftYTarget -= cursorMove;
+            cursorBottomRightYTarget -= cursorMove;
         
-    	    audio_play_sound(snd_DreamBoyMenuMove,5,false);
-    	}
+            audio_play_sound(snd_DreamBoyMenuMove,5,false);
+        }
     
-    	if(key_down)
-    	{
-    	    cursorTopLeftYTarget += cursorMove;
-    	    cursorTopRightYTarget += cursorMove;
-    	    cursorBottomLeftYTarget += cursorMove;
-    	    cursorBottomRightYTarget += cursorMove;
+        if(key_down)
+        {
+            cursorTopLeftYTarget += cursorMove;
+            cursorTopRightYTarget += cursorMove;
+            cursorBottomLeftYTarget += cursorMove;
+            cursorBottomRightYTarget += cursorMove;
         
-    	    audio_play_sound(snd_DreamBoyMenuMove,5,false);
-    	}
-    	
-    	// Spawn/Preview location
-    	spawnX = ((cursorBottomLeftX+cursorBottomRightX)/2)-4;
-    	spawnY = ((cursorBottomLeftY+cursorTopLeftY)/2)-4;
+            audio_play_sound(snd_DreamBoyMenuMove,5,false);
+        }
+        
+        // Spawn/Preview location
+        spawnX = ((cursorBottomLeftX+cursorBottomRightX)/2)-4;
+        spawnY = ((cursorBottomLeftY+cursorTopLeftY)/2)-4;
     
-    	// Place
-    	if(key_select_pressed)
+        // Place
+        if(key_select_pressed)
         {
             // Round spawn
             spawnX = cursorMove * round(spawnX / cursorMove);
@@ -256,17 +256,17 @@ if(!global.paused)
                     instance_destroy(enemy);
                 }
             }
-    	    audio_play_sound(snd_DreamBoySelect2,5,false);
-    	}
-    	
-    	// Exit
-    	if(key_back_pressed)
-    	{
-    		selectionConfirmed = false;
-    	    audio_play_sound(snd_DreamBoyMenuBack,5,false);
-    		displayArrows = true;
-    		alarm[0] = room_speed * arrowPulse;
-    	}
+            audio_play_sound(snd_DreamBoySelect2,5,false);
+        }
+        
+        // Exit
+        if(key_back_pressed)
+        {
+            selectionConfirmed = false;
+            audio_play_sound(snd_DreamBoyMenuBack,5,false);
+            displayArrows = true;
+            alarm[0] = room_speed * arrowPulse;
+        }
     }
     
     if(key_select)

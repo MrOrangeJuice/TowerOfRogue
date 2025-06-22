@@ -15,7 +15,7 @@ while(!global.pipeSpawned)
 	{
 		randomize();
 		randomChance = irandom_range(0,2);
-		if(randomChance == 1)
+		if(randomChance == 1 && !global.timeTrial)
 		{
 			// Randomly create pipe
 			instance_create_layer(x+36,y-2,"Pipes",oPipe);

@@ -2,7 +2,11 @@
 
 draw_set_font(fUI);
 
-if(global.res1610)
+if(global.displayMode == 2)
+{
+	UIOffset = 24;	
+}
+else if(global.displayMode == 1)
 {
 	UIOffset = 8;
 }
@@ -31,9 +35,40 @@ if(global.paused && !global.dreamBoy)
 	draw_set_font(fMenu);
 	
 	if (!options)
-	{
-		draw_sprite(sMenuBox,0,128,40+UIOffset);
+	{	
+		if(global.timeTrial)
+			draw_sprite(sMenuBoxWide,0,128,24+UIOffset);
+		else
+			draw_sprite(sMenuBox,0,128,40+UIOffset);
 		
+		// Draw time trial options
+		if(global.timeTrial)
+		{
+			var backSprite = sSpeedrunBack;
+			var restartSprite = sSpeedrunRestart;
+			
+			switch(global.controller)
+			{
+				case 0:
+					backSprite = sSpeedrunBack;
+					restartSprite = sSpeedrunRestart;
+					break;
+				case 1:
+					backSprite = sSpeedrunBackController;
+					restartSprite = sSpeedrunRestartController;
+					break;
+				case 2:
+					backSprite = sSpeedrunBackControllerPS;
+					restartSprite = sSpeedrunRestartControllerPS;
+					break;
+			}
+			
+			
+			draw_sprite(global.doorSprite,image_index/4,56,42+UIOffset);
+			draw_sprite(global.arrowSprite,image_index/4,168,42+UIOffset);
+			draw_sprite(backSprite,key_back_hold,56,74+UIOffset);
+			draw_sprite(restartSprite,key_alt_hold,164,74+UIOffset);
+		}
 		if(menuOption == 0)
 		{
 			draw_set_color($A3A7E9);
@@ -92,7 +127,11 @@ if(global.paused && !global.dreamBoy)
 		{
 			draw_set_color($DDADE6);	
 		}
-		if(global.res1610)
+		if(global.displayMode == 2)
+		{
+			draw_text(128,68+UIOffset,"ASPECT RATIO: CRT");
+		}
+		else if(global.displayMode == 1)
 		{
 			draw_text(128,68+UIOffset,"ASPECT RATIO: TALL");
 		}
@@ -207,7 +246,11 @@ if(room == rTitle)
 		{
 			draw_set_color($DDADE6);	
 		}
-		if(global.res1610)
+		if(global.displayMode == 2)
+		{
+			draw_text(128,72+UIOffset,"ASPECT RATIO: RETRO");
+		}
+		else if(global.displayMode == 1)
 		{
 			draw_text(128,72+UIOffset,"ASPECT RATIO: TALL");
 		}
@@ -265,7 +308,7 @@ if(room == rTitle)
 // Draw HUD
 if(global.HUD)
 {
-	if(room != rTitle && room != rRunComplete && room != rBonusItem && room != rCallToAction)
+	if(room != rTitle && room != rRunComplete && room != rBonusItem && room != rCallToAction && room != rSpeedrunResults)
 	{
 		// Add spacing to HUD
 		hudMod = 9 * (((global.maxHealth - 6) / 2) + (global.armor % 5 + floor(global.armor / 5)));
@@ -388,7 +431,7 @@ if(global.HUD)
 		// Draw Coins
 		coinTextScale = max(coinTextScale * .95, 1);
 		draw_set_halign(fa_left);
-		if(room == rHub || room == rHubShop)
+		if(room == rHub || room == rHubShop || room == rMemoryZoo || room == rTestRoom)
 		{
 			draw_sprite_stretched(sChestUI,0,7,15,8*coinTextScale,8*coinTextScale);
 			draw_text_transformed(17,11,global.overallCoins,coinTextScale,coinTextScale,0);
@@ -431,7 +474,172 @@ if(global.HUD)
 			draw_sprite(global.itemSprites[global.devItem],0,4,30);	
 			draw_text(5,33,"F1");
 		}
+        
+        // Draw time
+        if(global.timeTrial && room != rMemoryZoo)
+        {
+            if(global.timeIncrement && !global.paused) global.time++;
+            
+			var drawGold = false;
+			var drawSilver = false;
+			
+			switch(room)
+			{
+				case rFloor1_1:
+					if(global.time < global.timeMedalSilver1_1Target)
+						drawSilver = true;
+					if(global.time < global.timeMedalGold1_1Target)
+						drawGold = true;
+					break;
+				case rFloor1_2:
+					if(global.time < global.timeMedalSilver1_2Target)
+						drawSilver = true;
+					if(global.time < global.timeMedalGold1_2Target)
+						drawGold = true;
+					break;
+				case rFloor1_3:
+					if(global.time < global.timeMedalSilver1_3Target)
+						drawSilver = true;
+					if(global.time < global.timeMedalGold1_3Target)
+						drawGold = true;
+					break;
+				case rFloor1_4:
+					if(global.time < global.timeMedalSilver1_4Target)
+						drawSilver = true;
+					if(global.time < global.timeMedalGold1_4Target)
+						drawGold = true;
+					break;
+				case rFloor1_5:
+					if(global.time < global.timeMedalSilver1_5Target)
+						drawSilver = true;
+					if(global.time < global.timeMedalGold1_5Target)
+						drawGold = true;
+					break;
+				case rFloor1_6:
+					if(global.time < global.timeMedalSilver1_6Target)
+						drawSilver = true;
+					if(global.time < global.timeMedalGold1_6Target)
+						drawGold = true;
+					break;
+				case rFloor2_1:
+					if(global.time < global.timeMedalSilver2_1Target)
+						drawSilver = true;
+					if(global.time < global.timeMedalGold2_1Target)
+						drawGold = true;
+					break;
+				case rFloor2_2:
+					if(global.time < global.timeMedalSilver2_2Target)
+						drawSilver = true;
+					if(global.time < global.timeMedalGold2_2Target)
+						drawGold = true;
+					break;
+				case rFloor2_3:
+					if(global.time < global.timeMedalSilver2_3Target)
+						drawSilver = true;
+					if(global.time < global.timeMedalGold2_3Target)
+						drawGold = true;
+					break;
+				case rFloor2_4:
+					if(global.time < global.timeMedalSilver2_4Target)
+						drawSilver = true;
+					if(global.time < global.timeMedalGold2_4Target)
+						drawGold = true;
+					break;
+				case rFloor2_5:
+					if(global.time < global.timeMedalSilver2_5Target)
+						drawSilver = true;
+					if(global.time < global.timeMedalGold2_5Target)
+						drawGold = true;
+					break;
+				case rFloor3_1:
+					if(global.time < global.timeMedalSilver3_1Target)
+						drawSilver = true;
+					if(global.time < global.timeMedalGold3_1Target)
+						drawGold = true;
+					break;
+				case rFloor3_2:
+					if(global.time < global.timeMedalSilver3_2Target)
+						drawSilver = true;
+					if(global.time < global.timeMedalGold3_2Target)
+						drawGold = true;
+					break;
+				case rFloor3_3:
+					if(global.time < global.timeMedalSilver3_3Target)
+						drawSilver = true;
+					if(global.time < global.timeMedalGold3_3Target)
+						drawGold = true;
+					break;
+				case rFloor3_4:
+					if(global.time < global.timeMedalSilver3_4Target)
+						drawSilver = true;
+					if(global.time < global.timeMedalGold3_4Target)
+						drawGold = true;
+					break;
+				case rFloor4_1:
+					if(global.time < global.timeMedalSilver4_1Target)
+						drawSilver = true;
+					if(global.time < global.timeMedalGold4_1Target)
+						drawGold = true;
+					break;
+				case rFloor4_2:
+					if(global.time < global.timeMedalSilver4_2Target)
+						drawSilver = true;
+					if(global.time < global.timeMedalGold4_2Target)
+						drawGold = true;
+					break;
+				case rFloor4_3:
+					if(global.time < global.timeMedalSilver4_3Target)
+						drawSilver = true;
+					if(global.time < global.timeMedalGold4_3Target)
+						drawGold = true;
+					break;
+			}
+			
+			if(drawGold)
+			{
+				draw_sprite(sGoldMedal,0,1,29);
+			}
+			else if(drawSilver)
+			{
+				draw_sprite(sSilverMedal,0,1,29);
+			}
+			else
+			{
+				draw_sprite(sMedalOutline,0,1,29);
+			}
+            
+            draw_set_color($6D454D);
+            draw_text(9,25,string_format((global.time / room_speed), 0, 2));
+            draw_text(11,25,string_format((global.time / room_speed), 0, 2));
+            draw_text(10,24,string_format((global.time / room_speed), 0, 2));
+            draw_text(10,26,string_format((global.time / room_speed), 0, 2));
+            
+            draw_set_color($B1D7F0);
+            draw_text(10,25,string_format((global.time / room_speed), 0, 2));
+            
+            // Reset color
+            draw_set_color($6D454D);
+        }
+		if(room == rMemoryZoo)
+		{
+			draw_sprite(sGoldMedal,0,1,29);
+            
+            draw_set_color($6D454D);
+            draw_text(9,25,string(global.timeMedals) + "/30");
+            draw_text(11,25,string(global.timeMedals) + "/30");
+            draw_text(10,24,string(global.timeMedals) + "/30");
+            draw_text(10,26,string(global.timeMedals) + "/30");
+            
+            draw_set_color($B1D7F0);
+            draw_text(10,25,string(global.timeMedals) + "/30");
+            
+            // Reset color
+            draw_set_color($6D454D);
+		}
+		
 	}
+	
+	
 }
 
 // Draw Dream Boy offscreen always

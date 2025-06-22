@@ -17,11 +17,11 @@ if(!soldOut)
 
 if(instance_exists(oPlayer))
 {
-	// Check if player is underneath
-	if(oPlayer.x < x + 24 && oPlayer.x > x - 8)
-	{
-		if(!soldOut)
-		{
+    // Check if player is underneath
+    if(oPlayer.x < x + 24 && oPlayer.x > x - 8)
+    {
+        if(!soldOut)
+        {
             draw_set_color($6D454D);
             draw_text(x+9,y-52,"Golden Heart"); 
             draw_text(x+7,y-52,"Golden Heart"); 
@@ -33,12 +33,12 @@ if(instance_exists(oPlayer))
             draw_text(x+8,y-45,"+1 Max Health");
             
             draw_set_color($B1D7F0);
-			draw_text(x+8,y-52,"Golden Heart");
-			draw_text(x+8,y-44,"+1 Max Health");
-			if(global.overallCoins >= itemPrice) draw_sprite(sArrow,0,x+4,y-56);
-		}
-		else
-		{
+            draw_text(x+8,y-52,"Golden Heart");
+            draw_text(x+8,y-44,"+1 Max Health");
+            if(global.overallCoins >= itemPrice) draw_sprite(sArrow,0,x+4,y-56);
+        }
+        else
+        {
             draw_set_color($6D454D);
             draw_text(x+9,y-36,"SOLD OUT"); 
             draw_text(x+7,y-36,"SOLD OUT"); 
@@ -46,9 +46,9 @@ if(instance_exists(oPlayer))
             draw_text(x+8,y-37,"SOLD OUT"); 
             
             draw_set_color($B1D7F0);
-			draw_text(x+8,y-36,"SOLD OUT"); 
-		}
-	}
+            draw_text(x+8,y-36,"SOLD OUT"); 
+        }
+    }
 }
 
 draw_set_color($6D454D);

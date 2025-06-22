@@ -78,6 +78,21 @@ function DeleteGraveData(){
 			global.graveY3_4 = 0;
 			global.graveItem3_4 = -1;
 			break;
+        case rFloor4_1:
+            global.graveX4_1 = 0;
+            global.graveY4_1 = 0;
+            global.graveItem4_1 = -1;
+            break;
+        case rFloor4_2:
+            global.graveX4_2 = 0;
+            global.graveY4_2 = 0;
+            global.graveItem4_2 = -1;
+            break;
+        case rFloor4_3:
+            global.graveX4_3 = 0;
+            global.graveY4_3 = 0;
+            global.graveItem4_3 = -1;
+            break;
 	}
 	Save();
 }

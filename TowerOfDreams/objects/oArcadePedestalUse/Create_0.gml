@@ -76,8 +76,8 @@ currentList = 0;
 
 for(i = 0; i < array_length(global.dbIds); i++)
 {
-	// Push item to list if you've unlocked it in the database
-	if(global.itemsFound[global.dbIds[i]]) 
+    // Push item to list if you've unlocked it in the database
+    if(global.itemsFound[global.dbIds[i]]) 
     {
         array_push(unlockedItems,global.itemObjects[i]); 
         array_push(itemNames,global.itemNames[i]); 

@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":1.121497,
+  "duration":1.1214966,
   "name":"snd_SRank",
   "parent":{
     "name":"Sounds",

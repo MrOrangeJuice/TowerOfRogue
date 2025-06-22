@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":56.084873,
+  "duration":56.084896,
   "name":"msc_BonusItem",
   "parent":{
     "name":"Music",
