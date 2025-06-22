@@ -8,6 +8,84 @@ if(room == rMemoryZoo)
 	global.timeIncrement = false;
 	global.timeTrial = false;
 	global.time = 0;
+	
+	// Determine time medals
+	if(global.timeMedalGold1_1)
+		global.timeMedals++;
+	if(global.timeMedalSilver1_1)
+		global.timeMedals++;
+	if(global.timeMedalGold1_2) 
+		global.timeMedals++;
+	if(global.timeMedalSilver1_2)
+		global.timeMedals++;
+	if(global.timeMedalGold1_3)
+		global.timeMedals++;
+	if(global.timeMedalSilver1_3)
+		global.timeMedals++;
+	if(global.timeMedalGold1_4)
+		global.timeMedals++;
+	if(global.timeMedalSilver1_4)
+		global.timeMedals++;
+	if(global.timeMedalGold1_5)  
+		global.timeMedals++;
+	if(global.timeMedalSilver1_5) 
+		global.timeMedals++;
+	if(global.timeMedalGold1_6)  
+		global.timeMedals++;
+	if(global.timeMedalSilver1_6) 
+		global.timeMedals++;
+	if(global.timeMedalGold2_1)
+		global.timeMedals++;
+	if(global.timeMedalSilver2_1) 
+		global.timeMedals++;
+	if(global.timeMedalGold2_2)
+		global.timeMedals++;
+	if(global.timeMedalSilver2_2) 
+		global.timeMedals++;
+	if(global.timeMedalGold2_3)  
+		global.timeMedals++;
+	if(global.timeMedalSilver2_3) 
+		global.timeMedals++;
+	if(global.timeMedalGold2_4) 
+		global.timeMedals++;
+	if(global.timeMedalSilver2_4) 
+		global.timeMedals++;
+	if(global.timeMedalGold2_5) 
+		global.timeMedals++;
+	if(global.timeMedalSilver2_5)
+		global.timeMedals++;
+	if(global.timeMedalGold3_1)  
+		global.timeMedals++;
+	if(global.timeMedalSilver3_1) 
+		global.timeMedals++;
+	if(global.timeMedalGold3_2)  
+		global.timeMedals++;
+	if(global.timeMedalSilver3_2)
+		global.timeMedals++;
+	if(global.timeMedalGold3_3) 
+		global.timeMedals++;
+	if(global.timeMedalSilver3_3)
+		global.timeMedals++;
+	if(global.timeMedalGold3_4)  
+		global.timeMedals++;
+	if(global.timeMedalSilver3_4) 
+		global.timeMedals++;
+	if(global.timeMedalGold4_1)  
+		global.timeMedals++;
+	if(global.timeMedalSilver4_1) 
+		global.timeMedals++;
+	if(global.timeMedalGold4_2) 
+		global.timeMedals++;
+	if(global.timeMedalSilver4_2) 
+		global.timeMedals++;
+	if(global.timeMedalGold4_3)  
+		global.timeMedals++;
+	if(global.timeMedalSilver4_3)
+		global.timeMedals++;
+}
+else
+{
+	global.timeMedals = 0;	
 }
 
 // Reset debug counter
