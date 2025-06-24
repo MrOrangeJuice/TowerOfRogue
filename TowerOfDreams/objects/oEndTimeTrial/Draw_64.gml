@@ -17,6 +17,10 @@ if(time)
 		{
 			timeNum -= 20;	
 		}
+		else if(timeNum > timeGoldNum + 60)
+		{
+			timeNum -= 10;
+		}
 		else
 		{
 			timeNum--;	
