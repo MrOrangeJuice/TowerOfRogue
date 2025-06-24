@@ -2,7 +2,7 @@
   "$GMSprite":"",
   "%Name":"sSpeedrunBackControllerPS",
   "bboxMode":0,
-  "bbox_bottom":27,
+  "bbox_bottom":30,
   "bbox_left":0,
   "bbox_right":31,
   "bbox_top":1,
