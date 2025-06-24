@@ -719,6 +719,7 @@ if(!global.dreamBoy)
 				audio_play_sound(snd_MenuSelect,5,false);
 				
 				global.time = 0;
+				global.timeIncrement = true;
 				global.overallCoins += global.coins;
 				global.coins = 0;
 				global.health = global.maxHealth;
