@@ -1228,6 +1228,7 @@
     {"id":{"name":"sStart","path":"sprites/sStart/sStart.yy",},},
     {"id":{"name":"sStartController","path":"sprites/sStartController/sStartController.yy",},},
     {"id":{"name":"sStartControllerPS","path":"sprites/sStartControllerPS/sStartControllerPS.yy",},},
+    {"id":{"name":"sSuperCitrus","path":"sprites/sSuperCitrus/sSuperCitrus.yy",},},
     {"id":{"name":"sSwordShrine","path":"sprites/sSwordShrine/sSwordShrine.yy",},},
     {"id":{"name":"sSwordShrineSwordless","path":"sprites/sSwordShrineSwordless/sSwordShrineSwordless.yy",},},
     {"id":{"name":"sTankEnemy","path":"sprites/sTankEnemy/sTankEnemy.yy",},},

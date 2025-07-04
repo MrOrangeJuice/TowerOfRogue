@@ -1147,6 +1147,7 @@
     {"name":"sStart","order":5,"path":"sprites/sStart/sStart.yy",},
     {"name":"sStartController","order":6,"path":"sprites/sStartController/sStartController.yy",},
     {"name":"sStartControllerPS","order":30,"path":"sprites/sStartControllerPS/sStartControllerPS.yy",},
+    {"name":"sSuperCitrus","order":76,"path":"sprites/sSuperCitrus/sSuperCitrus.yy",},
     {"name":"sSwordShrine","order":6,"path":"sprites/sSwordShrine/sSwordShrine.yy",},
     {"name":"sSwordShrineSwordless","order":7,"path":"sprites/sSwordShrineSwordless/sSwordShrineSwordless.yy",},
     {"name":"sTankEnemyBack","order":1,"path":"sprites/sTankEnemyBack/sTankEnemyBack.yy",},
