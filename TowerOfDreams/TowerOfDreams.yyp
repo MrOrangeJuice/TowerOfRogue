@@ -1342,6 +1342,7 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
+    {"roomId":{"name":"rIntro","path":"rooms/rIntro/rIntro.yy",},},
     {"roomId":{"name":"rTitle","path":"rooms/rTitle/rTitle.yy",},},
     {"roomId":{"name":"rTutorial","path":"rooms/rTutorial/rTutorial.yy",},},
     {"roomId":{"name":"rTutorial2","path":"rooms/rTutorial2/rTutorial2.yy",},},
@@ -1395,7 +1396,6 @@
     {"roomId":{"name":"rFloor4_3","path":"rooms/rFloor4_3/rFloor4_3.yy",},},
     {"roomId":{"name":"rMemoryZoo","path":"rooms/rMemoryZoo/rMemoryZoo.yy",},},
     {"roomId":{"name":"rSpeedrunResults","path":"rooms/rSpeedrunResults/rSpeedrunResults.yy",},},
-    {"roomId":{"name":"rIntro","path":"rooms/rIntro/rIntro.yy",},},
   ],
   "templateType":null,
   "TextureGroups":[

@@ -38,23 +38,26 @@ if(key_select_pressed)
 	studioVisDir = -1;
 	creditVisDir = -1;
 	
-	alarm[4] = room_speed * 0.5;
+	if(studioVis > 1) studioVis = 1;
+	if(creditVis > 1) creditVis = 1;
+	
+	alarm[4] = room_speed * 1;
 }
 
 if(studioVisDir == 1)
 {
-	studioVis += 3;	
+	studioVis += 0.03;	
 }
 if(studioVisDir == -1)
 {
-	studioVis -= 3;	
+	studioVis -= 0.03;	
 }
 
 if(creditVisDir == 1)
 {
-	creditVis += 3;	
+	creditVis += 0.03;	
 }
 if(creditVisDir == -1)
 {
-	creditVis -= 3;	
+	creditVis -= 0.03;	
 }
