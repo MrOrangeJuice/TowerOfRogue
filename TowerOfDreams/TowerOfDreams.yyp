@@ -1261,6 +1261,7 @@
     {"id":{"name":"sThumbnail","path":"sprites/sThumbnail/sThumbnail.yy",},},
     {"id":{"name":"sTileset","path":"sprites/sTileset/sTileset.yy",},},
     {"id":{"name":"sTimeTrialCompleteStatic","path":"sprites/sTimeTrialCompleteStatic/sTimeTrialCompleteStatic.yy",},},
+    {"id":{"name":"sTitleCredits","path":"sprites/sTitleCredits/sTitleCredits.yy",},},
     {"id":{"name":"sTomSanborn","path":"sprites/sTomSanborn/sTomSanborn.yy",},},
     {"id":{"name":"sUpConveyer","path":"sprites/sUpConveyer/sUpConveyer.yy",},},
     {"id":{"name":"sUpSpray","path":"sprites/sUpSpray/sUpSpray.yy",},},

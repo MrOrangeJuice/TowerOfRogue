@@ -1173,6 +1173,7 @@
     {"name":"sThanks","order":17,"path":"sprites/sThanks/sThanks.yy",},
     {"name":"sThumbnail","order":13,"path":"sprites/sThumbnail/sThumbnail.yy",},
     {"name":"sTimeTrialCompleteStatic","order":73,"path":"sprites/sTimeTrialCompleteStatic/sTimeTrialCompleteStatic.yy",},
+    {"name":"sTitleCredits","order":78,"path":"sprites/sTitleCredits/sTitleCredits.yy",},
     {"name":"sTomSanborn","order":77,"path":"sprites/sTomSanborn/sTomSanborn.yy",},
     {"name":"sUpConveyer","order":23,"path":"sprites/sUpConveyer/sUpConveyer.yy",},
     {"name":"sUpSpray","order":2,"path":"sprites/sUpSpray/sUpSpray.yy",},

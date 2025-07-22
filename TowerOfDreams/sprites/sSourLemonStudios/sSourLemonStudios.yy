@@ -2,7 +2,7 @@
   "$GMSprite":"",
   "%Name":"sSourLemonStudios",
   "bboxMode":0,
-  "bbox_bottom":91,
+  "bbox_bottom":90,
   "bbox_left":36,
   "bbox_right":154,
   "bbox_top":2,
