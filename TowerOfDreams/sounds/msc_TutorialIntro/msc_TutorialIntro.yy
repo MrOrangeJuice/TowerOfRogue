@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":51.0955,
+  "duration":51.09551,
   "name":"msc_TutorialIntro",
   "parent":{
     "name":"Music",
