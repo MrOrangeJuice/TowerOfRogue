@@ -14,7 +14,7 @@ if ( (gamepad_axis_value(4,gp_axislh) < -0.4 && analogLeftPrevD == false) || gam
 {
 	key_left = 1;
 	global.controller = 2;
-	analogLeftPrev = true;
+	analogLeftPrevD = true;
 }
 
 if ((gamepad_axis_value(0,gp_axislh) > 0.4 && analogRightPrev == false) || gamepad_button_check_pressed(0,gp_padr))
@@ -27,7 +27,7 @@ if ((gamepad_axis_value(4,gp_axislh) > 0.4 && analogRightPrevD == false) || game
 {
 	key_right = 1;
 	global.controller = 2;
-	analogRightPrev = true;
+	analogRightPrevD = true;
 }
 
 if (gamepad_button_check_pressed(0,gp_face1))

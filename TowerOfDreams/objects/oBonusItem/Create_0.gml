@@ -2,6 +2,8 @@
 
 analogLeftPrev = false;
 analogRightPrev = false;
+analogLeftPrevD = false;
+analogRightPrevD = false;
 
 global.canPause = false;
 if (global.music) audio_play_sound(msc_BonusItem,5,true);
