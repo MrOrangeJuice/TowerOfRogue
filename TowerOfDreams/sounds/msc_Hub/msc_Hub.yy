@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":175.17712,
+  "duration":175.17714,
   "name":"msc_Hub",
   "parent":{
     "name":"Music",

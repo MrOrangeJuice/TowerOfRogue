@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":171.33713,
+  "duration":171.33714,
   "name":"msc_TutorialV3",
   "parent":{
     "name":"Music",

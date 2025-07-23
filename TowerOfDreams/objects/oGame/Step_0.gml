@@ -873,8 +873,10 @@ if(!global.dreamBoy)
 						global.hubMusic = false;
 						audio_stop_sound(msc_HubShop);
 						global.hubShopMusic = false;
-                        audio_stop_sound(msc_Lester); 
+                        audio_stop_sound(msc_Lester2); 
                         global.hubTestMusic = false;
+						audio_stop_sound(msc_TutorialV2);
+						global.hubZooMusic = false;
 					}
 					else
 					{
