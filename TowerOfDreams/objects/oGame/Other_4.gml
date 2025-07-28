@@ -134,10 +134,12 @@ if(room == rFloor1_3 || room == rFloor2_3)
 
 if(room == rTitle)
 {
-	if(global.music) audio_play_sound(msc_TitleScreen,5,true);	
+	if(global.music && !global.titleMusicFromIntro) audio_play_sound(msc_TitleScreen,5,true);	
 	global.paused = false;
 	global.timeTrial = false;
 	menuOption = 0;
+	
+	if(global.titleMusicFromIntro) global.titleMusicFromIntro = false;
 }
 
 if(global.timeTrial)

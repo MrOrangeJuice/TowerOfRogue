@@ -268,10 +268,18 @@ if(!global.paused && !global.hitStop)
 				audio_stop_sound(msc_Hub);
 				global.hubMusic = false;
 			}
+			
+			if(!global.hubZooMusic && room == rMemoryZoo)
+			{
+				audio_play_sound(msc_TutorialV2,5,true);	
+				global.hubZooMusic = true;
+				audio_stop_sound(msc_Hub);
+				global.hubMusic = false;
+			}
             
             if(!global.hubTestMusic && room == rTestRoom)
             {
-                audio_play_sound(msc_Lester,5,true);	
+                audio_play_sound(msc_Lester2,5,true);	
                 global.hubTestMusic = true;
                 audio_stop_sound(msc_Hub);
                 global.hubMusic = false;
