@@ -17,3 +17,7 @@ alarm[4] = room_speed * 12.4;
 
 alarm[5] = room_speed * 0.125;
 alarm[6] = room_speed * 0.5;
+
+global.volume = 6;
+LoadVolume();
+ChangeVolume();
