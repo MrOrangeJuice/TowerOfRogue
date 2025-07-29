@@ -26,5 +26,5 @@ function ChangeVolume(){
 			audio_master_gain(1);
 			break;
 	}
-	Save();
+	if(room != rIntro) Save();
 }

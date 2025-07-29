@@ -216,7 +216,6 @@ global.bumperSwitch = true;
 global.bumpersSwitching = false;
 global.lavaId = 0;
 global.displayLC = false;
-global.volume = 6;
 global.music = true;
 global.HUD = true;
 global.controllerDebug = false;
@@ -517,7 +516,6 @@ UIOffset = 0;
 volumeArrows = true;
 
 Load();
-ChangeVolume();
 
 // Change max health depending on what was loaded
 global.maxHealth += (global.healthUpgrades * 2);

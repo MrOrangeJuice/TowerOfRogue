@@ -427,6 +427,7 @@
     {"name":"DetermineFloorTax","order":17,"path":"scripts/DetermineFloorTax/DetermineFloorTax.yy",},
     {"name":"IsOnScreen","order":8,"path":"scripts/IsOnScreen/IsOnScreen.yy",},
     {"name":"Load","order":4,"path":"scripts/Load/Load.yy",},
+    {"name":"LoadVolume","order":18,"path":"scripts/LoadVolume/LoadVolume.yy",},
     {"name":"PickNextLevel","order":5,"path":"scripts/PickNextLevel/PickNextLevel.yy",},
     {"name":"PickShopArea","order":7,"path":"scripts/PickShopArea/PickShopArea.yy",},
     {"name":"PickSideArea","order":6,"path":"scripts/PickSideArea/PickSideArea.yy",},

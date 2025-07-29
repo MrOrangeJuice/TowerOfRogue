@@ -470,6 +470,7 @@
     {"id":{"name":"DetermineFloorTax","path":"scripts/DetermineFloorTax/DetermineFloorTax.yy",},},
     {"id":{"name":"IsOnScreen","path":"scripts/IsOnScreen/IsOnScreen.yy",},},
     {"id":{"name":"Load","path":"scripts/Load/Load.yy",},},
+    {"id":{"name":"LoadVolume","path":"scripts/LoadVolume/LoadVolume.yy",},},
     {"id":{"name":"PickNextLevel","path":"scripts/PickNextLevel/PickNextLevel.yy",},},
     {"id":{"name":"PickShopArea","path":"scripts/PickShopArea/PickShopArea.yy",},},
     {"id":{"name":"PickSideArea","path":"scripts/PickSideArea/PickSideArea.yy",},},
