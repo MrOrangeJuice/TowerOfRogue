@@ -1525,6 +1525,16 @@ if(!global.paused && !global.hitStop)
 		global.dropItemHold = 0;
 	}
 	
+	if(global.playerShapePortalSpawned)
+	{
+		shapePortalTimer--;
+		if(!place_meeting(x,y,oShapePortal) && shapePortalTimer <= 0)
+		{
+			global.playerShapePortalSpawned = false;
+			shapePortalTimer = 30;
+		}
+	}
+	
 	// Items
 	// Give player additional functionality depending on what item they're holding
 	switch(global.item)

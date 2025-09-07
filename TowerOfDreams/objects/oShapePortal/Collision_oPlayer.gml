@@ -1,6 +1,7 @@
-if(instance_exists(oPlayer))
+if(instance_exists(oPlayer) && !global.playerShapePortalSpawned)
 {
-	instance_destroy(oPlayer);
-	player = instance_create_layer(otherId.x+4,otherId.y+4,"Instances",oPlayer);
-	player.vsp = -2;
+	oPlayer.x = otherId.x+4;
+	oPlayer.y = otherId.y+4;
+	oPlayer.vsp = -2;
+	global.playerShapePortalSpawned = true;
 }

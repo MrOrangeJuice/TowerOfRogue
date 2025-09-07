@@ -230,6 +230,7 @@ global.debugCounter = 0;
 global.debugDisplay = 0;
 global.arrowSprite = sArrowGremlinIdle;
 global.doorSprite = sDoorGremlinIdle;
+global.playerShapePortalSpawned = false;
 
 // Shop items
 global.shopItem1 = -1;

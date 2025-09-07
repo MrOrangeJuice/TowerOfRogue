@@ -58,6 +58,7 @@ if(global.essence == 4)
 	bombNum = 3;
 }
 lavaBoost = false;
+shapePortalTimer = 30;
 
 // Sprites
 idleSprite = sPlayerIdle;
