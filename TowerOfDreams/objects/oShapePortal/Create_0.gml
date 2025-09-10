@@ -1,6 +1,7 @@
 regularSprite = sCircle;
 smallSprite = sCircleShrink;
 bigSprite = sCircleGrow;
+vfx = 0;
 
 otherId = id;
 

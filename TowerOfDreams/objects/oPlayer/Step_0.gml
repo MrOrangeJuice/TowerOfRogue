@@ -1535,6 +1535,15 @@ if(!global.paused && !global.hitStop)
 		}
 	}
 	
+	if(portalVFXTimer > 0)
+	{
+		if(random_range(0,9) < portalVFXTimer)
+		{
+			instance_create_layer(x+random_range(-3,3),y+random_range(-3,3),"VFX",oCircleVFX);
+		}
+		portalVFXTimer -= 0.03;	
+	}
+	
 	// Items
 	// Give player additional functionality depending on what item they're holding
 	switch(global.item)

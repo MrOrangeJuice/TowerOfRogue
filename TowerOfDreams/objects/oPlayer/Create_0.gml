@@ -59,6 +59,8 @@ if(global.essence == 4)
 }
 lavaBoost = false;
 shapePortalTimer = 30;
+portalVFXTimer = 0;
+shapeID = 0;
 
 // Sprites
 idleSprite = sPlayerIdle;
