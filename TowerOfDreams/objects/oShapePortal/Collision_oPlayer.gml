@@ -4,4 +4,10 @@ if(instance_exists(oPlayer) && !global.playerShapePortalSpawned)
 	oPlayer.y = otherId.y+4;
 	oPlayer.vsp = -2;
 	global.playerShapePortalSpawned = true;
+	sprite_index = smallSprite;
+	otherId.sprite_index = bigSprite;
+	alarm[0] = room_speed * (animSpeed + easeSpeed);
+	imageSpeed = 3;
+	otherId.alarm[3] = room_speed * (animSpeed + easeSpeed);
+	otherId.imageSpeed = 3;
 }
