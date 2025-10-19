@@ -1,7 +1,7 @@
 regularSprite = sCircle;
 smallSprite = sCircleShrink;
 bigSprite = sCircleGrow;
-vfx = 0;
+vfx = oCircleParticle;
 
 otherId = id;
 
