@@ -16,8 +16,8 @@
   "name":"oShapePortal",
   "overriddenProperties":[],
   "parent":{
-    "name":"Level Objects",
-    "path":"folders/Objects/Level Objects.yy",
+    "name":"Shape Portals",
+    "path":"folders/Objects/Level Objects/Shape Portals.yy",
   },
   "parentObjectId":null,
   "persistent":false,
