@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"sSwordShrineSwordless",
   "bboxMode":0,
   "bbox_bottom":15,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"f80dcebb-5bed-46c4-bfdd-43131757a63d","name":"f80dcebb-5bed-46c4-bfdd-43131757a63d","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"f80dcebb-5bed-46c4-bfdd-43131757a63d","name":"f80dcebb-5bed-46c4-bfdd-43131757a63d","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

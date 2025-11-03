@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"sDreamBoyMockupExtras",
   "bboxMode":0,
   "bbox_bottom":143,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"0adb4339-ee7b-4bd8-bb01-ae31287a5541","name":"0adb4339-ee7b-4bd8-bb01-ae31287a5541","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"0adb4339-ee7b-4bd8-bb01-ae31287a5541","name":"0adb4339-ee7b-4bd8-bb01-ae31287a5541","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

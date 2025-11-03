@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"sLavaFloor3",
   "bboxMode":0,
   "bbox_bottom":15,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"cec12b76-d6a8-4751-95e9-5eab51b35f7b","name":"cec12b76-d6a8-4751-95e9-5eab51b35f7b","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"cec12b76-d6a8-4751-95e9-5eab51b35f7b","name":"cec12b76-d6a8-4751-95e9-5eab51b35f7b","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":8,
   "gridY":8,

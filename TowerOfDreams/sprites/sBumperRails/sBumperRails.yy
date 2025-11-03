@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"sBumperRails",
   "bboxMode":0,
   "bbox_bottom":49,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"1e5530be-87a5-4e8e-b6b2-325d855dd4ea","name":"1e5530be-87a5-4e8e-b6b2-325d855dd4ea","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"1e5530be-87a5-4e8e-b6b2-325d855dd4ea","name":"1e5530be-87a5-4e8e-b6b2-325d855dd4ea","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":8,
   "gridY":8,

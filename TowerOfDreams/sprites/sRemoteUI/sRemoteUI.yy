@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"sRemoteUI",
   "bboxMode":0,
   "bbox_bottom":7,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"033aee0c-7a86-40f6-8bc5-3cb95919b5ab","name":"033aee0c-7a86-40f6-8bc5-3cb95919b5ab","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"033aee0c-7a86-40f6-8bc5-3cb95919b5ab","name":"033aee0c-7a86-40f6-8bc5-3cb95919b5ab","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

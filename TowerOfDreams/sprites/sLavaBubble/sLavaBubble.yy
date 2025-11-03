@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"sLavaBubble",
   "bboxMode":0,
   "bbox_bottom":1,
@@ -12,8 +12,8 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"79b6471e-c4a2-4d77-a490-750d16e3fe90","name":"79b6471e-c4a2-4d77-a490-750d16e3fe90","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"a234fe9b-706f-44a4-a892-d06eda92759e","name":"a234fe9b-706f-44a4-a892-d06eda92759e","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"79b6471e-c4a2-4d77-a490-750d16e3fe90","name":"79b6471e-c4a2-4d77-a490-750d16e3fe90","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"a234fe9b-706f-44a4-a892-d06eda92759e","name":"a234fe9b-706f-44a4-a892-d06eda92759e","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

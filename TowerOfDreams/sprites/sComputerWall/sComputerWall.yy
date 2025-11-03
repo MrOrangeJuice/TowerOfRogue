@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"sComputerWall",
   "bboxMode":0,
   "bbox_bottom":7,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"bf6fc62c-1e77-4dfc-be9e-f99d95092e16","name":"bf6fc62c-1e77-4dfc-be9e-f99d95092e16","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"bf6fc62c-1e77-4dfc-be9e-f99d95092e16","name":"bf6fc62c-1e77-4dfc-be9e-f99d95092e16","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

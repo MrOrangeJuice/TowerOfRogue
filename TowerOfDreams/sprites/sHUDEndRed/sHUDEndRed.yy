@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"sHUDEndRed",
   "bboxMode":0,
   "bbox_bottom":26,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"6dfdb272-4aa0-4641-9dc0-7ce2dbff65c1","name":"6dfdb272-4aa0-4641-9dc0-7ce2dbff65c1","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"6dfdb272-4aa0-4641-9dc0-7ce2dbff65c1","name":"6dfdb272-4aa0-4641-9dc0-7ce2dbff65c1","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":8,
   "gridY":8,

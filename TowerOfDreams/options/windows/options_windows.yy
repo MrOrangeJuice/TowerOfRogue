@@ -1,5 +1,5 @@
 {
-  "$GMWindowsOptions":"",
+  "$GMWindowsOptions":"v1",
   "%Name":"Windows",
   "name":"Windows",
   "option_windows_allow_fullscreen_switching":true,
@@ -7,6 +7,7 @@
   "option_windows_company_info":"Sour Lemon Studios",
   "option_windows_copyright_info":"2022",
   "option_windows_copy_exe_to_dest":false,
+  "option_windows_d3dswapeffectdiscard":false,
   "option_windows_description_info":"Tower of Dreams",
   "option_windows_disable_sandbox":false,
   "option_windows_display_cursor":false,

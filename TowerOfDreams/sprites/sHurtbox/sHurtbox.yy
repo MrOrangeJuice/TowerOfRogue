@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"sHurtbox",
   "bboxMode":1,
   "bbox_bottom":1,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"dcd01d3a-a78e-4e4b-8797-fe95e557548c","name":"dcd01d3a-a78e-4e4b-8797-fe95e557548c","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"dcd01d3a-a78e-4e4b-8797-fe95e557548c","name":"dcd01d3a-a78e-4e4b-8797-fe95e557548c","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

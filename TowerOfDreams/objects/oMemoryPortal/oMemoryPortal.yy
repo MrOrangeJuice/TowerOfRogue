@@ -29,7 +29,7 @@
   "physicsShapePoints":[],
   "physicsStartAwake":true,
   "properties":[
-    {"$GMObjectProperty":"v1","%Name":"specificLevel","filters":[
+    {"$GMObjectProperty":"v2","%Name":"specificLevel","filters":[
         "GMRoom",
       ],"listItems":[],"multiselect":false,"name":"specificLevel","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"","varType":2,},
   ],

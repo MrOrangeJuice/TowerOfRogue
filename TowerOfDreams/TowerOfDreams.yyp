@@ -2,7 +2,7 @@
   "$GMProject":"v1",
   "%Name":"TowerOfDreams",
   "AudioGroups":[
-    {"$GMAudioGroup":"","%Name":"audiogroup_default","name":"audiogroup_default","resourceType":"GMAudioGroup","resourceVersion":"2.0","targets":-1,},
+    {"$GMAudioGroup":"v1","%Name":"audiogroup_default","exportDir":"","name":"audiogroup_default","resourceType":"GMAudioGroup","resourceVersion":"2.0","targets":-1,},
   ],
   "configs":{
     "children":[],
@@ -102,7 +102,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.13.1.193",
+    "IDEVersion":"2024.14.0.207",
   },
   "name":"TowerOfDreams",
   "resources":[
@@ -723,6 +723,7 @@
     {"id":{"name":"sBoomerang","path":"sprites/sBoomerang/sBoomerang.yy",},},
     {"id":{"name":"sBoomerangUI","path":"sprites/sBoomerangUI/sBoomerangUI.yy",},},
     {"id":{"name":"sBootsUI","path":"sprites/sBootsUI/sBootsUI.yy",},},
+    {"id":{"name":"sBounceEnemy","path":"sprites/sBounceEnemy/sBounceEnemy.yy",},},
     {"id":{"name":"sBoxPipe","path":"sprites/sBoxPipe/sBoxPipe.yy",},},
     {"id":{"name":"sBubbleVFX","path":"sprites/sBubbleVFX/sBubbleVFX.yy",},},
     {"id":{"name":"sBumper","path":"sprites/sBumper/sBumper.yy",},},
