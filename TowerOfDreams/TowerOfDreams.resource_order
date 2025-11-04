@@ -670,6 +670,7 @@
     {"name":"sBoomerangUI","order":19,"path":"sprites/sBoomerangUI/sBoomerangUI.yy",},
     {"name":"sBootsUI","order":2,"path":"sprites/sBootsUI/sBootsUI.yy",},
     {"name":"sBounceEnemy","order":40,"path":"sprites/sBounceEnemy/sBounceEnemy.yy",},
+    {"name":"sBounceEnemySquish","order":41,"path":"sprites/sBounceEnemySquish/sBounceEnemySquish.yy",},
     {"name":"sBoxPipe","order":22,"path":"sprites/sBoxPipe/sBoxPipe.yy",},
     {"name":"sBubbleVFX","order":21,"path":"sprites/sBubbleVFX/sBubbleVFX.yy",},
     {"name":"sBumper","order":1,"path":"sprites/sBumper/sBumper.yy",},

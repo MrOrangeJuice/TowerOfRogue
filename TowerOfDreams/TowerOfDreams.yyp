@@ -724,6 +724,7 @@
     {"id":{"name":"sBoomerangUI","path":"sprites/sBoomerangUI/sBoomerangUI.yy",},},
     {"id":{"name":"sBootsUI","path":"sprites/sBootsUI/sBootsUI.yy",},},
     {"id":{"name":"sBounceEnemy","path":"sprites/sBounceEnemy/sBounceEnemy.yy",},},
+    {"id":{"name":"sBounceEnemySquish","path":"sprites/sBounceEnemySquish/sBounceEnemySquish.yy",},},
     {"id":{"name":"sBoxPipe","path":"sprites/sBoxPipe/sBoxPipe.yy",},},
     {"id":{"name":"sBubbleVFX","path":"sprites/sBubbleVFX/sBubbleVFX.yy",},},
     {"id":{"name":"sBumper","path":"sprites/sBumper/sBumper.yy",},},
