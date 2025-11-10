@@ -32,8 +32,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"Enemies",
-    "path":"folders/Sprites/Enemies.yy",
+    "name":"BounceEnemy",
+    "path":"folders/Sprites/Enemies/BounceEnemy.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
