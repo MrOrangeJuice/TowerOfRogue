@@ -103,7 +103,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.14.0.207",
+    "IDEVersion":"2024.14.1.210",
   },
   "name":"TowerOfDreams",
   "resources":[
@@ -1191,6 +1191,7 @@
     {"id":{"name":"sPortalRed","path":"sprites/sPortalRed/sPortalRed.yy",},},
     {"id":{"name":"sPortalYellow","path":"sprites/sPortalYellow/sPortalYellow.yy",},},
     {"id":{"name":"sPostcard","path":"sprites/sPostcard/sPostcard.yy",},},
+    {"id":{"name":"sPostcard2","path":"sprites/sPostcard2/sPostcard2.yy",},},
     {"id":{"name":"sQuestion","path":"sprites/sQuestion/sQuestion.yy",},},
     {"id":{"name":"sQuestionGBBig","path":"sprites/sQuestionGBBig/sQuestionGBBig.yy",},},
     {"id":{"name":"sRabbitUI","path":"sprites/sRabbitUI/sRabbitUI.yy",},},
