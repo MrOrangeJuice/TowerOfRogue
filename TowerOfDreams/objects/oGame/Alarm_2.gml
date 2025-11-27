@@ -29,8 +29,12 @@ global.floppyFoeY = [0,0,0,0,0,0,0,0,0,0,0];
 global.floppyFoeYTarget = [0,0,0,0,0,0,0,0,0,0,0];
 global.floppyFoeX = [0,0,0,0,0,0,0,0,0,0,0];
 global.floppyFoeXTarget = [0,0,0,0,0,0,0,0,0,0,0];
-global.extraSpriteY = 0;
-global.extraSpriteYTarget = 0;
+global.extraSpriteY = [0,0,0,0,0,0,0,0,0];
+global.extraSpriteYTarget = [0,0,0,0,0,0,0,0,0];
+global.extraSpriteX = [0,0,0,0,0,0,0,0,0];
+global.extraSpriteXTarget = [0,0,0,0,0,0,0,0,0];
+global.currentExtra = 0;
+
 audio_resume_all();
 
 if(instance_exists(oPlayer))
