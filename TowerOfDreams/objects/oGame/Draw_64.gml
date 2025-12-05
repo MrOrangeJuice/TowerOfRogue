@@ -844,6 +844,13 @@ if(global.dreamBoy)
 			{
 				draw_sprite(global.extraSprites[i],0,global.extraSpriteX[i],-80+global.extraSpriteY[i]);
 			}
+			
+			// Draw arrows
+			if((global.extraSpriteX[global.currentExtra] > global.extraSpriteXTarget[global.currentExtra] - 0.5 && global.extraSpriteX[global.currentExtra] < global.extraSpriteXTarget[global.currentExtra] + 0.5) && (global.extraSpriteY[global.currentExtra] > 124))
+			{
+				draw_sprite(sLeftArrow,0,86,70);
+				draw_sprite(sRightArrow,0,166,70);
+			}
 		}
 		
 		// Draw item window
