@@ -803,6 +803,7 @@
     {"id":{"name":"sConveyerLeftEnd","path":"sprites/sConveyerLeftEnd/sConveyerLeftEnd.yy",},},
     {"id":{"name":"sConveyerMiddle","path":"sprites/sConveyerMiddle/sConveyerMiddle.yy",},},
     {"id":{"name":"sConveyerRightEnd","path":"sprites/sConveyerRightEnd/sConveyerRightEnd.yy",},},
+    {"id":{"name":"sCowboy","path":"sprites/sCowboy/sCowboy.yy",},},
     {"id":{"name":"sCritPBUI","path":"sprites/sCritPBUI/sCritPBUI.yy",},},
     {"id":{"name":"sCritUI","path":"sprites/sCritUI/sCritUI.yy",},},
     {"id":{"name":"sCritVFX","path":"sprites/sCritVFX/sCritVFX.yy",},},

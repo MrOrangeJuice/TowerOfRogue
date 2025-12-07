@@ -745,6 +745,7 @@
     {"name":"sConveyer","order":9,"path":"sprites/sConveyer/sConveyer.yy",},
     {"name":"sConveyerLeftEnd","order":1,"path":"sprites/sConveyerLeftEnd/sConveyerLeftEnd.yy",},
     {"name":"sConveyerRightEnd","order":2,"path":"sprites/sConveyerRightEnd/sConveyerRightEnd.yy",},
+    {"name":"sCowboy","order":43,"path":"sprites/sCowboy/sCowboy.yy",},
     {"name":"sCritPBUI","order":21,"path":"sprites/sCritPBUI/sCritPBUI.yy",},
     {"name":"sCritUI","order":6,"path":"sprites/sCritUI/sCritUI.yy",},
     {"name":"sCritVFX","order":13,"path":"sprites/sCritVFX/sCritVFX.yy",},
