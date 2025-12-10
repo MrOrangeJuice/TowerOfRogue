@@ -1194,6 +1194,7 @@
     {"id":{"name":"sPortalYellow","path":"sprites/sPortalYellow/sPortalYellow.yy",},},
     {"id":{"name":"sPostcard","path":"sprites/sPostcard/sPostcard.yy",},},
     {"id":{"name":"sPostcard2","path":"sprites/sPostcard2/sPostcard2.yy",},},
+    {"id":{"name":"sPostcard3","path":"sprites/sPostcard3/sPostcard3.yy",},},
     {"id":{"name":"sPostcardNotFound","path":"sprites/sPostcardNotFound/sPostcardNotFound.yy",},},
     {"id":{"name":"sQuestion","path":"sprites/sQuestion/sQuestion.yy",},},
     {"id":{"name":"sQuestionGBBig","path":"sprites/sQuestionGBBig/sQuestionGBBig.yy",},},

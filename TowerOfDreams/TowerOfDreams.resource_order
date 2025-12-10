@@ -1116,6 +1116,7 @@
     {"name":"sPortalYellow","order":56,"path":"sprites/sPortalYellow/sPortalYellow.yy",},
     {"name":"sPostcard","order":60,"path":"sprites/sPostcard/sPostcard.yy",},
     {"name":"sPostcard2","order":79,"path":"sprites/sPostcard2/sPostcard2.yy",},
+    {"name":"sPostcard3","order":83,"path":"sprites/sPostcard3/sPostcard3.yy",},
     {"name":"sPostcardNotFound","order":82,"path":"sprites/sPostcardNotFound/sPostcardNotFound.yy",},
     {"name":"sQuestion","order":36,"path":"sprites/sQuestion/sQuestion.yy",},
     {"name":"sQuestionGBBig","order":22,"path":"sprites/sQuestionGBBig/sQuestionGBBig.yy",},
