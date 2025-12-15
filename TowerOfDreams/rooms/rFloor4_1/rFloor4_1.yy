@@ -16,8 +16,7 @@
     {"name":"inst_233CF1F2_1_1","path":"rooms/rFloor4_1/rFloor4_1.yy",},
     {"name":"inst_67407004_1_1","path":"rooms/rFloor4_1/rFloor4_1.yy",},
     {"name":"inst_65CD0357_1_1","path":"rooms/rFloor4_1/rFloor4_1.yy",},
-    {"name":"inst_782EA70","path":"rooms/rFloor4_1/rFloor4_1.yy",},
-    {"name":"inst_4F0A5C72","path":"rooms/rFloor4_1/rFloor4_1.yy",},
+    {"name":"inst_446DA6C4","path":"rooms/rFloor4_1/rFloor4_1.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -37,8 +36,7 @@
           1,4,-50,1,1,5,-28,0,1,4,-50,1,1,13,-28,2,1,12,-504,1,
         ],"TileDataFormat":1,},"tilesetId":{"name":"tFloor4","path":"tilesets/tFloor4/tFloor4.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"$GMRInstanceLayer":"","%Name":"UI","depth":200,"effectEnabled":true,"effectType":null,"gridX":8,"gridY":8,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
-        {"$GMRInstance":"v4","%Name":"inst_782EA70","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_782EA70","objectId":{"name":"oBouncerPipe","path":"objects/oBouncerPipe/oBouncerPipe.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":416.0,"y":1456.0,},
-        {"$GMRInstance":"v4","%Name":"inst_4F0A5C72","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_4F0A5C72","objectId":{"name":"oBouncerPipeLeft","path":"objects/oBouncerPipeLeft/oBouncerPipeLeft.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":184.0,"y":1456.0,},
+        {"$GMRInstance":"v4","%Name":"inst_446DA6C4","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_446DA6C4","objectId":{"name":"oCowboy","path":"objects/oCowboy/oCowboy.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":400.0,"y":1536.0,},
       ],"layers":[],"name":"UI","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Enemies","depth":300,"effectEnabled":true,"effectType":null,"gridX":8,"gridY":8,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"name":"Enemies","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Collectables","depth":400,"effectEnabled":true,"effectType":null,"gridX":8,"gridY":8,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"name":"Collectables","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
