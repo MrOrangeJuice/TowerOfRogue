@@ -4,7 +4,7 @@ elite = true;
 event_inherited();
 
 hp = 4;
-hsp = 1.5;
+hsp = 1.25;
 
 grv = 0.075;
 jumpPwr = -2.5;

@@ -3,7 +3,7 @@
 event_inherited();
 
 hp = 2;
-hsp = 1;
+hsp = 0.75;
 grv = 0.05;
 vsp = 0;
 airborne = false;
