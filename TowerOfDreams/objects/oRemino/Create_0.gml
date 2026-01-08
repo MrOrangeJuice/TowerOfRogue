@@ -154,7 +154,7 @@ switch(levelDisplayName)
         }
         break;
     
-    case "LIGHTS AND FRIGHTS":
+    case "BOUNCY BONANZA":
         if(global.seen4_1)
         {
             unlocked = true;
@@ -172,7 +172,7 @@ switch(levelDisplayName)
 			if(global.timeMedalGold4_2) goldMedal = true;
         }
         break;
-    case "CROSSOVER EPISODE":
+    case "THE FINAL RUN":
         if(global.seen4_3)
         {
             unlocked = true;
