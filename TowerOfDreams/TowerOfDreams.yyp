@@ -891,6 +891,7 @@
     {"id":{"name":"sEraser","path":"sprites/sEraser/sEraser.yy",},},
     {"id":{"name":"sExtras3D","path":"sprites/sExtras3D/sExtras3D.yy",},},
     {"id":{"name":"sExtrasLabel","path":"sprites/sExtrasLabel/sExtrasLabel.yy",},},
+    {"id":{"name":"sEyes","path":"sprites/sEyes/sEyes.yy",},},
     {"id":{"name":"sFastJumpLeftVFX","path":"sprites/sFastJumpLeftVFX/sFastJumpLeftVFX.yy",},},
     {"id":{"name":"sFastJumpVFX","path":"sprites/sFastJumpVFX/sFastJumpVFX.yy",},},
     {"id":{"name":"sFireBall","path":"sprites/sFireBall/sFireBall.yy",},},

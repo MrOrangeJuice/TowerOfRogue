@@ -831,6 +831,7 @@
     {"name":"sEraser","order":5,"path":"sprites/sEraser/sEraser.yy",},
     {"name":"sExtras3D","order":2,"path":"sprites/sExtras3D/sExtras3D.yy",},
     {"name":"sExtrasLabel","order":51,"path":"sprites/sExtrasLabel/sExtrasLabel.yy",},
+    {"name":"sEyes","order":10,"path":"sprites/sEyes/sEyes.yy",},
     {"name":"sFastJumpLeftVFX","order":46,"path":"sprites/sFastJumpLeftVFX/sFastJumpLeftVFX.yy",},
     {"name":"sFastJumpVFX","order":23,"path":"sprites/sFastJumpVFX/sFastJumpVFX.yy",},
     {"name":"sFireBall","order":32,"path":"sprites/sFireBall/sFireBall.yy",},

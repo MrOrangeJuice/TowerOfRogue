@@ -8,7 +8,7 @@
     "TileSerialiseData":[],
   },
   "name":"tFloor4",
-  "out_columns":11,
+  "out_columns":14,
   "out_tilehborder":2,
   "out_tilevborder":2,
   "parent":{
@@ -36,5 +36,5 @@
   "tileWidth":8,
   "tilexoff":0,
   "tileyoff":0,
-  "tile_count":128,
+  "tile_count":192,
 }
