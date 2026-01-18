@@ -10,6 +10,7 @@ if(instance_exists(oPlayer) && !global.playerShapePortalSpawned)
 		instance_create_layer(otherId.x+4,otherId.y+4,"VFX",vfx);
 	}
 	global.playerShapePortalSpawned = true;
+	oPlayer.shapePortalTimer = 240;
 	sprite_index = smallSprite;
 	otherId.sprite_index = bigSprite;
 	alarm[0] = room_speed * (animSpeed + easeSpeed);
