@@ -11,6 +11,7 @@ if(instance_exists(oPlayer) && !global.playerShapePortalSpawned)
 	}
 	global.playerShapePortalSpawned = true;
 	oPlayer.shapePortalTimer = 240;
+	oPlayer.invulnerable = 75;
 	sprite_index = smallSprite;
 	otherId.sprite_index = bigSprite;
 	alarm[0] = room_speed * (animSpeed + easeSpeed);
