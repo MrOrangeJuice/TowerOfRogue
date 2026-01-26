@@ -1379,6 +1379,7 @@
     {"id":{"name":"sWingsUI","path":"sprites/sWingsUI/sWingsUI.yy",},},
     {"id":{"name":"sWIshlist","path":"sprites/sWIshlist/sWIshlist.yy",},},
     {"id":{"name":"sWizard","path":"sprites/sWizard/sWizard.yy",},},
+    {"id":{"name":"sWizardSpawn","path":"sprites/sWizardSpawn/sWizardSpawn.yy",},},
     {"id":{"name":"sWood","path":"sprites/sWood/sWood.yy",},},
     {"id":{"name":"sWrench","path":"sprites/sWrench/sWrench.yy",},},
     {"id":{"name":"sWrenchEnemy","path":"sprites/sWrenchEnemy/sWrenchEnemy.yy",},},

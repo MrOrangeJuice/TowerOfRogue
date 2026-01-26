@@ -1284,6 +1284,7 @@
     {"name":"sWingsUI","order":12,"path":"sprites/sWingsUI/sWingsUI.yy",},
     {"name":"sWIshlist","order":25,"path":"sprites/sWIshlist/sWIshlist.yy",},
     {"name":"sWizard","order":48,"path":"sprites/sWizard/sWizard.yy",},
+    {"name":"sWizardSpawn","order":49,"path":"sprites/sWizardSpawn/sWizardSpawn.yy",},
     {"name":"sWood","order":11,"path":"sprites/sWood/sWood.yy",},
     {"name":"sWrench","order":13,"path":"sprites/sWrench/sWrench.yy",},
     {"name":"sWrenchEnemy","order":11,"path":"sprites/sWrenchEnemy/sWrenchEnemy.yy",},
