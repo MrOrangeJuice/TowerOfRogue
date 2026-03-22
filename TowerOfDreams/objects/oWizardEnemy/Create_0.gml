@@ -14,3 +14,7 @@ if(global.hardMode && object_index != oWrenchEnemyElite)
 	hp = 4;
 	elite = true;
 }
+
+// Sprites
+idle = sWizard;
+spawn = sWizardSpawn;
