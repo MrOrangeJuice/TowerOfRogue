@@ -2,8 +2,6 @@
   "$GMObject":"",
   "%Name":"oWizardEnemyElite",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":7,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
@@ -14,8 +12,8 @@
     "path":"folders/Objects/Enemies.yy",
   },
   "parentObjectId":{
-    "name":"oWrenchEnemy",
-    "path":"objects/oWrenchEnemy/oWrenchEnemy.yy",
+    "name":"oWizardEnemy",
+    "path":"objects/oWizardEnemy/oWizardEnemy.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -35,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sWrenchEnemyElite",
-    "path":"sprites/sWrenchEnemyElite/sWrenchEnemyElite.yy",
+    "name":"sWizardElite",
+    "path":"sprites/sWizardElite/sWizardElite.yy",
   },
   "spriteMaskId":null,
   "visible":true,

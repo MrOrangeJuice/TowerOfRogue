@@ -4,7 +4,7 @@ if(!global.paused && !global.hitStop)
 {
 	image_speed = 1;
 	
-	if(image_index > 28 && sprite_index == sWizardSpawn && !spawned)
+	if(image_index > 28 && sprite_index == spawn && !spawned)
 	{
 		if(IsOnScreen(y)) 
 		{
