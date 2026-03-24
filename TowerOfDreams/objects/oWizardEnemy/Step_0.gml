@@ -11,6 +11,7 @@ if(!global.paused && !global.hitStop)
 			audio_play_sound(snd_Spawn,5,false);
 		}
 		enemy = instance_create_layer(x+(dir*46),y,"Enemies",oGravityEnemy);
+		enemy.givesHealth = false;
 		spawned = true;
 	}
 }
