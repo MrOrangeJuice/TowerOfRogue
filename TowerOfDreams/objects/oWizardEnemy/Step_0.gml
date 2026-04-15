@@ -12,6 +12,7 @@ if(!global.paused && !global.hitStop)
 		}
 		enemy = instance_create_layer(x+(dir*46),y,"Enemies",oGravityEnemy);
 		enemy.givesHealth = false;
+		enemy.flipBuffer = flipBuffer;
 		spawned = true;
 	}
 }
