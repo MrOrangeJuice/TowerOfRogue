@@ -14,6 +14,7 @@ canStartMovingAgain = true;
 canStopMoving = true;
 firing = false;
 forward = true;
+fired = false;
 
 // Sprites
 idle = sCowboy;

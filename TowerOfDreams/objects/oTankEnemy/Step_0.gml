@@ -79,13 +79,13 @@ if(!global.paused && !global.hitStop)
 		{
 			if(oPlayer.y - 16 < y && y < oPlayer.y + 64)
 			{
-				if(dir == -1 && oPlayer.x < x)
+				if(dir == -1 && oPlayer.x > x - 128 && oPlayer.x < x + 32)
 				{
 					state = "spotted";
 					alarm[3] = room_speed * 2;
 					instance_create_layer(x,y-18,"VFX",oSpottedVFX);
 				}
-				if(dir == 1 && oPlayer.x > x)
+				if(dir == 1 && oPlayer.x > x - 32 && oPlayer.x < x + 128)
 				{
 					state = "spotted";
 					alarm[3] = room_speed * 2;
