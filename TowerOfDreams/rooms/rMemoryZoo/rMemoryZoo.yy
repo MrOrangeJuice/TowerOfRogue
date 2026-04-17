@@ -48,7 +48,9 @@
     {"name":"inst_35673BA7","path":"rooms/rMemoryZoo/rMemoryZoo.yy",},
     {"name":"inst_7EA7C137","path":"rooms/rMemoryZoo/rMemoryZoo.yy",},
     {"name":"inst_20C76581","path":"rooms/rMemoryZoo/rMemoryZoo.yy",},
-    {"name":"inst_119479FB","path":"rooms/rMemoryZoo/rMemoryZoo.yy",},
+    {"name":"inst_4E7FC59B","path":"rooms/rMemoryZoo/rMemoryZoo.yy",},
+    {"name":"inst_4C2C3DBF","path":"rooms/rMemoryZoo/rMemoryZoo.yy",},
+    {"name":"inst_5F01E28E","path":"rooms/rMemoryZoo/rMemoryZoo.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -245,9 +247,15 @@
           ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":496.0,"y":320.0,},
         {"$GMRInstance":"v4","%Name":"inst_7EA7C137","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_7EA7C137","objectId":{"name":"oBumper","path":"objects/oBumper/oBumper.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":584.0,"y":384.0,},
         {"$GMRInstance":"v4","%Name":"inst_20C76581","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_20C76581","objectId":{"name":"oBumper","path":"objects/oBumper/oBumper.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":344.0,"y":384.0,},
-        {"$GMRInstance":"v4","%Name":"inst_119479FB","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_119479FB","objectId":{"name":"oSign","path":"objects/oSign/oSign.yy",},"properties":[
-            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oSign","path":"objects/oSign/oSign.yy",},"propertyId":{"name":"signMessage","path":"objects/oSign/oSign.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"More memories\\nto be made soon!",},
-          ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":464.0,"y":344.0,},
+        {"$GMRInstance":"v4","%Name":"inst_4E7FC59B","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_4E7FC59B","objectId":{"name":"oRemino","path":"objects/oRemino/oRemino.yy",},"properties":[
+            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oRemino","path":"objects/oRemino/oRemino.yy",},"propertyId":{"name":"levelDisplayName","path":"objects/oRemino/oRemino.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"BACK AND FORTH",},
+          ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":448.0,"y":320.0,},
+        {"$GMRInstance":"v4","%Name":"inst_4C2C3DBF","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_4C2C3DBF","objectId":{"name":"oRemino","path":"objects/oRemino/oRemino.yy",},"properties":[
+            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oRemino","path":"objects/oRemino/oRemino.yy",},"propertyId":{"name":"levelDisplayName","path":"objects/oRemino/oRemino.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"BOUNCY BONANZA",},
+          ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":400.0,"y":320.0,},
+        {"$GMRInstance":"v4","%Name":"inst_5F01E28E","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_5F01E28E","objectId":{"name":"oRemino","path":"objects/oRemino/oRemino.yy",},"properties":[
+            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oRemino","path":"objects/oRemino/oRemino.yy",},"propertyId":{"name":"levelDisplayName","path":"objects/oRemino/oRemino.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"WAKE UP",},
+          ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":496.0,"y":320.0,},
       ],"layers":[],"name":"Walls","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRAssetLayer":"","%Name":"Tutorials","assets":[
         {"$GMRSpriteGraphic":"v1","%Name":"graphic_6BE88B9","animationSpeed":1.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"name":"graphic_6BE88B9","resourceType":"GMRSpriteGraphic","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"spriteId":{"name":"sMemoryGremlinSleepBG","path":"sprites/sMemoryGremlinSleepBG/sMemoryGremlinSleepBG.yy",},"x":40.0,"y":632.0,},

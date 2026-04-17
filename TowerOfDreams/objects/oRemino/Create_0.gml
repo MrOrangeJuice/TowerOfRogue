@@ -163,7 +163,7 @@ switch(levelDisplayName)
 			if(global.timeMedalGold4_1) goldMedal = true;
         }
         break;
-    case "HORIZONTAL HUSTLE":
+    case "BACK AND FORTH":
         if(global.seen4_2)
         {
             unlocked = true;
@@ -172,7 +172,7 @@ switch(levelDisplayName)
 			if(global.timeMedalGold4_2) goldMedal = true;
         }
         break;
-    case "THE FINAL RUN":
+    case "WAKE UP":
         if(global.seen4_3)
         {
             unlocked = true;
