@@ -8,6 +8,7 @@ else
 {
 	ball = instance_create_layer(x+6,y+14,"Enemies",oBounceEnemy);
 }	
+ball.hsp += speedBoost;
 ball.vsp = -launchJump;
 ball.givesHealth = false;
 ball.image_index = 2;
