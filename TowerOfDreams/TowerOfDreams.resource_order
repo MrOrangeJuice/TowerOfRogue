@@ -769,6 +769,7 @@
     {"name":"sCowboyEliteWalk","order":8,"path":"sprites/sCowboyEliteWalk/sCowboyEliteWalk.yy",},
     {"name":"sCowboyFire","order":4,"path":"sprites/sCowboyFire/sCowboyFire.yy",},
     {"name":"sCowboyWalk","order":2,"path":"sprites/sCowboyWalk/sCowboyWalk.yy",},
+    {"name":"sCredits","order":84,"path":"sprites/sCredits/sCredits.yy",},
     {"name":"sCritPBUI","order":21,"path":"sprites/sCritPBUI/sCritPBUI.yy",},
     {"name":"sCritUI","order":6,"path":"sprites/sCritUI/sCritUI.yy",},
     {"name":"sCritVFX","order":13,"path":"sprites/sCritVFX/sCritVFX.yy",},
