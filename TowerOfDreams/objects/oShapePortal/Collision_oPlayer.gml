@@ -10,7 +10,7 @@ if(instance_exists(oPlayer) && !global.playerShapePortalSpawned)
 		instance_create_layer(otherId.x+4,otherId.y+4,"VFX",vfx);
 	}
 	global.playerShapePortalSpawned = true;
-	oPlayer.shapePortalTimer = 240;
+	oPlayer.shapePortalTimer = 180;
 	if (skipCooldown) oPlayer.shapePortalTimer = 60;
 	oPlayer.invulnerable = 75;
 	sprite_index = smallSprite;
@@ -19,4 +19,6 @@ if(instance_exists(oPlayer) && !global.playerShapePortalSpawned)
 	imageSpeed = 3;
 	otherId.alarm[3] = room_speed * (animSpeed + easeSpeed);
 	otherId.imageSpeed = 3;
+	rechargingTime = skipCooldown ? 60 : 180;
+	otherId.rechargingTime = skipCooldown ? 60 : 180;
 }

@@ -1531,7 +1531,7 @@ if(!global.paused && !global.hitStop)
 		if(!place_meeting(x,y,oShapePortal) && shapePortalTimer <= 0)
 		{
 			global.playerShapePortalSpawned = false;
-			shapePortalTimer = 240;
+			shapePortalTimer = 180;
 		}
 	}
 	
