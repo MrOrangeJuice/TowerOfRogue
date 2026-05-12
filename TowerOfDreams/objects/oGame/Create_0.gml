@@ -389,12 +389,12 @@ global.timeMedalSilver3_3Target = 4560;
 global.timeMedalGold3_3Target = 3960;
 global.timeMedalSilver3_4Target = 3600;
 global.timeMedalGold3_4Target = 3000;
-global.timeMedalSilver4_1Target = 5600;
-global.timeMedalGold4_1Target = 5000;
-global.timeMedalSilver4_2Target = 5600;
-global.timeMedalGold4_2Target = 5000;
-global.timeMedalSilver4_3Target = 5600;
-global.timeMedalGold4_3Target = 5000;
+global.timeMedalSilver4_1Target = 3600;
+global.timeMedalGold4_1Target = 3000;
+global.timeMedalSilver4_2Target = 3300;
+global.timeMedalGold4_2Target = 2700;
+global.timeMedalSilver4_3Target = 5460;
+global.timeMedalGold4_3Target = 4860;
 
 // Grave data
 // Floor 1
