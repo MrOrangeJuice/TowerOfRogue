@@ -926,7 +926,7 @@ if(global.dreamBoyOn)
 		else if(global.dreamBoyState == 3)
 		{
 			global.currentExtra--;
-			if(global.currentExtra < 0) global.currentExtra = 8;
+			if(global.currentExtra < 0) global.currentExtra = 2;
 			audio_play_sound(snd_DreamBoyMenuMove,5,false);
 		}
 	}
@@ -953,7 +953,7 @@ if(global.dreamBoyOn)
 		else if(global.dreamBoyState == 3)
 		{
 			global.currentExtra++;
-			if(global.currentExtra > 8) global.currentExtra = 0;
+			if(global.currentExtra > 2) global.currentExtra = 0;
 			audio_play_sound(snd_DreamBoyMenuMove,5,false);
 		}
 	}

@@ -96,11 +96,11 @@ global.foeFileDescriptions =
 "A PLANT THAT SHOOTS FOUR TIMES"];
 
 // DB Extras
-global.extraSprites = [sPostcard, sPostcard2, sPostcardNotFound, sPostcardNotFound, sPostcardNotFound, sPostcardNotFound, sPostcardNotFound, sPostcardNotFound, sPostcardNotFound];
-global.extraSpriteY = [0,0,0,0,0,0,0,0,0];
-global.extraSpriteYTarget = [0,0,0,0,0,0,0,0,0];
-global.extraSpriteX = [91,175,259,343,427,511,595,679,763];
-global.extraSpriteXTarget = [91,175,259,343,427,511,595,679,763];
+global.extraSprites = [sPostcard, sPostcard2, sPostcard3];
+global.extraSpriteY = [0,0,0];
+global.extraSpriteYTarget = [0,0,0];
+global.extraSpriteX = [91,175,259];
+global.extraSpriteXTarget = [91,175,259];
 global.currentExtra = 0;
 
 // DB Unlocks
