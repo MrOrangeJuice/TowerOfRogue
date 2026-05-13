@@ -827,6 +827,8 @@
     {"id":{"name":"sCowboyEliteFire","path":"sprites/sCowboyEliteFire/sCowboyEliteFire.yy",},},
     {"id":{"name":"sCowboyEliteWalk","path":"sprites/sCowboyEliteWalk/sCowboyEliteWalk.yy",},},
     {"id":{"name":"sCowboyFire","path":"sprites/sCowboyFire/sCowboyFire.yy",},},
+    {"id":{"name":"sCowboyGB","path":"sprites/sCowboyGB/sCowboyGB.yy",},},
+    {"id":{"name":"sCowboyGBBig","path":"sprites/sCowboyGBBig/sCowboyGBBig.yy",},},
     {"id":{"name":"sCowboyWalk","path":"sprites/sCowboyWalk/sCowboyWalk.yy",},},
     {"id":{"name":"sCredits","path":"sprites/sCredits/sCredits.yy",},},
     {"id":{"name":"sCritPBUI","path":"sprites/sCritPBUI/sCritPBUI.yy",},},

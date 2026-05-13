@@ -768,6 +768,8 @@
     {"name":"sCowboyEliteFire","order":7,"path":"sprites/sCowboyEliteFire/sCowboyEliteFire.yy",},
     {"name":"sCowboyEliteWalk","order":8,"path":"sprites/sCowboyEliteWalk/sCowboyEliteWalk.yy",},
     {"name":"sCowboyFire","order":4,"path":"sprites/sCowboyFire/sCowboyFire.yy",},
+    {"name":"sCowboyGB","order":24,"path":"sprites/sCowboyGB/sCowboyGB.yy",},
+    {"name":"sCowboyGBBig","order":23,"path":"sprites/sCowboyGBBig/sCowboyGBBig.yy",},
     {"name":"sCowboyWalk","order":2,"path":"sprites/sCowboyWalk/sCowboyWalk.yy",},
     {"name":"sCredits","order":84,"path":"sprites/sCredits/sCredits.yy",},
     {"name":"sCritPBUI","order":21,"path":"sprites/sCritPBUI/sCritPBUI.yy",},
