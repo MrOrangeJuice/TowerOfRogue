@@ -172,6 +172,7 @@ global.sword = true;
 global.tutorialCompleted = false;
 global.floor1Completed = false;
 global.floor2Completed = false;
+global.floor3Completed = false;
 global.runCompleted = false;
 global.inARun = false;
 global.timeTrial = false;
@@ -182,9 +183,11 @@ global.timeMedals = 0;
 global.sideRoomArray = [rTreasureRoom,rTreasureRoom2];
 global.sideRoomArray2 = [rTreasureRoomFloor2,rTreasureRoom2Floor2];
 global.sideRoomArray3 = [rTreasureRoomFloor3,rTreasureRoom2Floor3];
+global.sideRoomArray4 = [rTreasureRoomFloor4,rTreasureRoom2Floor4];
 global.shopRoomArray = [rShop,rShop2];
 global.shopRoomArray2 = [rShopFloor2,rShop2Floor2];
 global.shopRoomArray3 = [rShopFloor3,rShop2Floor3];
+global.shopRoomArray4 = [rShopFloor4,rShop2Floor4];
 global.levelArray = [rFloor1_1,rFloor1_2,rFloor1_3,rFloor1_4,rFloor1_5,rFloor1_6];
 global.levelArray2 = [rFloor2_1,rFloor2_2,rFloor2_3,rFloor2_4,rFloor2_5];
 global.levelArray3 = [rFloor3_1,rFloor3_2,rFloor3_3,rFloor3_4];
@@ -255,7 +258,7 @@ global.devItem = 0;
 global.drawDevItem = false;
 
 // Overall run ranks
-global.ranks = ["D","D","D","D","D","D","D","D","D"];
+global.ranks = ["D","D","D","D","D","D","D","D","D","D","D","D"];
 
 // Best Ranks
 global.best1_1 = "F";

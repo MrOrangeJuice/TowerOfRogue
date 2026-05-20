@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":145.31917,
+  "duration":145.31918,
   "exportDir":"",
   "name":"msc_Floor4",
   "parent":{
@@ -22,5 +22,5 @@
   "resourceVersion":"2.0",
   "sampleRate":44100,
   "soundFile":"msc_Floor4.mp3",
-  "volume":0.3,
+  "volume":0.5,
 }

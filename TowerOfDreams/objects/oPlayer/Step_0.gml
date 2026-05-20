@@ -320,7 +320,7 @@ if(!global.paused && !global.hitStop)
 						audio_play_sound(msc_Floor2,5,true);
 					}
 				}
-				else
+				else if(global.levelCount < 9)
 				{
 					// Randomize music
 					randomize();
@@ -332,6 +332,20 @@ if(!global.paused && !global.hitStop)
 					else
 					{
 						audio_play_sound(msc_Floor3,5,true);
+					}
+				}
+				else
+				{
+					// Randomize music
+					randomize();
+					musicRand = irandom_range(0,4);
+					if(musicRand == 0)
+					{
+						audio_play_sound(msc_Floor4Variant,5,true);
+					}
+					else
+					{
+						audio_play_sound(msc_Floor4,5,true);
 					}
 				}
 				global.floor1Music = true;

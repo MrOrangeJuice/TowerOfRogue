@@ -5,6 +5,7 @@ function Load(){
 	global.tutorialCompleted = ini_read_real("savegame", "tutorialCompleted", 0);
 	global.floor1Completed = ini_read_real("savegame", "floor1Completed", 0);
 	global.floor2Completed = ini_read_real("savegame", "floor2Completed", 0);
+	global.floor3Completed = ini_read_real("savegame", "floor3Completed", 0);
 	global.runCompleted = ini_read_real("savegame", "runCompleted", 0);
     
 	global.best1_1 = ini_read_string("savegame", "best1_1", "F");
