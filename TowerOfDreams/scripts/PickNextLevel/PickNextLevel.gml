@@ -39,6 +39,9 @@ function PickNextLevel(){
 		audio_stop_sound(msc_Floor2Variant);
 		audio_stop_sound(msc_Floor3);
 		audio_stop_sound(msc_Floor3Variant);
+		audio_stop_sound(msc_Floor4);
+		audio_stop_sound(msc_Floor4Variant);
+		audio_stop_sound(msc_Final);
 		audio_stop_sound(snd_BoomerangReturn);
 		global.floor1Music = false;
 		Save();
@@ -75,12 +78,32 @@ function PickNextLevel(){
 				audio_stop_sound(msc_Floor3Variant);
 				global.floor1Music = false;
 			}
-			levelChoice = irandom_range(0,array_length(global.levelArray4)-1);
-			// Make sure it picks level that hasn't been used yet
-			while(global.usedArray4[levelChoice])
+			// Transition music to final level
+			if(global.levelCount == 11)
 			{
-				randomize();
-				levelChoice = irandom_range(0,array_length(global.levelArray4)-1);
+				audio_stop_sound(msc_Floor4);
+				audio_stop_sound(msc_Floor4Variant);
+				global.floor1Music = false;
+			}
+			switch(global.levelCount)
+			{
+				case 9:
+					levelChoice = 0;
+					break;
+				case 10:
+					levelChoice = 1;
+					break;
+				case 11:
+					levelChoice = 2;
+					break;
+				default:
+					// Make sure it picks level that hasn't been used yet
+					while(global.usedArray4[levelChoice])
+					{
+						randomize();
+						levelChoice = irandom_range(0,array_length(global.levelArray4)-1);
+					}
+					break;
 			}
 			// Set level picked to true so it won't be used again
 			global.usedArray4[levelChoice] = true;

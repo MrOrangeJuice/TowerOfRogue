@@ -9,6 +9,7 @@ audio_stop_sound(msc_Floor3);
 audio_stop_sound(msc_Floor3Variant);
 audio_stop_sound(msc_Floor4);
 audio_stop_sound(msc_Floor4Variant);
+audio_stop_sound(msc_Final);
 
 // Sprites
 intro = sRunCompleteIntro;

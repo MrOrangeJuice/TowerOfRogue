@@ -702,6 +702,9 @@ if(!global.dreamBoy)
 				audio_stop_sound(msc_Floor2Variant);
 				audio_stop_sound(msc_Floor3);
 				audio_stop_sound(msc_Floor3Variant);
+				audio_stop_sound(msc_Floor4);
+				audio_stop_sound(msc_Floor4Variant);
+				audio_stop_sound(msc_Final);
 				global.floor1Music = false;
 				
 	            SlideTransition(TRANS_MODE.GOTO,rMemoryZoo);
@@ -736,6 +739,9 @@ if(!global.dreamBoy)
 				audio_stop_sound(msc_Floor2Variant);
 				audio_stop_sound(msc_Floor3);
 				audio_stop_sound(msc_Floor3Variant);
+				audio_stop_sound(msc_Floor4);
+				audio_stop_sound(msc_Floor4Variant);
+				audio_stop_sound(msc_Final);
 				global.floor1Music = false;
 				
 				 SlideTransition(TRANS_MODE.GOTO,room);
@@ -865,6 +871,9 @@ if(!global.dreamBoy)
 						audio_stop_sound(msc_Floor2Variant);
 						audio_stop_sound(msc_Floor3);
 						audio_stop_sound(msc_Floor3Variant);
+						audio_stop_sound(msc_Floor4);
+						audio_stop_sound(msc_Floor4Variant);
+						audio_stop_sound(msc_Final);
 						global.floor1Music = false;
 						audio_stop_sound(msc_Shop);
 						global.shopMusic = false;
