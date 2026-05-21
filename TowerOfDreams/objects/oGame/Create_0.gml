@@ -72,16 +72,16 @@ global.itemFileDescriptions =
 "GRANTS AN EXTRA JUMP"];
 
 // DB Foes
-global.dbFoeSprites = [sSlimeGB,sCannonGB,sGravityGB,sBallGB,sFlyingGB,sWrenchGB,sTankGB,sTankStationaryGB,sSawbladeGB,sCloudGB,sFirePlantGB];
-global.dbFoeBigSprites = [sSlimeGBBig,sCannonGBBig,sGravityGBBig,sBallGBBig,sFlyingGBBig,sWrenchGBBig,sTankGBBig,sTankStationaryGBBig,sSawbladeGBBig,sCloudGBBig,sFirePlantGBBig];
+global.dbFoeSprites = [sSlimeGB,sCannonGB,sGravityGB,sBallGB,sFlyingGB,sWrenchGB,sTankGB,sTankStationaryGB,sSawbladeGB,sCloudGB,sFirePlantGB,sBounceEnemyGB,sCowboyGB,sWizardGB];
+global.dbFoeBigSprites = [sSlimeGBBig,sCannonGBBig,sGravityGBBig,sBallGBBig,sFlyingGBBig,sWrenchGBBig,sTankGBBig,sTankStationaryGBBig,sSawbladeGBBig,sCloudGBBig,sFirePlantGBBig,sBounceEnemyGBBig,sCowboyGBBig,sWizardGBBig];
 global.foeWindowY = 0;
 global.foeWindowYTarget = 0;
 global.currentFoe = 0;
-global.floppyFoeY = [0,0,0,0,0,0,0,0,0,0,0];
-global.floppyFoeYTarget = [0,0,0,0,0,0,0,0,0,0,0];
-global.floppyFoeX = [119,139,159,179,199,219,239,259,279,299,319];
-global.floppyFoeXTarget = [119,139,159,179,199,219,239,259,279,299,319];
-global.foeFileNames = ["COMMON SLIME","GIZMO CANNON","GRAVITY JACK","BARROLLO","FLAP DEMON","GIZMO WRENCH", "GIZMO TREADS", "GIZMO SENTRY","SAWBLADE","CANNON CLOUD","CALIENTE SHRUB"];
+global.floppyFoeY = [0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+global.floppyFoeYTarget = [0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+global.floppyFoeX = [119,139,159,179,199,219,239,259,279,299,319,339,359,379];
+global.floppyFoeXTarget = [119,139,159,179,199,219,239,259,279,299,319,339,359,379];
+global.foeFileNames = ["COMMON SLIME","GIZMO CANNON","GRAVITY JACK","BARROLLO","FLAP DEMON","GIZMO WRENCH", "GIZMO TREADS", "GIZMO SENTRY","SAWBLADE","CANNON CLOUD","CALIENTE SHRUB","BALLOONZA","SLICK JOHNNY","DARK SUMMONER"];
 global.foeFileDescriptions =
 ["A COMMON ENEMY THAT WALKS BACK AND FORTH",
 "WINDS UP AND SHOOTS CANNON BALLS",
@@ -93,7 +93,10 @@ global.foeFileDescriptions =
 "A ROOTED SENTRY THAT SHOOTS MISSLES",
 "A DEADLY SHARP ENEMY THAT CLINGS TO WALLS",
 "A CLOUD THAT SHOOTS VERTICALLY",
-"A PLANT THAT SHOOTS FOUR TIMES"];
+"A PLANT THAT SHOOTS FOUR TIMES",
+"BOUNCES OFF OF WALLS AND FLOOR",
+"TAKES AIM AND SHOOTS A QUICK SHOT",
+"SUMMONS GRAVITY JACKS"];
 
 // DB Extras
 global.extraSprites = [sPostcard, sPostcard2, sPostcard3];
@@ -105,8 +108,8 @@ global.currentExtra = 0;
 
 // DB Unlocks
 global.itemsFound = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
-global.enemiesFound = [0,0,0,0,0,0,0,0,0,0,0];
-global.extrasFound = [1,1,1,1,1,1,1,1,1];
+global.enemiesFound = [0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+global.extrasFound = [1,1,1];
 
 global.hitStop = false;
 global.canPause = false;

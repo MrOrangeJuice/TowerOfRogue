@@ -930,7 +930,7 @@ if(global.dreamBoyOn)
 		else if(global.dreamBoyState == 2)
 		{
 			global.currentFoe--;
-			if(global.currentFoe < 0) global.currentFoe = 10;
+			if(global.currentFoe < 0) global.currentFoe = 13;
 			audio_play_sound(snd_DreamBoyMenuMove,5,false);
 		}
 		else if(global.dreamBoyState == 3)
@@ -957,7 +957,7 @@ if(global.dreamBoyOn)
 		else if(global.dreamBoyState == 2)
 		{
 			global.currentFoe++;
-			if(global.currentFoe > 10) global.currentFoe = 0;
+			if(global.currentFoe > 13) global.currentFoe = 0;
 			audio_play_sound(snd_DreamBoyMenuMove,5,false);
 		}
 		else if(global.dreamBoyState == 3)

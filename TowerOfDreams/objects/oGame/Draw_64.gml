@@ -625,13 +625,13 @@ if(global.HUD)
 			draw_sprite(sGoldMedal,0,1,29);
             
             draw_set_color($6D454D);
-            draw_text(9,25,string(global.timeMedals) + "/30");
-            draw_text(11,25,string(global.timeMedals) + "/30");
-            draw_text(10,24,string(global.timeMedals) + "/30");
-            draw_text(10,26,string(global.timeMedals) + "/30");
+            draw_text(9,25,string(global.timeMedals) + "/36");
+            draw_text(11,25,string(global.timeMedals) + "/36");
+            draw_text(10,24,string(global.timeMedals) + "/36");
+            draw_text(10,26,string(global.timeMedals) + "/36");
             
             draw_set_color($B1D7F0);
-            draw_text(10,25,string(global.timeMedals) + "/30");
+            draw_text(10,25,string(global.timeMedals) + "/36");
             
             // Reset color
             draw_set_color($6D454D);
@@ -686,8 +686,8 @@ if(global.dreamBoy)
 		global.floppyYTarget = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
 		global.floppyXTarget = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
 		global.FoeWindowYTarget = 0;
-		global.floppyFoeYTarget = [0,0,0,0,0,0,0,0,0,0,0];
-		global.floppyFoeXTarget = [0,0,0,0,0,0,0,0,0,0,0];
+		global.floppyFoeYTarget = [0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+		global.floppyFoeXTarget = [0,0,0,0,0,0,0,0,0,0,0,0,0,0];
 		
 		// Draw blocks
 		for(i = 0; i < array_length(global.blockScales); i++)
