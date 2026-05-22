@@ -1,6 +1,7 @@
 /// @description Draw Rankings
 
 draw_self();
+draw_set_font(fUI);
 draw_set_halign(fa_center);
 
 draw_text(x+256,y+36,"LEVEL BESTS");
