@@ -2,9 +2,9 @@
   "$GMSprite":"v2",
   "%Name":"sCredits",
   "bboxMode":0,
-  "bbox_bottom":344,
-  "bbox_left":10,
-  "bbox_right":117,
+  "bbox_bottom":511,
+  "bbox_left":3,
+  "bbox_right":252,
   "bbox_top":3,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -19,7 +19,7 @@
   "height":512,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"a4b3dbee-5056-40b3-ba72-ece0bbe6cb53","blendMode":0,"displayName":"Layer 1","isLocked":false,"name":"a4b3dbee-5056-40b3-ba72-ece0bbe6cb53","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"3ab89467-40f0-404b-a895-ba293cf46a96","blendMode":0,"displayName":"Layer 2","isLocked":false,"name":"3ab89467-40f0-404b-a895-ba293cf46a96","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"sCredits",
   "nineSlice":null,
@@ -86,5 +86,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":128,
+  "width":256,
 }
