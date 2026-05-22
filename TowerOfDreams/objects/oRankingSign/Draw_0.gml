@@ -3,8 +3,8 @@
 draw_self();
 draw_set_halign(fa_center);
 
-draw_text(x+192,y+36,"LEVEL BESTS");
-draw_text(x+192,y+44,"Overall Best: " + string(global.bestOverall));
+draw_text(x+256,y+36,"LEVEL BESTS");
+draw_text(x+256,y+44,"Overall Best: " + string(global.bestOverall));
 
 draw_text(x+64,y+56,"Floor 1");
 draw_text(x+64,y+64,"Cannon Conundrum: " + string(global.best1_1));
@@ -26,5 +26,10 @@ draw_text(x+320,y+64,"Cloudy Catastrophe: " + string(global.best3_1));
 draw_text(x+320,y+72,"Dash Fruit Smoothie: " + string(global.best3_2));
 draw_text(x+320,y+80,"Larry's Liftoff: " + string(global.best3_3));
 draw_text(x+320,y+88,"Watch Your Step: " + string(global.best3_4));
+
+draw_text(x+448,y+56,"Floor 4");
+draw_text(x+448,y+64,"Bouncy Bonanza: " + string(global.best4_1));
+draw_text(x+448,y+72,"Back and Forth: " + string(global.best4_2));
+draw_text(x+448,y+80,"Wake Up: " + string(global.best4_3));
 
 draw_set_halign(fa_left);
