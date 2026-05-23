@@ -31,8 +31,8 @@ global.itemWindowYTarget = 0;
 global.currentItem = 0;
 global.floppyY = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
 global.floppyYTarget = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
-global.floppyX = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
-global.floppyXTarget = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+global.floppyX = [119,139,159,179,199,219,239,259,279,299,319,339,359,379,399,419,439,459,479,499,519,539,559,579,599,619,639,659,679,699,719,739,759,779,799,819];
+global.floppyXTarget = [119,139,159,179,199,219,239,259,279,299,319,339,359,379,399,419,439,459,479,499,519,539,559,579,599,619,639,659,679,699,719,739,759,779,799,819];
 global.itemFileNames = ["ARMOR TROPHY","BOUNCING AXE","BAG OF WINDS","REMOTE SURPRISE","BLOCKATHAN","JESTER BOMB","DOOMERANG","WINGED BOOTS","GEM CANNON","REWARDS CARD","CHARGE BLADE","SPEED CITRUS","RAGE COLA","CRIT PB","CRIT JELLY","DIMAOND DYNAMITE","FUZZY DICE","GHOST IN A JAR","GOBLET OF BLOOD","SMITH HAMMER","HEART MAGNET","HEART TROPHY","HEAVY BOOTS","KUNAI","LIGHTNING BOTTLE","GEM MAGNET","MITOSIS MARACAS","NINJA STAR","THE PEPPER","LUCKY PICKAXE","WERE RABBIT FOOT","ENCHANTED SHIELD","SHOCK BRACELET","CHAOS SHOVEL","SPRAY N PRAY","WAX WINGS"];
 global.itemFileDescriptions =
 ["ENEMIES HAVE A HIGHER CHANCE TO DROP ARMOR",
@@ -73,16 +73,16 @@ global.itemFileDescriptions =
 "GRANTS AN EXTRA JUMP"];
 
 // DB Foes
-global.dbFoeSprites = [sSlimeGB,sCannonGB,sGravityGB,sBallGB,sFlyingGB,sWrenchGB,sTankGB,sTankStationaryGB,sSawbladeGB,sCloudGB,sFirePlantGB];
-global.dbFoeBigSprites = [sSlimeGBBig,sCannonGBBig,sGravityGBBig,sBallGBBig,sFlyingGBBig,sWrenchGBBig,sTankGBBig,sTankStationaryGBBig,sSawbladeGBBig,sCloudGBBig,sFirePlantGBBig];
+global.dbFoeSprites = [sSlimeGB,sCannonGB,sGravityGB,sBallGB,sFlyingGB,sWrenchGB,sTankGB,sTankStationaryGB,sSawbladeGB,sCloudGB,sFirePlantGB,sBounceEnemyGB,sCowboyGB,sWizardGB];
+global.dbFoeBigSprites = [sSlimeGBBig,sCannonGBBig,sGravityGBBig,sBallGBBig,sFlyingGBBig,sWrenchGBBig,sTankGBBig,sTankStationaryGBBig,sSawbladeGBBig,sCloudGBBig,sFirePlantGBBig,sBounceEnemyGBBig,sCowboyGBBig,sWizardGBBig];
 global.foeWindowY = 0;
 global.foeWindowYTarget = 0;
 global.currentFoe = 0;
-global.floppyFoeY = [0,0,0,0,0,0,0,0,0,0,0];
-global.floppyFoeYTarget = [0,0,0,0,0,0,0,0,0,0,0];
-global.floppyFoeX = [0,0,0,0,0,0,0,0,0,0,0];
-global.floppyFoeXTarget = [0,0,0,0,0,0,0,0,0,0,0];
-global.foeFileNames = ["COMMON SLIME","GIZMO CANNON","GRAVITY JACK","BARROLLO","FLAP DEMON","GIZMO WRENCH", "GIZMO TREADS", "GIZMO SENTRY","SAWBLADE","CANNON CLOUD","CALIENTE SHRUB"];
+global.floppyFoeY = [0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+global.floppyFoeYTarget = [0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+global.floppyFoeX = [119,139,159,179,199,219,239,259,279,299,319,339,359,379];
+global.floppyFoeXTarget = [119,139,159,179,199,219,239,259,279,299,319,339,359,379];
+global.foeFileNames = ["COMMON SLIME","GIZMO CANNON","GRAVITY JACK","BARROLLO","FLAP DEMON","GIZMO WRENCH", "GIZMO TREADS", "GIZMO SENTRY","SAWBLADE","CANNON CLOUD","CALIENTE SHRUB","BALLOONZA","SLICK JOHNNY","DARK SUMMONER"];
 global.foeFileDescriptions =
 ["A COMMON ENEMY THAT WALKS BACK AND FORTH",
 "WINDS UP AND SHOOTS CANNON BALLS",
@@ -94,16 +94,23 @@ global.foeFileDescriptions =
 "A ROOTED SENTRY THAT SHOOTS MISSLES",
 "A DEADLY SHARP ENEMY THAT CLINGS TO WALLS",
 "A CLOUD THAT SHOOTS VERTICALLY",
-"A PLANT THAT SHOOTS FOUR TIMES"];
+"A PLANT THAT SHOOTS FOUR TIMES",
+"BOUNCES OFF OF WALLS AND FLOOR",
+"TAKES AIM AND SHOOTS A QUICK SHOT",
+"SUMMONS GRAVITY JACKS"];
 
 // DB Extras
-global.extraSprites = [sPostcard];
-global.extraSpriteY = 0;
-global.extraSpriteYTarget = 0;
+global.extraSprites = [sPostcard, sPostcard2, sPostcard3];
+global.extraSpriteY = [0,0,0];
+global.extraSpriteYTarget = [0,0,0];
+global.extraSpriteX = [91,175,259];
+global.extraSpriteXTarget = [91,175,259];
+global.currentExtra = 0;
 
 // DB Unlocks
 global.itemsFound = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
-global.enemiesFound = [0,0,0,0,0,0,0,0,0,0,0];
+global.enemiesFound = [0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+global.extrasFound = [1,1,1];
 
 global.hitStop = false;
 global.canPause = false;
@@ -178,12 +185,15 @@ global.time = 0;
 global.timeIncrement = true;
 global.timeLevel = 0;
 global.timeMedals = 0;
+global.medalsFedToFrog = 0;
 global.sideRoomArray = [rTreasureRoom,rTreasureRoom2];
 global.sideRoomArray2 = [rTreasureRoomFloor2,rTreasureRoom2Floor2];
 global.sideRoomArray3 = [rTreasureRoomFloor3,rTreasureRoom2Floor3];
+global.sideRoomArray4 = [rTreasureRoomFloor4,rTreasureRoom2Floor4];
 global.shopRoomArray = [rShop,rShop2];
 global.shopRoomArray2 = [rShopFloor2,rShop2Floor2];
 global.shopRoomArray3 = [rShopFloor3,rShop2Floor3];
+global.shopRoomArray4 = [rShopFloor4,rShop2Floor4];
 global.levelArray = [rFloor1_1,rFloor1_2,rFloor1_3,rFloor1_4,rFloor1_5,rFloor1_6];
 global.levelArray2 = [rFloor2_1,rFloor2_2,rFloor2_3,rFloor2_4,rFloor2_5];
 global.levelArray3 = [rFloor3_1,rFloor3_2,rFloor3_3,rFloor3_4];
@@ -233,6 +243,7 @@ global.debugCounter = 0;
 global.debugDisplay = 0;
 global.arrowSprite = sArrowGremlinIdle;
 global.doorSprite = sDoorGremlinIdle;
+global.playerShapePortalSpawned = false;
 
 // Shop items
 global.shopItem1 = -1;
@@ -253,7 +264,7 @@ global.devItem = 0;
 global.drawDevItem = false;
 
 // Overall run ranks
-global.ranks = ["D","D","D","D","D","D","D","D","D"];
+global.ranks = ["D","D","D","D","D","D","D","D","D","D","D","D"];
 
 // Best Ranks
 global.best1_1 = "F";
@@ -387,12 +398,12 @@ global.timeMedalSilver3_3Target = 4560;
 global.timeMedalGold3_3Target = 3960;
 global.timeMedalSilver3_4Target = 3600;
 global.timeMedalGold3_4Target = 3000;
-global.timeMedalSilver4_1Target = 5600;
-global.timeMedalGold4_1Target = 5000;
-global.timeMedalSilver4_2Target = 5600;
-global.timeMedalGold4_2Target = 5000;
-global.timeMedalSilver4_3Target = 5600;
-global.timeMedalGold4_3Target = 5000;
+global.timeMedalSilver4_1Target = 3600;
+global.timeMedalGold4_1Target = 3000;
+global.timeMedalSilver4_2Target = 3300;
+global.timeMedalGold4_2Target = 2700;
+global.timeMedalSilver4_3Target = 5460;
+global.timeMedalGold4_3Target = 4860;
 
 // Grave data
 // Floor 1

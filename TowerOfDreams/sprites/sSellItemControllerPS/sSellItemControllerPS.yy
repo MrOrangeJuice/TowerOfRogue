@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"sSellItemControllerPS",
   "bboxMode":0,
   "bbox_bottom":77,
@@ -12,8 +12,8 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"a6310c11-379d-4644-a2fc-3e240214a908","name":"a6310c11-379d-4644-a2fc-3e240214a908","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"9dd4220d-9daa-47a2-99d0-dcbd46f850c4","name":"9dd4220d-9daa-47a2-99d0-dcbd46f850c4","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"a6310c11-379d-4644-a2fc-3e240214a908","name":"a6310c11-379d-4644-a2fc-3e240214a908","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"9dd4220d-9daa-47a2-99d0-dcbd46f850c4","name":"9dd4220d-9daa-47a2-99d0-dcbd46f850c4","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":8,
   "gridY":8,

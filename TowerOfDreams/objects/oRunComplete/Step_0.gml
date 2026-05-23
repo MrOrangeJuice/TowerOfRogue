@@ -24,10 +24,11 @@ if(key_select_pressed)
 {
 	audio_play_sound(snd_MenuSelect,5,false);
 	// Reset
-	SlideTransition(TRANS_MODE.GOTO,rHub);
+	SlideTransition(TRANS_MODE.GOTO,rCredits);
 	global.usedArray = [false,false,false,false,false,false,false,false,false,false];
 	global.usedArray2 = [false,false,false,false,false,false,false,false,false,false];
 	global.usedArray3 = [false,false,false,false,false,false,false,false,false,false];
+	global.usedArray4 = [false,false,false,false,false,false,false,false,false,false];
 	global.inARun = false;
 	global.runCompleted = true;
 	if(global.hardMode) global.runCompletedHard = true;
@@ -51,7 +52,7 @@ if(key_select_pressed)
 	global.item2Bought = false;
 	global.item3Bought = false;
 	global.rerollTax = 0;
-		global.ranks = ["D","D","D","D","D","D","D","D","D"];
+	global.ranks = ["D","D","D","D","D","D","D","D","D","D","D","D"];
 	// Reset instance lists
 	global.coinArray = ds_list_create();
 	global.enemyArray = ds_list_create();

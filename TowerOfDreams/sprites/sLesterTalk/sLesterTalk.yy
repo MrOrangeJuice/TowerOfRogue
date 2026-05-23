@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"sLesterTalk",
   "bboxMode":0,
   "bbox_bottom":31,
@@ -12,8 +12,8 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"c5848783-a436-4fe3-ad07-6a8c22d15627","name":"c5848783-a436-4fe3-ad07-6a8c22d15627","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"4cbac710-c682-45be-ab0f-d7d7eee664a2","name":"4cbac710-c682-45be-ab0f-d7d7eee664a2","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"c5848783-a436-4fe3-ad07-6a8c22d15627","name":"c5848783-a436-4fe3-ad07-6a8c22d15627","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"4cbac710-c682-45be-ab0f-d7d7eee664a2","name":"4cbac710-c682-45be-ab0f-d7d7eee664a2","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

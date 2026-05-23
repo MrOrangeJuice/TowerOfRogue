@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"sPlayerLand",
   "bboxMode":1,
   "bbox_bottom":7,
@@ -12,8 +12,8 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"f3e467c4-8392-46d9-94ab-d1525ed8099b","name":"f3e467c4-8392-46d9-94ab-d1525ed8099b","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"706a203a-763d-456c-a162-021a3b3cee1b","name":"706a203a-763d-456c-a162-021a3b3cee1b","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"f3e467c4-8392-46d9-94ab-d1525ed8099b","name":"f3e467c4-8392-46d9-94ab-d1525ed8099b","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"706a203a-763d-456c-a162-021a3b3cee1b","name":"706a203a-763d-456c-a162-021a3b3cee1b","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

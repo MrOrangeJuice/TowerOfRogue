@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"sColaUI",
   "bboxMode":0,
   "bbox_bottom":7,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"bf37cbd5-4109-4c4f-bee8-48f47f7055b3","name":"bf37cbd5-4109-4c4f-bee8-48f47f7055b3","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"bf37cbd5-4109-4c4f-bee8-48f47f7055b3","name":"bf37cbd5-4109-4c4f-bee8-48f47f7055b3","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

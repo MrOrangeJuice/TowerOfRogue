@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"sPepperUI",
   "bboxMode":0,
   "bbox_bottom":7,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"daf0ed3a-37cf-4ecb-904e-25165ba6cb17","name":"daf0ed3a-37cf-4ecb-904e-25165ba6cb17","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"daf0ed3a-37cf-4ecb-904e-25165ba6cb17","name":"daf0ed3a-37cf-4ecb-904e-25165ba6cb17","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

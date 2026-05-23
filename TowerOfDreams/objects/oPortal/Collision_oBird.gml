@@ -24,5 +24,8 @@ if(global.timeTrial)
 	audio_stop_sound(msc_Floor2Variant);
 	audio_stop_sound(msc_Floor3);
 	audio_stop_sound(msc_Floor3Variant);
+	audio_stop_sound(msc_Floor4);
+	audio_stop_sound(msc_Floor4Variant);
+	audio_stop_sound(msc_Final);
 	global.floor1Music = false;
 }

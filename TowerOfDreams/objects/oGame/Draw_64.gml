@@ -308,7 +308,7 @@ if(room == rTitle)
 // Draw HUD
 if(global.HUD)
 {
-	if(room != rTitle && room != rRunComplete && room != rBonusItem && room != rCallToAction && room != rSpeedrunResults)
+	if(room != rTitle && room != rRunComplete && room != rBonusItem && room != rCallToAction && room != rSpeedrunResults && room != rCredits)
 	{
 		// Add spacing to HUD
 		hudMod = 9 * (((global.maxHealth - 6) / 2) + (global.armor % 5 + floor(global.armor / 5)));
@@ -625,13 +625,13 @@ if(global.HUD)
 			draw_sprite(sGoldMedal,0,1,29);
             
             draw_set_color($6D454D);
-            draw_text(9,25,string(global.timeMedals) + "/30");
-            draw_text(11,25,string(global.timeMedals) + "/30");
-            draw_text(10,24,string(global.timeMedals) + "/30");
-            draw_text(10,26,string(global.timeMedals) + "/30");
+            draw_text(9,25,string(global.timeMedals) + "/36");
+            draw_text(11,25,string(global.timeMedals) + "/36");
+            draw_text(10,24,string(global.timeMedals) + "/36");
+            draw_text(10,26,string(global.timeMedals) + "/36");
             
             draw_set_color($B1D7F0);
-            draw_text(10,25,string(global.timeMedals) + "/30");
+            draw_text(10,25,string(global.timeMedals) + "/36");
             
             // Reset color
             draw_set_color($6D454D);
@@ -650,7 +650,24 @@ if(global.dreamBoyY != global.dreamBoyYTarget)
 draw_sprite(sDreamBoy,global.dreamBoyOn,48,global.dreamBoyY);
 
 if(global.dreamBoy)
-{
+{	
+	// Just draw within the dream boy's screen
+	var originalScissor = gpu_get_scissor();
+
+	var gui_w = display_get_width();
+	var gui_h = display_get_height();
+
+	var scale_x = gui_w / 256;
+	var scale_y = gui_h / 144;
+
+	// Scale the scissor box to match the real GUI resolution
+	var bx = 48  * scale_x;
+	var by = 8   * scale_y;
+	var bw = 160 * scale_x;
+	var bh = 163 * scale_y;
+
+	gpu_set_scissor(bx,by,bw,bh);
+	
 	if(global.dreamBoyY == global.dreamBoyYTarget && !global.dreamBoyOn && !global.dreamBoyTurnedOn)
 	{ 
         audio_play_sound(msc_LesterGB,5,true);
@@ -669,8 +686,8 @@ if(global.dreamBoy)
 		global.floppyYTarget = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
 		global.floppyXTarget = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
 		global.FoeWindowYTarget = 0;
-		global.floppyFoeYTarget = [0,0,0,0,0,0,0,0,0,0,0];
-		global.floppyFoeXTarget = [0,0,0,0,0,0,0,0,0,0,0];
+		global.floppyFoeYTarget = [0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+		global.floppyFoeXTarget = [0,0,0,0,0,0,0,0,0,0,0,0,0,0];
 		
 		// Draw blocks
 		for(i = 0; i < array_length(global.blockScales); i++)
@@ -798,6 +815,44 @@ if(global.dreamBoy)
 			}
 		}
 		
+		// Draw extras
+		for(i = 0; i < array_length(global.extraSpriteYTarget); i++)
+		{
+			if(global.dreamBoyState == 3)
+			{
+				if(global.currentExtra == i)
+				{
+					global.extraSpriteYTarget[i] = 125;
+				}
+				else
+				{
+					global.extraSpriteYTarget[i] = 124;
+				}
+				global.extraSpriteXTarget[i] = (91 + (i * 84) - (global.currentExtra * 84));
+			}
+			else
+			{
+				global.extraSpriteYTarget[i] = 0;
+			}
+			
+			// Lerp everything
+			if(global.extraSpriteY[i] != global.extraSpriteYTarget[i]) global.extraSpriteY[i] = lerp(global.extraSpriteY[i],global.extraSpriteYTarget[i],0.2);	
+			if(global.extraSpriteX[i] != global.extraSpriteXTarget[i]) global.extraSpriteX[i] = lerp(global.extraSpriteX[i],global.extraSpriteXTarget[i],0.2);	
+			
+			// Draw
+			if(global.extraSpriteY[i] > -27 && global.extraSpriteX[i] > 12 && global.extraSpriteX[i] < 171) 
+			{
+				draw_sprite(global.extraSprites[i],0,global.extraSpriteX[i],-80+global.extraSpriteY[i]);
+			}
+			
+			// Draw arrows
+			if((global.extraSpriteX[global.currentExtra] > global.extraSpriteXTarget[global.currentExtra] - 0.5 && global.extraSpriteX[global.currentExtra] < global.extraSpriteXTarget[global.currentExtra] + 0.5) && (global.extraSpriteY[global.currentExtra] > 124))
+			{
+				draw_sprite(sLeftArrow,0,86,70);
+				draw_sprite(sRightArrow,0,166,70);
+			}
+		}
+		
 		// Draw item window
 		if(global.dreamBoyState == 1)
 		{
@@ -818,19 +873,8 @@ if(global.dreamBoy)
 			global.foeWindowYTarget = 0;
 		}
 		
-		// Draw extra window
-		if(global.dreamBoyState == 3)
-		{
-			global.extraSpriteYTarget = 80;
-		}
-		else
-		{
-			global.extraSpriteYTarget = 0;
-		}
-		
 		if(global.itemWindowY != global.itemWindowYTarget) global.itemWindowY = lerp(global.itemWindowY,global.itemWindowYTarget,0.2);	
 		if(global.foeWindowY != global.foeWindowYTarget) global.foeWindowY = lerp(global.foeWindowY,global.foeWindowYTarget,0.2);	
-		if(global.extraSpriteY != global.extraSpriteYTarget) global.extraSpriteY = lerp(global.extraSpriteY,global.extraSpriteYTarget,0.2);
 		
 		// Draw
 		draw_sprite(sItemWindow,0,87,132-global.itemWindowY);
@@ -840,8 +884,6 @@ if(global.dreamBoy)
 		draw_sprite(sFoeWindow,0,87,132-global.foeWindowY);
 		if(global.enemiesFound[global.currentFoe]) draw_sprite(global.dbFoeBigSprites[global.currentFoe],image_index/7.5,102,154-global.foeWindowY);
 		else draw_sprite(sQuestionGBBig,image_index/7.5,102,154-global.foeWindowY);
-		
-		draw_sprite(global.extraSprites[0],0,88,125-global.extraSpriteY);
 		
 		// Draw item and foe info
 		draw_set_font(fDreamBoy);
@@ -873,6 +915,7 @@ if(global.dreamBoy)
 		draw_sprite(sStampOSUITop,global.dreamBoyState,86,29 + global.UIBarY);
 		draw_sprite(sStampOSUIBottom,0,86,114 - global.UIBarY);
 		
+		gpu_set_scissor(originalScissor);
 	}
 	
 	// Draw additional dream boy outline to cover up the overscan

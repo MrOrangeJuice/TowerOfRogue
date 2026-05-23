@@ -62,6 +62,23 @@ else
 				audio_stop_sound(msc_Hub);
 			}
 		}
+		else if(purple)
+		{
+			global.inARun = true;
+			global.item = -1;
+			global.passiveItems = [];
+			global.levelCount = 9;
+			global.armor = 0;
+			if(global.itemUpgrades <= 0)
+			{
+				PickNextLevel();
+			}
+			else
+			{
+				SlideTransition(TRANS_MODE.GOTO,rBonusItem);
+				audio_stop_sound(msc_Hub);
+			}
+		}
 		else
 		{
 			SlideTransition(TRANS_MODE.GOTO,rTutorial);	

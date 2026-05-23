@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"sKunai",
   "bboxMode":0,
   "bbox_bottom":4,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"ecd9a715-f1ab-4f99-b33c-72e0a5ab2a04","name":"ecd9a715-f1ab-4f99-b33c-72e0a5ab2a04","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"ecd9a715-f1ab-4f99-b33c-72e0a5ab2a04","name":"ecd9a715-f1ab-4f99-b33c-72e0a5ab2a04","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"sTankEnemyStationaryHusk",
   "bboxMode":0,
   "bbox_bottom":19,
@@ -12,8 +12,8 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"99d2e9b3-ee0a-4123-89e8-fd08cc3f1bdf","name":"99d2e9b3-ee0a-4123-89e8-fd08cc3f1bdf","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"0fc23b0d-af4b-4a23-a431-6a3c1e0c96cd","name":"0fc23b0d-af4b-4a23-a431-6a3c1e0c96cd","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"99d2e9b3-ee0a-4123-89e8-fd08cc3f1bdf","name":"99d2e9b3-ee0a-4123-89e8-fd08cc3f1bdf","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"0fc23b0d-af4b-4a23-a431-6a3c1e0c96cd","name":"0fc23b0d-af4b-4a23-a431-6a3c1e0c96cd","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":12,
   "gridY":16,

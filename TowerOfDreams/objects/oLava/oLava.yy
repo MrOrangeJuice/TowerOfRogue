@@ -26,9 +26,9 @@
   "physicsShapePoints":[],
   "physicsStartAwake":true,
   "properties":[
-    {"$GMObjectProperty":"v1","%Name":"checkPointDir","filters":[],"listItems":[],"multiselect":false,"name":"checkPointDir","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"left","varType":2,},
-    {"$GMObjectProperty":"v1","%Name":"cpXOffset","filters":[],"listItems":[],"multiselect":false,"name":"cpXOffset","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":1,},
-    {"$GMObjectProperty":"v1","%Name":"cpYOffset","filters":[],"listItems":[],"multiselect":false,"name":"cpYOffset","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":1,},
+    {"$GMObjectProperty":"v2","%Name":"checkPointDir","filters":[],"listItems":[],"multiselect":false,"name":"checkPointDir","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"left","varType":2,},
+    {"$GMObjectProperty":"v2","%Name":"cpXOffset","filters":[],"listItems":[],"multiselect":false,"name":"cpXOffset","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":1,},
+    {"$GMObjectProperty":"v2","%Name":"cpYOffset","filters":[],"listItems":[],"multiselect":false,"name":"cpYOffset","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":1,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

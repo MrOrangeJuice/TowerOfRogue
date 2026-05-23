@@ -17,7 +17,7 @@ if(!global.paused && !global.hitStop)
 		if(!hitWall)
 		{
 			if(IsOnScreen(y)) audio_play_sound(snd_Land,5,false);
-			alarm[0] = room_speed * 1;	
+			alarm[0] = room_speed * (1 + flipBuffer);	
 			hitWall = true;
 			landing = true;
 			// Landing alarm
@@ -33,6 +33,22 @@ if(!global.paused && !global.hitStop)
 		}
 	}
 	y = y + vsp;
+	
+	// Conveyer belt
+	if(place_meeting(x,y+(1*sign(grv)),oLeftConveyer))
+	{
+		if(grv > 0)
+			x += 0.5;
+		else
+			x -= 0.5;
+	}
+	if(place_meeting(x,y+(1*sign(grv)),oRightConveyer))
+	{
+		if(grv > 0)
+			x -= 0.5;
+		else
+			x += 0.5;
+	}
 	
 	// Animation
 	if(landing)

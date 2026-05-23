@@ -1,10 +1,10 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"sRankingSign",
   "bboxMode":0,
   "bbox_bottom":143,
   "bbox_left":0,
-  "bbox_right":383,
+  "bbox_right":511,
   "bbox_top":15,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"327b7760-4519-4bf6-b4d3-df51c1863ebc","name":"327b7760-4519-4bf6-b4d3-df51c1863ebc","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"327b7760-4519-4bf6-b4d3-df51c1863ebc","name":"327b7760-4519-4bf6-b4d3-df51c1863ebc","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":8,
   "gridY":8,
@@ -89,5 +89,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":384,
+  "width":512,
 }

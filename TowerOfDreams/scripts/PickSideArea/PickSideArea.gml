@@ -21,11 +21,19 @@ function PickSideArea(){
 		SlideTransition(TRANS_MODE.GOTO,global.sideRoomArray2[levelChoice]);
 	}
 	// Floor 3
-	else
+	else if(global.levelCount < 9)
 	{
 		levelChoice = irandom_range(0,array_length(global.sideRoomArray3)-1);
 				
 		// Go to level we picked
 		SlideTransition(TRANS_MODE.GOTO,global.sideRoomArray3[levelChoice]);
+	}
+	// Floor 4
+	else
+	{
+		levelChoice = irandom_range(0,array_length(global.sideRoomArray4)-1);
+				
+		// Go to level we picked
+		SlideTransition(TRANS_MODE.GOTO,global.sideRoomArray4[levelChoice]);
 	}
 }

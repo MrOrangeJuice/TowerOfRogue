@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"sGravityEnemyFall",
   "bboxMode":0,
   "bbox_bottom":15,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"f9016b03-12e8-4598-97b6-8efcf15cb2ec","name":"f9016b03-12e8-4598-97b6-8efcf15cb2ec","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"f9016b03-12e8-4598-97b6-8efcf15cb2ec","name":"f9016b03-12e8-4598-97b6-8efcf15cb2ec","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":8,
   "gridY":8,

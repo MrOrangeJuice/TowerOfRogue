@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"sShopDoorSmall",
   "bboxMode":0,
   "bbox_bottom":17,
@@ -12,8 +12,8 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"827f5e6f-8e1e-4349-b921-8fafcd8bf79b","name":"827f5e6f-8e1e-4349-b921-8fafcd8bf79b","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"ddb3613f-c1d6-420b-8be3-68ad321f4964","name":"ddb3613f-c1d6-420b-8be3-68ad321f4964","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"827f5e6f-8e1e-4349-b921-8fafcd8bf79b","name":"827f5e6f-8e1e-4349-b921-8fafcd8bf79b","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"ddb3613f-c1d6-420b-8be3-68ad321f4964","name":"ddb3613f-c1d6-420b-8be3-68ad321f4964","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":8,
   "gridY":8,

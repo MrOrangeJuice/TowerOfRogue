@@ -43,6 +43,7 @@ if(global.essence != 3 || (global.essence == 3 && !global.zombieRevive))
 		global.usedArray = [false,false,false,false,false,false,false,false,false,false];
 		global.usedArray2 = [false,false,false,false,false,false,false,false,false,false];
 		global.usedArray3 = [false,false,false,false,false,false,false,false,false,false];
+		global.usedArray4 = [false,false,false,false,false,false,false,false,false,false];
 		global.inARun = false;
 		global.health = global.maxHealth;
 		global.armor = 0;
@@ -71,7 +72,7 @@ if(global.essence != 3 || (global.essence == 3 && !global.zombieRevive))
 		global.item2Bought = false;
 		global.item3Bought = false;
 		global.rerollTax = 0;
-		global.ranks = ["D","D","D","D","D","D","D","D","D"];
+		global.ranks = ["D","D","D","D","D","D","D","D","D","D","D","D"];
 		// Reset instance lists
 		global.coinArray = ds_list_create();
 		global.enemyArray = ds_list_create();

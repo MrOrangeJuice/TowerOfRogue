@@ -255,7 +255,7 @@ if(!global.paused && !global.hitStop)
 				global.hubMusic = true;
 			}
 
-			if(!global.shopMusic && (room == rShop || room == rShop2 ||  room == rShopFloor2 || room == rShop2Floor2 || room == rShopFloor3 || room == rShop2Floor3))
+			if(!global.shopMusic && (room == rShop || room == rShop2 ||  room == rShopFloor2 || room == rShop2Floor2 || room == rShopFloor3 || room == rShop2Floor3 || room == rShopFloor4 || room == rShop2Floor4))
 			{
 				audio_play_sound(msc_Chest,5,true);
 				global.shopMusic = true;
@@ -285,12 +285,12 @@ if(!global.paused && !global.hitStop)
                 global.hubMusic = false;
             }
 		
-			if(!global.treasureMusic && (room == rTreasureRoom || room == rTreasureRoom2 || room == rTreasureRoomFloor2 || room == rTreasureRoom2Floor2 || room == rTreasureRoomFloor3 || room == rTreasureRoom2Floor3))
+			if(!global.treasureMusic && (room == rTreasureRoom || room == rTreasureRoom2 || room == rTreasureRoomFloor2 || room == rTreasureRoom2Floor2 || room == rTreasureRoomFloor3 || room == rTreasureRoom2Floor3 || room == rTreasureRoomFloor4 || room == rTreasureRoom2Floor4))
 			{
 				audio_play_sound(msc_Shop,5,true);
 				global.treasureMusic = true;
 			}
-			if((global.inARun || global.timeTrial) && !global.floor1Music && room != rHub && room != rTreasureRoom && room != rTreasureRoom2 && room != rShop && room != rShop2  && room != rTreasureRoomFloor2 && room != rTreasureRoom2Floor2 && room != rShopFloor2 && room != rShop2Floor2 && room != rTreasureRoomFloor3 && room != rTreasureRoom2Floor3 && room != rShopFloor3 && room != rShop2Floor3)
+			if((global.inARun || global.timeTrial) && !global.floor1Music && room != rHub && room != rTreasureRoom && room != rTreasureRoom2 && room != rShop && room != rShop2  && room != rTreasureRoomFloor2 && room != rTreasureRoom2Floor2 && room != rShopFloor2 && room != rShop2Floor2 && room != rTreasureRoomFloor3 && room != rTreasureRoom2Floor3 && room != rShopFloor3 && room != rShop2Floor3 && room != rTreasureRoomFloor4 && room != rTreasureRoom2Floor4 && room != rShopFloor4 && room != rShop2Floor4)
 			{
 				if(global.levelCount < 3)
 				{
@@ -320,7 +320,7 @@ if(!global.paused && !global.hitStop)
 						audio_play_sound(msc_Floor2,5,true);
 					}
 				}
-				else
+				else if(global.levelCount < 9)
 				{
 					// Randomize music
 					randomize();
@@ -332,6 +332,27 @@ if(!global.paused && !global.hitStop)
 					else
 					{
 						audio_play_sound(msc_Floor3,5,true);
+					}
+				}
+				else
+				{
+					if(global.levelCount == 11)
+					{
+						audio_play_sound(msc_Final,5,true);
+					}
+					else
+					{
+						// Randomize music
+						randomize();
+						musicRand = irandom_range(0,4);
+						if(musicRand == 0)
+						{
+							audio_play_sound(msc_Floor4Variant,5,true);
+						}
+						else
+						{
+							audio_play_sound(msc_Floor4,5,true);
+						}
 					}
 				}
 				global.floor1Music = true;
@@ -844,7 +865,7 @@ if(!global.paused && !global.hitStop)
 			else
 			{
 				// Check if item can be bought
-				if(global.coins >= (global.itemPrices[bubble.item] + (DetermineFloorTax() * 50)) * (1 - (0.2 * card)))
+				if(global.coins >= (global.itemPrices[bubble.item] + (DetermineFloorTax() * 20)) * (1 - (0.2 * card)))
 				{
 					if(chargeSlash)
 					{
@@ -890,7 +911,7 @@ if(!global.paused && !global.hitStop)
 							steam_set_achievement("BUYALLSTAMPERITEMS");
 						}
 					}
-					global.coins -= (global.itemPrices[bubble.item] + (DetermineFloorTax() * 50)) * (1 - (0.2 * card));
+					global.coins -= (global.itemPrices[bubble.item] + (DetermineFloorTax() * 20)) * (1 - (0.2 * card));
 					instance_destroy(bubble);
 				}
 				else
@@ -1532,6 +1553,25 @@ if(!global.paused && !global.hitStop)
 	else
 	{
 		global.dropItemHold = 0;
+	}
+	
+	if(global.playerShapePortalSpawned)
+	{
+		shapePortalTimer--;
+		if(!place_meeting(x,y,oShapePortal) && shapePortalTimer <= 0)
+		{
+			global.playerShapePortalSpawned = false;
+			shapePortalTimer = 180;
+		}
+	}
+	
+	if(portalVFXTimer > 0)
+	{
+		if(random_range(0,9) < portalVFXTimer)
+		{
+			instance_create_layer(x+random_range(-3,3),y+random_range(-3,3),"VFX",oCircleVFX);
+		}
+		portalVFXTimer -= 0.03;	
 	}
 	
 	// Items

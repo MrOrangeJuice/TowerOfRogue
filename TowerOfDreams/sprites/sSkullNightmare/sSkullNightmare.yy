@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"sSkullNightmare",
   "bboxMode":2,
   "bbox_bottom":24,
@@ -12,10 +12,10 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"06b7a79a-2dab-4bbc-a5d7-1dfe2dadca93","name":"06b7a79a-2dab-4bbc-a5d7-1dfe2dadca93","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"a62d4a97-fa7a-4e10-9de8-e10640c25013","name":"a62d4a97-fa7a-4e10-9de8-e10640c25013","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"7e659496-9573-466a-81cb-9ae1afa3425e","name":"7e659496-9573-466a-81cb-9ae1afa3425e","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"a6e8e1af-0fb2-493e-9d2d-b627dbe72ba9","name":"a6e8e1af-0fb2-493e-9d2d-b627dbe72ba9","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"06b7a79a-2dab-4bbc-a5d7-1dfe2dadca93","name":"06b7a79a-2dab-4bbc-a5d7-1dfe2dadca93","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"a62d4a97-fa7a-4e10-9de8-e10640c25013","name":"a62d4a97-fa7a-4e10-9de8-e10640c25013","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"7e659496-9573-466a-81cb-9ae1afa3425e","name":"7e659496-9573-466a-81cb-9ae1afa3425e","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"a6e8e1af-0fb2-493e-9d2d-b627dbe72ba9","name":"a6e8e1af-0fb2-493e-9d2d-b627dbe72ba9","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":8,
   "gridY":16,

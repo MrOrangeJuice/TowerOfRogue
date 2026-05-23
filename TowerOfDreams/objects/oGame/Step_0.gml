@@ -783,6 +783,7 @@ if(!global.dreamBoy)
                     global.graveItem4_3 = -1;
 				
 					global.overallCoins = 0;
+					global.medalsFedToFrog = 0;
 					global.healthUpgrades = 0;
 					global.itemUpgrades = 0;
 					global.redUnlocked = false;
@@ -794,8 +795,9 @@ if(!global.dreamBoy)
 					global.maxHealth = 6;
 					global.health = 6;
 					global.hardMode = false;
+					global.totalDeaths = 0;
 					global.itemsFound = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
-					global.enemiesFound = [0,0,0,0,0,0,0,0,0,0,0];
+					global.enemiesFound = [0,0,0,0,0,0,0,0,0,0,0,0,0,0];
 					// Make new default file
 					Save();
 					break;
@@ -908,6 +910,9 @@ if(!global.dreamBoy)
 				audio_stop_sound(msc_Floor2Variant);
 				audio_stop_sound(msc_Floor3);
 				audio_stop_sound(msc_Floor3Variant);
+				audio_stop_sound(msc_Floor4);
+				audio_stop_sound(msc_Floor4Variant);
+				audio_stop_sound(msc_Final);
 				global.floor1Music = false;
 				
 	            SlideTransition(TRANS_MODE.GOTO,rMemoryZoo);
@@ -942,6 +947,9 @@ if(!global.dreamBoy)
 				audio_stop_sound(msc_Floor2Variant);
 				audio_stop_sound(msc_Floor3);
 				audio_stop_sound(msc_Floor3Variant);
+				audio_stop_sound(msc_Floor4);
+				audio_stop_sound(msc_Floor4Variant);
+				audio_stop_sound(msc_Final);
 				global.floor1Music = false;
 				
 				 SlideTransition(TRANS_MODE.GOTO,room);
@@ -1026,6 +1034,7 @@ if(!global.dreamBoy)
 						global.usedArray = [false,false,false,false,false,false,false,false,false,false];
 						global.usedArray2 = [false,false,false,false,false,false,false,false,false,false];
 						global.usedArray3 = [false,false,false,false,false,false,false,false,false,false];
+						global.usedArray4 = [false,false,false,false,false,false,false,false,false,false];
 						global.inARun = false;
                         global.timeTrial = false;
 						global.zombieRevive = true;
@@ -1054,7 +1063,7 @@ if(!global.dreamBoy)
 						global.item1Bought = false;
 						global.item2Bought = false;
 						global.item3Bought = false;
-						global.ranks = ["D","D","D","D","D","D","D","D","D"];
+						global.ranks = ["D","D","D","D","D","D","D","D","D","D","D","D"];
 						// Reset instance lists
 						global.coinArray = ds_list_create();
 						global.enemyArray = ds_list_create();
@@ -1070,6 +1079,9 @@ if(!global.dreamBoy)
 						audio_stop_sound(msc_Floor2Variant);
 						audio_stop_sound(msc_Floor3);
 						audio_stop_sound(msc_Floor3Variant);
+						audio_stop_sound(msc_Floor4);
+						audio_stop_sound(msc_Floor4Variant);
+						audio_stop_sound(msc_Final);
 						global.floor1Music = false;
 						audio_stop_sound(msc_Shop);
 						global.shopMusic = false;
@@ -1126,7 +1138,13 @@ if(global.dreamBoyOn)
 		else if(global.dreamBoyState == 2)
 		{
 			global.currentFoe--;
-			if(global.currentFoe < 0) global.currentFoe = 10;
+			if(global.currentFoe < 0) global.currentFoe = 13;
+			audio_play_sound(snd_DreamBoyMenuMove,5,false);
+		}
+		else if(global.dreamBoyState == 3)
+		{
+			global.currentExtra--;
+			if(global.currentExtra < 0) global.currentExtra = 2;
 			audio_play_sound(snd_DreamBoyMenuMove,5,false);
 		}
 	}
@@ -1147,7 +1165,13 @@ if(global.dreamBoyOn)
 		else if(global.dreamBoyState == 2)
 		{
 			global.currentFoe++;
-			if(global.currentFoe > 10) global.currentFoe = 0;
+			if(global.currentFoe > 13) global.currentFoe = 0;
+			audio_play_sound(snd_DreamBoyMenuMove,5,false);
+		}
+		else if(global.dreamBoyState == 3)
+		{
+			global.currentExtra++;
+			if(global.currentExtra > 2) global.currentExtra = 0;
 			audio_play_sound(snd_DreamBoyMenuMove,5,false);
 		}
 	}

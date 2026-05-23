@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"sWingsUI",
   "bboxMode":1,
   "bbox_bottom":7,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"d6e6ccd9-5bdd-49e4-8b97-f563da7c7862","name":"d6e6ccd9-5bdd-49e4-8b97-f563da7c7862","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"d6e6ccd9-5bdd-49e4-8b97-f563da7c7862","name":"d6e6ccd9-5bdd-49e4-8b97-f563da7c7862","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

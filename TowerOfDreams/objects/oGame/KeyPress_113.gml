@@ -22,7 +22,7 @@ if(global.debug)
 		{	
 			audio_play_sound(snd_SwordGet,5,false);
 			global.itemsFound = [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1];
-			global.enemiesFound = [1,1,1,1,1,1,1,1,1,1,1];
+			global.enemiesFound = [1,1,1,1,1,1,1,1,1,1,1,1,1,1];
             global.seen1_1 = true;
             global.seen1_2 = true;
             global.seen1_3 = true;

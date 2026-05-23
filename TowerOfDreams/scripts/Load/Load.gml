@@ -5,6 +5,7 @@ function Load(){
 	global.tutorialCompleted = ini_read_real("savegame", "tutorialCompleted", 0);
 	global.floor1Completed = ini_read_real("savegame", "floor1Completed", 0);
 	global.floor2Completed = ini_read_real("savegame", "floor2Completed", 0);
+	global.floor3Completed = ini_read_real("savegame", "floor3Completed", 0);
 	global.runCompleted = ini_read_real("savegame", "runCompleted", 0);
     
 	global.best1_1 = ini_read_string("savegame", "best1_1", "F");
@@ -158,6 +159,7 @@ function Load(){
     
 	global.bestOverall = ini_read_string("savegame", "bestOverall", "F");
 	global.overallCoins = ini_read_real("savegame", "overallCoins", 0);
+	global.medalsFedToFrog = ini_read_real("savegame", "medalsFedToFrog", 0);
 	global.healthUpgrades = ini_read_real("savegame", "healthUpgrades", 0);
 	global.itemUpgrades = ini_read_real("savegame", "itemUpgrades", 0);
 	global.redUnlocked = ini_read_real("savegame", "redUnlocked", 0);

@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"sRabbitUI",
   "bboxMode":0,
   "bbox_bottom":7,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"e9e592b1-978c-4b0e-8a03-f1d7fdddfc80","name":"e9e592b1-978c-4b0e-8a03-f1d7fdddfc80","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"e9e592b1-978c-4b0e-8a03-f1d7fdddfc80","name":"e9e592b1-978c-4b0e-8a03-f1d7fdddfc80","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
