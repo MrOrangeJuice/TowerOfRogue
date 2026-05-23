@@ -577,6 +577,7 @@ if(!global.dreamBoy)
                     global.graveItem4_3 = -1;
 				
 					global.overallCoins = 0;
+					global.medalsFedToFrog = 0;
 					global.healthUpgrades = 0;
 					global.itemUpgrades = 0;
 					global.redUnlocked = false;
@@ -588,6 +589,7 @@ if(!global.dreamBoy)
 					global.maxHealth = 6;
 					global.health = 6;
 					global.hardMode = false;
+					global.totalDeaths = 0;
 					global.itemsFound = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
 					global.enemiesFound = [0,0,0,0,0,0,0,0,0,0,0,0,0,0];
 					// Make new default file

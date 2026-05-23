@@ -53,6 +53,7 @@
     {"name":"inst_5F01E28E","path":"rooms/rMemoryZoo/rMemoryZoo.yy",},
     {"name":"inst_705BBC5D","path":"rooms/rMemoryZoo/rMemoryZoo.yy",},
     {"name":"inst_7BAB2A66","path":"rooms/rMemoryZoo/rMemoryZoo.yy",},
+    {"name":"inst_5BB9C8B3","path":"rooms/rMemoryZoo/rMemoryZoo.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -505,6 +506,7 @@
           ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":496.0,"y":320.0,},
         {"$GMRInstance":"v4","%Name":"inst_705BBC5D","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_705BBC5D","objectId":{"name":"oRankingSign","path":"objects/oRankingSign/oRankingSign.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":816.0,"y":528.0,},
         {"$GMRInstance":"v4","%Name":"inst_7BAB2A66","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_7BAB2A66","objectId":{"name":"oWall","path":"objects/oWall/oWall.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":27.0,"scaleY":90.0,"x":1384.0,"y":0.0,},
+        {"$GMRInstance":"v4","%Name":"inst_5BB9C8B3","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_5BB9C8B3","objectId":{"name":"oMedalFrog","path":"objects/oMedalFrog/oMedalFrog.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":712.0,"y":656.0,},
       ],"layers":[],"name":"Walls","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRAssetLayer":"","%Name":"Tutorials","assets":[
         {"$GMRSpriteGraphic":"v1","%Name":"graphic_6BE88B9","animationSpeed":1.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"name":"graphic_6BE88B9","resourceType":"GMRSpriteGraphic","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"spriteId":{"name":"sMemoryGremlinSleepBG","path":"sprites/sMemoryGremlinSleepBG/sMemoryGremlinSleepBG.yy",},"x":40.0,"y":632.0,},

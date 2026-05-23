@@ -183,6 +183,7 @@ global.time = 0;
 global.timeIncrement = true;
 global.timeLevel = 0;
 global.timeMedals = 0;
+global.medalsFedToFrog = 0;
 global.sideRoomArray = [rTreasureRoom,rTreasureRoom2];
 global.sideRoomArray2 = [rTreasureRoomFloor2,rTreasureRoom2Floor2];
 global.sideRoomArray3 = [rTreasureRoomFloor3,rTreasureRoom2Floor3];
