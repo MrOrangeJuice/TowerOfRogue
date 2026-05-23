@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"sBuyItemFromRichard",
   "bboxMode":0,
   "bbox_bottom":255,
@@ -12,8 +12,8 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"b3955c5e-0ab3-4e1f-bf96-794ac0838e27","name":"b3955c5e-0ab3-4e1f-bf96-794ac0838e27","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"5e8c73f4-47ac-4f6a-9d5b-289128b6e907","name":"5e8c73f4-47ac-4f6a-9d5b-289128b6e907","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"b3955c5e-0ab3-4e1f-bf96-794ac0838e27","name":"b3955c5e-0ab3-4e1f-bf96-794ac0838e27","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"5e8c73f4-47ac-4f6a-9d5b-289128b6e907","name":"5e8c73f4-47ac-4f6a-9d5b-289128b6e907","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

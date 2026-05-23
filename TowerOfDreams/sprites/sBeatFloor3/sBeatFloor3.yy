@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"sBeatFloor3",
   "bboxMode":0,
   "bbox_bottom":255,
@@ -12,8 +12,8 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"fa997dd1-c93c-4613-85bd-48bf5ff73f10","name":"fa997dd1-c93c-4613-85bd-48bf5ff73f10","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"ae33ea77-87c4-4799-b067-1d4d67277faf","name":"ae33ea77-87c4-4799-b067-1d4d67277faf","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"fa997dd1-c93c-4613-85bd-48bf5ff73f10","name":"fa997dd1-c93c-4613-85bd-48bf5ff73f10","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"ae33ea77-87c4-4799-b067-1d4d67277faf","name":"ae33ea77-87c4-4799-b067-1d4d67277faf","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"sLesterGame",
   "bboxMode":0,
   "bbox_bottom":255,
@@ -12,8 +12,8 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"da606d28-1c19-4311-a531-887a3c97fa2f","name":"da606d28-1c19-4311-a531-887a3c97fa2f","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"7bb1c6cb-ed5a-41cd-bedb-a5c26a5679a0","name":"7bb1c6cb-ed5a-41cd-bedb-a5c26a5679a0","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"da606d28-1c19-4311-a531-887a3c97fa2f","name":"da606d28-1c19-4311-a531-887a3c97fa2f","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"7bb1c6cb-ed5a-41cd-bedb-a5c26a5679a0","name":"7bb1c6cb-ed5a-41cd-bedb-a5c26a5679a0","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

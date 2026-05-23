@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"sBuyAllArmor",
   "bboxMode":0,
   "bbox_bottom":255,
@@ -12,8 +12,8 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"6a991c91-94fb-43e7-a57e-c506f6394b19","name":"6a991c91-94fb-43e7-a57e-c506f6394b19","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"526a2274-450c-47f8-8f57-8fdcc0a2e4ab","name":"526a2274-450c-47f8-8f57-8fdcc0a2e4ab","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"6a991c91-94fb-43e7-a57e-c506f6394b19","name":"6a991c91-94fb-43e7-a57e-c506f6394b19","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"526a2274-450c-47f8-8f57-8fdcc0a2e4ab","name":"526a2274-450c-47f8-8f57-8fdcc0a2e4ab","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

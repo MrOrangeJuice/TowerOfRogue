@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"sBuyAllPipeFleas",
   "bboxMode":0,
   "bbox_bottom":255,
@@ -12,8 +12,8 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"d2323585-5604-47e5-be8e-e45d9116bef7","name":"d2323585-5604-47e5-be8e-e45d9116bef7","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"90071ce4-c12e-4eca-9ffc-0b3d5a8b5893","name":"90071ce4-c12e-4eca-9ffc-0b3d5a8b5893","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"d2323585-5604-47e5-be8e-e45d9116bef7","name":"d2323585-5604-47e5-be8e-e45d9116bef7","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"90071ce4-c12e-4eca-9ffc-0b3d5a8b5893","name":"90071ce4-c12e-4eca-9ffc-0b3d5a8b5893","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

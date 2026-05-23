@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"sFloorIsLava",
   "bboxMode":0,
   "bbox_bottom":255,
@@ -12,8 +12,8 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"35e2ef2a-2221-479b-a987-68065df9fc0f","name":"35e2ef2a-2221-479b-a987-68065df9fc0f","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"4996dfc0-f0a9-4e1a-9138-9b0e2451cee5","name":"4996dfc0-f0a9-4e1a-9138-9b0e2451cee5","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"35e2ef2a-2221-479b-a987-68065df9fc0f","name":"35e2ef2a-2221-479b-a987-68065df9fc0f","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"4996dfc0-f0a9-4e1a-9138-9b0e2451cee5","name":"4996dfc0-f0a9-4e1a-9138-9b0e2451cee5","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

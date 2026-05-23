@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"sBeatTheGameHard",
   "bboxMode":0,
   "bbox_bottom":255,
@@ -12,8 +12,8 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"9ab0993e-b2ba-42a2-a2d0-ae2108f16aad","name":"9ab0993e-b2ba-42a2-a2d0-ae2108f16aad","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"0e8b80e7-0655-4299-af99-217cf179e771","name":"0e8b80e7-0655-4299-af99-217cf179e771","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"9ab0993e-b2ba-42a2-a2d0-ae2108f16aad","name":"9ab0993e-b2ba-42a2-a2d0-ae2108f16aad","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"0e8b80e7-0655-4299-af99-217cf179e771","name":"0e8b80e7-0655-4299-af99-217cf179e771","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
