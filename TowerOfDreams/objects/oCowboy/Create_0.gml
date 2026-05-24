@@ -25,13 +25,13 @@ fire = sCowboyFire;
 image_xscale = dir;
 
 // Spawn for hard mode
-if(global.hardMode && object_index != oTankEnemyElite)
+if(global.hardMode && object_index != oCowboyElite)
 {
-	instance_change(oTankEnemyElite,false);
+	instance_change(oCowboyElite,false);
 	hp = 6;// Sprites
 	elite = true;
-	idle = sTankEnemyIdleElite;
-	run = sTankEnemyElite;
-	back = sTankEnemyBackElite;
-	fire = sTankEnemyFireElite;
+	idle = sCowboyElite;
+	run = sCowboyEliteWalk;
+	back = sCowboyEliteBack;
+	fire = sCowboyEliteFire;
 }
