@@ -587,6 +587,7 @@ if(!global.dreamBoy)
 					global.tutorialCompleted = false;
 					global.floor1Completed = false;
 					global.floor2Completed = false;
+					global.floor3Completed = false;
 					global.runCompleted = false;
 					global.best1_1 = "F";
 					global.best1_2 = "F";

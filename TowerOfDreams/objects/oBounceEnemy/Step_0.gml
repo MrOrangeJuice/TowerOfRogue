@@ -106,13 +106,13 @@ else
 }
 
 // Spawn for hard mode
-if(global.hardMode && object_index != oBallEnemyElite && givesHealth)
+if(global.hardMode && object_index != oBounceEnemyElite && givesHealth)
 {
-	instance_change(oBallEnemyElite,false);
+	instance_change(oBounceEnemyElite,false);
 	hp = 4;
 	hsp = 1.5;
 	elite = true;
 	// Sprites
-	regularSprite = sBallEnemyElite;
-	landingSprite = sBallEnemyEliteSquish;
+	regularSprite = sBounceEnemyElite;
+	landingSprite = sBounceEnemySquishElite;
 }
