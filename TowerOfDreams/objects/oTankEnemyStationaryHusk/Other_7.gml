@@ -2,7 +2,7 @@
 
 if(sprite_index == sTankEnemyStationaryHuskFire)
 {
-	if(IsOnScreen(y))
+	if(IsOnScreenLax(y))
 	{
 		audio_play_sound(snd_Cannon,5,false);
 		missile = instance_create_layer(x+(dir*-16),y+3,"Enemies",oMissile);
