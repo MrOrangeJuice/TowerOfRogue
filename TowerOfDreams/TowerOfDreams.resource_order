@@ -490,6 +490,7 @@
     {"name":"DeleteGraveData","order":13,"path":"scripts/DeleteGraveData/DeleteGraveData.yy",},
     {"name":"DetermineFloorTax","order":17,"path":"scripts/DetermineFloorTax/DetermineFloorTax.yy",},
     {"name":"IsOnScreen","order":8,"path":"scripts/IsOnScreen/IsOnScreen.yy",},
+    {"name":"IsOnScreenLax","order":19,"path":"scripts/IsOnScreenLax/IsOnScreenLax.yy",},
     {"name":"Load","order":4,"path":"scripts/Load/Load.yy",},
     {"name":"LoadVolume","order":18,"path":"scripts/LoadVolume/LoadVolume.yy",},
     {"name":"PickNextLevel","order":5,"path":"scripts/PickNextLevel/PickNextLevel.yy",},

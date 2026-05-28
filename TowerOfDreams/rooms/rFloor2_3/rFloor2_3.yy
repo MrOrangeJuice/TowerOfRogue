@@ -430,12 +430,14 @@
     {"name":"inst_775B2A61","path":"rooms/rFloor2_3/rFloor2_3.yy",},
     {"name":"inst_30C7C3A2","path":"rooms/rFloor2_3/rFloor2_3.yy",},
     {"name":"inst_459EB217","path":"rooms/rFloor2_3/rFloor2_3.yy",},
+    {"name":"inst_2606A840","path":"rooms/rFloor2_3/rFloor2_3.yy",},
   ],
   "isDnd":false,
   "layers":[
     {"$GMRInstanceLayer":"","%Name":"Pipes","depth":0,"effectEnabled":true,"effectType":null,"gridX":8,"gridY":8,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v4","%Name":"inst_10E5F2AB_1_1_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_10E5F2AB_1_1_1","objectId":{"name":"oPipeSpawner","path":"objects/oPipeSpawner/oPipeSpawner.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":432.0,"y":1504.0,},
         {"$GMRInstance":"v4","%Name":"inst_3389D032_1_1_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_3389D032_1_1_1","objectId":{"name":"oShopSpawner","path":"objects/oShopSpawner/oShopSpawner.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":216.0,"y":1504.0,},
+        {"$GMRInstance":"v4","%Name":"inst_2606A840","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_2606A840","objectId":{"name":"oNoPipeZone","path":"objects/oNoPipeZone/oNoPipeZone.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":2.0,"x":216.0,"y":584.0,},
       ],"layers":[],"name":"Pipes","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRTileLayer":"","%Name":"Tiles","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Tiles","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":200,"SerialiseWidth":80,"TileCompressedData":[
           -826,1,1,9,-28,3,1,8,-50,1,1,5,-28,0,1,4,-50,1,1,5,-28,0,1,4,-50,1,1,5,-28,0,1,4,-50,1,1,5,-28,0,1,4,
