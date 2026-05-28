@@ -184,6 +184,14 @@ if(instance_exists(oTankEnemy))
         Save();
     }
 }
+if(instance_exists(oWizardEnemy))
+{
+    if(!global.enemiesFound[oWizardEnemy.dbId]) 
+    {
+        global.enemiesFound[oWizardEnemy.dbId] = true;
+        Save();
+    }
+}
 
 // Check for new levels
 switch(room)
