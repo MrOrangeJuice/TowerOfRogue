@@ -22,6 +22,7 @@ if(key_select_pressed)
 {
 	audio_play_sound(snd_MenuSelect,5,false);
 	audio_stop_sound(msc_Credits);
+	global.floor1Music = false;
 	SlideTransition(TRANS_MODE.GOTO,rHub);
 }
 
