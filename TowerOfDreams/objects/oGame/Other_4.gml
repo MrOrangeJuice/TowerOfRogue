@@ -82,6 +82,8 @@ if(room == rMemoryZoo)
 		global.timeMedals++;
 	if(global.timeMedalSilver4_3)
 		global.timeMedals++;
+		
+	CheckForAchievements();
 }
 else
 {

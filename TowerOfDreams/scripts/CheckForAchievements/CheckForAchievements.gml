@@ -73,4 +73,33 @@ function CheckForAchievements(){
 			steam_set_achievement("BUYONEITEM");
 		}
 	}
+	// Speed Medals
+	if(global.timeMedals >= 36)
+	{
+		if(!steam_get_achievement("GET36MEDALS"))
+		{
+			steam_set_achievement("GET36MEDALS");
+		}
+	}
+	if(global.timeMedals >= 27)
+	{
+		if(!steam_get_achievement("GET27MEDALS"))
+		{
+			steam_set_achievement("GET27MEDALS");
+		}
+	}
+	if(global.timeMedals >= 18)
+	{
+		if(!steam_get_achievement("GET18MEDALS"))
+		{
+			steam_set_achievement("GET18MEDALS");
+		}
+	}
+	if(global.timeMedals >= 9)
+	{
+		if(!steam_get_achievement("GET9MEDALS"))
+		{
+			steam_set_achievement("GET9MEDALS");
+		}
+	}
 }
