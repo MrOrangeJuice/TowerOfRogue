@@ -29,6 +29,10 @@ if(global.debug)
 		steam_clear_achievement("BUYALLSTAMPERITEMS");
 		steam_clear_achievement("LESTERGAME");
 		steam_clear_achievement("ALLDATABASE");
+		steam_clear_achievement("GET9MEDALS");
+		steam_clear_achievement("GET18MEDALS");
+		steam_clear_achievement("GET27MEDALS");
+		steam_clear_achievement("GET36MEDALS");
 		audio_play_sound(snd_SwordGet,5,false);
 	}
 }
