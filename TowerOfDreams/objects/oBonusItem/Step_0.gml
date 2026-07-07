@@ -10,7 +10,7 @@ if ((gamepad_axis_value(0,gp_axislh) < -0.4 && analogLeftPrev == false) || gamep
 	global.controller = 1;
 	analogLeftPrev = true;
 }
-if ( (gamepad_axis_value(4,gp_axislh) < -0.4 && analogLeftPrevD == false) || gamepad_button_check_pressed(4,gp_padl))
+if ( (gamepad_axis_value(1,gp_axislh) < -0.4 && analogLeftPrevD == false) || gamepad_button_check_pressed(1,gp_padl))
 {
 	key_left = 1;
 	global.controller = 2;
@@ -23,7 +23,7 @@ if ((gamepad_axis_value(0,gp_axislh) > 0.4 && analogRightPrev == false) || gamep
 	global.controller = 1;
 	analogRightPrev = true;
 }
-if ((gamepad_axis_value(4,gp_axislh) > 0.4 && analogRightPrevD == false) || gamepad_button_check_pressed(4,gp_padr))
+if ((gamepad_axis_value(1,gp_axislh) > 0.4 && analogRightPrevD == false) || gamepad_button_check_pressed(1,gp_padr))
 {
 	key_right = 1;
 	global.controller = 2;
@@ -35,7 +35,7 @@ if (gamepad_button_check_pressed(0,gp_face1))
 	key_select = 1;
 	global.controller = 1;
 }
-if (gamepad_button_check_pressed(4,gp_face1))
+if (gamepad_button_check_pressed(1,gp_face1))
 {
 	key_select = 1;
 	global.controller = 2;
@@ -136,7 +136,7 @@ else
 	analogRightPrev = false;	
 }
 
-if(gamepad_axis_value(4,gp_axislh) < -0.4)
+if(gamepad_axis_value(1,gp_axislh) < -0.4)
 {
 	analogLeftPrevD = true;	
 }
@@ -145,7 +145,7 @@ else
 	analogLeftPrevD = false;	
 }
 
-if(gamepad_axis_value(4,gp_axislh) > 0.4)
+if(gamepad_axis_value(1,gp_axislh) > 0.4)
 {
 	analogRightPrevD = true;	
 }

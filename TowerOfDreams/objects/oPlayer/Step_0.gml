@@ -19,7 +19,7 @@ if (gamepad_axis_value(0,gp_axislh) < -0.2 || gamepad_button_check(0,gp_padl))
 	key_left = 1;
 	global.controller = 1;
 }
-if (gamepad_axis_value(4,gp_axislh) < -0.2 || gamepad_button_check(4,gp_padl))
+if (gamepad_axis_value(1,gp_axislh) < -0.2 || gamepad_button_check(1,gp_padl))
 {
 	key_left = 1;
 	global.controller = 2;
@@ -30,7 +30,7 @@ if (gamepad_axis_value(0,gp_axislh) > 0.2 || gamepad_button_check(0,gp_padr))
 	key_right = 1;
 	global.controller = 1;
 }
-if (gamepad_axis_value(4,gp_axislh) > 0.2 || gamepad_button_check(4,gp_padr))
+if (gamepad_axis_value(1,gp_axislh) > 0.2 || gamepad_button_check(1,gp_padr))
 {
 	key_right = 1;
 	global.controller = 2;
@@ -41,7 +41,7 @@ if (gamepad_button_check(0,gp_face1))
 	key_jump = 1;
 	global.controller = 1;
 }
-if (gamepad_button_check(4,gp_face1))
+if (gamepad_button_check(1,gp_face1))
 {
 	key_jump = 1;
 	global.controller = 2;
@@ -63,7 +63,7 @@ if (gamepad_button_check_pressed(0,gp_face2) || gamepad_button_check_pressed(0,g
 	key_item_pressed = 1;
 	global.controller = 1;
 }
-if (gamepad_button_check_pressed(4,gp_face2) || gamepad_button_check_pressed(4,gp_face3))
+if (gamepad_button_check_pressed(1,gp_face2) || gamepad_button_check_pressed(1,gp_face3))
 {
 	key_item_pressed = 1;
 	global.controller = 2;
@@ -74,7 +74,7 @@ if (gamepad_button_check(0,gp_face2) || gamepad_button_check(0,gp_face3))
 	key_item = 1;
 	global.controller = 1;
 }
-if (gamepad_button_check(4,gp_face2) || gamepad_button_check(4,gp_face3))
+if (gamepad_button_check(1,gp_face2) || gamepad_button_check(1,gp_face3))
 {
 	key_item = 1;
 	global.controller = 2;
@@ -85,7 +85,7 @@ if (gamepad_button_check(0,gp_face4))
 	key_drop_item = 1;
 	global.controller = 1;
 }
-if (gamepad_button_check(4,gp_face4))
+if (gamepad_button_check(1,gp_face4))
 {
 	key_drop_item = 1;
 	global.controller = 2;

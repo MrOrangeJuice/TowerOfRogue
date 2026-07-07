@@ -20,7 +20,7 @@ if (gamepad_button_check(0,gp_face4))
 	key_sell = 1;
 	global.controller = 1;
 }
-if (gamepad_button_check(4,gp_face4))
+if (gamepad_button_check(1,gp_face4))
 {
 	key_sell = 1;
 	global.controller = 2;

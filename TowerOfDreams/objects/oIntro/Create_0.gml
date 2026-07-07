@@ -1,3 +1,5 @@
+switch_controller_support_set_singleplayer_only(true);  
+global.ControllerId = switch_controller_support_get_selected_id(); 
 
 studioVis = 0;
 creditVis = 0;

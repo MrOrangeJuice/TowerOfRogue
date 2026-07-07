@@ -6,13 +6,13 @@ if(key_select_pressed || key_select)
 	global.controller = 0;	
 }
 
-if(gamepad_button_check_pressed(0,gp_face1) || gamepad_button_check_pressed(4,gp_face1))
+if(gamepad_button_check_pressed(0,gp_face1) || gamepad_button_check_pressed(1,gp_face1))
 {
 	key_select_pressed = true;
 	global.controller = 1;
 }
 
-if(gamepad_button_check(0,gp_face1) || gamepad_button_check(4,gp_face1))
+if(gamepad_button_check(0,gp_face1) || gamepad_button_check(1,gp_face1))
 {
 	key_select = true;
 	global.controller = 1;
