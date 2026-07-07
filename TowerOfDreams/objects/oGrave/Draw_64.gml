@@ -65,18 +65,7 @@ if(drawOverallGems)
 
 if(drawContinue)
 {
-	if(global.controller == 2 && !gamepad_is_connected(0))
-	{
-		if(key_select)
-		{
-			draw_sprite(sContinueControllerPS,1,128,display_get_gui_height()/2 + 48);	
-		}
-		else
-		{
-			draw_sprite(sContinueControllerPS,0,128,display_get_gui_height()/2 + 48);	
-		}
-	}
-	else if(global.controller == 1 || global.controller == 2)
+	if(global.controller == 1)
 	{
 		if(key_select)
 		{

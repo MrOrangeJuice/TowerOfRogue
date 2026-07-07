@@ -11,48 +11,28 @@ if (key_left || key_right || key_jump_pressed || key_item_pressed)
 }
 
 // Gamepad input
-if (gamepad_axis_value(0,gp_axislh) < -0.2 || gamepad_button_check(0,gp_padl))
+if (gamepad_axis_value(global.ControllerId,gp_axislh) < -0.2 || gamepad_button_check(global.ControllerId,gp_padl))
 {
 	key_left = 1;
 	global.controller = 1;
 }
-if (gamepad_axis_value(1,gp_axislh) < -0.2 || gamepad_button_check(1,gp_padl))
-{
-	key_left = 1;
-	global.controller = 2;
-}
 
-if (gamepad_axis_value(0,gp_axislh) > 0.2 || gamepad_button_check(0,gp_padr))
+if (gamepad_axis_value(global.ControllerId,gp_axislh) > 0.2 || gamepad_button_check(global.ControllerId,gp_padr))
 {
 	key_right = 1;
 	global.controller = 1;
 }
-if (gamepad_axis_value(1,gp_axislh) > 0.2 || gamepad_button_check(1,gp_padr))
-{
-	key_right = 1;
-	global.controller = 2;
-}
 
-if (gamepad_button_check_pressed(0,gp_face1))
+if (gamepad_button_check_pressed(global.ControllerId,gp_face2))
 {
 	key_jump_pressed = 1;
 	global.controller = 1;
 }
-if (gamepad_button_check_pressed(1,gp_face1))
-{
-	key_jump_pressed = 1;
-	global.controller = 2;
-}
 
-if (gamepad_button_check_pressed(0,gp_face2) || gamepad_button_check_pressed(0,gp_face3))
+if (gamepad_button_check_pressed(global.ControllerId,gp_face1) || gamepad_button_check_pressed(global.ControllerId,gp_face4))
 {
 	key_item_pressed = 1;
 	global.controller = 1;
-}
-if (gamepad_button_check_pressed(1,gp_face2) || gamepad_button_check_pressed(1,gp_face3))
-{
-	key_item_pressed = 1;
-	global.controller = 2;
 }
 
 if(!global.paused && !global.hitStop)

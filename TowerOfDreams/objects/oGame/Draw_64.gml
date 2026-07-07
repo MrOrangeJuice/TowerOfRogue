@@ -24,8 +24,7 @@ if(global.debugDisplay)
 if(global.controllerDebug)
 {
 	draw_text(232,0,"Slots Used:");
-	if(gamepad_is_connected(0)) draw_text(232,8,"Slot 0");
-	if(gamepad_is_connected(4)) draw_text(232,16,"Slot 4");
+	draw_text(232,8,string(global.ControllerId));
 }
 
 // Draw Pause Menu
