@@ -526,6 +526,7 @@
     {"id":{"name":"SlideTransition","path":"scripts/SlideTransition/SlideTransition.yy",},},
     {"id":{"name":"SpawnGrave","path":"scripts/SpawnGrave/SpawnGrave.yy",},},
     {"id":{"name":"SpawnPepperExplosion","path":"scripts/SpawnPepperExplosion/SpawnPepperExplosion.yy",},},
+    {"id":{"name":"SwitchCheckUser","path":"scripts/SwitchCheckUser/SwitchCheckUser.yy",},},
     {"id":{"name":"TakeDamage","path":"scripts/TakeDamage/TakeDamage.yy",},},
     {"id":{"name":"shHit","path":"shaders/shHit/shHit.yy",},},
     {"id":{"name":"shRage","path":"shaders/shRage/shRage.yy",},},

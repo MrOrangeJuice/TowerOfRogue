@@ -527,6 +527,11 @@ deleted = false;
 UIOffset = 0;
 volumeArrows = true;
 
+global.saveid = 0;
+global.loadid = -1;
+global.savebuff = -1;
+global.loadbuff = -1;
+
 Load();
 
 // Change max health depending on what was loaded

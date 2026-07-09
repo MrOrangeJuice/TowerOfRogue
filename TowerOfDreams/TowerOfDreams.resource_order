@@ -479,6 +479,7 @@
     {"name":"SlideTransition","order":1,"path":"scripts/SlideTransition/SlideTransition.yy",},
     {"name":"SpawnGrave","order":15,"path":"scripts/SpawnGrave/SpawnGrave.yy",},
     {"name":"SpawnPepperExplosion","order":16,"path":"scripts/SpawnPepperExplosion/SpawnPepperExplosion.yy",},
+    {"name":"SwitchCheckUser","order":20,"path":"scripts/SwitchCheckUser/SwitchCheckUser.yy",},
     {"name":"TakeDamage","order":2,"path":"scripts/TakeDamage/TakeDamage.yy",},
     {"name":"shRage","order":1,"path":"shaders/shRage/shRage.yy",},
     {"name":"msc_BonusItem","order":17,"path":"sounds/msc_BonusItem/msc_BonusItem.yy",},

@@ -1,7 +1,30 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function Save(){
-	ini_open("savedata.ini");
+
+	show_debug_message("saving...");
+	
+	var userAccountId = SwitchCheckUser();
+	if(userAccountId == -1)
+	{
+		switch_accounts_select_account(true,false,false);
+		userAccountId = SwitchCheckUser();
+	}
+	
+	switch_save_data_unmount(); //Unmount here in case we currently have the alternate applicationID mounted
+	switch_save_data_mount(userAccountId);
+	
+	buffer_async_group_begin("save_folder_name");  
+	buffer_async_group_option("savepadindex", 0); //The number you pass in is the pad number of the user who is saving/loading.  
+	buffer_async_group_option("showdialog",0);    // Stop platform dialogues appearing for this auto-save   
+	                                              // (if you do this your player won't be able to select a slot manually)  
+	buffer_async_group_option("slottitle","SaveForMyGame");    // Set the title of the slot we're going to save into  
+	buffer_async_group_option("subtitle","Save file for my awesome game");   // Set a subtitle that's visible in the PS4 UI  
+  
+	global.savebuff = buffer_create(1,buffer_grow,1);  
+  
+	ini_open_from_string("");  
+  
 	ini_write_real("savegame", "tutorialCompleted", global.tutorialCompleted);
 	ini_write_real("savegame", "floor1Completed", global.floor1Completed);
 	ini_write_real("savegame", "floor2Completed", global.floor2Completed);
@@ -178,5 +201,10 @@ function Save(){
 	{
 		ini_write_real("savegame","enemiesFound"+string(i), global.enemiesFound[i]);
 	}
-	ini_close();
+  
+	var inistring = ini_close();  
+	buffer_write(global.savebuff,buffer_string,inistring);  
+  
+	buffer_save_async(global.savebuff,"my_save_file.sav",0,buffer_get_size(global.savebuff));    // Pass the data to be saved  
+	global.saveid = buffer_async_group_end();     // Start the save process
 }
