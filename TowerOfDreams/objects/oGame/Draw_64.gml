@@ -110,14 +110,9 @@ if(global.paused && !global.dreamBoy)
 		{
 			draw_set_color($DDADE6);	
 		}
-		if(window_get_fullscreen())
-		{
-			draw_text(128,52+UIOffset,"FULLSCREEN: ON");
-		}
-		else
-		{
-			draw_text(128,52+UIOffset,"FULLSCREEN: OFF");
-		}
+
+		draw_text(128,52+UIOffset,"CHANGE CONTROLS");
+
 		if(menuOption == 1)
 		{
 			draw_set_color($A3A7E9);
@@ -228,14 +223,8 @@ if(room == rTitle)
 		{
 			draw_set_color($DDADE6);	
 		}
-		if(window_get_fullscreen())
-		{
-			draw_text(128,56+UIOffset,"FULLSCREEN: ON");
-		}
-		else
-		{
-			draw_text(128,56+UIOffset,"FULLSCREEN: OFF");
-		}
+		
+		draw_text(128,56+UIOffset,"CHANGE CONTROLS");
 		
 		if(menuOption == 1)
 		{
@@ -247,7 +236,7 @@ if(room == rTitle)
 		}
 		if(global.displayMode == 2)
 		{
-			draw_text(128,72+UIOffset,"ASPECT RATIO: RETRO");
+			draw_text(128,72+UIOffset,"ASPECT RATIO: CRT");
 		}
 		else if(global.displayMode == 1)
 		{

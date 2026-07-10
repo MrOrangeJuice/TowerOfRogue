@@ -11,7 +11,7 @@ else
 
 key_sell = keyboard_check(ord("C")) || keyboard_check(ord("I")) || keyboard_check(vk_rshift);
 
-if (gamepad_button_check(global.ControllerId,gp_face2))
+if (gamepad_button_check(global.ControllerId,gp_face3))
 {
 	key_sell = 1;
 	global.controller = 1;
