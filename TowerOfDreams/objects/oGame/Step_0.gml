@@ -299,6 +299,8 @@ if(!global.dreamBoy)
 						switch_controller_set_supported_styles(_style);
 						switch_controller_support_show();  
 						global.ControllerId = switch_controller_support_get_selected_id(); 
+						disableDisconnect = true;
+						alarm[4] = room_speed * 0.5;
 					}
 					break;
 				case 1:
@@ -536,6 +538,8 @@ if(!global.dreamBoy)
 						switch_controller_set_supported_styles(_style);
 						switch_controller_support_show();  
 						global.ControllerId = switch_controller_support_get_selected_id(); 
+						disableDisconnect = true;
+						alarm[4] = room_speed * 0.5;
 					}
 					break;
 				case 1:

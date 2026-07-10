@@ -193,8 +193,12 @@ else if (ident == global.loadid)
 	{
 		global.enemiesFound[i] = ini_read_real("savegame","enemiesFound"+string(i),0);
 	}
+	
+	global.volume = ini_read_real("savegame", "volume", 6);
   
    ini_close();  
    buffer_delete(global.loadbuff);  
    show_debug_message("read string from buffer " + buffstring);  
+   
+   ChangeVolume();
 }

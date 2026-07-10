@@ -26,5 +26,12 @@ function ChangeVolume(){
 			audio_master_gain(1);
 			break;
 	}
-	if(room != rIntro) Save();
+	if(room == rTitle && !oGame.options)
+	{
+		
+	}
+	else
+	{
+		Save();
+	}
 }

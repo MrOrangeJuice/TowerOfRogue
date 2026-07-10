@@ -526,6 +526,7 @@ options = false;
 deleted = false;
 UIOffset = 0;
 volumeArrows = true;
+disableDisconnect = false;
 
 global.saveid = 0;
 global.loadid = -1;
