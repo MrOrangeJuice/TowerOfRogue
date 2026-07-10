@@ -217,11 +217,11 @@ if(!global.dreamBoy)
 			{
 				if(room == rTitle && options)
 				{
-					menuOption = 4;
+					menuOption = 3;
 				}
 				else
 				{
-					menuOption = 2;	
+					menuOption = 1;	
 				}
 			}
 		}
@@ -232,14 +232,14 @@ if(!global.dreamBoy)
 			menuOption++;
 			if(room == rTitle && options)
 			{
-				if(menuOption >= 5)
+				if(menuOption >= 4)
 				{
 					menuOption = 0;	
 				}
 			}
 			else
 			{
-				if(menuOption >= 3)
+				if(menuOption >= 2)
 				{
 					menuOption = 0;	
 				}
@@ -346,7 +346,7 @@ if(!global.dreamBoy)
 				case 2:
 					if(!options)
 					{
-						game_end();
+						
 					}
 					else
 					{
@@ -359,237 +359,12 @@ if(!global.dreamBoy)
 					}
 					break;
 				case 3:
-					deleted = true;
-					// Delete Save
-					if(file_exists("savedata.ini")){
-						file_delete("savedata.ini");
-					}
-					global.tutorialCompleted = false;
-					global.floor1Completed = false;
-					global.floor2Completed = false;
-					global.floor3Completed = false;
-					global.runCompleted = false;
-					global.best1_1 = "F";
-					global.best1_2 = "F";
-					global.best1_3 = "F";
-					global.best1_4 = "F";
-					global.best1_5 = "F";
-					global.best1_6 = "F";
-					global.best2_1 = "F";
-					global.best2_2 = "F";
-					global.best2_3 = "F";
-					global.best2_4 = "F";
-					global.best2_5 = "F";
-					global.best3_1 = "F";
-					global.best3_2 = "F";
-					global.best3_3 = "F";
-					global.best3_4 = "F";
-                    global.best4_1 = "F";
-                    global.best4_2 = "F";
-                    global.best4_3 = "F";
-					global.bestOverall = "F";
-                
-                    global.seen1_1 = false;
-                    global.seen1_2 = false;
-                    global.seen1_3 = false;
-                    global.seen1_4 = false;
-                    global.seen1_5 = false;
-                    global.seen1_6 = false;
-                    global.seen2_1 = false;
-                    global.seen2_2 = false;
-                    global.seen2_3 = false;
-                    global.seen2_4 = false;
-                    global.seen2_5 = false;
-                    global.seen3_1 = false;
-                    global.seen3_2 = false;
-                    global.seen3_3 = false;
-                    global.seen3_4 = false;
-                    global.seen4_1 = false;
-                    global.seen4_2 = false;
-                    global.seen4_3 = false;
-                
-                    // Levels Seen
-                    global.seen1_1 = false;
-                    global.seen1_2 = false;
-                    global.seen1_3 = false;
-                    global.seen1_4 = false;
-                    global.seen1_5 = false;
-                    global.seen1_6 = false;
-                    global.seen2_1 = false;
-                    global.seen2_2 = false;
-                    global.seen2_3 = false;
-                    global.seen2_4 = false;
-                    global.seen2_5 = false;
-                    global.seen3_1 = false;
-                    global.seen3_2 = false;
-                    global.seen3_3 = false;
-                    global.seen3_4 = false;
-                    global.seen4_1 = false;
-                    global.seen4_2 = false;
-                    global.seen4_3 = false;
-                    
-                    // Level Times
-                    global.time1_1 = 0;
-                    global.time1_2 = 0;
-                    global.time1_3 = 0;
-                    global.time1_4 = 0;
-                    global.time1_5 = 0;
-                    global.time1_6 = 0;
-                    global.time2_1 = 0;
-                    global.time2_2 = 0;
-                    global.time2_3 = 0;
-                    global.time2_4 = 0;
-                    global.time2_5 = 0;
-                    global.time3_1 = 0;
-                    global.time3_2 = 0;
-                    global.time3_3 = 0;
-                    global.time3_4 = 0;
-                    global.time4_1 = 0;
-                    global.time4_2 = 0;
-                    global.time4_3 = 0;
-                    
-                    // Level Time Medals
-                    global.timeMedalSilver1_1 = false;
-                    global.timeMedalGold1_1 = false;
-                    global.timeMedalSilver1_2 = false;
-                    global.timeMedalGold1_2 = false;
-                    global.timeMedalSilver1_3 = false;
-                    global.timeMedalGold1_3 = false;
-                    global.timeMedalSilver1_4 = false;
-                    global.timeMedalGold1_4 = false;
-                    global.timeMedalSilver1_5 = false;
-                    global.timeMedalGold1_5 = false;
-                    global.timeMedalSilver1_6 = false;
-                    global.timeMedalGold1_6 = false;
-                    global.timeMedalSilver2_1 = false;
-                    global.timeMedalGold2_1 = false;
-                    global.timeMedalSilver2_2 = false;
-                    global.timeMedalGold2_2 = false;
-                    global.timeMedalSilver2_3 = false;
-                    global.timeMedalGold2_3 = false;
-                    global.timeMedalSilver2_4 = false;
-                    global.timeMedalGold2_4 = false;
-                    global.timeMedalSilver2_5 = false;
-                    global.timeMedalGold2_5 = false;
-                    global.timeMedalSilver3_1 = false;
-                    global.timeMedalGold3_1 = false;
-                    global.timeMedalSilver3_2 = false;
-                    global.timeMedalGold3_2 = false;
-                    global.timeMedalSilver3_3 = false;
-                    global.timeMedalGold3_3 = false;
-                    global.timeMedalSilver3_4 = false;
-                    global.timeMedalGold3_4 = false;
-                    global.timeMedalSilver4_1 = false;
-                    global.timeMedalGold4_1 = false;
-                    global.timeMedalSilver4_2 = false;
-                    global.timeMedalGold4_2 = false;
-                    global.timeMedalSilver4_3 = false;
-                    global.timeMedalGold4_3 = false;
-                
-					// Grave data
-					// Floor 1
-					global.graveX1_1 = 0;
-					global.graveY1_1 = 0;
-					global.graveItem1_1 = -1;
-
-					global.graveX1_2 = 0;
-					global.graveY1_2 = 0;
-					global.graveItem1_2 = -1;
-
-					global.graveX1_3 = 0;
-					global.graveY1_3 = 0;
-					global.graveItem1_3 = -1;
-
-					global.graveX1_4 = 0;
-					global.graveY1_4 = 0;
-					global.graveItem1_4 = -1;
-
-					global.graveX1_5 = 0;
-					global.graveY1_5 = 0;
-					global.graveItem1_5 = -1;
-
-					global.graveX1_6 = 0;
-					global.graveY1_6 = 0;
-					global.graveItem1_6 = -1;
-
-					// Floor 2
-					global.graveX2_1 = 0;
-					global.graveY2_1 = 0;
-					global.graveItem2_1 = -1;
-
-					global.graveX2_2 = 0;
-					global.graveY2_2 = 0;
-					global.graveItem2_2 = -1;
-
-					global.graveX2_3 = 0;
-					global.graveY2_3 = 0;
-					global.graveItem2_3 = -1;
-
-					global.graveX2_4 = 0;
-					global.graveY2_4 = 0;
-					global.graveItem2_4 = -1;
-                
-                    global.graveX2_5 = 0;
-                    global.graveY2_5 = 0;
-                    global.graveItem2_5 = -1;
-
-					// Floor 3
-					global.graveX3_1 = 0;
-					global.graveY3_1 = 0;
-					global.graveItem3_1 = -1;
-
-					global.graveX3_2 = 0;
-					global.graveY3_2 = 0;
-					global.graveItem3_2 = -1;
-
-					global.graveX3_3 = 0;
-					global.graveY3_3 = 0;
-					global.graveItem3_3 = -1;
-                
-                    global.graveX3_4 = 0;
-                    global.graveY3_4 = 0;
-                    global.graveItem3_4 = -1;
-                
-                    // Floor 4
-                    global.graveX4_1 = 0;
-                    global.graveY4_1 = 0;
-                    global.graveItem4_1 = -1;
-
-                    global.graveX4_2 = 0;
-                    global.graveY4_2 = 0;
-                    global.graveItem4_2 = -1;
-
-                    global.graveX4_3 = 0;
-                    global.graveY4_3 = 0;
-                    global.graveItem4_3 = -1;
-				
-					global.overallCoins = 0;
-					global.medalsFedToFrog = 0;
-					global.healthUpgrades = 0;
-					global.itemUpgrades = 0;
-					global.redUnlocked = false;
-					global.greenUnlocked = false;
-					global.zombieUnlocked = false;
-					global.goldUnlocked = false;
-					global.palette = 0;
-					global.essence = 0;
-					global.maxHealth = 6;
-					global.health = 6;
-					global.hardMode = false;
-					global.totalDeaths = 0;
-					global.itemsFound = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
-					global.enemiesFound = [0,0,0,0,0,0,0,0,0,0,0,0,0,0];
-					// Make new default file
-					Save();
-					break;
-				case 4:
 					options = false;
 					deleted = false;
 					menuOption = 0;
 					oTitle.visible = true;
 					oOptionsTitle.visible = false;
 					break;
-				
 			}
 		}
 	}

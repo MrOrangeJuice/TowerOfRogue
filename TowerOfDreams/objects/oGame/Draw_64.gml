@@ -172,7 +172,7 @@ if(room == rTitle)
 	draw_set_font(fMenu);
 	if (!options)
 	{
-		draw_sprite(sMenuBox,0,128,76+UIOffset);
+		draw_sprite(sMenuBoxSmall,0,128,76+UIOffset);
 		
 		/*
 		draw_set_color($6d454d);
@@ -200,20 +200,10 @@ if(room == rTitle)
 			draw_set_color($DDADE6);	
 		}
 		draw_text(128,104+UIOffset,"OPTIONS");
-		
-		if(menuOption == 2)
-		{
-			draw_set_color($A3A7E9);
-		}
-		else
-		{
-			draw_set_color($DDADE6);	
-		}
-		draw_text(128,120+UIOffset,"QUIT");
 	}
 	else
 	{
-		draw_sprite(sMenuBoxBigTall,0,128,44+UIOffset);
+		draw_sprite(sMenuBoxBigSlightlyLessTall,0,128,44+UIOffset);
 		
 		if(menuOption == 0)
 		{
@@ -268,24 +258,8 @@ if(room == rTitle)
 		{
 			draw_set_color($DDADE6);	
 		}
-		if(deleted)
-		{
-			draw_text(128,104+UIOffset,"DELETED!");
-		}
-		else
-		{
-			draw_text(128,104+UIOffset,"DELETE SAVE");
-		}
 		
-		if(menuOption == 4)
-		{
-			draw_set_color($A3A7E9);
-		}
-		else
-		{
-			draw_set_color($DDADE6);	
-		}
-		draw_text(128,120+UIOffset,"BACK");
+		draw_text(128,104+UIOffset,"BACK");
 		
 	}
 	
